@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleMobilePdf" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobilePdf" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobilePdf_ns="http://www.convertigo.com/convertigo/projects/sampleMobilePdf" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobilePdf"><xsd:include schemaLocation="sampleMobilePdf.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sampleMobilePdfPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sampleMobilePdfSOAPBinding" type="sampleMobilePdf_ns:sampleMobilePdfPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sampleMobilePdf">
+    <wsdl:port name="sampleMobilePdfSOAP" binding="sampleMobilePdf_ns:sampleMobilePdfSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleMobilePdf/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

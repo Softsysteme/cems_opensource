@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:demo_usDirectory_ns="http://www.convertigo.com/convertigo/projects/demo_usDirectory" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory">
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="demo_usDirectory_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="demo_usDirectory_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="usdirectoryConnector__DefaultWebClippingTransaction" type="demo_usDirectory_ns:usdirectoryConnector__DefaultWebClippingTransactionRequestData"/>
+<xsd:element name="usdirectoryConnector__DefaultWebClippingTransactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__DefaultWebClippingTransactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__DefaultWebClippingTransactionRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__DefaultWebClippingTransactionResponseData"/>
+<xsd:element name="usdirectoryConnector__DisplayData" type="demo_usDirectory_ns:usdirectoryConnector__DisplayDataRequestData"/>
+<xsd:element name="usdirectoryConnector__DisplayDataResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__DisplayDataResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__DisplayDataRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__DisplayDataResponseData"/>
+<xsd:element name="usdirectoryConnector__searchBusiness" type="demo_usDirectory_ns:usdirectoryConnector__searchBusinessRequestData"/>
+<xsd:element name="usdirectoryConnector__searchBusinessResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__searchBusinessResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__searchBusinessRequestData">
+<xsd:sequence>
+<xsd:element name="city" type="xsd:string"/>
+<xsd:element name="business" type="xsd:string"/>
+<xsd:element name="state" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__searchBusinessResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="demo_usDirectory_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="demo_usDirectory_ns:resultsTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__ShowSearchFormRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__ShowSearchFormResponseData"/>
+<xsd:element name="usdirectoryConnector__Start" type="demo_usDirectory_ns:usdirectoryConnector__StartRequestData"/>
+<xsd:element name="usdirectoryConnector__StartResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__StartResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__StartRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__StartResponseData"/>
+<xsd:element name="usdirectoryConnector__test" type="demo_usDirectory_ns:usdirectoryConnector__testRequestData"/>
+<xsd:element name="usdirectoryConnector__testResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__testResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__testRequestData">
+<xsd:sequence>
+<xsd:element name="state" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__testResponseData"/>
+<xsd:element name="usdirectoryConnector__usdirectory" type="demo_usDirectory_ns:usdirectoryConnector__usdirectoryRequestData"/>
+<xsd:element name="usdirectoryConnector__usdirectoryResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__usdirectoryResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__usdirectoryRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__usdirectoryResponseData"/>
+<xsd:element name="usdirectoryConnector__usdSearchByName" type="demo_usDirectory_ns:usdirectoryConnector__usdSearchByNameRequestData"/>
+<xsd:element name="usdirectoryConnector__usdSearchByNameResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__usdSearchByNameResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__usdSearchByNameRequestData">
+<xsd:sequence>
+<xsd:element name="city" type="xsd:string"/>
+<xsd:element name="rowindex" type="xsd:string"/>
+<xsd:element name="business" type="xsd:string"/>
+<xsd:element name="state" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__usdSearchByNameResponseData"/>
+<xsd:element name="usdirectoryConnector__XMLize" type="demo_usDirectory_ns:usdirectoryConnector__XMLizeRequestData"/>
+<xsd:element name="usdirectoryConnector__XMLizeResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:usdirectoryConnector__XMLizeResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="usdirectoryConnector__XMLizeRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="usdirectoryConnector__XMLizeResponseData">
+<xsd:sequence>
+<xsd:group minOccurs="0" ref="demo_usDirectory_ns:usdirectoryConnectorTypes"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:group name="usdirectoryConnectorTypes">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="demo_usDirectory_ns:ConvertigoError"/>
+<xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+<xsd:element minOccurs="0" name="error" type="demo_usDirectory_ns:errorTextType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="demo_usDirectory_ns:resultsTableType"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:complexType name="errorTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="item_resultsRowType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="name" type="xsd:string"/>
+<xsd:element minOccurs="0" name="address" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="resultsTableType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="item" type="demo_usDirectory_ns:item_resultsRowType"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:element name="MashupWithGoogle" type="demo_usDirectory_ns:MashupWithGoogleRequestData"/>
+<xsd:element name="MashupWithGoogleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_usDirectory_ns:MashupWithGoogleResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="MashupWithGoogleRequestData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="MashupWithGoogleResponseData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="step1238551160396Type">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_usDirectory_ns:usdirectoryConnector__searchBusinessResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

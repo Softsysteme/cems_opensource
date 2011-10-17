@@ -1,0 +1,2384 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><convertigo beans="4.4.2" engine="4.4.0" exported="28 janvier 2009 17:08" studio="4.4.0" version="4.4 (SP1)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="4.4.2">
+        <property localizedName="Navigateurs" name="browserDefinitions">
+            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                <com.twinsoft.convertigo.beans.common.XMLVector/>
+            </xmlizable>
+        </property>
+        <property localizedName="Commentaire" name="comment">
+            <java.lang.String value=""/>
+        </property>
+        <property localizedName="Durée de la session HTTP" name="httpSessionTimeout">
+            <java.lang.Integer value="300"/>
+        </property>
+        <property localizedName="Nom" name="name">
+            <java.lang.String value="sequenceProjectSample"/>
+        </property>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="4.4.2">
+            <property localizedName="Chemin racine" name="baseDir">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Auth. basique : mot de passe" name="basicPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Auth. basique : utilisateur" name="basicUser">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Classe Java de billing" name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Commentaire" name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Transaction d'arrêt" name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Est HTTPS" name="https">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Ignorer les attributs vides" name="ignoreEmptyAttributes">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Authentification Carioca" name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Nom" name="name">
+                <java.lang.String value="Connecteur_HTML"/>
+            </property>
+            <property localizedName="Port" name="port">
+                <java.lang.Integer value="80"/>
+            </property>
+            <property localizedName="Proxy : mot de passe" name="proxyPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Proxy : port" name="proxyPort">
+                <java.lang.Integer value="80"/>
+            </property>
+            <property localizedName="Proxy : serveur" name="proxyServer">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Proxy : utilisateur" name="proxyUser">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Serveur" name="server">
+                <java.lang.String value="www.google.com"/>
+            </property>
+            <property localizedName="Faire confiance à tous les certificats" name="trustAllServerCertificates">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Gestion des cookies" name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Paramètres HTTP" name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Default transaction"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Modèle requête" name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Maintien de l'état du connecteur" name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Sous chemin" name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Synchronisation" name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="Default transactionResponse">
+
+<xsd:sequence>
+
+<xsd:group maxOccurs="1" minOccurs="0" ref="tns:Connecteur_HTMLTypes"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:group name="Connecteur_HTMLTypes">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" ref="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:prefecturesListTableType"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+
+</xsd:group>
+
+<xsd:complexType name="row_prefecturesListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Num" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Departement" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Prefecture" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Region_administrative" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="capitalsListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_capitalsListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+<xsd:complexType name="row_capitalsListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Abbreviation" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="State" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Capital" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="prefecturesListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_prefecturesListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Gestion des cookies" name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Paramètres HTTP" name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="ListFrCities"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Modèle requête" name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Maintien de l'état du connecteur" name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Sous chemin" name="subDir">
+                    <java.lang.String value="http://www.hist-geo.com/Tableau/Liste-Departements-Prefectures-France.php"/>
+                </property>
+                <property localizedName="Synchronisation" name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="ListFrCitiesResponse">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="prefecturesList" type="tns:prefecturesListTableType"/>
+
+</xsd:sequence>
+</xsd:complexType>
+]]></wsdltype>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Gestion des cookies" name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Paramètres HTTP" name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="ListUSCities"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Modèle requête" name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Maintien de l'état du connecteur" name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Sous chemin" name="subDir">
+                    <java.lang.String value="http://www.50states.com/"/>
+                </property>
+                <property localizedName="Synchronisation" name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="ListUSCitiesResponse">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="capitalsList" type="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+</xsd:complexType>
+]]></wsdltype>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+            </transaction>
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Default screen class"/>
+                </property>
+                <property localizedName="Criterias" name="orderedCriterias">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Extraction Rules" name="orderedExtractionRules">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="4.4.2">
+                    <property localizedName="Commentaire" name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property localizedName="Nom" name="name">
+                        <java.lang.String value="PrefecturesList"/>
+                    </property>
+                    <property localizedName="Criterias" name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1232547864078"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property localizedName="Extraction Rules" name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1232547887874"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1232547864078" priority="1232547864078" version="4.4.2">
+                        <property localizedName="Commentaire" name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property localizedName="Nom" name="name">
+                            <java.lang.String value="Exists node at &quot;//H1[contains(text(),&quot;Liste des départements et des préfectures de  France métropolitaine&quot;)]&quot;"/>
+                        </property>
+                        <property localizedName="XPath" name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;Liste des départements et des préfectures de  France métropolitaine&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLTable" newPriority="1232547887874" priority="1232547887874" version="4.4.2">
+                        <property localizedName="Accumulate data in same table" name="accumulateDataInSameTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Commentaire" name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property localizedName="Description" name="description">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.String value="row"/>
+                                            <java.lang.String value="(./TBODY/TR)[position()&gt;0]"/>
+                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Num"/>
+                                                            <java.lang.String value="./TD[1]"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Departement"/>
+                                                            <java.lang.String value="./TD[2]"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Prefecture"/>
+                                                            <java.lang.String value="./TD[3]"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Region_administrative"/>
+                                                            <java.lang.String value="./TD[4]"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                                            </xmlizable>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property localizedName="Display referer" name="displayReferer">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Retourner la table" name="flipTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Est active" name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property localizedName="Nom" name="name">
+                            <java.lang.String value="prefectures"/>
+                        </property>
+                        <property localizedName="Tag name" name="tagName">
+                            <java.lang.String value="prefecturesList"/>
+                        </property>
+                        <property localizedName="XPath" name="xpath">
+                            <java.lang.String value="//TABLE[@class=&quot;WWTab WWTabA&quot;]"/>
+                        </property>
+                    </extractionrule>
+                </screenclass>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="4.4.2">
+                    <property localizedName="Commentaire" name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property localizedName="Nom" name="name">
+                        <java.lang.String value="StatesList"/>
+                    </property>
+                    <property localizedName="Criterias" name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1232966558943"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property localizedName="Extraction Rules" name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1232966569349"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1232966558943" priority="1232966558943" version="4.4.2">
+                        <property localizedName="Commentaire" name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property localizedName="Nom" name="name">
+                            <java.lang.String value="Exists node at &quot;//H1[contains(text(),&quot;States and Capitals&quot;)]&quot;"/>
+                        </property>
+                        <property localizedName="XPath" name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;States and Capitals&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLTable" newPriority="1232966569349" priority="1232966569349" version="4.4.2">
+                        <property localizedName="Accumulate data in same table" name="accumulateDataInSameTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Commentaire" name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property localizedName="Description" name="description">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.String value="row"/>
+                                            <java.lang.String value=".//UL[@class=&quot;statelist&quot;]/LI"/>
+                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Abbreviation"/>
+                                                            <java.lang.String value="substring-before(./A/@title, ' - ')"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="State"/>
+                                                            <java.lang.String value="./A/text()"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="Capital"/>
+                                                            <java.lang.String value="substring-before(substring-after(./A/@title, ' - '), ',')"/>
+                                                            <java.lang.Boolean value="true"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                                            </xmlizable>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property localizedName="Display referer" name="displayReferer">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Retourner la table" name="flipTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property localizedName="Est active" name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property localizedName="Nom" name="name">
+                            <java.lang.String value="capitals"/>
+                        </property>
+                        <property localizedName="Tag name" name="tagName">
+                            <java.lang.String value="capitalsList"/>
+                        </property>
+                        <property localizedName="XPath" name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;States and Capitals&quot;)]/following-sibling::TABLE[1]"/>
+                        </property>
+                    </extractionrule>
+                </screenclass>
+            </screenclass>
+        </connector>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SqlConnector" default="false" priority="0" version="4.4.2">
+            <property localizedName="Classe Java de billing" name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Commentaire" name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Transaction d'arrêt" name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Authentification Carioca" name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Driver" name="jdbcDriverClassName">
+                <java.lang.String value="org.hsqldb.jdbcDriver"/>
+            </property>
+            <property localizedName="URL de la base de données" name="jdbcURL">
+                <java.lang.String value="jdbc:hsqldb:file:./databases/databaseTemplate"/>
+            </property>
+            <property localizedName="Identifiant utilisateur" name="jdbcUserName">
+                <java.lang.String value="sa"/>
+            </property>
+            <property localizedName="Mot de passe" name="jdbcUserPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Nom" name="name">
+                <java.lang.String value="databaseConnector"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="true" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nombre optionnel maximum de résultats" name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="defaultTransactionToBeConfigured"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Requète SQL" name="sqlQuery">
+                    <java.lang.String value="SELECT * &#13;\nFROM {tableName};"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="tableName"/>
+                                    <java.lang.String value="tableName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Groupage xml" name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Génération xml" name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="SelectIdVilleResponse">
+
+    <xsd:all>
+
+        <xsd:element name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="cty_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="lnd_idt" type="xsd:integer"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nombre optionnel maximum de résultats" name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="InsertCapital"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Requète SQL" name="sqlQuery">
+                    <java.lang.String value="INSERT INTO capitals (capital_name, state_name, state_abbreviation)&#13;\nVALUES ('{capitalName}', '{stateName}', '{stateAbbreviation}');"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="capitalName"/>
+                                    <java.lang.String value="capitalName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="stateName"/>
+                                    <java.lang.String value="stateName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="stateAbbreviation"/>
+                                    <java.lang.String value="stateAbbreviation"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Groupage xml" name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Génération xml" name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nombre optionnel maximum de résultats" name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="InsertCity"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Requète SQL" name="sqlQuery">
+                    <java.lang.String value="INSERT INTO cities (city_name, department_name, department_number, administrative_area_name)&#13;\nVALUES ('{cityName}', '{departmentName}', {departmentNumber}, '{administrativeAreaName}');"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="cityName"/>
+                                    <java.lang.String value="cityName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="departmentName"/>
+                                    <java.lang.String value="departmentName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="departmentNumber"/>
+                                    <java.lang.String value="departmentNumber"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="administrativeAreaName"/>
+                                    <java.lang.String value="administrativeAreaName"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Groupage xml" name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Génération xml" name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nombre optionnel maximum de résultats" name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="SelectAllCapitals"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Requète SQL" name="sqlQuery">
+                    <java.lang.String value="SELECT *&#13;\nFROM capitals;"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property localizedName="Groupage xml" name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Génération xml" name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="databaseConnector__SelectAllCapitalsResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="CAPITAL_NAME" type="xsd:string"/>
+
+                            <xsd:attribute name="STATE_NAME" type="xsd:string"/>
+
+                            <xsd:attribute name="STATE_ABBREVIATION" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.4.2">
+                <property localizedName="Inclure le groupe de certificat" name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Appeler le biller" name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Cache client de la réponse" name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Jeu de caractères" name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property localizedName="Attributs XML à inclure" name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property localizedName="Nombre optionnel maximum de résultats" name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="SelectAllCities"/>
+                </property>
+                <property localizedName="Méthode publique" name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Délai de réponse" name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property localizedName="Feuille de style" name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property localizedName="Requète SQL" name="sqlQuery">
+                    <java.lang.String value="SELECT *&#13;\nFROM cities;"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property localizedName="Groupage xml" name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Génération xml" name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+        </connector>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="4.4.2">
+            <property localizedName="Automatique" name="autoStart">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Appeler le biller" name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Cache client de la réponse" name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Commentaire" name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Jeu de caractères" name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property localizedName="Nom" name="name">
+                <java.lang.String value="AddFrPrefecturesSequence"/>
+            </property>
+            <property localizedName="Instructions" name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1232548007967"/>
+                                <java.lang.Long value="1232548400090"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property localizedName="Méthode publique" name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Délai de réponse" name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property localizedName="Feuille de style" name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <property localizedName="Date de démarrage" name="startTime">
+                <java.lang.Long value="0"/>
+            </property>
+            <property localizedName="Variables" name="variablesDefinition">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                </xmlizable>
+            </property>
+            <wsdltype/>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886409" priority="1232548007967" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Connector" name="connectorName">
+                    <java.lang.String value="Connecteur_HTML"/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Call_Transaction_ListFrCities"/>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Project" name="projectName">
+                    <java.lang.String value="sequenceProjectSample"/>
+                </property>
+                <property localizedName="Transaction" name="transactionName">
+                    <java.lang.String value="ListFrCities"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<?xml version="1.0" encoding="ISO-8859-1"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="sequenceProjectTemplate" targetNamespace="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate">
+
+
+
+    <types>
+
+
+
+        <xsd:schema elementFormDefault="qualified" targetNamespace="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate">
+
+        <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/"/>
+
+            <xsd:complexType name="Default transactionResponse">
+
+<xsd:sequence>
+
+<xsd:group maxOccurs="1" minOccurs="0" ref="tns:Connecteur_HTMLTypes"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:group name="Connecteur_HTMLTypes">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" ref="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:prefecturesListTableType"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+
+</xsd:group>
+
+<xsd:complexType name="row_prefecturesListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Num" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Departement" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Prefecture" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Region_administrative" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="capitalsListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_capitalsListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+<xsd:complexType name="row_capitalsListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Abbreviation" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="State" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Capital" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="prefecturesListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_prefecturesListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+
+
+<xsd:element name="ListFrCities">
+
+<xsd:complexType>
+
+<xsd:annotation>
+
+<xsd:documentation/>
+
+</xsd:annotation>
+
+<xsd:sequence>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:element name="ListFrCitiesResponse">
+
+<xsd:complexType>
+
+<xsd:sequence>
+
+<xsd:element name="response" type="tns:ListFrCitiesData"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:complexType name="ListFrCitiesData">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="prefecturesList" type="tns:prefecturesListTableType"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+
+
+<xsd:element name="ListUSCities">
+
+<xsd:complexType>
+
+<xsd:annotation>
+
+<xsd:documentation/>
+
+</xsd:annotation>
+
+<xsd:sequence>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:element name="ListUSCitiesResponse">
+
+<xsd:complexType>
+
+<xsd:sequence>
+
+<xsd:element name="response" type="tns:ListUSCitiesData"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:complexType name="ListUSCitiesData">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="capitalsList" type="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+
+
+<xsd:complexType name="ConvertigoError">
+
+<xsd:sequence>
+
+<xsd:element name="context" type="tns:ConvertigoErrorContext"/>
+
+<xsd:element name="exception" type="xsd:string"/>
+
+<xsd:element name="message" type="xsd:string"/>
+
+<xsd:element name="stacktrace" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="ConvertigoErrorContext">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="tns:ConvertigoErrorContextVariable"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="ConvertigoErrorContextVariable">
+
+<xsd:attribute name="name" type="xsd:string"/>
+
+<xsd:attribute name="value" type="xsd:string"/>
+
+</xsd:complexType>
+
+
+
+        <xsd:element name="targetRequestable" type="tns:ListFrCitiesResponse"/></xsd:schema>
+
+
+
+    </types>
+
+    <message name="ListFrCitiesSoapRequest">
+
+        <part element="tns:ListFrCities" name="parameters"/>
+
+    </message>
+
+    <message name="ListFrCitiesSoapResponse">
+
+        <part element="tns:ListFrCitiesResponse" name="parameters"/>
+
+    </message>
+
+
+
+    <message name="ListUSCitiesSoapRequest">
+
+        <part element="tns:ListUSCities" name="parameters"/>
+
+    </message>
+
+    <message name="ListUSCitiesSoapResponse">
+
+        <part element="tns:ListUSCitiesResponse" name="parameters"/>
+
+    </message>
+
+
+
+    <portType name="sequenceProjectTemplateSoapPortType">
+
+        <operation name="ListFrCities">
+
+            <input message="tns:ListFrCitiesSoapRequest"/>
+
+            <output message="tns:ListFrCitiesSoapResponse"/>
+
+        </operation>
+
+        <operation name="ListUSCities">
+
+            <input message="tns:ListUSCitiesSoapRequest"/>
+
+            <output message="tns:ListUSCitiesSoapResponse"/>
+
+        </operation>
+
+    </portType>
+
+
+
+    <binding name="sequenceProjectTemplateSoapBinding" type="tns:sequenceProjectTemplateSoapPortType">
+
+
+
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <operation name="ListFrCities">
+
+            <soap:operation soapAction="sequenceProjectTemplate?ListFrCities"/>
+
+            <input>
+
+                <soap:body use="literal"/>
+
+            </input>
+
+            <output>
+
+                <soap:body use="literal"/>
+
+            </output>
+
+        </operation>
+
+        <operation name="ListUSCities">
+
+            <soap:operation soapAction="sequenceProjectTemplate?ListUSCities"/>
+
+            <input>
+
+                <soap:body use="literal"/>
+
+            </input>
+
+            <output>
+
+                <soap:body use="literal"/>
+
+            </output>
+
+        </operation>
+
+    </binding>
+
+    <service name="sequenceProjectTemplate">
+
+        <port binding="tns:sequenceProjectTemplateSoapBinding" name="sequenceProjectTemplateSoap">
+
+            <soap:address location=""/>
+
+        </port>
+
+    </service>
+
+
+
+</definitions>
+
+]]></wsdltype>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1233158886347" priority="1232548400090" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Max. iterations" name="condition">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="ForEachRow"/>
+                </property>
+                <property localizedName="Steps" name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1232548417652"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Source" name="sourceDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <java.lang.String value="1232548007967"/>
+                            <java.lang.String value="./prefecturesList/row"/>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886378" priority="1232548417652" version="4.4.2">
+                    <property localizedName="Commentaire" name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property localizedName="Connector" name="connectorName">
+                        <java.lang.String value="databaseConnector"/>
+                    </property>
+                    <property localizedName="Est active" name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property localizedName="Nom" name="name">
+                        <java.lang.String value="Call_TransactionInsertCity"/>
+                    </property>
+                    <property localizedName="Output" name="output">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property localizedName="Project" name="projectName">
+                        <java.lang.String value="sequenceProjectSample"/>
+                    </property>
+                    <property localizedName="Transaction" name="transactionName">
+                        <java.lang.String value="InsertCity"/>
+                    </property>
+                    <property localizedName="Variables" name="variablesDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="cityName"/>
+                                        <java.lang.String value="cityName"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232548400090"/>
+                                                <java.lang.String value="./Prefecture"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="departmentName"/>
+                                        <java.lang.String value="departmentName"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232548400090"/>
+                                                <java.lang.String value="./Departement"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="departmentNumber"/>
+                                        <java.lang.String value="departmentNumber"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232548400090"/>
+                                                <java.lang.String value="./Num"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="administrativeAreaName"/>
+                                        <java.lang.String value="administrativeAreaName"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232548400090"/>
+                                                <java.lang.String value="./Region_administrative"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <wsdltype/>
+                </step>
+            </step>
+        </sequence>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="4.4.2">
+            <property localizedName="Automatique" name="autoStart">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Appeler le biller" name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Cache client de la réponse" name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Commentaire" name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Jeu de caractères" name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property localizedName="Nom" name="name">
+                <java.lang.String value="AddUSCapitalsSequence"/>
+            </property>
+            <property localizedName="Instructions" name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1232548007967"/>
+                                <java.lang.Long value="1232548400090"/>
+                                <java.lang.Long value="1232966906836"/>
+                                <java.lang.Long value="1232966906867"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property localizedName="Méthode publique" name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Délai de réponse" name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property localizedName="Feuille de style" name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <property localizedName="Date de démarrage" name="startTime">
+                <java.lang.Long value="0"/>
+            </property>
+            <property localizedName="Variables" name="variablesDefinition">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                </xmlizable>
+            </property>
+            <wsdltype/>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886519" priority="1232966906836" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Connector" name="connectorName">
+                    <java.lang.String value="Connecteur_HTML"/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Call_Transaction_ListUSCities"/>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Project" name="projectName">
+                    <java.lang.String value="sequenceProjectSample"/>
+                </property>
+                <property localizedName="Transaction" name="transactionName">
+                    <java.lang.String value="ListUSCities"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<?xml version="1.0" encoding="ISO-8859-1"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="sequenceProjectTemplate" targetNamespace="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate">
+
+
+
+    <types>
+
+
+
+        <xsd:schema elementFormDefault="qualified" targetNamespace="http://twinsoft.com/convertigo/projects/sequenceProjectTemplate">
+
+        <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/"/>
+
+            <xsd:complexType name="Default transactionResponse">
+
+<xsd:sequence>
+
+<xsd:group maxOccurs="1" minOccurs="0" ref="tns:Connecteur_HTMLTypes"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:group name="Connecteur_HTMLTypes">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" ref="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:prefecturesListTableType"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+
+</xsd:group>
+
+<xsd:complexType name="row_prefecturesListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Num" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Departement" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Prefecture" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Region_administrative" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="capitalsListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_capitalsListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+<xsd:complexType name="row_capitalsListRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="Abbreviation" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="State" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="Capital" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="prefecturesListTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="row" type="tns:row_prefecturesListRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+
+
+<xsd:element name="ListFrCities">
+
+<xsd:complexType>
+
+<xsd:annotation>
+
+<xsd:documentation/>
+
+</xsd:annotation>
+
+<xsd:sequence>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:element name="ListFrCitiesResponse">
+
+<xsd:complexType>
+
+<xsd:sequence>
+
+<xsd:element name="response" type="tns:ListFrCitiesData"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:complexType name="ListFrCitiesData">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="prefecturesList" type="tns:prefecturesListTableType"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+
+
+<xsd:element name="ListUSCities">
+
+<xsd:complexType>
+
+<xsd:annotation>
+
+<xsd:documentation/>
+
+</xsd:annotation>
+
+<xsd:sequence>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:element name="ListUSCitiesResponse">
+
+<xsd:complexType>
+
+<xsd:sequence>
+
+<xsd:element name="response" type="tns:ListUSCitiesData"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:element>
+
+<xsd:complexType name="ListUSCitiesData">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="capitalsList" type="tns:capitalsListTableType"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+
+
+<xsd:complexType name="ConvertigoError">
+
+<xsd:sequence>
+
+<xsd:element name="context" type="tns:ConvertigoErrorContext"/>
+
+<xsd:element name="exception" type="xsd:string"/>
+
+<xsd:element name="message" type="xsd:string"/>
+
+<xsd:element name="stacktrace" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="ConvertigoErrorContext">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="tns:ConvertigoErrorContextVariable"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="ConvertigoErrorContextVariable">
+
+<xsd:attribute name="name" type="xsd:string"/>
+
+<xsd:attribute name="value" type="xsd:string"/>
+
+</xsd:complexType>
+
+
+
+        <xsd:element name="targetRequestable" type="tns:ListUSCitiesResponse"/></xsd:schema>
+
+
+
+    </types>
+
+    <message name="ListFrCitiesSoapRequest">
+
+        <part element="tns:ListFrCities" name="parameters"/>
+
+    </message>
+
+    <message name="ListFrCitiesSoapResponse">
+
+        <part element="tns:ListFrCitiesResponse" name="parameters"/>
+
+    </message>
+
+
+
+    <message name="ListUSCitiesSoapRequest">
+
+        <part element="tns:ListUSCities" name="parameters"/>
+
+    </message>
+
+    <message name="ListUSCitiesSoapResponse">
+
+        <part element="tns:ListUSCitiesResponse" name="parameters"/>
+
+    </message>
+
+
+
+    <portType name="sequenceProjectTemplateSoapPortType">
+
+        <operation name="ListFrCities">
+
+            <input message="tns:ListFrCitiesSoapRequest"/>
+
+            <output message="tns:ListFrCitiesSoapResponse"/>
+
+        </operation>
+
+        <operation name="ListUSCities">
+
+            <input message="tns:ListUSCitiesSoapRequest"/>
+
+            <output message="tns:ListUSCitiesSoapResponse"/>
+
+        </operation>
+
+    </portType>
+
+
+
+    <binding name="sequenceProjectTemplateSoapBinding" type="tns:sequenceProjectTemplateSoapPortType">
+
+
+
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <operation name="ListFrCities">
+
+            <soap:operation soapAction="sequenceProjectTemplate?ListFrCities"/>
+
+            <input>
+
+                <soap:body use="literal"/>
+
+            </input>
+
+            <output>
+
+                <soap:body use="literal"/>
+
+            </output>
+
+        </operation>
+
+        <operation name="ListUSCities">
+
+            <soap:operation soapAction="sequenceProjectTemplate?ListUSCities"/>
+
+            <input>
+
+                <soap:body use="literal"/>
+
+            </input>
+
+            <output>
+
+                <soap:body use="literal"/>
+
+            </output>
+
+        </operation>
+
+    </binding>
+
+    <service name="sequenceProjectTemplate">
+
+        <port binding="tns:sequenceProjectTemplateSoapBinding" name="sequenceProjectTemplateSoap">
+
+            <soap:address location=""/>
+
+        </port>
+
+    </service>
+
+
+
+</definitions>
+
+]]></wsdltype>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1233158886534" priority="1232966906867" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Max. iterations" name="condition">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="ForEachRow"/>
+                </property>
+                <property localizedName="Steps" name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1232548417652"/>
+                                    <java.lang.Long value="1232966906898"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property localizedName="Source" name="sourceDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <java.lang.String value="1232966906836"/>
+                            <java.lang.String value="./capitalsList/row"/>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886550" priority="1232966906898" version="4.4.2">
+                    <property localizedName="Commentaire" name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property localizedName="Connector" name="connectorName">
+                        <java.lang.String value="databaseConnector"/>
+                    </property>
+                    <property localizedName="Est active" name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property localizedName="Nom" name="name">
+                        <java.lang.String value="Call_TransactionInsertCapital"/>
+                    </property>
+                    <property localizedName="Output" name="output">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property localizedName="Project" name="projectName">
+                        <java.lang.String value="sequenceProjectSample"/>
+                    </property>
+                    <property localizedName="Transaction" name="transactionName">
+                        <java.lang.String value="InsertCapital"/>
+                    </property>
+                    <property localizedName="Variables" name="variablesDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="capitalName"/>
+                                        <java.lang.String value="capitalName"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232966906867"/>
+                                                <java.lang.String value="./Capital"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="stateName"/>
+                                        <java.lang.String value="stateName"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232966906867"/>
+                                                <java.lang.String value="./State"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.String value="stateAbbreviation"/>
+                                        <java.lang.String value="stateAbbreviation"/>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="1232966906867"/>
+                                                <java.lang.String value="./Abbreviation"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                        <java.lang.String value=""/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <wsdltype/>
+                </step>
+            </step>
+        </sequence>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="4.4.2">
+            <property localizedName="Automatique" name="autoStart">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Appeler le biller" name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Cache client de la réponse" name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Commentaire" name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Jeu de caractères" name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property localizedName="Nom" name="name">
+                <java.lang.String value="GetAllRows"/>
+            </property>
+            <property localizedName="Instructions" name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1222867924312"/>
+                                <java.lang.Long value="1232967615434"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property localizedName="Méthode publique" name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property localizedName="Durée de vie de la réponse" name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property localizedName="Délai de réponse" name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property localizedName="Feuille de style" name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <property localizedName="Date de démarrage" name="startTime">
+                <java.lang.Long value="0"/>
+            </property>
+            <property localizedName="Variables" name="variablesDefinition">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="tableName"/>
+                                <java.lang.String value="nom de la table"/>
+                                <java.lang.String value=""/>
+                                <java.lang.Boolean value="true"/>
+                                <java.lang.Boolean value="false"/>
+                                <java.lang.Boolean value="false"/>
+                                <java.lang.Boolean value="true"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <wsdltype/>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886456" priority="1222867924312" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Connector" name="connectorName">
+                    <java.lang.String value="databaseConnector"/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Call_Transaction_SelectAllCities"/>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Project" name="projectName">
+                    <java.lang.String value="sequenceProjectSample"/>
+                </property>
+                <property localizedName="Transaction" name="transactionName">
+                    <java.lang.String value="SelectAllCities"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1233158886441" priority="1232967615434" version="4.4.2">
+                <property localizedName="Commentaire" name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property localizedName="Connector" name="connectorName">
+                    <java.lang.String value="databaseConnector"/>
+                </property>
+                <property localizedName="Est active" name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Nom" name="name">
+                    <java.lang.String value="Call_Transaction_SelectAllCapitals"/>
+                </property>
+                <property localizedName="Output" name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property localizedName="Project" name="projectName">
+                    <java.lang.String value="sequenceProjectSample"/>
+                </property>
+                <property localizedName="Transaction" name="transactionName">
+                    <java.lang.String value="SelectAllCapitals"/>
+                </property>
+                <property localizedName="Variables" name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+            </step>
+        </sequence>
+    </project>
+</convertigo>

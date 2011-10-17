@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_documentation_CWI" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sample_documentation_CWI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI"><xsd:include schemaLocation="sample_documentation_CWI.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GoogleConnector__searchGoogleImageResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogleImageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleWithLimitResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleImageRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogleImage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleWithLimitRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimit">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CWI_ns:GoogleConnector__searchGoogle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_documentation_CWIPortType">
+    <wsdl:operation name="GoogleConnector__searchGoogleWithLimit">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogle">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogleImage">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleImageRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CWI_ns:GoogleConnector__searchGoogleImageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_documentation_CWISOAPBinding" type="sample_documentation_CWI_ns:sample_documentation_CWIPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GoogleConnector__searchGoogleWithLimit">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CWI?GoogleConnector__searchGoogleWithLimit"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogle">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CWI?GoogleConnector__searchGoogle"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogleImage">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_documentation_CWI?GoogleConnector__searchGoogleImage"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_documentation_CWI">
+    <wsdl:port name="sample_documentation_CWISOAP" binding="sample_documentation_CWI_ns:sample_documentation_CWISOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_documentation_CWI/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

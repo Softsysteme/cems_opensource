@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleMobileRssNYTimes" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileRssNYTimes_ns="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes"><xsd:include schemaLocation="sampleMobileRssNYTimes.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sampleMobileRssNYTimesPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sampleMobileRssNYTimesSOAPBinding" type="sampleMobileRssNYTimes_ns:sampleMobileRssNYTimesPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sampleMobileRssNYTimes">
+    <wsdl:port name="sampleMobileRssNYTimesSOAP" binding="sampleMobileRssNYTimes_ns:sampleMobileRssNYTimesSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleMobileRssNYTimes/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

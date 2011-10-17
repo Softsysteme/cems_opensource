@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_refManual_variables_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_variables" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables">
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_refManual_variables_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sample_refManual_variables_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleConnector__Default_HTML_Transaction" type="sample_refManual_variables_ns:GoogleConnector__Default_HTML_TransactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__Default_HTML_TransactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__Default_HTML_TransactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__Default_HTML_TransactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__Default_HTML_TransactionResponseData"/>
+<xsd:element name="GoogleConnector__multiSearchGoogle" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__multiSearchGoogleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__multiSearchGoogleRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="keywords">
+<xsd:annotation>
+<xsd:appinfo>Keywords to be searched</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__multiSearchGoogleResponseData"/>
+<xsd:element name="GoogleConnector__searchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__searchGoogleHTTPResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__searchGoogleHTTPRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="keyword" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>Keyword to be searched</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__searchGoogleHTTPResponseData"/>
+<xsd:element name="testLogin" type="sample_refManual_variables_ns:testLoginRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="testLoginResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:testLoginResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="testLoginRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="testLoginResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="sequence" type="sample_refManual_variables_ns:sequence1303310653147StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="sequence" type="sample_refManual_variables_ns:sequence1303310959189StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="sequence1303310959189StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_refManual_variables_ns:userLoginWithDefaultResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="sequence1303310653147StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_refManual_variables_ns:userLoginResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="testLoginWithValues" type="sample_refManual_variables_ns:testLoginWithValuesRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="testLoginWithValuesResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:testLoginWithValuesResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="testLoginWithValuesRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="testLoginWithValuesResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="sequence" type="sample_refManual_variables_ns:sequence1303311026958StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="firstname" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="lastname" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="sequence" type="sample_refManual_variables_ns:sequence1303311027005StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="sequence1303311026958StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_refManual_variables_ns:userLoginResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="sequence1303311027005StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_refManual_variables_ns:userLoginWithDefaultResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="userLogin" type="sample_refManual_variables_ns:userLoginRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="userLoginResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:userLoginResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="userLoginRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="firstNames">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="lastName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="userLoginResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="login" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="error" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="userLoginWithDefault" type="sample_refManual_variables_ns:userLoginWithDefaultRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="userLoginWithDefaultResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:userLoginWithDefaultResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="userLoginWithDefaultRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="firstNames">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="lastName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="userLoginWithDefaultResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="login" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleConnector__multiSearchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__multiSearchGoogleHTTPResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="keywords">
+<xsd:annotation>
+<xsd:appinfo>Keywords to be searched</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+<xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleConnector__searchYahoo" type="sample_refManual_variables_ns:GoogleConnector__searchYahooRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__searchYahooResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchYahooResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__searchYahooRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="keyword" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__searchYahooResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+<xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleConnector__testVariablesVisibility" type="sample_refManual_variables_ns:GoogleConnector__testVariablesVisibilityRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__testVariablesVisibilityResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__testVariablesVisibilityResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__testVariablesVisibilityRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="var" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var1" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var2" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var3" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var4" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var5" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var6" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var7" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var8" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var9" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var10" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var11" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var12" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var13" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var14" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var15" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="var16" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__testVariablesVisibilityResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+<xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

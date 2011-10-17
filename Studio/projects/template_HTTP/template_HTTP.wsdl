@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_HTTP" targetNamespace="http://www.convertigo.com/convertigo/projects/template_HTTP" xmlns:template_HTTP_ns="http://www.convertigo.com/convertigo/projects/template_HTTP" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_HTTP"><xsd:include schemaLocation="template_HTTP.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="template_HTTPPortType">
+  </wsdl:portType>
+  <wsdl:binding name="template_HTTPSOAPBinding" type="template_HTTP_ns:template_HTTPPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="template_HTTP">
+    <wsdl:port name="template_HTTPSOAP" binding="template_HTTP_ns:template_HTTPSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_HTTP/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,27 @@
+body {
+	color: black;
+	font-size: 10pt;
+	font-family: verdana,lucida,arial,helvetica;
+	background-color: #ffffff
+}
+p {
+	font-family: verdana,lucida,arial,helvetica;
+	font-size: 10pt;
+}
+.small {
+	font-size: 8pt;
+}
+pre {
+	font-size: 8pt;
+}
+td {
+	color: black;
+	font-size: 12pt;
+	font-family: verdana,lucida,arial,helvetica;
+}
+.title {
+	background-color: #C7D4EF;
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+}

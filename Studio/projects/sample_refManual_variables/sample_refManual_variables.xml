@@ -1,0 +1,2834 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<convertigo beans="5.5.0.m004" engine="5.5.0" exported="16 juin 2011 15:11" studio="5.5.0" version="5.5.0_alpha">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.5.0.m004">
+        <property name="browserDefinitions">
+            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                <com.twinsoft.convertigo.beans.common.XMLVector/>
+            </xmlizable>
+        </property>
+        <property name="comment">
+            <java.lang.String value="Mashup Sequencer project"/>
+        </property>
+        <property name="httpSessionTimeout">
+            <java.lang.Integer value="300"/>
+        </property>
+        <property name="name">
+            <java.lang.String value="sample_refManual_variables"/>
+        </property>
+        <property name="schemaInline">
+            <java.lang.Boolean value="true"/>
+        </property>
+        <property name="wsdlStyle">
+            <java.lang.String value="DOC/LITERAL"/>
+        </property>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="5.5.0.m004">
+            <property name="baseDir">
+                <java.lang.String value="/"/>
+            </property>
+            <property name="basicPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property name="basicUser">
+                <java.lang.String value=""/>
+            </property>
+            <property name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="httpHeaderForward">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                </xmlizable>
+            </property>
+            <property name="https">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="ignoreEmptyAttributes">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="GoogleConnector"/>
+            </property>
+            <property name="parseMode">
+                <java.lang.String value="4.5"/>
+            </property>
+            <property name="port">
+                <java.lang.Integer value="80"/>
+            </property>
+            <property name="proxyPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property name="proxyPort">
+                <java.lang.Integer value="80"/>
+            </property>
+            <property name="proxyServer">
+                <java.lang.String value=""/>
+            </property>
+            <property name="proxyUser">
+                <java.lang.String value=""/>
+            </property>
+            <property name="server">
+                <java.lang.String value="www.google.com"/>
+            </property>
+            <property name="trustAllServerCertificates">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Default_HTML_Transaction"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="stateFull">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="10000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="GoogleConnector__Default_HTML_TransactionResponse">
+
+<xsd:sequence>
+
+<xsd:group maxOccurs="1" minOccurs="0" ref="p_ns:GoogleConnectorTypes"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:group name="GoogleConnectorTypes">
+
+<xsd:sequence>
+
+<xsd:element maxOccurs="1" minOccurs="0" name="error" type="p_ns:ConvertigoError"/>
+
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="p_ns:listResultsTableType"/>
+
+</xsd:sequence>
+
+</xsd:group>
+
+<xsd:complexType name="resultItem_listResultsRowType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="title" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="url" type="xsd:string"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+<xsd:complexType name="listResultsTableType">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="resultItem" type="p_ns:resultItem_listResultsRowType"/>
+
+</xsd:sequence>
+
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="multiSearchGoogle"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1259847541860"/>
+                                    <java.lang.Long value="1304693401079"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="1"/>
+                </property>
+                <property name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.5.0.m004">
+                    <property name="browser">
+                        <java.lang.String value="*"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="results_list"/>
+                    </property>
+                    <property name="url">
+                        <java.lang.String value="results.xsl"/>
+                    </property>
+                </sheet>
+                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="TransactionStarted"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onTransactionStarted"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1304933026452"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1304933026452" priority="1304933026452" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="var keyword = &quot;&quot;;&#13;&#10;if (keywords.length != 0) {&#13;&#10;&#9;keyword = keywords[0];&#13;&#10;&#9;for (i = 1 ; i &lt; keywords.length ; i++) {&#13;&#10;&#9;&#9;keyword += &quot; &quot; + keywords[i];&#13;&#10;&#9;}&#13;&#10;}"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="processingKeywords"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScExitHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="accumulate"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Exit"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onGoogleResultPageCurrentExit"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="GoogleResultPageCurrent"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1245406255201"/>
+                                        <java.lang.Long value="1304693359393"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1304693359393" priority="1304693359393" version="5.5.0.m004">
+                        <property name="action">
+                            <java.lang.String value="click"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="clickNext"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="60000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                                    </classname>
+                                    <count>
+                                        <java.lang.Integer value="1"/>
+                                    </count>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//A[@class=&quot;pn&quot;]/SPAN[contains(text(),&quot;Next&quot;)]'"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="redetect"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Entry"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onGoogleFRSearchPageEntry"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="GoogleFRSearchPage"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1245405427823"/>
+                                        <java.lang.Long value="1304693359406"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1304693359406" priority="1304693359406" version="5.5.0.m004">
+                        <property name="action">
+                            <java.lang.String value="click"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="clickLinkGoogleCom"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="60000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                                    </classname>
+                                    <count>
+                                        <java.lang.Integer value="1"/>
+                                    </count>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//A[contains(text(),&quot;Google.com in English&quot;)]'"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="redetect"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Entry"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onGoogleComSearchPageEntry"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="GoogleComSearchPage"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1304587495871"/>
+                                        <java.lang.Long value="1304587495874"/>
+                                        <java.lang.Long value="1304693359411"/>
+                                        <java.lang.Long value="1304693359414"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1304693359411" priority="1304693359411" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="keyword"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="setValue_keyword"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="0"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.WaitTimeTrigger"/>
+                                    </classname>
+                                    <dodirty>
+                                        <java.lang.String value="false"/>
+                                    </dodirty>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="uiEvent">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//INPUT[@name=&quot;q&quot;]'"/>
+                        </property>
+                    </statement>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1304693359414" priority="1304693359414" version="5.5.0.m004">
+                        <property name="action">
+                            <java.lang.String value="click"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="clickSearchButton"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="60000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                                    </classname>
+                                    <count>
+                                        <java.lang.Integer value="1"/>
+                                    </count>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//INPUT[@name=&quot;btnG&quot; and @type=&quot;submit&quot;]'"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="redetect"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Entry"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onGoogleUKSearchPageEntry"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="GoogleUKSearchPage"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1265131123727"/>
+                                        <java.lang.Long value="1304693359424"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1304693359424" priority="1304693359424" version="5.5.0.m004">
+                        <property name="action">
+                            <java.lang.String value="click"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="clickLinkGoogleCom"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="60000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                                    </classname>
+                                    <count>
+                                        <java.lang.Integer value="1"/>
+                                    </count>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//A[contains(text(),&quot;Go to Google.com&quot;)]'"/>
+                        </property>
+                    </statement>
+                </statement>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1304693401079" priority="1304693401079" version="5.5.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="Keywords to be searched"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="keywords"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="convertigo"/>
+                                <java.lang.String value="cliplet"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="multiSearchGoogleHTTP"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303403061162"/>
+                                    <java.lang.Long value="1303404833331"/>
+                                    <java.lang.Long value="1304693270575"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="search"/>
+                </property>
+                <property name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1304693270575" priority="1304693270575" version="5.5.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="Keywords to be searched"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="q"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="keywords"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="convertigo"/>
+                                <java.lang.String value="cliplet"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="searchGoogleHTTP"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303403061162"/>
+                                    <java.lang.Long value="1303404833331"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="search"/>
+                </property>
+                <property name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303404833331" priority="1303404833331" version="5.5.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="Keyword to be searched"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="q"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="keyword"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <java.lang.String value="convertigo"/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="searchYahoo"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303482953456"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="stateFull">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="trigger">
+                    <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                        <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            <timeout>
+                                <java.lang.Long value="60000"/>
+                            </timeout>
+                            <classname>
+                                <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                            </classname>
+                            <count>
+                                <java.lang.Integer value="1"/>
+                            </count>
+                        </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                    </xmlizable>
+                </property>
+                <wsdltype/>
+                <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="redetect"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Entry"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onGoogleComSearchPageEntry"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="GoogleComSearchPage"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303482015185"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.HTTPStatement" newPriority="1303482015185" priority="1303482015185" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="formName">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="headers">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </property>
+                        <property name="host">
+                            <java.lang.String value="fr.search.yahoo.com"/>
+                        </property>
+                        <property name="httpVersion">
+                            <java.lang.String value="HTTP/1.1"/>
+                        </property>
+                        <property name="https">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="methodType">
+                            <java.lang.Integer value="2"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="searchKeywordWithYahoo"/>
+                        </property>
+                        <property name="orderedVariables">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1303482279494"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="port">
+                            <java.lang.Integer value="80"/>
+                        </property>
+                        <property name="requestUri">
+                            <java.lang.String value="&quot;/search&quot;"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="60000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
+                                    </classname>
+                                    <count>
+                                        <java.lang.Integer value="1"/>
+                                    </count>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <variable classname="com.twinsoft.convertigo.beans.variables.HttpStatementVariable" newPriority="1303482279494" priority="1303482279494" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="description">
+                                <java.lang.String value="Keyword to send to Yahoo"/>
+                            </property>
+                            <property name="httpMethod">
+                                <java.lang.String value="GET"/>
+                            </property>
+                            <property name="httpName">
+                                <java.lang.String value="p"/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="keyword"/>
+                            </property>
+                            <property isNull="false" name="value">
+                                <java.lang.String value="Orsay"/>
+                            </property>
+                            <property name="visibility">
+                                <java.lang.Integer value="0"/>
+                            </property>
+                        </variable>
+                    </statement>
+                </statement>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303482953456" priority="1303482953456" version="5.5.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="keyword"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <java.lang.String value="Convertigo"/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Default_screen_class"/>
+                </property>
+                <property name="orderedCriterias">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="orderedExtractionRules">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="googleWebPages"/>
+                    </property>
+                    <property name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1304932714011"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714011" priority="1304932714011" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Exists_node_at____B__class__gb1__and_contains_text____Web____"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//A[@class=&quot;gbzt gbz0l gbp1&quot; and @id=&quot;gb_1&quot;]//SPAN[contains(text(),&quot;Web&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="GoogleComSearchPage"/>
+                        </property>
+                        <property name="orderedCriterias">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1304932714011"/>
+                                            <java.lang.Long value="1304932714015"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="orderedExtractionRules">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714015" priority="1304932714015" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="XPath"/>
+                            </property>
+                            <property name="reverseResult">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="xpath">
+                                <java.lang.String value="//FORM[@name=&quot;f&quot;]"/>
+                            </property>
+                        </criteria>
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="GoogleFRSearchPage"/>
+                            </property>
+                            <property name="orderedCriterias">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714011"/>
+                                                <java.lang.Long value="1304932714015"/>
+                                                <java.lang.Long value="1304932714019"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <property name="orderedExtractionRules">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714019" priority="1304932714019" version="5.5.0.m004">
+                                <property name="comment">
+                                    <java.lang.String value=""/>
+                                </property>
+                                <property name="name">
+                                    <java.lang.String value="XPath"/>
+                                </property>
+                                <property name="reverseResult">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="xpath">
+                                    <java.lang.String value="//A[contains(text(),&quot;Google.com in English&quot;)]"/>
+                                </property>
+                            </criteria>
+                        </screenclass>
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="GoogleUKSearchPage"/>
+                            </property>
+                            <property name="orderedCriterias">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714011"/>
+                                                <java.lang.Long value="1304932714015"/>
+                                                <java.lang.Long value="1304932714023"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <property name="orderedExtractionRules">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714023" priority="1304932714023" version="5.5.0.m004">
+                                <property name="comment">
+                                    <java.lang.String value=""/>
+                                </property>
+                                <property name="name">
+                                    <java.lang.String value="XPath"/>
+                                </property>
+                                <property name="reverseResult">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="xpath">
+                                    <java.lang.String value="//A[contains(text(),&quot;Go to Google.com&quot;)]"/>
+                                </property>
+                            </criteria>
+                        </screenclass>
+                    </screenclass>
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="googleResultPageFinal"/>
+                        </property>
+                        <property name="orderedCriterias">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1304932714011"/>
+                                            <java.lang.Long value="1304932714027"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="orderedExtractionRules">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1304932714030"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714027" priority="1304932714027" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="XPath"/>
+                            </property>
+                            <property name="reverseResult">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="xpath">
+                                <java.lang.String value="//FORM[@id=&quot;tsf&quot; and @name=&quot;gs&quot; and @role=&quot;search&quot;]"/>
+                            </property>
+                        </criteria>
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLTable" newPriority="1304932714030" priority="1304932714030" version="5.5.0.m004">
+                            <property name="accumulateDataInSameTable">
+                                <java.lang.Boolean value="true"/>
+                            </property>
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="description">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.String value="resultItem"/>
+                                                <java.lang.String value=".//LI"/>
+                                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                                <java.lang.String value="title"/>
+                                                                <java.lang.String value=".//H3"/>
+                                                                <java.lang.Boolean value="true"/>
+                                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                        </xmlizable>
+                                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                                <java.lang.String value="url"/>
+                                                                <java.lang.String value=".//CITE"/>
+                                                                <java.lang.Boolean value="true"/>
+                                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                        </xmlizable>
+                                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                </xmlizable>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <property name="displayReferer">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="flipTable">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="isEnabled">
+                                <java.lang.Boolean value="true"/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="googleResults"/>
+                            </property>
+                            <property name="tagName">
+                                <java.lang.String value="listResults"/>
+                            </property>
+                            <property name="xpath">
+                                <java.lang.String value="//DIV[@id=&quot;ires&quot;]"/>
+                            </property>
+                        </extractionrule>
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="GoogleNoResultPage"/>
+                            </property>
+                            <property name="orderedCriterias">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714011"/>
+                                                <java.lang.Long value="1304932714027"/>
+                                                <java.lang.Long value="1304932714034"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <property name="orderedExtractionRules">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714030"/>
+                                                <java.lang.Long value="1304932714037"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714034" priority="1304932714034" version="5.5.0.m004">
+                                <property name="comment">
+                                    <java.lang.String value=""/>
+                                </property>
+                                <property name="name">
+                                    <java.lang.String value="XPath"/>
+                                </property>
+                                <property name="reverseResult">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="xpath">
+                                    <java.lang.String value="//DIV[@id=&quot;topstuff&quot;][//P/text()[2][contains(.,&quot;did not match any document&quot;)]]"/>
+                                </property>
+                            </criteria>
+                            <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1304932714037" priority="1304932714037" version="5.5.0.m004">
+                                <property name="comment">
+                                    <java.lang.String value=""/>
+                                </property>
+                                <property name="displayReferer">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="isEnabled">
+                                    <java.lang.Boolean value="true"/>
+                                </property>
+                                <property name="name">
+                                    <java.lang.String value="errorMessage"/>
+                                </property>
+                                <property name="recurse">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="tagName">
+                                    <java.lang.String value="errorMessage"/>
+                                </property>
+                                <property name="xpath">
+                                    <java.lang.String value="//DIV[@id=&quot;topstuff&quot;]//P[text()[2][contains(.,&quot;did not match any document&quot;)]]"/>
+                                </property>
+                            </extractionrule>
+                        </screenclass>
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="GoogleResultPageCurrent"/>
+                            </property>
+                            <property name="orderedCriterias">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714011"/>
+                                                <java.lang.Long value="1304932714027"/>
+                                                <java.lang.Long value="1304932714041"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <property name="orderedExtractionRules">
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                <java.lang.Long value="1304932714030"/>
+                                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                                        </xmlizable>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </property>
+                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1304932714041" priority="1304932714041" version="5.5.0.m004">
+                                <property name="comment">
+                                    <java.lang.String value=""/>
+                                </property>
+                                <property name="name">
+                                    <java.lang.String value="XPath"/>
+                                </property>
+                                <property name="reverseResult">
+                                    <java.lang.Boolean value="false"/>
+                                </property>
+                                <property name="xpath">
+                                    <java.lang.String value="//A[@class=&quot;pn&quot;]/SPAN[contains(text(),&quot;Next&quot;)]"/>
+                                </property>
+                            </criteria>
+                        </screenclass>
+                    </screenclass>
+                </screenclass>
+            </screenclass>
+        </connector>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <property name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="testLogin"/>
+            </property>
+            <property name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303310653147"/>
+                                <java.lang.Long value="1303310959189"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="orderedVariables">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <wsdltype/>
+            <step classname="com.twinsoft.convertigo.beans.steps.SequenceStep" newPriority="1303310653147" priority="1303310653147" version="5.5.0.m004">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="inheritTransactionCtx">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_userLogin"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_refManual_variables"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sequenceName">
+                    <java.lang.String value="userLogin"/>
+                </property>
+                <wsdltype/>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.SequenceStep" newPriority="1303310959189" priority="1303310959189" version="5.5.0.m004">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="inheritTransactionCtx">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_userLoginWithDefault"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_refManual_variables"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sequenceName">
+                    <java.lang.String value="userLoginWithDefault"/>
+                </property>
+                <wsdltype/>
+            </step>
+        </sequence>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <property name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="testLoginWithValues"/>
+            </property>
+            <property name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303310653147"/>
+                                <java.lang.Long value="1303310959189"/>
+                                <java.lang.Long value="1303311026958"/>
+                                <java.lang.Long value="1303311478425"/>
+                                <java.lang.Long value="1303311539328"/>
+                                <java.lang.Long value="1303311027005"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="orderedVariables">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <wsdltype/>
+            <step classname="com.twinsoft.convertigo.beans.steps.SequenceStep" newPriority="1303311026958" priority="1303311026958" version="5.5.0.m004">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="inheritTransactionCtx">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_userLogin"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303311075271"/>
+                                    <java.lang.Long value="1303311075302"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_refManual_variables"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sequenceName">
+                    <java.lang.String value="userLogin"/>
+                </property>
+                <wsdltype/>
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1303311075271" priority="1303311075271" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="lastName"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                        </xmlizable>
+                    </property>
+                    <property isNull="false" name="value">
+                        <java.lang.String value="Value"/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepMultiValuedVariable" newPriority="1303311075302" priority="1303311075302" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="firstNames"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                        </xmlizable>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="Fixed"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1303311478425" priority="1303311478425" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="New_Element"/>
+                </property>
+                <property name="nodeName">
+                    <java.lang.String value="firstname"/>
+                </property>
+                <property name="nodeText">
+                    <java.lang.String value="Node"/>
+                </property>
+                <property name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sourceDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1303311539328" priority="1303311539328" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="New_Element1"/>
+                </property>
+                <property name="nodeName">
+                    <java.lang.String value="lastname"/>
+                </property>
+                <property name="nodeText">
+                    <java.lang.String value="Value"/>
+                </property>
+                <property name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sourceDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.SequenceStep" newPriority="1303311027005" priority="1303311027005" version="5.5.0.m004">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="inheritTransactionCtx">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_userLoginWithDefault"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303311082073"/>
+                                    <java.lang.Long value="1303311082104"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_refManual_variables"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property name="sequenceName">
+                    <java.lang.String value="userLoginWithDefault"/>
+                </property>
+                <wsdltype/>
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1303311082073" priority="1303311082073" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="lastName"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="1303311539328"/>
+                                <java.lang.String value="."/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepMultiValuedVariable" newPriority="1303311082104" priority="1303311082104" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="firstNames"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="1303311478425"/>
+                                <java.lang.String value="."/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property isNull="true" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector/>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+            </step>
+        </sequence>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <property name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="userLogin"/>
+            </property>
+            <property name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303308328417"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="orderedVariables">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303308059785"/>
+                                <java.lang.Long value="1303308075712"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <wsdltype/>
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="testJohn"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303310547706"/>
+                                    <java.lang.Long value="1303310547738"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1303310547706" priority="1303310547706" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="lastName"/>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1303310547738" priority="1303310547738" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="firstNames"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="John"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+            </testcase>
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="testJohnMarshall"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303308254130"/>
+                                    <java.lang.Long value="1303308254161"/>
+                                    <java.lang.Long value="1303310218536"/>
+                                    <java.lang.Long value="1303310218582"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1303310218536" priority="1303310218536" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="lastName"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <java.lang.String value="Marshall"/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1303310218582" priority="1303310218582" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="firstNames"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="John"/>
+                                <java.lang.String value="Mike"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+            </testcase>
+            <step classname="com.twinsoft.convertigo.beans.steps.IfThenElseStep" handlePriorities="true" newPriority="1303308328417" priority="1303308328417" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="condition">
+                    <java.lang.String value="lastName!=null &amp;&amp; firstNames!=null"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="testNames"/>
+                </property>
+                <property name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303308329915"/>
+                                    <java.lang.Long value="1303308329946"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <step classname="com.twinsoft.convertigo.beans.steps.ThenStep" handlePriorities="true" newPriority="1303308329915" priority="1303308329915" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="jThen"/>
+                    </property>
+                    <property name="orderedSteps">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303308517552"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="output">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaDataType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1303308517552" priority="1303308517552" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="&quot;Welcome &quot;+ firstNames[0] +&quot; &quot;+ lastName"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="jLogin"/>
+                        </property>
+                        <property name="nodeName">
+                            <java.lang.String value="login"/>
+                        </property>
+                        <property name="nodeText">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="output">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="schemaDataType">
+                            <java.lang.String value="xsd:string"/>
+                        </property>
+                    </step>
+                </step>
+                <step classname="com.twinsoft.convertigo.beans.steps.ElseStep" handlePriorities="true" newPriority="1303308329946" priority="1303308329946" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="jElse"/>
+                    </property>
+                    <property name="orderedSteps">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303308876291"/>
+                                        <java.lang.Long value="1303308968919"/>
+                                        <java.lang.Long value="1303309064220"/>
+                                        <java.lang.Long value="1303309563157"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="output">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaDataType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1303308876291" priority="1303308876291" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="var message = &quot;&quot;;"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="New_Sequence_JS"/>
+                        </property>
+                        <property name="output">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="schemaDataType">
+                            <java.lang.String value="xsd:string"/>
+                        </property>
+                    </step>
+                    <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1303308968919" priority="1303308968919" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="condition">
+                            <java.lang.String value="firstNames==null"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="New_jIf"/>
+                        </property>
+                        <property name="orderedSteps">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1303309021382"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="output">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="schemaDataType">
+                            <java.lang.String value="xsd:string"/>
+                        </property>
+                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1303309021382" priority="1303309021382" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="expression">
+                                <java.lang.String value="message += &quot;firstname is required&quot;;"/>
+                            </property>
+                            <property name="isEnable">
+                                <java.lang.Boolean value="true"/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="New_Sequence_JS"/>
+                            </property>
+                            <property name="output">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="schemaDataType">
+                                <java.lang.String value="xsd:string"/>
+                            </property>
+                        </step>
+                    </step>
+                    <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1303309064220" priority="1303309064220" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="condition">
+                            <java.lang.String value="lastName==null"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="New_jIf1"/>
+                        </property>
+                        <property name="orderedSteps">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1303309021382"/>
+                                            <java.lang.Long value="1303309064267"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="output">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="schemaDataType">
+                            <java.lang.String value="xsd:string"/>
+                        </property>
+                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1303309064267" priority="1303309064267" version="5.5.0.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="expression">
+                                <java.lang.String value="message += message == &quot;&quot; ? &quot;&quot;:&quot;, &quot;;&#13;&#10;message += &quot;lastname is required&quot;;"/>
+                            </property>
+                            <property name="isEnable">
+                                <java.lang.Boolean value="true"/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="New_Sequence_JS"/>
+                            </property>
+                            <property name="output">
+                                <java.lang.Boolean value="false"/>
+                            </property>
+                            <property name="schemaDataType">
+                                <java.lang.String value="xsd:string"/>
+                            </property>
+                        </step>
+                    </step>
+                    <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1303309563157" priority="1303309563157" version="5.5.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="message"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="New_jElement"/>
+                        </property>
+                        <property name="nodeName">
+                            <java.lang.String value="error"/>
+                        </property>
+                        <property name="nodeText">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="output">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="schemaDataType">
+                            <java.lang.String value="xsd:string"/>
+                        </property>
+                    </step>
+                </step>
+            </step>
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1303308059785" priority="1303308059785" version="5.5.0.m004">
+                <property name="cachedKey">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="description">
+                    <java.lang.String value="new variable"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="lastName"/>
+                </property>
+                <property name="personalizable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="schemaType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property isNull="true" name="value">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="visibility">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="wsdl">
+                    <java.lang.Boolean value="true"/>
+                </property>
+            </variable>
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1303308075712" priority="1303308075712" version="5.5.0.m004">
+                <property name="cachedKey">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="description">
+                    <java.lang.String value="new variable"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="firstNames"/>
+                </property>
+                <property name="personalizable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="schemaType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property isNull="true" name="value">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property name="visibility">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="wsdl">
+                    <java.lang.Boolean value="true"/>
+                </property>
+            </variable>
+        </sequence>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <property name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="userLoginWithDefault"/>
+            </property>
+            <property name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303308328417"/>
+                                <java.lang.Long value="1303310141891"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="orderedVariables">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1303308059785"/>
+                                <java.lang.Long value="1303308075712"/>
+                                <java.lang.Long value="1303309748584"/>
+                                <java.lang.Long value="1303309748631"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="publicMethod">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <wsdltype/>
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="testJohnMarshall"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1303308254130"/>
+                                    <java.lang.Long value="1303308254161"/>
+                                    <java.lang.Long value="1303309748022"/>
+                                    <java.lang.Long value="1303309748069"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1303309748022" priority="1303309748022" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="lastName"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <java.lang.String value="Marshall"/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1303309748069" priority="1303309748069" version="5.5.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="firstNames"/>
+                    </property>
+                    <property isNull="false" name="value">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="John"/>
+                                <java.lang.String value="Mike"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                </variable>
+            </testcase>
+            <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1303310141891" priority="1303310141891" version="5.5.0.m004">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="expression">
+                    <java.lang.String value="&quot;Welcome &quot;+ firstNames[0] +&quot; &quot;+ lastName"/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="jLogin"/>
+                </property>
+                <property name="nodeName">
+                    <java.lang.String value="login"/>
+                </property>
+                <property name="nodeText">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="schemaDataType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+            </step>
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1303309748584" priority="1303309748584" version="5.5.0.m004">
+                <property name="cachedKey">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="description">
+                    <java.lang.String value="new variable"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="lastName"/>
+                </property>
+                <property name="personalizable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="schemaType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property isNull="false" name="value">
+                    <java.lang.String value="User"/>
+                </property>
+                <property name="visibility">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="wsdl">
+                    <java.lang.Boolean value="true"/>
+                </property>
+            </variable>
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1303309748631" priority="1303309748631" version="5.5.0.m004">
+                <property name="cachedKey">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="description">
+                    <java.lang.String value="new variable"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="firstNames"/>
+                </property>
+                <property name="personalizable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="schemaType">
+                    <java.lang.String value="xsd:string"/>
+                </property>
+                <property isNull="false" name="value">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <java.lang.String value="Anonymous"/>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="visibility">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="wsdl">
+                    <java.lang.Boolean value="true"/>
+                </property>
+            </variable>
+        </sequence>
+    </project>
+</convertigo>

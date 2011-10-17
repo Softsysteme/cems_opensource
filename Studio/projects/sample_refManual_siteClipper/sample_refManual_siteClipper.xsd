@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_refManual_siteClipper_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_siteClipper" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_siteClipper">
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_refManual_siteClipper_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sample_refManual_siteClipper_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:element name="localhostAdminConnector__Default_HTML_Transaction" type="sample_refManual_siteClipper_ns:localhostAdminConnector__Default_HTML_TransactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="localhostAdminConnector__Default_HTML_TransactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:localhostAdminConnector__Default_HTML_TransactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="localhostAdminConnector__Default_HTML_TransactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="localhostAdminConnector__Default_HTML_TransactionResponseData"/>
+<xsd:element name="localhostAdminConnector__LoginAdmin" type="sample_refManual_siteClipper_ns:localhostAdminConnector__LoginAdminRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="localhostAdminConnector__LoginAdminResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:localhostAdminConnector__LoginAdminResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="localhostAdminConnector__LoginAdminRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="username" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="password" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="localhostAdminConnector__LoginAdminResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_siteClipper_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleConnector__Google_fr_transaction" type="sample_refManual_siteClipper_ns:GoogleConnector__Google_fr_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__Google_fr_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:GoogleConnector__Google_fr_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__Google_fr_transactionRequestData"/>
+<xsd:complexType name="GoogleConnector__Google_fr_transactionResponseData"/>
+<xsd:element name="Google_com_Connector__Google_com_transaction" type="sample_refManual_siteClipper_ns:Google_com_Connector__Google_com_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Google_com_Connector__Google_com_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:Google_com_Connector__Google_com_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Google_com_Connector__Google_com_transactionRequestData"/>
+<xsd:complexType name="Google_com_Connector__Google_com_transactionResponseData"/>
+<xsd:element name="Google_com_Connector__Google_fr_transaction" type="sample_refManual_siteClipper_ns:Google_com_Connector__Google_fr_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Google_com_Connector__Google_fr_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:Google_com_Connector__Google_fr_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Google_com_Connector__Google_fr_transactionRequestData"/>
+<xsd:complexType name="Google_com_Connector__Google_fr_transactionResponseData"/>
+<xsd:element name="Google_and_blacklist__Google_com_transaction" type="sample_refManual_siteClipper_ns:Google_and_blacklist__Google_com_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Google_and_blacklist__Google_com_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:Google_and_blacklist__Google_com_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Google_and_blacklist__Google_com_transactionRequestData"/>
+<xsd:complexType name="Google_and_blacklist__Google_com_transactionResponseData"/>
+<xsd:element name="Google_and_blacklist__Google_fr_transaction" type="sample_refManual_siteClipper_ns:Google_and_blacklist__Google_fr_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Google_and_blacklist__Google_fr_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:Google_and_blacklist__Google_fr_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Google_and_blacklist__Google_fr_transactionRequestData"/>
+<xsd:complexType name="Google_and_blacklist__Google_fr_transactionResponseData"/>
+<xsd:element name="ConvertigoAdminConnector__connectionLocalIP" type="sample_refManual_siteClipper_ns:ConvertigoAdminConnector__connectionLocalIPRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="ConvertigoAdminConnector__connectionLocalIPResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:ConvertigoAdminConnector__connectionLocalIPResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ConvertigoAdminConnector__connectionLocalIPRequestData"/>
+<xsd:complexType name="ConvertigoAdminConnector__connectionLocalIPResponseData"/>
+<xsd:element name="USdirectoryConnector__Default" type="sample_refManual_siteClipper_ns:USdirectoryConnector__DefaultRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="USdirectoryConnector__DefaultResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:USdirectoryConnector__DefaultResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="USdirectoryConnector__DefaultRequestData"/>
+<xsd:complexType name="USdirectoryConnector__DefaultResponseData"/>
+<xsd:group name="WhitePagesUSdirectoryTypes">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_siteClipper_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:element name="WhitePagesUSdirectory__SearchWhitePages" type="sample_refManual_siteClipper_ns:WhitePagesUSdirectory__SearchWhitePagesRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="WhitePagesUSdirectory__SearchWhitePagesResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:WhitePagesUSdirectory__SearchWhitePagesResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="WhitePagesUSdirectory__SearchWhitePagesRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="first_name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="last_name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="state" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="extended_area" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="auto" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="WhitePagesUSdirectory__SearchWhitePagesResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_siteClipper_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="GoogleReponseHeaders__Google_fr_transaction" type="sample_refManual_siteClipper_ns:GoogleReponseHeaders__Google_fr_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleReponseHeaders__Google_fr_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:GoogleReponseHeaders__Google_fr_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleReponseHeaders__Google_fr_transactionRequestData"/>
+<xsd:complexType name="GoogleReponseHeaders__Google_fr_transactionResponseData"/>
+<xsd:element name="RequestHeadersConnector__Uri_headers_transaction" type="sample_refManual_siteClipper_ns:RequestHeadersConnector__Uri_headers_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="RequestHeadersConnector__Uri_headers_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:RequestHeadersConnector__Uri_headers_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="RequestHeadersConnector__Uri_headers_transactionRequestData"/>
+<xsd:complexType name="RequestHeadersConnector__Uri_headers_transactionResponseData"/>
+<xsd:element name="AppleConnector__Access404Page" type="sample_refManual_siteClipper_ns:AppleConnector__Access404PageRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="AppleConnector__Access404PageResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:AppleConnector__Access404PageResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="AppleConnector__Access404PageRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="AppleConnector__Access404PageResponseData"/>
+<xsd:element name="ConvertigoWebSiteConnector__GoTo_Convertigo" type="sample_refManual_siteClipper_ns:ConvertigoWebSiteConnector__GoTo_ConvertigoRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="ConvertigoWebSiteConnector__GoTo_ConvertigoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:ConvertigoWebSiteConnector__GoTo_ConvertigoResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ConvertigoWebSiteConnector__GoTo_ConvertigoRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoWebSiteConnector__GoTo_ConvertigoResponseData"/>
+<xsd:element name="LoanCalculator__loanSimulation" type="sample_refManual_siteClipper_ns:LoanCalculator__loanSimulationRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="LoanCalculator__loanSimulationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:LoanCalculator__loanSimulationResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="LoanCalculator__loanSimulationRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="amout" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>loan amount</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="term" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>loan term in year</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="rate" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>interest rate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="LoanCalculator__loanSimulationResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_siteClipper_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="LoanCalculator__XMLization" type="sample_refManual_siteClipper_ns:LoanCalculator__XMLizationRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="LoanCalculator__XMLizationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:LoanCalculator__XMLizationResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="LoanCalculator__XMLizationRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="LoanCalculator__XMLizationResponseData"/>
+<xsd:element name="SiteClipper__Default_transaction" type="sample_refManual_siteClipper_ns:SiteClipper__Default_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SiteClipper__Default_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_siteClipper_ns:SiteClipper__Default_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SiteClipper__Default_transactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="SiteClipper__Default_transactionResponseData"/>
+</xsd:schema>

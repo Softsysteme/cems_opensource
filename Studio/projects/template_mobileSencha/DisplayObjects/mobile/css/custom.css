@@ -1,0 +1,13 @@
+/** insert your custom css code here */
+.list-img {
+  width: 80px;
+}
+
+.list-img > img {
+  width: 64px;
+  height: 64px; 
+}
+
+.list-title {
+  width: 200px;
+}

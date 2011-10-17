@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:sample_documentation_CWI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" xmlns:sample_refManual_steps_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_steps" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_steps">
+<xsd:import namespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" schemaLocation="../sample_documentation_CWI/sample_documentation_CWI.xsd"/>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sample_refManual_steps_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_refManual_steps_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1291387665564StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="result1291387665564StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SearchSeveralKeywords" type="sample_refManual_steps_ns:SearchSeveralKeywordsRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchSeveralKeywordsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SearchSeveralKeywordsResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchSeveralKeywordsRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="inputs">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="maxResult" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchSeveralKeywordsResponseData">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="input" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291387665564StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291387665564StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1291387446441StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291632290863StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1291632290851StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291632358716StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1295340384878StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295340384887StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1295340496096StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295340506190StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1295354741432StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295354742027StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1295354879621StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295354879692StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1295354905046StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1295354886380StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295354886389StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SearchSeveralKeywordsInParallel" type="sample_refManual_steps_ns:SearchSeveralKeywordsInParallelRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchSeveralKeywordsInParallelResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SearchSeveralKeywordsInParallelResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchSeveralKeywordsInParallelRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="inputs">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="maxResult" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchSeveralKeywordsInParallelResponseData">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="input" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="search" type="sample_refManual_steps_ns:search1295355003903StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="inputs1295354905046StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="input" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1295355000830StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1295355003903StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SearchOneKeyword" type="sample_refManual_steps_ns:SearchOneKeywordRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchOneKeywordResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SearchOneKeywordResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchOneKeywordRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="maxResult" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="input" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchOneKeywordResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="input" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291795972299StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1291632358502StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291795972299StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="element1307700281541StepType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="_123_name" type="xsd:string" use="optional">
+<xsd:annotation/>
+</xsd:attribute>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="name_test1307700281541StepType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="xml_test" type="xsd:string" use="optional">
+<xsd:annotation/>
+</xsd:attribute>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="element1294738278893StepType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="date">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="dayOfWeek" type="xsd:string"/>
+<xsd:element name="day" type="xsd:string"/>
+<xsd:element name="month" type="xsd:string"/>
+<xsd:element name="year" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="xml_test1307700281541StepType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="xml_test" type="xsd:string" use="optional">
+<xsd:annotation/>
+</xsd:attribute>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="New_Sequence" type="sample_refManual_steps_ns:New_SequenceRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="New_SequenceResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:New_SequenceResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="New_SequenceRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="New_SequenceResponseData">
+<xsd:sequence/>
+</xsd:complexType>
+</xsd:schema>

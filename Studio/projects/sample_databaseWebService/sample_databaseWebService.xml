@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><convertigo beans="4.5.0" engine="4.5.2" exported="November 13, 2009 5:36 PM" studio="4.5.0" version="4.5 (sp3)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="4.5.0">
+        <property name="browserDefinitions">
+            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                <com.twinsoft.convertigo.beans.common.XMLVector/>
+            </xmlizable>
+        </property>
+        <property name="comment">
+            <java.lang.String value=""/>
+        </property>
+        <property name="httpSessionTimeout">
+            <java.lang.Integer value="36000"/>
+        </property>
+        <property name="name">
+            <java.lang.String value="sample_databaseWebService"/>
+        </property>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SqlConnector" default="true" priority="0" version="4.5.0">
+            <property name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="jdbcDriverClassName">
+                <java.lang.String value="com.mysql.jdbc.Driver"/>
+            </property>
+            <property name="jdbcMaxConnection">
+                <java.lang.Integer value="80"/>
+            </property>
+            <property name="jdbcURL">
+                <java.lang.String value="jdbc:mysql://192.168.100.99:3306/demo_toocamp"/>
+            </property>
+            <property name="jdbcUserName">
+                <java.lang.String value="root"/>
+            </property>
+            <property name="jdbcUserPassword">
+                <java.lang.String value="admin"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="databaseConnector"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="true" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="DoNothing"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="DoNothingResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+    </xsd:all>
+
+</xsd:complexType>]]></wsdltype>
+                <handlers><![CDATA[
+// Handles the transaction start event.
+function onTransactionStarted() {
+	return "cancel";
+}
+]]></handlers>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets the detailled information about the camping whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_camping_details"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT cam_nam, lnd_nam, regadm_nam, regtou_nam, cty_nam, cam_mel, cam_tel, cam_fax, cam_open_dat, cam_close_dat, cam_dsc_fr, cam_url, cam_stars&#13;\nFROM camping c, country l, region_admin a, region_tourist t, city v&#13;\nWHERE c.cam_idt = {camping_id}&#13;\nAND c.lnd_idt = l.lnd_idt&#13;\nAND c.regadm_idt = a.regadm_idt&#13;\nAND c.regtou_idt = t.regtou_idt&#13;\nAND c.cty_idt = v.cty_idt;&#13;\n"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets the whole camping ids and names list"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_campings_list"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT cam_idt, cam_nam &#13;\nFROM camping "/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_campings_listResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="cam_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="cam_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets camping ids and names list from one country whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_campings_list_from_country"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT cam_idt, cam_nam FROM camping c&#13;\nWHERE lnd_idt={country_id};"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="country_id"/>
+                                    <java.lang.String value="country_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_campings_list_from_countryResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="cam_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="cam_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets camping ids and names list related to one distributor whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_campings_list_from_distributor"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT c.cam_idt, c.cam_nam &#13;\nFROM camping c, twinsoft_reservation_code t&#13;\nWHERE c.cam_idt=t.cam_idt&#13;\nAND t.dis_idt = {distrib_id};"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_campings_list_from_distributorResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="cam_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="cam_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets the whole country ids and names list"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_countries_list"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT lnd_idt, lnd_nam &#13;\nFROM country "/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_countries_listResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="lnd_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="lnd_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets the detailled information about the distributor whose identifier is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_distributor_info"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT dis_nam, dis_log_fil, dis_web_url  FROM distributor d&#13;\nWHERE dis_idt={distrib_id};"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_distributor_infoResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="dis_nam" type="xsd:string"/>
+
+                            <xsd:attribute name="dis_log_fil" type="xsd:string"/>
+
+                            <xsd:attribute name="dis_web_url" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets the whole distributor ids and names list"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_distributors_list"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT dis_idt, dis_nam &#13;\nFROM distributor "/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_distributors_listResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="dis_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="dis_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets distributor ids and names list related to one camping whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_distributors_list_from_camping"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT t.dis_idt, dis_nam&#13;\nFROM twinsoft_reservation_code t, distributor d&#13;\nWHERE cam_idt={camping_id}&#13;\nAND t.dis_idt=d.dis_idt;"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_distributors_list_from_campingResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="dis_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="dis_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets distributor ids and names and product ids and names list related to one camping whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_products_list_from_camping"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT a.dis_idt, dis_nam, a.pro_idt, pro_nam&#13;\nFROM product_availability a, distributor d, product p&#13;\nWHERE a.cam_idt={camping_id}&#13;\nAND a.dis_idt=d.dis_idt&#13;\nAND a.pro_idt=p.pro_idt&#13;\nGROUP BY dis_idt, pro_idt;"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_products_list_from_campingResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="dis_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="pro_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="dis_nam" type="xsd:string"/>
+
+                            <xsd:attribute name="pro_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="false" priority="0" version="4.5.0">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value="Gets camping ids and names and product ids and names list related to one distributor whose id is given as input"/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="maxResult">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="get_products_list_from_distributor"/>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="sqlQuery">
+                    <java.lang.String value="SELECT a.cam_idt, cam_nam, a.pro_idt, pro_nam&#13;\nFROM product_availability a, camping c, product p&#13;\nWHERE a.dis_idt={distrib_id}&#13;\nAND a.cam_idt=c.cam_idt&#13;\nAND a.pro_idt=p.pro_idt&#13;\nGROUP BY cam_idt, pro_idt;"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value="distrib_id"/>
+                                    <java.lang.String value=""/>
+                                    <java.lang.Boolean value="true"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="false"/>
+                                    <java.lang.Boolean value="true"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="xmlGrouping">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="xmlOutput">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <wsdltype><![CDATA[<xsd:complexType name="get_products_list_from_distributorResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="sql_output">
+
+            <xsd:complexType>
+
+                <xsd:sequence>
+
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+                        <xsd:complexType>
+
+                            <xsd:attribute name="cam_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="pro_idt" type="xsd:integer"/>
+
+                            <xsd:attribute name="cam_nam" type="xsd:string"/>
+
+                            <xsd:attribute name="pro_nam" type="xsd:string"/>
+
+                        </xsd:complexType>
+
+                    </xsd:element>
+
+                </xsd:sequence>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+]]></wsdltype>
+                <handlers/>
+            </transaction>
+        </connector>
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="4.5.0">
+            <property name="autoStart">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="billable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="clientCachable">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="comment">
+                <java.lang.String value="Gets the detailled information about the camping whose id is given as input and the distributor list related to this camping"/>
+            </property>
+            <property name="encodingCharSet">
+                <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="get_camping_info"/>
+            </property>
+            <property name="orderedSteps">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.Long value="1258109273279"/>
+                                <java.lang.Long value="1258120351371"/>
+                                <java.lang.Long value="1258119833405"/>
+                                <java.lang.Long value="1258120384848"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <property name="publicMethod">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <property name="responseExpiryDate">
+                <java.lang.String value=""/>
+            </property>
+            <property name="responseTimeout">
+                <java.lang.Long value="60"/>
+            </property>
+            <property name="sheetLocation">
+                <java.lang.Integer value="0"/>
+            </property>
+            <property name="startTime">
+                <java.lang.Long value="0"/>
+            </property>
+            <property name="variablesDefinition">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="camping_id"/>
+                                <java.lang.String value="camping id"/>
+                                <java.lang.String value=""/>
+                                <java.lang.Boolean value="true"/>
+                                <java.lang.Boolean value="false"/>
+                                <java.lang.Boolean value="false"/>
+                                <java.lang.Boolean value="true"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                </xmlizable>
+            </property>
+            <wsdltype><![CDATA[<xsd:complexType name="get_camping_infoResponse">
+
+    <xsd:all>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="error" type="tns:ConvertigoError"/>
+
+        <xsd:element maxOccurs="1" minOccurs="0" name="camping" type="tns:camping_detailsType"/>
+
+		<xsd:element maxOccurs="1" minOccurs="0" name="distributors" type="tns:distributors_listType"/>
+
+    </xsd:all>
+
+</xsd:complexType>
+
+
+
+<xsd:complexType name="camping_detailsType">
+
+    <xsd:sequence>
+
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+            <xsd:complexType>
+
+                <xsd:attribute name="cam_nam" type="xsd:string"/>
+
+                <xsd:attribute name="cam_mel" type="xsd:string"/>
+
+                <xsd:attribute name="cam_tel" type="xsd:string"/>
+
+                <xsd:attribute name="cam_fax" type="xsd:string"/>
+
+                <xsd:attribute name="cam_open_dat" type="xsd:string"/>
+
+                <xsd:attribute name="cam_close_dat" type="xsd:string"/>
+
+                <xsd:attribute name="cam_dsc_fr" type="xsd:string"/>
+
+                <xsd:attribute name="cam_url" type="xsd:string"/>
+
+                <xsd:attribute name="cam_stars" type="xsd:integer"/>
+
+                <xsd:attribute name="lnd_nam" type="xsd:string"/>
+
+                <xsd:attribute name="regadm_nam" type="xsd:string"/>
+
+                <xsd:attribute name="regtou_nam" type="xsd:string"/>
+
+                <xsd:attribute name="cty_nam" type="xsd:string"/>
+
+            </xsd:complexType>
+
+        </xsd:element>
+
+    </xsd:sequence>
+
+</xsd:complexType>
+
+
+
+<xsd:complexType name="distributors_listType">
+
+	 <xsd:sequence>
+
+		<xsd:element maxOccurs="unbounded" minOccurs="0" name="row">
+
+	    	<xsd:complexType>
+
+	        	<xsd:attribute name="dis_idt" type="xsd:integer"/>
+
+	        	<xsd:attribute name="dis_nam" type="xsd:string"/>
+
+	    	</xsd:complexType>
+
+        </xsd:element>
+
+	</xsd:sequence>
+
+</xsd:complexType>]]></wsdltype>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1258109273279" priority="1258109273279" version="4.5.0">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="connectorName">
+                    <java.lang.String value="databaseConnector"/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_Transaction_get_camping_details"/>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_databaseWebService"/>
+                </property>
+                <property name="transactionName">
+                    <java.lang.String value="get_camping_details"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value="camping_id"/>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                    </xmlizable>
+                                    <java.lang.String value=""/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<?xml version="1.0" encoding="ISO-8859-1"?><document connector="toocampDatabaseConnector" context="studio_toocampWebService:toocampDatabaseConnector" contextId="studio_toocampWebService:toocampDatabaseConnector" fromcache="false" generated="Fri Nov 13 11:41:43 CET 2009" project="toocampWebService" sequence="" signature="1258108908451" transaction="get_camping_info" version="4.5 (sp3)">
+
+    <sql_output>
+
+        <row cam_close_dat="20090919" cam_dsc_fr="Aux portes de Biarritz et de ses plages de surf, sur le chemin de St Jacques de Compostelle, Le Ruisseau des Pyrénées vous invite à découvrir son exceptionnel complexe balnéo-ludique avec son plan d&#8217;eau, ses piscines, ses toboggans&#8230; Ce grand camping se compose de deux parties séparées par la route. Sur la zone supérieure, qui dans sa plus grande partie est boisée, se trouvent la plupart des équipements, comme deux magnifiques piscines avec de superbes toboggans. Vous y trouverez aussi un lac idéal pour la pêche. Sur la partie inférieure se trouve la troisième piscine. Le Ruisseau est situé dans une vallée entre Bidart et Biarritz. Entre ces deux agglomérations, vous trouverez une plage de 5 kilomètres de long.&#13;&#10;&#13;&#10;A Biarritz, la saison internationale du surf est ouverte toute l'année. C'est un endroit agréable - tous ces surfeurs de toutes les couleurs sur &quot;La Plage des Rois&quot;, en face de l'Hôtel du Palais, l'ancienne villa d'Eugénie de Montijo, l'amour de Napoléon III. La ville est bien animée, par exemple en Juin, on trouve des concerts à la plage et en Juillet, un grand festival folklorique avec des matchs de Pelote Basque, un sport pratiqué uniquement dans cette région. Mais la plus grande attraction reste la Fête de Sainte Marie, le 15 août, avec les feux d'artifices sur la plage. Environ 150.000 personnes viennent voir ce spectacle. Le petit village de Bidart est situé à côté de Biarritz, vous y trouverez de nombreuses et agréables terrasses avec de charmants restaurants à poissons. La frontière espagnole se trouve tout près et la fière ville de San Sebastian est juste de l'autre côté." cam_fax="05 59 41 95 73" cam_mel="francoise.dumont3@wanadoo.fr" cam_nam="Le Ruisseau des Pyrénées" cam_open_dat="20090501" cam_stars="4" cam_tel="05 59 41 94 50" cam_url="" cty_nam="Bidart" lnd_nam="France" regadm_nam="Aquitaine" regtou_nam="Lac de Trasimène"/>
+
+    </sql_output>
+
+</document>]]></wsdltype>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1258120351371" priority="1258120351371" version="4.5.0">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="camping"/>
+                </property>
+                <property name="nodeName">
+                    <java.lang.String value="camping"/>
+                </property>
+                <property name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1258120370407"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1258120370407" priority="1258120370407" version="4.5.0">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="CopyResult"/>
+                    </property>
+                    <property name="output">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="1258109273279"/>
+                                <java.lang.String value="./sql_output/row"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                </step>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1258119833405" priority="1258119833405" version="4.5.0">
+                <property name="bInternalInvoke">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="connectorName">
+                    <java.lang.String value="databaseConnector"/>
+                </property>
+                <property name="contextName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Call_Transaction_get_distributors_list_from_camping"/>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="projectName">
+                    <java.lang.String value="sample_databaseWebService"/>
+                </property>
+                <property name="transactionName">
+                    <java.lang.String value="get_distributors_list_from_camping"/>
+                </property>
+                <property name="variablesDefinition">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="camping_id"/>
+                                    <java.lang.String value="camping_id"/>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                    </xmlizable>
+                                    <java.lang.String value=""/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <wsdltype><![CDATA[<?xml version="1.0" encoding="ISO-8859-1"?><document connector="toocampDatabaseConnector" context="studio_toocampWebService:toocampDatabaseConnector" contextId="studio_toocampWebService:toocampDatabaseConnector" fromcache="false" generated="Fri Nov 13 14:39:42 CET 2009" project="toocampWebService" sequence="" signature="1258119582720" transaction="get_distributors_list_from_camping" version="4.5 (sp3)">
+
+    <sql_output>
+
+        <row dis_idt="9" dis_nam="Homair"/>
+
+        <row dis_idt="50" dis_nam="Vacansoleil"/>
+
+        <row dis_idt="87" dis_nam="Octopode"/>
+
+        <row dis_idt="88" dis_nam="Travel Horizon"/>
+
+    </sql_output>
+
+</document>]]></wsdltype>
+            </step>
+            <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1258120384848" priority="1258120384848" version="4.5.0">
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="isEnable">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="name">
+                    <java.lang.String value="distributors"/>
+                </property>
+                <property name="nodeName">
+                    <java.lang.String value="distributors"/>
+                </property>
+                <property name="orderedSteps">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1258120397366"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="output">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1258120397366" priority="1258120397366" version="4.5.0">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="CopyResult1"/>
+                    </property>
+                    <property name="output">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="sourceDefinition">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <java.lang.String value="1258119833405"/>
+                                <java.lang.String value="./sql_output/row"/>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                </step>
+            </step>
+        </sequence>
+    </project>
+</convertigo>

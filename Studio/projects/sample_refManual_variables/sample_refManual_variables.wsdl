@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_refManual_variables" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sample_refManual_variables_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_variables">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables"><xsd:include schemaLocation="sample_refManual_variables.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GoogleConnector__multiSearchGoogleRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__multiSearchGoogleResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_refManual_variablesPortType">
+    <wsdl:operation name="GoogleConnector__multiSearchGoogle">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_refManual_variablesSOAPBinding" type="sample_refManual_variables_ns:sample_refManual_variablesPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GoogleConnector__multiSearchGoogle">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_refManual_variables?GoogleConnector__multiSearchGoogle"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_refManual_variables">
+    <wsdl:port name="sample_refManual_variablesSOAP" binding="sample_refManual_variables_ns:sample_refManual_variablesSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_refManual_variables/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
