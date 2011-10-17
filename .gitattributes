@@ -1,4 +1,17 @@
 * text=auto !eol
+Server/.classpath -text svneol=unset#text/plain
+Server/.project -text svneol=unset#text/plain
+Server/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Server/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
+Server/.settings/org.eclipse.jst.jsp.core.prefs -text svneol=unset#text/plain
+Server/.settings/org.eclipse.wst.common.component -text
+Server/.settings/org.eclipse.wst.common.project.facet.core.xml -text svneol=unset#text/plain
+Server/.settings/org.eclipse.wst.html.core.prefs -text svneol=unset#text/plain
+Server/.settings/org.eclipse.wst.jsdt.ui.superType.container -text
+Server/.settings/org.eclipse.wst.jsdt.ui.superType.name -text
+Server/.settings/org.eclipse.wst.validation.prefs -text svneol=unset#text/plain
+Server/.settings/org.eclipse.wst.ws.service.policy.prefs -text svneol=unset#text/plain
+Server/README.txt -text svneol=unset#text/plain
 Studio/.classpath -text
 Studio/.project -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
