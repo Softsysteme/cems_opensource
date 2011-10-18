@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleMobileVacation" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileVacation" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileVacation_ns="http://www.convertigo.com/convertigo/projects/sampleMobileVacation" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileVacation"><xsd:include schemaLocation="sampleMobileVacation.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sampleMobileVacationPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sampleMobileVacationSOAPBinding" type="sampleMobileVacation_ns:sampleMobileVacationPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sampleMobileVacation">
+    <wsdl:port name="sampleMobileVacationSOAP" binding="sampleMobileVacation_ns:sampleMobileVacationSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleMobileVacation/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -58,6 +58,12 @@ Studio/projects/sampleMobileSiebel/Traces
 Studio/projects/sampleMobileSiebel/_data
 Studio/projects/sampleMobileSiebel/_private
 Studio/projects/sampleMobileUsDirectoryDemo/.settings
+Studio/projects/sampleMobileVacation/*.temp.wsdl
+Studio/projects/sampleMobileVacation/*.temp.xsd
+Studio/projects/sampleMobileVacation/.settings
+Studio/projects/sampleMobileVacation/Traces
+Studio/projects/sampleMobileVacation/_data
+Studio/projects/sampleMobileVacation/_private
 Studio/projects/sampleMobileWebToPdf/*.temp.wsdl
 Studio/projects/sampleMobileWebToPdf/*.temp.xsd
 Studio/projects/sampleMobileWebToPdf/.settings
