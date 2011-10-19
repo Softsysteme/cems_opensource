@@ -2068,6 +2068,10 @@ Studio/src/com/twinsoft/convertigo/beans/steps/BranchStep.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/beans/steps/BranchStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/BreakStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/BreakStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/CopyStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/CopyStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DoWhileStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DoWhileStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ElementStep.java -text svneol=unset#text/plain
@@ -2099,6 +2103,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/LoopStep.java -text svneol=unset#
 Studio/src/com/twinsoft/convertigo/beans/steps/LoopStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/MoveFileStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/MoveFileStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/MoveStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/MoveStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ParallelStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ParallelStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadCSVStep.java -text svneol=unset#text/plain
@@ -2107,6 +2113,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/ReadFileStep.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadFileStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadXMLStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadXMLStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/RenameStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/RenameStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReturnStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReturnStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SequenceStep.java -text svneol=unset#text/plain
@@ -2165,6 +2173,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/break_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/break_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_16x16.gif -text
@@ -2173,6 +2183,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/element_16x16.gif -text
@@ -2197,6 +2209,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/move_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/move_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/return_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/return_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_16x16.gif -text
@@ -2220,6 +2234,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BlockStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BranchStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BreakStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/CopyStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/DeleteStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/DoWhileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElementStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElseStep.properties -text svneol=unset#text/plain
@@ -2235,10 +2251,12 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/IsInThenElseStep.properties -
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IteratorStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/LoopStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveFileStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ParallelStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadCSVStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadFileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadXMLStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/RenameStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReturnStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SequenceStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SerialStep.properties -text svneol=unset#text/plain
