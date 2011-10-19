@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.6.0.m004" engine="5.6.0" exported="13 octobre 2011 17:02" studio="5.6.0" version="5.6.0_alpha">
+<convertigo beans="5.6.0.m004" engine="5.6.0" exported="19 octobre 2011 11:48" studio="5.6.0" version="5.6.0_RC">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -158,7 +158,7 @@
                 <java.lang.String value="Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. "/>
             </property>
             <property name="encodingCharSet">
-                <java.lang.String value="ISO-8859-1"/>
+                <java.lang.String value="UTF-8"/>
             </property>
             <property name="name">
                 <java.lang.String value="Fake"/>
@@ -213,7 +213,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="expression">
-                    <java.lang.String value="if (sequence == &quot;Login&quot;) {&#10;&#9;if (userId == &quot;&quot; &amp;&amp; password == &quot;&quot;) {&#10;&#9;&#9;sequence += &quot;Empty&quot;;&#10;&#9;} else if (userId == &quot;john&quot; &amp;&amp; password == &quot;1234&quot;) {&#10;&#9;&#9;sequence = &quot;Requests&quot;;&#10;&#9;} else {&#10;&#9;&#9;sequence += &quot;KO&quot;;&#10;&#9;}&#10;} else {&#10;&#9;if (typeof index != &quot;undefined&quot;) {&#10;&#9;&#9;switch (index * 1) {&#10;&#9;&#9;&#9;case 1 : sequence += &quot;NOK&quot;; break;&#10;&#9;&#9;&#9;case 2 : sequence += &quot;POK&quot;; break;&#10;&#9;&#9;&#9;default : sequence += &quot;OK&quot;; break;&#10;&#9;&#9;} &#10;&#9;} else if (&#10;&#9;&#9;   sequence == &quot;RetourListe&quot;&#10;&#9;&#9;|| sequence == &quot;RafraichirMesValidations&quot;&#10;&#9;&#9;|| sequence == &quot;Previous&quot;&#10;&#9;&#9;|| sequence == &quot;MesValidations&quot;) {&#10;&#9;&#9;sequence = &quot;MesValidationsOK&quot;;&#10;&#9;} else {&#10;&#9;&#9;sequence += &quot;OK&quot;;&#10;&#9;}&#10;}"/>
+                    <java.lang.String value="if (sequence == &quot;Login&quot;) {&#10;&#9;if (userId == &quot;&quot; &amp;&amp; password == &quot;&quot;) {&#10;&#9;&#9;sequence += &quot;Empty&quot;;&#10;&#9;} else if (userId == &quot;john&quot; &amp;&amp; password == &quot;1234&quot;) {&#10;&#9;&#9;sequence = &quot;Requests&quot;;&#10;&#9;} else {&#10;&#9;&#9;sequence += &quot;KO&quot;;&#10;&#9;}&#10;} else if (sequence == &quot;Details&quot; &amp;&amp; typeof(index) != &quot;undefined&quot;) {&#10;&#9;switch (index * 1) {&#10;&#9;&#9;case 4 :&#10;&#9;&#9;case 5 : sequence += &quot;KO&quot;; break;&#10;&#9;}&#10;}"/>
                 </property>
                 <property name="isEnable">
                     <java.lang.Boolean value="true"/>
