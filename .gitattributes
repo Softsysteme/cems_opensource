@@ -2968,6 +2968,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerPdfWizard.j
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerSiebelWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerUsDirectoryDemoWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerVacationWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerWebToPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSenchaMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSequencerWizard.java -text svneol=unset#text/plain
