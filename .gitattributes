@@ -1181,6 +1181,7 @@ Studio/projects/template_webClipping/template_webClipping.xsd -text svneol=unset
 Studio/projects/template_webIntegration/template_webIntegration.wsdl -text svneol=unset#text/plain
 Studio/projects/template_webIntegration/template_webIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_webIntegration/template_webIntegration.xsd -text svneol=unset#text/plain
+Studio/readme.txt -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/BeansDoc.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/Version.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/AbstractXMLReferer.java -text svneol=unset#text/plain
