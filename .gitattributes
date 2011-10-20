@@ -19,7 +19,6 @@ Studio/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.mylyn.tasks.ui.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.mylyn.team.ui.prefs -text svneol=unset#text/plain
-Studio/build.properties -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProject.xml -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProjectE.xml -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProjectWhithExemple.xml -text svneol=unset#text/plain
