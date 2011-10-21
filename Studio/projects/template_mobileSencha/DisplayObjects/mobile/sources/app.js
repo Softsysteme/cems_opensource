@@ -53,7 +53,7 @@
  * 		project : '<project name>', // the optional project name used by convertigo
  * 		params: {						// Optional Additional parameters
  * 			param1: 'value1',
- * 			param2: 'value3',
+ * 			param2: 'value2',
  * 			param3: 'value3',
 * 		}, 
  * 		form: MyForm					// Optional form  from which query string will be build
