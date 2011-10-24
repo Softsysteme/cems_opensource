@@ -2090,6 +2090,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/IfExistThenElseStep.java -text sv
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistThenElseStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistThenElseStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistThenElseStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfThenElseStep.java -text svneol=unset#text/plain
@@ -2247,6 +2249,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/FunctionStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/InputVariablesStep.properties -text svneol=unset#text/plain
@@ -2596,6 +2599,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_refresh.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_stop.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistThenElseStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInStepAction.java -text svneol=unset#text/plain
