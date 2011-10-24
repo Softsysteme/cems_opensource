@@ -2088,6 +2088,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStep.java -text svneol=uns
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistThenElseStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistThenElseStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/IfFileExistStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfThenElseStep.java -text svneol=unset#text/plain
@@ -2244,6 +2246,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ExceptionStep.properties -tex
 Studio/src/com/twinsoft/convertigo/beans/steps/res/FunctionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistThenElseStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/InputVariablesStep.properties -text svneol=unset#text/plain
