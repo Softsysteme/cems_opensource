@@ -388,6 +388,8 @@ Studio/projects/demo_SalesForce/img/e_refresh.png -text
 Studio/projects/demo_SalesForce/img/erp.png -text
 Studio/projects/demo_SalesForce/img/loading.gif -text
 Studio/projects/demo_SalesForce/img/logo_hm_summ_saleforce.gif -text
+Studio/projects/demo_SalesForce/img/poweredbyc8o.jpg -text
+Studio/projects/demo_SalesForce/img/poweredbyc8o_SF.jpg -text
 Studio/projects/demo_SalesForce/img/question.gif -text
 Studio/projects/demo_SalesForce/img/question.png -text
 Studio/projects/demo_SalesForce/img/title.png -text
@@ -402,6 +404,7 @@ Studio/projects/demo_SalesForce/xsl/initializeDemo.xsl -text svneol=unset#text/p
 Studio/projects/demo_SalesForce/xsl/insertLead.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/leads.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/leadsdetails.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/loggedIn.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/notConnected.xsl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/Traces/legacyCRMConnector/demo.etr -text
 Studio/projects/demo_legacyCRM/css/calendar-system.css -text svneol=unset#text/plain
@@ -539,12 +542,15 @@ Studio/projects/demo_usDirectory/img/e_refresh.gif -text
 Studio/projects/demo_usDirectory/img/e_refresh.png -text
 Studio/projects/demo_usDirectory/img/googlemaps_logo_small.png -text
 Studio/projects/demo_usDirectory/img/loading.gif -text
+Studio/projects/demo_usDirectory/img/poweredbyc8o.jpg -text
 Studio/projects/demo_usDirectory/img/question.png -text
 Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
 Studio/projects/demo_usDirectory/img/title.png -text
 Studio/projects/demo_usDirectory/img/toERPicon.png -text
 Studio/projects/demo_usDirectory/index.html -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xml -text svneol=unset#text/plain

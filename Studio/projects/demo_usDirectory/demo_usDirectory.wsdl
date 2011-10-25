@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="demo_usDirectory" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:demo_usDirectory_ns="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="demo_usDirectory" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:demo_usDirectory_ns="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory"><xsd:include schemaLocation="demo_usDirectory.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="usdirectoryConnector__searchBusinessRequest">
-    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__searchBusiness">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="usdirectoryConnector__searchBusinessResponse">
-    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__searchBusinessResponse">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:portType name="demo_usDirectoryPortType">
-    <wsdl:operation name="usdirectoryConnector__searchBusiness">
-      <wsdl:input message="demo_usDirectory_ns:usdirectoryConnector__searchBusinessRequest">
-    </wsdl:input>
-      <wsdl:output message="demo_usDirectory_ns:usdirectoryConnector__searchBusinessResponse">
-    </wsdl:output>
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="demo_usDirectorySOAPBinding" type="demo_usDirectory_ns:demo_usDirectoryPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="usdirectoryConnector__searchBusiness">
-      <soap:operation soapAction="demo_usDirectory??usdirectoryConnector__searchBusiness"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="demo_usDirectory">
     <wsdl:port name="demo_usDirectorySOAP" binding="demo_usDirectory_ns:demo_usDirectorySOAPBinding">

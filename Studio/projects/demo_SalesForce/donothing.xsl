@@ -9,15 +9,15 @@
 			<xsl:apply-templates select="HEAD/SCRIPT"/>
 			<xsl:apply-templates select="HEAD/following-sibling::*" />
 			<div id="menuDiv" style="position:absolute;
-									 top:0;
-									 right:0;
-									 width:50px;
-									 height:25px;
-									 z-index:99998" >                        
+							 top:0;
+							 right:0;
+							 width:50px;
+							 height:25px;
+							 z-index:99998" >
 			 	<table>
 			 		<tr>
-			 			<td><img src="img/e_refresh.png" alt="Refresh" onclick="C8O.call()" /></td>
-			 			<td><img src="img/e_back.png" alt="Restart"  onclick="C8O.doReconnect()" /></td>
+			 			<td><img src="img/e_refresh.png" alt="Refresh" onclick="C8O.call()" style="cursor: pointer" title="Refresh"/></td>
+			 			<td><img src="img/e_back.png" alt="Restart"  onclick="C8O.doReconnect()" style="cursor: pointer" title="Restart" /></td>
 			 		</tr>
 			 	</table>
 			</div>

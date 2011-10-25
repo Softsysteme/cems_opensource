@@ -62,26 +62,6 @@
 <xsd:sequence/>
 </xsd:complexType>
 <xsd:complexType name="SalesForceConnector__DefaultWebClippingTransactionResponseData"/>
-<xsd:element name="SalesForceConnector__EditLead" type="demo_SalesForce_ns:SalesForceConnector__EditLeadRequestData"/>
-<xsd:element name="SalesForceConnector__EditLeadResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__EditLeadResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SalesForceConnector__EditLeadRequestData">
-<xsd:sequence>
-<xsd:element name="country" type="xsd:string"/>
-<xsd:element name="city" type="xsd:string"/>
-<xsd:element name="company" type="xsd:string"/>
-<xsd:element name="street" type="xsd:string"/>
-<xsd:element name="rowindex" type="xsd:string"/>
-<xsd:element name="state" type="xsd:string"/>
-<xsd:element name="postcode" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SalesForceConnector__EditLeadResponseData"/>
 <xsd:element name="SalesForceConnector__EmptyLeadsView" type="demo_SalesForce_ns:SalesForceConnector__EmptyLeadsViewRequestData"/>
 <xsd:element name="SalesForceConnector__EmptyLeadsViewResponse">
 <xsd:complexType>
@@ -96,18 +76,6 @@
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="SalesForceConnector__EmptyLeadsViewResponseData"/>
-<xsd:element name="SalesForceConnector__GoContacts" type="demo_SalesForce_ns:SalesForceConnector__GoContactsRequestData"/>
-<xsd:element name="SalesForceConnector__GoContactsResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__GoContactsResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SalesForceConnector__GoContactsRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="SalesForceConnector__GoContactsResponseData"/>
 <xsd:element name="SalesForceConnector__GoLeads" type="demo_SalesForce_ns:SalesForceConnector__GoLeadsRequestData"/>
 <xsd:element name="SalesForceConnector__GoLeadsResponse">
 <xsd:complexType>
@@ -134,33 +102,6 @@
 <xsd:sequence/>
 </xsd:complexType>
 <xsd:complexType name="SalesForceConnector__InitializeDemoResponseData"/>
-<xsd:element name="SalesForceConnector__InsertNoteToAccount" type="demo_SalesForce_ns:SalesForceConnector__InsertNoteToAccountRequestData"/>
-<xsd:element name="SalesForceConnector__InsertNoteToAccountResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__InsertNoteToAccountResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SalesForceConnector__InsertNoteToAccountRequestData">
-<xsd:sequence>
-<xsd:element name="subject" type="xsd:string"/>
-<xsd:element name="body" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SalesForceConnector__InsertNoteToAccountResponseData"/>
-<xsd:element name="SalesForceConnector__SearchAccountDetails" type="demo_SalesForce_ns:SalesForceConnector__SearchAccountDetailsRequestData"/>
-<xsd:element name="SalesForceConnector__SearchAccountDetailsResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__SearchAccountDetailsResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SalesForceConnector__SearchAccountDetailsRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="SalesForceConnector__SearchAccountDetailsResponseData"/>
 <xsd:group name="SalesForceConnectorTypes">
 <xsd:sequence>
 <xsd:element minOccurs="0" name="error" type="demo_SalesForce_ns:ConvertigoError"/>
@@ -185,34 +126,6 @@
 <xsd:sequence>
 <xsd:element minOccurs="0" name="error" type="demo_SalesForce_ns:ConvertigoError"/>
 <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SalesForceConnector__setFullIPs" type="demo_SalesForce_ns:SalesForceConnector__setFullIPsRequestData"/>
-<xsd:element name="SalesForceConnector__setFullIPsResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__setFullIPsResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SalesForceConnector__setFullIPsRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="SalesForceConnector__setFullIPsResponseData"/>
-<xsd:element name="setIPs" type="demo_SalesForce_ns:setIPsRequestData"/>
-<xsd:element name="setIPsResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="demo_SalesForce_ns:setIPsResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="setIPsRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="setIPsResponseData">
-<xsd:sequence>
-<xsd:group minOccurs="0" ref="demo_SalesForce_ns:step1260958337227Type"/>
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="step1260961745752Type">
@@ -252,6 +165,206 @@
 <xsd:element minOccurs="0" name="city" type="xsd:string"/>
 <xsd:element minOccurs="0" name="state" type="xsd:string"/>
 <xsd:element minOccurs="0" name="email" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SalesForceConnector__EditLead" type="demo_SalesForce_ns:SalesForceConnector__EditLeadRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SalesForceConnector__EditLeadResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__EditLeadResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SalesForceConnector__EditLeadRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="rowindex" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>rowindex</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="company" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>company</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="street" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>street</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="postcode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>postcode</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="city" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>city</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="state" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>state</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="country" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>country</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SalesForceConnector__EditLeadResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="demo_SalesForce_ns:ConvertigoError"/>
+<xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1303203034781StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="complex1303203091342StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:element name="Initialize" type="demo_SalesForce_ns:InitializeRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[method that starts the demo initalization
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="InitializeResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="demo_SalesForce_ns:InitializeResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="InitializeRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[method that starts the demo initalization
+]]></xsd:documentation>
+</xsd:annotation>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="InitializeResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303205739276StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303202266775StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303202572221StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303202720895StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303202836476StepType">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="transaction" type="demo_SalesForce_ns:transaction1303204802862StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="leads1303203034781StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1303202266775StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__ChangeLanguageResponseData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[This transaction is a part of the demo initialization. It checks if the ConvertigoDemo campaign exists in the SalesForce account  used, and creates it if it doesn't exist.
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="lead1303203482433StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="lead1303203630020StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1303204802862StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__InsertLeadResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1303205739276StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__LoginResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="lead1303203536479StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1303202836476StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__EmptyLeadsViewResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="lead1303203599636StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="lead1303203616042StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="lead1303203501271StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1303202720895StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__CreateLeadsViewResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="lead1303203583422StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="lead1303203469737StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="lead1303203091342StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1303202572221StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="demo_SalesForce_ns:SalesForceConnector__CreateCampaignResponseData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[This transaction is a part of the demo initialization. It checks if the ConvertigoDemo campaign exists in the SalesForce account  used, and creates it if it doesn't exist.
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:schema>

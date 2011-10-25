@@ -2,11 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:lxslt="http://xml.apache.org/xslt">
 <xsl:output encoding="UTF-8" media-type="text/html" method="html"/>
 
-<!-- 
-| This line includes the XSL file which contains all common templates 
-
-<xsl:include href="common.xsl" />
--->
 
 <xsl:template match="document">
 	<!-- 
@@ -21,7 +16,8 @@
 					<td valign="top">
 						<table cellspacing="0" cellpadding="6" border="0">
 							<tr>
-								<td class="title" colspan="2">Demo initialization</td>
+								<td class="title">Demo initialization</td>
+								<td align="right"><a href="http://www.convertigo.com" target="_blank"><img src="img/poweredbyc8o.jpg" alt="Powered by Convertigo" border="0"/></a></td>
 							</tr>
 							<tr>
 								<td class="texte" colspan="2">
@@ -44,8 +40,23 @@
 	</blockquote>
 </xsl:template>
 
+
 <!-- 
-| This is the header template : these lines will display the top image and the searching area 
+| This is the generic HTML template, do not modify 
+-->
+<xsl:template match="@*|node()">
+	<xsl:copy>
+		<xsl:apply-templates select="@*|node()"/>
+	</xsl:copy>
+</xsl:template>
+
+<xsl:template match="@name">
+ 		<xsl:attribute name="name"><xsl:value-of select="../@id" /></xsl:attribute>
+</xsl:template>
+
+
+<!-- 
+| This is the styles template : these lines will include all needed css styles
 -->
 <xsl:template name="styles">
 <style>
@@ -8943,49 +8954,5 @@ A:link.newHelpTraining {
 </style>
 </xsl:template>
 
-<xsl:template name="header">
-	<table border="0" width="100%" cellpadding="0" cellspacing="0">
-		<tr>
-			<td align="left">
-				<xsl:apply-templates select="HEAD/following-sibling::IMG[@alt='Salesforce SFA']" />
-			</td>
-			<td align="right">
-				<xsl:apply-templates select="DIV[@class='sidebarModuleHeader']"/>
-				<xsl:apply-templates select="DIV[@class='standardSearchElementBody']"/>
-			</td>
-		</tr>   
-	</table>
-</xsl:template>
-
-
-<!-- 
-| This is the generic HTML template, do not modify 
--->
-<xsl:template match="@*|node()">
-	<xsl:copy>
-		<xsl:apply-templates select="@*|node()"/>
-	</xsl:copy>
-</xsl:template>
-
-<xsl:template match="@name">
- 		<xsl:attribute name="name"><xsl:value-of select="../@id" /></xsl:attribute>
-</xsl:template>
-
-
-
-<!-- 
-| This removes the checkbox on the searching area (in the header)
- -->
-<xsl:template match="DIV[@class='searchScope']" />
-
-<!-- 
-| This removes the select on the searching area (in the header)
- -->
-<xsl:template match="SELECT[@id='sen']" />
-
-<!-- 
-| This removes a button in the home page
- -->
-<xsl:template match="INPUT[@class='btn' and @name='whats_new' and @type='button']" />
 
 </xsl:stylesheet>

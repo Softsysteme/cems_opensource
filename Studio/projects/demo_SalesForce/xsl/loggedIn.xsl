@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-				xmlns:lxslt="http://xml.apache.org/xslt">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:lxslt="http://xml.apache.org/xslt">
 
 <xsl:output encoding="UTF-8" media-type="text/html" method="html"/>
 
@@ -36,71 +34,19 @@
 	 	</table>
 	</div>
 </xsl:template>
-
-
-<!-- Remove some elements from the table -->
-<xsl:template match="DIV[@class='listHeader']" /> 						<!-- remove the header list 		 -->
-<xsl:template match="TH[position() = 1 and @class='actionColumn']" />	<!-- remove the first column title   -->
-<xsl:template match="TD[position() = 1]" />		  						<!-- remove the first column  	     -->	
-
-<!-- Remove some DIV elements -->
-<xsl:template match="DIV[@class='pbHeader']" /> 						
-<xsl:template match="DIV[@class='pbBottomButtons']" /> 					
-
-
-<!-- Adding a column on the right of the last column of each line -->
-<xsl:template match="TR[contains(@class, 'header')]" >
-  <xsl:copy>
-    <xsl:apply-templates select="@*|node()"/>
-	<th>&#160;</th>
-	<th>&#160;</th>
-  </xsl:copy>			
-</xsl:template>	
-
-<xsl:template match="TH[contains(@scope, 'col')]/A" >
-	<xsl:copy>
-			<xsl:attribute name="style">color:#FFF; text-decoration:none</xsl:attribute>
-			<xsl:apply-templates select="@*|node()" />
-	</xsl:copy>
-</xsl:template>   
-
-<xsl:template match="TR[contains(@class, 'data')]" >
-  <xsl:copy>
-    <xsl:apply-templates select="@*|node()"/>
-	<td>
-		<img src="img/question.png" 
-			title="please click here to search information on this lead" 
-			alt="please click here to search information on this lead" 
-			style="cursor: pointer;"
-		 	name="{normalize-space(TH[1])}"
-		 	company="{normalize-space(TD[2])}"
-		 	state="{normalize-space(TD[3])}"
-		 	street="{normalize-space(TD[4])}"
-		 	postalcode="{normalize-space(TD[5])}"
-		 	city="{normalize-space(TD[6])}"
-		 	country="{normalize-space(TD[7])}"
-		 	email="{normalize-space(TD[8])}"
-		 	rowindex="{count(preceding-sibling::TR) + 1}"  
-		  onclick="C8O.doMashupEvent('ItemClicked', this)"
-		/>
-	</td>
-	<td>
-	   	<img src="img/erp.png"
-	   		title="click here to add this lead to CRM" 
-	   		alt="click here to add this lead to CRM"  
-	   		style="cursor: pointer;"
-	   		name="{normalize-space(TH[1])}" 
-		 	company="{normalize-space(TD[2])}" 
-		 	state="{normalize-space(TD[3])}" 
-		 	street="{normalize-space(TD[4])}" 
-		 	postalcode="{normalize-space(TD[5])}" 
-		 	city="{normalize-space(TD[6])}"
-		 	country="{normalize-space(TD[7])}" 
-		 	email="{normalize-space(TD[8])}"
-		 	onclick="C8O.doMashupEvent('ItemToTransfer', this)"
-	   	/>
-	</td>
-  </xsl:copy>
+	
+	
+<xsl:template match="ALERT">
+	<table id="alertTable" onclick="this.parentNode.removeChild(this)">
+		<tr id="alertTableTitle">
+			<td><b><xsl:value-of select="TYPE"/></b></td>
+			<td><xsl:value-of select="TITLE"/></td>
+			<td><b>X</b></td>
+		</tr>
+		<tr>
+			<td colspan="3"><xsl:value-of select="MESSAGE"/></td>
+		</tr>
+	</table>
 </xsl:template>
 
 <!-- 

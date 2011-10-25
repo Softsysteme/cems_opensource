@@ -1,101 +1,89 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.3.0.m004" engine="5.3.0" exported="21 janvier 2011 11:49" studio="5.3.0" version="5.3.0_beta">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.3.0.m004">
-        <property editorClass="BrowserDefinitionEditor" name="browserDefinitions">
+<convertigo beans="5.6.0.m004" engine="5.6.0" exported="October 24, 2011 5:45 PM" studio="5.6.0" version="5.6.0_alpha (build 28520)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
+        <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
             </xmlizable>
         </property>
-        <property editorClass="TextEditor" name="comment">
-            <java.lang.String value="The Google Maps library enables convertigo projects to access GoogleMaps features.&#13;\nThis library has two parts : A Visual Widget handled by the GoogleMapsConnector to be inserted in Mashup Composer and A Web service API to be used in sequencer projects handled by the GoogleMapsApiConnector.&#13;\n&#13;\n"/>
+        <property name="comment">
+            <java.lang.String value="The Google Maps library enables convertigo projects to access GoogleMaps features.&#13;&#10;This library has two parts : A Visual Widget handled by the GoogleMapsConnector to be inserted in Mashup Composer and A Web service API to be used in sequencer projects handled by the GoogleMapsApiConnector.&#13;&#10;&#13;&#10;"/>
         </property>
-        <property editorClass="null" name="httpSessionTimeout">
+        <property name="httpSessionTimeout">
             <java.lang.Integer value="300"/>
         </property>
-        <property editorClass="null" name="name">
+        <property name="name">
             <java.lang.String value="lib_GoogleMaps"/>
         </property>
-        <property editorClass="null" name="schemaInline">
+        <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
-        <property editorClass="PropertyWithTagsEditorAdvance" name="wsdlStyle">
+        <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="false" priority="0" version="5.3.0.m004">
-            <property editorClass="null" name="baseDir">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="false" priority="0" version="5.6.0.m004">
+            <property name="baseDir">
                 <java.lang.String value="/maps/api/geocode/xml"/>
             </property>
-            <property editorClass="null" name="basicPassword">
+            <property name="basicPassword">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="null" name="basicUser">
+            <property name="basicUser">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="null" name="billingClassName">
+            <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="TextEditor" name="comment">
-                <java.lang.String value="This connector will handle the Service API part of the GoogleMaps. Service APIs has no presentation widget and are intended to be used by sequencer projects.&#13;\n"/>
+            <property name="comment">
+                <java.lang.String value="This connector will handle the Service API part of the GoogleMaps. Service APIs has no presentation widget and are intended to be used by sequencer projects.&#13;&#10;"/>
             </property>
-            <property editorClass="PropertyWithTagsEditorAdvance" name="endTransactionName">
+            <property name="endTransactionName">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="HttpHeaderForwardEditor" name="httpHeaderForward">
+            <property name="httpHeaderForward">
                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                     <com.twinsoft.convertigo.beans.common.XMLVector/>
                 </xmlizable>
             </property>
-            <property editorClass="null" name="https">
+            <property name="https">
                 <java.lang.Boolean value="false"/>
             </property>
-            <property editorClass="null" name="isTasAuthenticationRequired">
+            <property name="isTasAuthenticationRequired">
                 <java.lang.Boolean value="false"/>
             </property>
-            <property editorClass="null" name="name">
+            <property name="name">
                 <java.lang.String value="GoogleMapsApiConnector"/>
             </property>
-            <property editorClass="null" name="port">
+            <property name="port">
                 <java.lang.Integer value="80"/>
             </property>
-            <property editorClass="null" name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="proxyPort">
-                <java.lang.Integer value="80"/>
-            </property>
-            <property editorClass="null" name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="server">
+            <property name="server">
                 <java.lang.String value="maps.googleapis.com"/>
             </property>
-            <property editorClass="null" name="trustAllServerCertificates">
+            <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="true" priority="0" version="5.3.0.m004">
-                <property editorClass="null" name="bIncludeCertificateGroup">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="true" priority="0" version="5.6.0.m004">
+                <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="billable">
+                <property name="billable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="clientCachable">
+                <property name="clientCachable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="TextEditor" name="comment">
+                <property name="comment">
                     <java.lang.String value="Geocoding is the process of converting addresses (like &quot;1600 Amphitheatre Parkway, Mountain View, CA&quot;) into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map."/>
                 </property>
-                <property editorClass="null" name="encodingCharSet">
+                <property name="encodingCharSet">
                     <java.lang.String value="UTF-8"/>
                 </property>
-                <property editorClass="null" name="handleCookie">
+                <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="HttpParametersEditor" name="httpParameters">
+                <property name="httpParameters">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -107,13 +95,13 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="HttpVerbEditor" name="httpVerb">
+                <property name="httpVerb">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="ignoreSoapEnveloppe">
+                <property name="ignoreSoapEnveloppe">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="IncludedTagAttributesEditor" name="includedTagAttributes">
+                <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
                         <java.lang.Boolean value="true"/>
                         <java.lang.Boolean value="true"/>
@@ -128,10 +116,10 @@
                         <java.lang.Boolean value="true"/>
                     </array>
                 </property>
-                <property editorClass="null" name="name">
+                <property name="name">
                     <java.lang.String value="GeoCodeByAddress"/>
                 </property>
-                <property editorClass="null" name="orderedVariables">
+                <property name="orderedVariables">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -143,40 +131,40 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="null" name="publicMethod">
+                <property name="publicMethod">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="null" name="requestTemplate">
+                <property name="requestTemplate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseElementQName">
+                <property name="responseElementQName">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseExpiryDate">
+                <property name="responseExpiryDate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseTimeout">
+                <property name="responseTimeout">
                     <java.lang.Long value="60"/>
                 </property>
-                <property editorClass="TransactionSheetLocationEditor" name="sheetLocation">
+                <property name="sheetLocation">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="subDir">
+                <property name="subDir">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="xmlEncoding">
+                <property name="xmlEncoding">
                     <java.lang.String value="UTF-8"/>
                 </property>
                 <wsdltype/>
                 <handlers/>
-                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.3.0.m004">
-                    <property editorClass="TextEditor" name="comment">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.6.0.m004">
+                    <property name="comment">
                         <java.lang.String value="This test case will test the GeoCodingApi with an Address situated in Paris"/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Paris"/>
                     </property>
-                    <property editorClass="null" name="orderedVariables">
+                    <property name="orderedVariables">
                         <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -188,120 +176,132 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367180" priority="1292065367180" version="5.3.0.m004">
-                        <property editorClass="TextEditor" name="comment">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367180" priority="1292065367180" version="5.6.0.m004">
+                        <property name="comment">
                             <java.lang.String value=""/>
                         </property>
-                        <property editorClass="null" name="description">
+                        <property name="description">
                             <java.lang.String value="Location"/>
                         </property>
-                        <property editorClass="null" name="name">
+                        <property name="name">
                             <java.lang.String value="Location"/>
                         </property>
-                        <property editorClass="null" isNull="false" name="value">
+                        <property isNull="false" name="value">
                             <java.lang.String value="6 rue Labrouste, Paris, France"/>
                         </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367182" priority="1292065367182" version="5.3.0.m004">
-                        <property editorClass="TextEditor" name="comment">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367182" priority="1292065367182" version="5.6.0.m004">
+                        <property name="comment">
                             <java.lang.String value=""/>
                         </property>
-                        <property editorClass="null" name="description">
+                        <property name="description">
                             <java.lang.String value="new variable"/>
                         </property>
-                        <property editorClass="null" name="name">
+                        <property name="name">
                             <java.lang.String value="sensor"/>
                         </property>
-                        <property editorClass="null" isNull="false" name="value">
+                        <property isNull="false" name="value">
                             <java.lang.String value="false"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
                         </property>
                     </variable>
                 </testcase>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292064751921" priority="1292064751921" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292064751921" priority="1292064751921" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Specify here a 'Google Compatible' address. This can be any like 'San Francisco', or 'Market street, San Francisco'"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="GET"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value="address"/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="true" name="value">
+                    <property isNull="true" name="value">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065125985" priority="1292065125985" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065125985" priority="1292065125985" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Indicates whether or not the geocoding request comes from a device with a location sensor. This value must be either true or false"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="GET"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="false"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="5.3.0.m004">
-                <property editorClass="null" name="bIncludeCertificateGroup">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="5.6.0.m004">
+                <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="billable">
+                <property name="billable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="clientCachable">
+                <property name="clientCachable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="TextEditor" name="comment">
-                    <java.lang.String value="The term geocoding generally refers to translating a human-readable address into a location on a map. The process of doing the converse, translating a location on the map into a human-readable address, is known as reverse geocoding.&#13;\n&#13;\nThe Geocoding API supports reverse geocoding directly using the latlng parameter."/>
+                <property name="comment">
+                    <java.lang.String value="The term geocoding generally refers to translating a human-readable address into a location on a map. The process of doing the converse, translating a location on the map into a human-readable address, is known as reverse geocoding.&#13;&#10;&#13;&#10;The Geocoding API supports reverse geocoding directly using the latlng parameter."/>
                 </property>
-                <property editorClass="null" name="encodingCharSet">
+                <property name="encodingCharSet">
                     <java.lang.String value="UTF-8"/>
                 </property>
-                <property editorClass="null" name="handleCookie">
+                <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="HttpParametersEditor" name="httpParameters">
+                <property name="httpParameters">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -313,13 +313,13 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="HttpVerbEditor" name="httpVerb">
+                <property name="httpVerb">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="ignoreSoapEnveloppe">
+                <property name="ignoreSoapEnveloppe">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="IncludedTagAttributesEditor" name="includedTagAttributes">
+                <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
                         <java.lang.Boolean value="true"/>
                         <java.lang.Boolean value="true"/>
@@ -334,10 +334,10 @@
                         <java.lang.Boolean value="true"/>
                     </array>
                 </property>
-                <property editorClass="null" name="name">
+                <property name="name">
                     <java.lang.String value="GeoCodeByLatLng"/>
                 </property>
-                <property editorClass="null" name="orderedVariables">
+                <property name="orderedVariables">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -351,40 +351,40 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="null" name="publicMethod">
+                <property name="publicMethod">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="null" name="requestTemplate">
+                <property name="requestTemplate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseElementQName">
+                <property name="responseElementQName">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseExpiryDate">
+                <property name="responseExpiryDate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseTimeout">
+                <property name="responseTimeout">
                     <java.lang.Long value="60"/>
                 </property>
-                <property editorClass="TransactionSheetLocationEditor" name="sheetLocation">
+                <property name="sheetLocation">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="subDir">
+                <property name="subDir">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="xmlEncoding">
+                <property name="xmlEncoding">
                     <java.lang.String value="UTF-8"/>
                 </property>
                 <wsdltype/>
                 <handlers/>
-                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.3.0.m004">
-                    <property editorClass="TextEditor" name="comment">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.6.0.m004">
+                    <property name="comment">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Paris"/>
                     </property>
-                    <property editorClass="null" name="orderedVariables">
+                    <property name="orderedVariables">
                         <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -398,175 +398,175 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065457079" priority="1292065457079" version="5.3.0.m004">
-                        <property editorClass="TextEditor" name="comment">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065457079" priority="1292065457079" version="5.6.0.m004">
+                        <property name="comment">
                             <java.lang.String value=""/>
                         </property>
-                        <property editorClass="null" name="description">
+                        <property name="description">
                             <java.lang.String value="sensor"/>
                         </property>
-                        <property editorClass="null" name="name">
+                        <property name="name">
                             <java.lang.String value="sensor"/>
                         </property>
-                        <property editorClass="null" isNull="false" name="value">
+                        <property isNull="false" name="value">
                             <java.lang.String value="false"/>
                         </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065569080" priority="1292065569080" version="5.3.0.m004">
-                        <property editorClass="TextEditor" name="comment">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065569080" priority="1292065569080" version="5.6.0.m004">
+                        <property name="comment">
                             <java.lang.String value=""/>
                         </property>
-                        <property editorClass="null" name="description">
+                        <property name="description">
                             <java.lang.String value="Lat and Lng in &lt;lat&gt;,&lt;lng&gt; format"/>
                         </property>
-                        <property editorClass="null" name="name">
+                        <property name="name">
                             <java.lang.String value="LatLng"/>
                         </property>
-                        <property editorClass="null" isNull="false" name="value">
+                        <property isNull="false" name="value">
                             <java.lang.String value="48.8343840,2.3084275"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
                         </property>
                     </variable>
                 </testcase>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457083" priority="1292065457083" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457083" priority="1292065457083" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Specify here a Lat Lng Parameter in the form &lt;lat&gt;,&lt;lng&gt; such as &quot;48.8343840,2.3084275&quot;"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="GET"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value="address"/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="LatLng"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="true" name="value">
+                    <property isNull="true" name="value">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457088" priority="1292065457088" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457088" priority="1292065457088" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Indicates whether or not the geocoding request comes from a device with a location sensor. This value must be either true or false"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="GET"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="sensor"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="false"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
             </transaction>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="5.3.0.m004">
-            <property editorClass="null" name="baseDir">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="5.6.0.m004">
+            <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
-            <property editorClass="null" name="basicPassword">
+            <property name="basicPassword">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="null" name="basicUser">
+            <property name="basicUser">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="null" name="billingClassName">
+            <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="TextEditor" name="comment">
+            <property name="comment">
                 <java.lang.String value="This connector handles the visual part of the GoogleMaps libray"/>
             </property>
-            <property editorClass="PropertyWithTagsEditorAdvance" name="endTransactionName">
+            <property name="endTransactionName">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="HttpHeaderForwardEditor" name="httpHeaderForward">
+            <property name="httpHeaderForward">
                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                     <com.twinsoft.convertigo.beans.common.XMLVector/>
                 </xmlizable>
             </property>
-            <property editorClass="null" name="https">
+            <property name="https">
                 <java.lang.Boolean value="false"/>
             </property>
-            <property editorClass="null" name="isTasAuthenticationRequired">
+            <property name="isTasAuthenticationRequired">
                 <java.lang.Boolean value="false"/>
             </property>
-            <property editorClass="null" name="name">
+            <property name="name">
                 <java.lang.String value="GoogleMapsConnector"/>
             </property>
-            <property editorClass="null" name="port">
+            <property name="port">
                 <java.lang.Integer value="80"/>
             </property>
-            <property editorClass="null" name="proxyPassword">
+            <property name="server">
                 <java.lang.String value=""/>
             </property>
-            <property editorClass="null" name="proxyPort">
-                <java.lang.Integer value="80"/>
-            </property>
-            <property editorClass="null" name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="server">
-                <java.lang.String value=""/>
-            </property>
-            <property editorClass="null" name="trustAllServerCertificates">
+            <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.3.0.m004">
-                <property editorClass="null" name="bIncludeCertificateGroup">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.6.0.m004">
+                <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="billable">
+                <property name="billable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="clientCachable">
+                <property name="clientCachable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="TextEditor" name="comment">
+                <property name="comment">
                     <java.lang.String value="Call this transaction to mark a new location on the current map."/>
                 </property>
-                <property editorClass="null" name="encodingCharSet">
+                <property name="encodingCharSet">
                     <java.lang.String value="UTF-8"/>
                 </property>
-                <property editorClass="null" name="handleCookie">
+                <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="HttpParametersEditor" name="httpParameters">
+                <property name="httpParameters">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -578,10 +578,10 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="HttpVerbEditor" name="httpVerb">
+                <property name="httpVerb">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="IncludedTagAttributesEditor" name="includedTagAttributes">
+                <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
                         <java.lang.Boolean value="true"/>
                         <java.lang.Boolean value="true"/>
@@ -596,10 +596,10 @@
                         <java.lang.Boolean value="true"/>
                     </array>
                 </property>
-                <property editorClass="null" name="name">
+                <property name="name">
                     <java.lang.String value="MarkLocation"/>
                 </property>
-                <property editorClass="null" name="orderedVariables">
+                <property name="orderedVariables">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -615,22 +615,22 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="null" name="publicMethod">
+                <property name="publicMethod">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="requestTemplate">
+                <property name="requestTemplate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseExpiryDate">
+                <property name="responseExpiryDate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseTimeout">
+                <property name="responseTimeout">
                     <java.lang.Long value="60"/>
                 </property>
-                <property editorClass="TransactionSheetLocationEditor" name="sheetLocation">
+                <property name="sheetLocation">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="subDir">
+                <property name="subDir">
                     <java.lang.String value=""/>
                 </property>
                 <wsdltype/>
@@ -647,91 +647,97 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289929760496" priority="1289929760496" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289929760496" priority="1289929760496" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Specify here a 'Google Compatible' address. This can be any like 'San Francisco', or 'Market street, San Francisco'"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="San Bruno"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292152282910" priority="1292152282910" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292152282910" priority="1292152282910" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="This is the tooltip that will be shown on the map"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Tooltip to be shown"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Tooltip"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="San bruno city"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.3.0.m004">
-                <property editorClass="null" name="bIncludeCertificateGroup">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.6.0.m004">
+                <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="billable">
+                <property name="billable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="clientCachable">
+                <property name="clientCachable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="TextEditor" name="comment">
+                <property name="comment">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="encodingCharSet">
+                <property name="encodingCharSet">
                     <java.lang.String value="UTF-8"/>
                 </property>
-                <property editorClass="null" name="handleCookie">
+                <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="HttpParametersEditor" name="httpParameters">
+                <property name="httpParameters">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -743,10 +749,10 @@ function onTransactionStarted() {
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="HttpVerbEditor" name="httpVerb">
+                <property name="httpVerb">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="IncludedTagAttributesEditor" name="includedTagAttributes">
+                <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
                         <java.lang.Boolean value="true"/>
                         <java.lang.Boolean value="true"/>
@@ -761,10 +767,10 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </array>
                 </property>
-                <property editorClass="null" name="name">
+                <property name="name">
                     <java.lang.String value="MarkLocations"/>
                 </property>
-                <property editorClass="null" name="orderedVariables">
+                <property name="orderedVariables">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -778,22 +784,22 @@ function onTransactionStarted() {
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="null" name="publicMethod">
+                <property name="publicMethod">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="requestTemplate">
+                <property name="requestTemplate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseExpiryDate">
+                <property name="responseExpiryDate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseTimeout">
+                <property name="responseTimeout">
                     <java.lang.Long value="60"/>
                 </property>
-                <property editorClass="TransactionSheetLocationEditor" name="sheetLocation">
+                <property name="sheetLocation">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="subDir">
+                <property name="subDir">
                     <java.lang.String value=""/>
                 </property>
                 <wsdltype/>
@@ -810,32 +816,32 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1289929392583" priority="1289929392583" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1289929392583" priority="1289929392583" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="new variable"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Locations"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <java.lang.String value="Paris, France"/>
@@ -844,31 +850,34 @@ function onTransactionStarted() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="5.3.0.m004">
-                <property editorClass="null" name="bIncludeCertificateGroup">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="5.6.0.m004">
+                <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="billable">
+                <property name="billable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="clientCachable">
+                <property name="clientCachable">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="TextEditor" name="comment">
+                <property name="comment">
                     <java.lang.String value="This is the first transaction to call. It will result in displaying a GoogleMaps widget centered on the location provided, with the specified parameters."/>
                 </property>
-                <property editorClass="null" name="encodingCharSet">
+                <property name="encodingCharSet">
                     <java.lang.String value="UTF-8"/>
                 </property>
-                <property editorClass="null" name="handleCookie">
+                <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
                 </property>
-                <property editorClass="HttpParametersEditor" name="httpParameters">
+                <property name="httpParameters">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -880,10 +889,10 @@ function onTransactionStarted() {
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="HttpVerbEditor" name="httpVerb">
+                <property name="httpVerb">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="IncludedTagAttributesEditor" name="includedTagAttributes">
+                <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
                         <java.lang.Boolean value="true"/>
                         <java.lang.Boolean value="true"/>
@@ -898,10 +907,10 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </array>
                 </property>
-                <property editorClass="null" name="name">
+                <property name="name">
                     <java.lang.String value="ShowMap"/>
                 </property>
-                <property editorClass="null" name="orderedVariables">
+                <property name="orderedVariables">
                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -914,22 +923,22 @@ function onTransactionStarted() {
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <property editorClass="null" name="publicMethod">
+                <property name="publicMethod">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property editorClass="null" name="requestTemplate">
+                <property name="requestTemplate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseExpiryDate">
+                <property name="responseExpiryDate">
                     <java.lang.String value=""/>
                 </property>
-                <property editorClass="null" name="responseTimeout">
+                <property name="responseTimeout">
                     <java.lang.Long value="60"/>
                 </property>
-                <property editorClass="TransactionSheetLocationEditor" name="sheetLocation">
+                <property name="sheetLocation">
                     <java.lang.Integer value="0"/>
                 </property>
-                <property editorClass="null" name="subDir">
+                <property name="subDir">
                     <java.lang.String value=""/>
                 </property>
                 <wsdltype/>
@@ -946,99 +955,108 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289912532506" priority="1289912532506" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289912532506" priority="1289912532506" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Specify here a 'Google Compatible' address. This can be any like 'San Francisco', or 'Market street, San Francisco'"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Location"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="San Francisco"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928459863" priority="1289928459863" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928459863" priority="1289928459863" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
-                        <java.lang.String value="Zoom factor to be used&#13;\n"/>
+                    <property name="comment">
+                        <java.lang.String value="Zoom factor to be used&#13;&#10;"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Zoom factor"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Zoom"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="8"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928653953" priority="1289928653953" version="5.3.0.m004">
-                    <property editorClass="null" name="cachedKey">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928653953" priority="1289928653953" version="5.6.0.m004">
+                    <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
-                    <property editorClass="TextEditor" name="comment">
+                    <property name="comment">
                         <java.lang.String value="Height in Pixels"/>
                     </property>
-                    <property editorClass="null" name="description">
+                    <property name="description">
                         <java.lang.String value="Widget height"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="httpMethod">
+                    <property name="httpMethod">
                         <java.lang.String value="POST"/>
                     </property>
-                    <property editorClass="null" name="httpName">
+                    <property name="httpName">
                         <java.lang.String value=""/>
                     </property>
-                    <property editorClass="null" name="name">
+                    <property name="name">
                         <java.lang.String value="Height"/>
                     </property>
-                    <property editorClass="null" name="personalizable">
+                    <property name="personalizable">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property editorClass="PropertyWithTagsEditorAdvance" name="schemaType">
+                    <property name="schemaType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property editorClass="null" isNull="false" name="value">
+                    <property isNull="false" name="value">
                         <java.lang.String value="400"/>
                     </property>
-                    <property editorClass="null" name="wsdl">
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
