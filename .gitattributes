@@ -2075,6 +2075,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/BreakStep.java -text svneol=unset
 Studio/src/com/twinsoft/convertigo/beans/steps/BreakStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/CopyStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/CopyStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/CreateDirectoryStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/CreateDirectoryStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DoWhileStep.java -text svneol=unset#text/plain
@@ -2186,6 +2188,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_16x16.gif -text
@@ -2244,6 +2248,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/BlockStep.properties -text sv
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BranchStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BreakStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/CopyStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/CreateDirectoryStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/DeleteStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/DoWhileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElementStep.properties -text svneol=unset#text/plain
