@@ -11,8 +11,6 @@ Server/.settings/org.eclipse.wst.jsdt.ui.superType.container -text
 Server/.settings/org.eclipse.wst.jsdt.ui.superType.name -text
 Server/.settings/org.eclipse.wst.validation.prefs -text svneol=unset#text/plain
 Server/.settings/org.eclipse.wst.ws.service.policy.prefs -text svneol=unset#text/plain
-Server/README.txt -text svneol=unset#text/plain
-Server/readme.txt -text svneol=unset#text/plain
 Studio/.classpath -text
 Studio/.project -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
