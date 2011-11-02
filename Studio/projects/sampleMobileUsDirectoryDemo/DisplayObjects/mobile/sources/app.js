@@ -126,27 +126,34 @@ Ext.apply(app, {
 	 *   })
 	 */
 	init: [],
-	
+	/**
+	 * Auto-filled key/value object with panels currently displayed in the bottom dock
+	 */
+	curItems: [],
 	/**
 	 * Auto-filled key/value object with created panels
 	 */
 	panels: {},
-	
 	/**
 	 * key/value object to put used stores 
 	 */
 	stores: {},
-	
+	/**
+	 * TODO
+	 */
+	userName: '',
 	/**
 	 * App variable used to know if the user is currently logged by the remote service
 	 */
 	logged: false,
-	
+	/**
+	 * TODO
+	 */
+	initialized: false,
 	/**
 	 * This is the toolbar instance (false means no toolbar), overridden to define the top toolbar (look at topToolbar.js)
 	 */
 	toolbar: false,
-	
 	/**
 	 * Method used by panel to know if the user is authenticated and prompt login panel if not
 	 * 
@@ -158,26 +165,105 @@ Ext.apply(app, {
 			// display a popout error message
 			Ext.Msg.alert("Error","Identification required", function() {
 				// switch to login panel
-				app.activatePanel('login');
+				app.activate('login');
 			});
 			return false;
 		}
 		return true;
+	},
+	/**
+	 * default animation
+	 */
+	animation: 'slide', 
+	/**
+		trim function, removes white spaces from 
+		both sides of a string
+	*/
+	trim: function(string) {
+		return string.replace(/^\s+/g,'').replace(/\s+$/g,''); 
+	},
+	/**
+		this function modifies tabbar icons
+		activates the specified tab
+	*/
+	enablePanels: function(names, active, animation) {
+		/**
+			check if animation parameter is provided
+			otherwise we set it to default
+		*/
+		if (animation == undefined) 
+			animation = app.animation;
+		
+		/**
+			empty current icons list
+		*/
+		if (names != null) {
+			app.curItems = [];
+		
+			/**
+				browse names array and add
+				panels corresponding to names
+				to current icons list
+			*/
+			for(i=0; i<names.length; i++) {			
+				app.curItems.push(app.panels[names[i]]);
+				app.deactivate(names[i]);
+			}
+		}
+		
+		/**
+			update toolbar properties in app to reflect new icons
+		*/
+		Ext.apply(app, {
+			dock: new Ext.TabPanel({
+				tabBarDock: 'bottom',
+				cardSwitchAnimation: animation,
+				fullscreen: true,
+				items: app.curItems
+			})
+		});	
+		
+		/**
+			activate requested icon
+		*/
+		if (active != undefined)
+			app.activate(active);
 	},
 	
 	/**
 	 * Method usefull to switch between declared panels (in app.panels)
 	 * 
 	 * Return true if this panel exists or false otherwise
+	 * activate the named tab
+	 *	
+	 *	nb: normally, setActiveItem will hilite an icon
+	 *	while deactivating the others. In certain cases,
+	 *	this is not the case, this is why we provide the 
+	 *	deactivate function
 	 */
-	activatePanel: function (panelName) {
+	activate: function(panelName) {	
 		// check if the panel 'panelName' exists
 		if (Ext.isDefined(app.panels[panelName])) {
 			// switch to that panel
 			app.dock.setActiveItem(app.panels[panelName]);
+			app.panels[panelName].doLayout();
 			return true;
 		}
 		return false;
+	},
+	/**
+		if possible deactivate the named tab
+	*/
+	deactivate: function(panelName) {		
+		try {
+			/** 
+			* hack to force tab deactivated state 
+			*/
+			if ((Ext.isDefined(app.panels[panelName])))
+				app.panels[panelName].tab.el.removeCls(app.panels[panelName].tab.activeCls);
+		}
+		catch(err) {
+		}
 	}
 });
 
@@ -191,21 +277,24 @@ Ext.setup({
 	tabletStartupScreen: 'img/tabletStartup.png',
 	phoneStartupScreen: 'img/phoneStartup.png',
 	glossOnIcon: false,
-	
-	// called when the page is loaded
+	/**
+		entry point
+	*/
 	onReady: function () {
-		// temporary store created panel to insert them into the dock
-		var items = [];
-		
-		// Ext.each iterate over many object like array (see http://dev.sencha.com/deploy/touch/docs/?class=Ext)
-		// Consume positioned item in the app.init array
+		/**
+			all panels are initialized
+			and panel array is built
+		*/
 		Ext.each(app.init, function (item) {
-			// create the current panel and declare it 'item.name' into app.panels
 			app.panels[item.name] = item.init();
-			// add it to the temporary array for the dock
-			items.push(app.panels[item.name]);
 		});
-		
+
+		/**
+			hilite Search panel
+		*/
+		app.enablePanels(['search'], 'search');
+
+
 		// Merge dock, listMask and defaultMask
 		Ext.apply(app, {
 			// declare the TabPanel dock object (see http://dev.sencha.com/deploy/touch/docs/?class=Ext.TabPanel)
@@ -214,16 +303,16 @@ Ext.setup({
 				tabBarDock: 'bottom',
 				fullscreen: true,           
 				cardSwitchAnimation: 'slide',      
-				items: items
+				items: app.curItems
 			}),
 			// create a waiting mask object (see http://dev.sencha.com/deploy/touch/docs/?class=Ext.LoadMask)
 			// can be passed to C8O.execute or displayed using show()/hide() methods
 			defaultMask: new Ext.LoadMask(Ext.getBody(), {
-				msg: 'Loading, please wait ...'
+				msg: 'Loading<br>please wait...'
 			}),
 			// like the defaultMask but automatically displayed when the app.stores.list is loading data
 			listMask: new Ext.LoadMask(Ext.getBody(), {
-				msg: 'Loading, please wait ...',
+				msg: 'Loading<br>please wait...',
 				// the mask appear when app.stores.list Store is loading (declared in listDisplay.js)
 				store: app.stores.list
 			})

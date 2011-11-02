@@ -46,15 +46,58 @@ app.init.push({
 				indexBar: false,
 				store: app.stores.list,	// Reference to the store from which the data is to be displayed
 				loadingText: undefined,
+				listeners: {
+					/**
+						itemtap event will be fired for any click on a list line
+						i.e for itemDisclosure or regular select/deselect action
+						there is a hack to figure out which one of the former case 
+						we are dealing with
+					*/
+					itemtap: function (view, idx, item, e)
+					{
+						if (e.getTarget('.x-list-item-body'))
+						{ 
+							/**
+								!!!!!!!!!!!!! hack to differentiate disclosure from itemtap
+							*/
+						}
+					},
+					selectionchange: function (selectionModel, records)
+					{
+						/**
+							check if we have something to display
+						*/
+						if (records.length > 0)
+						{
+							/**
+								yes we have at least one record, 
+								store the current selected record
+							*/
+							app.list = {
+								activatedRecord:  records[0] 
+							}						
+							/**
+								add map icon to tabbar, stay on list tab, no 'slide' animation
+							*/
+							app.enablePanels(['search', 'list', 'map'], 'list', false);
+						}
+						else {
+							/**
+								ensure no map icon in tabbar, stay on list tab, no 'slide' animation
+							*/
+							app.enablePanels(['search', 'list'], 'list', false);
+						}
+					}				
+				},
 				onItemDisclosure: function (record, btn, index) {
 					app.list =  {
 						activatedRecord : record
 					};
-					app.activatePanel('map')												
+					app.enablePanels(['search', 'list', 'map'], 'map');
 				}
 			}],
 			
-			listeners: {
+			listeners: {				
 				activate: function (comp) {
 					if (app.checkAuthentication()) {
 						// loading list content from the Convertigo sequence execution

@@ -4,6 +4,7 @@
 app.init.push({
 	name: 'map',
 	init: function () {
+		var displayableAddress = '';
 		var exMarker = null;
 		app.extMap = new Ext.Map({
 			useCurrentLocation: false,	// Does not get user's current location
@@ -23,9 +24,11 @@ app.init.push({
 						/*
 						 * Use Google Maps api to display the stored address on the map
 						 */
-						if (exMarker !== null) {
+						if (exMarker !== null)
 							exMarker.setMap(null);
-						}
+
+						displayableAddress = app.list.activatedRecord.get('address');
+
 						app.geocoder.geocode(
 							{
 								address: app.list.activatedRecord.get('address')
@@ -34,6 +37,7 @@ app.init.push({
 								app.extMap.map.setCenter(results[0].geometry.location);
 								exMarker = new google.maps.Marker({
 									map: app.extMap.map,
+									title: displayableAddress,
 									position: results[0].geometry.location
 								});
 							}

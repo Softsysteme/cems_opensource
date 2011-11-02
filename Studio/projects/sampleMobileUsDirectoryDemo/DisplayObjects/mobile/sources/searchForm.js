@@ -95,7 +95,7 @@ app.init.push({
 									text: 'Search',
 									handler: function() {
 										app.isDataDirty = true;
-										app.activatePanel('list');
+										app.enablePanels(['search', 'list'], 'list');
 									}
 								}
 							]
