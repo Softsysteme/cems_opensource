@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sampleMobileUsDirectoryDemo" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileUsDirectoryDemo_ns="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:definitions name="sampleMobileUsDirectoryDemo" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sampleMobileUsDirectoryDemo_ns="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo"><xsd:include schemaLocation="sampleMobileUsDirectoryDemo.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="usdirectoryConnector__searchBusinessRequest">
-    <wsdl:part name="parameters" element="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusiness">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="usdirectoryConnector__searchBusinessResponse">
-    <wsdl:part name="parameters" element="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessResponse">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:portType name="sampleMobileUsDirectoryDemoPortType">
-    <wsdl:operation name="usdirectoryConnector__searchBusiness">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessRequest">
-    </wsdl:input>
-      <wsdl:output message="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessResponse">
-    </wsdl:output>
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileUsDirectoryDemoSOAPBinding" type="sampleMobileUsDirectoryDemo_ns:sampleMobileUsDirectoryDemoPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="usdirectoryConnector__searchBusiness">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="sampleMobileUsDirectoryDemo?usdirectoryConnector__searchBusiness"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sampleMobileUsDirectoryDemo">
     <wsdl:port name="sampleMobileUsDirectoryDemoSOAP" binding="sampleMobileUsDirectoryDemo_ns:sampleMobileUsDirectoryDemoSOAPBinding">

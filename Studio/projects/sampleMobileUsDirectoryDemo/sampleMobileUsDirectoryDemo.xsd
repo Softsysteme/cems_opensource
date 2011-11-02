@@ -91,19 +91,19 @@
 <xsd:complexType name="usdirectoryConnector__searchBusinessRequestData">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element name="business" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>Name of the business to search</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
 <xsd:element name="city" type="xsd:string">
 <xsd:annotation>
-<xsd:appinfo>city wher the business is</xsd:appinfo>
+<xsd:appinfo>description</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="business" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>description</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element name="state" type="xsd:string">
 <xsd:annotation>
-<xsd:appinfo>State wher the city is</xsd:appinfo>
+<xsd:appinfo>description</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
@@ -111,7 +111,6 @@
 <xsd:complexType name="usdirectoryConnector__searchBusinessResponseData">
 <xsd:sequence>
 <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
-<xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
 <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:errorTextType"/>
 <xsd:element minOccurs="0" name="errorMessage" type="sampleMobileUsDirectoryDemo_ns:errorMessageTextType"/>
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="sampleMobileUsDirectoryDemo_ns:resultsTableType"/>

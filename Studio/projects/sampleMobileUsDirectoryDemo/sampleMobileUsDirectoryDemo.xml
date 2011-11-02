@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.6.0.m004" engine="5.6.0" exported="19 septembre 2011 09:20" studio="5.6.0" version="5.6.0_alpha">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
+<convertigo beans="6.0.0.m004" engine="6.0.0" exported="October 25, 2011 6:18 PM" studio="6.0.0" version="6.0.0_RC (build 28745)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -22,7 +22,7 @@
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="5.6.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="6.0.0.m004">
             <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
@@ -70,7 +70,7 @@
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="6.0.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -84,7 +84,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -156,7 +156,7 @@
                     <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
                         <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
                             <timeout>
-                                <java.lang.Long value="60000"/>
+                                <java.lang.Long value="10000"/>
                             </timeout>
                             <classname>
                                 <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
@@ -170,7 +170,7 @@
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="6.0.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -184,7 +184,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -227,19 +227,21 @@
                         <com.twinsoft.convertigo.beans.common.XMLVector>
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <java.lang.Long value="1259761789208"/>
-                                    <java.lang.Long value="1259761789239"/>
-                                    <java.lang.Long value="1259761789270"/>
-                                    <java.lang.Long value="1314696915057"/>
-                                    <java.lang.Long value="1314696915060"/>
-                                    <java.lang.Long value="1314696915063"/>
+                                    <java.lang.Long value="1259761789331"/>
+                                    <java.lang.Long value="1259761789361"/>
+                                    <java.lang.Long value="1259761789392"/>
+                                    <java.lang.Long value="1259761789422"/>
+                                    <java.lang.Long value="1280231954823"/>
+                                    <java.lang.Long value="1319556064812"/>
+                                    <java.lang.Long value="1319556064815"/>
+                                    <java.lang.Long value="1319556064818"/>
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
                 <property name="publicMethod">
-                    <java.lang.Boolean value="true"/>
+                    <java.lang.Boolean value="false"/>
                 </property>
                 <property name="requestTemplate">
                     <java.lang.String value=""/>
@@ -276,7 +278,7 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.6.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -300,16 +302,15 @@
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                     <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1211798193765"/>
-                                        <java.lang.Long value="1211808512296"/>
-                                        <java.lang.Long value="1314696915020"/>
-                                        <java.lang.Long value="1314696969271"/>
+                                        <java.lang.Long value="1280225813188"/>
+                                        <java.lang.Long value="1319558928855"/>
+                                        <java.lang.Long value="1319556064581"/>
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1314696915020" priority="1314696915020" version="5.6.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1319558928855" priority="1319558928855" version="6.0.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -323,7 +324,7 @@
                             <java.lang.String value="Init_vars"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.BrowserPropertyChangeStatement" newPriority="1314696969271" priority="1314696969271" version="5.6.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.BrowserPropertyChangeStatement" newPriority="1319556064581" priority="1319556064581" version="6.0.0.m004">
                         <property name="attachmentMode">
                             <java.lang.String value="no change"/>
                         </property>
@@ -376,17 +377,17 @@
                             <java.lang.String value="no change"/>
                         </property>
                         <property name="name">
-                            <java.lang.String value="New_Browser_property_change"/>
+                            <java.lang.String value="New_Browser_Property_Change"/>
                         </property>
                         <property name="pluginMode">
-                            <java.lang.String value="no change"/>
+                            <java.lang.String value="force off"/>
                         </property>
                         <property name="windowOpenMode">
                             <java.lang.String value="no change"/>
                         </property>
                     </statement>
                 </statement>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScExitHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.6.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScExitHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -413,21 +414,19 @@
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                     <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1211798162343"/>
+                                        <java.lang.Long value="1303393027834"/>
+                                        <java.lang.Long value="1303393735472"/>
                                         <java.lang.Long value="1211798284171"/>
                                         <java.lang.Long value="1211804983000"/>
-                                        <java.lang.Long value="1211808530484"/>
-                                        <java.lang.Long value="1211808530515"/>
-                                        <java.lang.Long value="1211808530703"/>
-                                        <java.lang.Long value="1314696915030"/>
-                                        <java.lang.Long value="1314696915033"/>
-                                        <java.lang.Long value="1314696915051"/>
+                                        <java.lang.Long value="1319558562449"/>
+                                        <java.lang.Long value="1319556064608"/>
+                                        <java.lang.Long value="1319556064626"/>
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1314696915030" priority="1314696915030" version="5.6.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1319558562449" priority="1319558562449" version="6.0.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -438,10 +437,10 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                         <property name="name">
-                            <java.lang.String value="New_Simple_Statement1"/>
+                            <java.lang.String value="CheckValidUSState"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1314696915033" priority="1314696915033" version="5.6.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1319556064608" priority="1319556064608" version="6.0.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -464,22 +463,17 @@
                                             <java.lang.Long value="1211798297531"/>
                                             <java.lang.Long value="1211798299531"/>
                                             <java.lang.Long value="1211798321906"/>
-                                            <java.lang.Long value="1211808530546"/>
-                                            <java.lang.Long value="1211808530578"/>
-                                            <java.lang.Long value="1211808530609"/>
-                                            <java.lang.Long value="1211808530640"/>
-                                            <java.lang.Long value="1211808530671"/>
-                                            <java.lang.Long value="1314696915036"/>
-                                            <java.lang.Long value="1314696915039"/>
-                                            <java.lang.Long value="1314696915042"/>
-                                            <java.lang.Long value="1314696915045"/>
-                                            <java.lang.Long value="1314696915048"/>
+                                            <java.lang.Long value="1319556064611"/>
+                                            <java.lang.Long value="1319556064614"/>
+                                            <java.lang.Long value="1319556064617"/>
+                                            <java.lang.Long value="1319556064620"/>
+                                            <java.lang.Long value="1319556064623"/>
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1314696915036" priority="1314696915036" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1319556064611" priority="1319556064611" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -514,7 +508,7 @@
                                 <java.lang.String value="'//INPUT[@name=&quot;qhqn&quot;]'"/>
                             </property>
                         </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1314696915039" priority="1314696915039" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1319556064614" priority="1319556064614" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -549,7 +543,7 @@
                                 <java.lang.String value="'//INPUT[@id=&quot;city&quot;]'"/>
                             </property>
                         </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetSelectedStatement" newPriority="1314696915042" priority="1314696915042" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetSelectedStatement" newPriority="1319556064617" priority="1319556064617" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -587,7 +581,7 @@
                                 <java.lang.String value="'//SELECT[@id=&quot;qs&quot;]'"/>
                             </property>
                         </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1314696915045" priority="1314696915045" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1319556064620" priority="1319556064620" version="6.0.0.m004">
                             <property name="action">
                                 <java.lang.String value="click"/>
                             </property>
@@ -619,7 +613,7 @@
                                 <java.lang.String value="'//INPUT[@type=&quot;submit&quot;]'"/>
                             </property>
                         </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.ReturnStatement" newPriority="1314696915048" priority="1314696915048" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.ReturnStatement" newPriority="1319556064623" priority="1319556064623" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -634,7 +628,7 @@
                             </property>
                         </statement>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1314696915051" priority="1314696915051" version="5.6.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1319556064626" priority="1319556064626" version="6.0.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -653,19 +647,18 @@
                                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                         <com.twinsoft.convertigo.beans.common.XMLVector>
                                             <java.lang.Long value="1211804996375"/>
-                                            <java.lang.Long value="1211808530734"/>
-                                            <java.lang.Long value="1314696915054"/>
+                                            <java.lang.Long value="1319556064629"/>
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.ContextAddTextNodeStatement" newPriority="1314696915054" priority="1314696915054" version="5.6.0.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.ContextAddTextNodeStatement" newPriority="1319556064629" priority="1319556064629" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
                             <property name="expression">
-                                <java.lang.String value="&quot;Wrong state&quot;"/>
+                                <java.lang.String value="&quot;Wrong state: state '&quot; + state + &quot;' not found in US directory web site form.&quot;"/>
                             </property>
                             <property name="isEnable">
                                 <java.lang.Boolean value="true"/>
@@ -682,7 +675,248 @@
                         </statement>
                     </statement>
                 </statement>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1314696915057" priority="1314696915057" version="5.6.0.m004">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Basic_Test_Case"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303391371798"/>
+                                        <java.lang.Long value="1303391371800"/>
+                                        <java.lang.Long value="1303391371802"/>
+                                        <java.lang.Long value="1303391371804"/>
+                                        <java.lang.Long value="1303391371806"/>
+                                        <java.lang.Long value="1319556064633"/>
+                                        <java.lang.Long value="1319556064642"/>
+                                        <java.lang.Long value="1319556064645"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064633" priority="1319556064633" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="city"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="redmond"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064642" priority="1319556064642" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="business"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="microsoft"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064645" priority="1319556064645" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="state"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="Washington"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="ErrorNoResult_Test_Case"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303391371798"/>
+                                        <java.lang.Long value="1303391371800"/>
+                                        <java.lang.Long value="1303391371802"/>
+                                        <java.lang.Long value="1303391371804"/>
+                                        <java.lang.Long value="1303391371806"/>
+                                        <java.lang.Long value="1303392679390"/>
+                                        <java.lang.Long value="1303392679393"/>
+                                        <java.lang.Long value="1303392679396"/>
+                                        <java.lang.Long value="1303392679399"/>
+                                        <java.lang.Long value="1303392679402"/>
+                                        <java.lang.Long value="1319556064649"/>
+                                        <java.lang.Long value="1319556064775"/>
+                                        <java.lang.Long value="1319556064793"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064649" priority="1319556064649" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="city"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="redmond"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064775" priority="1319556064775" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="business"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="convertigo"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064793" priority="1319556064793" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="state"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="Washington"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="ErrorWrongState_Test_Case"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1303391371798"/>
+                                        <java.lang.Long value="1303391371800"/>
+                                        <java.lang.Long value="1303391371802"/>
+                                        <java.lang.Long value="1303391371804"/>
+                                        <java.lang.Long value="1303391371806"/>
+                                        <java.lang.Long value="1303392336238"/>
+                                        <java.lang.Long value="1303392336241"/>
+                                        <java.lang.Long value="1303392336244"/>
+                                        <java.lang.Long value="1303392336247"/>
+                                        <java.lang.Long value="1303392336250"/>
+                                        <java.lang.Long value="1319556064797"/>
+                                        <java.lang.Long value="1319556064806"/>
+                                        <java.lang.Long value="1319556064809"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064797" priority="1319556064797" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="city"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="redmond"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064806" priority="1319556064806" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="business"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="microsoft"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1319556064809" priority="1319556064809" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="description"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="state"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="Alabamaaaa"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1319556064812" priority="1319556064812" version="6.0.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -690,7 +924,7 @@
                         <java.lang.String value=""/>
                     </property>
                     <property name="description">
-                        <java.lang.String value="Name of the business to search"/>
+                        <java.lang.String value="description"/>
                     </property>
                     <property name="httpMethod">
                         <java.lang.String value="GET"/>
@@ -708,7 +942,7 @@
                         <java.lang.String value="xsd:string"/>
                     </property>
                     <property isNull="false" name="value">
-                        <java.lang.String value="Nike"/>
+                        <java.lang.String value="Adobe"/>
                     </property>
                     <property name="visibility">
                         <java.lang.Integer value="0"/>
@@ -717,7 +951,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1314696915060" priority="1314696915060" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1319556064815" priority="1319556064815" version="6.0.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -725,7 +959,7 @@
                         <java.lang.String value=""/>
                     </property>
                     <property name="description">
-                        <java.lang.String value="city wher the business is"/>
+                        <java.lang.String value="description"/>
                     </property>
                     <property name="httpMethod">
                         <java.lang.String value="GET"/>
@@ -743,7 +977,7 @@
                         <java.lang.String value="xsd:string"/>
                     </property>
                     <property isNull="false" name="value">
-                        <java.lang.String value="san francisco"/>
+                        <java.lang.String value="San Francisco"/>
                     </property>
                     <property name="visibility">
                         <java.lang.Integer value="0"/>
@@ -752,7 +986,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1314696915063" priority="1314696915063" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1319556064818" priority="1319556064818" version="6.0.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -760,7 +994,7 @@
                         <java.lang.String value=""/>
                     </property>
                     <property name="description">
-                        <java.lang.String value="State wher the city is"/>
+                        <java.lang.String value="description"/>
                     </property>
                     <property name="httpMethod">
                         <java.lang.String value="GET"/>
@@ -788,7 +1022,7 @@
                     </property>
                 </variable>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.6.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="6.0.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -813,32 +1047,20 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
-                    <property name="browser">
-                        <java.lang.String value="*"/>
-                    </property>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.0.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
                     <property name="name">
-                        <java.lang.String value="DoNothing"/>
-                    </property>
-                    <property name="url">
-                        <java.lang.String value="donothing.xsl"/>
-                    </property>
-                </sheet>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
-                    <property name="comment">
-                        <java.lang.String value="Must contain every clipped page."/>
-                    </property>
-                    <property name="name">
-                        <java.lang.String value="ClippedWebPages"/>
+                        <java.lang.String value="NoResultsScreen"/>
                     </property>
                     <property name="orderedCriterias">
                         <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064829"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
@@ -847,24 +1069,247 @@
                         <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                             <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064832"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064829" priority="1319556064829" version="6.0.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
                         <property name="name">
-                            <java.lang.String value="NoResultsScreen"/>
+                            <java.lang.String value="Exists_node_at____STRONG_contains_text____No_results____"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//STRONG[contains(text(),&quot;No results&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1319556064832" priority="1319556064832" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="displayReferer">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Error_tag"/>
+                        </property>
+                        <property name="recurse">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="tagName">
+                            <java.lang.String value="error"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//STRONG[contains(text(),&quot;No results&quot;)]"/>
+                        </property>
+                    </extractionrule>
+                </screenclass>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="NotMatchingResultsScreen"/>
+                    </property>
+                    <property name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064836"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064839"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064836" priority="1319556064836" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Exists_node_at____H1_contains_text____Search_Results_for____"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1319556064839" priority="1319556064839" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="displayReferer">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="errorMessage"/>
+                        </property>
+                        <property name="recurse">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="tagName">
+                            <java.lang.String value="errorMessage"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
+                        </property>
+                    </extractionrule>
+                </screenclass>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="ResultsFoundScreen"/>
+                    </property>
+                    <property name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064843"/>
+                                        <java.lang.Long value="1319556064846"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064849"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064846" priority="1319556064846" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Exists_node_at____H1_contains_text____Search_Results_for____"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
+                        </property>
+                    </criteria>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064843" priority="1319556064843" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="XPath"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//SPAN[@class=&quot;result_item&quot;]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLTable" newPriority="1319556064849" priority="1319556064849" version="6.0.0.m004">
+                        <property name="accumulateDataInSameTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.String value="item"/>
+                                            <java.lang.String value=".//SPAN[@class=&quot;result_item&quot;]"/>
+                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="name"/>
+                                                            <java.lang.String value="./SPAN[1]/SPAN"/>
+                                                            <java.lang.Boolean value="false"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                                            <java.lang.String value="address"/>
+                                                            <java.lang.String value="./SPAN[1]/text()"/>
+                                                            <java.lang.Boolean value="false"/>
+                                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                                    </xmlizable>
+                                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                                            </xmlizable>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="displayReferer">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="flipTable">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="WebServices_results"/>
+                        </property>
+                        <property name="tagName">
+                            <java.lang.String value="results"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//DIV[@id=&quot;holder_result2&quot;][.//SPAN[@class=&quot;result_item&quot;]]"/>
+                        </property>
+                    </extractionrule>
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="NextResultScreen"/>
                         </property>
                         <property name="orderedCriterias">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
                                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                         <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840460"/>
+                                            <java.lang.Long value="1319556064843"/>
+                                            <java.lang.Long value="1319556064846"/>
+                                            <java.lang.Long value="1319556064853"/>
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
@@ -875,110 +1320,131 @@
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
                                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                         <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840463"/>
-                                            <java.lang.Long value="1314690840466"/>
+                                            <java.lang.Long value="1319556064849"/>
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840460" priority="1314690840460" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064853" priority="1319556064853" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
                             <property name="name">
-                                <java.lang.String value="Exists_node_at____STRONG_contains_text____No_results____"/>
+                                <java.lang.String value="XPath"/>
                             </property>
                             <property name="reverseResult">
                                 <java.lang.Boolean value="false"/>
                             </property>
                             <property name="xpath">
-                                <java.lang.String value="//STRONG[contains(text(),&quot;No results&quot;)]"/>
+                                <java.lang.String value="//IMG[contains(@src,&quot;_right.&quot;)]"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.WebClipper" newPriority="1314690840463" priority="1314690840463" version="5.6.0.m004">
-                            <property name="attributes">
+                    </screenclass>
+                </screenclass>
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.0.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="SearchBusinessesTabScreen"/>
+                    </property>
+                    <property name="orderedCriterias">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                     <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="src"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="href"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="background"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="action"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="cite"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="classid"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="codebase"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="data"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="longdesc"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="usemap"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
+                                        <java.lang.Long value="1319556064857"/>
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
-                            </property>
-                            <property name="bHttpTunnel">
-                                <java.lang.Boolean value="false"/>
-                            </property>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <property name="orderedExtractionRules">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1319556064860"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064857" priority="1319556064857" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Exists_node_at____A__class__menu_active___contains___SPAN_SPAN___Search_Businesses____"/>
+                        </property>
+                        <property name="reverseResult">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//A[@class=&quot;menu_active&quot;][contains(./SPAN/SPAN, 'Search Businesses')]"/>
+                        </property>
+                    </criteria>
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLVariable" newPriority="1319556064860" priority="1319556064860" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnabled">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="stateList"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="//SELECT[@id=&quot;qs&quot;]/OPTION[@value]"/>
+                        </property>
+                    </extractionrule>
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="6.0.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Apologize"/>
+                        </property>
+                        <property name="orderedCriterias">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1319556064857"/>
+                                            <java.lang.Long value="1319556064864"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <property name="orderedExtractionRules">
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                                            <java.lang.Long value="1319556064860"/>
+                                            <java.lang.Long value="1319556064867"/>
+                                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                                    </xmlizable>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </property>
+                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1319556064864" priority="1319556064864" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
-                            <property name="extractParent">
+                            <property name="name">
+                                <java.lang.String value="XPath"/>
+                            </property>
+                            <property name="reverseResult">
                                 <java.lang.Boolean value="false"/>
                             </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="mHttpTunnel">
-                                <java.lang.String value="disable"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Clip_No_Results"/>
-                            </property>
-                            <property name="transactionName">
-                                <java.lang.String value=""/>
-                            </property>
                             <property name="xpath">
-                                <java.lang.String value="//STRONG[contains(text(),&quot;No results&quot;)]"/>
+                                <java.lang.String value="//DIV[contains(text(),&quot;We apologize&quot;)]"/>
                             </property>
-                        </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1314690840466" priority="1314690840466" version="5.6.0.m004">
+                        </criteria>
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1319556064867" priority="1319556064867" version="6.0.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -998,819 +1464,14 @@
                                 <java.lang.String value="error"/>
                             </property>
                             <property name="xpath">
-                                <java.lang.String value="//STRONG[contains(text(),&quot;No results&quot;)]"/>
+                                <java.lang.String value="//DIV[@class=&quot;holder_result&quot;]"/>
                             </property>
                         </extractionrule>
-                    </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="NotMatchingResultsScreen"/>
-                        </property>
-                        <property name="orderedCriterias">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840470"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <property name="orderedExtractionRules">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840473"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840470" priority="1314690840470" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Exists_node_at____H1_contains_text____Search_Results_for____"/>
-                            </property>
-                            <property name="reverseResult">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
-                            </property>
-                        </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1314690840473" priority="1314690840473" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="displayReferer">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="errorMessage"/>
-                            </property>
-                            <property name="recurse">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="tagName">
-                                <java.lang.String value="errorMessage"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
-                            </property>
-                        </extractionrule>
-                        <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
-                            <property name="browser">
-                                <java.lang.String value="*"/>
-                            </property>
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="businessSearchResults"/>
-                            </property>
-                            <property name="url">
-                                <java.lang.String value="businessSearchResults.xsl"/>
-                            </property>
-                        </sheet>
-                    </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="ResultsFoundScreen"/>
-                        </property>
-                        <property name="orderedCriterias">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840478"/>
-                                            <java.lang.Long value="1314690840481"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <property name="orderedExtractionRules">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840484"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840481" priority="1314690840481" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Exists_node_at____H1_contains_text____Search_Results_for____"/>
-                            </property>
-                            <property name="reverseResult">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//H1[contains(text(),&quot;Search Results for&quot;)]"/>
-                            </property>
-                        </criteria>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840478" priority="1314690840478" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="XPath"/>
-                            </property>
-                            <property name="reverseResult">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//SPAN[@class=&quot;result_item&quot;]"/>
-                            </property>
-                        </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLTable" newPriority="1314690840484" priority="1314690840484" version="5.6.0.m004">
-                            <property name="accumulateDataInSameTable">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="description">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="item"/>
-                                                <java.lang.String value="..//SPAN[@class=&quot;result_item&quot;]"/>
-                                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                                <java.lang.String value="name"/>
-                                                                <java.lang.String value="./SPAN[1]/SPAN"/>
-                                                                <java.lang.Boolean value="false"/>
-                                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                                        </xmlizable>
-                                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                                <java.lang.String value="address"/>
-                                                                <java.lang.String value="./SPAN[1]/text()"/>
-                                                                <java.lang.Boolean value="false"/>
-                                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                                        </xmlizable>
-                                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                                </xmlizable>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <property name="displayReferer">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="flipTable">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="WebServices_results"/>
-                            </property>
-                            <property name="tagName">
-                                <java.lang.String value="results"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//DIV[@id=&quot;holder_result2&quot;]/SPAN[1]"/>
-                            </property>
-                        </extractionrule>
-                        <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
-                            <property name="browser">
-                                <java.lang.String value="*"/>
-                            </property>
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="businessSearchResults"/>
-                            </property>
-                            <property name="url">
-                                <java.lang.String value="businessSearchResults.xsl"/>
-                            </property>
-                        </sheet>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="NextResultScreen"/>
-                            </property>
-                            <property name="orderedCriterias">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.Long value="1314690840478"/>
-                                                <java.lang.Long value="1314690840481"/>
-                                                <java.lang.Long value="1314690840492"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <property name="orderedExtractionRules">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.Long value="1314690840484"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840492" priority="1314690840492" version="5.6.0.m004">
-                                <property name="comment">
-                                    <java.lang.String value=""/>
-                                </property>
-                                <property name="name">
-                                    <java.lang.String value="XPath"/>
-                                </property>
-                                <property name="reverseResult">
-                                    <java.lang.Boolean value="false"/>
-                                </property>
-                                <property name="xpath">
-                                    <java.lang.String value="//IMG[contains(@src,&quot;_right.&quot;)]"/>
-                                </property>
-                            </criteria>
-                        </screenclass>
-                    </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="SampleClippedPage"/>
-                        </property>
-                        <property name="orderedCriterias">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840496"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <property name="orderedExtractionRules">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840499"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840496" priority="1314690840496" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Exists_node_at____B_starts_with____Images____"/>
-                            </property>
-                            <property name="reverseResult">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//B[starts-with(.,&quot;Images&quot;)]"/>
-                            </property>
-                        </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.WebClipper" newPriority="1314690840499" priority="1314690840499" version="5.6.0.m004">
-                            <property name="attributes">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="src"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="href"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="background"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="action"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="cite"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="classid"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="codebase"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="data"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="longdesc"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.String value="usemap"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <property name="bHttpTunnel">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="extractParent">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="mHttpTunnel">
-                                <java.lang.String value="disable"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="PageClip"/>
-                            </property>
-                            <property name="transactionName">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//FORM[@action=&quot;http://images.google.fr/images&quot;]"/>
-                            </property>
-                        </extractionrule>
-                    </screenclass>
-                </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
-                    <property name="comment">
-                        <java.lang.String value=""/>
-                    </property>
-                    <property name="name">
-                        <java.lang.String value="GenericWebPage"/>
-                    </property>
-                    <property name="orderedCriterias">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1314690840503"/>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <property name="orderedExtractionRules">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1314690840507"/>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840503" priority="1314690840503" version="5.6.0.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="XPath"/>
-                        </property>
-                        <property name="reverseResult">
-                            <java.lang.Boolean value="false"/>
-                        </property>
-                        <property name="xpath">
-                            <java.lang.String value="/HTML"/>
-                        </property>
-                    </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.WebClipper" newPriority="1314690840507" priority="1314690840507" version="5.6.0.m004">
-                        <property name="attributes">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="src"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="href"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="background"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="action"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="cite"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="classid"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="codebase"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="data"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="longdesc"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="usemap"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onSubmit"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onClick"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onLoad"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onDblClick"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onBlur"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onFocus"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onKeyDown"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onKeyPress"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onKeyUp"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onMouseDown"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onMouseUp"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onMouseMove"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onMouseOver"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onMouseOut"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onError"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onResize"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.String value="onUnload"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <property name="bHttpTunnel">
-                            <java.lang.Boolean value="false"/>
-                        </property>
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="extractParent">
-                            <java.lang.Boolean value="false"/>
-                        </property>
-                        <property name="isEnabled">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="mHttpTunnel">
-                            <java.lang.String value="disable"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="WebClipper"/>
-                        </property>
-                        <property name="transactionName">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="xpath">
-                            <java.lang.String value="/HTML"/>
-                        </property>
-                    </extractionrule>
-                </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
-                    <property name="comment">
-                        <java.lang.String value=""/>
-                    </property>
-                    <property name="name">
-                        <java.lang.String value="NavigationWebPages"/>
-                    </property>
-                    <property name="orderedCriterias">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector/>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <property name="orderedExtractionRules">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector/>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="SearchBusinessesTabScreen"/>
-                        </property>
-                        <property name="orderedCriterias">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840512"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <property name="orderedExtractionRules">
-                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1314690840515"/>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                            </xmlizable>
-                        </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840512" priority="1314690840512" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Exists_node_at____A__class__menu_active___contains___SPAN_SPAN___Search_Businesses____"/>
-                            </property>
-                            <property name="reverseResult">
-                                <java.lang.Boolean value="false"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//A[@class=&quot;menu_active&quot;][contains(./SPAN/SPAN, 'Search Businesses')]"/>
-                            </property>
-                        </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLVariable" newPriority="1314690840515" priority="1314690840515" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="stateList"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//SELECT[@id=&quot;qs&quot;]/OPTION[@value]"/>
-                            </property>
-                        </extractionrule>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="3" version="5.6.0.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="Aplogize"/>
-                            </property>
-                            <property name="orderedCriterias">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.Long value="1314690840512"/>
-                                                <java.lang.Long value="1314690840519"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <property name="orderedExtractionRules">
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                <java.lang.Long value="1314690840515"/>
-                                                <java.lang.Long value="1314690840522"/>
-                                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                                        </xmlizable>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1314690840519" priority="1314690840519" version="5.6.0.m004">
-                                <property name="comment">
-                                    <java.lang.String value=""/>
-                                </property>
-                                <property name="name">
-                                    <java.lang.String value="XPath"/>
-                                </property>
-                                <property name="reverseResult">
-                                    <java.lang.Boolean value="false"/>
-                                </property>
-                                <property name="xpath">
-                                    <java.lang.String value="//DIV[contains(text(),&quot;We apologize&quot;)]"/>
-                                </property>
-                            </criteria>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.common.WebClipper" newPriority="1314690840522" priority="1314690840522" version="5.6.0.m004">
-                                <property name="attributes">
-                                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                        <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="src"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="href"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="background"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="action"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="cite"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="classid"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="codebase"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="data"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="longdesc"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                                <com.twinsoft.convertigo.beans.common.XMLVector>
-                                                    <java.lang.String value="usemap"/>
-                                                </com.twinsoft.convertigo.beans.common.XMLVector>
-                                            </xmlizable>
-                                        </com.twinsoft.convertigo.beans.common.XMLVector>
-                                    </xmlizable>
-                                </property>
-                                <property name="bHttpTunnel">
-                                    <java.lang.Boolean value="false"/>
-                                </property>
-                                <property name="comment">
-                                    <java.lang.String value=""/>
-                                </property>
-                                <property name="extractParent">
-                                    <java.lang.Boolean value="false"/>
-                                </property>
-                                <property name="isEnabled">
-                                    <java.lang.Boolean value="true"/>
-                                </property>
-                                <property name="mHttpTunnel">
-                                    <java.lang.String value="disable"/>
-                                </property>
-                                <property name="name">
-                                    <java.lang.String value="text"/>
-                                </property>
-                                <property name="transactionName">
-                                    <java.lang.String value=""/>
-                                </property>
-                                <property name="xpath">
-                                    <java.lang.String value="//DIV[@class=&quot;holder_result&quot;]"/>
-                                </property>
-                            </extractionrule>
-                        </screenclass>
                     </screenclass>
                 </screenclass>
             </screenclass>
         </connector>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.Android" priority="0" version="5.6.0.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.Android" priority="0" version="6.0.0.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -1827,7 +1488,7 @@
                 <java.lang.Long value="800"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.BlackBerry6" priority="0" version="5.6.0.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.BlackBerry6" priority="0" version="6.0.0.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -1844,7 +1505,7 @@
                 <java.lang.Long value="960"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPad" priority="0" version="5.6.0.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPad" priority="0" version="6.0.0.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -1861,7 +1522,7 @@
                 <java.lang.Long value="1024"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone3" priority="0" version="5.6.0.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone3" priority="0" version="6.0.0.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -1878,7 +1539,7 @@
                 <java.lang.Long value="480"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone4" priority="0" version="5.6.0.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone4" priority="0" version="6.0.0.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
