@@ -321,7 +321,7 @@ Studio/lib/hibernate/slf4j-api-1.6.1.jar -text
 Studio/lib/hibernate/slf4j-nop-1.6.1.jar -text
 Studio/lib/hsqldb.jar -text
 Studio/lib/internal/api-v25978.jar -text
-Studio/lib/internal/aviva-110113.jar -text
+Studio/lib/internal/aviva-111024.jar -text
 Studio/lib/internal/bull-v24323.jar -text
 Studio/lib/internal/comm.jar -text
 Studio/lib/internal/crysec-090918.jar -text
