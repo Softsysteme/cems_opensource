@@ -2758,6 +2758,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ConnectionsParameter
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataOrNullPropertyDescriptor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataTypeDetectionPolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DomainsListingEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DynamicComboBoxPropertyDescriptor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EditorFrameworkDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EmulatorTechnologyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FieldListEditor.java -text
@@ -2797,6 +2798,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinZoneSupport.j
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/KeywordEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/LetterCasePolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyModifySupport.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicTagsEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditorAdvance.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RemovableHeadersEditor.java -text svneol=unset#text/plain
