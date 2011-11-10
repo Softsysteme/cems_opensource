@@ -3169,7 +3169,6 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/Create.java -text
 Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/DOMUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/FileAndProperties.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/admin/util/ManipuleFicAndDOM.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/ServiceUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/BillingException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/HibernateTicketManager.java -text svneol=unset#text/plain
