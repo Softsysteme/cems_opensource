@@ -1893,6 +1893,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/HandlerStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/HandlerStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/IfStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/IfStatementBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatement.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetSelectedStatement.java -text
@@ -1989,6 +1991,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/images/http_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/http_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/if_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/if_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_16x16.gif -text
@@ -2044,6 +2048,7 @@ Studio/src/com/twinsoft/convertigo/beans/statements/res/GetUrlStatement.properti
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HTTPStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HandlerStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfStatement.properties -text
+Studio/src/com/twinsoft/convertigo/beans/statements/res/IfXpathExistsStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetCheckedStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetSelectedStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetValueStatement.properties -text
