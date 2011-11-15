@@ -4216,17 +4216,10 @@ Studio/tomcat/webapps/convertigo/images/ltop.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/ltop_keyboard.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/marbre.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/mobile/BlackBerryTorch_mask_360x480.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/HtcDesire_mask_480x800.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/NokiaE5_mask_320x240.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/NokiaN8_mask_360x640.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/NokiaX7_mask_360x640.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/SamsungGalaxyAce_mask_320x480.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/SamsungGalaxyS_mask_480x800.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/SonyXperiaPro_mask_480x854.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/htcIncroyableS_mask_480x800.png -text
+Studio/tomcat/webapps/convertigo/images/mobile/HtcDesire_mask_320x533.png -text
 Studio/tomcat/webapps/convertigo/images/mobile/iPad1_mask_768x1024.png -text
 Studio/tomcat/webapps/convertigo/images/mobile/iPhone3_mask_320x480.png -text
-Studio/tomcat/webapps/convertigo/images/mobile/iPhone4_mask_640x960.png -text
+Studio/tomcat/webapps/convertigo/images/mobile/iPhone4_mask_320x480.png -text
 Studio/tomcat/webapps/convertigo/images/modify.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/new/accordeon_top_center.png -text
 Studio/tomcat/webapps/convertigo/images/new/accordeon_top_left.png -text
