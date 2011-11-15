@@ -4404,6 +4404,7 @@ Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/gatein.js -text svneol=u
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/hub.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/mosaic.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/rsa.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/sharepoint.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/siteclipper.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/standalone.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_wrapper.js -text svneol=unset#text/plain
