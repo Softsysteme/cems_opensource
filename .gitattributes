@@ -2376,6 +2376,7 @@ Studio/src/com/twinsoft/convertigo/beans/vdx/images/editfield_color_32x32.gif -t
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/CommandVdx.properties -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/EditField.properties -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/Menu.properties -text
+Studio/src/com/twinsoft/convertigo/eclipse/AnimatedGif.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/ConsolePipes.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/ConvertigoPartListener.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/ConvertigoPerspective.java -text
