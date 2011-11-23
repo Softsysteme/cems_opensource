@@ -1821,6 +1821,9 @@ Studio/src/com/twinsoft/convertigo/beans/screenclasses/JavelinScreenClass.java -
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/JavelinScreenClassBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/SiteClipperScreenClass.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/SiteClipperScreenClassBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/HtmlScreenClass.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/JavelinScreenClass.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/SiteClipperScreenClass.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sequences/GenericSequence.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sequences/GenericSequenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sequences/res/GenericSequence.properties -text svneol=unset#text/plain
