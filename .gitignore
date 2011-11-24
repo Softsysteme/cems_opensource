@@ -220,6 +220,7 @@ Studio/src/com/twinsoft/convertigo/beans/vdx/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/Thumbs.db
+Studio/src/com/twinsoft/convertigo/engine/parsers
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/cache/*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/logs/engine.log*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys.txt
