@@ -2092,6 +2092,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStep.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/beans/steps/DeleteStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DoWhileStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/DoWhileStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/DuplicateStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/DuplicateStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ElementStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ElementStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ElseStep.java -text svneol=unset#text/plain
@@ -2217,6 +2219,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/element_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/element_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/exception_16x16.gif -text
@@ -2274,6 +2278,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/CopyStep.properties -text svn
 Studio/src/com/twinsoft/convertigo/beans/steps/res/CreateDirectoryStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/DeleteStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/DoWhileStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/DuplicateStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElementStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ExceptionStep.properties -text svneol=unset#text/plain
