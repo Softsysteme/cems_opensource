@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.6.0.m004" engine="5.6.0" exported="October 24, 2011 5:45 PM" studio="5.6.0" version="5.6.0_alpha (build 28520)">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
+<convertigo beans="6.0.1.m004" engine="6.0.1" exported="November 30, 2011 2:39 PM" studio="6.0.1" version="6.0.1 (build 29108)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.1.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -16,13 +16,16 @@
         <property name="name">
             <java.lang.String value="demo_legacyCRM"/>
         </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
         <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.JavelinConnector" default="true" priority="0" version="5.6.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.JavelinConnector" default="true" priority="0" version="6.0.1.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -62,7 +65,7 @@
             <property name="virtualServer">
                 <java.lang.String value=""/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="true" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -169,7 +172,7 @@ function putInField(data, col, lin, enter) {
 		javelin.waitForDataStable(timeout, threshold);
 	}
 }]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112285" priority="1259763112285" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112285" priority="1259763112285" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -198,7 +201,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112316" priority="1259763112316" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112316" priority="1259763112316" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -227,7 +230,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112347" priority="1259763112347" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112347" priority="1259763112347" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -256,7 +259,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112378" priority="1259763112378" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112378" priority="1259763112378" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -285,7 +288,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112410" priority="1259763112410" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112410" priority="1259763112410" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -315,7 +318,7 @@ function putInField(data, col, lin, enter) {
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -430,7 +433,7 @@ function putInField(data, col, lin, enter) {
 		javelin.waitForDataStable(timeout, threshold);
 	}
 }]]></handlers>
-                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
+                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="6.0.1.m004">
                     <property name="browser">
                         <java.lang.String value="*"/>
                     </property>
@@ -444,7 +447,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.String value="editClient.xsl"/>
                     </property>
                 </sheet>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112441" priority="1259763112441" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112441" priority="1259763112441" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -473,7 +476,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112472" priority="1259763112472" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112472" priority="1259763112472" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -502,7 +505,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112503" priority="1259763112503" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112503" priority="1259763112503" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -531,7 +534,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112534" priority="1259763112534" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112534" priority="1259763112534" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -560,7 +563,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112566" priority="1259763112566" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112566" priority="1259763112566" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -589,7 +592,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112597" priority="1259763112597" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112597" priority="1259763112597" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -618,7 +621,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112628" priority="1259763112628" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112628" priority="1259763112628" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -647,7 +650,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112659" priority="1259763112659" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112659" priority="1259763112659" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -676,7 +679,7 @@ function putInField(data, col, lin, enter) {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112691" priority="1259763112691" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112691" priority="1259763112691" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -706,7 +709,7 @@ function putInField(data, col, lin, enter) {
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -792,7 +795,7 @@ function onTransactionStarted() {
 }
 ]]></handlers>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -942,7 +945,7 @@ function onTransactionStarted() {
 	javelin.waitForDataStable(timeout, threshold);
 }
 ]]></handlers>
-                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
+                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="6.0.1.m004">
                     <property name="browser">
                         <java.lang.String value="*"/>
                     </property>
@@ -956,7 +959,7 @@ function onTransactionStarted() {
                         <java.lang.String value="editClient.xsl"/>
                     </property>
                 </sheet>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112722" priority="1259763112722" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112722" priority="1259763112722" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -985,7 +988,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112753" priority="1259763112753" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112753" priority="1259763112753" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1014,7 +1017,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112784" priority="1259763112784" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112784" priority="1259763112784" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1043,7 +1046,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112816" priority="1259763112816" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112816" priority="1259763112816" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1072,7 +1075,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112847" priority="1259763112847" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112847" priority="1259763112847" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1101,7 +1104,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112878" priority="1259763112878" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112878" priority="1259763112878" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1130,7 +1133,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112909" priority="1259763112909" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1259763112909" priority="1259763112909" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1160,7 +1163,7 @@ function onTransactionStarted() {
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1248,7 +1251,7 @@ function onTransactionStarted() {
 	return "cancel";
 }
 ]]></handlers>
-                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
+                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="6.0.1.m004">
                     <property name="browser">
                         <java.lang.String value="*"/>
                     </property>
@@ -1263,7 +1266,7 @@ function onTransactionStarted() {
                     </property>
                 </sheet>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1339,7 +1342,7 @@ function onTransactionStarted() {
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.JavelinTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1430,7 +1433,7 @@ function onXmlGenerated() {
 	javelin.Trace("###delEl='" + delEl + "'");
 }]]></handlers>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="0" version="5.6.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="0" version="6.0.1.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1467,7 +1470,7 @@ function onXmlGenerated() {
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <blockfactory classname="com.twinsoft.convertigo.beans.common.DefaultBlockFactory" priority="0" version="5.6.0.m004">
+                <blockfactory classname="com.twinsoft.convertigo.beans.common.DefaultBlockFactory" priority="0" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1475,7 +1478,7 @@ function onXmlGenerated() {
                         <java.lang.String value="Default block factory"/>
                     </property>
                 </blockfactory>
-                <criteria classname="com.twinsoft.convertigo.beans.common.EmulatorTechnology" newPriority="1174043530095" priority="1174043530095" version="5.6.0.m004">
+                <criteria classname="com.twinsoft.convertigo.beans.common.EmulatorTechnology" newPriority="1174043530095" priority="1174043530095" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1486,7 +1489,7 @@ function onXmlGenerated() {
                         <java.lang.Boolean value="false"/>
                     </property>
                 </criteria>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188565315332" priority="1188565315332" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188565315332" priority="1188565315332" version="6.0.1.m004">
                     <property name="attributeName">
                         <java.lang.String value="title"/>
                     </property>
@@ -1533,7 +1536,7 @@ function onXmlGenerated() {
                         <java.lang.String value=""/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.Date" newPriority="1174043530185" priority="1174043530185" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.Date" newPriority="1174043530185" priority="1174043530185" version="6.0.1.m004">
                     <property name="bam_pm_marker">
                         <java.lang.Boolean value="false"/>
                     </property>
@@ -1634,7 +1637,7 @@ function onXmlGenerated() {
                         <java.lang.String value="field"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1174043530305" priority="1174043530305" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1174043530305" priority="1174043530305" version="6.0.1.m004">
                     <property name="bMultilineMerge">
                         <java.lang.Boolean value="false"/>
                     </property>
@@ -1681,7 +1684,7 @@ function onXmlGenerated() {
                         <java.lang.String value=" "/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1190885237219" priority="1190885237219" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1190885237219" priority="1190885237219" version="6.0.1.m004">
                     <property name="blockTag">
                         <java.lang.String value=""/>
                     </property>
@@ -1728,7 +1731,7 @@ function onXmlGenerated() {
                         <java.lang.String value="static"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.Panel" newPriority="1181295847390" priority="1181295847390" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.Panel" newPriority="1181295847390" priority="1181295847390" version="6.0.1.m004">
                     <property name="bottom">
                         <java.lang.String value="-."/>
                     </property>
@@ -1799,7 +1802,7 @@ function onXmlGenerated() {
                         <java.lang.String value="+."/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1174043530385" priority="1174043530385" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1174043530385" priority="1174043530385" version="6.0.1.m004">
                     <property name="blockTag">
                         <java.lang.String value=""/>
                     </property>
@@ -1846,7 +1849,7 @@ function onXmlGenerated() {
                         <java.lang.String value="[^field]"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1176794320310" priority="1176794320310" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1176794320310" priority="1176794320310" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1893,7 +1896,7 @@ function onXmlGenerated() {
                         <java.lang.String value=""/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.sna.CommandSNA" newPriority="1174043530435" priority="1174043530435" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.sna.CommandSNA" newPriority="1174043530435" priority="1174043530435" version="6.0.1.m004">
                     <property name="caseDependency">
                         <java.lang.Boolean value="false"/>
                     </property>
@@ -2368,7 +2371,7 @@ function onXmlGenerated() {
                         <java.lang.Boolean value="false"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.sna.Menu" newPriority="1174043530165" priority="1174043530165" version="5.6.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.sna.Menu" newPriority="1174043530165" priority="1174043530165" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -2409,7 +2412,7 @@ function onXmlGenerated() {
                         <java.lang.String value=""/>
                     </property>
                 </extractionrule>
-                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
+                <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="6.0.1.m004">
                     <property name="browser">
                         <java.lang.String value="*"/>
                     </property>
@@ -2423,7 +2426,7 @@ function onXmlGenerated() {
                         <java.lang.String value="sna.xsl"/>
                     </property>
                 </sheet>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -2463,7 +2466,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188458295752" priority="1188458295752" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188458295752" priority="1188458295752" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="263"/>
                         </property>
@@ -2486,7 +2489,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188458571398" priority="1188458571398" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188458571398" priority="1188458571398" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -2533,7 +2536,7 @@ function onXmlGenerated() {
                             <java.lang.String value="static"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188458387554" priority="1188458387554" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188458387554" priority="1188458387554" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -2676,7 +2679,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -2716,7 +2719,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188480804618" priority="1188480804618" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188480804618" priority="1188480804618" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="2"/>
                         </property>
@@ -2739,7 +2742,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188480938400" priority="1188480938400" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188480938400" priority="1188480938400" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -2786,7 +2789,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188480822924" priority="1188480822924" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188480822924" priority="1188480822924" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -2977,7 +2980,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3017,7 +3020,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188470367690" priority="1188470367690" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188470367690" priority="1188470367690" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -3040,7 +3043,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1188470728639" priority="1188470728639" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1188470728639" priority="1188470728639" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3087,7 +3090,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Choice" newPriority="1188470497977" priority="1188470497977" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Choice" newPriority="1188470497977" priority="1188470497977" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
@@ -3168,7 +3171,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3207,7 +3210,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188480331868" priority="1188480331868" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188480331868" priority="1188480331868" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -3230,7 +3233,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Choice" newPriority="1188480353669" priority="1188480353669" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Choice" newPriority="1188480353669" priority="1188480353669" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
@@ -3329,7 +3332,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3371,7 +3374,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188548128949" priority="1188548128949" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188548128949" priority="1188548128949" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -3394,7 +3397,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1188549592854" priority="1188549592854" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.ReplaceText" newPriority="1188549592854" priority="1188549592854" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3441,7 +3444,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188549727167" priority="1188549727167" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188549727167" priority="1188549727167" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -3488,7 +3491,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Style" newPriority="1188548499372" priority="1188548499372" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Style" newPriority="1188548499372" priority="1188548499372" version="6.0.1.m004">
                         <property name="bgColor">
                             <java.lang.Integer value="0"/>
                         </property>
@@ -3559,7 +3562,7 @@ function onXmlGenerated() {
                             <java.lang.Boolean value="false"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188548301617" priority="1188548301617" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188548301617" priority="1188548301617" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -3758,7 +3761,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3798,7 +3801,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188308041480" priority="1188308041480" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188308041480" priority="1188308041480" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -3821,7 +3824,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188308058375" priority="1188308058375" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188308058375" priority="1188308058375" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_ENTER"/>
                         </property>
@@ -3895,7 +3898,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480596559" priority="1188480596559" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480596559" priority="1188480596559" version="6.0.1.m004">
                         <property name="attributeName">
                             <java.lang.String value="foreground"/>
                         </property>
@@ -3943,7 +3946,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3983,7 +3986,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188467367476" priority="1188467367476" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188467367476" priority="1188467367476" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -4006,7 +4009,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188467400854" priority="1188467400854" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188467400854" priority="1188467400854" version="6.0.1.m004">
                         <property name="attributeName">
                             <java.lang.String value="email"/>
                         </property>
@@ -4053,7 +4056,7 @@ function onXmlGenerated() {
                             <java.lang.String value="field"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1211967186328" priority="1211967186328" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1211967186328" priority="1211967186328" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -4101,7 +4104,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4149,7 +4152,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188556268002" priority="1188556268002" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188556268002" priority="1188556268002" version="6.0.1.m004">
                         <property name="attributeName">
                             <java.lang.String value="foreground"/>
                         </property>
@@ -4196,7 +4199,7 @@ function onXmlGenerated() {
                             <java.lang.String value="keyword"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626240" priority="1188397626240" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626240" priority="1188397626240" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -4243,7 +4246,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626260" priority="1188397626260" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626260" priority="1188397626260" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -4290,7 +4293,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626370" priority="1188397626370" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626370" priority="1188397626370" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_PF8"/>
                         </property>
@@ -4364,7 +4367,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626390" priority="1188397626390" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626390" priority="1188397626390" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_PF9"/>
                         </property>
@@ -4438,7 +4441,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188455380740" priority="1188455380740" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188455380740" priority="1188455380740" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -4485,7 +4488,7 @@ function onXmlGenerated() {
                             <java.lang.String value="static"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626410" priority="1188397626410" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626410" priority="1188397626410" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_PF10"/>
                         </property>
@@ -4559,7 +4562,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626430" priority="1188397626430" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626430" priority="1188397626430" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_PF11"/>
                         </property>
@@ -4633,7 +4636,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626450" priority="1188397626450" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Button" newPriority="1188397626450" priority="1188397626450" version="6.0.1.m004">
                         <property name="Action">
                             <java.lang.String value="KEY_PF14"/>
                         </property>
@@ -4707,7 +4710,7 @@ function onXmlGenerated() {
                             <java.lang.String value="&lt;"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626200" priority="1188397626200" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188397626200" priority="1188397626200" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -4754,7 +4757,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.TagName" newPriority="1188397626220" priority="1188397626220" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.TagName" newPriority="1188397626220" priority="1188397626220" version="6.0.1.m004">
                         <property name="bSaveHistory">
                             <java.lang.Boolean value="false"/>
                         </property>
@@ -4804,7 +4807,7 @@ function onXmlGenerated() {
                             <java.lang.String value="actionField"/>
                         </property>
                     </extractionrule>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4856,7 +4859,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188469500273" priority="1188469500273" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188469500273" priority="1188469500273" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="7"/>
                             </property>
@@ -4879,7 +4882,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="0"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188469593587" priority="1188469593587" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188469593587" priority="1188469593587" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -4926,7 +4929,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188469759696" priority="1188469759696" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188469759696" priority="1188469759696" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="foreground"/>
                             </property>
@@ -4973,7 +4976,7 @@ function onXmlGenerated() {
                                 <java.lang.String value=""/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188469593567" priority="1188469593567" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188469593567" priority="1188469593567" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5035,7 +5038,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="5.6.0.m004">
+                        <sheet classname="com.twinsoft.convertigo.beans.core.Sheet" priority="0" version="6.0.1.m004">
                             <property name="browser">
                                 <java.lang.String value="*"/>
                             </property>
@@ -5050,7 +5053,7 @@ function onXmlGenerated() {
                             </property>
                         </sheet>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -5105,7 +5108,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188479947345" priority="1188479947345" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188479947345" priority="1188479947345" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="7"/>
                             </property>
@@ -5128,7 +5131,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="0"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480073566" priority="1188480073566" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480073566" priority="1188480073566" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5175,7 +5178,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480064483" priority="1188480064483" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480064483" priority="1188480064483" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5222,7 +5225,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480074548" priority="1188480074548" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188480074548" priority="1188480074548" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5269,7 +5272,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480073536" priority="1188480073536" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480073536" priority="1188480073536" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5331,7 +5334,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480064463" priority="1188480064463" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480064463" priority="1188480064463" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5393,7 +5396,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480074508" priority="1188480074508" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188480074508" priority="1188480074508" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5456,7 +5459,7 @@ function onXmlGenerated() {
                             </property>
                         </extractionrule>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -5513,7 +5516,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188397596097" priority="1188397596097" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188397596097" priority="1188397596097" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="-1"/>
                             </property>
@@ -5536,7 +5539,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="0"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188398426411" priority="1188398426411" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188398426411" priority="1188398426411" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5583,7 +5586,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188455204707" priority="1188455204707" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188455204707" priority="1188455204707" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5630,7 +5633,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1283940154695" priority="1283940154695" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1283940154695" priority="1283940154695" version="6.0.1.m004">
                             <property name="bMultilineMerge">
                                 <java.lang.Boolean value="false"/>
                             </property>
@@ -5677,7 +5680,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="  "/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188455206680" priority="1188455206680" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188455206680" priority="1188455206680" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -5724,7 +5727,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1283940056032" priority="1283940056032" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1283940056032" priority="1283940056032" version="6.0.1.m004">
                             <property name="bMultilineMerge">
                                 <java.lang.Boolean value="false"/>
                             </property>
@@ -5771,7 +5774,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="    "/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188398426391" priority="1188398426391" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188398426391" priority="1188398426391" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5833,7 +5836,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188455204667" priority="1188455204667" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188455204667" priority="1188455204667" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5895,7 +5898,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188455206640" priority="1188455206640" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188455206640" priority="1188455206640" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5958,7 +5961,7 @@ function onXmlGenerated() {
                             </property>
                         </extractionrule>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -6012,7 +6015,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188308316466" priority="1188308316466" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188308316466" priority="1188308316466" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="16"/>
                             </property>
@@ -6035,7 +6038,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="4"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188371134567" priority="1188371134567" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188371134567" priority="1188371134567" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6082,7 +6085,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188370979484" priority="1188370979484" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188370979484" priority="1188370979484" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6144,7 +6147,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188397234297" priority="1188397234297" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188397234297" priority="1188397234297" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6191,7 +6194,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188397073826" priority="1188397073826" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188397073826" priority="1188397073826" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6253,7 +6256,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1188565654450" priority="1188565654450" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.MergeBlocks" newPriority="1188565654450" priority="1188565654450" version="6.0.1.m004">
                             <property name="bMultilineMerge">
                                 <java.lang.Boolean value="false"/>
                             </property>
@@ -6301,7 +6304,7 @@ function onXmlGenerated() {
                             </property>
                         </extractionrule>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -6353,7 +6356,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188479621326" priority="1188479621326" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188479621326" priority="1188479621326" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="7"/>
                             </property>
@@ -6376,7 +6379,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="0"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188479665390" priority="1188479665390" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188479665390" priority="1188479665390" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6423,7 +6426,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188479715251" priority="1188479715251" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188479715251" priority="1188479715251" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="foreground"/>
                             </property>
@@ -6470,7 +6473,7 @@ function onXmlGenerated() {
                                 <java.lang.String value=""/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188479665360" priority="1188479665360" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188479665360" priority="1188479665360" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6533,7 +6536,7 @@ function onXmlGenerated() {
                             </property>
                         </extractionrule>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="5.6.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="2" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -6588,7 +6591,7 @@ function onXmlGenerated() {
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188470022734" priority="1188470022734" version="5.6.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188470022734" priority="1188470022734" version="6.0.1.m004">
                             <property name="attribute">
                                 <java.lang.Integer value="7"/>
                             </property>
@@ -6611,7 +6614,7 @@ function onXmlGenerated() {
                                 <java.lang.Integer value="0"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470110570" priority="1188470110570" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470110570" priority="1188470110570" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6658,7 +6661,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470086626" priority="1188470086626" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470086626" priority="1188470086626" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6705,7 +6708,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470143688" priority="1188470143688" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Attribute" newPriority="1188470143688" priority="1188470143688" version="6.0.1.m004">
                             <property name="attributeName">
                                 <java.lang.String value="name"/>
                             </property>
@@ -6752,7 +6755,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="container"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470110540" priority="1188470110540" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470110540" priority="1188470110540" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6814,7 +6817,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470086606" priority="1188470086606" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470086606" priority="1188470086606" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6876,7 +6879,7 @@ function onXmlGenerated() {
                                 <java.lang.String value="menu"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470143658" priority="1188470143658" version="5.6.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.Container" newPriority="1188470143658" priority="1188470143658" version="6.0.1.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -6940,7 +6943,7 @@ function onXmlGenerated() {
                         </extractionrule>
                     </screenclass>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -6978,7 +6981,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188380945855" priority="1188380945855" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188380945855" priority="1188380945855" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -7002,7 +7005,7 @@ function onXmlGenerated() {
                         </property>
                     </criteria>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -7042,7 +7045,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188481002392" priority="1188481002392" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1188481002392" priority="1188481002392" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="7"/>
                         </property>
@@ -7065,7 +7068,7 @@ function onXmlGenerated() {
                             <java.lang.Integer value="0"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188481151256" priority="1188481151256" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.RemoveBlocks" newPriority="1188481151256" priority="1188481151256" version="6.0.1.m004">
                         <property name="blockTag">
                             <java.lang.String value=""/>
                         </property>
@@ -7112,7 +7115,7 @@ function onXmlGenerated() {
                             <java.lang.String value=""/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188481140731" priority="1188481140731" version="5.6.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.common.Table" newPriority="1188481140731" priority="1188481140731" version="6.0.1.m004">
                         <property name="actions">
                             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -7231,7 +7234,7 @@ function onXmlGenerated() {
                         </property>
                     </extractionrule>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="5.6.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.JavelinScreenClass" handlePriorities="true" priority="1" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -7269,7 +7272,7 @@ function onXmlGenerated() {
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1190816769411" priority="1190816769411" version="5.6.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.FindString" newPriority="1190816769411" priority="1190816769411" version="6.0.1.m004">
                         <property name="attribute">
                             <java.lang.Integer value="263"/>
                         </property>
