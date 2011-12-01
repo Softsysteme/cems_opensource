@@ -4488,3 +4488,4 @@ Studio/tomcat/webapps/convertigo/xsl/status.xsl -text
 Studio/tomcat/webapps/convertigo/xsl/table.xsl -text
 Studio/tomcat/webapps/convertigo/xsl/template.html -text
 Studio/tomcat/webapps/convertigo/xsl/variables.xsl -text
+/readme.txt -text svneol=unset#text/plain
