@@ -210,6 +210,7 @@ Studio/projects/template_webIntegration/_data
 Studio/projects/template_webIntegration/_private
 Studio/projects/template_webIntegration/template_webIntegration.temp.wsdl
 Studio/projects/template_webIntegration/template_webIntegration.temp.xsd
+Studio/src/com/convertigo
 Studio/src/com/twinsoft/convertigo/beans/common/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/beans/core/images/Thumbs.db
@@ -220,7 +221,7 @@ Studio/src/com/twinsoft/convertigo/beans/vdx/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/Thumbs.db
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/Thumbs.db
-Studio/src/com/twinsoft/convertigo/engine/extbro
+Studio/src/com/twinsoft/convertigo/engine/externalbrowser
 Studio/src/com/twinsoft/convertigo/engine/parsers
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/cache/*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/logs/engine.log*
