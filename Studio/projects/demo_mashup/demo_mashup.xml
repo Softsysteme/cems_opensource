@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.6.0.m004" engine="5.6.0" exported="October 24, 2011 5:45 PM" studio="5.6.0" version="5.6.0_alpha (build 28520)">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
+<convertigo beans="6.0.1.m004" engine="6.0.1" exported="November 30, 2011 2:34 PM" studio="6.0.1" version="6.0.1 (build 29108)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.1.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -16,13 +16,16 @@
         <property name="name">
             <java.lang.String value="demo_mashup"/>
         </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
         <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="5.6.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="6.0.1.m004">
             <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
@@ -64,7 +67,7 @@
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>

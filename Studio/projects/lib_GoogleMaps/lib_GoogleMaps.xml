@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.6.0.m004" engine="5.6.0" exported="October 24, 2011 5:45 PM" studio="5.6.0" version="5.6.0_alpha (build 28520)">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.6.0.m004">
+<convertigo beans="6.0.1.m004" engine="6.0.1" exported="November 30, 2011 2:31 PM" studio="6.0.1" version="6.0.1 (build 29108)">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.1.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -16,13 +16,16 @@
         <property name="name">
             <java.lang.String value="lib_GoogleMaps"/>
         </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
         <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="false" priority="0" version="5.6.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="false" priority="0" version="6.0.1.m004">
             <property name="baseDir">
                 <java.lang.String value="/maps/api/geocode/xml"/>
             </property>
@@ -64,7 +67,7 @@
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="true" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -157,7 +160,7 @@
                 </property>
                 <wsdltype/>
                 <handlers/>
-                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.6.0.m004">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value="This test case will test the GeoCodingApi with an Address situated in Paris"/>
                     </property>
@@ -176,7 +179,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367180" priority="1292065367180" version="5.6.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367180" priority="1292065367180" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -193,7 +196,7 @@
                             <java.lang.Integer value="0"/>
                         </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367182" priority="1292065367182" version="5.6.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065367182" priority="1292065367182" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -211,7 +214,7 @@
                         </property>
                     </variable>
                 </testcase>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292064751921" priority="1292064751921" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292064751921" priority="1292064751921" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -246,7 +249,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065125985" priority="1292065125985" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065125985" priority="1292065125985" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -282,7 +285,7 @@
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -377,7 +380,7 @@
                 </property>
                 <wsdltype/>
                 <handlers/>
-                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.6.0.m004">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.1.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -398,7 +401,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065457079" priority="1292065457079" version="5.6.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065457079" priority="1292065457079" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -415,7 +418,7 @@
                             <java.lang.Integer value="0"/>
                         </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065569080" priority="1292065569080" version="5.6.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1292065569080" priority="1292065569080" version="6.0.1.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -433,7 +436,7 @@
                         </property>
                     </variable>
                 </testcase>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457083" priority="1292065457083" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457083" priority="1292065457083" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -468,7 +471,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457088" priority="1292065457088" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292065457088" priority="1292065457088" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -505,7 +508,7 @@
                 </variable>
             </transaction>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="5.6.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="6.0.1.m004">
             <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
@@ -547,7 +550,7 @@
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -647,7 +650,7 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289929760496" priority="1289929760496" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289929760496" priority="1289929760496" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -682,7 +685,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292152282910" priority="1292152282910" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1292152282910" priority="1292152282910" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -718,7 +721,7 @@ function onTransactionStarted() {
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="false" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -816,7 +819,7 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1289929392583" priority="1289929392583" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpMultiValuedVariable" newPriority="1289929392583" priority="1289929392583" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -858,7 +861,7 @@ function onTransactionStarted() {
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="5.6.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="6.0.1.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -955,7 +958,7 @@ function onTransactionStarted() {
     return "cancel";
 }
 ]]></handlers>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289912532506" priority="1289912532506" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289912532506" priority="1289912532506" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -990,7 +993,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928459863" priority="1289928459863" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928459863" priority="1289928459863" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1025,7 +1028,7 @@ function onTransactionStarted() {
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928653953" priority="1289928653953" version="5.6.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1289928653953" priority="1289928653953" version="6.0.1.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
