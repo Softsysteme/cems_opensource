@@ -2163,6 +2163,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/SmtpStep.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/SmtpStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/SourceStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SourceStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/StepException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/TestStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/TestStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ThenStep.java -text svneol=unset#text/plain
