@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.3.m004" engine="6.0.3" exported="December 16, 2011 10:59 AM" studio="6.0.3" version="6.0.3 (build 29308)">
+<convertigo beans="6.0.3.m004" engine="6.0.3" exported="December 16, 2011 11:07 AM" studio="6.0.3" version="6.0.3 (build 29308)">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.3.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -609,10 +609,10 @@
                             <java.lang.String value=""/>
                         </property>
                         <property name="details">
-                            <java.lang.String value="&quot;The Google Search transaction ended with an error.&quot;"/>
+                            <java.lang.String value="errorMessage"/>
                         </property>
                         <property name="expression">
-                            <java.lang.String value="errorMessage"/>
+                            <java.lang.String value="&quot;The Google Search transaction ended with an error.&quot;"/>
                         </property>
                         <property name="isEnable">
                             <java.lang.Boolean value="true"/>
