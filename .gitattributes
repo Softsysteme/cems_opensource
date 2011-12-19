@@ -326,7 +326,7 @@ Studio/lib/internal/aviva-111114.jar -text
 Studio/lib/internal/bull-v24323.jar -text
 Studio/lib/internal/comm.jar -text
 Studio/lib/internal/crysec-090918.jar -text
-Studio/lib/internal/html_parsers-v28975.jar -text
+Studio/lib/internal/html_parsers-v29269.jar -text
 Studio/lib/internal/ibm-v28353.jar -text
 Studio/lib/internal/ms.jar -text
 Studio/lib/internal/netscape.jar -text
@@ -2800,8 +2800,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpParametersEditor
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpStatementVariablesEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTransactionVariablesEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerDocumentCompletedEditorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerDownloadStartedEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerEditorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerNoWaitEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerScreenClassEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerWaitTimeEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerXpathEditorComposite.java -text
