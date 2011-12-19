@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.5.3.m004" engine="5.5.3" exported="7 septembre 2011 17:38" studio="5.5.3" version="5.5.3_beta (build 28026)">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.5.3.m004">
+<convertigo beans="6.0.3.m004" engine="6.0.3" exported="19 décembre 2011 18:00" studio="6.0.3" version="6.0.3">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.3.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -16,13 +16,16 @@
         <property name="name">
             <java.lang.String value="sampleMobileWebToPdf"/>
         </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
         <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="5.5.3.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="6.0.3.m004">
             <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
@@ -64,25 +67,13 @@
             <property name="port">
                 <java.lang.Integer value="80"/>
             </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="80"/>
-            </property>
-            <property name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
             <property name="server">
                 <java.lang.String value="www.html-to-pdf.net"/>
             </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.3.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="6.0.3.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -181,7 +172,52 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.3.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.3.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="XmlGenerated"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onXmlGenerated"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1315387369214"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1315387369214" priority="1315387369214" version="6.0.3.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="var nl = dom.getElementsByTagName(&quot;attachment&quot;);&#13;&#10;if (nl.length == 1) {&#13;&#10;&#9;nl.item(0).setAttribute(&quot;name&quot;, filename);&#13;&#10;&#9;context.set(&quot;attachment&quot;, nl.item(0));&#13;&#10;} else {&#13;&#10;&#9;var doc = dom.getDocumentElement();&#13;&#10;&#9;doc.appendChild(dom.importNode(context.get(&quot;attachment&quot;), false));&#13;&#10;}&#13;&#10;context.set(&quot;dl&quot;, &quot;ko&quot;);"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Rename"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.3.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -212,7 +248,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1315406279897" priority="1315406279897" version="5.5.3.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.IfStatement" handlePriorities="true" newPriority="1315406279897" priority="1315406279897" version="6.0.3.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -230,7 +266,6 @@
                                 <com.twinsoft.convertigo.beans.common.XMLVector>
                                     <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                                         <com.twinsoft.convertigo.beans.common.XMLVector>
-                                            <java.lang.Long value="1315406362620"/>
                                             <java.lang.Long value="1315406362701"/>
                                             <java.lang.Long value="1315406362728"/>
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
@@ -238,33 +273,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.WaitTriggerStatement" newPriority="1315406362620" priority="1315406362620" version="5.5.3.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="isEnable">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="DL"/>
-                            </property>
-                            <property name="trigger">
-                                <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
-                                    <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                                        <timeout>
-                                            <java.lang.Long value="3000"/>
-                                        </timeout>
-                                        <classname>
-                                            <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.WaitTimeTrigger"/>
-                                        </classname>
-                                        <dodirty>
-                                            <java.lang.String value="false"/>
-                                        </dodirty>
-                                    </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                                </xmlizable>
-                            </property>
-                        </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.ContextGetStatement" newPriority="1315406362701" priority="1315406362701" version="5.5.3.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.ContextGetStatement" newPriority="1315406362701" priority="1315406362701" version="6.0.3.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -281,7 +290,7 @@
                                 <java.lang.String value="filename"/>
                             </property>
                         </statement>
-                        <statement classname="com.twinsoft.convertigo.beans.statements.GetAttachmentStatement" newPriority="1315406362728" priority="1315406362728" version="5.5.3.m004">
+                        <statement classname="com.twinsoft.convertigo.beans.statements.GetAttachmentStatement" newPriority="1315406362728" priority="1315406362728" version="6.0.3.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -297,59 +306,17 @@
                             <property name="policy">
                                 <java.lang.String value="localfile_override"/>
                             </property>
+                            <property name="threshold">
+                                <java.lang.Long value="500"/>
+                            </property>
                             <property name="timeout">
                                 <java.lang.Long value="60000"/>
                             </property>
                         </statement>
                     </statement>
                 </statement>
-                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.3.m004">
-                    <property name="comment">
-                        <java.lang.String value=""/>
-                    </property>
-                    <property name="handlerLoopable">
-                        <java.lang.Boolean value="true"/>
-                    </property>
-                    <property name="handlerResult">
-                        <java.lang.String value=""/>
-                    </property>
-                    <property name="handlerType">
-                        <java.lang.String value="XmlGenerated"/>
-                    </property>
-                    <property name="isEnable">
-                        <java.lang.Boolean value="true"/>
-                    </property>
-                    <property name="name">
-                        <java.lang.String value="onXmlGenerated"/>
-                    </property>
-                    <property name="orderedStatements">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1315387369214"/>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.SimpleStatement" newPriority="1315387369214" priority="1315387369214" version="5.5.3.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="expression">
-                            <java.lang.String value="var nl = dom.getElementsByTagName(&quot;attachment&quot;);&#13;&#10;if (nl.length == 1) {&#13;&#10;&#9;nl.item(0).setAttribute(&quot;name&quot;, filename);&#13;&#10;&#9;context.set(&quot;attachment&quot;, nl.item(0));&#13;&#10;} else {&#13;&#10;&#9;var doc = dom.getDocumentElement();&#13;&#10;&#9;doc.appendChild(dom.importNode(context.get(&quot;attachment&quot;), false));&#13;&#10;}&#13;&#10;context.set(&quot;dl&quot;, &quot;ko&quot;);"/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="Rename"/>
-                        </property>
-                    </statement>
-                </statement>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.3.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="6.0.3.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -450,7 +417,163 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.3.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.3.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="handlerResult">
+                        <java.lang.String value="continue"/>
+                    </property>
+                    <property name="handlerType">
+                        <java.lang.String value="Entry"/>
+                    </property>
+                    <property name="isEnable">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="onDefaultEntry"/>
+                    </property>
+                    <property name="normalizedScreenClassName">
+                        <java.lang.String value="Default"/>
+                    </property>
+                    <property name="orderedStatements">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1315323835603"/>
+                                        <java.lang.Long value="1315323864444"/>
+                                        <java.lang.Long value="1315388881456"/>
+                                        <java.lang.Long value="1315406437924"/>
+                                        <java.lang.Long value="1315388402664"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1315323835603" priority="1315323835603" version="6.0.3.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="url"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="setURL"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="0"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.NoWaitTrigger"/>
+                                    </classname>
+                                    <dodirty>
+                                        <java.lang.String value="false"/>
+                                    </dodirty>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="uiEvent">
+                            <java.lang.Boolean value="false"/>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//INPUT[@type=&quot;text&quot;]'"/>
+                        </property>
+                    </statement>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1315323864444" priority="1315323864444" version="6.0.3.m004">
+                        <property name="action">
+                            <java.lang.String value="click"/>
+                        </property>
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Export"/>
+                        </property>
+                        <property name="trigger">
+                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
+                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                                    <timeout>
+                                        <java.lang.Long value="120000"/>
+                                    </timeout>
+                                    <classname>
+                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DownloadStartedTrigger"/>
+                                    </classname>
+                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
+                            </xmlizable>
+                        </property>
+                        <property name="xpath">
+                            <java.lang.String value="'//A[contains(text(),&quot;Export&quot;)]'"/>
+                        </property>
+                    </statement>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextSetStatement" newPriority="1315388881456" priority="1315388881456" version="6.0.3.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="url.substring(7).replace(new RegExp(&quot;\\W&quot;, &quot;g&quot;), &quot;_&quot;) + &quot;.pdf&quot;"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="key">
+                            <java.lang.String value="filename"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="SetUrl"/>
+                        </property>
+                    </statement>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextSetStatement" newPriority="1315406437924" priority="1315406437924" version="6.0.3.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="&quot;ok&quot;"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="key">
+                            <java.lang.String value="dl"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="SetUrl1"/>
+                        </property>
+                    </statement>
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextAddTextNodeStatement" newPriority="1315388402664" priority="1315388402664" version="6.0.3.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="expression">
+                            <java.lang.String value="&quot;true&quot;"/>
+                        </property>
+                        <property name="isEnable">
+                            <java.lang.Boolean value="true"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="Ready"/>
+                        </property>
+                        <property name="node">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="tagname">
+                            <java.lang.String value="ready"/>
+                        </property>
+                    </statement>
+                </statement>
+                <statement classname="com.twinsoft.convertigo.beans.statements.HandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.0.3.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -480,7 +603,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.BrowserPropertyChangeStatement" newPriority="1315323717234" priority="1315323717234" version="5.5.3.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.BrowserPropertyChangeStatement" newPriority="1315323717234" priority="1315323717234" version="6.0.3.m004">
                         <property name="attachmentMode">
                             <java.lang.String value="force on"/>
                         </property>
@@ -543,166 +666,7 @@
                         </property>
                     </statement>
                 </statement>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.3.m004">
-                    <property name="comment">
-                        <java.lang.String value=""/>
-                    </property>
-                    <property name="handlerLoopable">
-                        <java.lang.Boolean value="true"/>
-                    </property>
-                    <property name="handlerResult">
-                        <java.lang.String value="continue"/>
-                    </property>
-                    <property name="handlerType">
-                        <java.lang.String value="Entry"/>
-                    </property>
-                    <property name="isEnable">
-                        <java.lang.Boolean value="true"/>
-                    </property>
-                    <property name="name">
-                        <java.lang.String value="onDefaultEntry"/>
-                    </property>
-                    <property name="normalizedScreenClassName">
-                        <java.lang.String value="Default"/>
-                    </property>
-                    <property name="orderedStatements">
-                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                            <com.twinsoft.convertigo.beans.common.XMLVector>
-                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
-                                    <com.twinsoft.convertigo.beans.common.XMLVector>
-                                        <java.lang.Long value="1315323835603"/>
-                                        <java.lang.Long value="1315323864444"/>
-                                        <java.lang.Long value="1315388881456"/>
-                                        <java.lang.Long value="1315406437924"/>
-                                        <java.lang.Long value="1315388402664"/>
-                                    </com.twinsoft.convertigo.beans.common.XMLVector>
-                                </xmlizable>
-                            </com.twinsoft.convertigo.beans.common.XMLVector>
-                        </xmlizable>
-                    </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1315323835603" priority="1315323835603" version="5.5.3.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="expression">
-                            <java.lang.String value="url"/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="setURL"/>
-                        </property>
-                        <property name="trigger">
-                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
-                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                                    <timeout>
-                                        <java.lang.Long value="0"/>
-                                    </timeout>
-                                    <classname>
-                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.WaitTimeTrigger"/>
-                                    </classname>
-                                    <dodirty>
-                                        <java.lang.String value="false"/>
-                                    </dodirty>
-                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                            </xmlizable>
-                        </property>
-                        <property name="uiEvent">
-                            <java.lang.Boolean value="false"/>
-                        </property>
-                        <property name="xpath">
-                            <java.lang.String value="'//INPUT[@type=&quot;text&quot;]'"/>
-                        </property>
-                    </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1315323864444" priority="1315323864444" version="5.5.3.m004">
-                        <property name="action">
-                            <java.lang.String value="click"/>
-                        </property>
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="Export"/>
-                        </property>
-                        <property name="trigger">
-                            <xmlizable classname="com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer">
-                                <com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                                    <timeout>
-                                        <java.lang.Long value="120000"/>
-                                    </timeout>
-                                    <classname>
-                                        <java.lang.String value="com.twinsoft.convertigo.engine.parsers.triggers.DocumentCompletedTrigger"/>
-                                    </classname>
-                                    <count>
-                                        <java.lang.Integer value="1"/>
-                                    </count>
-                                </com.twinsoft.convertigo.engine.parsers.triggers.TriggerXMLizer>
-                            </xmlizable>
-                        </property>
-                        <property name="xpath">
-                            <java.lang.String value="'//A[contains(text(),&quot;Export&quot;)]'"/>
-                        </property>
-                    </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextSetStatement" newPriority="1315388881456" priority="1315388881456" version="5.5.3.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="expression">
-                            <java.lang.String value="url.substring(7).replace(new RegExp(&quot;\\W&quot;, &quot;g&quot;), &quot;_&quot;) + &quot;.pdf&quot;"/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="key">
-                            <java.lang.String value="filename"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="SetUrl"/>
-                        </property>
-                    </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextSetStatement" newPriority="1315406437924" priority="1315406437924" version="5.5.3.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="expression">
-                            <java.lang.String value="&quot;ok&quot;"/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="key">
-                            <java.lang.String value="dl"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="SetUrl1"/>
-                        </property>
-                    </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContextAddTextNodeStatement" newPriority="1315388402664" priority="1315388402664" version="5.5.3.m004">
-                        <property name="comment">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="expression">
-                            <java.lang.String value="&quot;true&quot;"/>
-                        </property>
-                        <property name="isEnable">
-                            <java.lang.Boolean value="true"/>
-                        </property>
-                        <property name="name">
-                            <java.lang.String value="Ready"/>
-                        </property>
-                        <property name="node">
-                            <java.lang.String value=""/>
-                        </property>
-                        <property name="tagname">
-                            <java.lang.String value="ready"/>
-                        </property>
-                    </statement>
-                </statement>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1315323648530" priority="1315323648530" version="5.5.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1315323648530" priority="1315323648530" version="6.0.3.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -738,7 +702,7 @@
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.5.3.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="6.0.3.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -838,7 +802,7 @@
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.5.3.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="6.0.3.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -865,7 +829,7 @@
                 </property>
             </screenclass>
         </connector>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.Android" priority="0" version="5.5.3.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.Android" priority="0" version="6.0.3.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -882,7 +846,7 @@
                 <java.lang.Long value="800"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.BlackBerry6" priority="0" version="5.5.3.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.BlackBerry6" priority="0" version="6.0.3.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -899,7 +863,7 @@
                 <java.lang.Long value="960"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPad" priority="0" version="5.5.3.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPad" priority="0" version="6.0.3.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -916,7 +880,7 @@
                 <java.lang.Long value="1024"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone3" priority="0" version="5.5.3.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone3" priority="0" version="6.0.3.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
@@ -933,7 +897,7 @@
                 <java.lang.Long value="480"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone4" priority="0" version="5.5.3.m004">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.IPhone4" priority="0" version="6.0.3.m004">
             <property name="comment">
                 <java.lang.String value=""/>
             </property>
