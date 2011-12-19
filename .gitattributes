@@ -2839,6 +2839,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyModifySuppor
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicTagsEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditorAdvance.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithValidatorEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RemovableHeadersEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ReplacementsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RowEditor.java -text
@@ -2890,6 +2891,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/table_editor/
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/table_editor/move_up.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/table_editor/new_line.d.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/table_editor/new_line.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/validators/NamespaceUriValidator.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/validators/UrlValidator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/swt/KTable.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/swt/KTableCellEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/swt/KTableCellEditorCombo.java -text
