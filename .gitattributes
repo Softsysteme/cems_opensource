@@ -188,6 +188,7 @@ Studio/icons/studio/undo.d.gif -text
 Studio/icons/studio/undo.gif -text
 Studio/icons/studio/unloadable_project.gif -text
 Studio/icons/studio/variable.gif -text
+Studio/icons/studio/variable_color_32x32.gif -text svneol=unset#application/octet-stream
 Studio/icons/studio/views.gif -text
 Studio/icons/studio/warning.gif -text
 Studio/icons/studio/write_wait_zone.d.gif -text
@@ -3053,6 +3054,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage6.java -t
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage8.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage9.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPageSummarySampleProject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleSiteClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStatementsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerSiebelWizard.java -text svneol=unset#text/plain
