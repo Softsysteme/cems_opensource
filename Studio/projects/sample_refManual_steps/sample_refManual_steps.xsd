@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:sample_documentation_CWI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" xmlns:sample_refManual_steps_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_steps" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_steps">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CWI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" xmlns:sample_refManual_steps_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_steps" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_steps">
 <xsd:import namespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CWI" schemaLocation="../sample_documentation_CWI/sample_documentation_CWI.xsd"/>
 <xsd:complexType name="ConvertigoError">
 <xsd:sequence>
@@ -268,58 +268,6 @@
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="SearchOneKeyword" type="sample_refManual_steps_ns:SearchOneKeywordRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SearchOneKeywordResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_refManual_steps_ns:SearchOneKeywordResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SearchOneKeywordRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="maxResult" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="input" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SearchOneKeywordResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="input" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291795972299StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1291632358502StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="search1291795972299StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="keyword" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
-</xsd:sequence>
-</xsd:complexType>
 <xsd:complexType name="element1307700281541StepType">
 <xsd:simpleContent>
 <xsd:extension base="xsd:string">
@@ -377,5 +325,54 @@
 </xsd:complexType>
 <xsd:complexType name="New_SequenceResponseData">
 <xsd:sequence/>
+</xsd:complexType>
+<xsd:element name="SearchOneKeyword" type="sample_refManual_steps_ns:SearchOneKeywordRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchOneKeywordResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SearchOneKeywordResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchOneKeywordRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="maxResult" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="input" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchOneKeywordResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291795972299StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1291632358502StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291795972299StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
 </xsd:complexType>
 </xsd:schema>
