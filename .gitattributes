@@ -1506,6 +1506,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/SequenceListener.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/core/SequenceTimeoutException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/Sheet.java -text svneol=unset#application/octet-stream
 Studio/src/com/twinsoft/convertigo/beans/core/SheetBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/core/SourceNotFoundException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/Statement.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/StatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/StatementWithExpressions.java -text
