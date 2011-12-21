@@ -2125,6 +2125,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/IteratorStep.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/beans/steps/IteratorStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ListDirStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ListDirStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/LogStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/LogStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/LoopStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/LoopStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/MoveFileStep.java -text svneol=unset#text/plain
@@ -2244,6 +2246,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/log_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/log_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/move_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/move_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_16x16.gif -text
@@ -2297,6 +2301,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/IsInStep.properties -text svn
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IsInThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IteratorStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ListDirStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/LogStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/LoopStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveFileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveStep.properties -text svneol=unset#text/plain
