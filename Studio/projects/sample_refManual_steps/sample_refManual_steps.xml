@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.3.m004" engine="6.0.3" exported="December 16, 2011 11:07 AM" studio="6.0.3" version="6.0.3 (build 29308)">
+<convertigo beans="6.0.3.m004" engine="6.0.3" exported="December 22, 2011 3:13 PM" studio="6.0.3" version="6.0.3 (build 29359)">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.3.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -422,9 +422,6 @@
                         <com.twinsoft.convertigo.beans.common.XMLVector/>
                     </xmlizable>
                 </property>
-                <property name="connectorName">
-                    <java.lang.String value="GoogleConnector"/>
-                </property>
                 <property name="contextName">
                     <java.lang.String value=""/>
                 </property>
@@ -451,14 +448,11 @@
                 <property name="output">
                     <java.lang.Boolean value="false"/>
                 </property>
-                <property name="projectName">
-                    <java.lang.String value="sample_documentation_CWI"/>
-                </property>
                 <property name="schemaDataType">
                     <java.lang.String value="xsd:string"/>
                 </property>
-                <property name="transactionName">
-                    <java.lang.String value="searchGoogleWithLimit"/>
+                <property name="sourceTransaction">
+                    <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                 </property>
                 <wsdltype/>
                 <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291632290857" priority="1291632290857" version="6.0.3.m004">
@@ -1177,9 +1171,6 @@
                             <com.twinsoft.convertigo.beans.common.XMLVector/>
                         </xmlizable>
                     </property>
-                    <property name="connectorName">
-                        <java.lang.String value="GoogleConnector"/>
-                    </property>
                     <property name="contextName">
                         <java.lang.String value=""/>
                     </property>
@@ -1204,14 +1195,11 @@
                     <property name="output">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property name="projectName">
-                        <java.lang.String value="sample_documentation_CWI"/>
-                    </property>
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property name="transactionName">
-                        <java.lang.String value="searchGoogleWithLimit"/>
+                    <property name="sourceTransaction">
+                        <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                     </property>
                     <wsdltype/>
                     <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291387557808" priority="1291387557808" version="6.0.3.m004">
@@ -1858,9 +1846,6 @@
                             <com.twinsoft.convertigo.beans.common.XMLVector/>
                         </xmlizable>
                     </property>
-                    <property name="connectorName">
-                        <java.lang.String value="GoogleConnector"/>
-                    </property>
                     <property name="contextName">
                         <java.lang.String value=""/>
                     </property>
@@ -1889,14 +1874,11 @@
                     <property name="output">
                         <java.lang.Boolean value="false"/>
                     </property>
-                    <property name="projectName">
-                        <java.lang.String value="sample_documentation_CWI"/>
-                    </property>
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <property name="transactionName">
-                        <java.lang.String value="searchGoogleWithLimit"/>
+                    <property name="sourceTransaction">
+                        <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                     </property>
                     <wsdltype/>
                     <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1295354886383" priority="1295354886383" version="6.0.3.m004">
