@@ -3363,6 +3363,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/CookiesUtils.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/engine/util/Copybook.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Crypto.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/DateUtils.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/util/EventHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/FileUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/GenericUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/HttpServletRequestTwsWrapper.java -text
