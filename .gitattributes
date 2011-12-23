@@ -3427,7 +3427,6 @@ Studio/tomcat/lib/tomcat-juli.jar -text
 Studio/tomcat/webapps/ROOT/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/database_objects.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/WEB-INF/classes/database_objects_5.4.3.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/emulators.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/jdbc_drivers.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/log4j.properties -text svneol=unset#text/plain
