@@ -108,6 +108,10 @@ Studio/projects/sample_documentation_CWI/_data
 Studio/projects/sample_documentation_CWI/_private
 Studio/projects/sample_documentation_CWI/sample_documentation_CWI.temp.wsdl
 Studio/projects/sample_documentation_CWI/sample_documentation_CWI.temp.xsd
+Studio/projects/sample_refManual_http/*.temp.*
+Studio/projects/sample_refManual_http/Traces
+Studio/projects/sample_refManual_http/_data
+Studio/projects/sample_refManual_http/_private
 Studio/projects/sample_refManual_siteClipper/*.temp.*
 Studio/projects/sample_refManual_siteClipper/_data
 Studio/projects/sample_refManual_siteClipper/_private

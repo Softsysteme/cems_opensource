@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:globalCompany_HR_WS_ns="http://www.convertigo.com/convertigo/projects/globalCompany_HR_WS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/globalCompany_HR_WS">
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="globalCompany_HR_WS_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="globalCompany_HR_WS_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="departmentsList" type="globalCompany_HR_WS_ns:departmentsListRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="departmentsListResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="globalCompany_HR_WS_ns:departmentsListResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="departmentsListRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="departmentsList_document_serviceType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="id" type="xsd:byte"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="name" type="xsd:anyURI"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="departmentsListResponseData">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="service" type="globalCompany_HR_WS_ns:departmentsList_document_serviceType"/>
+</xsd:sequence>
+<xsd:attribute name="connector" type="xsd:anyURI"/>
+<xsd:attribute name="context" type="xsd:anyURI"/>
+<xsd:attribute name="contextId" type="xsd:anyURI"/>
+<xsd:attribute name="fromcache" type="xsd:boolean"/>
+<xsd:attribute name="generated" type="xsd:anyURI"/>
+<xsd:attribute name="project" type="xsd:anyURI"/>
+<xsd:attribute name="sequence" type="xsd:anyURI"/>
+<xsd:attribute name="signature" type="xsd:long"/>
+<xsd:attribute name="transaction" type="xsd:anyURI"/>
+<xsd:attribute name="version" type="xsd:anyURI"/>
+</xsd:complexType>
+<xsd:element name="employeesList" type="globalCompany_HR_WS_ns:employeesListRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="employeesListResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="globalCompany_HR_WS_ns:employeesListResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="employeesListRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="employeesList_document_employeeType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="id" type="xsd:byte"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="name" type="xsd:anyURI"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="firstname" type="xsd:anyURI"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="email" type="xsd:anyURI"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="department" type="xsd:anyURI"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="employeesListResponseData">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="employee" type="globalCompany_HR_WS_ns:employeesList_document_employeeType"/>
+</xsd:sequence>
+<xsd:attribute name="connector" type="xsd:anyURI"/>
+<xsd:attribute name="context" type="xsd:anyURI"/>
+<xsd:attribute name="contextId" type="xsd:anyURI"/>
+<xsd:attribute name="fromcache" type="xsd:boolean"/>
+<xsd:attribute name="generated" type="xsd:anyURI"/>
+<xsd:attribute name="project" type="xsd:anyURI"/>
+<xsd:attribute name="sequence" type="xsd:anyURI"/>
+<xsd:attribute name="signature" type="xsd:long"/>
+<xsd:attribute name="transaction" type="xsd:anyURI"/>
+<xsd:attribute name="version" type="xsd:anyURI"/>
+</xsd:complexType>
+<xsd:element name="getDepartment" type="globalCompany_HR_WS_ns:getDepartmentRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="getDepartmentResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="globalCompany_HR_WS_ns:getDepartmentResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="getDepartmentRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="depId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getDepartment_document_serviceType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="id" type="xsd:byte"/>
+<xsd:element minOccurs="0" name="name" type="xsd:anyURI"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getDepartmentResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="service" type="globalCompany_HR_WS_ns:getDepartment_document_serviceType"/>
+<xsd:element minOccurs="0" name="ws_error" type="xsd:string"/>
+</xsd:sequence>
+<xsd:attribute name="connector" type="xsd:anyURI"/>
+<xsd:attribute name="context" type="xsd:anyURI"/>
+<xsd:attribute name="contextId" type="xsd:anyURI"/>
+<xsd:attribute name="fromcache" type="xsd:boolean"/>
+<xsd:attribute name="generated" type="xsd:anyURI"/>
+<xsd:attribute name="project" type="xsd:anyURI"/>
+<xsd:attribute name="sequence" type="xsd:anyURI"/>
+<xsd:attribute name="signature" type="xsd:long"/>
+<xsd:attribute name="transaction" type="xsd:anyURI"/>
+<xsd:attribute name="version" type="xsd:anyURI"/>
+</xsd:complexType>
+<xsd:element name="getEmployee" type="globalCompany_HR_WS_ns:getEmployeeRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="getEmployeeResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="globalCompany_HR_WS_ns:getEmployeeResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="getEmployeeRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="employeeId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getEmployee_document_employeeType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="id" type="xsd:byte"/>
+<xsd:element minOccurs="0" name="name" type="xsd:anyURI"/>
+<xsd:element minOccurs="0" name="firstname" type="xsd:anyURI"/>
+<xsd:element minOccurs="0" name="email" type="xsd:anyURI"/>
+<xsd:element minOccurs="0" name="department" type="xsd:anyURI"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getEmployeeResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="employee" type="globalCompany_HR_WS_ns:getEmployee_document_employeeType"/>
+</xsd:sequence>
+<xsd:attribute name="connector" type="xsd:anyURI"/>
+<xsd:attribute name="context" type="xsd:anyURI"/>
+<xsd:attribute name="contextId" type="xsd:anyURI"/>
+<xsd:attribute name="fromcache" type="xsd:boolean"/>
+<xsd:attribute name="generated" type="xsd:anyURI"/>
+<xsd:attribute name="project" type="xsd:anyURI"/>
+<xsd:attribute name="sequence" type="xsd:anyURI"/>
+<xsd:attribute name="signature" type="xsd:long"/>
+<xsd:attribute name="transaction" type="xsd:anyURI"/>
+<xsd:attribute name="version" type="xsd:anyURI"/>
+</xsd:complexType>
+</xsd:schema>

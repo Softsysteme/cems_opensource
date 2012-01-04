@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://www.convertigo.com/convertigo/projects/globalCompany_HR_WS">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <glob:getEmployee>
+         <!--type: string-->
+         <glob:employeeId>$(GLOB_EMPLOYEEID)</glob:employeeId>
+      </glob:getEmployee>
+   </soapenv:Body>
+</soapenv:Envelope>

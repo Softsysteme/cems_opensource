@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<convertigo beans="6.1.0.m004" engine="6.1.0" exported="January 4, 2012 4:46 PM" studio="6.1.0" version="6.1.0">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.1.0.m004">
+        <property name="browserDefinitions">
+            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                <com.twinsoft.convertigo.beans.common.XMLVector/>
+            </xmlizable>
+        </property>
+        <property name="comment">
+            <java.lang.String value="Web Integration project"/>
+        </property>
+        <property name="httpSessionTimeout">
+            <java.lang.Integer value="300"/>
+        </property>
+        <property name="name">
+            <java.lang.String value="sample_refManual_http"/>
+        </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
+        <property name="schemaInline">
+            <java.lang.Boolean value="true"/>
+        </property>
+        <property name="wsdlStyle">
+            <java.lang.String value="DOC/LITERAL"/>
+        </property>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="false" priority="0" version="6.1.0.m004">
+            <property name="baseDir">
+                <java.lang.String value="/cems/projects/globalCompany_HR_WS"/>
+            </property>
+            <property name="basicPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property name="basicUser">
+                <java.lang.String value=""/>
+            </property>
+            <property name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="httpHeaderForward">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                </xmlizable>
+            </property>
+            <property name="https">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <property name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="globalCompany_HR_WS_RESTconnector"/>
+            </property>
+            <property name="port">
+                <java.lang.Integer value="443"/>
+            </property>
+            <property name="server">
+                <java.lang.String value="demo.convertigo.net"/>
+            </property>
+            <property name="trustAllServerCertificates">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HttpTransaction" default="true" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="Default_transaction"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="myDepartmentsList"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="/.xml?__sequence=departmentsList"/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="ISO-8859-1"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="myEmployeesList"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="/.xml?__sequence=employeesList"/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="ISO-8859-1"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="myGetDepartment"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1325599937072"/>
+                                    <java.lang.Long value="1325600160366"/>
+                                    <java.lang.Long value="1325602039904"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="/.xml?__sequence=getDepartment"/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="ISO-8859-1"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ko"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325600011507"/>
+                                        <java.lang.Long value="1325600160359"/>
+                                        <java.lang.Long value="1325602039897"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602039897" priority="1325602039897" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="id"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="20"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ok"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325600160363"/>
+                                        <java.lang.Long value="1325602039901"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602039901" priority="1325602039901" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="id"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="5"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1325602039904" priority="1325602039904" version="6.1.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="depId"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="id"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="application/x-www-form-urlencoded"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="myGetEmployee"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1325599937072"/>
+                                    <java.lang.Long value="1325602039916"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value="/.xml?__sequence=getEmployee"/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="ISO-8859-1"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ko"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325600011507"/>
+                                        <java.lang.Long value="1325602039909"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602039909" priority="1325602039909" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="id"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="150"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ok"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325602039913"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602039913" priority="1325602039913" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="id"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="15"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1325602039916" priority="1325602039916" version="6.1.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="new variable"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="GET"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="employeeId"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="id"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+        </connector>
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HttpConnector" default="true" priority="0" version="6.1.0.m004">
+            <property name="baseDir">
+                <java.lang.String value="/jk/demo/cems/projects/globalCompany_HR_WS/.wsl"/>
+            </property>
+            <property name="basicPassword">
+                <java.lang.String value=""/>
+            </property>
+            <property name="basicUser">
+                <java.lang.String value=""/>
+            </property>
+            <property name="billingClassName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="comment">
+                <java.lang.String value=""/>
+            </property>
+            <property name="endTransactionName">
+                <java.lang.String value=""/>
+            </property>
+            <property name="httpHeaderForward">
+                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                    <com.twinsoft.convertigo.beans.common.XMLVector/>
+                </xmlizable>
+            </property>
+            <property name="https">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <property name="isTasAuthenticationRequired">
+                <java.lang.Boolean value="false"/>
+            </property>
+            <property name="name">
+                <java.lang.String value="globalCompany_HR_WS_SOAPBinding"/>
+            </property>
+            <property name="port">
+                <java.lang.Integer value="443"/>
+            </property>
+            <property name="server">
+                <java.lang.String value="demo.convertigo.net"/>
+            </property>
+            <property name="trustAllServerCertificates">
+                <java.lang.Boolean value="true"/>
+            </property>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="true" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="text/xml"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Host"/>
+                                    <java.lang.String value="demo.convertigo.net"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="SOAPAction"/>
+                                    <java.lang.String value="globalCompany_HR_WS?departmentsList"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="user-agent"/>
+                                    <java.lang.String value="Convertigo EMS 6.1.0"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="1"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="CdepartmentsList"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value="/soap-templates/globalCompany_HR_WSSOAPBinding/CdepartmentsList.xml"/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value="globalCompany_HR_WS_ns:departmentsListResponse"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="text/xml"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Host"/>
+                                    <java.lang.String value="demo.convertigo.net"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="SOAPAction"/>
+                                    <java.lang.String value="globalCompany_HR_WS?employeesList"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="user-agent"/>
+                                    <java.lang.String value="Convertigo EMS 6.1.0"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="1"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="CemployeesList"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector/>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value="/soap-templates/globalCompany_HR_WSSOAPBinding/CemployeesList.xml"/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value="globalCompany_HR_WS_ns:employeesListResponse"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="text/xml"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Host"/>
+                                    <java.lang.String value="demo.convertigo.net"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="SOAPAction"/>
+                                    <java.lang.String value="globalCompany_HR_WS?getDepartment"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="user-agent"/>
+                                    <java.lang.String value="Convertigo EMS 6.1.0"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="1"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="CgetDepartment"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1325600066123"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value="/soap-templates/globalCompany_HR_WSSOAPBinding/CgetDepartment.xml"/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value="globalCompany_HR_WS_ns:getDepartmentResponse"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ko"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325600011507"/>
+                                        <java.lang.Long value="1325600160359"/>
+                                        <java.lang.Long value="1325601914606"/>
+                                        <java.lang.Long value="1325602016093"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602016093" priority="1325602016093" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="glob_depId"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="20"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ok"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325599971362"/>
+                                        <java.lang.Long value="1325600160363"/>
+                                        <java.lang.Long value="1325601914610"/>
+                                        <java.lang.Long value="1325602016097"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602016097" priority="1325602016097" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="new variable"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="glob_depId"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="5"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1325600066123" priority="1325600066123" version="6.1.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="glob_depId"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="POST"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="GLOB_DEPID"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="glob_depId"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.XmlHttpTransaction" default="false" priority="0" version="6.1.0.m004">
+                <property name="bIncludeCertificateGroup">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="billable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="clientCachable">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="comment">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="encodingCharSet">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <property name="handleCookie">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="httpParameters">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Content-Type"/>
+                                    <java.lang.String value="text/xml"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="Host"/>
+                                    <java.lang.String value="demo.convertigo.net"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="SOAPAction"/>
+                                    <java.lang.String value="globalCompany_HR_WS?getEmployee"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.String value="user-agent"/>
+                                    <java.lang.String value="Convertigo EMS 6.1.0"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="httpVerb">
+                    <java.lang.Integer value="1"/>
+                </property>
+                <property name="ignoreSoapEnveloppe">
+                    <java.lang.Boolean value="true"/>
+                </property>
+                <property name="includedTagAttributes">
+                    <array classname="boolean" length="11">
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                        <java.lang.Boolean value="true"/>
+                    </array>
+                </property>
+                <property name="name">
+                    <java.lang.String value="CgetEmployee"/>
+                </property>
+                <property name="orderedVariables">
+                    <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                        <com.twinsoft.convertigo.beans.common.XMLVector>
+                            <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                <com.twinsoft.convertigo.beans.common.XMLVector>
+                                    <java.lang.Long value="1325600066185"/>
+                                </com.twinsoft.convertigo.beans.common.XMLVector>
+                            </xmlizable>
+                        </com.twinsoft.convertigo.beans.common.XMLVector>
+                    </xmlizable>
+                </property>
+                <property name="publicMethod">
+                    <java.lang.Boolean value="false"/>
+                </property>
+                <property name="requestTemplate">
+                    <java.lang.String value="/soap-templates/globalCompany_HR_WSSOAPBinding/CgetEmployee.xml"/>
+                </property>
+                <property name="responseElementQName">
+                    <java.lang.String value="globalCompany_HR_WS_ns:getEmployeeResponse"/>
+                </property>
+                <property name="responseExpiryDate">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="responseTimeout">
+                    <java.lang.Long value="60"/>
+                </property>
+                <property name="sheetLocation">
+                    <java.lang.Integer value="0"/>
+                </property>
+                <property name="subDir">
+                    <java.lang.String value=""/>
+                </property>
+                <property name="xmlEncoding">
+                    <java.lang.String value="UTF-8"/>
+                </property>
+                <wsdltype/>
+                <handlers/>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ko"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325602072262"/>
+                                        <java.lang.Long value="1325602080927"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602080927" priority="1325602080927" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="glob_employeeId"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="glob_employeeId"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="150"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="Test_Case_ok"/>
+                    </property>
+                    <property name="orderedVariables">
+                        <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                            <com.twinsoft.convertigo.beans.common.XMLVector>
+                                <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
+                                    <com.twinsoft.convertigo.beans.common.XMLVector>
+                                        <java.lang.Long value="1325602072262"/>
+                                    </com.twinsoft.convertigo.beans.common.XMLVector>
+                                </xmlizable>
+                            </com.twinsoft.convertigo.beans.common.XMLVector>
+                        </xmlizable>
+                    </property>
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1325602072262" priority="1325602072262" version="6.1.0.m004">
+                        <property name="comment">
+                            <java.lang.String value=""/>
+                        </property>
+                        <property name="description">
+                            <java.lang.String value="glob_employeeId"/>
+                        </property>
+                        <property name="name">
+                            <java.lang.String value="glob_employeeId"/>
+                        </property>
+                        <property isNull="false" name="value">
+                            <java.lang.String value="15"/>
+                        </property>
+                        <property name="visibility">
+                            <java.lang.Integer value="0"/>
+                        </property>
+                    </variable>
+                </testcase>
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1325600066185" priority="1325600066185" version="6.1.0.m004">
+                    <property name="cachedKey">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                    <property name="comment">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="description">
+                        <java.lang.String value="glob_employeeId"/>
+                    </property>
+                    <property name="httpMethod">
+                        <java.lang.String value="POST"/>
+                    </property>
+                    <property name="httpName">
+                        <java.lang.String value="GLOB_EMPLOYEEID"/>
+                    </property>
+                    <property name="name">
+                        <java.lang.String value="glob_employeeId"/>
+                    </property>
+                    <property name="personalizable">
+                        <java.lang.Boolean value="false"/>
+                    </property>
+                    <property name="schemaType">
+                        <java.lang.String value="xsd:string"/>
+                    </property>
+                    <property isNull="true" name="value">
+                        <java.lang.String value=""/>
+                    </property>
+                    <property name="visibility">
+                        <java.lang.Integer value="0"/>
+                    </property>
+                    <property name="wsdl">
+                        <java.lang.Boolean value="true"/>
+                    </property>
+                </variable>
+            </transaction>
+        </connector>
+    </project>
+</convertigo>
