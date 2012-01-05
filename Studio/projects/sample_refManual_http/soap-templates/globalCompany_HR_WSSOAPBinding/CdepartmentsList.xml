@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://www.convertigo.com/convertigo/projects/globalCompany_HR_WS">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <glob:departmentsList/>
-   </soapenv:Body>
-</soapenv:Envelope>
