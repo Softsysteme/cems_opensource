@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_refManual_http" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http" xmlns:sample_refManual_http_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http"><xsd:include schemaLocation="sample_refManual_http.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sample_refManual_httpPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sample_refManual_httpSOAPBinding" type="sample_refManual_http_ns:sample_refManual_httpPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sample_refManual_http">
+    <wsdl:port name="sample_refManual_httpSOAP" binding="sample_refManual_http_ns:sample_refManual_httpSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_refManual_http/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
