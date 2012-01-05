@@ -907,7 +907,6 @@ Studio/projects/sample_refManual_steps/sample_refManual_steps.xml -text svneol=u
 Studio/projects/sample_refManual_steps/sample_refManual_steps.xsd -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/.project -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sample_refManual_variables/index.html -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/results.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/sample_refManual_variables.wsdl -text svneol=unset#text/plain
