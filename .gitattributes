@@ -3058,6 +3058,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage6.java -t
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage8.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPage9.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewProjectWizardPageSummarySampleProject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleHTTPWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleSiteClipperWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStatementsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
