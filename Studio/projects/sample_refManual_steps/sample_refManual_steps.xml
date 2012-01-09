@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.3.m004" engine="6.0.3" exported="December 22, 2011 3:13 PM" studio="6.0.3" version="6.0.3 (build 29359)">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.3.m004">
+<convertigo beans="6.1.0.m004" engine="6.1.0" exported="January 3, 2012 3:56 PM" studio="6.1.0" version="6.1.0">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.1.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -25,7 +25,7 @@
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SqlConnector" default="true" priority="0" version="6.0.3.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SqlConnector" default="true" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -62,7 +62,7 @@
             <property name="systemTablesQuery">
                 <java.lang.String value=""/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="true" priority="0" version="6.0.3.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SqlTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -133,7 +133,7 @@
                 </property>
                 <wsdltype/>
                 <handlers/>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1258642022665" priority="1258642022665" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1258642022665" priority="1258642022665" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -164,7 +164,7 @@
                 </variable>
             </transaction>
         </connector>
-        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.0.3.m004">
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.1.0.m004">
             <property name="billable">
                 <java.lang.Boolean value="false"/>
             </property>
@@ -176,6 +176,9 @@
             </property>
             <property name="encodingCharSet">
                 <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="includeResponseElement">
+                <java.lang.Boolean value="true"/>
             </property>
             <property name="name">
                 <java.lang.String value="New_Sequence"/>
@@ -212,7 +215,7 @@
             </property>
             <wsdltype/>
         </sequence>
-        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.0.3.m004">
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.1.0.m004">
             <property name="billable">
                 <java.lang.Boolean value="false"/>
             </property>
@@ -224,6 +227,9 @@
             </property>
             <property name="encodingCharSet">
                 <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="includeResponseElement">
+                <java.lang.Boolean value="true"/>
             </property>
             <property name="name">
                 <java.lang.String value="SearchOneKeyword"/>
@@ -270,7 +276,7 @@
                 <java.lang.Integer value="0"/>
             </property>
             <wsdltype/>
-            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.3.m004">
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -291,7 +297,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291632338273" priority="1291632338273" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291632338273" priority="1291632338273" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -308,7 +314,7 @@
                         <java.lang.Integer value="0"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291632290836" priority="1291632290836" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291632290836" priority="1291632290836" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -326,7 +332,7 @@
                     </property>
                 </variable>
             </testcase>
-            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.3.m004">
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -349,7 +355,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291803883985" priority="1291803883985" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291803883985" priority="1291803883985" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -366,7 +372,7 @@
                         <java.lang.Integer value="0"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291803883982" priority="1291803883982" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291803883982" priority="1291803883982" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -384,7 +390,7 @@
                     </property>
                 </variable>
             </testcase>
-            <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1291632392304" priority="1291632392304" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1291632392304" priority="1291632392304" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -410,7 +416,7 @@
                     <java.lang.String value="xsd:string"/>
                 </property>
             </step>
-            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1291632358502" priority="1291632358502" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1291632358502" priority="1291632358502" version="6.1.0.m004">
                 <property name="bInternalInvoke">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -455,7 +461,7 @@
                     <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                 </property>
                 <wsdltype/>
-                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291632290857" priority="1291632290857" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291632290857" priority="1291632290857" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -480,7 +486,7 @@
                         <java.lang.Integer value="0"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291632290860" priority="1291632290860" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291632290860" priority="1291632290860" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -503,7 +509,7 @@
                     </property>
                 </variable>
             </step>
-            <step classname="com.twinsoft.convertigo.beans.steps.IfExistThenElseStep" handlePriorities="true" newPriority="1291741533261" priority="1291741533261" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.IfExistThenElseStep" handlePriorities="true" newPriority="1291741533261" priority="1291741533261" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -542,7 +548,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <step classname="com.twinsoft.convertigo.beans.steps.ThenStep" handlePriorities="true" newPriority="1291741542707" priority="1291741542707" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.ThenStep" handlePriorities="true" newPriority="1291741542707" priority="1291741542707" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -570,7 +576,7 @@
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleSourceStep" newPriority="1324028104355" priority="1324028104355" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleSourceStep" newPriority="1324028104355" priority="1324028104355" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -598,7 +604,7 @@
                             <java.lang.String value="errorMessage"/>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.ExceptionStep" newPriority="1291795790453" priority="1291795790453" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.ExceptionStep" newPriority="1291795790453" priority="1291795790453" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -622,7 +628,7 @@
                         </property>
                     </step>
                 </step>
-                <step classname="com.twinsoft.convertigo.beans.steps.ElseStep" handlePriorities="true" newPriority="1291741542709" priority="1291741542709" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.ElseStep" handlePriorities="true" newPriority="1291741542709" priority="1291741542709" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -649,7 +655,7 @@
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1291795972299" priority="1291795972299" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1291795972299" priority="1291795972299" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -684,7 +690,7 @@
                         <property name="schemaDataType">
                             <java.lang.String value="xsd:string"/>
                         </property>
-                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291632290866" priority="1291632290866" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291632290866" priority="1291632290866" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -704,7 +710,7 @@
                                 <java.lang.String value="xsd:string"/>
                             </property>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1291632290869" priority="1291632290869" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1291632290869" priority="1291632290869" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -744,7 +750,7 @@
                                 </xmlizable>
                             </property>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1291632290872" priority="1291632290872" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1291632290872" priority="1291632290872" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -787,7 +793,7 @@
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </property>
-                            <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1291632290875" priority="1291632290875" version="6.0.3.m004">
+                            <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1291632290875" priority="1291632290875" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -812,7 +818,7 @@
                                     </xmlizable>
                                 </property>
                             </step>
-                            <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1291632290878" priority="1291632290878" version="6.0.3.m004">
+                            <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1291632290878" priority="1291632290878" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -843,7 +849,7 @@
                                 <property name="schemaDataType">
                                     <java.lang.String value="xsd:string"/>
                                 </property>
-                                <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1291632290881" priority="1291632290881" version="6.0.3.m004">
+                                <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1291632290881" priority="1291632290881" version="6.1.0.m004">
                                     <property name="comment">
                                         <java.lang.String value=""/>
                                     </property>
@@ -864,7 +870,7 @@
                                     </property>
                                 </step>
                             </step>
-                            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291632290884" priority="1291632290884" version="6.0.3.m004">
+                            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291632290884" priority="1291632290884" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -888,7 +894,7 @@
                     </step>
                 </step>
             </step>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291632326410" priority="1291632326410" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291632326410" priority="1291632326410" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -917,7 +923,7 @@
                     <java.lang.Boolean value="true"/>
                 </property>
             </variable>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291632290890" priority="1291632290890" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291632290890" priority="1291632290890" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -947,7 +953,7 @@
                 </property>
             </variable>
         </sequence>
-        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.0.3.m004">
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.1.0.m004">
             <property name="billable">
                 <java.lang.Boolean value="false"/>
             </property>
@@ -959,6 +965,9 @@
             </property>
             <property name="encodingCharSet">
                 <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="includeResponseElement">
+                <java.lang.Boolean value="true"/>
             </property>
             <property name="name">
                 <java.lang.String value="SearchSeveralKeywords"/>
@@ -1000,7 +1009,7 @@
                 <java.lang.Integer value="0"/>
             </property>
             <wsdltype/>
-            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.3.m004">
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1019,7 +1028,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1291386379866" priority="1291386379866" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1291386379866" priority="1291386379866" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1042,7 +1051,7 @@
                         <java.lang.Integer value="0"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291631677864" priority="1291631677864" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1291631677864" priority="1291631677864" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1060,7 +1069,7 @@
                     </property>
                 </variable>
             </testcase>
-            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291387270857" priority="1291387270857" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291387270857" priority="1291387270857" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1080,7 +1089,7 @@
                     <java.lang.String value="xsd:string"/>
                 </property>
             </step>
-            <step classname="com.twinsoft.convertigo.beans.steps.WhileStep" handlePriorities="true" newPriority="1291387146082" priority="1291387146082" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.WhileStep" handlePriorities="true" newPriority="1291387146082" priority="1291387146082" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1113,7 +1122,7 @@
                 <property name="schemaDataType">
                     <java.lang.String value="xsd:string"/>
                 </property>
-                <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1291387379742" priority="1291387379742" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1291387379742" priority="1291387379742" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1139,7 +1148,7 @@
                         <java.lang.String value="xsd:string"/>
                     </property>
                 </step>
-                <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291387414357" priority="1291387414357" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291387414357" priority="1291387414357" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1159,7 +1168,7 @@
                         <java.lang.String value="xsd:string"/>
                     </property>
                 </step>
-                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1291387446441" priority="1291387446441" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1291387446441" priority="1291387446441" version="6.1.0.m004">
                     <property name="bInternalInvoke">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1202,7 +1211,7 @@
                         <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                     </property>
                     <wsdltype/>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291387557808" priority="1291387557808" version="6.0.3.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291387557808" priority="1291387557808" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1227,7 +1236,7 @@
                             <java.lang.Integer value="0"/>
                         </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291387557810" priority="1291387557810" version="6.0.3.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1291387557810" priority="1291387557810" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1250,7 +1259,7 @@
                         </property>
                     </variable>
                 </step>
-                <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1291387665564" priority="1291387665564" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1291387665564" priority="1291387665564" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1282,7 +1291,7 @@
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291631801945" priority="1291631801945" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291631801945" priority="1291631801945" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1302,7 +1311,7 @@
                             <java.lang.String value="xsd:string"/>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1291387697428" priority="1291387697428" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1291387697428" priority="1291387697428" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1342,7 +1351,7 @@
                             </xmlizable>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1291631743361" priority="1291631743361" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1291631743361" priority="1291631743361" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1382,7 +1391,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1291631751035" priority="1291631751035" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1291631751035" priority="1291631751035" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1407,7 +1416,7 @@
                                 </xmlizable>
                             </property>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1291631735176" priority="1291631735176" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1291631735176" priority="1291631735176" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1437,7 +1446,7 @@
                             <property name="schemaDataType">
                                 <java.lang.String value="xsd:string"/>
                             </property>
-                            <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1291391631382" priority="1291391631382" version="6.0.3.m004">
+                            <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1291391631382" priority="1291391631382" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -1458,7 +1467,7 @@
                                 </property>
                             </step>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291631827418" priority="1291631827418" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1291631827418" priority="1291631827418" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1481,7 +1490,7 @@
                     </step>
                 </step>
             </step>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1291386314194" priority="1291386314194" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1291386314194" priority="1291386314194" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -1512,7 +1521,7 @@
                     <java.lang.Boolean value="true"/>
                 </property>
             </variable>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291631635881" priority="1291631635881" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1291631635881" priority="1291631635881" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -1542,7 +1551,7 @@
                 </property>
             </variable>
         </sequence>
-        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.0.3.m004">
+        <sequence classname="com.twinsoft.convertigo.beans.sequences.GenericSequence" handlePriorities="true" priority="0" version="6.1.0.m004">
             <property name="billable">
                 <java.lang.Boolean value="false"/>
             </property>
@@ -1554,6 +1563,9 @@
             </property>
             <property name="encodingCharSet">
                 <java.lang.String value="UTF-8"/>
+            </property>
+            <property name="includeResponseElement">
+                <java.lang.Boolean value="true"/>
             </property>
             <property name="name">
                 <java.lang.String value="SearchSeveralKeywordsInParallel"/>
@@ -1600,7 +1612,7 @@
                 <java.lang.Integer value="0"/>
             </property>
             <wsdltype/>
-            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.0.3.m004">
+            <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1621,7 +1633,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1295340384860" priority="1295340384860" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseMultiValuedVariable" newPriority="1295340384860" priority="1295340384860" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1644,7 +1656,7 @@
                         <java.lang.Integer value="0"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1295340384863" priority="1295340384863" version="6.0.3.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1295340384863" priority="1295340384863" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1662,7 +1674,7 @@
                     </property>
                 </variable>
             </testcase>
-            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295340384866" priority="1295340384866" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295340384866" priority="1295340384866" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1682,7 +1694,7 @@
                     <java.lang.String value="xsd:string"/>
                 </property>
             </step>
-            <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1295354905046" priority="1295354905046" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1295354905046" priority="1295354905046" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1712,7 +1724,7 @@
                 <property name="schemaDataType">
                     <java.lang.String value="xsd:string"/>
                 </property>
-                <step classname="com.twinsoft.convertigo.beans.steps.WhileStep" handlePriorities="true" newPriority="1295354934262" priority="1295354934262" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.WhileStep" handlePriorities="true" newPriority="1295354934262" priority="1295354934262" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1747,7 +1759,7 @@
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1295354879396" priority="1295354879396" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.ElementStep" newPriority="1295354879396" priority="1295354879396" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1773,7 +1785,7 @@
                             <java.lang.String value="xsd:string"/>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354879550" priority="1295354879550" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354879550" priority="1295354879550" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1795,7 +1807,7 @@
                     </step>
                 </step>
             </step>
-            <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1295354951142" priority="1295354951142" version="6.0.3.m004">
+            <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1295354951142" priority="1295354951142" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1834,7 +1846,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1295355000830" priority="1295355000830" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.TransactionStep" newPriority="1295355000830" priority="1295355000830" version="6.1.0.m004">
                     <property name="bInternalInvoke">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -1881,7 +1893,7 @@
                         <java.lang.String value="sample_documentation_CWI.GoogleConnector.searchGoogleWithLimit"/>
                     </property>
                     <wsdltype/>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1295354886383" priority="1295354886383" version="6.0.3.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1295354886383" priority="1295354886383" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1906,7 +1918,7 @@
                             <java.lang.Integer value="0"/>
                         </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1295354886386" priority="1295354886386" version="6.0.3.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.StepVariable" newPriority="1295354886386" priority="1295354886386" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1929,7 +1941,7 @@
                         </property>
                     </variable>
                 </step>
-                <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1295355003903" priority="1295355003903" version="6.0.3.m004">
+                <step classname="com.twinsoft.convertigo.beans.steps.XMLComplexStep" handlePriorities="true" newPriority="1295355003903" priority="1295355003903" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1967,7 +1979,7 @@
                     <property name="schemaDataType">
                         <java.lang.String value="xsd:string"/>
                     </property>
-                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354886392" priority="1295354886392" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354886392" priority="1295354886392" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1987,7 +1999,7 @@
                             <java.lang.String value="xsd:string"/>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1295354886395" priority="1295354886395" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.XMLElementStep" handlePriorities="true" newPriority="1295354886395" priority="1295354886395" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2027,7 +2039,7 @@
                             </xmlizable>
                         </property>
                     </step>
-                    <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1295354886398" priority="1295354886398" version="6.0.3.m004">
+                    <step classname="com.twinsoft.convertigo.beans.steps.IteratorStep" handlePriorities="true" newPriority="1295354886398" priority="1295354886398" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2073,7 +2085,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1295354886401" priority="1295354886401" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.XMLCopyStep" newPriority="1295354886401" priority="1295354886401" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2098,7 +2110,7 @@
                                 </xmlizable>
                             </property>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1295354886404" priority="1295354886404" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.IfStep" handlePriorities="true" newPriority="1295354886404" priority="1295354886404" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2130,7 +2142,7 @@
                             <property name="schemaDataType">
                                 <java.lang.String value="xsd:string"/>
                             </property>
-                            <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1295354886407" priority="1295354886407" version="6.0.3.m004">
+                            <step classname="com.twinsoft.convertigo.beans.steps.BreakStep" newPriority="1295354886407" priority="1295354886407" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2151,7 +2163,7 @@
                                 </property>
                             </step>
                         </step>
-                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354886410" priority="1295354886410" version="6.0.3.m004">
+                        <step classname="com.twinsoft.convertigo.beans.steps.SimpleStep" newPriority="1295354886410" priority="1295354886410" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2174,7 +2186,7 @@
                     </step>
                 </step>
             </step>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1295340384913" priority="1295340384913" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableMultiValuedVariable" newPriority="1295340384913" priority="1295340384913" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
@@ -2205,7 +2217,7 @@
                     <java.lang.Boolean value="true"/>
                 </property>
             </variable>
-            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1295340384916" priority="1295340384916" version="6.0.3.m004">
+            <variable classname="com.twinsoft.convertigo.beans.variables.RequestableVariable" newPriority="1295340384916" priority="1295340384916" version="6.1.0.m004">
                 <property name="cachedKey">
                     <java.lang.Boolean value="true"/>
                 </property>
