@@ -2242,6 +2242,12 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/log_16x16.gif -text
@@ -2262,8 +2268,6 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_16x16.gif -te
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/simple_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/simple_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.gif -text
