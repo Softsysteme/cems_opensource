@@ -125,6 +125,10 @@ Studio/projects/sample_refManual_variables/*.temp.*
 Studio/projects/sample_refManual_variables/Traces
 Studio/projects/sample_refManual_variables/_data
 Studio/projects/sample_refManual_variables/_private
+Studio/projects/sample_refManual_webClipper/*.temp.*
+Studio/projects/sample_refManual_webClipper/Traces
+Studio/projects/sample_refManual_webClipper/_data
+Studio/projects/sample_refManual_webClipper/_private
 Studio/projects/sequenceProjectSample/.project
 Studio/projects/sequenceProjectSample/.settings
 Studio/projects/sequenceProjectSample/Traces
