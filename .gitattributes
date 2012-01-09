@@ -3059,6 +3059,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleSiteClipper
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStatementsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleWebClipperWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerSiebelWizard.java -text svneol=unset#text/plain
