@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="5.5.0.m004" engine="5.5.0" exported="16 juin 2011 11:51" studio="5.5.0" version="5.5.0_alpha">
-    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="5.5.0.m004">
+<convertigo beans="6.1.0.m004" engine="6.1.0" exported="November 28, 2011 11:43 AM" studio="6.1.0" version="6.1.0">
+    <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.1.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
                 <com.twinsoft.convertigo.beans.common.XMLVector/>
@@ -16,13 +16,16 @@
         <property name="name">
             <java.lang.String value="sample_refManual_siteClipper"/>
         </property>
+        <property name="namespaceUri">
+            <java.lang.String value=""/>
+        </property>
         <property name="schemaInline">
             <java.lang.Boolean value="true"/>
         </property>
         <property name="wsdlStyle">
             <java.lang.String value="DOC/LITERAL"/>
         </property>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -46,22 +49,10 @@
             <property name="name">
                 <java.lang.String value="AppleConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -75,7 +66,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -122,7 +113,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -152,7 +143,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1305126741788" priority="1305126741788" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1305126741788" priority="1305126741788" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -163,7 +154,7 @@
                         <java.lang.String value="Rewrite_location_header"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1305126741791" priority="1305126741791" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1305126741791" priority="1305126741791" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -180,7 +171,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </extractionrule>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -210,7 +201,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1305126930402" priority="1305126930402" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1305126930402" priority="1305126930402" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -227,7 +218,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -259,7 +250,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchStatusCode" newPriority="1305126741795" priority="1305126741795" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchStatusCode" newPriority="1305126741795" priority="1305126741795" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -273,7 +264,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1305126741798" priority="1305126741798" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1305126741798" priority="1305126741798" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -294,7 +285,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -318,22 +309,10 @@
             <property name="name">
                 <java.lang.String value="ConvertigoAdminConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -347,7 +326,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -394,7 +373,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -419,7 +398,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -447,7 +426,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1302712539662" priority="1302712539662" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1302712539662" priority="1302712539662" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -461,7 +440,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308715" priority="1302712308715" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308715" priority="1302712308715" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -478,7 +457,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -509,7 +488,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308722" priority="1302712308722" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308722" priority="1302712308722" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -526,7 +505,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712441476" priority="1302712441476" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712441476" priority="1302712441476" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -543,7 +522,7 @@
                                 <java.lang.String value="New_Add_response_header"/>
                             </property>
                         </extractionrule>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -576,7 +555,7 @@
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchRegExp" newPriority="1302712971265" priority="1302712971265" version="5.5.0.m004">
+                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchRegExp" newPriority="1302712971265" priority="1302712971265" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -590,7 +569,7 @@
                                     <java.lang.Boolean value="false"/>
                                 </property>
                             </criteria>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712971268" priority="1302712971268" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712971268" priority="1302712971268" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -609,7 +588,7 @@
                             </extractionrule>
                         </screenclass>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -640,7 +619,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308752" priority="1302712308752" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302712308752" priority="1302712308752" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -657,7 +636,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712457703" priority="1302712457703" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712457703" priority="1302712457703" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -674,7 +653,7 @@
                                 <java.lang.String value="New_Add_response_header"/>
                             </property>
                         </extractionrule>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -707,7 +686,7 @@
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchRegExp" newPriority="1302712971258" priority="1302712971258" version="5.5.0.m004">
+                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchRegExp" newPriority="1302712971258" priority="1302712971258" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -721,7 +700,7 @@
                                     <java.lang.Boolean value="false"/>
                                 </property>
                             </criteria>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712971261" priority="1302712971261" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1302712971261" priority="1302712971261" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -738,7 +717,7 @@
                                     <java.lang.String value="AddMyResponseHeader"/>
                                 </property>
                             </extractionrule>
-                            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="4" version="5.5.0.m004">
+                            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="4" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -773,7 +752,7 @@
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </property>
-                                <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1302712654762" priority="1302712654762" version="5.5.0.m004">
+                                <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1302712654762" priority="1302712654762" version="6.1.0.m004">
                                     <property name="comment">
                                         <java.lang.String value=""/>
                                     </property>
@@ -790,7 +769,7 @@
                                         <java.lang.Boolean value="false"/>
                                     </property>
                                 </criteria>
-                                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712654765" priority="1302712654765" version="5.5.0.m004">
+                                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712654765" priority="1302712654765" version="6.1.0.m004">
                                     <property name="comment">
                                         <java.lang.String value=""/>
                                     </property>
@@ -808,7 +787,7 @@
                                     </property>
                                 </extractionrule>
                             </screenclass>
-                            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="4" version="5.5.0.m004">
+                            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="4" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -843,7 +822,7 @@
                                         </com.twinsoft.convertigo.beans.common.XMLVector>
                                     </xmlizable>
                                 </property>
-                                <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1302712654784" priority="1302712654784" version="5.5.0.m004">
+                                <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1302712654784" priority="1302712654784" version="6.1.0.m004">
                                     <property name="comment">
                                         <java.lang.String value=""/>
                                     </property>
@@ -860,7 +839,7 @@
                                         <java.lang.Boolean value="false"/>
                                     </property>
                                 </criteria>
-                                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712654787" priority="1302712654787" version="5.5.0.m004">
+                                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712654787" priority="1302712654787" version="6.1.0.m004">
                                     <property name="comment">
                                         <java.lang.String value=""/>
                                     </property>
@@ -881,7 +860,7 @@
                         </screenclass>
                     </screenclass>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -910,7 +889,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfResponse" newPriority="1302712308776" priority="1302712308776" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfResponse" newPriority="1302712308776" priority="1302712308776" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -927,7 +906,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712308779" priority="1302712308779" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1302712308779" priority="1302712308779" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -947,7 +926,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -971,22 +950,10 @@
             <property name="name">
                 <java.lang.String value="ConvertigoWebSiteConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1000,7 +967,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1047,7 +1014,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1077,7 +1044,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1305215556997" priority="1305215556997" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1305215556997" priority="1305215556997" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1094,7 +1061,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1305215556994" priority="1305215556994" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1305215556994" priority="1305215556994" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1105,7 +1072,7 @@
                         <java.lang.String value="Rewrite_location_header"/>
                     </property>
                 </extractionrule>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1135,7 +1102,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1305215557001" priority="1305215557001" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1305215557001" priority="1305215557001" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1152,7 +1119,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1185,7 +1152,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1305215557005" priority="1305215557005" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1305215557005" priority="1305215557005" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1199,7 +1166,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveCacheHeadersFromResponse" newPriority="1305215557008" priority="1305215557008" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveCacheHeadersFromResponse" newPriority="1305215557008" priority="1305215557008" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1210,7 +1177,7 @@
                                 <java.lang.String value="New_Remove_response_cache_headers"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1305215557011" priority="1305215557011" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1305215557011" priority="1305215557011" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1228,7 +1195,7 @@
                             </property>
                         </extractionrule>
                     </screenclass>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1260,7 +1227,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1305215557015" priority="1305215557015" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1305215557015" priority="1305215557015" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1274,7 +1241,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1305291250733" priority="1305291250733" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1305291250733" priority="1305291250733" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -1295,7 +1262,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -1326,22 +1293,10 @@
             <property name="name">
                 <java.lang.String value="Google_and_blacklist"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1355,7 +1310,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1402,7 +1357,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="false" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="false" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1416,7 +1371,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1463,7 +1418,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1488,7 +1443,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1518,7 +1473,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302592577379" priority="1302592577379" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302592577379" priority="1302592577379" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1535,7 +1490,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302592577385" priority="1302592577385" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302592577385" priority="1302592577385" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1552,7 +1507,7 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1302592577382" priority="1302592577382" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1302592577382" priority="1302592577382" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1566,7 +1521,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -1590,22 +1545,10 @@
             <property name="name">
                 <java.lang.String value="Google_com_Connector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1619,7 +1562,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1666,7 +1609,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="false" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="false" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1680,7 +1623,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1727,7 +1670,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1752,7 +1695,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1782,7 +1725,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302531322601" priority="1302531322601" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302531322601" priority="1302531322601" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1799,7 +1742,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302531322607" priority="1302531322607" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302531322607" priority="1302531322607" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1816,7 +1759,7 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1302531322604" priority="1302531322604" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1302531322604" priority="1302531322604" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -1830,7 +1773,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -1854,22 +1797,10 @@
             <property name="name">
                 <java.lang.String value="GoogleConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -1883,7 +1814,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -1930,7 +1861,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -1955,7 +1886,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -1985,7 +1916,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302269345834" priority="1302269345834" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1302269345834" priority="1302269345834" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2002,7 +1933,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302269345837" priority="1302269345837" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1302269345837" priority="1302269345837" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2019,7 +1950,7 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303477299702" priority="1303477299702" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303477299702" priority="1303477299702" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2030,7 +1961,7 @@
                             <java.lang.String value="Rewrite_location_header"/>
                         </property>
                     </extractionrule>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2064,7 +1995,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1302269345841" priority="1302269345841" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1302269345841" priority="1302269345841" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2078,7 +2009,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ScriptInjector" newPriority="1302269345847" priority="1302269345847" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ScriptInjector" newPriority="1302269345847" priority="1302269345847" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value="Popu-up an alert box"/>
                             </property>
@@ -2098,7 +2029,7 @@
                                 <java.lang.String value="alert_script_injector"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1303375654602" priority="1303375654602" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ReplaceString" newPriority="1303375654602" priority="1303375654602" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2115,7 +2046,7 @@
                                 <java.lang.String value="$1Convertigo$3"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.CssInjector" newPriority="1302269345844" priority="1302269345844" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.CssInjector" newPriority="1302269345844" priority="1302269345844" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value="Apply a blue background to main DIV"/>
                             </property>
@@ -2139,7 +2070,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -2163,22 +2094,10 @@
             <property name="name">
                 <java.lang.String value="GoogleReponseHeaders"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -2192,7 +2111,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -2239,7 +2158,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -2264,7 +2183,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -2294,7 +2213,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1303479023621" priority="1303479023621" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1303479023621" priority="1303479023621" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2311,7 +2230,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1303479023624" priority="1303479023624" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1303479023624" priority="1303479023624" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2328,7 +2247,7 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303479023627" priority="1303479023627" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303479023627" priority="1303479023627" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2339,7 +2258,7 @@
                             <java.lang.String value="Rewrite_location_header"/>
                         </property>
                     </extractionrule>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2371,7 +2290,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1303479023631" priority="1303479023631" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1303479023631" priority="1303479023631" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2385,7 +2304,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303479107886" priority="1303479107886" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303479107886" priority="1303479107886" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2402,7 +2321,7 @@
                                 <java.lang.String value="Add_convertigo_response_header"/>
                             </property>
                         </extractionrule>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="5.5.0.m004">
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="3" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -2440,7 +2359,7 @@
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfResponse" newPriority="1303477002013" priority="1303477002013" version="5.5.0.m004">
+                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfResponse" newPriority="1303477002013" priority="1303477002013" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2457,7 +2376,7 @@
                                     <java.lang.Boolean value="false"/>
                                 </property>
                             </criteria>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303478227987" priority="1303478227987" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303478227987" priority="1303478227987" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2474,7 +2393,7 @@
                                     <java.lang.String value="Add_hasContentType_response_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303477002016" priority="1303477002016" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToResponse" newPriority="1303477002016" priority="1303477002016" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2491,7 +2410,7 @@
                                     <java.lang.String value="Add_contentType_response_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfResponse" newPriority="1303985002977" priority="1303985002977" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfResponse" newPriority="1303985002977" priority="1303985002977" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2508,7 +2427,7 @@
                                     <java.lang.String value="Modify_undefined_response_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfResponse" newPriority="1303982016479" priority="1303982016479" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfResponse" newPriority="1303982016479" priority="1303982016479" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2525,7 +2444,7 @@
                                     <java.lang.String value="Modify_contentType_response_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveHeaderFromResponse" newPriority="1303999891968" priority="1303999891968" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveHeaderFromResponse" newPriority="1303999891968" priority="1303999891968" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -2547,7 +2466,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="baseDir">
                 <java.lang.String value="/"/>
             </property>
@@ -2589,25 +2508,13 @@
             <property name="port">
                 <java.lang.Integer value="80"/>
             </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
             <property name="server">
                 <java.lang.String value="www.loancalculator.ws"/>
             </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -2621,7 +2528,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -2717,9 +2624,12 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
                     </property>
                     <property name="handlerResult">
                         <java.lang.String value="redetect"/>
@@ -2762,7 +2672,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1306251365432" priority="1306251365432" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1306251365432" priority="1306251365432" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2797,7 +2707,7 @@
                             <java.lang.String value="'//INPUT[@id=&quot;amount&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1306251365435" priority="1306251365435" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1306251365435" priority="1306251365435" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2832,7 +2742,7 @@
                             <java.lang.String value="'//INPUT[@id=&quot;rate&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetSelectedStatement" newPriority="1306251365438" priority="1306251365438" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetSelectedStatement" newPriority="1306251365438" priority="1306251365438" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2870,7 +2780,7 @@
                             <java.lang.String value="'//SELECT[@id=&quot;term&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.RecordForSiteClipperStatement" newPriority="1306252470641" priority="1306252470641" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.RecordForSiteClipperStatement" newPriority="1306252470641" priority="1306252470641" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2887,7 +2797,7 @@
                             <java.lang.String value=".*"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1306251365444" priority="1306251365444" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1306251365444" priority="1306251365444" version="6.1.0.m004">
                         <property name="action">
                             <java.lang.String value="click"/>
                         </property>
@@ -2920,9 +2830,12 @@
                         </property>
                     </statement>
                 </statement>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
                     </property>
                     <property name="handlerResult">
                         <java.lang.String value="continue"/>
@@ -2951,7 +2864,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1306251365449" priority="1306251365449" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1306251365449" priority="1306251365449" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -2966,7 +2879,7 @@
                         </property>
                     </statement>
                 </statement>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365452" priority="1306251365452" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365452" priority="1306251365452" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3001,7 +2914,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365455" priority="1306251365455" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365455" priority="1306251365455" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3036,7 +2949,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365458" priority="1306251365458" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365458" priority="1306251365458" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3072,7 +2985,7 @@
                     </property>
                 </variable>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -3086,7 +2999,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -3172,7 +3085,7 @@
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -3197,7 +3110,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3224,7 +3137,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1306251365469" priority="1306251365469" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1306251365469" priority="1306251365469" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3239,7 +3152,7 @@
                         </property>
                     </criteria>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3266,7 +3179,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1306251365473" priority="1306251365473" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1306251365473" priority="1306251365473" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3283,7 +3196,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="true" priority="0" version="6.1.0.m004">
             <property name="baseDir">
                 <java.lang.String value="/convertigo/"/>
             </property>
@@ -3325,25 +3238,13 @@
             <property name="port">
                 <java.lang.Integer value="18080"/>
             </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
             <property name="server">
                 <java.lang.String value="localhost"/>
             </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -3357,7 +3258,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -3443,7 +3344,7 @@
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
             </transaction>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="false" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -3457,7 +3358,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -3549,9 +3450,12 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
                     </property>
                     <property name="handlerResult">
                         <java.lang.String value="redetect"/>
@@ -3589,7 +3493,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1300781704211" priority="1300781704211" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1300781704211" priority="1300781704211" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3624,7 +3528,7 @@
                             <java.lang.String value="'//INPUT[@id=&quot;FieldConvAdminUserLogin&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1300781704214" priority="1300781704214" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.InputHtmlSetValueStatement" newPriority="1300781704214" priority="1300781704214" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3659,7 +3563,7 @@
                             <java.lang.String value="'//INPUT[@id=&quot;FieldConvAdminUserPassword&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1300781704217" priority="1300781704217" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1300781704217" priority="1300781704217" version="6.1.0.m004">
                         <property name="action">
                             <java.lang.String value="click"/>
                         </property>
@@ -3697,9 +3601,12 @@
                         </property>
                     </statement>
                 </statement>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
                     </property>
                     <property name="handlerResult">
                         <java.lang.String value="continue"/>
@@ -3728,7 +3635,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1300877757725" priority="1300877757725" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.MouseStatement" newPriority="1300877757725" priority="1300877757725" version="6.1.0.m004">
                         <property name="action">
                             <java.lang.String value="click"/>
                         </property>
@@ -3765,7 +3672,7 @@
                             <java.lang.String value="'//IMG[@id=&quot;widgetButtonConfiguration&quot;]'"/>
                         </property>
                     </statement>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1300877776319" priority="1300877776319" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1300877776319" priority="1300877776319" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3780,7 +3687,7 @@
                         </property>
                     </statement>
                 </statement>
-                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="5.5.0.m004">
+                <testcase classname="com.twinsoft.convertigo.beans.core.TestCase" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3803,7 +3710,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704224" priority="1300781704224" version="5.5.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704224" priority="1300781704224" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3820,7 +3727,7 @@
                             <java.lang.Integer value="0"/>
                         </property>
                     </variable>
-                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704227" priority="1300781704227" version="5.5.0.m004">
+                    <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704227" priority="1300781704227" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3838,7 +3745,7 @@
                         </property>
                     </variable>
                 </testcase>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704230" priority="1300781704230" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704230" priority="1300781704230" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3873,7 +3780,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704233" priority="1300781704233" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704233" priority="1300781704233" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3909,7 +3816,7 @@
                     </property>
                 </variable>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -3934,7 +3841,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -3961,7 +3868,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300888152655" priority="1300888152655" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300888152655" priority="1300888152655" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3976,7 +3883,7 @@
                         </property>
                     </criteria>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4003,7 +3910,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300877698314" priority="1300877698314" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300877698314" priority="1300877698314" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4018,7 +3925,7 @@
                         </property>
                     </criteria>
                 </screenclass>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4045,7 +3952,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300781704238" priority="1300781704238" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300781704238" priority="1300781704238" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4059,7 +3966,7 @@
                             <java.lang.String value="//INPUT[@id=&quot;FieldConvAdminUserLogin&quot;]"/>
                         </property>
                     </criteria>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4089,7 +3996,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300877841982" priority="1300877841982" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.common.XPath" newPriority="1300877841982" priority="1300877841982" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4103,7 +4010,7 @@
                                 <java.lang.String value="//DIV[@role=&quot;dialog&quot; and contains(@style,&quot;display: block&quot;)]//DIV[@id=&quot;dlgAuthFailed&quot;]/P"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1300877948696" priority="1300877948696" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.common.XMLText" newPriority="1300877948696" priority="1300877948696" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4130,7 +4037,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -4154,22 +4061,10 @@
             <property name="name">
                 <java.lang.String value="RequestHeadersConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -4183,7 +4078,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -4230,7 +4125,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -4255,7 +4150,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4285,7 +4180,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1304064517150" priority="1304064517150" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1304064517150" priority="1304064517150" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4302,7 +4197,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1304077881351" priority="1304077881351" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1304077881351" priority="1304077881351" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4319,7 +4214,7 @@
                             <java.lang.Boolean value="true"/>
                         </property>
                     </extractionrule>
-                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1304064544165" priority="1304064544165" version="5.5.0.m004">
+                    <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1304064544165" priority="1304064544165" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4330,7 +4225,7 @@
                             <java.lang.String value="Rewrite_location_header"/>
                         </property>
                     </extractionrule>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4362,7 +4257,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1304064255181" priority="1304064255181" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1304064255181" priority="1304064255181" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4376,7 +4271,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064255184" priority="1304064255184" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064255184" priority="1304064255184" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4393,7 +4288,7 @@
                                 <java.lang.String value="Add_convertigo_request_header"/>
                             </property>
                         </extractionrule>
-                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                        <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4431,7 +4326,7 @@
                                     </com.twinsoft.convertigo.beans.common.XMLVector>
                                 </xmlizable>
                             </property>
-                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1304064255195" priority="1304064255195" version="5.5.0.m004">
+                            <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchHeaderOfRequest" newPriority="1304064255195" priority="1304064255195" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4448,7 +4343,7 @@
                                     <java.lang.Boolean value="false"/>
                                 </property>
                             </criteria>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfRequest" newPriority="1304350402221" priority="1304350402221" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfRequest" newPriority="1304350402221" priority="1304350402221" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4465,7 +4360,7 @@
                                     <java.lang.String value="Modify_undefined_request_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfRequest" newPriority="1304347138403" priority="1304347138403" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ModifyHeaderOfRequest" newPriority="1304347138403" priority="1304347138403" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4482,7 +4377,7 @@
                                     <java.lang.String value="Modify_acceptEncoding_request_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveHeaderFromRequest" newPriority="1304352695365" priority="1304352695365" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RemoveHeaderFromRequest" newPriority="1304352695365" priority="1304352695365" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4499,7 +4394,7 @@
                                     <java.lang.String value="Remove_acceptEncoding_request_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064616593" priority="1304064616593" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064616593" priority="1304064616593" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4516,7 +4411,7 @@
                                     <java.lang.String value="Add_hasAcceptEncoding_request_header"/>
                                 </property>
                             </extractionrule>
-                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064255198" priority="1304064255198" version="5.5.0.m004">
+                            <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.AddHeaderToRequest" newPriority="1304064255198" priority="1304064255198" version="6.1.0.m004">
                                 <property name="comment">
                                     <java.lang.String value=""/>
                                 </property>
@@ -4538,7 +4433,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -4562,22 +4457,10 @@
             <property name="name">
                 <java.lang.String value="SiteClipper"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="8080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -4591,7 +4474,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -4638,7 +4521,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -4668,7 +4551,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1306251365482" priority="1306251365482" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1306251365482" priority="1306251365482" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4679,7 +4562,7 @@
                         <java.lang.String value="Rewrite_location_header"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1306251365479" priority="1306251365479" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1306251365479" priority="1306251365479" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4698,7 +4581,7 @@
                 </extractionrule>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.SiteClipperConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="billingClassName">
                 <java.lang.String value=""/>
             </property>
@@ -4722,22 +4605,10 @@
             <property name="name">
                 <java.lang.String value="USdirectoryConnector"/>
             </property>
-            <property name="proxyHost">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="18080"/>
-            </property>
-            <property name="proxyUsername">
-                <java.lang.String value=""/>
-            </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="false"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.SiteClipperTransaction" default="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -4751,7 +4622,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="includedTagAttributes">
                     <array classname="boolean" length="11">
@@ -4798,7 +4669,7 @@
                 <wsdltype/>
                 <handlers/>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
@@ -4832,7 +4703,7 @@
                         </com.twinsoft.convertigo.beans.common.XMLVector>
                     </xmlizable>
                 </property>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1303221198698" priority="1303221198698" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteAbsoluteUrl" newPriority="1303221198698" priority="1303221198698" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4849,7 +4720,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </extractionrule>
-                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303221198701" priority="1303221198701" version="5.5.0.m004">
+                <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.RewriteLocationHeader" newPriority="1303221198701" priority="1303221198701" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4860,7 +4731,7 @@
                         <java.lang.String value="RewriteLocationHeader"/>
                     </property>
                 </extractionrule>
-                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="5.5.0.m004">
+                <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="1" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
                     </property>
@@ -4890,7 +4761,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1303221198705" priority="1303221198705" version="5.5.0.m004">
+                    <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchMimeType" newPriority="1303221198705" priority="1303221198705" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4904,7 +4775,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                     </criteria>
-                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="5.5.0.m004">
+                    <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.SiteClipperScreenClass" handlePriorities="true" priority="2" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -4940,7 +4811,7 @@
                                 </com.twinsoft.convertigo.beans.common.XMLVector>
                             </xmlizable>
                         </property>
-                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1303221198709" priority="1303221198709" version="5.5.0.m004">
+                        <criteria classname="com.twinsoft.convertigo.beans.criteria.siteclipper.MatchUrl" newPriority="1303221198709" priority="1303221198709" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4957,7 +4828,7 @@
                                 <java.lang.Boolean value="false"/>
                             </property>
                         </criteria>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionClick" newPriority="1303221198724" priority="1303221198724" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionClick" newPriority="1303221198724" priority="1303221198724" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4971,7 +4842,7 @@
                                 <java.lang.String value="(auto == &quot;true&quot;) ? &quot;input.button[value='Search']&quot; : &quot;void&quot;"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198715" priority="1303221198715" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198715" priority="1303221198715" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -4988,7 +4859,7 @@
                                 <java.lang.String value="last_name"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198712" priority="1303221198712" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198712" priority="1303221198712" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5005,7 +4876,7 @@
                                 <java.lang.String value="first_name"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetChecked" newPriority="1303221198721" priority="1303221198721" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetChecked" newPriority="1303221198721" priority="1303221198721" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5022,7 +4893,7 @@
                                 <java.lang.String value="extended_area==&quot;true&quot;"/>
                             </property>
                         </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198718" priority="1303221198718" version="5.5.0.m004">
+                        <extractionrule classname="com.twinsoft.convertigo.beans.extractionrules.siteclipper.ClientInstructionSetValue" newPriority="1303221198718" priority="1303221198718" version="6.1.0.m004">
                             <property name="comment">
                                 <java.lang.String value=""/>
                             </property>
@@ -5043,7 +4914,7 @@
                 </screenclass>
             </screenclass>
         </connector>
-        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="false" priority="0" version="5.5.0.m004">
+        <connector classname="com.twinsoft.convertigo.beans.connectors.HtmlConnector" default="false" priority="0" version="6.1.0.m004">
             <property name="baseDir">
                 <java.lang.String value="/12223/person"/>
             </property>
@@ -5085,25 +4956,13 @@
             <property name="port">
                 <java.lang.Integer value="80"/>
             </property>
-            <property name="proxyPassword">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyPort">
-                <java.lang.Integer value="80"/>
-            </property>
-            <property name="proxyServer">
-                <java.lang.String value=""/>
-            </property>
-            <property name="proxyUser">
-                <java.lang.String value=""/>
-            </property>
             <property name="server">
                 <java.lang.String value="www.whitepages.com"/>
             </property>
             <property name="trustAllServerCertificates">
                 <java.lang.Boolean value="true"/>
             </property>
-            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <transaction classname="com.twinsoft.convertigo.beans.transactions.HtmlTransaction" default="true" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="bIncludeCertificateGroup">
                     <java.lang.Boolean value="false"/>
                 </property>
@@ -5117,7 +4976,7 @@
                     <java.lang.String value=""/>
                 </property>
                 <property name="encodingCharSet">
-                    <java.lang.String value="UTF-8"/>
+                    <java.lang.String value="ISO-8859-1"/>
                 </property>
                 <property name="handleCookie">
                     <java.lang.Boolean value="true"/>
@@ -5213,9 +5072,12 @@
                 </property>
                 <wsdltype/>
                 <handlers><![CDATA[// handlers are handled by Statements for HTML Transaction.]]></handlers>
-                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryDefaultHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="5.5.0.m004">
+                <statement classname="com.twinsoft.convertigo.beans.statements.ScEntryDefaultHandlerStatement" handlePriorities="true" newPriority="0" priority="0" version="6.1.0.m004">
                     <property name="comment">
                         <java.lang.String value=""/>
+                    </property>
+                    <property name="handlerLoopable">
+                        <java.lang.Boolean value="true"/>
                     </property>
                     <property name="handlerResult">
                         <java.lang.String value="skip"/>
@@ -5241,7 +5103,7 @@
                             </com.twinsoft.convertigo.beans.common.XMLVector>
                         </xmlizable>
                     </property>
-                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1303221446586" priority="1303221446586" version="5.5.0.m004">
+                    <statement classname="com.twinsoft.convertigo.beans.statements.ContinueWithSiteClipperStatement" newPriority="1303221446586" priority="1303221446586" version="6.1.0.m004">
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -5256,7 +5118,7 @@
                         </property>
                     </statement>
                 </statement>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446589" priority="1303221446589" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446589" priority="1303221446589" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5291,7 +5153,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446592" priority="1303221446592" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446592" priority="1303221446592" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5326,7 +5188,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446595" priority="1303221446595" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446595" priority="1303221446595" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5361,7 +5223,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446598" priority="1303221446598" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446598" priority="1303221446598" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5396,7 +5258,7 @@
                         <java.lang.Boolean value="true"/>
                     </property>
                 </variable>
-                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446601" priority="1303221446601" version="5.5.0.m004">
+                <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446601" priority="1303221446601" version="6.1.0.m004">
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5432,7 +5294,7 @@
                     </property>
                 </variable>
             </transaction>
-            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="5.5.0.m004">
+            <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="0" version="6.1.0.m004">
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
