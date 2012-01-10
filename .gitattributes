@@ -915,7 +915,6 @@ Studio/projects/sample_refManual_webClipper/.project -text svneol=unset#text/pla
 Studio/projects/sample_refManual_webClipper/New_Style_sheet.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/img/button_img.png -text
-Studio/projects/sample_refManual_webClipper/index.html -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/logo-convertigo.png -text
 Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.wsdl -text svneol=unset#text/plain
