@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.3.m004" engine="6.0.3" exported="January 10, 2012 10:36 AM" studio="6.0.3" version="6.0.3">
+<convertigo beans="6.0.3.m004" engine="6.0.3" exported="January 10, 2012 2:57 PM" studio="6.0.3" version="6.0.3">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.3.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -4741,7 +4741,7 @@
                             <java.lang.Boolean value="false"/>
                         </property>
                         <property name="xpath">
-                            <java.lang.String value="//A[@class=&quot;gbzt gbz0l gbp1&quot; and @id=&quot;gb_1&quot;]//SPAN[contains(text(),&quot;Web&quot;)]"/>
+                            <java.lang.String value="//A[@id=&quot;gb_1&quot; and @class=&quot;gbzt gbz0l gbp1&quot;]"/>
                         </property>
                     </criteria>
                     <screenclass classname="com.twinsoft.convertigo.beans.screenclasses.HtmlScreenClass" handlePriorities="true" priority="2" version="6.0.3.m004">
