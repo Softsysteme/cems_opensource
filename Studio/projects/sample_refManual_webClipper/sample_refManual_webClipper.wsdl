@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_refManual_webClipper" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_webClipper" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sample_refManual_webClipper_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_webClipper">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_webClipper"><xsd:include schemaLocation="sample_refManual_webClipper.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sample_refManual_webClipperPortType">
+  </wsdl:portType>
+  <wsdl:portType name="sample_refManual_webClipperPortType_RPC">
+  </wsdl:portType>
+  <wsdl:binding name="sample_refManual_webClipperSOAPBinding_RPC" type="sample_refManual_webClipper_ns:sample_refManual_webClipperPortType_RPC">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:binding name="sample_refManual_webClipperSOAPBinding" type="sample_refManual_webClipper_ns:sample_refManual_webClipperPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sample_refManual_webClipper">
+    <wsdl:port name="sample_refManual_webClipperSOAP_RPC" binding="sample_refManual_webClipper_ns:sample_refManual_webClipperSOAPBinding_RPC">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_refManual_webClipper/.ws"/>
+    </wsdl:port>
+    <wsdl:port name="sample_refManual_webClipperSOAP" binding="sample_refManual_webClipper_ns:sample_refManual_webClipperSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_refManual_webClipper/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

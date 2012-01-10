@@ -910,6 +910,16 @@ Studio/projects/sample_refManual_variables/results.xsl -text svneol=unset#text/p
 Studio/projects/sample_refManual_variables/sample_refManual_variables.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/sample_refManual_variables.xml -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/sample_refManual_variables.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/New_Style_sheet.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/img/button_img.png -text
+Studio/projects/sample_refManual_webClipper/index.html -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/logo-convertigo.png -text
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sequenceProjectSample/error.xsl -text svneol=unset#text/plain
 Studio/projects/sequenceProjectSample/error_fr.xsl -text svneol=unset#text/plain
 Studio/projects/sequenceProjectSample/img/close_window.png -text
