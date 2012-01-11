@@ -1630,6 +1630,7 @@ Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/MatchMimeType.
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/MatchRegExp.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/MatchStatusCode.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/MatchUrl.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/database_objects.xml -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/HtmlExtractionRule.java -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/HtmlExtractionRuleBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/JavelinExtractionRule.java -text
@@ -3437,7 +3438,6 @@ Studio/tomcat/lib/tomcat-i18n-ja.jar -text
 Studio/tomcat/lib/tomcat-juli.jar -text
 Studio/tomcat/webapps/ROOT/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/WEB-INF/classes/database_objects.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/emulators.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/jdbc_drivers.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/log4j.properties -text svneol=unset#text/plain
