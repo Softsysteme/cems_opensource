@@ -17,19 +17,34 @@
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_refManual_webClipper_ns:ConvertigoErrorContextVariable"/>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="refManualWebClippingSamplesConnector__goToConvertigoCloudProductPage" type="sample_refManual_webClipper_ns:refManualWebClippingSamplesConnector__goToConvertigoCloudProductPageRequestData">
+<xsd:element name="convertigoWebSiteConnector__goToConvertigoCloudProductPage" type="sample_refManual_webClipper_ns:convertigoWebSiteConnector__goToConvertigoCloudProductPageRequestData">
 <xsd:annotation/>
 </xsd:element>
-<xsd:element name="refManualWebClippingSamplesConnector__goToConvertigoCloudProductPageResponse">
+<xsd:element name="convertigoWebSiteConnector__goToConvertigoCloudProductPageResponse">
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="response" type="sample_refManual_webClipper_ns:refManualWebClippingSamplesConnector__goToConvertigoCloudProductPageResponseData"/>
+<xsd:element name="response" type="sample_refManual_webClipper_ns:convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseData"/>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:element>
-<xsd:complexType name="refManualWebClippingSamplesConnector__goToConvertigoCloudProductPageRequestData">
+<xsd:complexType name="convertigoWebSiteConnector__goToConvertigoCloudProductPageRequestData">
 <xsd:annotation/>
 <xsd:sequence/>
 </xsd:complexType>
-<xsd:complexType name="refManualWebClippingSamplesConnector__goToConvertigoCloudProductPageResponseData"/>
+<xsd:complexType name="convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseData"/>
+<xsd:element name="GoogleConnector__DefaultWebClippingTransaction" type="sample_refManual_webClipper_ns:GoogleConnector__DefaultWebClippingTransactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="GoogleConnector__DefaultWebClippingTransactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_webClipper_ns:GoogleConnector__DefaultWebClippingTransactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="GoogleConnector__DefaultWebClippingTransactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="GoogleConnector__DefaultWebClippingTransactionResponseData"/>
 </xsd:schema>
