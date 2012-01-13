@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.1.0.m004" engine="6.1.0" exported="November 28, 2011 11:43 AM" studio="6.1.0" version="6.1.0">
+<convertigo beans="6.1.0.m004" engine="6.1.0" exported="January 13, 2012 12:12 PM" studio="6.1.0" version="6.1.0">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.1.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -2880,6 +2880,9 @@
                     </statement>
                 </statement>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365452" priority="1306251365452" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -2915,6 +2918,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365455" priority="1306251365455" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -2950,6 +2956,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1306251365458" priority="1306251365458" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3711,6 +3720,9 @@
                         </xmlizable>
                     </property>
                     <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704224" priority="1300781704224" version="6.1.0.m004">
+                        <property name="bSoapArray">
+                            <java.lang.Boolean value="false"/>
+                        </property>
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3728,6 +3740,9 @@
                         </property>
                     </variable>
                     <variable classname="com.twinsoft.convertigo.beans.variables.TestCaseVariable" newPriority="1300781704227" priority="1300781704227" version="6.1.0.m004">
+                        <property name="bSoapArray">
+                            <java.lang.Boolean value="false"/>
+                        </property>
                         <property name="comment">
                             <java.lang.String value=""/>
                         </property>
@@ -3746,6 +3761,9 @@
                     </variable>
                 </testcase>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704230" priority="1300781704230" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -3781,6 +3799,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1300781704233" priority="1300781704233" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5119,6 +5140,9 @@
                     </statement>
                 </statement>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446589" priority="1303221446589" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5154,6 +5178,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446592" priority="1303221446592" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5189,6 +5216,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446595" priority="1303221446595" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5224,6 +5254,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446598" priority="1303221446598" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
@@ -5259,6 +5292,9 @@
                     </property>
                 </variable>
                 <variable classname="com.twinsoft.convertigo.beans.variables.RequestableHttpVariable" newPriority="1303221446601" priority="1303221446601" version="6.1.0.m004">
+                    <property name="bSoapArray">
+                        <java.lang.Boolean value="false"/>
+                    </property>
                     <property name="cachedKey">
                         <java.lang.Boolean value="true"/>
                     </property>
