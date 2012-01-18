@@ -2819,6 +2819,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EnvParametersEditor.
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FieldListEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FontEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HtmlTransactionVariablesEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpDataEncodingEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpHeaderForwardEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpMethodEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpParametersEditor.java -text
