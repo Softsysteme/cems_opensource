@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.1.0.m004" engine="6.1.0" exported="January 13, 2012 12:12 PM" studio="6.1.0" version="6.1.0">
+<convertigo beans="6.1.0.m004" engine="6.1.0" exported="January 23, 2012 12:32 PM" studio="6.1.0" version="6.1.0">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.1.0.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -85,6 +85,9 @@
                 </property>
                 <property name="comment">
                     <java.lang.String value=""/>
+                </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
                 </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
@@ -186,6 +189,9 @@
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
+                </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
                 </property>
@@ -250,7 +256,7 @@
                     <java.lang.Integer value="2"/>
                 </property>
                 <property name="stateFull">
-                    <java.lang.Boolean value="true"/>
+                    <java.lang.Boolean value="false"/>
                 </property>
                 <property name="subDir">
                     <java.lang.String value=""/>
@@ -891,6 +897,9 @@
                 </property>
                 <property name="comment">
                     <java.lang.String value=""/>
+                </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
                 </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
