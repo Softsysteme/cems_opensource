@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.4.m004" engine="6.0.4" exported="January 12, 2012 4:05 PM" studio="6.0.4" version="6.0.4">
+<convertigo beans="6.0.4.m004" engine="6.0.4" exported="January 23, 2012 12:25 PM" studio="6.0.4" version="6.0.4">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.4.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -85,6 +85,9 @@
                 </property>
                 <property name="comment">
                     <java.lang.String value=""/>
+                </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
                 </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
@@ -186,6 +189,9 @@
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
+                </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
                 </property>
@@ -250,7 +256,7 @@
                     <java.lang.Integer value="2"/>
                 </property>
                 <property name="stateFull">
-                    <java.lang.Boolean value="true"/>
+                    <java.lang.Boolean value="false"/>
                 </property>
                 <property name="subDir">
                     <java.lang.String value=""/>
@@ -892,6 +898,9 @@
                 <property name="comment">
                     <java.lang.String value=""/>
                 </property>
+                <property name="dataEncoding">
+                    <java.lang.Integer value="0"/>
+                </property>
                 <property name="encodingCharSet">
                     <java.lang.String value="ISO-8859-1"/>
                 </property>
@@ -1109,6 +1118,20 @@
                                 <java.lang.String value="//FORM[@name=&quot;f&quot;]"/>
                             </property>
                         </criteria>
+                        <extractionrule classname="com.twinsoft.convertigo.beans.html.XMLDeleteNodes" newPriority="1326364728981" priority="1326364728981" version="6.0.4.m004">
+                            <property name="comment">
+                                <java.lang.String value=""/>
+                            </property>
+                            <property name="isEnabled">
+                                <java.lang.Boolean value="true"/>
+                            </property>
+                            <property name="name">
+                                <java.lang.String value="New_Delete_nodes"/>
+                            </property>
+                            <property name="xpath">
+                                <java.lang.String value="//TD[@class=&quot;fl sblc&quot;]/A"/>
+                            </property>
+                        </extractionrule>
                         <extractionrule classname="com.twinsoft.convertigo.beans.common.WebClipper" newPriority="1326212375532" priority="1326212375532" version="6.0.4.m004">
                             <property name="attributes">
                                 <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -1232,20 +1255,6 @@
                             </property>
                             <property name="xpath">
                                 <java.lang.String value="//FORM[@name=&quot;f&quot;]"/>
-                            </property>
-                        </extractionrule>
-                        <extractionrule classname="com.twinsoft.convertigo.beans.html.XMLDeleteNodes" newPriority="1326364728981" priority="1326364728981" version="6.0.4.m004">
-                            <property name="comment">
-                                <java.lang.String value=""/>
-                            </property>
-                            <property name="isEnabled">
-                                <java.lang.Boolean value="true"/>
-                            </property>
-                            <property name="name">
-                                <java.lang.String value="New_Delete_nodes"/>
-                            </property>
-                            <property name="xpath">
-                                <java.lang.String value="//TD[@class=&quot;fl sblc&quot;]/A"/>
                             </property>
                         </extractionrule>
                     </screenclass>
