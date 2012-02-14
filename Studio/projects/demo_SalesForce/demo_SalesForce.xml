@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<convertigo beans="6.0.5.m004" engine="6.0.5" exported="14 février 2012 14:51" studio="6.0.5" version="6.0.5 (build 29593)">
+<convertigo beans="6.0.5.m004" engine="6.0.5" exported="14 février 2012 15:08" studio="6.0.5" version="6.0.5 (build 29593)">
     <project classname="com.twinsoft.convertigo.beans.core.Project" priority="0" version="6.0.5.m004">
         <property name="browserDefinitions">
             <xmlizable classname="com.twinsoft.convertigo.beans.common.XMLVector">
@@ -4473,7 +4473,7 @@
                             </xmlizable>
                         </property>
                         <property name="xpath">
-                            <java.lang.String value="'//DIV[@id=&quot;Lead_Tab&quot;]/A'"/>
+                            <java.lang.String value="'//LI[@id=&quot;Lead_Tab&quot;]/A'"/>
                         </property>
                     </statement>
                 </statement>
