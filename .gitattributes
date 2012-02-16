@@ -327,7 +327,7 @@ Studio/lib/internal/aviva-111114.jar -text
 Studio/lib/internal/bull-v24323.jar -text
 Studio/lib/internal/comm.jar -text
 Studio/lib/internal/crysec-090918.jar -text
-Studio/lib/internal/html_parsers-v29321.jar -text
+Studio/lib/internal/html_parsers-v29705.jar -text
 Studio/lib/internal/ibm-v28353.jar -text
 Studio/lib/internal/ms.jar -text
 Studio/lib/internal/netscape.jar -text
@@ -1921,6 +1921,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/GetUrlStatement.java -text s
 Studio/src/com/twinsoft/convertigo/beans/statements/GetUrlStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/HTTPStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/HTTPStatementBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/HTTPUploadStatement.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/HTTPUploadStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/HandlerStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/HandlerStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/IThenElseStatementContainer.java -text svneol=unset#text/plain
@@ -1932,6 +1934,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatement.java 
 Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatementBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetFileStatement.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetFileStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetSelectedStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetSelectedStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetValueStatement.java -text
@@ -2026,12 +2030,16 @@ Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_16x16.gi
 Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/http_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/http_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/if_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/if_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetvalue_16x16.gif -text
@@ -2084,11 +2092,13 @@ Studio/src/com/twinsoft/convertigo/beans/statements/res/GetAttachmentStatement.p
 Studio/src/com/twinsoft/convertigo/beans/statements/res/GetNodesStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/GetUrlStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HTTPStatement.properties -text
+Studio/src/com/twinsoft/convertigo/beans/statements/res/HTTPUploadStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HandlerStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfThenElseStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfXpathExistsStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetCheckedStatement.properties -text
+Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetFileStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetSelectedStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetValueStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InvokeBrowserJsStatement.properties -text svneol=unset#text/plain
