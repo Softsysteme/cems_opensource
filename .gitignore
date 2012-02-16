@@ -44,6 +44,10 @@ Studio/projects/sampleDocumentationMobilizerSencha/*.temp.*
 Studio/projects/sampleDocumentationMobilizerSencha/Traces
 Studio/projects/sampleDocumentationMobilizerSencha/_data
 Studio/projects/sampleDocumentationMobilizerSencha/_private
+Studio/projects/sampleJQueryMobile/*.temp.*
+Studio/projects/sampleJQueryMobile/Traces
+Studio/projects/sampleJQueryMobile/_data
+Studio/projects/sampleJQueryMobile/_private
 Studio/projects/sampleMobilePdf/*.temp.*
 Studio/projects/sampleMobilePdf/Traces
 Studio/projects/sampleMobilePdf/_data

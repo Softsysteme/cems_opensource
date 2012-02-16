@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleJQueryMobile_ns="http://www.convertigo.com/convertigo/projects/sampleJQueryMobile" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleJQueryMobile">
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleJQueryMobile_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sampleJQueryMobile_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:group name="SenchaConnectorTypes">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sampleJQueryMobile_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:group name="default_connectorTypes">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sampleJQueryMobile_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:element name="sampleJQueryConnector__Default_transaction" type="sampleJQueryMobile_ns:sampleJQueryConnector__Default_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="sampleJQueryConnector__Default_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleJQueryMobile_ns:sampleJQueryConnector__Default_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="sampleJQueryConnector__Default_transactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="sampleJQueryConnector__Default_transactionResponseData"/>
+<xsd:element name="LoadList" type="sampleJQueryMobile_ns:LoadListRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="LoadListResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleJQueryMobile_ns:LoadListResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="LoadListRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+</xsd:annotation>
+<xsd:sequence>
+<xsd:element name="country" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="postCode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="date" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="options" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="LoadListResponseData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:element name="Login" type="sampleJQueryMobile_ns:LoginRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample Login sequence. Change this sequence to anything enabling a Login with a user and password to the target system. The best way is to call a Login transaction.
+
+
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="LoginResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleJQueryMobile_ns:LoginResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="LoginRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample Login sequence. Change this sequence to anything enabling a Login with a user and password to the target system. The best way is to call a Login transaction.
+
+
+]]></xsd:documentation>
+</xsd:annotation>
+<xsd:sequence>
+<xsd:element name="user" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="password" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="LoginResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="logon" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="logon" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
