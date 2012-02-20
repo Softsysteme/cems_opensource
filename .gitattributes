@@ -3066,10 +3066,11 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewDocumentationSampleCWCWiza
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewDocumentationSampleCWIWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewDocumentationSampleMobilizerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewDocumentationSampleSiteClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewEmptyJQueryMobileWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewFullFeaturedJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewHtmlConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewHttpConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewInteractionHubWizard.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewLibraryGoogleMapsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewLibraryGoogleSpreadsheetsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewMinitelConnectorWizard.java -text
