@@ -322,21 +322,21 @@
 <xsd:sequence/>
 </xsd:complexType>
 <xsd:complexType name="ConvertigoWebSiteConnector__Default_transactionResponseData"/>
-<xsd:element name="ConvertigoWebSiteConnector__downloadCWIdocumentation" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadCWIdocumentationRequestData">
+<xsd:element name="ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentation" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentationRequestData">
 <xsd:annotation/>
 </xsd:element>
-<xsd:element name="ConvertigoWebSiteConnector__downloadCWIdocumentationResponse">
+<xsd:element name="ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentationResponse">
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="response" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadCWIdocumentationResponseData"/>
+<xsd:element name="response" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentationResponseData"/>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:element>
-<xsd:complexType name="ConvertigoWebSiteConnector__downloadCWIdocumentationRequestData">
+<xsd:complexType name="ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentationRequestData">
 <xsd:annotation/>
 <xsd:sequence/>
 </xsd:complexType>
-<xsd:complexType name="ConvertigoWebSiteConnector__downloadCWIdocumentationResponseData"/>
+<xsd:complexType name="ConvertigoWebSiteConnector__downloadReferenceManualPDFdocumentationResponseData"/>
 <xsd:element name="ConvertigoIntranetConnector__Default_transaction" type="sample_refManual_statements_ns:ConvertigoIntranetConnector__Default_transactionRequestData">
 <xsd:annotation/>
 </xsd:element>
