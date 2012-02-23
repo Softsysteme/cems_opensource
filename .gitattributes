@@ -2933,6 +2933,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TableEditorRowList.j
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TagNameLabelPolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TextEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TextEditorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TrSeqSourceEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TrSeqSourceEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TransactionSheetLocationEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TransactionStepVariablesEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/TransactionVariablesEditor.java -text
