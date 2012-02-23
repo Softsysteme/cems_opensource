@@ -2565,6 +2565,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ILearnable.java -te
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ILinkable.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IRecordable.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IRefreshable.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IResetable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IScreenClassAware.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/JavelinConnectorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SiteClipperConnectorComposite.java -text svneol=unset#text/plain
@@ -2615,6 +2616,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/images/preview_node.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/record.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/refresh.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/renew.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/images/reset.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/run.d.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/run.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/images/screenclass.d.gif -text
