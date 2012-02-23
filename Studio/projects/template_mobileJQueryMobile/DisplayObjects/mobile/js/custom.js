@@ -69,11 +69,20 @@ $.extend(true, C8O, {
 //C8O.getLastCallParameter(key);
 
 /**
+ * isDefined function
+ * just check the existence of the argument
+ * obj : something to test
+ * return : true > obj exists
+ *            false > obj doesn't exist
+ */
+//C8O.isDefined(obj);
+
+/**
  * isUndefined function
  * just check the existence of the argument
  * obj : something to test
  * return : true > obj doesn't exist
- *            false > obj exist
+ *            false > obj exists
  */
 //C8O.isUndefined(obj);
 
