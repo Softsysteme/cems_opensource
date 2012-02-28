@@ -174,88 +174,105 @@ C8O.addHook("document_ready", function () {
 C8O.addHook("xml_response", function (xml) {
 
 	var $xml = $(xml);
-
-	if($xml.find("document>logon").length)
-	{
-		if ($("#rememberme").attr("checked")) {
-			// stocking in local storage the login data
-			localStorage.setItem('userId', $("#userId").val());
-			localStorage.setItem('password', $("#password").val())
-		} else if (C8O.vars.isLocalStorage && localStorage.getItem('userId') !== null) {
-			// removing from local storage the login data
-			localStorage.removeItem('userId');
-			localStorage.removeItem('password');
+	var lastTr = C8O.getLastCallParameter("__transaction");
+	var lastSeq = C8O.getLastCallParameter("__sequence");
+	
+	if ($xml.find("document>error").length) {
+		// erreur exception Convertigo
+		$("#errorMessageTarget").text($xml.find("document>error>message").text());
+		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
+	} else {
+		if(lastSeq == "Login") {
+			/* returning from Login sequence */
+			loginResponse($xml);
+		} else if(lastSeq == "LoadList") {
+			/* returning from LoadList sequence */
+			loadListResponse($xml);
 		}
-		var logon = $(xml).find("document>logon").text();
-		if(logon == "true")
-		{
-			$.mobile.changePage($("#search"));
-		}
-		else
-		{
-			$("#errorMessageTarget").text("Login failed");
-			$.mobile.changePage($("#errorMessage"), {transition : "pop"});
-		}
-	}
-	else if($xml.find("document>results").length)
-	{
-		//clean the list of results
-		var $ul = $("#listing ul");
-		$ul.empty();
-
-		var $result= $xml.find("document>results>result");
-		$("#nbleave").text($result.length);
-
-		$result.each(function () {
-			var img = $(this).find("img").text();
-			var title = $(this).find("title").text();
-			var address = $(this).find("address").text();
-			var description = $(this).find("description").text();
-			var price = $(this).find("price").text();
-			var total = $(this).find("total").text();
-			$ul.append(
-				$("<li/>").append(
-					$("<a/>").attr("href", "#").append(
-						$("<img/>").attr("src", img),
-						$("<h3/>").text(title)
-					)
-				).click(function () {
-					C8O.vars.address = address;
-					$("#maindetails ul").empty();
-					$("#maindetails ul").append(
-								$("<li/>").append(
-									$("<b/>").text("Title : "), title
-								),
-								$("<li/>").append(
-										$("<b/>").text("Address : "), address
-								),
-								$("<li/>").append(
-										$("<b/>").text("Price : "), price
-								),
-								$("<li/>").append(
-										$("<b/>").text("Total : "), total
-								)
-					);
-					
-					
-					$("#description").empty();
-					
-					$("#description").append($("<p/>").text(description));
-					
-					$.mobile.changePage($("#details"));
-
-					try {
-						$("#maindetails ul").listview("refresh");
-					} catch (e) {}
-				})
-			);
-		});
-		
-		$.mobile.changePage($("#listing"));
 	}
 
 	return true;
 });
+
+/**
+* Executed on Login sequence response
+* @param $xml : the xml response from Convertigo
+*/
+function loginResponse ($xml) {
+	if ($("#rememberme").attr("checked")) {
+		// stocking in local storage the login data
+		localStorage.setItem('userId', $("#userId").val());
+		localStorage.setItem('password', $("#password").val())
+	} else if (C8O.vars.isLocalStorage && localStorage.getItem('userId') !== null) {
+		// removing from local storage the login data
+		localStorage.removeItem('userId');
+		localStorage.removeItem('password');
+	}
+	var logon = $xml.find("document>logon").text();
+	if(logon == "true") {
+		$.mobile.changePage($("#search"));
+	} else {
+		$("#errorMessageTarget").text("Login failed");
+		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
+	}
+}
+
+/**
+* Executed on LoadList sequence response
+* @param $xml : the xml response from Convertigo
+*/
+function loadListResponse($xml) {
+	//clean the list of results
+	var $ul = $("#listing ul");
+	$ul.empty();
+
+	var $result= $xml.find("document>results>result");
+	$("#nbleave").text($result.length);
+
+	$result.each(function () {
+		var img = $(this).find("img").text();
+		var title = $(this).find("title").text();
+		var address = $(this).find("address").text();
+		var description = $(this).find("description").text();
+		var price = $(this).find("price").text();
+		var total = $(this).find("total").text();
+		$ul.append(
+			$("<li/>").append(
+				$("<a/>").attr("href", "#").append(
+					$("<img/>").attr("src", img),
+					$("<h3/>").text(title)
+				)
+			).click(function () {
+				C8O.vars.address = address;
+				$("#maindetails ul").empty();
+				$("#maindetails ul").append(
+					$("<li/>").append(
+						$("<b/>").text("Title : "), title
+					),
+					$("<li/>").append(
+							$("<b/>").text("Address : "), address
+					),
+					$("<li/>").append(
+							$("<b/>").text("Price : "), price
+					),
+					$("<li/>").append(
+							$("<b/>").text("Total : "), total
+					)
+				);
+				
+				$("#description").empty();
+				$("#description").append($("<p/>").text(description));
+				$.mobile.changePage($("#details"));
+
+				try {
+					$("#maindetails ul").listview("refresh");
+				} catch (e) {}
+			})
+		);
+	});
+	
+	$.mobile.changePage($("#listing"));
+}
 
 /**
  *  loading_start hook
