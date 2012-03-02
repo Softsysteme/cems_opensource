@@ -120,6 +120,10 @@ $.extend(true, C8O, {
  *             false > break the processing of request
  */
 C8O.addHook("document_ready", function () {
+	/* 
+	 * handles username and password storing in local storage 
+	 * or removing from storage when checking or unchecking the "remember me" checkbox   
+	 */
 	if(!C8O.vars.isLocalStorage) {
 		$("#rememberme").attr("disabled", "disabled");
 	} else if (localStorage.getItem('userId') !== null) {
@@ -129,11 +133,20 @@ C8O.addHook("document_ready", function () {
 		$("#password").val(localStorage.getItem('password'));
 	}
 	
+	/* 
+	 * add a submit event handler on each form
+	 * to perform a C8O.call on the submitted form
+	 * and stop the submit action (by the return false statement)
+	 */  
 	$("form").submit(function () {
 		C8O.call(this);
 		return false;
 	});
 	
+	/*
+	 * define a click event handler on the "localize" button to execute the map 
+	 * and display the last accessed address stored in "C8O.vars.address" variable
+	 */
 	$("#localize").click(function() {
 		C8O.vars.geocoder.geocode({address: C8O.vars.address}, 
 			function (results, status) {
@@ -177,11 +190,20 @@ C8O.addHook("xml_response", function (xml) {
 	var lastTr = C8O.getLastCallParameter("__transaction");
 	var lastSeq = C8O.getLastCallParameter("__sequence");
 	
+	/*
+	 * Handles Convertigo exception XML response
+	 * to automatically pop the error dialog
+	 */
 	if ($xml.find("document>error").length) {
 		// erreur exception Convertigo
 		$("#errorMessageTarget").text($xml.find("document>error>message").text());
 		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
 	} else {
+	/*
+	 * no Convertigo exception
+	 * figures out which transaction or sequence was last called
+	 * to handle its response in a dedicated function
+	 */
 		if(lastSeq == "Login") {
 			/* returning from Login sequence */
 			loginResponse($xml);
@@ -270,6 +292,10 @@ function loadListResponse($xml) {
 			})
 		);
 	});
+	
+	try {
+		$ul.listview("refresh");
+	} catch (e) {}
 	
 	$.mobile.changePage($("#listing"));
 }
