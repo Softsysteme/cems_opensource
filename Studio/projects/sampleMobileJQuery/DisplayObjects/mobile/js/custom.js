@@ -20,7 +20,6 @@ $.extend(true, C8O, {
 	* for example: C8O.vars.ajax_method="GET"
 	*/
 	vars : {
-		isLocalStorage : !C8O.isUndefined(localStorage),
 		geocoder : new google.maps.Geocoder()
 //		ajax_method : "POST", /** POST/GET : http method to request CEMS */
 //		requester_prefix : "" /** string prepend to the .xml or .cxml requester */
@@ -124,7 +123,7 @@ C8O.addHook("document_ready", function () {
 	 * handles username and password storing in local storage 
 	 * or removing from storage when checking or unchecking the "remember me" checkbox   
 	 */
-	if(!C8O.vars.isLocalStorage) {
+	if(C8O.isUndefined(localStorage)) {
 		$("#rememberme").attr("disabled", "disabled");
 	} else if (localStorage.getItem('userId') !== null) {
 		// sets back the values from the local storage to the form's fields
@@ -225,7 +224,7 @@ function loginResponse ($xml) {
 		// stocking in local storage the login data
 		localStorage.setItem('userId', $("#userId").val());
 		localStorage.setItem('password', $("#password").val())
-	} else if (C8O.vars.isLocalStorage && localStorage.getItem('userId') !== null) {
+	} else if (C8O.isDefined(localStorage) && localStorage.getItem('userId') !== null) {
 		// removing from local storage the login data
 		localStorage.removeItem('userId');
 		localStorage.removeItem('password');

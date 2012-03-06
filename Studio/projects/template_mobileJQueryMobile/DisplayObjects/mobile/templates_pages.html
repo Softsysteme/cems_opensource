@@ -1,0 +1,245 @@
+<!-- 
+    This page proposes a set of mobile application pages HTML code. 
+    To use a page in your mobile application, simply copy and paste 
+    the corresponding DIV element in "DisplayObjects/mobile/index.html" page.
+ -->
+
+<!-- Empty page, with header and footer -->
+<div data-role="page" id="emptyPage" data-title="empty page" data-theme="a">
+    <!-- header bar -->
+    <div data-role="header">
+        <h1>Page Title</h1>
+    </div>
+    <!-- content -->
+    <div data-role="content">
+        <p>Page content goes here.</p>
+    </div>
+    <!-- footer bar -->
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div>
+</div>
+<!-- END Empty page, with header and footer -->
+
+<!-- Login form page -->
+<div data-role="page" id="authentication" data-title="Authentication page" data-theme="a">
+    <!-- header bar -->
+    <div data-role="header">
+        <h1>Authentication</h1>
+    </div>
+    
+    <!-- content -->
+    <div data-role="content">
+        <h3>Login form</h3>
+                    
+        <form>
+            <!-- 
+            Customize here the name of the Convertigo Sequence or Transaction to call for authentication
+            as well as other hidden parameters, such as context name, or project if the method is in a separate project. 
+            -->
+            <!--<input type="hidden" name="__project" value="XXX" />-->
+            <input type="hidden" name="__sequence" value="authentication" />
+            <!-- <input type="hidden" name="__connector" value="XXX" />
+            <input type="hidden" name="__transaction" value="XXX" />
+            <input type="hidden" name="__context" value="XXX" /> -->
+            
+            <div data-role="fieldcontain">
+                <label for="user">User </label>
+                <input type="text" id="user" name="user" value="" />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="password">Password </label>
+                <input type="password" id="password" name="password" value="" />
+            </div>
+            <p id="info">Please type your username and password</p>
+            
+            <button value="Login"></button>
+        </form>
+        
+        <!-- 
+        The following checkbox is out of the form as it is used locally to save username and password in HTML5 localStorage. 
+        See corresponding JS code in "js/templates_jscode.js" file.
+        -->
+        <input type="checkbox" id="rememberme" />
+        <label for="rememberme">Remember me</label>
+    </div>
+</div>
+<!-- END Login form page -->
+
+<!-- Form page -->
+<div data-role="page" id="form" data-title="Form" data-theme="a">
+	<!-- header bar -->
+	<div data-role="header">
+	    <h1>Form</h1>
+	    
+	    <!-- back button, can be added on every header page, only not in the first displayed page -->           
+        <a data-role="button" data-rel="back" data-icon="back" data-iconpos="notext">Return</a>
+	</div>
+	
+	<!-- content -->
+    <div data-role="content">
+        
+        <form>
+            <!-- 
+            Customize here the name of the Convertigo Sequence or Transaction to call for authentication
+            as well as other hidden parameters, such as context name, or project if the method is in a separate project. 
+            -->
+            <!--<input type="hidden" name="__project" value="XXX" />-->
+            <input type="hidden" name="__sequence" value="list" />
+            <!-- <input type="hidden" name="__connector" value="XXX" />
+            <input type="hidden" name="__transaction" value="XXX" />
+            <input type="hidden" name="__context" value="XXX" /> -->
+        
+            <!-- Simple text input -->
+            <div data-role="fieldcontain">
+                <label for="postCode">Postal Code </label>
+                <input type="text" id="postCode" name="postCode" value="" />
+            </div> 
+            
+            <!-- Combobox select list -->
+            <div data-role="fieldcontain">
+               <label for="selectL" class="select">Country</label>
+               <select name="country" id="selectL">
+                  <option value="FR">France</option>
+                  <option value="US">USA</option>
+                  <option value="BE">Belgium</option>
+                  <option value="IT">Italy</option>
+                  <option value="ES">Spain</option>
+               </select>
+            </div>
+            
+            <!-- Checkbox -->
+            <div data-role="fieldcontain">
+               <label for="checkTest" class="select">Checkbox test </label>
+               <input type="checkbox" id="checkTest" name="checkTest" />
+            </div>
+            
+            <!-- Radio buttons -->
+            <div data-role="fieldcontain">
+            	<h3>Options</h3>
+               <label for="r1" class="select">Option 1 </label>
+               <input type="radio" id="r1" name="options" value="option1"/>
+               <label for="r2" class="select">Option 2 </label>
+               <input type="radio" id="r2" name="options" value="option2"/>
+               <label for="r3" class="select">Option 3 </label>
+               <input type="radio" id="r3" name="options" value="option3"/>
+            </div>
+            
+            <!-- Submit button -->
+            <button value="Launch request"></button>
+            
+            <!-- Note in form -->
+            <p id="info">Fill in form info and hit the button</p>
+        </form>
+    </div>
+</div>
+<!-- END Form page -->
+
+<!-- List result page -->
+<div data-role="page" id="listing" data-title="List of results" data-theme="a">
+            
+    <!-- header bar -->
+    <div data-role="header">
+    	<!-- Header including a SPAN which content will be automatically refreshed depending on results.
+    	This content is loaded dynamically, thanks to JS code in "xml_response" hook.
+        See "templates_jscode.js" file to have an example of such code. -->
+        <h1><span id="nbleave">XX</span> results</h1>
+        
+        <!-- back button, can be added on every header page, only not in the first displayed page -->           
+        <a data-role="button" data-rel="back" data-icon="back" data-iconpos="notext">Return</a>
+    </div>
+    
+    <!-- content -->
+    <div data-role="content">
+        <!-- List that will contain the results.
+        These results are loaded dynamically, thanks to JS code in "xml_response" hook.
+        See "templates_jscode.js" file to have an example of such code. -->
+        <ul data-role="listview" data-inset="true">
+        </ul>
+    </div>  
+</div>
+<!-- END List result page -->
+
+<!-- Details page -->
+<div data-role="page" id="details" data-title="Details" data-theme="a">
+            
+	<!-- header bar -->
+	<div data-role="header">         
+	    <h1>Details</h1>
+        
+        <!-- back button, can be added on every header page, only not in the first displayed page -->           
+        <a data-role="button" data-rel="back" data-icon="back" data-iconpos="notext">Return</a>
+	</div>
+	
+	<!-- content -->
+    <div data-role="content">
+        <h3>Details</h3>
+        
+        <!-- DIV for main details organized in a list. 
+        These details are loaded dynamically, thanks to JS code in "xml_response" hook.
+        See "templates_jscode.js" file to have an example of such code.-->
+        <div id="maindetails" data-role="content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+        </div>
+        
+        <h3>Description</h3>
+        <!-- DIV for description. 
+        This content is loaded dynamically, thanks to JS code in "xml_response" hook.
+        See "templates_jscode.js" file to have an example of such code. -->
+        <div id="description" data-role="content">
+        </div>
+        
+        <!-- Button that just displays another page thanks to JS code in "document_ready" hook.
+        See "templates_jscode.js" file to have an example of such code. -->
+        <button id="switchPage">Change page</button>
+    </div>
+</div>
+<!-- END Details page -->
+
+<!-- Another page, displayed thanks to button in details page, including elements theming. -->
+<div data-role="page" id="otherPage" data-title="Themed page" data-theme="a">
+    <!-- header bar -->
+    <div data-role="header" data-theme="b">
+        <h1>Page using themes</h1>
+        
+        <!-- back button, can be added on every header page, only not in the first displayed page -->           
+        <a data-role="button" data-rel="back" data-icon="back" data-iconpos="notext">Return</a>
+    </div>
+    <!-- content -->
+    <div data-role="content">
+        <p>Page content goes here.</p>
+        <ul data-role="listview" data-inset="true" data-theme="c">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+    <!-- footer bar -->
+    <div data-role="footer" data-theme="b">
+        <h4>Page Footer</h4>
+    </div>
+</div>
+<!-- END Another page, with elements theming -->
+
+<!-- Error dialog page - Error message popup  -->
+<div data-role="dialog" id="errorMessage" data-title="Error" data-theme="a">
+    
+    <!-- header bar -->
+    <div data-role="header">
+        <h1>Error</h1>
+    </div>
+    
+    <!-- content -->
+    <div data-role="content">
+        <!-- Paragraph where error message will be displayed.
+        This content is loaded dynamically, thanks to JS code in "xml_response" hook.
+        See "templates_jscode.js" file to have an example of such code. -->
+        <p id="errorMessageTarget"></p>
+        
+        <!-- back button, can be added on every header page, only not in the first displayed page -->
+        <a href="#" data-role="button" data-add-back-btn="true" data-icon="back" data-rel="back" data-theme="b">Close</a>
+    </div>
+</div>
+<!-- END Error dialog page - Error message popup  -->
