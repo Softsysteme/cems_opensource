@@ -50,6 +50,26 @@ C8O.addHook("document_ready", function () {
 		$.mobile.changePage($("#otherPage"));
 	});
 	
+	/*
+	 * defines a click event handler on a button
+	 * to call a Convertigo sequence
+	 */
+	$("#callSeq").click(function() {
+		C8O.call({
+			/*
+			 * Customize here the name of the Convertigo Sequence or Transaction to call
+			 * as well as other parameters, such as context name, or project if the method is in a separate project,
+			 * and all the variables the sequence or transaction needs. 
+			 */
+//          __project: "XXX", 
+			__sequence:"XXX",
+//			__connector:"XXX",
+//			__transaction:"XXX",
+//			__context:"XXX",
+			variable1: value1,
+			variable2: value2
+		});
+	});
 	
 	/*
 	 * returning true at the end of this hook will let the process continue ;
