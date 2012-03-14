@@ -75,6 +75,10 @@ Studio/projects/sampleMobileWebToPdf/.settings
 Studio/projects/sampleMobileWebToPdf/Traces
 Studio/projects/sampleMobileWebToPdf/_data
 Studio/projects/sampleMobileWebToPdf/_private
+Studio/projects/sample_database/*.temp.*
+Studio/projects/sample_database/Traces
+Studio/projects/sample_database/_data
+Studio/projects/sample_database/_private
 Studio/projects/sample_databaseWebService/.project
 Studio/projects/sample_databaseWebService/.settings
 Studio/projects/sample_databaseWebService/Traces

@@ -780,6 +780,13 @@ Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/server.js -te
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xsd -text svneol=unset#text/plain
+Studio/projects/sample_database/.project -text svneol=unset#text/plain
+Studio/projects/sample_database/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sample_database/index.html -text svneol=unset#text/plain
+Studio/projects/sample_database/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_database/sample_database.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_database/sample_database.xml -text svneol=unset#text/plain
+Studio/projects/sample_database/sample_database.xsd -text svneol=unset#text/plain
 Studio/projects/sample_databaseWebService/database_creation_script.sql -text
 Studio/projects/sample_databaseWebService/error.xsl -text svneol=unset#text/plain
 Studio/projects/sample_databaseWebService/error_fr.xsl -text svneol=unset#text/plain
