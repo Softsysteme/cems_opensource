@@ -2,12 +2,15 @@
 <wsdl:definitions name="template_sequence" targetNamespace="http://www.convertigo.com/convertigo/projects/template_sequence" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_sequence_ns="http://www.convertigo.com/convertigo/projects/template_sequence" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_sequence"><xsd:include schemaLocation="template_sequence.xsd"/></xsd:schema>
-  </wsdl:types>  <wsdl:portType name="template_sequencePortType">
+  </wsdl:types>
+  <wsdl:portType name="template_sequencePortType">
   </wsdl:portType>
   <wsdl:binding name="template_sequenceSOAPBinding" type="template_sequence_ns:template_sequencePortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-  </wsdl:binding>  <wsdl:service name="template_sequence">
+  </wsdl:binding>
+  <wsdl:service name="template_sequence">
     <wsdl:port name="template_sequenceSOAP" binding="template_sequence_ns:template_sequenceSOAPBinding">
       <soap:address location="http://localhost:18080/convertigo/projects/template_sequence/.wsl"/>
-    </wsdl:port>  </wsdl:service>
+    </wsdl:port>
+  </wsdl:service>
 </wsdl:definitions>

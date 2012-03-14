@@ -27,19 +27,19 @@
 <xsd:element minOccurs="0" name="error" type="template_mobileJQueryMobile_ns:ConvertigoError"/>
 </xsd:sequence>
 </xsd:group>
-<xsd:element name="SQL__Default_transaction" type="template_mobileJQueryMobile_ns:SQL__Default_transactionRequestData">
+<xsd:element name="void__Default_transaction" type="template_mobileJQueryMobile_ns:void__Default_transactionRequestData">
 <xsd:annotation/>
 </xsd:element>
-<xsd:element name="SQL__Default_transactionResponse">
+<xsd:element name="void__Default_transactionResponse">
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="response" type="template_mobileJQueryMobile_ns:SQL__Default_transactionResponseData"/>
+<xsd:element name="response" type="template_mobileJQueryMobile_ns:void__Default_transactionResponseData"/>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:element>
-<xsd:complexType name="SQL__Default_transactionRequestData">
+<xsd:complexType name="void__Default_transactionRequestData">
 <xsd:annotation/>
 <xsd:sequence/>
 </xsd:complexType>
-<xsd:complexType name="SQL__Default_transactionResponseData"/>
+<xsd:complexType name="void__Default_transactionResponseData"/>
 </xsd:schema>

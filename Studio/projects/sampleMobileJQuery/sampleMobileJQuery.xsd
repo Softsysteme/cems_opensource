@@ -27,21 +27,21 @@
 <xsd:element minOccurs="0" name="error" type="sampleMobileJQuery_ns:ConvertigoError"/>
 </xsd:sequence>
 </xsd:group>
-<xsd:element name="sampleJQueryConnector__Default_transaction" type="sampleMobileJQuery_ns:sampleJQueryConnector__Default_transactionRequestData">
+<xsd:element name="void__Default_transaction" type="sampleMobileJQuery_ns:void__Default_transactionRequestData">
 <xsd:annotation/>
 </xsd:element>
-<xsd:element name="sampleJQueryConnector__Default_transactionResponse">
+<xsd:element name="void__Default_transactionResponse">
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="response" type="sampleMobileJQuery_ns:sampleJQueryConnector__Default_transactionResponseData"/>
+<xsd:element name="response" type="sampleMobileJQuery_ns:void__Default_transactionResponseData"/>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:element>
-<xsd:complexType name="sampleJQueryConnector__Default_transactionRequestData">
+<xsd:complexType name="void__Default_transactionRequestData">
 <xsd:annotation/>
 <xsd:sequence/>
 </xsd:complexType>
-<xsd:complexType name="sampleJQueryConnector__Default_transactionResponseData"/>
+<xsd:complexType name="void__Default_transactionResponseData"/>
 <xsd:element name="LoadList" type="sampleMobileJQuery_ns:LoadListRequestData">
 <xsd:annotation>
 <xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
