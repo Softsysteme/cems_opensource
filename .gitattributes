@@ -998,6 +998,10 @@ Studio/projects/template_FLEX/themes/legacy/styleskin.css -text svneol=unset#tex
 Studio/projects/template_HTTP/template_HTTP.wsdl -text svneol=unset#text/plain
 Studio/projects/template_HTTP/template_HTTP.xml -text svneol=unset#text/plain
 Studio/projects/template_HTTP/template_HTTP.xsd -text svneol=unset#text/plain
+Studio/projects/template_SQL/.project -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.wsdl -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.xml -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.xsd -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.wsdl -text
 Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text

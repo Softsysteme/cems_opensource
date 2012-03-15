@@ -159,6 +159,10 @@ Studio/projects/template_HTTP/_data
 Studio/projects/template_HTTP/_private
 Studio/projects/template_HTTP/template_HTTP.temp.wsdl
 Studio/projects/template_HTTP/template_HTTP.temp.xsd
+Studio/projects/template_SQL/*.temp.*
+Studio/projects/template_SQL/Traces
+Studio/projects/template_SQL/_data
+Studio/projects/template_SQL/_private
 Studio/projects/template_crawling/.project
 Studio/projects/template_crawling/.settings
 Studio/projects/template_crawling/Traces
