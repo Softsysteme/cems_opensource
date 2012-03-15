@@ -1,6 +1,6 @@
 /*******************************************************
  *******************************************************
- * public jQuery Mobile C8O API for CEMS 5.6.0 *
+ * public jQuery Mobile C8O API for CEMS 6.1.0 *
  *******************************************************
  *******************************************************/
 
@@ -71,6 +71,15 @@ $.extend(true, C8O, {
  *             or retrieve object with key/value of all parameters
  */
 //C8O.getLastCallParameter(key);
+
+/**
+ * isDefined function
+ * just check the existence of the argument
+ * obj : something to test
+ * return : true > obj exists
+ *            false > obj doesn't exist
+ */
+//C8O.isDefined(obj);
 
 /**
  * isUndefined function
@@ -149,7 +158,7 @@ C8O.addHook("document_ready", function () {
 	$("#localize").click(function() {
 		C8O.vars.geocoder.geocode({address: C8O.vars.address}, 
 			function (results, status) {
-				if (!C8O.isUndefined(C8O.vars.exMarker)) {
+				if (C8O.isDefined(C8O.vars.exMarker)) {
 					C8O.vars.exMarker.setMap(null);
 				}
 				if (C8O.isUndefined(C8O.vars.map)) {
@@ -185,7 +194,7 @@ C8O.addHook("document_ready", function () {
  */
 C8O.addHook("xml_response", function (xml) {
 
-	var $xml = $(xml);
+	var $doc = $(xml.documentElement);
 	var lastTr = C8O.getLastCallParameter("__transaction");
 	var lastSeq = C8O.getLastCallParameter("__sequence");
 	
@@ -193,9 +202,9 @@ C8O.addHook("xml_response", function (xml) {
 	 * Handles Convertigo exception XML response
 	 * to automatically pop the error dialog
 	 */
-	if ($xml.find("document>error").length) {
+	if ($doc.find(">error").length) {
 		// erreur exception Convertigo
-		$("#errorMessageTarget").text($xml.find("document>error>message").text());
+		$("#errorMessageTarget").text($doc.find(">error>message").text());
 		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
 	} else {
 	/*
@@ -205,10 +214,10 @@ C8O.addHook("xml_response", function (xml) {
 	 */
 		if(lastSeq == "Login") {
 			/* returning from Login sequence */
-			loginResponse($xml);
+			loginResponse($doc);
 		} else if(lastSeq == "LoadList") {
 			/* returning from LoadList sequence */
-			loadListResponse($xml);
+			loadListResponse($doc);
 		}
 	}
 
@@ -217,9 +226,9 @@ C8O.addHook("xml_response", function (xml) {
 
 /**
 * Executed on Login sequence response
-* @param $xml : the xml response from Convertigo
+* @param $doc : the jQuery object of the document response from Convertigo
 */
-function loginResponse ($xml) {
+function loginResponse ($doc) {
 	if ($("#rememberme").attr("checked")) {
 		// stocking in local storage the login data
 		localStorage.setItem('userId', $("#userId").val());
@@ -229,7 +238,7 @@ function loginResponse ($xml) {
 		localStorage.removeItem('userId');
 		localStorage.removeItem('password');
 	}
-	var logon = $xml.find("document>logon").text();
+	var logon = $doc.find(">logon").text();
 	if(logon == "true") {
 		$.mobile.changePage($("#search"));
 	} else {
@@ -240,23 +249,24 @@ function loginResponse ($xml) {
 
 /**
 * Executed on LoadList sequence response
-* @param $xml : the xml response from Convertigo
+* @param $doc : the jQuery object of the document response from Convertigo
 */
-function loadListResponse($xml) {
+function loadListResponse($doc) {
 	//clean the list of results
 	var $ul = $("#listing ul");
 	$ul.empty();
 
-	var $result= $xml.find("document>results>result");
-	$("#nbleave").text($result.length);
+	var $results = $doc.find(">results>result");
+	$("#nbleave").text($results.length);
 
-	$result.each(function () {
-		var img = $(this).find("img").text();
-		var title = $(this).find("title").text();
-		var address = $(this).find("address").text();
-		var description = $(this).find("description").text();
-		var price = $(this).find("price").text();
-		var total = $(this).find("total").text();
+	$results.each(function () {
+		var $result = $(this);
+		var img = $result.find(">img").text();
+		var title = $result.find(">title").text();
+		var address = $result.find(">address").text();
+		var description = $result.find(">description").text();
+		var price = $result.find(">price").text();
+		var total = $result.find(">total").text();
 		$ul.append(
 			$("<li/>").append(
 				$("<a/>").attr("href", "#").append(
@@ -265,8 +275,8 @@ function loadListResponse($xml) {
 				)
 			).click(function () {
 				C8O.vars.address = address;
-				$("#maindetails ul").empty();
-				$("#maindetails ul").append(
+				var $ul_details = $("#maindetails ul").empty();
+				$ul_details.append(
 					$("<li/>").append(
 						$("<b/>").text("Title : "), title
 					),
@@ -281,12 +291,11 @@ function loadListResponse($xml) {
 					)
 				);
 				
-				$("#description").empty();
-				$("#description").append($("<p/>").text(description));
+				$("#description").empty().append($("<p/>").text(description));
 				$.mobile.changePage($("#details"));
 
 				try {
-					$("#maindetails ul").listview("refresh");
+					$ul_details.listview("refresh");
 				} catch (e) {}
 			})
 		);

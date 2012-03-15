@@ -111,6 +111,11 @@ C8O.addHook("xml_response", function (xml) {
 	var lastTr = C8O.getLastCallParameter("__transaction");
 	var lastSeq = C8O.getLastCallParameter("__sequence");
 	
+	/*
+	 * In case of a transaction result from a connector with screenclass, you can retrieve its value.
+	 */
+	//var screenClass = $doc.attr("screenclass");
+	
 	/**
 	 * Following code implements a choice of response management: 
 	 * - first handles Exceptions (identified in XML response)
@@ -120,9 +125,9 @@ C8O.addHook("xml_response", function (xml) {
 	/*
 	 * Manages Convertigo exception XML response to automatically pop the error dialog
 	 */
-	if ($xml.find("document>error").length) {
+	if ($doc.find(">error").length) {
 		// setting exception message in error page content
-		$("#errorMessageTarget").text($xml.find("document>error>message").text());
+		$("#errorMessageTarget").text($doc.find(">error>message").text());
 		// changing page to display error message page as a popup dialog
 		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
 	} else {
@@ -133,13 +138,13 @@ C8O.addHook("xml_response", function (xml) {
 	 */
 	 	if(lastSeq == "authentication") {
 			/* returning from authentication sequence */
-			authenticationResponse($xml);
+			authenticationResponse($doc);
 		} else if(lastSeq == "list") {
 			/* returning from list sequence */
-			listResponse($xml);
+			listResponse($doc);
 		} else if(lastSeq == "details") {
 			/* returning from details sequence */
-			detailsResponse($xml);
+			detailsResponse($doc);
 		}
 	}
 
@@ -149,9 +154,9 @@ C8O.addHook("xml_response", function (xml) {
 
 /**
 * Example of function that can be executed on authentication sequence response
-* @param $xml : the xml response from Convertigo
+* @param $doc : the jQuery object of the document response from Convertigo
 */
-function authenticationResponse ($xml) {
+function authenticationResponse ($doc) {
 	// managing the rememberme checkbox : storing in local storage the username / password 
 	// or removing from local storage if the checkbox is not checked 
 	if ($("#rememberme").attr("checked")) {
@@ -164,7 +169,7 @@ function authenticationResponse ($xml) {
 		localStorage.removeItem('password');
 	}
 	// managing the return of the authentication sequence / transaction
-	var logon = $xml.find("document>logon").text();
+	var logon = $doc.find(">logon").text();
 	if(logon == "true") {
 		// login OK, changing page to display a form page
 		$.mobile.changePage($("#form"));
@@ -177,15 +182,15 @@ function authenticationResponse ($xml) {
 
 /**
 * Example of function that can be executed on response of a sequence returning a list
-* @param $xml : the xml response from Convertigo
+* @param $doc : the jQuery object of the document response from Convertigo
 */
-function listResponse($xml) {
+function listResponse($doc) {
 	//cleaning the list of results
 	var $ul = $("#listing ul");
 	$ul.empty();
 
 	// retrieving the iterated element from XML response
-	var $result= $xml.find("document>results>item");
+	var $result= $doc.find(">results>item");
 	
 	// setting the number of results in the page header
 	$("#nbleave").text($result.length);
@@ -193,8 +198,8 @@ function listResponse($xml) {
 	// iterating on the list of results
 	$result.each(function () {
 		// retrieving column values in variables
-		var img = $(this).find("img").text();
-		var title = $(this).find("title").text();
+		var img = $(this).find(">img").text();
+		var title = $(this).find(">title").text();
 		
 		// creating and adding a row to the list 
 		$ul.append(
@@ -227,22 +232,22 @@ function listResponse($xml) {
 
 /**
 * Example of function that can be executed on details sequence response
-* @param $xml : the xml response from Convertigo
+* @param $doc : the jQuery object of the document response from Convertigo
 */
-function detailsResponse ($xml) {
+function detailsResponse ($doc) {
 	// cleaning the details list
-	$("#maindetails ul").empty();
+	var $ul = $("#maindetails ul").empty();
 	
 	// retrieving data from XML response 
-	var $details= $xml.find("document>details");
+	var $details= $doc.find(">details");
 	// retrieving details values in variables
-	var address = $details.find("address").text();
-	var postCode = $details.find("PC").text();
-	var city = $details.find("city").text();
-	var description = $details.find("description").text();
+	var address = $details.find(">address").text();
+	var postCode = $details.find(">PC").text();
+	var city = $details.find(">city").text();
+	var description = $details.find(">description").text();
 	
 	// creating and adding rows to the details list 
-	$("#maindetails ul").append(
+	$ul.append(
 		$("<li/>").append(
 				$("<b/>").text("Address : "), address
 		),
@@ -256,7 +261,7 @@ function detailsResponse ($xml) {
 	
 	// after filling the list, refreshing it for it to be correctly displayed 
 	try {
-		$("#maindetails ul").listview("refresh");
+		$ul.listview("refresh");
 	} catch (e) {}
 	
 	// cleaning the description DIV
