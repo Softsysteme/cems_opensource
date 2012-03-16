@@ -3050,6 +3050,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_linked.gif
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_nocvs.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/propertysheet/PropertySheetView.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/ConfigureSQLConnectorComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/ConfigureSQLConnectorPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/EmulatorTechnologyWizardPage.java -text svneol=unset#text/plain
@@ -3133,6 +3135,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStatementsW
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleWebClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSQLConnectorWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerFullFeaturedJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
