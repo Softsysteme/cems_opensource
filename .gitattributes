@@ -2161,6 +2161,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/ExceptionStep.java -text svneol=u
 Studio/src/com/twinsoft/convertigo/beans/steps/ExceptionStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/FunctionStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/FunctionStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStep.java -text
+Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/IThenElseContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStepBeanInfo.java -text svneol=unset#text/plain
@@ -2293,6 +2295,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/function_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/function_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.gif -text
@@ -2353,6 +2357,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ElementStep.properties -text 
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ExceptionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/FunctionStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/GenerateHashCodeStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistStep.properties -text svneol=unset#text/plain
