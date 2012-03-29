@@ -346,7 +346,6 @@ Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
 Studio/lib/msxml.jar -text svneol=unset#unset
-Studio/lib/mysql-connector-java-5.1.6.jar -text
 Studio/lib/mysql-connector.jar -text
 Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
