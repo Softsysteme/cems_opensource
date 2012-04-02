@@ -3478,6 +3478,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/ZipUtils.java -text
 Studio/tomcat/LICENSE -text
 Studio/tomcat/NOTICE -text
 Studio/tomcat/RELEASE-NOTES -text
+Studio/tomcat/conf/.keystore -text
 Studio/tomcat/conf/context.xml -text
 Studio/tomcat/conf/tomcat-users.xml -text
 Studio/tomcat/conf/web.xml -text
