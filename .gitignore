@@ -37,6 +37,10 @@ Studio/projects/lib_GoogleMaps/_private
 Studio/projects/lib_GoogleSpreadsheets/*.temp.*
 Studio/projects/lib_GoogleSpreadsheets/_data
 Studio/projects/lib_GoogleSpreadsheets/_private
+Studio/projects/lib_Keyring/_data
+Studio/projects/lib_Keyring/_private
+Studio/projects/lib_Keyring/lib_Keyring.temp.wsdl
+Studio/projects/lib_Keyring/lib_Keyring.temp.xsd
 Studio/projects/lib_LinkedIn/*.temp.*
 Studio/projects/lib_LinkedIn/_data
 Studio/projects/lib_LinkedIn/_private

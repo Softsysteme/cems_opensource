@@ -585,6 +585,20 @@ Studio/projects/lib_GoogleSpreadsheets/template/newWorksheet.xml -text svneol=un
 Studio/projects/lib_GoogleSpreadsheets/template/newWorksheet.xsl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleSpreadsheets/template/tableData.xml -text svneol=unset#text/plain
 Studio/projects/lib_GoogleSpreadsheets/template/tableData.xsl -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.project -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery-ui-1.8.18.custom.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.xml -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/admin/js/users.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/admin/users.html -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/css/keyring.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/js/keychain.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/keychain.html -text svneol=unset#text/plain
 Studio/projects/lib_LinkedIn/.project -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text

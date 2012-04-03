@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="lib_Keyring" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_Keyring" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_Keyring_ns="http://www.convertigo.com/convertigo/projects/lib_Keyring" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/lib_Keyring"><xsd:include schemaLocation="lib_Keyring.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="lib_KeyringPortType">
+  </wsdl:portType>
+  <wsdl:binding name="lib_KeyringSOAPBinding" type="lib_Keyring_ns:lib_KeyringPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="lib_Keyring">
+    <wsdl:port name="lib_KeyringSOAP" binding="lib_Keyring_ns:lib_KeyringSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/lib_Keyring/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
