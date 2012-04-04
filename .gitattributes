@@ -4532,7 +4532,6 @@ Studio/tomcat/webapps/convertigo/licenses/java.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/jcharts.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/jettison.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/openssl.txt -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/licenses/optimumx.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/rhino-debugger.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/scribe.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/project.html -text svneol=unset#text/plain
