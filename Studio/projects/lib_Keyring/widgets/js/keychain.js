@@ -77,6 +77,7 @@ $(function() {
 						{
 							text: buttonYes,
 							click: function() {
+								updateKeychain(user, application, username, oldPassword, newPassword1);
 								$(this).dialog("close");
 							}
 						},
@@ -94,7 +95,7 @@ $(function() {
 
 function createAppList() {
 	$.post(
-			convertigoBase + "/projects/Keyring/.xml",
+			convertigoBase + "/projects/lib_Keyring/.xml",
 			{
 				__sequence: "GetUserKeychain",
 				__context: "ctxGetUserKeychain",
@@ -141,9 +142,12 @@ function createAppList() {
     });
 }
 
-
 function showKeychainData(application, username) {
 	console.log(application);
 	$("#form-application").val(application);
 	$("#form-username").val(username);
+}
+
+function updateKeychain(user, application, username, oldPassword, newPassword1) {
+	
 }

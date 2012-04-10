@@ -258,44 +258,6 @@
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="DB__UpdateAuthenticationResponseData"/>
-<xsd:element name="UpdateAuthentication" type="lib_Keyring_ns:UpdateAuthenticationRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="UpdateAuthenticationResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="lib_Keyring_ns:UpdateAuthenticationResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="UpdateAuthenticationRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="user" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="application" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="username" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="password" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="UpdateAuthenticationResponseData">
-<xsd:sequence/>
-</xsd:complexType>
 <xsd:element name="DB__UpdateAuthentication" type="lib_Keyring_ns:DB__UpdateAuthenticationRequestData">
 <xsd:annotation/>
 </xsd:element>
@@ -626,7 +588,7 @@
 <xsd:complexType name="sequence1333099418274StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -634,7 +596,7 @@
 <xsd:complexType name="sequence1333108556929StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -642,7 +604,7 @@
 <xsd:complexType name="sequence1333108557843StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -650,7 +612,7 @@
 <xsd:complexType name="sequence1333108558977StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -658,7 +620,7 @@
 <xsd:complexType name="sequence1333108559874StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -666,7 +628,7 @@
 <xsd:complexType name="sequence1333108561762StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -674,7 +636,7 @@
 <xsd:complexType name="sequence1333111615146StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -714,17 +676,17 @@
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="SetAuthentication" type="lib_Keyring_ns:SetAuthenticationRequestData">
+<xsd:element name="AddAuthentication" type="lib_Keyring_ns:AddAuthenticationRequestData">
 <xsd:annotation/>
 </xsd:element>
-<xsd:element name="SetAuthenticationResponse">
+<xsd:element name="AddAuthenticationResponse">
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="response" type="lib_Keyring_ns:SetAuthenticationResponseData"/>
+<xsd:element name="response" type="lib_Keyring_ns:AddAuthenticationResponseData"/>
 </xsd:sequence>
 </xsd:complexType>
 </xsd:element>
-<xsd:complexType name="SetAuthenticationRequestData">
+<xsd:complexType name="AddAuthenticationRequestData">
 <xsd:annotation/>
 <xsd:sequence>
 <xsd:element name="user" type="xsd:string">
@@ -749,7 +711,7 @@
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:complexType name="SetAuthenticationResponseData">
+<xsd:complexType name="AddAuthenticationResponseData">
 <xsd:sequence>
 <xsd:element minOccurs="0" name="transaction" type="lib_Keyring_ns:transaction1333098388218StepType">
 <xsd:annotation/>
@@ -1208,7 +1170,7 @@
 <xsd:complexType name="sequence1333373556440StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1240,7 +1202,7 @@
 <xsd:complexType name="sequence1333108554693StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1248,7 +1210,7 @@
 <xsd:complexType name="sequence1333373555122StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1264,7 +1226,7 @@
 <xsd:complexType name="sequence1333111624745StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1272,7 +1234,7 @@
 <xsd:complexType name="sequence1333111616762StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1288,7 +1250,7 @@
 <xsd:complexType name="sequence1333373555808StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1296,7 +1258,7 @@
 <xsd:complexType name="sequence1333111615873StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1336,7 +1298,7 @@
 <xsd:complexType name="sequence1333111616218StepType">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:SetAuthenticationResponseData">
+<xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:AddAuthenticationResponseData">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
@@ -1430,5 +1392,48 @@
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
+</xsd:complexType>
+<xsd:element name="UpdateAuthentication" type="lib_Keyring_ns:UpdateAuthenticationRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="UpdateAuthenticationResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="lib_Keyring_ns:UpdateAuthenticationResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="UpdateAuthenticationRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="user" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="application" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="username" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="oldPassword" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="newPassword" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="UpdateAuthenticationResponseData">
+<xsd:sequence/>
 </xsd:complexType>
 </xsd:schema>
