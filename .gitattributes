@@ -3088,6 +3088,28 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_default.gi
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_linked.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_nocvs.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/propertysheet/PropertySheetView.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/ReferencesView.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefContentProvider.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefLabelProvider.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/handlers_sc_entry.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/handlers_sc_exit.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/project_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/references_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/screenclass_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/sequence_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/transaction_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/variable_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/AbstractNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/AbstractParentNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/EntryHandlerFolder.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ExitHandlerFolder.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/Folder.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProjectNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ReferenceObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RootNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ScreenClassNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/SequenceNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/ConfigureSQLConnectorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/ConfigureSQLConnectorPage.java -text svneol=unset#text/plain
