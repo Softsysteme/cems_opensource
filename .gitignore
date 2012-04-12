@@ -83,11 +83,6 @@ Studio/projects/sample_database/*.temp.*
 Studio/projects/sample_database/Traces
 Studio/projects/sample_database/_data
 Studio/projects/sample_database/_private
-Studio/projects/sample_databaseWebService/.project
-Studio/projects/sample_databaseWebService/.settings
-Studio/projects/sample_databaseWebService/Traces
-Studio/projects/sample_databaseWebService/_data
-Studio/projects/sample_databaseWebService/_private
 Studio/projects/sample_documentation_CLI/.settings
 Studio/projects/sample_documentation_CLI/_data
 Studio/projects/sample_documentation_CLI/_private

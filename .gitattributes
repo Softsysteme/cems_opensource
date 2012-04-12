@@ -817,17 +817,6 @@ Studio/projects/sample_database/.project -text svneol=unset#text/plain
 Studio/projects/sample_database/sample_database.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_database/sample_database.xml -text svneol=unset#text/plain
 Studio/projects/sample_database/sample_database.xsd -text svneol=unset#text/plain
-Studio/projects/sample_databaseWebService/database_creation_script.sql -text
-Studio/projects/sample_databaseWebService/error.xsl -text svneol=unset#text/plain
-Studio/projects/sample_databaseWebService/error_fr.xsl -text svneol=unset#text/plain
-Studio/projects/sample_databaseWebService/img/close_window.png -text
-Studio/projects/sample_databaseWebService/img/e_back.gif -text
-Studio/projects/sample_databaseWebService/img/e_refresh.gif -text
-Studio/projects/sample_databaseWebService/img/loading.gif -text
-Studio/projects/sample_databaseWebService/img/title.png -text
-Studio/projects/sample_databaseWebService/index.jsp -text svneol=unset#text/plain
-Studio/projects/sample_databaseWebService/sample_databaseWebService.xml -text svneol=unset#text/plain
-Studio/projects/sample_databaseWebService/script/scriptlib.js -text
 Studio/projects/sample_documentation_CLI/.project -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLI/Traces/demo5250Connector/legacyintegrator-01.etr -text
 Studio/projects/sample_documentation_CLI/articlesList.xsl -text svneol=unset#text/plain
