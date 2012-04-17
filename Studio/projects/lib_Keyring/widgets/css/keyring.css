@@ -30,6 +30,13 @@ h2 {
 	font-weight: normal;
 }
 
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #00A4C8;
+	font-weight: normal;
+}
+
 a,a:visited {
 	color: #666666;
 	text-decoration: none;
@@ -39,7 +46,7 @@ a:hover {
 	color: #00a4c8;
 }
 
-#app-list-title {
+.page-title {
 	background-color: #fff;
 	margin-bottom: 10px;
 	padding: 50px 20px 0px;
@@ -53,23 +60,23 @@ a:hover {
 	border-bottom-left-radius: 5px;
 }
 
-#app-menu {
+.action-menu {
 	float: left;
 	width: 22%;
 }
 
-#app-menu ul {
+.action-menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#app-menu ul li {
+.action-menu ul li {
 	padding: 0;
 	margin: 2px 0;
 }
 
-#app-menu .ui-state-default,#app-menu .ui-widget-content .ui-state-default,#app-menu .ui-widget-header .ui-state-default
+.action-menu .ui-state-default,.action-menu .ui-widget-content .ui-state-default,.action-menu .ui-widget-header .ui-state-default
 	{
 	border: 1px solid #ccc;
 	background: #fff url(../img/bg_menu.jpg) 50% 50% repeat-x;
@@ -79,13 +86,13 @@ a:hover {
 	text-align: left;
 }
 
-#app-menu a:hover {
+.action-menu a:hover {
 	color: #00a4c8;
 	background: none;
 	background: #fff url(../img/menu_fleche.png) no-repeat 98% 50%;
 }
 
-#keychain-entry {
+.form {
 	float: right;
 	width: 72%;
 	background-color: #fff;
@@ -102,4 +109,18 @@ a:hover {
 	padding-top: 10px;
 	visibility: hidden;
 	display: none;
+}
+
+.hide-on-load {
+	display: none;
+}
+
+.dialog-application {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.connected-user {
+	font-weight: bold;
+	font-style: italic;
 }
