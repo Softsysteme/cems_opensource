@@ -182,6 +182,7 @@ $(function() {
 });
 
 function createAppList() {
+	console.log("Getting application list");
 	$.post(
 			convertigoBase + "/projects/lib_Keyring/.xml",
 			{
@@ -319,7 +320,7 @@ function addKeychainEntry(application, username, password) {
 
 }
 
-function updateKeychainEntry(application, username, oldPassword, newPassword1) {
+function updateKeychainEntry(application, username, oldPassword, newPassword) {
 	$.post(
 			convertigoBase + "/projects/lib_Keyring/.xml",
 			{
@@ -332,6 +333,9 @@ function updateKeychainEntry(application, username, oldPassword, newPassword1) {
 			},
 			function(data) {
 				console.log("Entry updated for application: " + application);
+
+				createAppList();
+				
 				$("#dialog-info-keychain-entry-updated").dialog({
 					resizable: false,
 					modal: true,
@@ -340,8 +344,6 @@ function updateKeychainEntry(application, username, oldPassword, newPassword1) {
 									text: "OK",
 									click: function() {
 										$(this).dialog("close");
-										
-										createAppList();
 										$("#button-new-keychain-entry").click();
 									}
 								}
