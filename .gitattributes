@@ -2366,6 +2366,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/break_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/break_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.gif -text
