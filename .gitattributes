@@ -3735,6 +3735,9 @@ Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svne
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/emulators.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/jdbc_drivers.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/log4j.properties -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/transport/http/AxisAdminServlet.class -text
+Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/webapp/AdminAgent.class -text
+Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/webapp/AxisAdminServlet.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/visualproxy.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/conf/axis2.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/certificates/Batch_certif.bat -text
@@ -3769,17 +3772,19 @@ Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/Term
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys_server.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys_studio.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/login.txt -text
-Studio/tomcat/webapps/convertigo/WEB-INF/modules/addressing-1.41.mar -text
-Studio/tomcat/webapps/convertigo/WEB-INF/modules/mex-1.41.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/addressing-1.6.1.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/axis2-jaxws-mar-1.6.1.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/mex-1.6.1.mar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/modules/modules.list -text
-Studio/tomcat/webapps/convertigo/WEB-INF/modules/ping-1.41.mar -text
-Studio/tomcat/webapps/convertigo/WEB-INF/modules/scripting-1.41.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/mtompolicy-1.6.1.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/ping-1.6.1.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/scripting-1.6.1.mar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/modules/smtpfault.mar -text
-Studio/tomcat/webapps/convertigo/WEB-INF/modules/soapmonitor-1.41.mar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/modules/soapmonitor-1.6.1.mar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/services/RemoteAdministration/META-INF/RemoteAdministration.wsdl -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/services/RemoteAdministration/META-INF/services.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/services/services.list -text
-Studio/tomcat/webapps/convertigo/WEB-INF/services/version.aar -text
+Studio/tomcat/webapps/convertigo/WEB-INF/services/version-1.6.1.aar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/sql/create_cache_table_mysql.sql -text
 Studio/tomcat/webapps/convertigo/WEB-INF/sql/create_cache_table_sqlserver.sql -text
 Studio/tomcat/webapps/convertigo/WEB-INF/sql/create_ticket_table_mysql.sql -text
@@ -4432,6 +4437,7 @@ Studio/tomcat/webapps/convertigo/axis2-web/ViewGlobalHandlers.jsp -text svneol=u
 Studio/tomcat/webapps/convertigo/axis2-web/ViewServiceHandlers.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/admin.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/css/axis-style.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/axis2-web/deleteService.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/disengage.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/engagingglobally.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/engagingtoanoperation.jsp -text svneol=unset#text/plain
