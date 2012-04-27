@@ -30,10 +30,10 @@ import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.axis2.transport.mail.server.MailAddress;
 import org.apache.commons.fileupload.FileItem;
 import org.w3c.dom.Document;
 
@@ -124,7 +124,7 @@ public class Deploy extends UploadService {
 
 						message.addRecipient(
 								Message.RecipientType.TO,
-								new MailAddress(EnginePropertiesManager
+								new InternetAddress(EnginePropertiesManager
 										.getProperty(PropertyName.NOTIFICATIONS_TARGET_EMAIL)));
 						message.setSubject("[trial] deployment of " + fProjectName + " by " + fUser);
 						message.setText(message.getSubject() + "\n"
