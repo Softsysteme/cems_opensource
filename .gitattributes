@@ -2044,6 +2044,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/IfThenElseStatement.java -te
 Studio/src/com/twinsoft/convertigo/beans/statements/IfThenElseStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatement.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsStatementBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsThenElseStatement.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/IfXpathExistsThenElseStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetCheckedStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/InputHtmlSetFileStatement.java -text svneol=unset#text/plain
@@ -2209,6 +2211,7 @@ Studio/src/com/twinsoft/convertigo/beans/statements/res/HandlerStatement.propert
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfThenElseStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/IfXpathExistsStatement.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/res/IfXpathExistsThenElseStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetCheckedStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetFileStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/InputHtmlSetSelectedStatement.properties -text
