@@ -43,7 +43,7 @@ import com.twinsoft.convertigo.engine.EnginePropertiesManager.PropertyName;
 import com.twinsoft.convertigo.engine.admin.services.UploadService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
-import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition.Role;
+import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 import com.twinsoft.convertigo.engine.admin.util.ServiceUtils;
 
 @ServiceDefinition(name = "Deploy", roles = { Role.WEB_ADMIN, Role.TRIAL }, parameters = { @ServiceParameterDefinition(name = "bAssembleXsl", description = "assembling xsl") }, returnValue = "")

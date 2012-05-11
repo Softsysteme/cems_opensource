@@ -40,11 +40,11 @@ import com.twinsoft.convertigo.beans.core.Sequence;
 import com.twinsoft.convertigo.beans.core.TestCase;
 import com.twinsoft.convertigo.beans.core.Transaction;
 import com.twinsoft.convertigo.beans.core.Variable;
+import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
-import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition.Role;
 import com.twinsoft.convertigo.engine.enums.Visibility;
 
 @ServiceDefinition(
@@ -65,8 +65,6 @@ public class GetRequestables extends XmlService {
 
 		String projectName = request.getParameter("projectName");
 
-//		root.setAttribute("name", projectName);
-
 		Project project = Engine.theApp.databaseObjectsManager.getProjectByName(projectName);
 		
 		Element e_project = createDatabaseObjectElement(document, project);		
@@ -74,16 +72,26 @@ public class GetRequestables extends XmlService {
 		e_project.setAttribute("defaultConnector", defaultConnector.getName());	
 		e_project.setAttribute("defaultTransaction", defaultConnector.getDefaultTransaction().getName());	
 
+		String sessionId = request.getSession().getId();
+		boolean bAdminRole = Engine.theApp.authenticatedSessionManager.hasRole(sessionId, Role.WEB_ADMIN);
+		
 		for (Connector connector : project.getConnectorsList()) {			
 			Element e_connector = createDatabaseObjectElement(document, connector);				
-			for (Transaction transaction : connector.getTransactionsList()) {						
-				e_connector.appendChild(createRequestableElement(document, transaction));				
+			for (Transaction transaction : connector.getTransactionsList()) {
+				// WEB_ADMIN role is allowed to execute all requestables
+				if ((transaction.isPublicAccessibility()) || bAdminRole) {
+					e_connector.appendChild(createRequestableElement(document, transaction));				
+				}
 			}
 			e_project.appendChild(e_connector);
 		}
 
-		for (Sequence sequence : project.getSequencesList())
-			e_project.appendChild(createRequestableElement(document, sequence));
+		for (Sequence sequence : project.getSequencesList()) {
+			// WEB_ADMIN role is allowed to execute all requestables
+			if ((sequence.isPublicAccessibility()) || bAdminRole) {
+				e_project.appendChild(createRequestableElement(document, sequence));
+			}
+		}
 		
 		for (MobileDevice device : project.getMobileDeviceList()) {
 			Element e_device = createDatabaseObjectElement(document, device);

@@ -3327,6 +3327,8 @@ Studio/src/com/twinsoft/convertigo/engine/AbstractContext.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractRunnableManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/AttachmentManager.java -text
+Studio/src/com/twinsoft/convertigo/engine/AuthenticatedSessionManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/AuthenticationException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/BillingManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/CertificateManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/ConnectorsMonitor.java -text
@@ -3378,7 +3380,6 @@ Studio/src/com/twinsoft/convertigo/engine/UsageMonitor.java -text svneol=unset#t
 Studio/src/com/twinsoft/convertigo/engine/Version.java -text
 Studio/src/com/twinsoft/convertigo/engine/admin/AdminServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/AdminServletDoc.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/admin/AuthenticationException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/logmanager/LogManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/logmanager/LogServiceHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/logmanager/TemporalInputStream.java -text svneol=unset#text/plain
