@@ -3026,6 +3026,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RemovableHeadersEdit
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ReplacementsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RequestableAccessibilityEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/RowEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ScSourceEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ScSourceEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ScriptCellEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SequenceSheetLocationEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SequenceStepVariablesEditor.java -text svneol=unset#text/plain
