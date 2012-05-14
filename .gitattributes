@@ -2833,6 +2833,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfStatementActi
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfThenElseStatementAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfThenElseStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfXpathExistsStatementAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfXpathExistsThenElseStatementAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToMultiValuedVariableAction.java -text svneol=unset#text/plain
