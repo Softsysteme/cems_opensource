@@ -114,6 +114,7 @@ Studio/icons/studio/disconnect.d.gif -text
 Studio/icons/studio/disconnect.gif -text
 Studio/icons/studio/error.gif -text
 Studio/icons/studio/error_16x16.gif -text
+Studio/icons/studio/excel.gif -text
 Studio/icons/studio/expand_all_nodes.gif -text
 Studio/icons/studio/explorer.gif -text
 Studio/icons/studio/find.gif -text
@@ -3284,6 +3285,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleStepsWizard
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewRefManualSampleWebClipperWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSQLConnectorWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSQLSampleHSQLDBWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSQLSampleXLSWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerFullFeaturedJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
