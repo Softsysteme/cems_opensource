@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_database_XLS" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_database_XLS" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_database_XLS_ns="http://www.convertigo.com/convertigo/projects/sample_database_XLS">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_database_XLS"><xsd:include schemaLocation="sample_database_XLS.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sample_database_XLSPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sample_database_XLSSOAPBinding" type="sample_database_XLS_ns:sample_database_XLSPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sample_database_XLS">
+    <wsdl:port name="sample_database_XLSSOAP" binding="sample_database_XLS_ns:sample_database_XLSSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_database_XLS/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

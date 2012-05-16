@@ -83,6 +83,10 @@ Studio/projects/sample_database_HSQLDB/*.temp.*
 Studio/projects/sample_database_HSQLDB/Traces
 Studio/projects/sample_database_HSQLDB/_data
 Studio/projects/sample_database_HSQLDB/_private
+Studio/projects/sample_database_XLS/*.temp.*
+Studio/projects/sample_database_XLS/Traces
+Studio/projects/sample_database_XLS/_data
+Studio/projects/sample_database_XLS/_private
 Studio/projects/sample_documentation_CLI/.settings
 Studio/projects/sample_documentation_CLI/_data
 Studio/projects/sample_documentation_CLI/_private
