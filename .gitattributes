@@ -888,10 +888,10 @@ Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/server.js -te
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xsd -text svneol=unset#text/plain
-Studio/projects/sample_database/.project -text svneol=unset#text/plain
-Studio/projects/sample_database/sample_database.wsdl -text svneol=unset#text/plain
-Studio/projects/sample_database/sample_database.xml -text svneol=unset#text/plain
-Studio/projects/sample_database/sample_database.xsd -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/.project -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database.xml -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLI/.project -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLI/Traces/demo5250Connector/legacyintegrator-01.etr -text
 Studio/projects/sample_documentation_CLI/articlesList.xsl -text svneol=unset#text/plain

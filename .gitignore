@@ -79,10 +79,10 @@ Studio/projects/sampleMobileWebToPdf/.settings
 Studio/projects/sampleMobileWebToPdf/Traces
 Studio/projects/sampleMobileWebToPdf/_data
 Studio/projects/sampleMobileWebToPdf/_private
-Studio/projects/sample_database/*.temp.*
-Studio/projects/sample_database/Traces
-Studio/projects/sample_database/_data
-Studio/projects/sample_database/_private
+Studio/projects/sample_database_HSQLDB/*.temp.*
+Studio/projects/sample_database_HSQLDB/Traces
+Studio/projects/sample_database_HSQLDB/_data
+Studio/projects/sample_database_HSQLDB/_private
 Studio/projects/sample_documentation_CLI/.settings
 Studio/projects/sample_documentation_CLI/_data
 Studio/projects/sample_documentation_CLI/_private
