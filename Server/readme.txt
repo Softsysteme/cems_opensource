@@ -1,6 +1,15 @@
 Convertigo Server
 =================
 
+Convertigo Server Community Edition (CE) Licence
+================================================
+Convertigo Server CE is based on Affero GPL V3 Licence. Some modules such as the HTML Connector and the
+Legacy Connector are included in object code only, and based on the Convertigo Enterprise Licence.
+These modules are provided in Convertigo Server CE for demo purposes only.
+
+Convertigo Server Compilation
+=============================
+
 In order to compile Convertigo Server project, you must import the whole project from
 our SVN repository inside your Eclipse workspace.
 
