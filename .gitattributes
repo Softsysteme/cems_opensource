@@ -2412,6 +2412,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/if_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_16x16.gif -text
@@ -2454,6 +2456,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/res/AttributeStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BlockStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BranchStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BreakStep.properties -text svneol=unset#text/plain
