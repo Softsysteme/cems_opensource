@@ -2244,6 +2244,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/res/ThenStatement.properties
 Studio/src/com/twinsoft/convertigo/beans/statements/res/WaitTriggerStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/WhileStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/XpathableStatement.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/AttributeStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/AttributeStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/BlockStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/BlockStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/BranchStep.java -text svneol=unset#text/plain
