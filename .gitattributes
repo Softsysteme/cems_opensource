@@ -3120,7 +3120,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/EngineLogViewComparator
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/EngineLogViewLabelProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/EngineLogViewModelProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/LogLine.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/Snippet165.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/clear_logs.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager.java -text
