@@ -3,7 +3,9 @@
  */
 console.log("Convertigo Keyring library - user keychain");
 
-var user = "fabien";
+var urlParams = getHashParams();
+var user = urlParams["user"];
+
 var convertigoBase = window.location.pathname.substring(0, window.location.pathname.indexOf("/", 1));
 var notSetApplications = [];
 
