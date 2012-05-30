@@ -693,6 +693,7 @@ Studio/projects/lib_Keyring/widgets/img/bg_menu.jpg -text
 Studio/projects/lib_Keyring/widgets/img/menu_fleche.png -text
 Studio/projects/lib_Keyring/widgets/img/wait.gif -text
 Studio/projects/lib_Keyring/widgets/js/admin.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/js/common.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/widgets/js/keychain.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/widgets/keychain.html -text svneol=unset#text/plain
 Studio/projects/lib_LinkedIn/.project -text
