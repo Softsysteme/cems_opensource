@@ -13,6 +13,7 @@
 		<script src="../js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
 		<script src="../js/i18n/grid.locale-fr.js" type="text/javascript"></script>
 		<script src="../js/jquery.jqGrid.min.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
 		<script src="js/admin.js" type="text/javascript"></script>
 	</head>
 	<body>
@@ -39,16 +40,20 @@
 		
 		<div id="applications" class="form hide-on-load">
 			<h3>Applications</h3>
-			<div id="applications-wait"><img src="img/wait.gif"/></div>
 			<div id="applications-content">
 				<table id="applications-grid"></table>
-				<button id="applications-update">Mettre à jour</button>
+				<button id="applications-update">Modifier</button>
+				<button id="applications-delete">Supprimer</button>
+				
+				<div>
+					<button id="applications-add">Ajouter</button>
+					<input type="text" id="applications-add-application"/>
+				</div>
 			</div>
 		</div>
 		
 		<div id="users" class="form hide-on-load">
 			<h3>Utilisateurs</h3>
-			<div id="users-wait"><img src="img/wait.gif"/></div>
 			<div id="users-content">
 				<table id="users-grid"></table>
 				<button id="users-update">Mettre à jour</button>
@@ -76,5 +81,7 @@
 			</div>
 		</div>
 
+		<div class="modal"></div>
+		
 	</body>
 </html>
