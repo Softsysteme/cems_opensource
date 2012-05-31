@@ -2939,6 +2939,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SheetEditAction.java -t
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ShowStepInPickerAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ShowStepSourceInPickerAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/StatementAddVariableToTransactionAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/StepExportVariablesToSequenceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/StepImportSequenceVariablesAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/StepImportSequenceWsdlAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/StepImportTransactionVariablesAction.java -text svneol=unset#text/plain
