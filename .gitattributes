@@ -3355,6 +3355,13 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_bb6.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_senchatouch.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/install/ChooseWorkspaceLocationPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/install/InstallWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ActivationKeyPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ChooseWorkspaceLocationPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistrationPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistreWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SelectSamplesPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SetupWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/util/MobileUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/AbstractContext.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractManager.java -text
