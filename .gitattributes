@@ -42,6 +42,7 @@ Studio/cheats/CreateTransactions.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsE.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsWithExemple.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsWithExempleE.xml -text svneol=unset#text/plain
+Studio/icons/boite-convertigo6.png -text
 Studio/icons/connector_color_16x16.gif -text
 Studio/icons/consoles/connector.gif -text
 Studio/icons/consoles/convertigo.gif -text
