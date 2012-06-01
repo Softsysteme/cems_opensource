@@ -312,10 +312,10 @@
                             <java.lang.String value="Rewrite_absolute_URLs"/>
                         </property>
                         <property name="regexp">
-                            <java.lang.String value="([&quot;']http[s]?)://"/>
+                            <java.lang.String value="(([&quot;'])(http[s]?))://"/>
                         </property>
                         <property name="replacement">
-                            <java.lang.String value="$siteclipper_path$/$1/"/>
+                            <java.lang.String value="$2$siteclipper_path$/$3/"/>
                         </property>
                     </extractionrule>
                 </screenclass>
