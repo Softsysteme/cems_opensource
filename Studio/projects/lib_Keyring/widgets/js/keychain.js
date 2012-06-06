@@ -115,40 +115,22 @@ $(function() {
 		}
 		$(".dialog-username").text(username);
 		
-		var oldPassword = $("#form-old-password").val();
 		var newPassword1 = $("#form-new-password1").val();
 		var newPassword2 = $("#form-new-password2").val();
 
-		if (oldPassword === "") {
-			if (newPassword1 !== "" || newPassword2 !== "") {
-				$("#dialog-error-missing-old-password").dialog({
-					modal: true,
-					buttons: {
-						Ok: function() {
-							$(this).dialog("close");
-							$("#form-old-password").focus();
-						}
+		if (newPassword1 === "" || newPassword2 === "" || newPassword1 !== newPassword2) {
+			$("#dialog-error-new-passwords").dialog({
+				modal: true,
+				buttons: {
+					Ok: function() {
+						$(this).dialog("close");
+						$("#form-new-password1").focus();
 					}
-				});
-				return;
-			}
-			$(".dialog-password").text($("#dialog-confirm-update-keychain-entry").attr("labelPasswordNotChanged"));
+				}
+			});
+			return;
 		}
-		else {
-			if (newPassword1 === "" || newPassword2 === "" || newPassword1 !== newPassword2) {
-				$("#dialog-error-new-passwords").dialog({
-					modal: true,
-					buttons: {
-						Ok: function() {
-							$(this).dialog("close");
-							$("#form-new-password1").focus();
-						}
-					}
-				});
-				return;
-			}
-			$(".dialog-password").text("*********");
-		}
+		$(".dialog-password").text("*********");
 		
 		var buttonYes = $("#dialog-confirm-update-keychain-entry").attr("buttonYes");
 		var buttonNo = $("#dialog-confirm-update-keychain-entry").attr("buttonNo");
@@ -162,10 +144,9 @@ $(function() {
 							click: function() {
 								var application = $("#form-application").val();
 								var username = $("#form-username").val();
-								var oldPassword = $("#form-old-password").val();
 								var newPassword1 = $("#form-new-password1").val();
 								
-								updateKeychainEntry(application, username, oldPassword, newPassword1);
+								updateKeychainEntry(application, username, newPassword1);
 								$(this).dialog("close");
 							}
 						},
@@ -324,7 +305,7 @@ function addKeychainEntry(application, username, password) {
 
 }
 
-function updateKeychainEntry(application, username, oldPassword, newPassword) {
+function updateKeychainEntry(application, username, newPassword) {
 	$.post(
 			convertigoBase + "/projects/lib_Keyring/.xml",
 			{
@@ -332,8 +313,7 @@ function updateKeychainEntry(application, username, oldPassword, newPassword) {
 				user: user,
 				application: application,
 				username: username,
-				oldPassword: oldPassword,
-				newPassword: newPassword
+				password: newPassword
 			},
 			function(data) {
 				console.log("Entry updated for application: " + application);
