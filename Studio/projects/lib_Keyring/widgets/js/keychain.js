@@ -248,6 +248,8 @@ function getNotSetApplications() {
 				
 				var $data = $(data);
 				
+				notSetApplications = [];
+				
 				$data.find("application").each(function(index) {
 					var $application = $(this);
 					var applicationName = $application.attr("name");

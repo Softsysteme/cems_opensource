@@ -7,24 +7,74 @@
     <wsdl:part name="parameters" element="lib_Keyring_ns:DeleteApplication">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="UpdateUserRequest">
+    <wsdl:part name="parameters" element="lib_Keyring_ns:UpdateUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateUserResponse">
+    <wsdl:part name="parameters" element="lib_Keyring_ns:UpdateUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateApplicationRequest">
+    <wsdl:part name="parameters" element="lib_Keyring_ns:UpdateApplication">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateApplicationResponse">
+    <wsdl:part name="parameters" element="lib_Keyring_ns:UpdateApplicationResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="DeleteApplicationResponse">
     <wsdl:part name="parameters" element="lib_Keyring_ns:DeleteApplicationResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="lib_KeyringPortType">
     <wsdl:operation name="DeleteApplication">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <wsdl:input message="lib_Keyring_ns:DeleteApplicationRequest">
     </wsdl:input>
       <wsdl:output message="lib_Keyring_ns:DeleteApplicationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplication">
+<wsdl:documentation/>
+      <wsdl:input message="lib_Keyring_ns:UpdateApplicationRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_Keyring_ns:UpdateApplicationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="lib_Keyring_ns:UpdateUserRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_Keyring_ns:UpdateUserResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="lib_KeyringSOAPBinding" type="lib_Keyring_ns:lib_KeyringPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="DeleteApplication">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <soap:operation soapAction="lib_Keyring?DeleteApplication"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplication">
+<wsdl:documentation/>
+      <soap:operation soapAction="lib_Keyring?UpdateApplication"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="lib_Keyring?UpdateUser"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>

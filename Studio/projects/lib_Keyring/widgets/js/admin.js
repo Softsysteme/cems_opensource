@@ -5,6 +5,11 @@ console.log("Convertigo Keyring library - administration");
 
 var $applicationsGrid;
 var $usersGrid;
+var applications = [];
+var $userApplicationList;
+
+var current_iRow;
+var current_iCol;
 
 $(function() {
 	console.log("Document ready!");
@@ -13,32 +18,50 @@ $(function() {
 		datatype: "local",
 	   	colNames:['Nom'],
 	   	colModel:[
-	   		{name:'name', index:'name asc', width:400}
+	   		{name:'name', editable:true, edittype:'text', width:400}
 	   	],
-	   	rowNum:10,
-	   	rowList:[10,20,30],
-	   	sortname: 'Nom',
-	    viewrecords: true,
-	    sortorder: "desc"
+	   	sortname: 'name',
+	   	sortorder: "asc",
+	   	cellEdit: true,
+	   	cellsubmit: "clientArray",
+	    afterSaveCell: function(rowid, cellname, value, iRow, iCol) {
+	    	updateApplication(rowid, value);
+	    },
+	    beforeEditCell: function(rowid, cellname, value, iRow, iCol) {
+	    	current_iRow = iRow;
+	    	current_iCol = iCol;
+	    }
 	}).navGrid('#applications-grid-pager',{edit:false,add:false,del:false});
 	
 	jQuery("#users-grid").jqGrid({
 		datatype: "local",
-	   	colNames:['ID','Nom','Applications'],
+	   	colNames:['Nom','Applications'],
 	   	colModel:[
-	   		{name:'id',index:'id', width:55},
-	   		{name:'name',index:'name asc, invdate', width:200},
-	   		{name:'applications',index:'name asc, invdate', width:400}
+	   		{name:'name', editable:true, edittype:'text', width:200},
+	   		{name:'applications', editable:false, width:400}
 	   	],
-	   	rowNum:10,
-	   	rowList:[10,20,30],
-	   	sortname: 'Nom',
-	    viewrecords: true,
-	    sortorder: "desc"
+	   	sortname: 'name',
+	   	sortorder: "asc",
+	   	cellEdit: true,
+	   	cellsubmit: "clientArray",
+	    afterSaveCell: function(rowid, cellname, value, iRow, iCol) {
+	    	updateUser(rowid, value);
+	    },
+	    beforeEditCell: function(rowid, cellname, value, iRow, iCol) {
+	    	current_iRow = iRow;
+	    	current_iCol = iCol;
+	    },
+	    onCellSelect: function(rowid, iRow, iCol, e) {
+	    	var selectedRow = $usersGrid.getRowData(rowid);
+	    	var selectedUser = selectedRow["name"];
+		
+	    	updateUserApplicationList(selectedUser);
+	    }
 	}).navGrid('#users-grid-pager',{edit:false,add:false,del:false});
 
 	$applicationsGrid = $("#applications-grid");
 	$usersGrid = $("#users-grid");
+	$userApplicationList = $("#users-user-application-list");
 
 	$("button").button();
 	
@@ -48,11 +71,11 @@ $(function() {
 	});
 
 	$("#applications-add").click(function() {
-		addApplication();
+		addApplication($("#applications-add-application").val());
 	});
 
 	$("#applications-delete").click(function() {
-		deleteApplication();
+		deleteApplication($applicationsGrid.getGridParam('selrow'));
 	});
 
 	// Users
@@ -60,15 +83,27 @@ $(function() {
 		getUsers();
 	});
 
+	$("#users-add").click(function() {
+		addUser($("#users-add-user").val());
+	});
+
+	$("#users-delete").click(function() {
+		deleteUser($usersGrid.getGridParam('selrow'));
+	});
+	
+	$("#users-add-application").click(function() {
+		addApplicationForUser($usersGrid.getGridParam('selrow'));
+	});
+
+	getApplications();
+
 });
 
-function addApplication() {
-	var newApp = $("#applications-add-application").val();
-	
+function addApplication(newApp) {
 	if (newApp.length > 0) {
 		libKeyringCall(
 			"AddApplication",
-			"ctxApplications",
+			"default",
 			{ application: newApp },
 			function($data) {
 				var $application = $data.find("application");
@@ -76,22 +111,33 @@ function addApplication() {
 				var applicationName = $application.attr("name");
 				$applicationsGrid.addRowData(applicationID, { name: applicationName });
 				
-				$applicationsGrid.sortGrid("name");
+				$applicationsGrid.sortGrid("name", true);
 			}
 		);		
 	}
 }
 
-function deleteApplication() {
-	var selectedRowId = $applicationsGrid.getGridParam('selrow');
-	
+function updateApplication(appID, appName) {
+	if (appName.length > 0) {
+		libKeyringCall(
+			"UpdateApplication",
+			"default",
+			{ applicationID: appID, name: appName }
+		);		
+	}
+}
+
+function deleteApplication(selectedRowId) {
 	if (selectedRowId) {
+		// Prevents currently edited cell to interfere with deletion process
+		$applicationsGrid.restoreCell(current_iRow, current_iCol);
+		
 		var selectedRow = $applicationsGrid.getRowData(selectedRowId);
 		var deletedApp = selectedRow["name"];
 		
 		libKeyringCall(
 			"DeleteApplication",
-			"ctxApplications",
+			"default",
 			{ application: deletedApp },
 			function($data) {
 				$applicationsGrid.delRowData(selectedRowId);
@@ -106,16 +152,90 @@ function getApplications() {
 	
 	libKeyringCall(
 		"GetApplications",
-		"ctxApplications",
+		"default",
 		{ },
 		function($data) {
 			$applicationsGrid.clearGridData();
+			applications = [];
+
+			$userApplicationList.empty();
 
 			$data.find("application").each(function(index) {
 				var $application = $(this);
 				var applicationID = $application.attr("id");
 				var applicationName = $application.attr("name");
 				$applicationsGrid.addRowData(applicationID, { id: applicationID, name: applicationName });
+				applications.push(applicationName);
+				$userApplicationList.append($("<option/>").text(applicationName));
+			});
+
+			console.log("Applications: " + applications);
+		}
+	);		
+}
+
+function addUser(newUser) {
+	if (newUser.length > 0) {
+		libKeyringCall(
+			"AddUser",
+			"default",
+			{ user: newUser },
+			function($data) {
+				var $user = $data.find("user");
+				var userID = $user.attr("id");
+				var userName = $user.attr("name");
+				$usersGrid.addRowData(userID, { name: userName });
+				
+				$usersGrid.sortGrid("name");
+			}
+		);		
+	}
+}
+
+function updateUser(userID, userName) {
+	if (userName.length > 0) {
+		libKeyringCall(
+			"UpdateUser",
+			"default",
+			{ userID: userID, name: userName }
+		);		
+	}
+}
+
+function deleteUser(selectedRowId) {
+	if (selectedRowId) {
+		// Prevents currently edited cell to interfere with deletion process
+		$usersGrid.restoreCell(current_iRow, current_iCol);
+		
+		var selectedRow = $usersGrid.getRowData(selectedRowId);
+		var deletedUser = selectedRow["name"];
+		
+		libKeyringCall(
+			"DeleteUser",
+			"default",
+			{ user: deletedUser },
+			function($data) {
+				$usersGrid.delRowData(selectedRowId);
+			}
+		);
+	}
+}
+
+function updateUserApplicationList(user) {
+	libKeyringCall(
+		"GetUserKeychain",
+		"default",
+		{ user: user },
+		function($data) {
+			var $userApplicationList = $("#users-user-application-list");
+			
+			$userApplicationList.find("option").each(function(index) {
+				$(this).removeAttr("selected");
+			});
+
+			$data.find("authentication").each(function(index) {
+				var application = $(this).attr("application");
+				$userApplicationList.find("option:contains('" + application + "')").attr("selected", "true");
 			});
 		}
 	);		
@@ -127,7 +247,7 @@ function getUsers() {
 	
 	libKeyringCall(
 		"GetUsersAndApplications",
-		"ctxGetUsersAndApplications",
+		"default",
 		{ },
 		function($data) {
 			$usersGrid.clearGridData();

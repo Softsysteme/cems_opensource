@@ -54,7 +54,7 @@ function libKeyringCall(sequence, context, params, successAction) {
 				console.log(data);
 				
 				var $data = $(data);
-				successAction.call(null, $data);
+				if (successAction) successAction.call(null, $data);
 			},
 			"xml"
 	)
