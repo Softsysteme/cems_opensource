@@ -625,6 +625,7 @@ Studio/projects/lib_Keyring/.project -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/custom.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/css/ellipsis-xbl.xml -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/start/images/ui-bg_flat_55_999999_40x100.png -text
 Studio/projects/lib_Keyring/css/start/images/ui-bg_flat_75_aaaaaa_40x100.png -text
 Studio/projects/lib_Keyring/css/start/images/ui-bg_glass_45_0078ae_1x400.png -text
@@ -653,6 +654,7 @@ Studio/projects/lib_Keyring/js/i18n/grid.locale-cn.js -text svneol=unset#text/pl
 Studio/projects/lib_Keyring/js/i18n/grid.locale-cs.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-da.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-de.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-dk.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-el.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-en.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-es.js -text svneol=unset#text/plain
@@ -685,9 +687,19 @@ Studio/projects/lib_Keyring/js/i18n/grid.locale-tr.js -text svneol=unset#text/pl
 Studio/projects/lib_Keyring/js/i18n/grid.locale-ua.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/jquery-ui-1.8.18.custom.min.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/jquery.jqGrid.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery.jqGrid.src.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/lib_Keyring.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/lib_Keyring.xml -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/lib_Keyring.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.addons.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.postext.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.setcolumns.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.contextmenu.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.searchFilter.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.tablednd.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/searchFilter.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/ui.multiselect.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/ui.multiselect.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/sample.xml -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/widgets/admin.html -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/widgets/css/keyring.css -text svneol=unset#text/plain
