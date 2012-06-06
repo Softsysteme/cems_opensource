@@ -6,7 +6,6 @@ console.log("Convertigo Keyring library - administration");
 var $applicationsGrid;
 var $usersGrid;
 var applications = [];
-var $userApplicationList;
 
 var current_iRow;
 var current_iCol;
@@ -50,19 +49,12 @@ $(function() {
 	    beforeEditCell: function(rowid, cellname, value, iRow, iCol) {
 	    	current_iRow = iRow;
 	    	current_iCol = iCol;
-	    },
-	    onCellSelect: function(rowid, iRow, iCol, e) {
-	    	var selectedRow = $usersGrid.getRowData(rowid);
-	    	var selectedUser = selectedRow["name"];
-		
-	    	updateUserApplicationList(selectedUser);
 	    }
 	}).navGrid('#users-grid-pager',{edit:false,add:false,del:false});
 
 	$applicationsGrid = $("#applications-grid");
 	$usersGrid = $("#users-grid");
-	$userApplicationList = $("#users-user-application-list");
-
+	
 	$("button").button();
 	
 	// Applications
@@ -158,15 +150,12 @@ function getApplications() {
 			$applicationsGrid.clearGridData();
 			applications = [];
 
-			$userApplicationList.empty();
-
 			$data.find("application").each(function(index) {
 				var $application = $(this);
 				var applicationID = $application.attr("id");
 				var applicationName = $application.attr("name");
 				$applicationsGrid.addRowData(applicationID, { id: applicationID, name: applicationName });
 				applications.push(applicationName);
-				$userApplicationList.append($("<option/>").text(applicationName));
 			});
 
 			console.log("Applications: " + applications);
@@ -219,26 +208,6 @@ function deleteUser(selectedRowId) {
 			}
 		);
 	}
-}
-
-function updateUserApplicationList(user) {
-	libKeyringCall(
-		"GetUserKeychain",
-		"default",
-		{ user: user },
-		function($data) {
-			var $userApplicationList = $("#users-user-application-list");
-			
-			$userApplicationList.find("option").each(function(index) {
-				$(this).removeAttr("selected");
-			});
-
-			$data.find("authentication").each(function(index) {
-				var application = $(this).attr("application");
-				$userApplicationList.find("option:contains('" + application + "')").attr("selected", "true");
-			});
-		}
-	);		
 }
 
 function getUsers() {
