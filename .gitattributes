@@ -3149,7 +3149,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_equals.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_startswith.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager2.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ConnectorTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/CriteriaTreeObject.java -text
@@ -3527,6 +3526,7 @@ Studio/src/com/twinsoft/convertigo/engine/events/PropertyChangeEvent.java -text 
 Studio/src/com/twinsoft/convertigo/engine/events/PropertyChangeEventListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/DomainsFilterHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/ScreenClassHelper.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/helpers/WalkHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration001.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration3_0_0.java -text
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_0.java -text svneol=unset#text/plain
