@@ -1631,6 +1631,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/DatabaseObject.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/DatabaseObjectBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ExtractionRule.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ExtractionRuleBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/core/IContainerOrdered.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IContextMaintainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IMultiValued.java -text svneol=unset#text/plain
