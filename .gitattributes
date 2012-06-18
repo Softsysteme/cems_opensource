@@ -3631,6 +3631,7 @@ Studio/src/com/twinsoft/convertigo/engine/translators/WebServiceTranslator.java 
 Studio/src/com/twinsoft/convertigo/engine/util/Base64.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Base64v21.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/COBOLUtils.java -text
+Studio/src/com/twinsoft/convertigo/engine/util/CachedIntrospector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/CarUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/CaseInsensitiveLinkedMap.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/CookiesUtils.java -text svneol=unset#text/plain
