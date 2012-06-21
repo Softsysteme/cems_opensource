@@ -4447,6 +4447,7 @@ Studio/tomcat/webapps/convertigo/dtd/xhtml-special.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml-symbol.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml1-strict.dtd -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml1-transitional.dtd -text
+Studio/tomcat/webapps/convertigo/favicon.ico -text
 Studio/tomcat/webapps/convertigo/images/BtnUp_Aide.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_Annul.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_Capt.gif -text svneol=unset#unset
