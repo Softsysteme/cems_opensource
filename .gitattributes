@@ -376,9 +376,9 @@ Studio/lib/scribe-1.1.0.jar -text
 Studio/lib/soapui/bcprov-jdk15-141.jar -text
 Studio/lib/soapui/commons-beanutils-1.7.0.jar -text
 Studio/lib/soapui/commons-cli-1.0.jar -text
-Studio/lib/soapui/not-yet-commons-ssl-0.3.10.jar -text
-Studio/lib/soapui/soapui-3.0.jar -text
-Studio/lib/soapui/soapui-xmlbeans-3.0.jar -text
+Studio/lib/soapui/not-yet-commons-ssl-0.3.11.jar -text
+Studio/lib/soapui/soapui-3.5.1.jar -text
+Studio/lib/soapui/soapui-xmlbeans-3.5.1.jar -text
 Studio/lib/tools.jar -text svneol=unset#unset
 Studio/lib/ws-commons-java5-1.0.1.jar -text
 Studio/lib/xerces-2_11_0/LICENSE -text
