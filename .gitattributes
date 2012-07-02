@@ -3476,6 +3476,8 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/GetSystemInforma
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Monitor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Start.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Stop.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/List.java -text
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Update.java -text
 Studio/src/com/twinsoft/convertigo/engine/admin/services/keys/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/keys/Update.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/logs/Download.java -text svneol=unset#text/plain
