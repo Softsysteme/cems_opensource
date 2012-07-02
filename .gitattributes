@@ -4236,6 +4236,7 @@ Studio/tomcat/webapps/convertigo/admin/images/menu/10.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/11.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/12.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/13.png -text
+Studio/tomcat/webapps/convertigo/admin/images/menu/14.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_site.png -text
@@ -4290,6 +4291,7 @@ Studio/tomcat/webapps/convertigo/admin/layouts/Cache.html -text svneol=unset#tex
 Studio/tomcat/webapps/convertigo/admin/layouts/Certificates.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Configuration.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Connections.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/layouts/GlobalSymbols.html -text
 Studio/tomcat/webapps/convertigo/admin/layouts/Home.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Keys.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Logs.html -text svneol=unset#text/plain
@@ -4356,6 +4358,8 @@ Studio/tomcat/webapps/convertigo/admin/widgets/engine_GetSystemInformation.html 
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_GetSystemInformation.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_Monitor.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_Monitor.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/widgets/globalSymbols_List.html -text
+Studio/tomcat/webapps/convertigo/admin/widgets/globalSymbols_List.js -text
 Studio/tomcat/webapps/convertigo/admin/widgets/keys_List.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/keys_List.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/logs_Show.html -text
