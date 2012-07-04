@@ -22,16 +22,25 @@
 
 package com.twinsoft.convertigo.engine.admin.services.projects;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.xml.transform.stream.StreamSource;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import com.twinsoft.convertigo.beans.core.DatabaseObject;
+import com.twinsoft.convertigo.beans.core.Project;
+import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
+import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
-import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
+import com.twinsoft.convertigo.engine.helpers.WalkHelper;
+import com.twinsoft.convertigo.engine.util.GenericUtils;
 import com.twinsoft.convertigo.engine.util.ProjectUtils;
 
 @ServiceDefinition(
@@ -45,14 +54,33 @@ import com.twinsoft.convertigo.engine.util.ProjectUtils;
 			},
 		returnValue = "all project's objects and properties"
 	)
-public class Get extends XmlService {	
+public class Get extends XmlService {
+	public final static Map<String, DatabaseObject> getDatabaseObjectByQName(HttpServletRequest request) {
+		String key = Get.class.getCanonicalName() + "_map";
+		HttpSession session = request.getSession();
+		Map<String, DatabaseObject> map = GenericUtils.cast(session.getAttribute(key));
+		if (map == null) {
+			session.setAttribute(key, map = new HashMap<String, DatabaseObject>());
+		}
+		return map;
+	}
 
-	protected void getServiceResult(HttpServletRequest request, Document document) throws Exception {		
+	protected void getServiceResult(HttpServletRequest request, Document document) throws Exception {
 		String projectName = request.getParameter("projectName");
 		Element root = document.getDocumentElement();
 		root.setAttribute("name", projectName);
 		ProjectUtils.getFullProjectDOM(document,projectName,new StreamSource(getClass().getResourceAsStream("cleanDOM.xsl")));
-		
-		
+		final Map<String, DatabaseObject> map = getDatabaseObjectByQName(request);
+		map.clear();
+		Project project = Engine.theApp.databaseObjectsManager.getOriginalProjectByName(projectName);
+		new WalkHelper() {
+
+			@Override
+			protected void walk(DatabaseObject databaseObject) throws Exception {
+				map.put(databaseObject.getQName(), databaseObject);
+				super.walk(databaseObject);
+			}
+			
+		}.init(project);
 	}
 }

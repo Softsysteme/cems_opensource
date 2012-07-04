@@ -65,7 +65,7 @@ public class GetRequestables extends XmlService {
 
 		String projectName = request.getParameter("projectName");
 
-		Project project = Engine.theApp.databaseObjectsManager.getProjectByName(projectName);
+		Project project = Engine.theApp.databaseObjectsManager.getOriginalProjectByName(projectName);
 		
 		Element e_project = createDatabaseObjectElement(document, project);		
 		Connector defaultConnector = project.getDefaultConnector();
