@@ -2052,6 +2052,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/GetAttachmentStatement.java 
 Studio/src/com/twinsoft/convertigo/beans/statements/GetAttachmentStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/GetNodesStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/GetNodesStatementBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/GetTextStatement.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/GetTextStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/GetUrlStatement.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/GetUrlStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/HTTPStatement.java -text
@@ -2155,6 +2157,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/images/function_16x16.gif -t
 Studio/src/com/twinsoft/convertigo/beans/statements/images/function_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/getattachment_16x16.gif -text
@@ -2227,6 +2231,7 @@ Studio/src/com/twinsoft/convertigo/beans/statements/res/ExceptionStatement.prope
 Studio/src/com/twinsoft/convertigo/beans/statements/res/FunctionStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/GetAttachmentStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/GetNodesStatement.properties -text
+Studio/src/com/twinsoft/convertigo/beans/statements/res/GetTextStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/GetUrlStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HTTPStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/HTTPUploadStatement.properties -text svneol=unset#text/plain
