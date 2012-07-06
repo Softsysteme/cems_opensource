@@ -77,8 +77,8 @@ app.init.push(
 			id: 'SWEUserName',
 			labelWidth: '120px',
 			value: 'sadmin',
-			label: 'User',
-			placeHolder: 'username'
+			label: 'User'/*,
+			placeHolder: 'username'*/
 		});
 		/**
 			Defines a password textfield
@@ -89,8 +89,8 @@ app.init.push(
 			id: 'SWEPassword',
 			labelWidth: '120px',
 			value: 'sadmin',
-			label: 'Password',
-			placeHolder: 'password'
+			label: 'Password'/*,
+			placeHolder: 'password'*/
 		});
 
 		/**
@@ -142,7 +142,7 @@ app.init.push(
 						*/
 						app.server.execute(
 						{
-							transaction: 'Login',			// transaction to execute
+							sequence: 'Login',				// sequence to execute
 							mask: app.defaultMask,			// waiting mask to be displayed while waiting for response 
 							form: loginForm, 				// get all fields from form and send them to Convertigo
 							callback: function (data) {		// callback function executed after the response returns from Convertigo
@@ -197,6 +197,8 @@ app.init.push(
 									 */
 									if (data.document.error != null)
 										Ext.Msg.alert("Error", Ext.query('title')[0].innerHTML);
+									else if (data.document.Error != null)
+										Ext.Msg.alert("Error", data.document.Error);
 									else
 										Ext.Msg.alert("Error", "Login Failed");
 
