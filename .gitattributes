@@ -3334,10 +3334,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/ProjectFileFieldEditor.java -
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/ServiceCodeWizardPage.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/StatementGenerator/StatementGeneratorComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/StatementGenerator/StatementGeneratorWizard.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/StatementGenerator/StatementGeneratorWizardPage.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/StatementGenerator/StatementInfoWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/XMLTableWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/enums/MobileFeature.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/enums/MobileHighEndDevice.java -text svneol=unset#text/plain
@@ -3360,6 +3356,114 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_apple.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_auto.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_bb6.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_senchatouch.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ExportWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ExportWizardPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ImportWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ImportWizardPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ImportWizardPage1.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ProjectFileFieldEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/learn/LearnScreenClassWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/learn/LearnScreenClassWizardComposite1.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/learn/LearnScreenClassWizardComposite2.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/learn/LearnScreenClassWizardPage1.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/learn/LearnScreenClassWizardPage2.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/NewObjectWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/NewObjectWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/ObjectExplorerWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/ObjectInfoWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/ObjectsExplorerComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_object/XMLTableWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ConfigureSQLConnectorComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ConfigureSQLConnectorPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/EmulatorTechnologyWizardPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270ConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270FlexWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270GSWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270MobileWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270WebWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250ConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250FlexWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250GSWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250MobileWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250WebWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewCicsConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDKUConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDKUWebWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDemoLegacyCRMWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDemoMashupWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDemoSalesForceWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDemoUsDirectoryWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCLIWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCLPWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCMCWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCMSWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCWCWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCWIWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleMobilizerWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleSiteClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewEmptyJQueryMobileWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHtmlConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHttpConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewInteractionHubWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleMapsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleSpreadsheetsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewMinitelConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite1.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite10.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite11.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite12.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite13.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite14.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite2.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite3.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite4.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite5.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite6.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite8.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite9.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardCompositeSummarySampleProject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage1.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage10.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage11.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage12.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage13.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage14.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage2.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage3.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage4.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage5.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage6.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage8.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPage9.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardPageSummarySampleProject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleHTTPWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleSiteClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleStatementsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleWebClipperWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLConnectorWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleHSQLDBWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleXLSWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerFullFeaturedJQueryMobileWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerSiebelWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerUsDirectoryDemoWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerVacationWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerWebToPdfWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSenchaMobileWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencerWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSiteClipperProjectWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewVT220ConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebClippingConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebServiceReferenceWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ServiceCodeWizardPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementInfoWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ActivationKeyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ChooseWorkspaceLocationPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
