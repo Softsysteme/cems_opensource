@@ -42,6 +42,7 @@ Studio/cheats/CreateTransactions.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsE.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsWithExemple.xml -text svneol=unset#text/plain
 Studio/cheats/CreateTransactionsWithExempleE.xml -text svneol=unset#text/plain
+Studio/icons/administration_16x16.gif -text
 Studio/icons/boite-convertigo6.png -text
 Studio/icons/connector_color_16x16.gif -text
 Studio/icons/consoles/connector.gif -text
@@ -59,6 +60,7 @@ Studio/icons/picker_32x32.gif -text
 Studio/icons/references_16x16.gif -text
 Studio/icons/sample.gif -text
 Studio/icons/setup_16x16.gif -text
+Studio/icons/setupwizard_16x16.gif -text
 Studio/icons/splash-wait.png -text
 Studio/icons/splash_ready_rss.jpg -text
 Studio/icons/splash_wait_rss.jpg -text
