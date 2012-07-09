@@ -73,7 +73,7 @@ app.init.push(
 					{
 						app.stores.list.load(
 						{
-							sequence: 'Search', 							// Convertigo transaction to execute 
+							sequence: 'Search', 							// Convertigo sequence to execute 
 							params: {
 								SWEApplet: 'SIS Account List Applet',
 								SWEView: 'All Account List View',			// parameters containing data to be sent to Convertigo

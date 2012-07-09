@@ -77,8 +77,7 @@ app.init.push(
 			id: 'SWEUserName',
 			labelWidth: '120px',
 			value: 'sadmin',
-			label: 'User'/*,
-			placeHolder: 'username'*/
+			label: 'User'
 		});
 		/**
 			Defines a password textfield
@@ -89,8 +88,7 @@ app.init.push(
 			id: 'SWEPassword',
 			labelWidth: '120px',
 			value: 'sadmin',
-			label: 'Password'/*,
-			placeHolder: 'password'*/
+			label: 'Password'
 		});
 
 		/**
@@ -138,7 +136,7 @@ app.init.push(
 						app.userName = user.getValue();
 
 						/**
-							execute the login transaction in order to authenticate
+							execute the login sequence in order to authenticate
 						*/
 						app.server.execute(
 						{
@@ -161,8 +159,8 @@ app.init.push(
 									*/
 									app.stores.list.load(
 									{
-										sequence: 'GotoView',					// Convertigo transaction to execute 
-										params: {
+										sequence: 'GotoView',					// Convertigo sequence to execute 
+										params: {								// sequence parameters
 											SWEApplet: 'SIS Account List Applet',
 											SWEView: 'All Account List View'	// form containing data to send to convertigo
 										},

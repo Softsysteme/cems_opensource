@@ -61,9 +61,9 @@ app.init.push({
 							xtype: 'button',
 							text : 'Logoff',
 							handler: function() {
-								// execute logoff transaction in order to log out
+								// execute logoff sequence in order to log out
 								app.server.execute({
-									transaction: 'Logoff', 			// Convertigo transaction to execute 
+									sequence: 'Logoff', 			// Convertigo sequence to execute 
 									mask: app.defaultMask, 			// waiting mask to be displayed while waiting for response 
 									form : logoffForm, 				// form containing data to send to convertigo
 									callback : function (data) { 	// callback function to be executed after the response returns from Convertigo

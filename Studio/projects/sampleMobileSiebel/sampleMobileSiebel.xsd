@@ -1809,4 +1809,37 @@
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
+<xsd:element name="Logoff" type="sampleMobileSiebel_ns:LogoffRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="LogoffResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleMobileSiebel_ns:LogoffResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="LogoffRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="SWEUserName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="LogoffResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1341827371738StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__LogoffResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
 </xsd:schema>

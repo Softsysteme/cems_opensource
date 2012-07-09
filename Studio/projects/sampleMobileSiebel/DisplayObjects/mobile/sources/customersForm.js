@@ -35,7 +35,7 @@ app.init.push(
 				case 'List All':
 					app.stores.list.load(
 					{
-						sequence: 'Search', 							// Convertigo transaction to execute 
+						sequence: 'Search', 							// Convertigo sequence to execute 
 						params: {
 							SWEApplet: 'SIS Account List Applet',
 							SWEView: 'All Account List View',			// parameters containing data to be sent to Convertigo
@@ -206,18 +206,12 @@ app.init.push(
 		{
 			app.stores.list.load(
 			{
-				/**
-					Convertigo transaction to execute 
-				*/
-				sequence: 'SiebelInvoke',
-				/**
-					sequence parameters
-				*/
-				params: {
+				sequence: 'SiebelInvoke',				// Convertigo sequence to execute 
+				params: {								// sequence parameters
 					SWEMethod: queryName,
-					SWEApplet: 'All Account List View' // form containing data to send to convertigo
+					SWEApplet: 'All Account List View' 	// form containing data to send to convertigo
 				},
-				callback: function (data)
+				callback: function (data)				// callback function executed after the response returns from Convertigo
 				{ 
 					/**
 						callback function executed after the response returns from Convertigo
