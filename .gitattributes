@@ -3371,7 +3371,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistreWizard.java -te
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SelectSamplesPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SetupWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SummaryPage.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/license.txt -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/util/MobileUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/AbstractContext.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractManager.java -text
