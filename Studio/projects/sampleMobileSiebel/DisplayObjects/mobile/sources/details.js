@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2011 Convertigo. All Rights Reserved.
+ * Copyright (c) 2009-2012 Convertigo. All Rights Reserved.
  *
  * The copyright to the computer  program(s) herein  is the property
  * of Convertigo.
@@ -84,7 +84,7 @@ app.init.push(
 			switch (btn.text)
 			{
 				case 'Back':
-					app.enablePanels(['logoff', 'customers', 'search', 'details'], 'customers', false);
+					app.enablePanels(['logoff', 'customers', 'search', 'details'], 'customers', 'slide', 'right');
 					break;
 					
 				case 'Map':

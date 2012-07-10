@@ -68,6 +68,12 @@ app.init.push(
 			width: 180,
 			disabled: !isLocalStorage
 		});
+		
+		if (!rememberMe.isChecked()) {
+			localStorage.removeItem('user');
+			localStorage.removeItem('password');
+		}
+
 		/**
 		 	Defines a login textfield
 		 */
@@ -76,7 +82,7 @@ app.init.push(
 			xtype: 'textfield',
 			id: 'SWEUserName',
 			labelWidth: '120px',
-			value: 'sadmin',
+			value: 'sadmin',			// for demo purpose, must be removed
 			label: 'User'
 		});
 		/**
@@ -87,7 +93,7 @@ app.init.push(
 			xtype: 'passwordfield',
 			id: 'SWEPassword',
 			labelWidth: '120px',
-			value: 'sadmin',
+			value: 'sadmin',			// for demo purpose, must be removed
 			label: 'Password'
 		});
 
@@ -116,23 +122,6 @@ app.init.push(
 					text: 'Login',
 					handler: function ()
 					{
-						if (rememberMe.isChecked() != false)
-						{
-							/**
-								store the login parameters into local storage
-							*/
-							localStorage.setItem('user', user.getValue());
-							localStorage.setItem('password', password.getValue())
-						}
-						else if (isLocalStorage && localStorage.getItem('user') != null)
-						{
-							/**
-								remove the login parameters from local storage
-							*/
-							localStorage.removeItem('user');
-							localStorage.removeItem('password');
-						}
-
 						app.userName = user.getValue();
 
 						/**
@@ -172,6 +161,25 @@ app.init.push(
 												return false;					// return false not to try filling the list
 											}
 
+											if (isLocalStorage) {
+												if (rememberMe.isChecked())
+												{
+													/**
+														store the login parameters into local storage
+													*/
+													localStorage.setItem('user', user.getValue());
+													localStorage.setItem('password', password.getValue())
+												}
+												else
+												{
+													/**
+														remove the login parameters from local storage
+													*/
+													localStorage.removeItem('user');
+													localStorage.removeItem('password');
+												}
+											}
+											
 											if (app.initialized = Ext.isDefined(data.document.attr.sequence == 'GotoView')) {
 												app.enablePanels(['logoff', 'customers', 'search'], 'customers');
 												/**

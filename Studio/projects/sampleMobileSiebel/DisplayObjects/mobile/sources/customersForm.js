@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2011 Convertigo. All Rights Reserved.
+ * Copyright (c) 2009-2012 Convertigo. All Rights Reserved.
  *
  * The copyright to the computer  program(s) herein  is the property
  * of Convertigo.
@@ -83,7 +83,7 @@ app.init.push(
 								in case no error message was found
 								return true or false depending on the presence of data in the response
 							*/
-							app.enablePanels(['logoff', 'customers', 'search'], 'search', false);
+							app.enablePanels(['logoff', 'customers', 'search'], 'search');
 							app.panels['customers'].tab.setBadge('');
 							Ext.Msg.alert('Message', 'No records have been found.<br>Try other values');
 							return false;
@@ -169,13 +169,13 @@ app.init.push(
 						/**
 							add details icon to tabbar, stay on customers tab, no 'slide' animation
 						*/
-						app.enablePanels(['logoff', 'customers', 'details', 'search'], 'customers', false);
+						app.enablePanels(['logoff', 'customers', 'details', 'search'], 'customers');
 					}
 					else {
 						/**
 							ensure no details icon in tabbar, stay on customers tab, no 'slide' animation
 						*/
-						app.enablePanels(['logoff', 'customers', 'search'], 'customers', false);
+						app.enablePanels(['logoff', 'customers', 'search'], 'customers');
 					}
 				}
 			},

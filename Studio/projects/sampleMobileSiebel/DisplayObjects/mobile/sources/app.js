@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2011 Convertigo. All Rights Reserved.
+ * Copyright (c) 2009-2012 Convertigo. All Rights Reserved.
  *
  * The copyright to the computer  program(s) herein  is the property
  * of Convertigo.
@@ -194,6 +194,10 @@ Ext.apply(app, {
 	 */
 	animation: 'slide', 
 	/**
+	 * default direction
+	 */
+	whichway: 'left', 
+	/**
 		trim function, removes white spaces from 
 		both sides of a string
 	*/
@@ -204,14 +208,21 @@ Ext.apply(app, {
 		this function modifies tabbar icons
 		activates the specified tab
 	*/
-	enablePanels: function(names, active, animation) {
+	enablePanels: function(names, active, animation, whichway) {
 		/**
 			check if animation parameter is provided
 			otherwise we set it to default
 		*/
 		if (animation == undefined) 
 			animation = app.animation;
-		
+
+		/**
+			check if animation parameter is provided
+			otherwise we set it to default
+		*/
+		if (whichway == undefined) 
+			whichway = app.whichway;
+			
 		/**
 			empty current icons list
 		*/
@@ -235,7 +246,7 @@ Ext.apply(app, {
 		Ext.apply(app, {
 			dock: new Ext.TabPanel({
 				tabBarDock: 'bottom',
-				cardSwitchAnimation: animation,
+				cardSwitchAnimation: {type: animation, direction: whichway},
 				fullscreen: true,
 				items: app.curItems
 			})
