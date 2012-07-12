@@ -118,7 +118,7 @@ app.init.push(
 									/**
 										we have items
 									*/
-									if (Ext.isDefined(data.document.customers.item))
+									if (Ext.isDefined(data.document.customers) && Ext.isDefined(data.document.customers.item))
 									{
 										/**
 											show user badge with number of items

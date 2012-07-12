@@ -35,12 +35,17 @@ app.init.push(
 				case 'List All':
 					app.stores.list.load(
 					{
-						sequence: 'Search', 							// Convertigo sequence to execute 
+						/*sequence: 'Search', 							// Convertigo sequence to execute 
 						params: {
 							SWEApplet: 'SIS Account List Applet',
 							SWEView: 'All Account List View',			// parameters containing data to be sent to Convertigo
 							Name: '*',
 							Location: '*'
+						}*/
+						sequence: 'GotoView',					// Convertigo sequence to execute 
+						params: {								// sequence parameters
+							SWEApplet: 'SIS Account List Applet',
+							SWEView: 'All Account List View'	// form containing data to send to convertigo
 						},
 						callback: function (data)						// callback function executed after the response returns from Convertigo
 						{ 
