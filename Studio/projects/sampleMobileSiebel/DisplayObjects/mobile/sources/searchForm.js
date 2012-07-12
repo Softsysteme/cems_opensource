@@ -25,13 +25,13 @@ app.init.push(
 	init: function ()
 	{
 		// Create the combo box, attached to the states data store
-		var selbox = new Ext.form.Select(
-		{
-			label: 'Location',
-			name:'state',
-			labelWidth: '120px',
-			options: Ext.statesdata.states
-		});
+//		var selbox = new Ext.form.Select(
+//		{
+//			label: 'State',
+//			name:'state',
+//			labelWidth: '120px',
+//			options: Ext.statesdata.states
+//		});
 
 		/**
 			Defines search textfield
@@ -40,6 +40,17 @@ app.init.push(
 		{
 			label: 'Name',
 			name: 'name',
+			labelWidth: '120px',
+			value: '*'
+		});
+		
+		/**
+		Defines search textfield
+		 */
+		var location = new Ext.form.Text(
+		{
+			label: 'Location',
+			name: 'location',
 			labelWidth: '120px',
 			value: '*'
 		});
@@ -58,8 +69,9 @@ app.init.push(
 				title: 'Search',
 				instructions: 'Fill in customer info and hit the search button',
 				items: [
-					selbox,
-					name
+//					selbox,
+					name,
+					location
 				]
 			},
 			{
@@ -78,7 +90,8 @@ app.init.push(
 								SWEApplet: 'SIS Account List Applet',
 								SWEView: 'All Account List View',			// parameters containing data to be sent to Convertigo
 								Name: name.getValue(),
-								Location: selbox.getValue()
+								Location: location.getValue()/*,
+								State: selbox.getValue()*/
 							},
 							callback: function (data)						// callback function executed after the response returns from Convertigo
 							{ 
@@ -127,7 +140,9 @@ app.init.push(
 								return false;
 							}
 						});
-					}}]}],
+					}
+				}]
+			}],
 			listeners: {
 				activate: function (comp){}
 			}

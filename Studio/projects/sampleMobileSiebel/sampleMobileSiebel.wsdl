@@ -35,34 +35,12 @@
     <wsdl:part name="parameters" element="sampleMobileSiebel_ns:SiebelConnector__ExecuteQuery">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="SiebelConnector__InvokeMethodResponse">
-    <wsdl:part name="parameters" element="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponse">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="SiebelConnector__InvokeMethodRequest">
-    <wsdl:part name="parameters" element="sampleMobileSiebel_ns:SiebelConnector__InvokeMethod">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:portType name="sampleMobileSiebelPortType">
-    <wsdl:operation name="SiebelConnector__NewQuery">
+    <wsdl:operation name="SiebelConnector__Login">
 <wsdl:documentation/>
-      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__NewQueryRequest">
+      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__LoginRequest">
     </wsdl:input>
-      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__GotoView">
-<wsdl:documentation/>
-      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__GotoViewRequest">
-    </wsdl:input>
-      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__InvokeMethod">
-<wsdl:documentation/>
-      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodRequest">
-    </wsdl:input>
-      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponse">
+      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__LoginResponse">
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SiebelConnector__ExecuteQuery">
@@ -72,39 +50,26 @@
       <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponse">
     </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__Login">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__LoginRequest">
+    <wsdl:operation name="SiebelConnector__GotoView">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__GotoViewRequest">
     </wsdl:input>
-      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__LoginResponse">
+      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelConnector__NewQuery">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileSiebel_ns:SiebelConnector__NewQueryRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileSiebelSOAPBinding" type="sampleMobileSiebel_ns:sampleMobileSiebelPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="SiebelConnector__NewQuery">
+    <wsdl:operation name="SiebelConnector__Login">
 <wsdl:documentation/>
-      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__NewQuery"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__GotoView">
-<wsdl:documentation/>
-      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__GotoView"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__InvokeMethod">
-<wsdl:documentation/>
-      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__InvokeMethod"/>
+      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__Login"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -122,9 +87,19 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SiebelConnector__Login">
+    <wsdl:operation name="SiebelConnector__GotoView">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__GotoView"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SiebelConnector__NewQuery">
 <wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__Login"/>
+      <soap:operation soapAction="sampleMobileSiebel?SiebelConnector__NewQuery"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>

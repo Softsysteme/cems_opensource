@@ -31,6 +31,7 @@ Ext.apply(app, {
 		{
 			xtype: 'textfield',
 			ui: 'light',
-			html: '<p style="color:white">Siebel</p>'}]
+			html: '<p style="color:white">Siebel</p>'
+		}]
 	}
 });

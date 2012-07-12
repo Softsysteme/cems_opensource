@@ -5,7 +5,7 @@
 This project provides an access to a Siebel Customers Database.
 
 This mobile application will access a Siebel application, and after logging in,
-display a list of customers cards. Several basic operations will be available,
+displays a list of customers cards. Several basic operations are available,
 as searching, getting details or display customer address on a map.
 
 The purpose of this project is to:
@@ -17,30 +17,32 @@ The purpose of this project is to:
 * search in the Siebel database for customers regarding
   several criteria
 * create a Sencha Touch Web application to provide the
-  navigational and display interface.
+  display interface.
 
 The project has one connector:
 ------------------------------
-* The SiebelConnector is an HTML connector which targets 
-  the Siebel application web site.
-  it declares Login as the default transaction. 
+* The SiebelConnector is an HTTP connector which targets 
+  the Siebel application XML HTTP interface.
+* It declares Login as the default transaction. 
 
-The project has fout sequences:
+The project has five sequences:
 -------------------------------
 * The 'GotoView' sequence simply calls the 'GotoView' transaction 
   but mainly handles errors and converts the returned XML to a format
-  that suits Sencha.
+  that suits the Sencha list in which data are displayed.
   
-* The 'Login' sequence simply calls the 'Login' transaction.
+* The 'Login' sequence simply calls the 'Login' transaction and handles errors.
+
+* The 'Logoff' sequence simply calls the 'Logoff' transaction.
 
 * The 'Search' sequence is more complicated. It first calls the
   'NewQuery' transaction, then calls the 'ExecuteQuery' transaction.
   Then, after handling errors, converts the returned XML to a format
-  that suits Sencha.
+  that suits the Sencha list in which data are displayed.
 
-* The 'SiebelInvoke' sequence calls the 'InvokeMethod' method, 
+* The 'SiebelInvoke' sequence calls the 'InvokeMethod' transaction, 
   handles errors and converts the returned XML to a format
-  that suits Sencha.
+  that suits the Sencha list in which data are displayed.
 
 Looking at mobile source files:
 -------------------------------
