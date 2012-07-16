@@ -390,4 +390,54 @@
 <xsd:sequence/>
 </xsd:complexType>
 <xsd:complexType name="void__Default_transactionResponseData"/>
+<xsd:complexType name="complex1342441465121StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="elem1" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem2" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem3" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SendEmail" type="sample_refManual_steps_ns:SendEmailRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SendEmailResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SendEmailResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SendEmailRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="SendEmailResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_steps_ns:ConvertigoError"/>
+<xsd:element minOccurs="0" name="seq_result" type="sample_refManual_steps_ns:seq_result1342441465121StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="seq_result1342441465121StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="elem1" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem2" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem3" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
 </xsd:schema>
