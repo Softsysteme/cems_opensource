@@ -3362,12 +3362,11 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGenera
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementInfoWizardPage.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ActivationKeyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ChooseWorkspaceLocationPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/LicensePage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/PscKeyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistrationPage.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistreWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SelectSamplesPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SetupWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SummaryPage.java -text svneol=unset#text/plain
