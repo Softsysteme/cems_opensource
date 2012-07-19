@@ -1524,108 +1524,6 @@
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="Search" type="sampleMobileSiebel_ns:SearchRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SearchResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SearchResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SearchRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Name" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Location" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SearchResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1315498757562StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1341928218623StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1315496043273StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1315498757562StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1315500276779StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1315500276779StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
 <xsd:element name="SiebelConnector__ExecuteQuery" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryRequestData">
 <xsd:annotation/>
 </xsd:element>
@@ -1820,5 +1718,107 @@
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
+</xsd:complexType>
+<xsd:element name="Search" type="sampleMobileSiebel_ns:SearchRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleMobileSiebel_ns:SearchResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="SWEView" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>SWEView</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="SWEApplet" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>SWEView</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="Name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="Location" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+<xsd:element minOccurs="0" name="Error" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="Error" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1315498757562StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1341928218623StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315496043273StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="customers1315498757562StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1315500276779StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="item1315500276779StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="Name" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="Location" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="City" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="State" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="Country" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+<xsd:attribute name="rowID" type="xsd:string" use="optional">
+<xsd:annotation/>
+</xsd:attribute>
 </xsd:complexType>
 </xsd:schema>
