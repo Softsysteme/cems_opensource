@@ -309,23 +309,6 @@
 </xsd:extension>
 </xsd:simpleContent>
 </xsd:complexType>
-<xsd:element name="New_Sequence" type="sample_refManual_steps_ns:New_SequenceRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="New_SequenceResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_refManual_steps_ns:New_SequenceResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="New_SequenceRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="New_SequenceResponseData">
-<xsd:sequence/>
-</xsd:complexType>
 <xsd:element name="SearchOneKeyword" type="sample_refManual_steps_ns:SearchOneKeywordRequestData">
 <xsd:annotation/>
 </xsd:element>
@@ -436,6 +419,56 @@
 <xsd:annotation/>
 </xsd:element>
 <xsd:element minOccurs="0" name="elem3" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1342793666325StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:element name="IterationOnJS" type="sample_refManual_steps_ns:IterationOnJSRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="IterationOnJSResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:IterationOnJSResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="IterationOnJSRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="table">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="startIndex" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="IterationOnJSResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_steps_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="elem" type="sample_refManual_steps_ns:elem1342793666325StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="elem1342793666325StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="item" type="xsd:string">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
