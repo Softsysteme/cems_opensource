@@ -17,19 +17,6 @@
 <xsd:attribute name="name" type="xsd:string"/>
 <xsd:attribute name="value" type="xsd:string"/>
 </xsd:complexType>
-<xsd:element name="DatabaseConnector__defaultTransactionToBeConfigured" type="sample_documentation_CMS_ns:DatabaseConnector__defaultTransactionToBeConfiguredRequestData"/>
-<xsd:element name="DatabaseConnector__defaultTransactionToBeConfiguredResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__defaultTransactionToBeConfiguredResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="DatabaseConnector__defaultTransactionToBeConfiguredRequestData">
-<xsd:sequence>
-<xsd:element name="tableName" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
 <xsd:complexType name="DatabaseConnector__defaultTransactionToBeConfiguredResponseData"/>
 <xsd:element name="DatabaseConnector__SelectAllArticles" type="sample_documentation_CMS_ns:DatabaseConnector__SelectAllArticlesRequestData"/>
 <xsd:element name="DatabaseConnector__SelectAllArticlesResponse">
@@ -281,23 +268,6 @@
 <xsd:group minOccurs="0" ref="sample_documentation_CMS_ns:step1255534601721Type"/>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="DatabaseConnector__InsertArticle" type="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleRequestData"/>
-<xsd:element name="DatabaseConnector__InsertArticleResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="DatabaseConnector__InsertArticleRequestData">
-<xsd:sequence>
-<xsd:element name="a_rsp" type="xsd:string"/>
-<xsd:element name="a_product_group" type="xsd:string"/>
-<xsd:element name="a_code" type="xsd:string"/>
-<xsd:element name="a_name" type="xsd:string"/>
-<xsd:element name="a_status" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
 <xsd:complexType name="DatabaseConnector__InsertArticleResponseData">
 <xsd:sequence>
 <xsd:element name="sql_output" type="xsd:string"/>
@@ -312,21 +282,6 @@
 <xsd:attribute name="signature" type="xsd:long"/>
 <xsd:attribute name="transaction" type="xsd:string"/>
 <xsd:attribute name="version" type="xsd:string"/>
-</xsd:complexType>
-<xsd:element name="DatabaseConnector__InsertWebSite" type="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteRequestData"/>
-<xsd:element name="DatabaseConnector__InsertWebSiteResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="DatabaseConnector__InsertWebSiteRequestData">
-<xsd:sequence>
-<xsd:element name="ws_title" type="xsd:string"/>
-<xsd:element name="a_code" type="xsd:string"/>
-<xsd:element name="ws_url" type="xsd:string"/>
-</xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="DatabaseConnector__InsertWebSiteResponseData">
 <xsd:sequence>
@@ -525,6 +480,186 @@
 <xsd:sequence>
 <xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
 <xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="DatabaseConnector__defaultTransactionToBeConfigured" type="sample_documentation_CMS_ns:DatabaseConnector__defaultTransactionToBeConfiguredRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="DatabaseConnector__defaultTransactionToBeConfiguredResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__defaultTransactionToBeConfiguredResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="DatabaseConnector__defaultTransactionToBeConfiguredRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="tableName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>tableName</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="tableName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>tableName</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="tableName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>tableName</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="DatabaseConnector__InsertArticle" type="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="DatabaseConnector__InsertArticleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="DatabaseConnector__InsertArticleRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_status" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_status</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_rsp" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_rsp</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_product_group" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_product_group</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_status" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_status</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_rsp" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_rsp</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_product_group" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_product_group</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_name</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_status" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_status</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_rsp" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_rsp</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_product_group" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_product_group</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="DatabaseConnector__InsertWebSite" type="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="DatabaseConnector__InsertWebSiteResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="DatabaseConnector__InsertWebSiteRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_url" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_url</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_title" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_title</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_url" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_url</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_title" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_title</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="a_code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>a_code</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_url" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_url</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ws_title" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>ws_title</xsd:appinfo>
+</xsd:annotation>
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
