@@ -1,27 +1,65 @@
 body {
-	color: black;
-	font-size: 10pt;
-	font-family: verdana,lucida,arial,helvetica;
-	background-color: #ffffff
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
+	font-size:   10px; 
+	background-color: #ffffff;
+	color: #666666;
+}
+a {
+	color:#c90d0d;
+	text-decoration: underline;
+}
+a:hover {
+	color:#666;
+	text-decoration: none;
+}
+h3 {
+	color:#c90d0d;
+}
+img {
+	border:0;
+}
+img#logoConvertigo {
+	margin:10px;
 }
 p {
-	font-family: verdana,lucida,arial,helvetica;
-	font-size: 10pt;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
+	font-size:   12px; 
 }
 .small {
-	font-size: 8pt;
+	font-size: 10px;
+	text-align: center;
 }
 pre {
-	font-size: 8pt;
+	font-size: 11px;
+	white-space: normal; 
 }
 td {
-	color: black;
-	font-size: 12pt;
-	font-family: verdana,lucida,arial,helvetica;
+	color: #666666;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
+	font-size:   12px; 
 }
 .title {
-	background-color: #C7D4EF;
-	color: #000000;
-	font-size: 12pt;
+	background: transparent url(../images/bg_titletable.jpg) repeat-x scroll 0 0;
+	color: #666666;
+	font-size: 12px;
 	font-weight: bold;
+}
+
+/* ** page error content ** */
+#page_error {
+	margin: 0 auto;
+	width:700px;
+}
+#page_error table {
+	 border-collapse: collapse;
+	 padding:0;
+	 margin:2px;
+	 border: 1px solid #ccc;
+}
+.errorDetails {
+	padding-left:40px;
+}
+#details {
+	padding-left: 40px;
+
 }

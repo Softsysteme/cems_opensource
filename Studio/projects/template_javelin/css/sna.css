@@ -2,6 +2,9 @@
 body {
 	background:url("../images/bg_repeaty.jpg") repeat-y scroll 100% 100% #FFFFFF !important;
 }
+.center {
+	text-align: center;
+}
 /* Base style of static text outside of tables*/
 span.staticText {
 	font-size:   12px; 
