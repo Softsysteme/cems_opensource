@@ -5,7 +5,7 @@
 	<xsl:variable name="resize">false</xsl:variable>
 	
 	<xsl:variable name="coefx">9</xsl:variable>
-	<xsl:variable name="coefy">24</xsl:variable>
+	<xsl:variable name="coefy">22</xsl:variable>
 	
 	<!-- Viewport left margin -->
 	<xsl:param name="offsetx">10</xsl:param>

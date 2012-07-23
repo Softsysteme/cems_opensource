@@ -1137,9 +1137,12 @@ Studio/projects/template_javelin/error.xsl -text
 Studio/projects/template_javelin/images/arrow-right-triple.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/ascending.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/ascending_sug.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/bg_repeaty.jpg -text
+Studio/projects/template_javelin/images/bg_titletable.jpg -text
 Studio/projects/template_javelin/images/btn-arrow-02.png -text
 Studio/projects/template_javelin/images/btn-arrow.png -text
 Studio/projects/template_javelin/images/button-gfx.png -text
+Studio/projects/template_javelin/images/button-gfx_over.png -text
 Studio/projects/template_javelin/images/convertigo-small.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/croix.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/descending.gif -text svneol=unset#unset

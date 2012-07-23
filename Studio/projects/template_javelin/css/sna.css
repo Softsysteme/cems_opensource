@@ -1,26 +1,39 @@
 /* CSS Document */
-
+body {
+	background:url("../images/bg_repeaty.jpg") repeat-y scroll 100% 100% #FFFFFF !important;
+}
 /* Base style of static text outside of tables*/
 span.staticText {
 	font-size:   12px; 
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 }
 
 /* Base style of static text outside of tables*/
 span.tableText {
 	font-size:   10px; 
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 }
 
 /* Base style of static text as radio buttons labels */
 span.radioText {
 	font-size: 11px;
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 }
+
+span hr {
+	color: #8f8f8f;
+	/*background-color: #8f8f8f;*/
+	height: 1px;
+	border:0;
+	border-top: 1px dashed #8f8f8f;
+}
+
 
 /* Foreground color styles for static text */
 span.colorwhite {
-	color: SteelBlue;
+	/*color: SteelBlue;*/
+	/*color:#006699;  cyan blue */
+	color:#888; /* grey */
 }
 
 span.colorblack {
@@ -44,11 +57,13 @@ span.colorred {
 }
 
 span.colorgreen {
-	color: black;
+	color: #03744f; /* convertigo dark green */
 }
 
-span.colorblue {
-	color: blue;
+span.colorblue {/* intitule */
+	/*color: #00a4c8; blue*/
+	/*color: #999;  grey */
+	color:#006699; /* cyan blue */
 }
 
 /* Background color styles for static text */
@@ -94,9 +109,7 @@ span.blink {
 
 /* Used when a static text element gets the focus  */
 span.focusedStatic {
-   border-style: dashed;
-	border-width: 1px;
-   border-color: #000000;
+	border:1px dashed #000;
 }
 
 /* Used when a static text element looses the focus  */
@@ -107,7 +120,7 @@ span.unfocusedStatic {
 /*  Used for text in input fields */
 .fieldText {
 	font-size: 8pt;
-	font-family: Lucida Console;
+	font-family: "Lucida Console", Arial, Helvetica, Sans-Serif;
 }
 
 /* Used on buttons, like keyword buttons when they are selectable*/
@@ -130,7 +143,7 @@ input.disabledKeywordButton {
 	font-size: 9px;
 	line-height: 12px;
 	color: #666666;
-	font-family: Lucida Console, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida Console", Arial, Helvetica, Sans-Serif;
 	text-decoration: none;
 	font-weight: normal;
 	}
@@ -139,85 +152,76 @@ input.disabledKeywordButton {
 	font-size: 10px;
 	line-height: 12px;
 	color: #666666;
-	font-family: Lucida Console, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida Console", Arial, Helvetica, Sans-Serif;
 	text-decoration: none;
 	font-weight: bold;
 	}
 
-A.menuItem:hover {
-	line-height: 17px;
-	font-size: 8pt;
-	color: #8EDA8A;
+a.menuItem {
 	font-weight: normal;
-	font-family: Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida Console", Arial, Helvetica, Sans-Serif;
 	border: none;
-}
-A.menuItem:visited {
+	color:#00a4c8;
 	line-height: 17px;
-	font-size: 8pt;
-	color: #002B82;
-	font-weight: normal;
-	font-family: Arial, Helvetica, Sans-Serif;
-	border: none;
+	font-size: 12px;
 }
-A.menuItem:link {
-	line-height: 17px;
-	font-size: 8pt;
-	color: #002B82;
-	font-weight: normal;
-	font-family: Arial, Helvetica, Sans-Serif;
-	border: none;
-}
-A.menuItem:active {
-	line-height: 17px;
-	font-size: 8pt;
+a.menuItem:active {
 	color: #FCA956;
-	font-weight: normal;
-	font-family: Arial, Helvetica, Sans-Serif;
-	border: none;
+}
+a.menuItem:hover {
+	color: #006699;
+}
+a.menuItem:visited {
+	color: #002B82;
 }
 
+/* contextual menu */
+.menuitems:hover {
+	background-color: #ff9900 !important;
+	cursor:pointer;
+}
 
 /* Style for tables title cells */
 .datatitle {
-	font-size: 10px; 
+	font-size: 9px; 
 	font-weight: bold;
 	color: black;
 	background-color: #CAD8FD;
-	border-bottom: gray solid 1px;
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-right-color: #CAD8FD;	
+	background: transparent url(../images/bg_titletable.jpg) repeat-x scroll 0 0;	
+	border-bottom: 2px solid #888;
+	border-right: 0px solid #000;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align:center;
+}
+span.datatitle {
+	background: none;
+	border:0;
 }
 
 /* Foreground style for active (enabled) panels */
 span.panel{
-	background-color: #F0F0F0;
-	border: 1px solid #718BB7;
+	background-color: #f3f2f1;
+    border: 1px solid #ccc;
+	margin-left: -5px;
+    margin-top: -6px;
+    padding-bottom: 6px;
 }
 
 /* Background style for active (enabled) panels */
-/*
 span.panelOmbre{
-	background-color: #E4E4E4;
-	border-right: #E4E4E4 2px solid; 
-	border-bottom: #E4E4E4 1px solid;
-	border-top: #E4E4E4 2px solid;
-}
-*/
-span.panelOmbre{
-	background-color: #E4E4E4;
-	border: solid 1px #EFEFEF;
+	background-color: #CFCFCF;
+	border: 1px solid #EFEFEF;
+	margin-left: -7px;
+    margin-top: -8px;
+    padding-bottom: 6px;
 }
 
 
 /* Foreground style for active (disabled) panels */
 span.disabledPanel{
 	background-color:#FEFEFE;
-	border-right: #4C4C4C 1px solid; 
-	border-top: #4C4C4C 1px solid; 
-	border-left: #4C4C4C 1px solid;
-	border-bottom: #4C4C4C 1px solid;
+	border: 1px solid #4c4c4c;
 }
 
 /* Background style for inactive (disabled) panels */
@@ -230,7 +234,7 @@ span.disabledPanelOmbre{
 
 /* Panel top title style  for active (enabled) panels */
 span.panelTopTitle {
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 	font-size: 9px;
 	color: #FF0000;
 	background-color: #FFFFFF;
@@ -238,7 +242,7 @@ span.panelTopTitle {
 
 /* Panel bottom title style  for active (enabled) panels */
 span.panelBottomTitle {
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 	font-size: 9px;
 	color: #FF0000;
 	background-color: #FFFFFF;
@@ -246,7 +250,7 @@ span.panelBottomTitle {
 
 /* Panel top title style  for inactive (disabled) panels */
 span.disabledPanelTopTitle {
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 	font-size: 9px;
 	color: #4C4C4C;
 	background-color: #FFFFFF;
@@ -254,56 +258,65 @@ span.disabledPanelTopTitle {
 
 /* Panel bottom title style  for inactive (disabled) panels */
 span.disabledPanelBottomTitle {
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 	font-size: 9px;
 	color: #4C4C4C;
 	background-color: #FFFFFF;
 }
 
-.dataroweven {
-	background-color: #f1faf9;
-	
-}
+/* background color of an line of a table */
 .datarowodd {
-	background-color: #C7E1E0;
+	background-color: #f5fcfd;
 }
-
+.dataroweven {
+	background-color: #e2f9fe;
+}
+/* background color of an line of a table over */
+/*.datarowoddover {
+	color:#000;
+	background-color: #d2edec;
+	cursor:pointer;
+}
 .datarowevenover {
+	color:#000;
 	background-color: #fafffe;
-	
-}
-
-.datarowoddover {
-	background-color: #d2edec;
-}
-
-.dataroweven:hover {
-	background-color: #fafffe;
-	
-}
-
+	cursor:pointer;
+}*/
+/* background color of an line of a table over */
 .datarowodd:hover {
-	background-color: #d2edec;
+	background-color: #006699;
+	cursor:pointer;
 }
+.dataroweven:hover {
+	background-color: #006699;
+	cursor:pointer;
+	
+}
+/* color table */
+.dataroweven .colorgreen, .datarowodd .colorgreen {
+	color:#006699;
+}
+.dataroweven:hover .tableText, .datarowodd:hover .tableText {
+	color:#fff;
+}
+
 .dataitem {
-	BORDER-LEFT: gray solid 1px;
+	border-left: 1px solid gray;
 }
 
 .actDiv {
 	position: absolute;
-	border: solid 2px;
-	background-color: #FFFFFF;
+	border: 2px solid #ff9900;
+	background-color: #fff;
 	visibility: hidden;
-	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
 }
 
 /* Base style for table cells */
 td.cell {
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-right-color: #333333;
+	border-right: 1px solid #333333;
 	margin: 10px;
-	align: right;
+	text-align: center;
 }
 
 div.waitDiv {
@@ -313,54 +326,48 @@ div.waitDiv {
 	visibility:hidden;
 }
 
-span.fieldfocused {
-   border-style: dashed;
-	border-width: 1px;
-   border-color: SteelBlue;
-}
-
 .tabsheet {
-	border: solid 1px black;
-	background-color : #FFFFFF;
+	border: 1px solid black;
+	background-color : #fff;
 }
 
 /* Style for spaces between tabs */
 td.tabSpacer {
-	border-bottom: solid 1px #000000;
-	background-color: #FFFFFF;
+	border-bottom: solid 1px #000;
+	background-color: #fff;
 }
 
 /* Style for selected tab */
 td.selectedTab  {
-	border-left: solid 1px black;
-	border-top: solid 1px black;
-	border-right: solid 1px black;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
 	white-space: nowrap;
 	font-size: 10pt;
-	font-family: verdana;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;;
 	background-color: #DFDFDF;
-	color: #000000;
+	color: #000;
 }
 
 /* Style for unselected tabs */
 td.unselectedTab {
-	border: solid 1px black;
+	border: 1px solid #000;
 	white-space: nowrap;
 	cursor: pointer;
 	background-color: #9C9C9C;
 	font-size: 10pt;
-	font-family: verdana;
-	color: #000000;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;;
+	color: #000;
 }
 
 /* Style for the whole opened tab zone */
 td.openedTab {
-	border-left: solid 1px black;
-	border-bottom: solid 1px black;
-	border-right: solid 1px black;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
 	background-color: #DFDFDF;
 	filter:alpha(opacity=60); /* Tabbox transparency for IE */
-   opacity: 0.6; /* Tabbox transparency for CSS3 (Firefox) */
+    opacity: 0.6; /* Tabbox transparency for CSS3 (Firefox) */
 }
 
 /* Style for the (optional) commands panel */
@@ -380,28 +387,26 @@ table.buttontab {
 }
 
 td.buttonl {
-	background: transparent url(../images/button-gfx.png) no-repeat scroll 0 0;
+	background: transparent url(../images/button-gfx.png) no-repeat scroll 0 -147px;
 	width: 3px;
 	height: 21px;
 }
-
 td.buttonr {
-	background: transparent url(../images/button-gfx.png) no-repeat scroll 0 -21px;
+	background: transparent url(../images/button-gfx.png) no-repeat scroll 0 -168px;
 	width: 3px;
 	height: 21px;
 }
-
 td.buttonc {
-	background: transparent url(../images/button-gfx.png) repeat-x scroll 0 -42px;
+	background: transparent url(../images/button-gfx.png) repeat-x scroll 0 -189px;
 	font-size: 10px;
 	text-align : center;
 }
 
 input.insidebutton {
-	background : transparent none repeat scroll 0 0;
-	border : 0 none;
+	background : none;
+	border : 0;
 	cursor : pointer;
-	font-family : tahoma,verdana,helvetica;
+	font-family : Verdana, Arial, Helvetica, Sans-Serif;;
 	font-size : 11px;
 	font-size-adjust : none;
 	font-stretch : normal;
@@ -411,11 +416,13 @@ input.insidebutton {
 	margin : 0;
 	outline-style : none;
 	outline-width : 0;
-	color : black;
+	color : #fff;
 	overflow : visible;
 	-x-system-font : none;
 }
-
+input.insidebutton:hover {
+	color : #006699;
+}
 /* Inactive/disabled keyword buttons/commands new styles */
 
 table.disabledbuttontab {
@@ -441,9 +448,9 @@ td.disabledbuttonc {
 }
 
 input.disabledinsidebutton {
-	background : transparent none repeat scroll 0 0;
-	border : 0 none;
-	font-family : tahoma,verdana,helvetica;
+	background : none;
+	border : 0;
+	font-family : Verdana, Arial, Helvetica, Sans-Serif;;
 	font-size : 11px;
 	font-size-adjust : none;
 	font-stretch : normal;
@@ -453,8 +460,8 @@ input.disabledinsidebutton {
 	margin : 0;
 	outline-style : none;
 	outline-width : 0;
-	color : black;
-	overflow : visible;
+	color : #888;
+	/*overflow : visible;*/
 	-x-system-font : none;
 }
 
@@ -484,7 +491,7 @@ input.extmenu {
 	border: 0 none;
 	/*border: solid 1px red;*/
 	cursor: pointer;
-	font-family: tahoma,verdana,helvetica;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;;
 	font-size: 11px;
 	font-size-adjust: none;
 	font-stretch: normal;
@@ -500,21 +507,43 @@ input.extmenu {
 
 /* New ext style for input fields */
 input.extField {
-	padding-bottom: 0;
-	padding-top: 2px;
-	height: 18px;
-	line-height: 18px;
-	vertical-align: middle;
-	background: #FFFFFF url(../images/text-bg.png) repeat-x scroll 0 0;
-	border: 1px solid #B5B8C8;
-	padding: 1px 3px;
 	-x-system-font: none;
-	font-family: tahoma,arial,helvetica,sans-serif;
-	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;;
+	font-size: 11px;
 	font-size-adjust: none;
 	font-stretch: normal;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
+	line-height: 15px;
+	vertical-align: middle;
+	height: 14px;
+	padding-bottom: 0;
+	padding-top: 2px;
+	padding: 1px 3px;
 	margin: 0;
+	margin: -3px 0 0 -8px;
+	background: #FFFFFF url(../images/text-bg.png) repeat-x scroll 0 0;
+	border: 1px solid #B5B8C8;
+}
+input.fieldText {
+	/*padding-top: 2px;*/
+	vertical-align: middle;
+	background: #fff url(../images/text-bg.png) repeat-x scroll 0 0;
+	border: 1px solid #B5B8C8;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;;
+	font-size: 10px;
+	text-align:center;
+	margin: 0;
+}
+span.fieldfocused {
+	border: 1px dashed #ff9900; 
+	margin-left: -8px !important;
+}
+span.fieldfocused input.extField {
+	border: 1px dashed #ff9900; 
+	margin-left:0;
+}
+table span.fieldfocused {
+	padding: -1px 0px 0px 0px;
 }
