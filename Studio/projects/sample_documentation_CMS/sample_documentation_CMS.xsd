@@ -501,16 +501,6 @@
 <xsd:appinfo>tableName</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element name="tableName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>tableName</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="tableName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>tableName</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
 </xsd:sequence>
 </xsd:complexType>
 <xsd:element name="DatabaseConnector__InsertArticle" type="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleRequestData">
@@ -551,56 +541,6 @@
 <xsd:appinfo>a_product_group</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element name="a_code" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_code</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_name" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_name</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_status" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_status</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_rsp" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_rsp</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_product_group" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_product_group</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_code" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_code</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_name" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_name</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_status" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_status</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_rsp" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_rsp</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_product_group" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_product_group</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
 </xsd:sequence>
 </xsd:complexType>
 <xsd:element name="DatabaseConnector__InsertWebSite" type="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteRequestData">
@@ -616,36 +556,6 @@
 <xsd:complexType name="DatabaseConnector__InsertWebSiteRequestData">
 <xsd:annotation/>
 <xsd:sequence>
-<xsd:element name="a_code" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_code</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="ws_url" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>ws_url</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="ws_title" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>ws_title</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="a_code" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>a_code</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="ws_url" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>ws_url</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="ws_title" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>ws_title</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
 <xsd:element name="a_code" type="xsd:string">
 <xsd:annotation>
 <xsd:appinfo>a_code</xsd:appinfo>
