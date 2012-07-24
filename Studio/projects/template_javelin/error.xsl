@@ -16,7 +16,7 @@
 	<xsl:template match="error">
 		<!-- add of the CSS file link -->
 		<link type="text/css" rel="styleSheet" href="css/exception.css" />
-    
+		
 		<!--  these two inputs are generated to hold the screen Dimension !-->
 		<input type="hidden" id="screenWidth" value= "{@screenWidth}" />
 		<input type="hidden" id="screenHeight" value= "{@screenHeight}" />
@@ -39,7 +39,7 @@
 								  left:{$offsetx}px;
 								  top:{$offsety}px;"> -->
 				<form name="javelin_form" method="post" onSubmit="doAction('KEY_ENTER');">
-					<input type="hidden" name="__javelin_current_field" />
+					<input type="hidden" name="__javelin_current_field" id="__javelin_current_field" />
 					<input type="hidden" name="__javelin_action" />
 					<input type="hidden" name="__transaction" />
 					<input type="hidden" name="__sesskey" />

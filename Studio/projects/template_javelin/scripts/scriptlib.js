@@ -922,7 +922,8 @@ function ajaxReadyStateListener()
 				if(enableBuffering)consome();
 				
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
 				var rEl = xmlDom.documentElement;
 				if (bCheckDomDirty) {
@@ -936,7 +937,8 @@ function ajaxReadyStateListener()
 			else {
 				alert("no XSL stylesheet found");
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
 				if(benchTime)chrono.stop(true);
 				if(benchTime)t_tot.stop(true);
@@ -971,7 +973,8 @@ function ajaxXmlPost(xmlRequester, form) {
    	}
    	
    	// turn on the wait DIV
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
    	clearTimeout(checkDomDirty);
    	if(benchTime)requestTime.start();
    	
@@ -1005,7 +1008,8 @@ function ajaxXmlPostData(xmlRequester, data) {
    	
    	// turn on the wait DIV
    	isWaiting = true;
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
    	if(benchTime)requestTime.start();
    	
    	// set the ajax receive handler
