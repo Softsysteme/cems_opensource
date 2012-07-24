@@ -14,6 +14,9 @@
 
 	<!-- TEMPLATE DOCUMENT -->
 	<xsl:template match="error">
+		<!-- add of the CSS file link -->
+		<link type="text/css" rel="styleSheet" href="css/exception.css" />
+    
 		<!--  these two inputs are generated to hold the screen Dimension !-->
 		<input type="hidden" id="screenWidth" value= "{@screenWidth}" />
 		<input type="hidden" id="screenHeight" value= "{@screenHeight}" />

@@ -275,17 +275,6 @@ span.disabledPanelBottomTitle {
 	background-color: #e2f9fe;
 }
 /* background color of an line of a table over */
-/*.datarowoddover {
-	color:#000;
-	background-color: #d2edec;
-	cursor:pointer;
-}
-.datarowevenover {
-	color:#000;
-	background-color: #fafffe;
-	cursor:pointer;
-}*/
-/* background color of an line of a table over */
 .datarowodd:hover {
 	background-color: #006699;
 	cursor:pointer;
@@ -313,6 +302,16 @@ span.disabledPanelBottomTitle {
 	background-color: #fff;
 	visibility: hidden;
 	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+/* Table borders */
+table.titletable {
+	border-top: solid 1px black; 
+	border-right: solid 1px black;						
+}
+div.Grid {
+	border-left: solid 1px;
+	border-bottom: solid 1px black;
 }
 
 /* Base style for table cells */

@@ -24,9 +24,7 @@
 		</xsl:variable>
 		<!-- Main container -->
 		<div class="Grid"
-			 style="border-left: solid 1px;
-					border-bottom: solid 1px black;
-			 		position: absolute;
+			 style="position: absolute;
 			 		left: {@column * $coefx + $offsetx}px;
 			 		top: {$tableTop * $coefy + $offsety}px;
 					width: {@width * $coefx}px;
@@ -35,9 +33,8 @@
 			<table cellpadding="0" 
 					cellspacing="0" 
 					border="0" 
-					style="border-top: solid 1px black; 
-							border-right: solid 1px black; 
-							width: {@width * $coefx}px;">
+					class="titletable" 
+					style="width: {@width * $coefx}px;">
 				<tr>
 					<xsl:apply-templates select="row/Title" />
 				</tr>
