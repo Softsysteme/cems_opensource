@@ -322,11 +322,23 @@ td.cell {
 	text-align: center;
 }
 
-div.waitDiv {
+#waitDiv div {
+	-moz-opacity: 0.2;
+	background-color: #B5D3E7;
+	filter: alpha(opacity=20);
+	height: 100%;
+	left: 0;
+	opacity: 0.2;
 	position: absolute;
-	top: 5px;
-	left: 10px;
-	visibility:hidden;
+	top: 0px;
+	width: 100%;
+	z-index:99998
+}
+#waitDiv img {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	z-index: 99999;
 }
 
 .tabsheet {
