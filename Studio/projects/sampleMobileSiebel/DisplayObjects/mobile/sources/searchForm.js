@@ -143,6 +143,7 @@ app.init.push(
 					}
 				}]
 			}],
+			scroll: 'vertical',
 			listeners: {
 				activate: function (comp){}
 			}
