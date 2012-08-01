@@ -3065,6 +3065,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SequenceSheetLocatio
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SequenceStepVariablesEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SequenceVariablesEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SheetLocationEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SmtpAttachmentEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SplitFieldsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SplitStepTagsEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SqlOutputSelectionEditor.java -text
