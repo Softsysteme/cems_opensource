@@ -41,7 +41,7 @@ public class Reload extends XmlService{
 
 	protected void getServiceResult(HttpServletRequest request, Document document) throws Exception {
         String projectName = request.getParameter("projectName");
-    	Engine.theApp.databaseObjectsManager.cacheRemoveObjects("/" + projectName);
+    	Engine.theApp.databaseObjectsManager.clearCache(projectName);
 		Engine.logAdmin.info("The project '" + projectName + "' has been reloaded");
 	}
 	
