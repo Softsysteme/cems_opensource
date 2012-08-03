@@ -1455,82 +1455,82 @@ Studio/src/com/twinsoft/convertigo/beans/common/XMLVector.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLizable.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XPath.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XPathBeanInfo.java -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/button_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/button_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/changelettercase_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/changelettercase_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/checkbox_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/checkbox_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/choice_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/choice_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/command_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/command_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/date_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/date_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/editfield_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/editfield_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/emptyscreen_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/emptyscreen_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/emulatortechnology_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/emulatortechnology_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/fieldVT_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/fieldVT_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/findstring_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/findstring_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/legacyScreenCriteria_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/legacyScreenCriteria_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/listbox_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/listbox_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/menu_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/menu_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/mergeblocks_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/mergeblocks_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/panel_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/panel_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/picture_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/picture_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/radiobutton_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/radiobutton_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/record_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/record_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/regularexpression_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/regularexpression_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/removeblocks_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/removeblocks_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/replacetext_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/replacetext_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/separator_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/separator_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/slider_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/slider_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/splitblock_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/splitblock_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/table_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/table_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/url_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/url_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/webclipper_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/webclipper_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_node_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_node_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_nodelist_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_nodelist_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_record_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_record_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_table_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_table_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_text_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_text_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_variable_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xml_variable_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xpath_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/common/images/xpath_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/button_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/button_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/changelettercase_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/changelettercase_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/checkbox_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/checkbox_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/choice_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/choice_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/command_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/command_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/date_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/date_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/editfield_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/editfield_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/emptyscreen_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/emptyscreen_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/emulatortechnology_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/emulatortechnology_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/fieldVT_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/fieldVT_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/findstring_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/findstring_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/legacyScreenCriteria_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/legacyScreenCriteria_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/listbox_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/listbox_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/menu_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/menu_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/mergeblocks_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/mergeblocks_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/panel_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/panel_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/picture_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/picture_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/radiobutton_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/radiobutton_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/record_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/record_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/regularexpression_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/regularexpression_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/removeblocks_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/removeblocks_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/replacetext_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/replacetext_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/separator_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/separator_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/slider_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/slider_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/splitblock_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/splitblock_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/table_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/table_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/url_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/url_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/webclipper_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/webclipper_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_node_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_node_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_nodelist_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_nodelist_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_record_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_record_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_table_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_table_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_text_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_text_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_variable_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xml_variable_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xpath_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xpath_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/AbstractXMLReferer.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/Attribute.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/Button.properties -text
@@ -1597,20 +1597,20 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/SiteClipperConnectorBeanInfo
 Studio/src/com/twinsoft/convertigo/beans/connectors/SqlConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/SqlConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/SqlData.java -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_32x32.gif -text svneol=unset#unset
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/CicsConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/ExternalBrowserConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HtmlConnector.properties -text
@@ -1690,40 +1690,40 @@ Studio/src/com/twinsoft/convertigo/beans/core/TransactionWithVariables.java -tex
 Studio/src/com/twinsoft/convertigo/beans/core/TransactionWithVariablesBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/Variable.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/VariableBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/core/images/bean_property_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/blockfactory_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/blockfactory_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/connector_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/connector_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/criteria_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/criteria_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_32x32[!!-~].gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/extractionrule_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/extractionrule_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/mobiledevice_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/mobiledevice_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/pool_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/pool_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/project_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/screenclass_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/screenclass_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/sequence_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/sequence_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/sheet_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/sheet_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/statement_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/statement_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/step_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/step_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/bean_property_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/blockfactory_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/blockfactory_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/connector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/connector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/criteria_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/criteria_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_32x32[!!-~].png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/default_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/extractionrule_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/extractionrule_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/mobiledevice_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/mobiledevice_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/pool_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/pool_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/project_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/screenclass_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/screenclass_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/sequence_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/sequence_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/sheet_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/sheet_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/statement_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/statement_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/step_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/step_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Connector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Criteria.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/DatabaseObject.properties -text
@@ -1763,18 +1763,18 @@ Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/MatchStatusCode.ja
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/MatchStatusCodeBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/MatchUrl.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/MatchUrlBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_mimetype_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_mimetype_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_regexp_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_regexp_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_statusCode_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_statusCode_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_url_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_url_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_headerResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_mimetype_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_mimetype_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_regexp_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_regexp_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_statusCode_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_statusCode_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_url_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/images/match_url_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/BaseCriteria.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/CriteriaWithRegex.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/res/MatchHeader.properties -text svneol=unset#text/plain
@@ -1848,54 +1848,54 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLoca
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLocationHeaderBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjectorBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheader_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheader_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionclick_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionclick_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetchecked_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetchecked_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetvalue_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetvalue_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_css_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_css_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_header_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_header_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_injector_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_injector_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_location_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_location_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheader_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheader_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheaders_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheaders_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderRequest_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderRequest_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderResponse_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderResponse_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheader_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheader_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_url_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_url_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheader_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheader_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionclick_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionclick_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetchecked_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetchecked_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetvalue_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_clientinstructionsetvalue_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_css_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_css_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_headerResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_header_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_header_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_injector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_injector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_location_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_location_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheaderResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheader_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_modifyheader_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheadersResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheaders_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeCacheheaders_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderRequest_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderRequest_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderResponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheaderResponse_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheader_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheader_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_url_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_url_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/AbstractClientInstructionWithPath.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/AddHeader.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/AddHeaderToRequest.properties -text svneol=unset#text/plain
@@ -1931,16 +1931,16 @@ Studio/src/com/twinsoft/convertigo/beans/html/XMLAddText.java -text svneol=unset
 Studio/src/com/twinsoft/convertigo/beans/html/XMLAddTextBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/XMLDeleteNodes.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/XMLDeleteNodesBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_button_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_button_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_image_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_image_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_link_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_link_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_text_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_text_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_delete_nodes_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/html/images/xml_delete_nodes_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_button_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_button_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_image_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_image_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_link_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_link_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_text_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_add_text_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_delete_nodes_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/html/images/xml_delete_nodes_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/html/res/XMLAddButton.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/res/XMLAddImage.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/res/XMLAddLink.properties -text svneol=unset#text/plain
@@ -1956,16 +1956,16 @@ Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone3.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone3BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone4.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone4BeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/apple_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/apple_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/blackberry_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/blackberry_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/web_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/web_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/windowsphone_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/windowsphone_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/apple_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/apple_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/blackberry_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/blackberry_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/web_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/web_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/windowsphone_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/windowsphone_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/Android.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/BlackBerry6.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPad.properties -text svneol=unset#text/plain
@@ -2003,12 +2003,12 @@ Studio/src/com/twinsoft/convertigo/beans/sna/NptuiBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/sna/Subfile.java -text
 Studio/src/com/twinsoft/convertigo/beans/sna/SubfileBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/sna/WindowedBlockManager.java -text
-Studio/src/com/twinsoft/convertigo/beans/sna/images/command_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/sna/images/command_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/sna/images/menu_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/sna/images/menu_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/sna/images/nptui_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/sna/images/nptui_color_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/command_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/command_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/menu_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/menu_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/nptui_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/sna/images/nptui_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/sna/res/CommandSNA.properties -text
 Studio/src/com/twinsoft/convertigo/beans/sna/res/Menu.properties -text
 Studio/src/com/twinsoft/convertigo/beans/sna/res/Nptui.properties -text
@@ -2126,94 +2126,94 @@ Studio/src/com/twinsoft/convertigo/beans/statements/WhileStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/WhileStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/XpathableStatement.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/XpathableStatementBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/statements/images/ContinueWithSiteClipperStatement_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/ContinueWithSiteClipperStatement_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/RecordForSiteClipperStatement_color_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/RecordForSiteClipperStatement_color_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/adoptclientcookies_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/adoptclientcookies_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/break_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/break_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/browserpropertychange_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/browserpropertychange_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/callfunction_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/callfunction_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/container_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/container_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextaddtextnode_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextaddtextnode_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextget_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextget_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextset_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/contextset_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesadd_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesadd_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesget_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesget_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/create_event_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/create_event_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/credentials_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/credentials_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/do_while_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/do_while_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/exception_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/exception_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/function_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/function_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getattachment_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/getattachment_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_entry_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_entry_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/http_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/http_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/if_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/if_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetvalue_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetvalue_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/invokebrowserjs_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/invokebrowserjs_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/key_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/key_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/log_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/log_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/mouse_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/mouse_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/mouseadvance_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/mouseadvance_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/navigationbar_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/navigationbar_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/return_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/return_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/simple_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/simple_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/tabmanagement_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/tabmanagement_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/variable_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/variable_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/waittrigger_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/waittrigger_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/while_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/statements/images/while_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ContinueWithSiteClipperStatement_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ContinueWithSiteClipperStatement_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/RecordForSiteClipperStatement_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/RecordForSiteClipperStatement_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/adoptclientcookies_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/adoptclientcookies_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/break_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/break_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/browserpropertychange_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/browserpropertychange_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/callfunction_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/callfunction_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/container_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/container_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextaddtextnode_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextaddtextnode_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextget_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextget_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextset_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/contextset_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesadd_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesadd_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesget_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/cookiesget_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/create_event_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/create_event_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/credentials_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/credentials_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/do_while_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/do_while_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/exception_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/exception_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/function_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/function_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getNodes_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getText_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getUrl_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getattachment_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/getattachment_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_entry_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_entry_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/handler_exit_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/http_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/http_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/httpupload_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/if_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/if_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/ifxpathexists_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetchecked_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetfile_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetselected_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetvalue_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/inputhtmlsetvalue_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/invokebrowserjs_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/invokebrowserjs_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/key_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/key_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/log_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/log_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/mouse_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/mouse_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/mouseadvance_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/mouseadvance_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/navigationbar_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/navigationbar_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/return_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/return_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/simple_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/simple_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/tabmanagement_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/tabmanagement_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/variable_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/variable_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/waittrigger_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/waittrigger_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/while_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/statements/images/while_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AbstractComplexeEventStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AbstractEventStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AdoptClientCookies.properties -text svneol=unset#text/plain
@@ -2400,96 +2400,96 @@ Studio/src/com/twinsoft/convertigo/beans/steps/XMLSplitStep.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLSplitStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLTransformStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLTransformStepBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/break_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/break_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/element_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/element_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/exception_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/exception_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/function_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/function_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/if_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/iterator_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/iterator_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jiterator_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jiterator_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/log_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/log_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/move_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/move_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/return_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/return_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/while_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/while_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlR_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlR_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_32x32.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/break_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/break_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/concatstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/csvW_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/datetime_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/delete_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/do_while_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/duplicate_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/element_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/element_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/exception_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/exception_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/function_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/function_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatedates_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/if_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/iterator_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/iterator_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jattrib_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jelement_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jif_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jiterator_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jiterator_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimple_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsimplesource_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/jsource_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/listdir_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/log_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/log_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/move_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/move_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/return_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/return_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/sequencestep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/while_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/while_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlR_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlR_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlW_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/xml_tag_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/AttributeStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BlockStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/BranchStep.properties -text svneol=unset#text/plain
@@ -2599,8 +2599,8 @@ Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseMultiValuedVariable.j
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseMultiValuedVariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseVariable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseVariableBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_16x16.gif -text
-Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_32x32.gif -text
+Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/variables/res/HttpStatementMultiValuedVariable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/res/HttpStatementVariable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/res/RequestableHttpMultiValuedVariable.properties -text svneol=unset#text/plain
@@ -2617,10 +2617,10 @@ Studio/src/com/twinsoft/convertigo/beans/vdx/EditField.java -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/EditFieldBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/Menu.java -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/MenuBeanInfo.java -text
-Studio/src/com/twinsoft/convertigo/beans/vdx/images/command_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/vdx/images/command_color_32x32.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/vdx/images/editfield_color_16x16.gif -text svneol=unset#unset
-Studio/src/com/twinsoft/convertigo/beans/vdx/images/editfield_color_32x32.gif -text svneol=unset#unset
+Studio/src/com/twinsoft/convertigo/beans/vdx/images/command_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/vdx/images/command_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/vdx/images/editfield_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/vdx/images/editfield_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/CommandVdx.properties -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/EditField.properties -text
 Studio/src/com/twinsoft/convertigo/beans/vdx/res/Menu.properties -text
