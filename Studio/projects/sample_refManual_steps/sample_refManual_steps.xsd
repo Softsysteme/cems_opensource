@@ -31,63 +31,6 @@
 <xsd:element minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="SearchSeveralKeywords" type="sample_refManual_steps_ns:SearchSeveralKeywordsRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SearchSeveralKeywordsResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_refManual_steps_ns:SearchSeveralKeywordsResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SearchSeveralKeywordsRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="inputs">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:element name="maxResult" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SearchSeveralKeywordsResponseData">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="input" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291387665564StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="search1291387665564StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="keyword" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1291387446441StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
 <xsd:complexType name="search1291632290863StepType">
 <xsd:annotation/>
 <xsd:sequence>
@@ -387,42 +330,6 @@
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>
-<xsd:element name="SendEmail" type="sample_refManual_steps_ns:SendEmailRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SendEmailResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_refManual_steps_ns:SendEmailResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SendEmailRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="SendEmailResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sample_refManual_steps_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="seq_result" type="sample_refManual_steps_ns:seq_result1342441465121StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="seq_result1342441465121StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="elem1" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="elem2" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="elem3" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
 <xsd:complexType name="complex1342793666325StepType">
 <xsd:annotation/>
 <xsd:sequence/>
@@ -469,6 +376,97 @@
 <xsd:annotation/>
 <xsd:sequence>
 <xsd:element minOccurs="0" name="item" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SearchSeveralKeywords" type="sample_refManual_steps_ns:SearchSeveralKeywordsRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SearchSeveralKeywordsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SearchSeveralKeywordsResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SearchSeveralKeywordsRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="inputs">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="maxResult" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="SearchSeveralKeywordsResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_steps_ns:ConvertigoError"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="search" type="sample_refManual_steps_ns:search1291387665564StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="search1291387665564StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="keyword" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_documentation_CWI_ns:resultItem_listResultsRowType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1291387446441StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sample_documentation_CWI_ns:GoogleConnector__searchGoogleWithLimitResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="SendEmail" type="sample_refManual_steps_ns:SendEmailRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="SendEmailResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_refManual_steps_ns:SendEmailResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="SendEmailRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="SendEmailResponseData">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sample_refManual_steps_ns:ConvertigoError"/>
+<xsd:element minOccurs="0" name="seq_result" type="sample_refManual_steps_ns:seq_result1342441465121StepType">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="seq_result1342441465121StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="elem" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element minOccurs="0" name="elem" type="xsd:string">
 <xsd:annotation/>
 </xsd:element>
 </xsd:sequence>
