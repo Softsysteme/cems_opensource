@@ -2685,7 +2685,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComp
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TrialRegistrationDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSource.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSourceTransfer.java -text svneol=unset#text/plain
