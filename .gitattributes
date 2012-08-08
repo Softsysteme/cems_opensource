@@ -1150,7 +1150,10 @@ Studio/projects/template_javelin/images/descending.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/disabledbutton-gfx.png -text
 Studio/projects/template_javelin/images/ex_ascending.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/ex_descending.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/icon_details_error_xsl.png -text
+Studio/projects/template_javelin/images/icon_error_xsl.png -text
 Studio/projects/template_javelin/images/loading.gif -text
+Studio/projects/template_javelin/images/logo_convertigo_mashup_server300_error.png -text
 Studio/projects/template_javelin/images/menuarrow.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/menuarrow2.gif -text svneol=unset#unset
 Studio/projects/template_javelin/images/msxml_inst.gif -text svneol=unset#unset
@@ -1228,6 +1231,9 @@ Studio/projects/template_javelinDKU/images/croix.gif -text svneol=unset#unset
 Studio/projects/template_javelinDKU/images/descending.gif -text svneol=unset#unset
 Studio/projects/template_javelinDKU/images/ex_ascending.gif -text svneol=unset#unset
 Studio/projects/template_javelinDKU/images/ex_descending.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/icon_details_error_xsl.png -text
+Studio/projects/template_javelinDKU/images/icon_error_xsl.png -text
+Studio/projects/template_javelinDKU/images/logo_convertigo_mashup_server300_error.png -text
 Studio/projects/template_javelinDKU/images/menuarrow.gif -text svneol=unset#unset
 Studio/projects/template_javelinDKU/images/menuarrow2.gif -text svneol=unset#unset
 Studio/projects/template_javelinDKU/images/msxml_inst.gif -text svneol=unset#unset

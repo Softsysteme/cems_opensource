@@ -31,60 +31,65 @@
 
 	<xsl:template name="generate-page">
 		<div id="generated_page">
-			<span style	="position:absolute;
-							  left:{$offsetx}px;
-							  top:{$offsety}px;">
-			<form name="javelin_form" method="post" onSubmit="doAction('KEY_ENTER');">
-				<input type="hidden" name="__javelin_current_field" />
-				<input type="hidden" name="__javelin_action" />
-				<input type="hidden" name="__transaction" />
-				<input type="hidden" name="__sesskey" />
-				<input type="hidden" name="__context" value="{/document/@context}" />
-				<input type="hidden" name="__signature" id="__signature" value="{/document/@signature}" />
-				<br/>
-				<p>
-					<img src="images/twinsoft.gif"/>&#160;&#160;&#160;&#160;<img src="images/convertigo-small.gif"/>
-				</p>
-				<blockquote>
-					<p>
-						<table bordercolor="#002F8E" style="border-collapse: collapse" cellspacing="0" cellpadding="0" border="3">
-							<tr>
-								<td valign="top">
-									<table cellspacing="0" cellpadding="6" border="0">
-										<tr>
-											<td class="title" colspan="2">error</td>
-										</tr>
-										<tr>
-											<td colspan="2">
-												An unexpected error occured while Convertigo was trying to execute the transaction :  '<xsl:value-of select="@transaction"/>'
-												<br/>Try again your request.
-												<br/>If the issue is still occuring, please contact Convertigo administrator, providing the following information.
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
+			<div id="c8o_errorPage">
+				<span style	="position:absolute;
+								  left:{$offsetx}px;
+								  top:{$offsety}px;">
+				<form name="javelin_form" method="post" onSubmit="doAction('KEY_ENTER');">
+					<input type="hidden" name="__javelin_current_field" />
+					<input type="hidden" name="__javelin_action" />
+					<input type="hidden" name="__transaction" />
+					<input type="hidden" name="__sesskey" />
+					<input type="hidden" name="__context" value="{/document/@context}" />
+					<input type="hidden" name="__signature" id="__signature" value="{/document/@signature}" />
+					<br/>
+					<p class="center">
+						<img src="images/logo_convertigo_mashup_server300_error.png" id="logoConvertigo"/>
 					</p>
-				</blockquote>
-				<p>
-					<img src="images/arrow-right-triple.gif"/>
-					<a href="javascript:showErrorDetails()">Click here to display error details</a>
-				</p>
-				<div id="details" style="display: none">
-					<h3>Main exception</h3>
-					<p>
-						<b>[<xsl:value-of select="exception"/>]</b><br/>
-						<xsl:value-of select="message"/>
+					<blockquote>
+						<p>
+							<table cellspacing="0" cellpadding="0">
+								<tr>
+									<td valign="top">
+										<table cellspacing="0" cellpadding="6" border="0">
+											<tr>
+												<td class="title" colspan="2">Error</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p>
+														An unexpected error occured while Convertigo was trying to execute the transaction :  '<xsl:value-of select="@transaction"/>'
+														<br/>Try again your request.
+														<br/>If the issue is still occuring, please contact Convertigo administrator, providing the following information.
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</p>
+					</blockquote>
+					<p class="errorDetails">
+						<img src="images/icon_details_error_xsl.png"/>
+						<a href="javascript:showErrorDetails()">Click here to display error details</a>
 					</p>
-					<h3>Stack trace</h3>
-					<pre>
-						<xsl:value-of select="stacktrace"/>
-					</pre>
-					<p class="small">Copyright © 2001-2011 Convertigo SA. All rights reserved.</p>
-				</div>
-			</form>
-			</span>
+					<div id="details" style="display: none">
+						<h3>Main exception</h3>
+						<p>
+							<b>[<xsl:value-of select="exception"/>]</b><br/>
+							<xsl:value-of select="message"/>
+						</p>
+						<h3>Stack trace</h3>
+						<pre>
+							<xsl:value-of select="stacktrace"/>
+						</pre>
+						<hr/>
+						<p class="small center">Copyright © 2001-2012 Convertigo SA. All rights reserved.</p>
+					</div>
+				</form>
+				</span>
+			</div>
 		</div>
 	</xsl:template>
 

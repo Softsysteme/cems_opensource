@@ -1,65 +1,77 @@
-body {
+#c8o_errorPage {
 	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
 	font-size:   10px; 
 	background-color: #ffffff;
 	color: #666666;
-}
-a {
-	color:#c90d0d;
-	text-decoration: underline;
-}
-a:hover {
-	color:#666;
-	text-decoration: none;
-}
-h3 {
-	color:#c90d0d;
-}
-img {
-	border:0;
-}
-img#logoConvertigo {
-	margin:10px;
-}
-p {
-	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
-	font-size:   12px; 
-}
-.small {
-	font-size: 10px;
-	text-align: center;
-}
-pre {
-	font-size: 11px;
-	white-space: normal; 
-}
-td {
-	color: #666666;
-	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
-	font-size:   12px; 
-}
-.title {
-	background: transparent url(../images/bg_titletable.jpg) repeat-x scroll 0 0;
-	color: #666666;
-	font-size: 12px;
-	font-weight: bold;
-}
-
-/* ** page error content ** */
-#page_error {
 	margin: 0 auto;
 	width:700px;
 }
-#page_error table {
+#c8o_errorPage img {
+	border:0;
+}
+#c8o_errorPage h3 {
+	color: #00a4c8;
+	font-size: 13pt;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-family: Arial, Verdana, sans-serif;	
+}
+#c8o_errorPage p {
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
+	font-size:   12px;
+}
+#c8o_errorPage hr {
+	border-style: dotted none none;
+    border-width: 1px 0 0;
+    height: 1px;
+    margin: 30px 0 10px 0;
+    width: 100%;
+}
+#c8o_errorPage pre {
+	font-size: 11px;
+	white-space: normal; 
+}
+#c8o_errorPage table {
 	 border-collapse: collapse;
 	 padding:0;
 	 margin:2px;
 	 border: 1px solid #ccc;
 }
-.errorDetails {
+#c8o_errorPage td {
+	color: #666666;
+	font-family: "Lucida console", Verdana, Arial, Helvetica, Sans-Serif;	
+	font-size:   12px; 
+}
+#c8o_errorPage a {
+	color: #00a4c8;
+	text-decoration: underline;
+}
+#c8o_errorPage a: hover {
+	color: #666;
+	text-decoration: none;
+}
+#c8o_errorPage .small {
+	font-size: 10px;
+	text-align: center;
+}
+#c8o_errorPage .center {
+	text-align: center;
+}
+#c8o_errorPage .title {
+	color: #00a4c8;
+	background: transparent url('../images/icon_error_xsl.png') no-repeat 8px 5px;
+	padding-left:40px;
+	padding-top:10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#c8o_errorPage img#logoConvertigo {
+	margin:10px;
+}
+#c8o_errorPage .errorDetails {
 	padding-left:40px;
 }
-#details {
+#c8o_errorPage #details {
 	padding-left: 40px;
-
+	padding-right: 43px;
 }
