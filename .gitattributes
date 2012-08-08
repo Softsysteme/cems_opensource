@@ -4200,6 +4200,8 @@ Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-activ
 Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-hover.png -text
 Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-idle.png -text
 Studio/tomcat/webapps/convertigo/admin/images/help.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/icon_details_error_xsl.png -text
+Studio/tomcat/webapps/convertigo/admin/images/icon_error_xsl.png -text
 Studio/tomcat/webapps/convertigo/admin/images/identification.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/information.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/information_16x16.gif -text
@@ -4217,8 +4219,10 @@ Studio/tomcat/webapps/convertigo/admin/images/log_ctx_menu_set_startdate.png -te
 Studio/tomcat/webapps/convertigo/admin/images/login_bg_cadre.png -text
 Studio/tomcat/webapps/convertigo/admin/images/login_dfs_bg_login_logo.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/logo-convertigo-184x75.jpg -text
+Studio/tomcat/webapps/convertigo/admin/images/logo-ems-datasheet-300pix.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/logo-ems-datasheet-300pix.png -text
 Studio/tomcat/webapps/convertigo/admin/images/logo_convertigo_enterprise_mashup_290x100.jpg -text
+Studio/tomcat/webapps/convertigo/admin/images/logo_convertigo_mashup_server300_error.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/01.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/02.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/03.png -text
@@ -4426,7 +4430,6 @@ Studio/tomcat/webapps/convertigo/css/autocomplete.css -text
 Studio/tomcat/webapps/convertigo/css/button.css -text
 Studio/tomcat/webapps/convertigo/css/common.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/contextMenu.css -text
-Studio/tomcat/webapps/convertigo/css/exception.css -text
 Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
 Studio/tomcat/webapps/convertigo/css/images/ajaxloader.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons18black.png -text
