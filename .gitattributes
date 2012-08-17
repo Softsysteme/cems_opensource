@@ -1403,6 +1403,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/Table.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TableBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TagName.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TagNameBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/common/TranslateText.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/common/TranslateTextBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/TrimBlock.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TrimBlockBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/Url.java -text svneol=unset#text/plain
@@ -1491,6 +1493,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/tabs_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_16x16.gif -text svneol=unset#unset
 Studio/src/com/twinsoft/convertigo/beans/common/images/tagname_color_32x32.gif -text svneol=unset#unset
+Studio/src/com/twinsoft/convertigo/beans/common/images/translatetext_color_16x16.gif -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/translatetext_color_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_16x16.gif -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/trimblock_color_32x32.gif -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/url_color_16x16.gif -text
@@ -1545,6 +1549,7 @@ Studio/src/com/twinsoft/convertigo/beans/common/res/Style.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/TabBox.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/Table.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/TagName.properties -text
+Studio/src/com/twinsoft/convertigo/beans/common/res/TranslateText.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/TrimBlock.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/Url.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/WebClipper.properties -text
