@@ -327,12 +327,12 @@ Studio/lib/axis2-1.6.1/lib/xmlbeans-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/backport/backport-util-concurrent-3.1.jar -text
 Studio/lib/backport/backport-util-concurrent-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/commons-collections-3.1.jar -text
-Studio/lib/convertigo-engine-htmlparsers.jar -text
 Studio/lib/cos.jar -text
 Studio/lib/ctgclient.jar -text
 Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/ejb.jar -text
+Studio/lib/engine-htmlparsers.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/hibernate/antlr-2.7.6.jar -text
 Studio/lib/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar -text
