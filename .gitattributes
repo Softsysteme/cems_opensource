@@ -1573,6 +1573,7 @@ Studio/src/com/twinsoft/convertigo/beans/common/res/Style.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/TabBox.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/Table.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/TagName.properties -text
+Studio/src/com/twinsoft/convertigo/beans/common/res/TranslateText.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/TrimBlock.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/Url.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/WebClipper.properties -text
