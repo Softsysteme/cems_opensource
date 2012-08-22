@@ -1431,6 +1431,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/Table.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TableBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TagName.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TagNameBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/common/TranslateText.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/common/TranslateTextBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/TrimBlock.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/TrimBlockBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/Url.java -text svneol=unset#text/plain
