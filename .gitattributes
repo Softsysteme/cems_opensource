@@ -2425,6 +2425,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/SimpleStep.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SleepStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SleepStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/SmartType.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SmtpStep.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/SmtpStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/SourceStep.java -text svneol=unset#text/plain
