@@ -1709,6 +1709,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/ISchemaAttributeGenerator.java -te
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaElementGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaIncludeGenerator.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/ISchemaParticleGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IScreenClassContainer.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ISheetContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IStepSourceContainer.java -text svneol=unset#text/plain
