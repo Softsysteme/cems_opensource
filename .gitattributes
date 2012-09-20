@@ -3724,6 +3724,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/RemoteAdmin.java -text svneol=uns
 Studio/src/com/twinsoft/convertigo/engine/util/RemoteAdminException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/RhinoUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/SOAPUtils.java -text
+Studio/src/com/twinsoft/convertigo/engine/util/SchemaUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/SimpleCipher.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/SimpleSHA1.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/SqlRequester.java -text
@@ -3742,6 +3743,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/XMLUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/XSDExtractor.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/XSDUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/XmlSchemaUtils.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/util/XmlSchemaWalker.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ZipUtils.java -text
 Studio/tomcat/LICENSE -text
 Studio/tomcat/NOTICE -text
