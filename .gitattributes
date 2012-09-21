@@ -1706,7 +1706,6 @@ Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/IMultiValued.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/INillableProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaAttributeGenerator.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/core/ISchemaElementGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaIncludeGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaParticleGenerator.java -text svneol=unset#text/plain
