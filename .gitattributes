@@ -3302,6 +3302,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionNod
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionStepNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProvider.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelDecorator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/all.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/annotation.gif -text
