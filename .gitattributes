@@ -3300,6 +3300,101 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/SiteClipperCon
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/SqlConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionStepNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaView.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProvider.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProvider.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/all.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/annotation.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attribute.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attribute_ref.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attributegroup.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attributegroup_ref.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attributegroups_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attributes_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/choice.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/complex_content.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/complex_type.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/directives_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/element.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/element_ref.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/elements_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/enumeration_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/extension.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/fraction_digits_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/group.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/group_ref.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/groups_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/identity_constraint_unique.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/import.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/include.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/key.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/key_ref.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/length_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/max_exclusive_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/max_inclusive_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/max_length_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/min_exclusive_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/min_inclusive_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/min_length_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/notation.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_n.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_n_m.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_n_unbounded.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_one.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_one_n.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_one_unbounded.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_zero.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_zero_n.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_zero_one.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/occurrence_zero_unbounded.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/particle.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/pattern_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/redefine.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/restriction.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/schema.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/sequence.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/simple_content.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/simple_type.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/simple_type_atomic.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/simple_type_list.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/simple_type_union.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/total_digits_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/type.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/types_folder.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/white_space_facet.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_attribute.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_element.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_field.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_selector.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AllNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AnnotationNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributeGroupNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributeNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributesFolder.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ChoiceNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ContentNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/DirectivesFolder.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ElementNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ElementsFolder.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ExtensionNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/FolderNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/GroupNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/GroupsFolder.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ImportNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/IncludeNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/KeyNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ListNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/RedefineNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/RestrictionNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SchemaNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SequenceNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeParentNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TypeNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TypesFolder.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/UnionNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/UniqueNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/XsdNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.java -text svneol=unset#text/plain
