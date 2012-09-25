@@ -373,7 +373,7 @@ Studio/lib/mysql-connector.jar -text
 Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
 Studio/lib/quartz-1.7.1.jar -text
-Studio/lib/rhino-1.7-R2.jar -text
+Studio/lib/rhino-1.7-R4.jar -text
 Studio/lib/scribe-1.1.0.jar -text
 Studio/lib/soapui/bcprov-jdk15-141.jar -text
 Studio/lib/soapui/commons-beanutils-1.7.0.jar -text
