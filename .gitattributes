@@ -3711,6 +3711,7 @@ Studio/src/com/twinsoft/convertigo/engine/migration/Migration001.java -text svne
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration3_0_0.java -text
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_0.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_4.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/migration/Migration6_3_0.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/MigrationUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/AbstractBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/Biller.java -text
