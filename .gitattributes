@@ -3404,6 +3404,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/RestrictionNode.ja
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SchemaNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SchemaTreeRoot.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SequenceNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TextNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeParentNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeRootNode.java -text svneol=unset#text/plain
