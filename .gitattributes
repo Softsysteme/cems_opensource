@@ -1494,6 +1494,7 @@ Studio/src/com/twinsoft/convertigo/beans/common/XMLVector.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLizable.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XPath.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XPathBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/common/XmlQName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/images/attribute_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/attribute_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/button_color_16x16.png -text
@@ -1700,6 +1701,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/DatabaseObject.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/DatabaseObjectBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ExtractionRule.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ExtractionRuleBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/core/IComplexTypeAffectation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IContainerOrdered.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IContextMaintainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text svneol=unset#text/plain
@@ -3181,6 +3183,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/WebClipperAttributes
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/XMLRecordEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/XMLTableColumnEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/XMLTableEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/XmlQNameEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/XmlQNameEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ZoneEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ZoneEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/images/table_editor/delete.d.png -text
@@ -3314,8 +3318,11 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionNod
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionStepNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProvider.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProviderBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelDecorator.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelDecoratorBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProvider.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProviderBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/all.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/annotation.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attribute.gif -text
