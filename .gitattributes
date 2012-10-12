@@ -3213,6 +3213,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/swt/KTableCellSelectionListener.java 
 Studio/src/com/twinsoft/convertigo/eclipse/swt/KTableModel.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/swt/KTableModelExample.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/swt/SWTX.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/swt/SwtUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/swt/ToggleButton.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/trace/TracePlayerThread.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/viewers/ScriptCellEditor.java -text
@@ -3318,11 +3319,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionNod
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/TransactionStepNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProvider.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewContentProviderBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelDecorator.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelDecoratorBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProvider.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/SchemaViewLabelProviderBis.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/all.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/annotation.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/attribute.gif -text
@@ -3387,40 +3385,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_attribut
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_element.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_field.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_selector.gif -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AllNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AnnotationNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributeGroupNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributeNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/AttributesFolder.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ChoiceNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ContentNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/DirectivesFolder.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/DocumentationNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ElementNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ElementsFolder.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ExtensionNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/FolderNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/GroupNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/GroupsFolder.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ImportNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/IncludeNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/KeyNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/ListNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/RedefineNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/RestrictionNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SchemaNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SchemaTreeRoot.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/SequenceNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TextNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeParentNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TreeRootNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TypeNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/TypesFolder.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/UnionNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/UniqueNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/UnresolvedNode.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/schema/model/XsdNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.java -text svneol=unset#text/plain
