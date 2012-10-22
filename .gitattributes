@@ -1646,8 +1646,6 @@ Studio/src/com/twinsoft/convertigo/beans/common/res/XPath.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/CicsConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/CicsConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/ConnectionException.java -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnector.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/HtmlConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/HtmlConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/HttpConnector.java -text
@@ -2621,8 +2619,6 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLTransformStep.properties -
 Studio/src/com/twinsoft/convertigo/beans/transactions/CicsTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/CicsTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/ComparableFieldElement.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/ExternalBrowserTransaction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/ExternalBrowserTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/HtmlTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/HtmlTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/HttpTransaction.java -text
