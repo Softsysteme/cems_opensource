@@ -1374,6 +1374,8 @@ Studio/projects/template_mobileSencha/data/list.xml -text svneol=unset#text/plai
 Studio/projects/template_mobileSencha/template_mobileSencha.wsdl -text
 Studio/projects/template_mobileSencha/template_mobileSencha.xml -text
 Studio/projects/template_mobileSencha/template_mobileSencha.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/xsd/internal/void/Default_transaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/xsd/template_mobileSencha.xsd -text svneol=unset#text/plain
 Studio/projects/template_sequence/template_sequence.wsdl -text svneol=unset#text/plain
 Studio/projects/template_sequence/template_sequence.xml -text svneol=unset#text/plain
 Studio/projects/template_sequence/template_sequence.xsd -text svneol=unset#text/plain
