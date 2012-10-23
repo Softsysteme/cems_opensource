@@ -1338,6 +1338,8 @@ Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_page
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/xsd/internal/void/Default_transaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/config.xml -text
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/c8o.css -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
