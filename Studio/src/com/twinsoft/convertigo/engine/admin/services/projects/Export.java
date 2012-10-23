@@ -49,8 +49,7 @@ public class Export extends DownloadService {
 	
 		String projectName = request.getParameter("projectName");
 					
-		///response.setHeader("Content-Length", "" + data.length);
-		response.setHeader("Content-Disposition", "Attachment header; filename=" + projectName + ".car");
+		response.setHeader("Content-Disposition", "attachment; filename=\"" + projectName + ".car\"");
 		response.setContentType("application/zip");	   
 		
 		// if any, backup existing CAR file
@@ -68,6 +67,7 @@ public class Export extends DownloadService {
 	
 		// upload CAR file to admin
 		f = new File(Engine.PROJECTS_PATH + "/" + projectName + ".car");
+		response.setHeader("Content-Length", "" + f.length());
 		if (f.exists()) {
 			BufferedInputStream bis = new BufferedInputStream(new FileInputStream(f));
 			OutputStream outStream = response.getOutputStream();
