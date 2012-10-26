@@ -1,22 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<erreur>
-		<code>-4</code>
-		<label></label>
-	</erreur>
-	<erreur>
-		<code>-3</code>
-		<label></label>
-	</erreur>
-	<erreur>
-		<code>-2</code>
-		<label></label>
-	</erreur>
-	<erreur>
-		<code>-1</code>
-		<label></label>
-	</erreur>
-	<erreur>
 		<code>0</code>
 		<label>Result OK</label>
 	</erreur>
@@ -54,19 +38,19 @@
 	</erreur>
 	<erreur>
 		<code>9</code>
-		<label>Error while registering in our commercial database</label>
+		<label>Error while adding the authentication in database</label>
 	</erreur>
 	<erreur>
 		<code>10</code>
-		<label>Error while creating your PSC</label>
+		<label></label>
 	</erreur>
 	<erreur>
 		<code>11</code>
-		<label>Error while encoding your personal data</label>
+		<label></label>
 	</erreur>
 	<erreur>
 		<code>12</code>
-		<label>Error while decoding your personal data for account creation</label>
+		<label></label>
 	</erreur>
 	<erreur>
 		<code>13</code>
@@ -166,6 +150,38 @@
 	</erreur>
 	<erreur>
 		<code>37</code>
+		<label></label>
+	</erreur>
+	<erreur>
+		<code>100</code>
+		<label></label>
+	</erreur>
+	<erreur>
+		<code>101</code>
+		<label>Missing application parameter</label>
+	</erreur>
+	<erreur>
+		<code>102</code>
+		<label>Missing user parameter</label>
+	</erreur>
+	<erreur>
+		<code>103</code>
+		<label>Missing applicationID parameter</label>
+	</erreur>
+	<erreur>
+		<code>104</code>
+		<label>Missing userID parameter</label>
+	</erreur>
+	<erreur>
+		<code>105</code>
+		<label>Missing username parameter</label>
+	</erreur>
+	<erreur>
+		<code>106</code>
+		<label>Missing password parameter</label>
+	</erreur>
+	<erreur>
+		<code>107</code>
 		<label></label>
 	</erreur>
 </document>

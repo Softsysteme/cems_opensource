@@ -2157,4 +2157,45 @@
             <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
         </xsd:all>
     </xsd:complexType>
+    <xsd:element name="DB__AddAuthenticationByIDs" type="lib_Keyring_ns:DB__AddAuthenticationByIDsRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DB__AddAuthenticationByIDsResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DB__AddAuthenticationByIDsResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DB__AddAuthenticationByIDsRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="userID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>user</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="applicationID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>application</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="username" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DB__AddAuthenticationByIDsResponseData">
+        <xsd:all>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
 </xsd:schema>
