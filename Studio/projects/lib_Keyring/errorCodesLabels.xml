@@ -42,7 +42,7 @@
 	</erreur>
 	<erreur>
 		<code>10</code>
-		<label></label>
+		<label>Error while deleting the authentication from database</label>
 	</erreur>
 	<erreur>
 		<code>11</code>

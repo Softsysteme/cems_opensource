@@ -2198,4 +2198,35 @@
             <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
         </xsd:all>
     </xsd:complexType>
+    <xsd:element name="DB__DeleteAuthenticationByIDs" type="lib_Keyring_ns:DB__DeleteAuthenticationByIDsRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DB__DeleteAuthenticationByIDsResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DB__DeleteAuthenticationByIDsResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DB__DeleteAuthenticationByIDsRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="applicationID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>applicationID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="userID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>userID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DB__DeleteAuthenticationByIDsResponseData">
+        <xsd:all>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
 </xsd:schema>
