@@ -22,35 +22,35 @@
 	</erreur>
 	<erreur>
 		<code>1</code>
-		<label>Missing username parameter</label>
+		<label>Error while adding the application in database</label>
 	</erreur>
 	<erreur>
 		<code>2</code>
-		<label>Missing password parameter</label>
+		<label>Error while retrieving the application ID from database</label>
 	</erreur>
 	<erreur>
 		<code>3</code>
-		<label>Missing lastname parameter</label>
+		<label>Error while adding the user in database</label>
 	</erreur>
 	<erreur>
 		<code>4</code>
-		<label>Missing firstname parameter</label>
+		<label>Error while retrieving the user ID from database</label>
 	</erreur>
 	<erreur>
 		<code>5</code>
-		<label>Missing email parameter</label>
+		<label>Error while deleting the application from database</label>
 	</erreur>
 	<erreur>
 		<code>6</code>
-		<label>Error while creating your forum account</label>
+		<label>Error while deleting the authentications associated with the application from database</label>
 	</erreur>
 	<erreur>
 		<code>7</code>
-		<label>Error while checking if you already have a forum account</label>
+		<label>Error while deleting the authentications associated with the user from database</label>
 	</erreur>
 	<erreur>
 		<code>8</code>
-		<label>You already have a forum account</label>
+		<label>Error while deleting the user from database</label>
 	</erreur>
 	<erreur>
 		<code>9</code>

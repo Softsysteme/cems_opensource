@@ -879,31 +879,6 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:element name="DeleteApplication" type="lib_Keyring_ns:DeleteApplicationRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="DeleteApplicationResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="lib_Keyring_ns:DeleteApplicationResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="DeleteApplicationRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="application" type="xsd:string">
-                <xsd:annotation>
-                    <xsd:appinfo>new variable</xsd:appinfo>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="DeleteApplicationResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
-        </xsd:sequence>
-    </xsd:complexType>
     <xsd:complexType name="transaction1338370270424StepType">
         <xsd:annotation/>
         <xsd:sequence>
@@ -1991,6 +1966,195 @@
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:element name="DB__DeleteApplicationByID" type="lib_Keyring_ns:DB__DeleteApplicationByIDRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DB__DeleteApplicationByIDResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DB__DeleteApplicationByIDResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DB__DeleteApplicationByIDRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="applicationID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>applicationID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DB__DeleteApplicationByIDResponseData">
+        <xsd:all>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:element name="DeleteApplication" type="lib_Keyring_ns:DeleteApplicationRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DeleteApplicationResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DeleteApplicationResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DeleteApplicationRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="applicationID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DeleteApplicationResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1351262469947StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__DeleteApplicationByIDResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DeleteUserByNameByID" type="lib_Keyring_ns:DeleteUserByNameByIDRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[not reviewed
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="DeleteUserByNameByIDResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DeleteUserByNameByIDResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DeleteUserByNameByIDRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[not reviewed
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="userID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DeleteUserByNameByIDResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DeleteUser" type="lib_Keyring_ns:DeleteUserRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[not reviewed
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="DeleteUserResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DeleteUserResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DeleteUserRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[not reviewed
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="userID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DeleteUserResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1351263306253StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__DeleteUserByIDResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DB__DeleteAuthenticationsForApplicationID" type="lib_Keyring_ns:DB__DeleteAuthenticationsForApplicationIDRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DB__DeleteAuthenticationsForApplicationIDResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DB__DeleteAuthenticationsForApplicationIDResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DB__DeleteAuthenticationsForApplicationIDRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="applicationID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>applicationID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DB__DeleteAuthenticationsForApplicationIDResponseData">
+        <xsd:all>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
+        </xsd:all>
+    </xsd:complexType>
+    <xsd:element name="DB__DeleteAuthenticationsForUserID" type="lib_Keyring_ns:DB__DeleteAuthenticationsForUserIDRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="DB__DeleteAuthenticationsForUserIDResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:DB__DeleteAuthenticationsForUserIDResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="DB__DeleteAuthenticationsForUserIDRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="userID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>userID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DB__DeleteAuthenticationsForUserIDResponseData">
+        <xsd:all>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="sql_output" type="xsd:string"/>
         </xsd:all>
     </xsd:complexType>
 </xsd:schema>
