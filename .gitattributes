@@ -646,6 +646,7 @@ Studio/projects/lib_Keyring/css/start/images/ui-icons_f7a50d_256x240.png -text
 Studio/projects/lib_Keyring/css/start/images/ui-icons_fcd113_256x240.png -text
 Studio/projects/lib_Keyring/css/start/jquery-ui-1.8.18.custom.css -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/ui.jqgrid.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/errorCodesLabels.xml -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/index.html -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
