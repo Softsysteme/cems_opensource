@@ -82,35 +82,35 @@
 	</erreur>
 	<erreur>
 		<code>20</code>
-		<label></label>
+		<label>No error while updating the application but did not find any number of updated rows in SQL response</label>
 	</erreur>
 	<erreur>
 		<code>21</code>
-		<label></label>
+		<label>No error while updating the application but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>22</code>
-		<label></label>
+		<label>No error while updating the user but did not find any number of updated rows in SQL response</label>
 	</erreur>
 	<erreur>
 		<code>23</code>
-		<label></label>
+		<label>No error while updating the user but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>24</code>
-		<label></label>
+		<label>No error while deleting the application but did not find any number of updated rows in SQL response</label>
 	</erreur>
 		<erreur>
 		<code>25</code>
-		<label></label>
+		<label>No error while deleting the application but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>26</code>
-		<label></label>
+		<label>No error while deleting the user but did not find any number of updated rows in SQL response</label>
 	</erreur>
 	<erreur>
 		<code>27</code>
-		<label></label>
+		<label>No error while deleting the user but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>28</code>

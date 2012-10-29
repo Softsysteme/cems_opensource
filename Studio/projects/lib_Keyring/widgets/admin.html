@@ -31,7 +31,7 @@
 					</li>
 					<li>
 						<a id="button-users" class="application ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
-							<span class="ui-button-text">Utilisateurs</span>
+							<span class="ui-button-text">Users</span>
 						</a>
 					</li>
 				</ul>
@@ -42,29 +42,41 @@
 			<h3>Applications</h3>
 			<div id="applications-content">
 				<table id="applications-grid"></table>
-				<button id="applications-delete">Supprimer</button>
+				<button id="applications-delete">Delete selected</button>
 				
 				<div>
-					<button id="applications-add">Ajouter</button>
-					<input type="text" id="applications-add-application"/>
+					<label for="applications-add-application">New application: </label><input type="text" id="applications-add-application"/>
+					<button id="applications-add">Add</button>
 				</div>
+			</div>
+			<div id="app-col-template">
+				<p>Name</p>
 			</div>
 		</div>
 		
 		<div id="users" class="form hide-on-load">
-			<h3>Utilisateurs</h3>
+			<h3>Users</h3>
 			<div id="users-content">
 				<table id="users-grid"></table>
-				<button id="users-delete">Supprimer</button>
+				<button id="users-delete">Delete selected</button>
 				
 				<div>
-					<button id="users-add">Ajouter</button>
-					<input type="text" id="users-add-user"/>
+					<label for="users-add-user">New user: </label><input type="text" id="users-add-user"/>
+					<button id="users-add">Add</button>
+					
 				</div>
+			</div>
+			<div id="user-col-template">
+				<p>Name</p>
+				<p>Applications</p>
 			</div>
 		</div>
 
 		<div class="modal"></div>
 		
+		<div id="dialog-error-standard" title="Erreur">
+			<p id="errorMessage"></p>
+			<p id="errorDetails"></p>
+		</div>
 	</body>
 </html>
