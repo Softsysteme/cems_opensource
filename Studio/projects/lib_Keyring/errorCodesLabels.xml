@@ -62,23 +62,23 @@
 	</erreur>
 	<erreur>
 		<code>15</code>
-		<label></label>
+		<label>Error while updating the application in database</label>
 	</erreur>
 	<erreur>
 		<code>16</code>
-		<label></label>
+		<label>Error while updating the authentication in database</label>
 	</erreur>
 	<erreur>
 		<code>17</code>
-		<label></label>
+		<label>Error while updating the user in database</label>
 	</erreur>
 	<erreur>
 		<code>18</code>
-		<label></label>
+		<label>Error while updating the authentication username in database</label>
 	</erreur>
 	<erreur>
 		<code>19</code>
-		<label></label>
+		<label>Error while updating the authentication password in database</label>
 	</erreur>
 	<erreur>
 		<code>20</code>
@@ -158,11 +158,11 @@
 	</erreur>
 	<erreur>
 		<code>101</code>
-		<label>Missing application parameter</label>
+		<label>Missing application name parameter</label>
 	</erreur>
 	<erreur>
 		<code>102</code>
-		<label>Missing user parameter</label>
+		<label>Missing user name parameter</label>
 	</erreur>
 	<erreur>
 		<code>103</code>
@@ -182,6 +182,6 @@
 	</erreur>
 	<erreur>
 		<code>107</code>
-		<label></label>
+		<label>Missing at least one of the two parameters username or password</label>
 	</erreur>
 </document>
