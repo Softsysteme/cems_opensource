@@ -46,19 +46,19 @@
 	</erreur>
 	<erreur>
 		<code>11</code>
-		<label></label>
+		<label>Error while retrieving the list of applications from database</label>
 	</erreur>
 	<erreur>
 		<code>12</code>
-		<label></label>
+		<label>Error while retrieving the user's applications and authentications from database</label>
 	</erreur>
 	<erreur>
 		<code>13</code>
-		<label></label>
+		<label>Error while retrieving from database the list of applications for which the user has no authentication defined</label>
 	</erreur>
 	<erreur>
 		<code>14</code>
-		<label></label>
+		<label>Error while retrieving the list of users from database</label>
 	</erreur>
 	<erreur>
 		<code>15</code>
