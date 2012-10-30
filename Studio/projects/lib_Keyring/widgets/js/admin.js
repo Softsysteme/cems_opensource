@@ -6,13 +6,16 @@ console.log("Convertigo Keyring library - administration");
 var $applicationsGrid;
 var $usersGrid;
 var applications = [];
-var errorMessages = new Array();
+
 
 var current_iRow;
 var current_iCol;
 
 $(function() {
 	console.log("Document ready!");
+	
+	// calling getErrorMessages sequence
+	getErrorMessages();
 
 	// retrieving column names for applications grid
 	var appColumns = [];
@@ -102,8 +105,9 @@ $(function() {
 		addApplicationForUser($usersGrid.getGridParam('selrow'));
 	});
 
+	// calling getApplications sequence
 	getApplications();
-
+	
 });
 
 function addApplication(newApp) {
@@ -118,13 +122,13 @@ function addApplication(newApp) {
 					// error was found and displayed, nothing else to do
 				} else {
 				// no Convertigo exception nor status false (error code), handles sequence response
-					var $application = $data.find("application");
+					var $application = $data.find(">application");
 					var applicationID = $application.attr("id");
 					var applicationName = $application.attr("name");
 					// adding row in the jqgrid
 					$applicationsGrid.addRowData(applicationID, { name: applicationName });
 					// sorting the jqgrid
-					$applicationsGrid.sortGrid("name", true);
+					$applicationsGrid.sortGrid("name", true, "asc");
 					
 					// emptying the add input
 					$("#applications-add-application").val("");
@@ -146,8 +150,6 @@ function updateApplication(appID, appName) {
 					// error was found and displayed, nothing else to do
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
-//					var $updatedApp = $data.find("updatedRows>application");
-//					var numberOfUpdatedApp = parseInt($updatedApp.text());
 					// nothing to do, update ok
 				}
 			}
@@ -160,9 +162,6 @@ function deleteApplication(selectedRowId) {
 		// Prevents currently edited cell to interfere with deletion process
 		$applicationsGrid.restoreCell(current_iRow, current_iCol);
 		
-//		var selectedRow = $applicationsGrid.getRowData(selectedRowId);
-//		var deletedApp = selectedRow["name"];
-		
 		libKeyringCall(
 			"DeleteApplication",
 			"default",
@@ -172,7 +171,7 @@ function deleteApplication(selectedRowId) {
 				if (handleApplicativeErrors($data)) {
 					// error was found and displayed, nothing else to do
 				} else {
-				// no Convertigo exception nor status false (error code), handles sequence response
+					// no Convertigo exception nor status false (error code), handles sequence response
 					$applicationsGrid.delRowData(selectedRowId);
 				}
 			}
@@ -193,11 +192,11 @@ function getApplications() {
 			if (handleApplicativeErrors($data)) {
 				// error was found and displayed, nothing else to do
 			} else {
-			// no Convertigo exception nor status false (error code), handles sequence response
+				// no Convertigo exception nor status false (error code), handles sequence response
 				$applicationsGrid.clearGridData();
 				applications = [];
 	
-				$data.find("applications>application").each(function(index) {
+				$data.find(">applications>application").each(function(index) {
 					var $application = $(this);
 					var applicationID = $application.attr("id");
 					var applicationName = $application.text();
@@ -206,6 +205,8 @@ function getApplications() {
 				});
 	
 				console.log("Applications: " + applications);
+				
+				$applicationsGrid.sortGrid("name", true, "asc");
 			}
 		}
 	);		
@@ -222,14 +223,14 @@ function addUser(newUser) {
 				if (handleApplicativeErrors($data)) {
 					// error was found and displayed, nothing else to do
 				} else {
-				// no Convertigo exception nor status false (error code), handles sequence response
-					var $user = $data.find("user");
+					// no Convertigo exception nor status false (error code), handles sequence response
+					var $user = $data.find(">user");
 					var userID = $user.attr("id");
 					var userName = $user.attr("name");
 					// adding row in the jqgrid
 					$usersGrid.addRowData(userID, { name: userName });
 					// sorting the jqgrid
-					$usersGrid.sortGrid("name");
+					$usersGrid.sortGrid("name", true, "asc");
 					
 					// emptying the add input
 					$("#users-add-user").val("");
@@ -251,8 +252,6 @@ function updateUser(userID, userName) {
 					// error was found and displayed, nothing else to do
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
-//					var $updatedUser = $data.find("updatedRows>user");
-//					var numberOfUpdatedUser = parseInt($updatedUser.text());
 					// nothing to do, update ok
 				}
 			}
@@ -265,9 +264,6 @@ function deleteUser(selectedRowId) {
 		// Prevents currently edited cell to interfere with deletion process
 		$usersGrid.restoreCell(current_iRow, current_iCol);
 		
-//		var selectedRow = $usersGrid.getRowData(selectedRowId);
-//		var deletedUser = selectedRow["name"];
-		
 		libKeyringCall(
 			"DeleteUser",
 			"default",
@@ -277,7 +273,7 @@ function deleteUser(selectedRowId) {
 				if (handleApplicativeErrors($data)) {
 					// error was found and displayed, nothing else to do
 				} else {
-				// no Convertigo exception nor status false (error code), handles sequence response
+					// no Convertigo exception nor status false (error code), handles sequence response
 					$usersGrid.delRowData(selectedRowId);
 				}
 			}
@@ -298,15 +294,15 @@ function getUsers() {
 			if (handleApplicativeErrors($data)) {
 				// error was found and displayed, nothing else to do
 			} else {
-			// no Convertigo exception nor status false (error code), handles sequence response
+				// no Convertigo exception nor status false (error code), handles sequence response
 				$usersGrid.clearGridData();
 				
-				$data.find("users>user").each(function(index) {
+				$data.find(">users>user").each(function(index) {
 					var $user = $(this);
 					var userID = $user.attr("id");
 					var username = $user.attr("name");
 					var applications = "";
-					$user.find("applications>application").each(function(index) {
+					$user.find(">applications>application").each(function(index) {
 						var $app = $(this);
 						var appName = $app.text();
 						if (applications != "") {
@@ -316,6 +312,8 @@ function getUsers() {
 					});
 					$usersGrid.addRowData(userID, { id: userID, name: username, applications: applications });
 				});
+				// sorting the jqgrid
+				$usersGrid.sortGrid("name", true, "asc");
 			}
 		}
 	);		

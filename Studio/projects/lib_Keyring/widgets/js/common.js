@@ -3,6 +3,7 @@
  */
 
 var convertigoBase = window.location.pathname.substring(0, window.location.pathname.indexOf("/", 1));
+var errorMessages = new Array();
 
 function getHashParams() {
 	var params = {};
@@ -88,25 +89,25 @@ function displayErrorMessage(errorMessage, errorDetails, errorCode) {
 
 
 /**
-* Function that displays the error dialog if an error is found in $doc
-* @param $doc the document element of XML response from a sequence 
+* Function that displays the error dialog if an error is found in $data
+* @param $data the XML response from a sequence 
 * @return true if an error is found and displayed, false if no error
 */
-function handleApplicativeErrors($doc) {
+function handleApplicativeErrors($data) {
 	// if Convertigo error or applicative error returned by sequence
-	if (($doc.find(">error").length) || ($doc.find(">errorCode").length && $doc.find(">errorCode").text() != "0")) {
+	if (($data.find(">error").length) || ($data.find(">errorCode").length && $data.find(">errorCode").text() != "0")) {
 		var errorCode = "";
 		var errorMessage = "";
 		var errorDetails = "";
 		
-		if ($doc.find(">error").length) {
+		if ($data.find(">error").length) {
 			// Convertigo exception error
-			displayException("Error while executing an action", $doc.find(">error>message").text(), $doc.find(">error>exception").text())
-		} else if ($doc.find(">errorCode").length && $doc.find(">errorCode").text() != "0") {
+			displayException("Error while executing an action", $data.find(">error>message").text(), $data.find(">error>exception").text())
+		} else if ($data.find(">errorCode").length && $data.find(">errorCode").text() != "0") {
 			// error code returned
-			errorCode = parseInt($doc.find(">errorCode").text());
+			errorCode = parseInt($data.find(">errorCode").text());
 			errorMessage = getErrorMessage(errorCode);
-			errorDetails = $doc.find(">errorDetails").text();
+			errorDetails = $data.find(">errorDetails").text();
 			// display error div
 			displayErrorMessage(errorMessage, errorDetails, errorCode);
 		} 
@@ -114,6 +115,32 @@ function handleApplicativeErrors($doc) {
 	} else {
 		return false;
 	}
+}
+
+
+function getErrorMessages() {
+	// calling GetErrorMessages sequence 
+	libKeyringCall(
+		"GetErrorMessages",
+		"default",
+		{ },
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+			// no Convertigo exception nor status false (error code), handles sequence response
+				var $errors = $data.find(">erreur");
+				$errors.each(function () {
+					var $error = $(this);
+					var code = $error.find(">code").text();
+					var label = $error.find(">label").text();
+					errorMessages[code] = label;
+					console.log("Error messages[" + code + "]: " + label);
+				});
+			}
+		}
+	);		
 }
 
 function libKeyringCall(sequence, context, params, successAction) {
@@ -138,7 +165,7 @@ function libKeyringCall(sequence, context, params, successAction) {
 				console.log("Received data:");
 				console.log(data);
 				
-				var $data = $(data);
+				var $data = $(data.documentElement);
 				if (successAction) successAction.call(null, $data);
 			},
 			"xml"
