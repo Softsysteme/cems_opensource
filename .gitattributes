@@ -2053,10 +2053,20 @@ Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPhone3.properties -t
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPhone4.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/AbstractImportLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/AbstractImportLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/AbstractIncludeLocalXsdReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/AbstractIncludeLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/AbstractLocalXsdReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/AbstractLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IncludeLocalXsdReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IncludeLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/res/ImportLocalReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeLocalReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/LocalFileReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractBase.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractConvertigoJob.java -text svneol=unset#text/plain
