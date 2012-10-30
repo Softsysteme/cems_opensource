@@ -5,28 +5,34 @@ console.log("Convertigo Keyring library - user keychain");
 
 var urlParams = getHashParams();
 var user = urlParams["user"];
+var userID = null;
 
 var convertigoBase = window.location.pathname.substring(0, window.location.pathname.indexOf("/", 1));
 var notSetApplications = [];
+var notSetApplicationsIDs = [];
 
 $(function() {
 	console.log("Document ready!");
 
+	// calling getErrorMessages sequence
+	getErrorMessages();
+	
+	// TODO user retrieval to be updated later with token authentication 
 	$("#user").text(user);
 	
-	getNotSetApplications();
-	createAppList();
+	// calling getUserID sequence
+	getUserID();
+//	getNotSetApplications();
+//	createAppList();
+	
 	
 	$("button").button();
 		
-	$("#button-new-keychain-entry")
-	.button()
-	.click(function(eventObject) {
-		showKeychainData("", user);
+	$("#button-new-keychain-entry").button().click(function(eventObject) {
+		showNewKeychain(user);
 	});
 
-	$("#keychain-entry-add")
-	.click(function(eventObject) {
+	$("#keychain-entry-add").click(function(eventObject) {
 		var application = $("#form-new-entry-application").val();
 		$(".dialog-application").text(application);
 		
@@ -62,11 +68,12 @@ $(function() {
 			return;
 		}
 
-		addKeychainEntry(application, username, password1);
+		// retrieving applicationID
+		var appID = notSetApplicationsIDs[application];
+		addKeychainEntry(appID, username, password1);
 	});
 
-	$("#keychain-entry-delete")
-	.click(function(eventObject) {
+	$("#keychain-entry-delete").click(function(eventObject) {
 		var buttonYes = $("#dialog-confirm-delete-keychain-entry").attr("buttonYes");
 		var buttonNo = $("#dialog-confirm-delete-keychain-entry").attr("buttonNo");
 		
@@ -77,20 +84,21 @@ $(function() {
 			resizable: false,
 			modal: true,
 			buttons: [
-						{
-							text: buttonYes,
-							click: function() {
-								var application = $("#form-application").val();
-								deleteKeychainEntry(application);
-								$(this).dialog("close");
-							}
-						},
-						{
-							text: buttonNo,
-							click: function() {
-								$(this).dialog("close");
-							}
-						}
+				{
+					text: buttonYes,
+					click: function() {
+						// var application = $("#form-application").val();
+						var applicationID = $("#form-applicationID").val();
+						deleteKeychainEntry(applicationID);
+						$(this).dialog("close");
+					}
+				},
+				{
+					text: buttonNo,
+					click: function() {
+						$(this).dialog("close");
+					}
+				}
 			]
 		});
 	});
@@ -105,7 +113,7 @@ $(function() {
 			$("#dialog-error-missing-username").dialog({
 				modal: true,
 				buttons: {
-					Ok: function() {
+					"Ok": function() {
 						$(this).dialog("close");
 						$("#form-username").focus();
 					}
@@ -117,12 +125,12 @@ $(function() {
 		
 		var newPassword1 = $("#form-new-password1").val();
 		var newPassword2 = $("#form-new-password2").val();
-
-		if (newPassword1 === "" || newPassword2 === "" || newPassword1 !== newPassword2) {
+		
+		if ((newPassword1 === "" || newPassword2 === "") && newPassword1 !== newPassword2) {
 			$("#dialog-error-new-passwords").dialog({
 				modal: true,
 				buttons: {
-					Ok: function() {
+					"Ok": function() {
 						$(this).dialog("close");
 						$("#form-new-password1").focus();
 					}
@@ -130,7 +138,9 @@ $(function() {
 			});
 			return;
 		}
-		$(".dialog-password").text("*********");
+		if (newPassword1 !== "") { 
+			$(".dialog-password").text("*********");
+		}
 		
 		var buttonYes = $("#dialog-confirm-update-keychain-entry").attr("buttonYes");
 		var buttonNo = $("#dialog-confirm-update-keychain-entry").attr("buttonNo");
@@ -139,23 +149,24 @@ $(function() {
 			resizable: false,
 			modal: true,
 			buttons: [
-						{
-							text: buttonYes,
-							click: function() {
-								var application = $("#form-application").val();
-								var username = $("#form-username").val();
-								var newPassword1 = $("#form-new-password1").val();
-								
-								updateKeychainEntry(application, username, newPassword1);
-								$(this).dialog("close");
-							}
-						},
-						{
-							text: buttonNo,
-							click: function() {
-								$(this).dialog("close");
-							}
-						}
+				{
+					text: buttonYes,
+					click: function() {
+						//var application = $("#form-application").val();
+						var applicationID = $("#form-applicationID").val();
+						var username = $("#form-username").val();
+						var newPassword1 = $("#form-new-password1").val();
+						
+						updateKeychainEntry(applicationID, username, newPassword1);
+						$(this).dialog("close");
+					}
+				},
+				{
+					text: buttonNo,
+					click: function() {
+						$(this).dialog("close");
+					}
+				}
 			]
 		});
 		
@@ -164,77 +175,111 @@ $(function() {
 	$("#button-new-keychain-entry").click();
 });
 
+/**
+ * calls sequences to load the page content
+ * @param reset: if true, is in reset mode, not the first launch: clicks on the button to display the new keychain form
+ * 				if false, is the first launch of the widget 
+ */
+function startWidget(reset) {
+	getNotSetApplications();
+	createAppList();
+	if (reset) {
+		$("#button-new-keychain-entry").click();
+	}
+}
+
+function getUserID() {
+	libKeyringCall(
+		"GetUserID",
+		"ctxGetUserID",
+		{ user: user },
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
+				var $user = $data.find(">user");
+				var id = $user.attr("id");
+				var userName = $user.attr("name");
+				userID = id;
+				
+				// calling other sequences to load the page content
+				startWidget(false);
+				// TODO move this code part to Document ready after token is used?
+			}
+		}
+	);
+}
+
 function createAppList() {
 	console.log("Getting application list");
-	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			{
-				__sequence: "GetUserKeychain",
-				__context: "ctxGetUserKeychain",
-				user: user
-			},
-			function(data) {
-				console.log("User keychain:");
-				console.log(data);
-				
-				var $data = $(data);
-				
+	
+	// calling GetUserKeychain sequence
+	libKeyringCall(
+		"GetUserKeychain",
+		"ctxGetUserKeychain",
+		{ userID: userID },
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
+
 				$("#app-menu-wait").hide();
 				
+				// emptying destination ul
 				var $ul = $("#app-list-ul");
 				$(".app-li").remove();
-				$data.find("authentication").each(function(index) {
-					var $application = $(this);
-					var applicationID = $application.attr("applicationID");
-					var username = $application.attr("username");
-					var applicationName = $application.attr("application");
+				
+				$data.find(">keychain>authentication").each(function(index) {
+					var $authentication = $(this);
+					var $application = $authentication.find(">application");
+					var $username = $authentication.find(">username");
+					
+					var applicationName = $application.text();
+					var applicationID = $application.attr("id");
+					var username = $username.text();
+					
 					$ul.append(
-						$("<li class='app-li'/>").
-							append(
-								$("<a/>").
-								attr("class", "application").
-								attr("application", applicationName).
-								attr("username", username).
-									text(applicationName)
-							)
+						$("<li class='app-li'/>").append(
+							$("<a/>").attr("class", "application").attr("appid", applicationID).attr("application", applicationName).attr("username", username).text(applicationName)
+						)
 					);
 				});
 
-				$(".application").
-					button().
-					click(function(eventObject) {
-						var application = $(this).text();
-						var username = $(this).attr("username");
-						showKeychainData(application, username);
-					});
-			},
-			"xml"
-	)
-    .error(function(xhr, errorMessage, exception) {
-    	handleError("Error when getting applications", errorMessage, exception);
-    });
+				$(".application").button().click(function(eventObject) {
+					var application = $(this).text();
+					var applicationID = $(this).attr("appid");
+					var username = $(this).attr("username");
+					showKeychainData(application, applicationID, username);
+				});
+			}
+		}
+	);
 }
 
 function getNotSetApplications() {
-	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			{
-				__sequence: "GetUserNotSetApplications",
-				__context: "ctxGetUserNotSetApplications",
-				user: user
-			},
-			function(data) {
-				console.log("User not set applications:");
-				console.log(data);
-				
-				var $data = $(data);
-				
+	// calling GetUserNotSetApplications sequence
+	libKeyringCall(
+		"GetUserNotSetApplications",
+		"ctxGetUserNotSetApplications",
+		{ userID: userID },
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
 				notSetApplications = [];
 				
-				$data.find("application").each(function(index) {
+				$data.find(">applications>application").each(function(index) {
 					var $application = $(this);
-					var applicationName = $application.attr("name");
+					var applicationID = $application.attr("id");
+					var applicationName = $application.text();
 					notSetApplications.push(applicationName);
+					notSetApplicationsIDs[applicationName] = applicationID;
 				});
 				
 				console.log("Not set applications: " + notSetApplications);
@@ -242,159 +287,144 @@ function getNotSetApplications() {
 				$("#form-new-entry-application").autocomplete({
 				    source: notSetApplications
 				});
-			},
-			"xml"
-	)
-    .error(function(xhr, errorMessage, exception) {
-    	handleError("Error when getting not set applications", errorMessage, exception);
-    });
+			}
+		}
+	);
 }
 
-function showKeychainData(application, username) {
+/**
+ * shows the edit keychain form with application data
+ */
+function showKeychainData(application, applicationID, username) {
+	// resetting values in form
+	$("#keychain-entry input").val("");
+	// setting values in form
 	var formApplication = $("#form-application");
-	if (application === "") {
-		formApplication.removeAttr("disabled");
-		$("#keychain-entry").hide();
-		$("#keychain-entry-new").show();
-		$("#keychain-entry-new input").val("");
-	}
-	else {
-		formApplication.attr('disabled', true);
-		$("#keychain-entry-new").hide();
-		$("#keychain-entry").show();
-		$("#keychain-entry input").val("");
-	}
-
+	formApplication.attr('disabled', true);
 	formApplication.val(application);
+	$("#form-applicationID").val(applicationID);
 	$("#form-username").val(username);
+	// hiding / showing divs
+	$("#keychain-entry-new").hide();
+	$("#keychain-entry").show();
+	
 }
 
-function addKeychainEntry(application, username, password) {
-	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			{
-				__sequence: "AddAuthentication",
-				user: user,
-				application: application,
-				username: username,
-				password: password
-			},
-			function(data) {
-				console.log("Entry added for application: " + application);
+/**
+ * shows the new keychain form
+ */ 
+function showNewKeychain(username) {
+	// emptying / setting values in form
+	$("#keychain-entry-new input").val("");
+	$("#form-username").val(username);
+	// hiding / showing divs
+	$("#keychain-entry").hide();
+	$("#keychain-entry-new").show();
+}
+
+
+function addKeychainEntry(appID, username, password) {
+	// calling AddAuthentication sequence
+	libKeyringCall(
+		"AddAuthentication",
+		"ctxAddAuthentication",
+		{ 
+			userID: userID, 
+			applicationID: appID, 
+			username: username,
+			password: password
+		},
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
 				$("#dialog-info-keychain-entry-added").dialog({
 					resizable: false,
 					modal: true,
 					buttons: [
-								{
-									text: "OK",
-									click: function() {
-										$(this).dialog("close");
-										
-										createAppList();
-										$("#button-new-keychain-entry").click();
-									}
-								}
+						{
+							text: "OK",
+							click: function() {
+								$(this).dialog("close");
+								startWidget(true);
+								
+							}
+						}
 					]
 				});
-			},
-			"xml"
-	)
-    .error(function(xhr, errorMessage, exception) {
-    	handleError("Error when getting not set applications", errorMessage, exception);
-    });
-
+			}
+		}
+	);
 }
 
-function updateKeychainEntry(application, username, newPassword) {
-	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			{
-				__sequence: "UpdateAuthentication",
-				user: user,
-				application: application,
-				username: username,
-				password: newPassword
-			},
-			function(data) {
-				console.log("Entry updated for application: " + application);
-
+function updateKeychainEntry(appID, username, newPassword) {
+	// calling UpdateAuthentication sequence
+	libKeyringCall(
+		"UpdateAuthentication",
+		"ctxUpdateAuthentication",
+		{ 
+			userID: userID, 
+			applicationID: appID,
+			username: username,
+			password: newPassword
+		},
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
 				createAppList();
-				
 				$("#dialog-info-keychain-entry-updated").dialog({
 					resizable: false,
 					modal: true,
 					buttons: [
-								{
-									text: "OK",
-									click: function() {
-										$(this).dialog("close");
-										$("#button-new-keychain-entry").click();
-									}
-								}
+						{
+							text: "OK",
+							click: function() {
+								$(this).dialog("close");
+								$("#button-new-keychain-entry").click();
+							}
+						}
 					]
 				});
-			},
-			"xml"
-	)
-    .error(function(xhr, errorMessage, exception) {
-    	handleError("Error when updating keychain entry", errorMessage, exception);
-    });
+			}
+		}
+	);
 }
 
-function deleteKeychainEntry(application) {
-	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			{
-				__sequence: "DeleteAuthentication",
-				user: user,
-				application: application
-			},
-			function(data) {
-				console.log("Entry deleted for application: " + application);
+function deleteKeychainEntry(appID) {
+	// calling DeleteAuthentication sequence
+	libKeyringCall(
+		"DeleteAuthentication",
+		"ctxDeleteAuthentication",
+		{ 
+			userID: userID, 
+			applicationID: appID
+		},
+		function($data) {
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
 				$("#dialog-info-keychain-entry-deleted").dialog({
 					resizable: false,
 					modal: true,
 					buttons: [
-								{
-									text: "OK",
-									click: function() {
-										$(this).dialog("close");
-
-										getNotSetApplications();
-										createAppList();
-										$("#button-new-keychain-entry").click();
-									}
-								}
+						{
+							text: "OK",
+							click: function() {
+								$(this).dialog("close");
+								startWidget(true);
+							}
+						}
 					]
 				});
-			},
-			"xml"
-	)
-    .error(function(xhr, errorMessage, exception) {
-    	handleError("Error when deleting keychain entry", errorMessage, exception);
-    });
+			}
+		}
+	);
 }
 
-function handleError(message, errorMessage, exception) {
-	console.log(message);
-	console.log(errorMessage);
-	console.log(exception.message);
-
-	$("#dialog-error-message").text(message);
-	$("#dialog-error-sub-message").text(errorMessage);
-	$("#dialog-error-exception-message").text(exception.message);
-	
-	$("#dialog-error").dialog({
-		resizable: false,
-		modal: true,
-		buttons: [
-					{
-						text: "OK",
-						click: function() {
-							$(this).dialog("close");
-						}
-					}
-		]
-	});
-
-}

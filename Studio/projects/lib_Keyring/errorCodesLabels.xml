@@ -114,19 +114,19 @@
 	</erreur>
 	<erreur>
 		<code>28</code>
-		<label></label>
+		<label>No error while deleting the authentication but did not find any number of updated rows in SQL response</label>
 	</erreur>
 	<erreur>
 		<code>29</code>
-		<label></label>
+		<label>No error while deleting the authentication but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>30</code>
-		<label></label>
+		<label>No error while updating the authentication but did not find any number of updated rows in SQL response</label>
 	</erreur>
 	<erreur>
 		<code>31</code>
-		<label></label>
+		<label>No error while updating the authentication but 0 row updated in database</label>
 	</erreur>
 	<erreur>
 		<code>32</code>

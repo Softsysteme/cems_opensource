@@ -51,15 +51,14 @@ function displayException(message, errorMessage, exception) {
 		resizable: false,
 		modal: true,
 		buttons: [
-					{
-						text: "OK",
-						click: function() {
-							$(this).dialog("close");
-						}
-					}
+		    {
+				text: "OK",
+				click: function() {
+					$(this).dialog("close");
+				}
+		    }
 		]
 	});
-
 }
 
 /**
@@ -117,6 +116,20 @@ function handleApplicativeErrors($data) {
 	}
 }
 
+/**
+* Retrieves the error message corresponding to the error code
+* @param errorCode the error code
+* @return the error message to display or "" if no message found
+*/
+function getErrorMessage(errorCode) {
+	if (errorMessages.length > 0) {
+		var message = errorMessages[errorCode];
+		if (message != undefined && message != null) {
+			return message;
+		}
+	} // else
+	return "";
+}
 
 function getErrorMessages() {
 	// calling GetErrorMessages sequence 
@@ -159,20 +172,19 @@ function libKeyringCall(sequence, context, params, successAction) {
 	console.log(sequenceCallParams);
 	
 	$.post(
-			convertigoBase + "/projects/lib_Keyring/.xml",
-			sequenceCallParams,
-			function(data) {
-				console.log("Received data:");
-				console.log(data);
-				
-				var $data = $(data.documentElement);
-				if (successAction) successAction.call(null, $data);
-			},
-			"xml"
+		convertigoBase + "/projects/lib_Keyring/.xml",
+		sequenceCallParams,
+		function(data) {
+			console.log("Received data:");
+			console.log(data);
+			
+			var $data = $(data.documentElement);
+			if (successAction) successAction.call(null, $data);
+		},
+		"xml"
 	)
     .error(function(event) {
     	$("#wait").hide();
-    	handleError("Error when executing libKeyringCall: " + sequence + " on context '" + context + "'",
-    		event.responseXML);
+    	handleError("Error when executing libKeyringCall: " + sequence + " on context '" + context + "'", event.responseXML);
     });
 }

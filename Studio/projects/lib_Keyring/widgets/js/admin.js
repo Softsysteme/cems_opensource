@@ -114,7 +114,7 @@ function addApplication(newApp) {
 	if (newApp.length > 0) {
 		libKeyringCall(
 			"AddApplication",
-			"default",
+			"ctxAddApplication",
 			{ application: newApp },
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -134,7 +134,7 @@ function addApplication(newApp) {
 					$("#applications-add-application").val("");
 				}
 			}
-		);		
+		);
 	}
 }
 
@@ -142,7 +142,7 @@ function updateApplication(appID, appName) {
 	if (appName.length > 0) {
 		libKeyringCall(
 			"UpdateApplication",
-			"default",
+			"ctxUpdateApplication",
 			{ applicationID: appID, name: appName }, 
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -164,7 +164,7 @@ function deleteApplication(selectedRowId) {
 		
 		libKeyringCall(
 			"DeleteApplication",
-			"default",
+			"ctxDeleteApplication",
 			{ applicationID: selectedRowId },
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -185,7 +185,7 @@ function getApplications() {
 	
 	libKeyringCall(
 		"GetApplications",
-		"default",
+		"ctxGetApplications",
 		{ },
 		function($data) {
 			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -216,7 +216,7 @@ function addUser(newUser) {
 	if (newUser.length > 0) {
 		libKeyringCall(
 			"AddUser",
-			"default",
+			"ctxAddUser",
 			{ user: newUser },
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -244,7 +244,7 @@ function updateUser(userID, userName) {
 	if (userName.length > 0) {
 		libKeyringCall(
 			"UpdateUser",
-			"default",
+			"ctxUpdateUser",
 			{ userID: userID, name: userName }, 
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -266,7 +266,7 @@ function deleteUser(selectedRowId) {
 		
 		libKeyringCall(
 			"DeleteUser",
-			"default",
+			"ctxDeleteUser",
 			{ userID: selectedRowId },
 			function($data) {
 				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
@@ -287,7 +287,7 @@ function getUsers() {
 	
 	libKeyringCall(
 		"GetUsersAndApplications",
-		"default",
+		"ctxGetUsersAndApplications",
 		{ },
 		function($data) {
 			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
