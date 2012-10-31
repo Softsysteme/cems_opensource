@@ -33,51 +33,20 @@ $(function() {
 	});
 
 	$("#keychain-entry-add").click(function(eventObject) {
-		var application = $("#form-new-entry-application").val();
-		$(".dialog-application").text(application);
-		
-		// Check form
-		var username = $("#form-new-entry-username").val();
-		if (username === "") {
-			$("#dialog-error-missing-username").dialog({
-				modal: true,
-				buttons: {
-					Ok: function() {
-						$(this).dialog("close");
-						$("#form-new-entry-username").focus();
-					}
-				}
-			});
-			return;
+		keychainEntryAdd_formManagement();
+	});
+	
+	$("input[id^='form-new-entry-']").bind('keydown', function(event){
+		if (event.which == 13) {
+			keychainEntryAdd_formManagement();
 		}
-		$(".dialog-username").text(username);
-		
-		var password1 = $("#form-new-entry-password1").val();
-		var password2 = $("#form-new-entry-password2").val();
-
-		if (password1 === "" || password2 === "" || password1 !== password2) {
-			$("#dialog-error-new-passwords").dialog({
-				modal: true,
-				buttons: {
-					Ok: function() {
-						$(this).dialog("close");
-						$("#form-new-entry-password1").focus();
-					}
-				}
-			});
-			return;
-		}
-
-		// retrieving applicationID
-		var appID = notSetApplicationsIDs[application];
-		addKeychainEntry(appID, username, password1);
 	});
 
 	$("#keychain-entry-delete").click(function(eventObject) {
 		var buttonYes = $("#dialog-confirm-delete-keychain-entry").attr("buttonYes");
 		var buttonNo = $("#dialog-confirm-delete-keychain-entry").attr("buttonNo");
 		
-		var application = $("#form-application").val();
+		var application = $("#form-entry-application").val();
 		$(".dialog-application").text(application);
 
 		$("#dialog-confirm-delete-keychain-entry").dialog({
@@ -87,8 +56,8 @@ $(function() {
 				{
 					text: buttonYes,
 					click: function() {
-						// var application = $("#form-application").val();
-						var applicationID = $("#form-applicationID").val();
+						// var application = $("#form-entry-application").val();
+						var applicationID = $("#form-entry-applicationID").val();
 						deleteKeychainEntry(applicationID);
 						$(this).dialog("close");
 					}
@@ -104,76 +73,130 @@ $(function() {
 	});
 
 	$("#keychain-entry-update").click(function() {
-		var application = $("#form-application").val();
-		$(".dialog-application").text(application);
-		
-		// Check form
-		var username = $("#form-username").val();
-		if (username === "") {
-			$("#dialog-error-missing-username").dialog({
-				modal: true,
-				buttons: {
-					"Ok": function() {
-						$(this).dialog("close");
-						$("#form-username").focus();
-					}
-				}
-			});
-			return;
+		keychainEntryUpdate_formManagement();
+	});
+	
+	$("input[id^='form-entry-']").bind('keydown', function(event){
+		if (event.which == 13) {
+			keychainEntryUpdate_formManagement();
 		}
-		$(".dialog-username").text(username);
-		
-		var newPassword1 = $("#form-new-password1").val();
-		var newPassword2 = $("#form-new-password2").val();
-		
-		if ((newPassword1 === "" || newPassword2 === "") && newPassword1 !== newPassword2) {
-			$("#dialog-error-new-passwords").dialog({
-				modal: true,
-				buttons: {
-					"Ok": function() {
-						$(this).dialog("close");
-						$("#form-new-password1").focus();
-					}
-				}
-			});
-			return;
-		}
-		if (newPassword1 !== "") { 
-			$(".dialog-password").text("*********");
-		}
-		
-		var buttonYes = $("#dialog-confirm-update-keychain-entry").attr("buttonYes");
-		var buttonNo = $("#dialog-confirm-update-keychain-entry").attr("buttonNo");
-		
-		$("#dialog-confirm-update-keychain-entry").dialog({
-			resizable: false,
-			modal: true,
-			buttons: [
-				{
-					text: buttonYes,
-					click: function() {
-						//var application = $("#form-application").val();
-						var applicationID = $("#form-applicationID").val();
-						var username = $("#form-username").val();
-						var newPassword1 = $("#form-new-password1").val();
-						
-						updateKeychainEntry(applicationID, username, newPassword1);
-						$(this).dialog("close");
-					}
-				},
-				{
-					text: buttonNo,
-					click: function() {
-						$(this).dialog("close");
-					}
-				}
-			]
-		});
-		
 	});
 	
 	$("#button-new-keychain-entry").click();
 });
+
+function keychainEntryUpdate_formManagement() {
+	var application = $("#form-entry-application").val();
+	$(".dialog-application").text(application);
+	
+	// Check form
+	var username = $("#form-entry-username").val();
+	if (username === "") {
+		$("#dialog-error-missing-username").dialog({
+			modal: true,
+			buttons: {
+				"Ok": function() {
+					$(this).dialog("close");
+					$("#form-entry-username").focus();
+				}
+			}
+		});
+		return;
+	}
+	$(".dialog-username").text(username);
+	
+	var newPassword1 = $("#form-entry-new-password1").val();
+	var newPassword2 = $("#form-entry-new-password2").val();
+	
+	if ((newPassword1 === "" || newPassword2 === "") && newPassword1 !== newPassword2) {
+		$("#dialog-error-new-passwords").dialog({
+			modal: true,
+			buttons: {
+				"Ok": function() {
+					$(this).dialog("close");
+					$("#form-entry-new-password1").focus();
+				}
+			}
+		});
+		return;
+	}
+	if (newPassword1 !== "") { 
+		$(".dialog-password").text("*********");
+		$("p.pass").show();
+	} else {
+		$("p.pass").hide();
+	}
+	
+	var buttonYes = $("#dialog-confirm-update-keychain-entry").attr("buttonYes");
+	var buttonNo = $("#dialog-confirm-update-keychain-entry").attr("buttonNo");
+	
+	$("#dialog-confirm-update-keychain-entry").dialog({
+		resizable: false,
+		modal: true,
+		buttons: [
+			{
+				text: buttonYes,
+				click: function() {
+					//var application = $("#form-entry-application").val();
+					var applicationID = $("#form-entry-applicationID").val();
+					var username = $("#form-entry-username").val();
+					var newPassword1 = $("#form-entry-new-password1").val();
+					
+					updateKeychainEntry(applicationID, username, newPassword1);
+					$(this).dialog("close");
+				}
+			},
+			{
+				text: buttonNo,
+				click: function() {
+					$(this).dialog("close");
+				}
+			}
+		]
+	});
+}
+
+function keychainEntryAdd_formManagement() {
+	var application = $("#form-new-entry-application").val();
+	$(".dialog-application").text(application);
+	
+	// Check form
+	var username = $("#form-new-entry-username").val();
+	if (username === "") {
+		$("#dialog-error-missing-username").dialog({
+			modal: true,
+			buttons: {
+				Ok: function() {
+					$(this).dialog("close");
+					$("#form-new-entry-username").focus();
+				}
+			}
+		});
+		return;
+	}
+	$(".dialog-username").text(username);
+	
+	var password1 = $("#form-new-entry-password1").val();
+	var password2 = $("#form-new-entry-password2").val();
+
+	if (password1 === "" || password2 === "" || password1 !== password2) {
+		$("#dialog-error-new-passwords").dialog({
+			modal: true,
+			buttons: {
+				Ok: function() {
+					$(this).dialog("close");
+					$("#form-new-entry-password1").focus();
+				}
+			}
+		});
+		return;
+	}
+
+	// retrieving applicationID
+	var appID = notSetApplicationsIDs[application];
+	addKeychainEntry(appID, username, password1);
+}
+
 
 /**
  * calls sequences to load the page content
@@ -299,11 +322,11 @@ function showKeychainData(application, applicationID, username) {
 	// resetting values in form
 	$("#keychain-entry input").val("");
 	// setting values in form
-	var formApplication = $("#form-application");
+	var formApplication = $("#form-entry-application");
 	formApplication.attr('disabled', true);
 	formApplication.val(application);
-	$("#form-applicationID").val(applicationID);
-	$("#form-username").val(username);
+	$("#form-entry-applicationID").val(applicationID);
+	$("#form-entry-username").val(username);
 	// hiding / showing divs
 	$("#keychain-entry-new").hide();
 	$("#keychain-entry").show();
@@ -316,7 +339,7 @@ function showKeychainData(application, applicationID, username) {
 function showNewKeychain(username) {
 	// emptying / setting values in form
 	$("#keychain-entry-new input").val("");
-	$("#form-username").val(username);
+	$("#form-entry-username").val(username);
 	// hiding / showing divs
 	$("#keychain-entry").hide();
 	$("#keychain-entry-new").show();

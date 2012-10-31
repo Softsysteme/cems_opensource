@@ -35,21 +35,21 @@
 		</div>
 		
 		<div id="keychain-entry" class="form">
-			<p><label for="form-application">Application: </label><input type="text" id="form-application"></input><input type="hidden" id="form-applicationID"></input></p>
-			<p><label for="form-username">Username: </label><input type="text" id="form-username"></input></p>
+			<p><label for="form-entry-application">Application: </label><input type="text" id="form-entry-application"></input><input type="hidden" id="form-entry-applicationID"></input></p>
+			<p><label for="form-entry-username">Username: </label><input type="text" id="form-entry-username"></input></p>
 			<p>To change your password, please fill-in the new password twice.</p>
-			<p><label for="form-new-password1">New password: </label><input type="password" id="form-new-password1"></input></p>
-			<p><label for="form-new-password2">Repeat the new password: </label><input type="password" id="form-new-password2"></input></p>
+			<p><label for="form-entry-new-password1">New password: </label><input type="password" id="form-entry-new-password1"></input></p>
+			<p><label for="form-entry-new-password2">Repeat the new password: </label><input type="password" id="form-entry-new-password2"></input></p>
 			<button id="keychain-entry-update">Update</button>
 			<button id="keychain-entry-delete">Delete</button>
 		</div>
 		
 		<div id="keychain-entry-new" class="form">
 			<p>To add a new authentication account for an application, please start typing the application name. Suggestions of available applications are proposed in real-time.</p>
-			<p>Application: <input type="text" id="form-new-entry-application"></input></p>
-			<p>Username: <input type="text" id="form-new-entry-username"></input></p>
-			<p>Password: <input type="password" id="form-new-entry-password1"></input></p>
-			<p>Repeat the password: <input type="password" id="form-new-entry-password2"></input></p>
+			<p><label for="form-new-entry-application">Application: </label><input type="text" id="form-new-entry-application"></input></p>
+			<p><label for="form-new-entry-username">Username: </label><input type="text" id="form-new-entry-username"></input></p>
+			<p><label for="form-new-entry-password1">Password: </label><input type="password" id="form-new-entry-password1"></input></p>
+			<p><label for="form-new-entry-password2">Repeat the password: </label><input type="password" id="form-new-entry-password2"></input></p>
 			<button id="keychain-entry-add">Add</button>
 		</div>
 		
@@ -91,8 +91,8 @@
 	
 			<div id="dialog-confirm-update-keychain-entry" title="Confirmation" buttonYes="Oui" buttonNo="Non" labelPasswordNotChanged="&lt;inchangé&gt;">
 				<p>Do you really want to update your keychain for <span class="dialog-application"></span> application?</p>
-				<p>Username: <span class="dialog-username"></span><br/>
-				Password: <span class="dialog-password"></span></p>
+				<p>Username: <span class="dialog-username"></span></p>
+				<p class="pass">Password: <span class="dialog-password"></span></p>
 			</div>
 	
 			<div id="dialog-confirm-delete-keychain-entry" title="Confirmation" buttonYes="Oui" buttonNo="Non">

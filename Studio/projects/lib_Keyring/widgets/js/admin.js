@@ -83,7 +83,13 @@ $(function() {
 	$("#applications-add").click(function() {
 		addApplication($("#applications-add-application").val());
 	});
-
+	
+	$("#applications-add-application").bind('keydown', function(event){
+		if (event.which == 13) {
+			addApplication($("#applications-add-application").val());
+		}
+	});
+	
 	$("#applications-delete").click(function() {
 		deleteApplication($applicationsGrid.getGridParam('selrow'));
 	});
@@ -95,6 +101,12 @@ $(function() {
 
 	$("#users-add").click(function() {
 		addUser($("#users-add-user").val());
+	});
+	
+	$("#users-add-user").bind('keydown', function(event){
+		if (event.which == 13) {
+			addUser($("#users-add-user").val());
+		}
 	});
 
 	$("#users-delete").click(function() {

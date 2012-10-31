@@ -123,7 +123,7 @@ a:hover {
 	display: none;
 }
 
-.dialog-application {
+.dialog-application, .dialog-user {
 	font-weight: bold;
 	font-style: italic;
 }
