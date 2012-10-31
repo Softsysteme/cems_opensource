@@ -74,9 +74,41 @@
 
 		<div class="modal"></div>
 		
-		<div id="dialog-error-standard" title="Erreur">
-			<p id="errorMessage"></p>
-			<p id="errorDetails"></p>
+		<div id="dialog-error-div">
+			<div id="dialog-info-application-entry-deleted" title="Information">
+				<p>The application and all related authentications are deleted.</p>
+			</div>
+			
+			<div id="dialog-info-application-entry-added" title="Information">
+				<p>The <span class="dialog-application"></span> application is added.</p>
+			</div>
+			
+			<div id="dialog-info-application-entry-updated" title="Information">
+				<p>The application is updated.</p>
+			</div>
+			
+			<div id="dialog-info-user-entry-deleted" title="Information">
+				<p>The user and all authentications from his keychain are deleted.</p>
+			</div>
+			
+			<div id="dialog-info-user-entry-added" title="Information">
+				<p>The <span class="dialog-user"></span> user is added.</p>
+			</div>
+			
+			<div id="dialog-info-user-entry-updated" title="Information">
+				<p>The user is updated.</p>
+			</div>
+		
+			<div id="dialog-error" title="Erreur">
+				<p id="dialog-error-message"></p>
+				<p id="dialog-error-sub-message"></p>
+				<p id="dialog-error-exception-message"></p>
+			</div>
+			
+			<div id="dialog-error-standard" title="Erreur">
+				<p id="errorMessage"></p>
+				<p id="errorDetails"></p>
+			</div>
 		</div>
 	</body>
 </html>

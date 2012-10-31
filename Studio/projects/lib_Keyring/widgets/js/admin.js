@@ -132,6 +132,20 @@ function addApplication(newApp) {
 					
 					// emptying the add input
 					$("#applications-add-application").val("");
+					
+					$(".dialog-application").text(applicationName);
+					$("#dialog-info-application-entry-added").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);
@@ -150,7 +164,18 @@ function updateApplication(appID, appName) {
 					// error was found and displayed, nothing else to do
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
-					// nothing to do, update ok
+					$("#dialog-info-application-entry-updated").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);		
@@ -173,6 +198,18 @@ function deleteApplication(selectedRowId) {
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
 					$applicationsGrid.delRowData(selectedRowId);
+					$("#dialog-info-application-entry-deleted").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);
@@ -234,6 +271,20 @@ function addUser(newUser) {
 					
 					// emptying the add input
 					$("#users-add-user").val("");
+					
+					$(".dialog-user").text(userName);
+					$("#dialog-info-user-entry-added").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);		
@@ -252,7 +303,18 @@ function updateUser(userID, userName) {
 					// error was found and displayed, nothing else to do
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
-					// nothing to do, update ok
+					$("#dialog-info-user-entry-updated").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);		
@@ -275,6 +337,18 @@ function deleteUser(selectedRowId) {
 				} else {
 					// no Convertigo exception nor status false (error code), handles sequence response
 					$usersGrid.delRowData(selectedRowId);
+					$("#dialog-info-user-entry-deleted").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
 				}
 			}
 		);

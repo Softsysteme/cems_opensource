@@ -74,7 +74,7 @@ function displayErrorMessage(errorMessage, errorDetails, errorCode) {
 	
 	$("#errorMessage").text(errorMessage);
 	$("#errorDetails").text(errorDetails);
-	$("#error-standard").dialog({
+	$("#dialog-error-standard").dialog({
 		modal: true,
 		draggable: false,
 		resizable: false,
