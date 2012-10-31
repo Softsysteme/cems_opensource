@@ -3380,6 +3380,7 @@ Studio/src/com/twinsoft/convertigo/engine/EngineListener.java -text
 Studio/src/com/twinsoft/convertigo/engine/EnginePropertiesManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/EngineStatistics.java -text
 Studio/src/com/twinsoft/convertigo/engine/EventManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/ExpiredSecurityTokenException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/FilePropertyManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/HttpStateEvent.java -text
 Studio/src/com/twinsoft/convertigo/engine/HttpStateListener.java -text
@@ -3397,6 +3398,7 @@ Studio/src/com/twinsoft/convertigo/engine/MigrationListener.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/engine/MigrationManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MySSLSocketFactory.java -text
 Studio/src/com/twinsoft/convertigo/engine/MyX509KeyManager.java -text
+Studio/src/com/twinsoft/convertigo/engine/NoSuchSecurityTokenException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ObjectWithSameNameException.java -text
 Studio/src/com/twinsoft/convertigo/engine/ObjectsProvider.java -text
 Studio/src/com/twinsoft/convertigo/engine/PacManager.java -text svneol=unset#text/plain
@@ -3407,6 +3409,9 @@ Studio/src/com/twinsoft/convertigo/engine/ProxyManager.java -text svneol=unset#t
 Studio/src/com/twinsoft/convertigo/engine/PseudoCertificate.java -text
 Studio/src/com/twinsoft/convertigo/engine/RemoteAdministration.java -text
 Studio/src/com/twinsoft/convertigo/engine/RsaManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/SecurityToken.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/SecurityTokenException.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/SecurityTokenManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ThreadManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/TracePlayerManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/UsageMonitor.java -text svneol=unset#text/plain
@@ -3421,6 +3426,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/DownloadService.java -t
 Studio/src/com/twinsoft/convertigo/engine/admin/services/JSonService.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/Service.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/ServiceException.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/TextService.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/UploadService.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/XmlService.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/at/ServiceDefinition.java -text svneol=unset#text/plain
@@ -3468,6 +3474,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Reload.java -t
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/cleanDOM.xsl -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/schedulers/CreateScheduledElements.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/schedulers/List.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/security_token/Get.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/Create.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/DOMUtils.java -text svneol=unset#text/plain
