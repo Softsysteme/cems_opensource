@@ -46,6 +46,7 @@ import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
 import com.twinsoft.convertigo.engine.enums.Visibility;
+import com.twinsoft.convertigo.engine.util.GenericUtils;
 
 @ServiceDefinition(
 		name = "Get",
@@ -102,19 +103,20 @@ public class GetRequestables extends XmlService {
 		root.appendChild(e_project);
 	}
 	
-	private Element createDatabaseObjectElement(Document document, DatabaseObject dbo){
+	private Element createDatabaseObjectElement(Document document, DatabaseObject dbo) {
 		Element elt = document.createElement(dbo.getDatabaseType().toLowerCase());
 		elt.setAttribute("name", dbo.getName());
 		elt.setAttribute("comment", dbo.getComment());
 		return elt;
 	}
 	
-	private Element createRequestableElement(Document document, RequestableObject requestable){
+	private Element createRequestableElement(Document document, RequestableObject requestable) {
 		Element e_requestable = createDatabaseObjectElement(document, requestable);
-		if(requestable instanceof IVariableContainer)
+		if (requestable instanceof IVariableContainer) {
 			handleIVariableContainer(document, e_requestable, (IVariableContainer) requestable);
-		if(requestable instanceof ITestCaseContainer){
-			for(TestCase testcase : ((ITestCaseContainer)requestable).getTestCasesList()){
+		}
+		if (requestable instanceof ITestCaseContainer) {
+			for (TestCase testcase : ((ITestCaseContainer) requestable).getTestCasesList()) {
 				Element e_testcase = createDatabaseObjectElement(document, testcase);
 				handleIVariableContainer(document, e_testcase, testcase);
 				e_requestable.appendChild(e_testcase);
@@ -123,15 +125,15 @@ public class GetRequestables extends XmlService {
 		return e_requestable;
 	}
 	
-	@SuppressWarnings("unchecked")
-	private void handleIVariableContainer(Document document, Element e_vars, IVariableContainer vars){
-		for(Variable variable : vars.getVariables()){
+	private void handleIVariableContainer(Document document, Element e_vars, IVariableContainer vars) {
+		for (Variable variable : vars.getVariables()) {
 			Element e_variable = createDatabaseObjectElement(document, variable);
 			Object val = variable.getValueOrNull();
-			String strval = val == null ? null:variable.isMultiValued() ? new JSONArray((XMLVector<String>)val).toString():val.toString();
+			String strval = val == null ? null:variable.isMultiValued() ? new JSONArray(GenericUtils.<XMLVector<String>>cast(val)).toString():val.toString();
 			e_variable.setAttribute("value", strval);
 			e_variable.setAttribute("isMasked", Visibility.Platform.isMasked(variable.getVisibility()) ? "true":"false");
-			e_variable.setAttribute("isMultivalued", variable.isMultiValued().toString());
+			e_variable.setAttribute("isMultivalued", "" + variable.isMultiValued());
+			e_variable.setAttribute("isFileUpload", "" + variable.getIsFileUpload());
 			e_variable.setAttribute("description", variable.getDescription());
 			e_vars.appendChild(e_variable);
 		}

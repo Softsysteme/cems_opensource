@@ -207,6 +207,7 @@ Studio/lib/apache/bcel/NOTICE.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/README.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/bcel-5.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-1.2.2.jar -text
+Studio/lib/apache/commons/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-lang-2.5.jar -text
 Studio/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar -text
 Studio/lib/avalon.jar -text svneol=unset#unset
@@ -251,8 +252,6 @@ Studio/lib/axis2-1.6.1/lib/commons-cli-1.2.jar -text
 Studio/lib/axis2-1.6.1/lib/commons-cli-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.1/lib/commons-codec-1.3.jar -text
 Studio/lib/axis2-1.6.1/lib/commons-codec-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/axis2-1.6.1/lib/commons-fileupload-1.2.jar -text
-Studio/lib/axis2-1.6.1/lib/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.1/lib/commons-httpclient-3.1.jar -text
 Studio/lib/axis2-1.6.1/lib/commons-httpclient-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.1/lib/commons-io-1.4.jar -text
@@ -2637,12 +2636,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/EventDetailsDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/EventDetailsDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GenerateJavaStubDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GenerateJavaStubDialogComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupActionDialog.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupActionDialogComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupDialog.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupDialogComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupEventDialog.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MashupEventDialogComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MultipleDeletionDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialogComposite.java -text
@@ -2898,17 +2891,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeletePropertyTableRowA
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStepAction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceAbstractAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceAddActionAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceAddDataViewAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceAddEventAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceDeleteActionAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceDeleteDataViewAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceDeleteEventAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceInvalidTemplateException.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceUpdateActionAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceUpdateDataViewAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DreamFaceUpdateEventAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStepAction.java -text svneol=unset#text/plain
