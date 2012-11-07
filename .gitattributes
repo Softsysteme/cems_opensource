@@ -733,6 +733,7 @@ Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerS
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
