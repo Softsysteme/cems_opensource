@@ -430,7 +430,6 @@ Studio/projects/demo_SalesForce/img/poweredbyc8o_SF.jpg -text
 Studio/projects/demo_SalesForce/img/question.gif -text
 Studio/projects/demo_SalesForce/img/question.png -text
 Studio/projects/demo_SalesForce/img/title.png -text
-Studio/projects/demo_SalesForce/index.html -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/searchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/changeLanguage.xsl -text svneol=unset#text/plain
@@ -550,7 +549,6 @@ Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/images/header-flex.jpg -text
-Studio/projects/demo_mashup/index.html -text svneol=unset#text/plain
 Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
 Studio/projects/demo_mashup/resources/bg_center.png -text
 Studio/projects/demo_mashup/resources/bg_footer_center.png -text
@@ -584,7 +582,6 @@ Studio/projects/demo_usDirectory/img/question.png -text
 Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
 Studio/projects/demo_usDirectory/img/title.png -text
 Studio/projects/demo_usDirectory/img/toERPicon.png -text
-Studio/projects/demo_usDirectory/index.html -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
@@ -641,7 +638,6 @@ Studio/projects/lib_Keyring/css/start/images/ui-icons_f7a50d_256x240.png -text
 Studio/projects/lib_Keyring/css/start/images/ui-icons_fcd113_256x240.png -text
 Studio/projects/lib_Keyring/css/start/jquery-ui-1.8.18.custom.css -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/ui.jqgrid.css -text svneol=unset#text/plain
-Studio/projects/lib_Keyring/index.html -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-bg.js -text svneol=unset#text/plain
@@ -700,9 +696,6 @@ Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xsd -text
 Studio/projects/lib_Yammer/.project -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/css/custom.css -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/index.html -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.temp.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.temp.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.wsdl -text svneol=unset#text/plain
@@ -721,11 +714,6 @@ Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerS
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
-Studio/projects/sampleDocumentationSiteClipper/index.html -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
