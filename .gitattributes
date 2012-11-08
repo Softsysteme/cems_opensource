@@ -4604,6 +4604,15 @@ Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#tex
 Studio/tomcat/webapps/convertigo/callDF.jsp -text
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/admin.css -text
+Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.gif -text
+Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.png -text
+Studio/tomcat/webapps/convertigo/css/archive/images/icons18black.png -text
+Studio/tomcat/webapps/convertigo/css/archive/images/icons18white.png -text
+Studio/tomcat/webapps/convertigo/css/archive/images/icons36black.png -text
+Studio/tomcat/webapps/convertigo/css/archive/images/icons36white.png -text
+Studio/tomcat/webapps/convertigo/css/archive/jquery.mobile.1.0.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/archive/jquery.mobile.1.2.0.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/archive/weblib.6.1.10.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/autocomplete.css -text
 Studio/tomcat/webapps/convertigo/css/button.css -text
 Studio/tomcat/webapps/convertigo/css/common.css -text svneol=unset#text/plain
