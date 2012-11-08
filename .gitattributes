@@ -4503,9 +4503,7 @@ Studio/tomcat/webapps/convertigo/admin/styles/jquery/jquery.treeview.css -text s
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_flat_55_fbec88_40x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png -text
-Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_75_d0e5f5_1x4000.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_85_dfeffc_1x400.png -text
-Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_85_dfeffc_1x4000.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_95_fef1ec_1x400.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png -text
@@ -4599,7 +4597,6 @@ Studio/tomcat/webapps/convertigo/axis2-web/upload.jsp -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/callDF.jsp -text
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/admin.css -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.gif -text
