@@ -435,7 +435,6 @@ Studio/projects/demo_SalesForce/img/poweredbyc8o_SF.jpg -text
 Studio/projects/demo_SalesForce/img/question.gif -text
 Studio/projects/demo_SalesForce/img/question.png -text
 Studio/projects/demo_SalesForce/img/title.png -text
-Studio/projects/demo_SalesForce/index.html -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/searchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/changeLanguage.xsl -text svneol=unset#text/plain
@@ -555,7 +554,6 @@ Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/images/header-flex.jpg -text
-Studio/projects/demo_mashup/index.html -text svneol=unset#text/plain
 Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
 Studio/projects/demo_mashup/resources/bg_center.png -text
 Studio/projects/demo_mashup/resources/bg_footer_center.png -text
@@ -589,7 +587,6 @@ Studio/projects/demo_usDirectory/img/question.png -text
 Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
 Studio/projects/demo_usDirectory/img/title.png -text
 Studio/projects/demo_usDirectory/img/toERPicon.png -text
-Studio/projects/demo_usDirectory/index.html -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
@@ -647,7 +644,6 @@ Studio/projects/lib_Keyring/css/start/images/ui-icons_f7a50d_256x240.png -text
 Studio/projects/lib_Keyring/css/start/images/ui-icons_fcd113_256x240.png -text
 Studio/projects/lib_Keyring/css/start/jquery-ui-1.8.18.custom.css -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/ui.jqgrid.css -text svneol=unset#text/plain
-Studio/projects/lib_Keyring/index.html -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-bg.js -text svneol=unset#text/plain
@@ -718,9 +714,6 @@ Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xsd -text
 Studio/projects/lib_Yammer/.project -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/css/custom.css -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/index.html -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.temp.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.temp.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.wsdl -text svneol=unset#text/plain
@@ -739,11 +732,8 @@ Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerS
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
-Studio/projects/sampleDocumentationSiteClipper/index.html -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
@@ -4492,6 +4482,7 @@ Studio/tomcat/webapps/convertigo/admin/styles/jquery/customRedmond/images/ui-bg_
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/customRedmond/images/ui-bg_gloss-wave_55_03764f_500x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/customRedmond/images/ui-bg_inset-hard_100_f3f2f1_1x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/customRedmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png -text
+Studio/tomcat/webapps/convertigo/admin/styles/jquery/ellipsis-xbl.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/images/file.gif -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/images/folder-closed.gif -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/images/folder.gif -text
@@ -4632,11 +4623,9 @@ Studio/tomcat/webapps/convertigo/css/images/icons18white.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons36black.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons36white.png -text
 Studio/tomcat/webapps/convertigo/css/jquery.mobile.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/jquery.mobile.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/sna.css -text
-Studio/tomcat/webapps/convertigo/css/weblib.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/directKitAccess.jsp -text
 Studio/tomcat/webapps/convertigo/directKitAccessWait.jsp -text
 Studio/tomcat/webapps/convertigo/directKitError.jsp -text
@@ -4910,10 +4899,7 @@ Studio/tomcat/webapps/convertigo/scripts/contextMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/cookies.js -text
 Studio/tomcat/webapps/convertigo/scripts/flexlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/jquery.mobile.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.mobile.min.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.mobilelib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/keyboard.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapdku.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapsna.js -text
