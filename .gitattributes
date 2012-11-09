@@ -1709,6 +1709,8 @@ Studio/src/com/twinsoft/convertigo/beans/core/ISchemaGenerator.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaImportGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaIncludeGenerator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaParticleGenerator.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/ISchemaReader.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/ISchemaReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IScreenClassContainer.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ISheetContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IStepSourceContainer.java -text svneol=unset#text/plain
@@ -2047,17 +2049,39 @@ Studio/src/com/twinsoft/convertigo/beans/references/AbstractIncludeLocalXsdRefer
 Studio/src/com/twinsoft/convertigo/beans/references/AbstractIncludeLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/AbstractLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/AbstractLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/FileReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/FileReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IFileReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IUrlReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/ImportWsdlSchemaReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/ImportWsdlSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/ImportXsdSchemaReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/ImportXsdSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/IncludeLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/IncludeLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IncludeXsdSchemaReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/IncludeXsdSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RemoteFileReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RemoteFileReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/WsdlSchemaReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/WsdlSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/XsdSchemaReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/XsdSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/res/ImportLocalReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/ImportWsdlSchemaReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/ImportXsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeLocalReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeXsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/LocalFileReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/RemoteFileReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/WsdlSchemaReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/XsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractBase.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractConvertigoJob.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractJob.java -text svneol=unset#text/plain
