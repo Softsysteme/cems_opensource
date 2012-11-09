@@ -1804,6 +1804,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/MobileDevice.properties -text 
 Studio/src/com/twinsoft/convertigo/beans/core/res/MultiValuedVariable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/Pool.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Project.properties -text
+Studio/src/com/twinsoft/convertigo/beans/core/res/Reference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/RequestableObject.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/RequestableStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/ScreenClass.properties -text
@@ -2052,6 +2053,7 @@ Studio/src/com/twinsoft/convertigo/beans/references/AbstractLocalXsdReferenceBea
 Studio/src/com/twinsoft/convertigo/beans/references/FileReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/FileReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/IFileReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/ISchemaReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/IUrlReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/ImportLocalXsdReferenceBeanInfo.java -text svneol=unset#text/plain
