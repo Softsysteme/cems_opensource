@@ -1702,6 +1702,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/IComplexTypeAffectation.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/IContainerOrdered.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IContextMaintainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/IElementRefAffectation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IMultiValued.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/INillableProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaAttributeGenerator.java -text svneol=unset#text/plain
