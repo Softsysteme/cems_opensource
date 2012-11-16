@@ -4498,6 +4498,7 @@ Studio/tomcat/webapps/convertigo/css/archive/images/icons36white.png -text
 Studio/tomcat/webapps/convertigo/css/archive/jquery.mobile.1.0.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/archive/jquery.mobile.1.2.0.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/archive/weblib.6.1.10.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/archive/weblib.6.2.0.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/autocomplete.css -text
 Studio/tomcat/webapps/convertigo/css/button.css -text
 Studio/tomcat/webapps/convertigo/css/common.css -text svneol=unset#text/plain
