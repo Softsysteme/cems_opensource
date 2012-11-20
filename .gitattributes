@@ -3563,6 +3563,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGenera
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementInfoWizardPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/references/ProjectSchemaWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ChooseWorkspaceLocationPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/LicensePage.java -text svneol=unset#text/plain
