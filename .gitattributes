@@ -2077,22 +2077,20 @@ Studio/src/com/twinsoft/convertigo/beans/references/WsdlSchemaReference.java -te
 Studio/src/com/twinsoft/convertigo/beans/references/WsdlSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/XsdSchemaReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/XsdSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/images/LocalFileReference_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/images/LocalFileReference_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/ProjectSchemaReference_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/ProjectSchemaReference_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/images/RemoteFileReference_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/references/images/RemoteFileReference_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/WebServiceReference_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/WebServiceReference_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/WsdlSchemaReference_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/WsdlSchemaReference_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/XsdSchemaReference_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/references/images/XsdSchemaReference_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/references/images/importLocalXsd_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/references/images/includeLocalXsd_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/references/res/ImportLocalReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/ImportWsdlSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/ImportXsdSchemaReference.properties -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeLocalReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeXsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/LocalFileReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/ProjectSchemaReference.properties -text svneol=unset#text/plain
