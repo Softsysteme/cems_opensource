@@ -3,11 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-		<title>Mon trousseau</title>
+		<title>My keychain</title>
+		
 		<link href="css/keyring.css" type="text/css" rel="stylesheet"/>
-		<script src="../../../scripts/jquery.min.js" type="text/javascript"></script>
-		<script src="../js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
 		<link href="../css/start/jquery-ui-1.8.18.custom.css" type="text/css" rel="stylesheet"/>
+		
+		<script src="../js/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="../js/jquery-ui-1.8.24.custom.min.js" type="text/javascript"></script>
 		<script src="js/common.js" type="text/javascript"></script>
 		<script src="js/keychain.js" type="text/javascript"></script>
 	</head>
@@ -15,8 +17,8 @@
 
 		<div class="page">
 			<div class="page-title">
-				<h1>Mon trousseau</h1>
-				<p>Utilisateur : <span id="user" class="connected-user"></span></p>
+				<h1>My keychain</h1>
+				<p>User: <span id="user" class="connected-user"></span></p>
 			</div>
 			
 			<div id="app-menu" class="action-menu">
@@ -25,7 +27,7 @@
 				</div>
 				<ul id="app-list-ul">
 					<li>
-						<a id="button-new-keychain-entry">&lt;Nouvelle application&gt;
+						<a id="button-new-keychain-entry">&lt;New application&gt;
 						</a>
 					</li>
 				</ul>
@@ -33,36 +35,35 @@
 		</div>
 		
 		<div id="keychain-entry" class="form">
-			<p>Application : <input type="text" id="form-application"></input></p>
-			<p>Nom d'utilisateur : <input type="text" id="form-username"></input></p>
-			<p>Pour modifier votre mot de passe, veuillez saisir deux fois votre nouveau mot de passe.</p>
-			<p>Nouveau mot de passe : <input type="password" id="form-new-password1"></input></p>
-			<p>Répeter le nouveau mot de passe : <input type="password" id="form-new-password2"></input></p>
-			<button id="keychain-entry-update">Mettre à jour</button>
-			<button id="keychain-entry-delete">Supprimer</button>
+			<p><label for="form-entry-application">Application: </label><input type="text" id="form-entry-application"></input><input type="hidden" id="form-entry-applicationID"></input></p>
+			<p><label for="form-entry-username">Username: </label><input type="text" id="form-entry-username"></input></p>
+			<p>To change your password, please fill-in the new password twice.</p>
+			<p><label for="form-entry-new-password1">New password: </label><input type="password" id="form-entry-new-password1"></input></p>
+			<p><label for="form-entry-new-password2">Repeat the new password: </label><input type="password" id="form-entry-new-password2"></input></p>
+			<button id="keychain-entry-update">Update</button>
+			<button id="keychain-entry-delete">Delete</button>
 		</div>
 		
 		<div id="keychain-entry-new" class="form">
-			<p>Pour ajouter un nouveau compte pour une application, veuillez saisir le nom de l'application souhaitée, le système
-			vous proposera en temps réel des suggestions d'applications disponibles.</p>
-			<p>Application : <input type="text" id="form-new-entry-application"></input></p>
-			<p>Nom d'utilisateur : <input type="text" id="form-new-entry-username"></input></p>
-			<p>Mot de passe : <input type="password" id="form-new-entry-password1"></input></p>
-			<p>Répeter le mot de passe : <input type="password" id="form-new-entry-password2"></input></p>
-			<button id="keychain-entry-add">Ajouter</button>
+			<p>To add a new authentication account for an application, please start typing the application name. Suggestions of available applications are proposed in real-time.</p>
+			<p><label for="form-new-entry-application">Application: </label><input type="text" id="form-new-entry-application"></input></p>
+			<p><label for="form-new-entry-username">Username: </label><input type="text" id="form-new-entry-username"></input></p>
+			<p><label for="form-new-entry-password1">Password: </label><input type="password" id="form-new-entry-password1"></input></p>
+			<p><label for="form-new-entry-password2">Repeat the password: </label><input type="password" id="form-new-entry-password2"></input></p>
+			<button id="keychain-entry-add">Add</button>
 		</div>
 		
 		<div id="dialog-error-div">
 			<div id="dialog-info-keychain-entry-deleted" title="Information">
-				<p>Le compte enregistré pour l'application <span class="dialog-application"></span> a bien été supprimé de votre trousseau.</p>
+				<p>The registered authentication account for <span class="dialog-application"></span> application is deleted from your keychain.</p>
 			</div>
 	
 			<div id="dialog-info-keychain-entry-added" title="Information">
-				<p>Le compte pour l'application <span class="dialog-application"></span> a bien été ajouté à votre trousseau.</p>
+				<p>The authentication account for <span class="dialog-application"></span> application is added to your keychain.</p>
 			</div>
 	
 			<div id="dialog-info-keychain-entry-updated" title="Information">
-				<p>Le compte pour l'application <span class="dialog-application"></span> a bien été mis à jour dans votre trousseau.</p>
+				<p>The authentication account for <span class="dialog-application"></span> application is updated in your keychain.</p>
 			</div>
 	
 			<div id="dialog-error" title="Erreur">
@@ -70,27 +71,32 @@
 				<p id="dialog-error-sub-message"></p>
 				<p id="dialog-error-exception-message"></p>
 			</div>
+			
+			<div id="dialog-error-standard" title="Erreur">
+				<p id="errorMessage"></p>
+				<p id="errorDetails"></p>
+			</div>
 	
 			<div id="dialog-error-missing-username" title="Erreur">
-				<p>Vous devez saisir un nom d'utilisateur !</p>
+				<p>You have to enter a username!</p>
 			</div>
 	
 			<div id="dialog-error-missing-old-password" title="Erreur">
-				<p>Vous devez saisir votre ancien mot de passe !</p>
+				<p>You have to enter your old password!</p>
 			</div>
 	
 			<div id="dialog-error-new-passwords" title="Erreur">
-				<p>Vous devez saisir un nouveau password et le répéter deux fois à l'identique !</p>
+				<p>You have to enter a new password and repeat it twice identical!</p>
 			</div>
 	
-			<div id="dialog-confirm-update-keychain-entry" title="Confirmation" buttonYes="Oui" buttonNo="Non" labelPasswordNotChanged="<inchangé>">
-				<p>Voulez-vous vraiment mettre à jour votre trousseau pour l'application <span class="dialog-application"></span> ?</p>
-				<p>Nom d'utilisateur : <span class="dialog-username"></span><br/>
-				Mot de passe : <span class="dialog-password"></span></p>
+			<div id="dialog-confirm-update-keychain-entry" title="Confirmation" buttonYes="Oui" buttonNo="Non" labelPasswordNotChanged="&lt;inchangé&gt;">
+				<p>Do you really want to update your keychain for <span class="dialog-application"></span> application?</p>
+				<p>Username: <span class="dialog-username"></span></p>
+				<p class="pass">Password: <span class="dialog-password"></span></p>
 			</div>
 	
 			<div id="dialog-confirm-delete-keychain-entry" title="Confirmation" buttonYes="Oui" buttonNo="Non">
-				<p>Voulez-vous vraiment supprimer le compte enregistré pour l'application <span class="dialog-application"></span> de votre trousseau ?</p>
+				<p>Do you really want to delete the authentication account for <span class="dialog-application"></span> application from your keychain?</p>
 			</div>
 		</div>
 

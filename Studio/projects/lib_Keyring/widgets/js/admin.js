@@ -7,15 +7,26 @@ var $applicationsGrid;
 var $usersGrid;
 var applications = [];
 
+
 var current_iRow;
 var current_iCol;
 
 $(function() {
 	console.log("Document ready!");
+	
+	// calling getErrorMessages sequence
+	getErrorMessages();
 
+	// retrieving column names for applications grid
+	var appColumns = [];
+	$("#app-col-template>p").each(function(index) {
+		appColumns[index] = $(this).text();
+	});
+	$("#app-col-template").hide();
+	// building applications grid
 	jQuery("#applications-grid").jqGrid({
 		datatype: "local",
-	   	colNames:['Nom'],
+	   	colNames: appColumns,
 	   	colModel:[
 	   		{name:'name', editable:true, edittype:'text', width:400}
 	   	],
@@ -32,9 +43,16 @@ $(function() {
 	    }
 	}).navGrid('#applications-grid-pager',{edit:false,add:false,del:false});
 	
+	// retrieving column names for users grid
+	var userColumns = [];
+	$("#user-col-template>p").each(function(index) {
+		userColumns[index] = $(this).text();
+	});
+	$("#user-col-template").hide();
+	// building users grid
 	jQuery("#users-grid").jqGrid({
 		datatype: "local",
-	   	colNames:['Nom','Applications'],
+	   	colNames: userColumns,
 	   	colModel:[
 	   		{name:'name', editable:true, edittype:'text', width:200},
 	   		{name:'applications', editable:false, width:400}
@@ -65,7 +83,13 @@ $(function() {
 	$("#applications-add").click(function() {
 		addApplication($("#applications-add-application").val());
 	});
-
+	
+	$("#applications-add-application").bind('keydown', function(event){
+		if (event.which == 13) {
+			addApplication($("#applications-add-application").val());
+		}
+	});
+	
 	$("#applications-delete").click(function() {
 		deleteApplication($applicationsGrid.getGridParam('selrow'));
 	});
@@ -78,6 +102,12 @@ $(function() {
 	$("#users-add").click(function() {
 		addUser($("#users-add-user").val());
 	});
+	
+	$("#users-add-user").bind('keydown', function(event){
+		if (event.which == 13) {
+			addUser($("#users-add-user").val());
+		}
+	});
 
 	$("#users-delete").click(function() {
 		deleteUser($usersGrid.getGridParam('selrow'));
@@ -87,25 +117,50 @@ $(function() {
 		addApplicationForUser($usersGrid.getGridParam('selrow'));
 	});
 
+	// calling getApplications sequence
 	getApplications();
-
+	
 });
 
 function addApplication(newApp) {
 	if (newApp.length > 0) {
 		libKeyringCall(
 			"AddApplication",
-			"default",
+			"ctxAddApplication",
 			{ application: newApp },
 			function($data) {
-				var $application = $data.find("application");
-				var applicationID = $application.attr("id");
-				var applicationName = $application.attr("name");
-				$applicationsGrid.addRowData(applicationID, { name: applicationName });
-				
-				$applicationsGrid.sortGrid("name", true);
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
+					var $application = $data.find(">application");
+					var applicationID = $application.attr("id");
+					var applicationName = $application.attr("name");
+					// adding row in the jqgrid
+					$applicationsGrid.addRowData(applicationID, { name: applicationName });
+					// sorting the jqgrid
+					$applicationsGrid.sortGrid("name", true, "asc");
+					
+					// emptying the add input
+					$("#applications-add-application").val("");
+					
+					$(".dialog-application").text(applicationName);
+					$("#dialog-info-application-entry-added").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
 			}
-		);		
+		);
 	}
 }
 
@@ -113,8 +168,28 @@ function updateApplication(appID, appName) {
 	if (appName.length > 0) {
 		libKeyringCall(
 			"UpdateApplication",
-			"default",
-			{ applicationID: appID, name: appName }
+			"ctxUpdateApplication",
+			{ applicationID: appID, name: appName }, 
+			function($data) {
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+					// no Convertigo exception nor status false (error code), handles sequence response
+					$("#dialog-info-application-entry-updated").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
+			}
 		);		
 	}
 }
@@ -124,15 +199,30 @@ function deleteApplication(selectedRowId) {
 		// Prevents currently edited cell to interfere with deletion process
 		$applicationsGrid.restoreCell(current_iRow, current_iCol);
 		
-		var selectedRow = $applicationsGrid.getRowData(selectedRowId);
-		var deletedApp = selectedRow["name"];
-		
 		libKeyringCall(
 			"DeleteApplication",
-			"default",
-			{ application: deletedApp },
+			"ctxDeleteApplication",
+			{ applicationID: selectedRowId },
 			function($data) {
-				$applicationsGrid.delRowData(selectedRowId);
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+					// no Convertigo exception nor status false (error code), handles sequence response
+					$applicationsGrid.delRowData(selectedRowId);
+					$("#dialog-info-application-entry-deleted").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
 			}
 		);
 	}
@@ -144,21 +234,29 @@ function getApplications() {
 	
 	libKeyringCall(
 		"GetApplications",
-		"default",
+		"ctxGetApplications",
 		{ },
 		function($data) {
-			$applicationsGrid.clearGridData();
-			applications = [];
-
-			$data.find("application").each(function(index) {
-				var $application = $(this);
-				var applicationID = $application.attr("id");
-				var applicationName = $application.attr("name");
-				$applicationsGrid.addRowData(applicationID, { id: applicationID, name: applicationName });
-				applications.push(applicationName);
-			});
-
-			console.log("Applications: " + applications);
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
+				$applicationsGrid.clearGridData();
+				applications = [];
+	
+				$data.find(">applications>application").each(function(index) {
+					var $application = $(this);
+					var applicationID = $application.attr("id");
+					var applicationName = $application.text();
+					$applicationsGrid.addRowData(applicationID, { id: applicationID, name: applicationName });
+					applications.push(applicationName);
+				});
+	
+				console.log("Applications: " + applications);
+				
+				$applicationsGrid.sortGrid("name", true, "asc");
+			}
 		}
 	);		
 }
@@ -167,15 +265,39 @@ function addUser(newUser) {
 	if (newUser.length > 0) {
 		libKeyringCall(
 			"AddUser",
-			"default",
+			"ctxAddUser",
 			{ user: newUser },
 			function($data) {
-				var $user = $data.find("user");
-				var userID = $user.attr("id");
-				var userName = $user.attr("name");
-				$usersGrid.addRowData(userID, { name: userName });
-				
-				$usersGrid.sortGrid("name");
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+					// no Convertigo exception nor status false (error code), handles sequence response
+					var $user = $data.find(">user");
+					var userID = $user.attr("id");
+					var userName = $user.attr("name");
+					// adding row in the jqgrid
+					$usersGrid.addRowData(userID, { name: userName });
+					// sorting the jqgrid
+					$usersGrid.sortGrid("name", true, "asc");
+					
+					// emptying the add input
+					$("#users-add-user").val("");
+					
+					$(".dialog-user").text(userName);
+					$("#dialog-info-user-entry-added").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
 			}
 		);		
 	}
@@ -185,8 +307,28 @@ function updateUser(userID, userName) {
 	if (userName.length > 0) {
 		libKeyringCall(
 			"UpdateUser",
-			"default",
-			{ userID: userID, name: userName }
+			"ctxUpdateUser",
+			{ userID: userID, name: userName }, 
+			function($data) {
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+					// no Convertigo exception nor status false (error code), handles sequence response
+					$("#dialog-info-user-entry-updated").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
+			}
 		);		
 	}
 }
@@ -196,15 +338,30 @@ function deleteUser(selectedRowId) {
 		// Prevents currently edited cell to interfere with deletion process
 		$usersGrid.restoreCell(current_iRow, current_iCol);
 		
-		var selectedRow = $usersGrid.getRowData(selectedRowId);
-		var deletedUser = selectedRow["name"];
-		
 		libKeyringCall(
 			"DeleteUser",
-			"default",
-			{ user: deletedUser },
+			"ctxDeleteUser",
+			{ userID: selectedRowId },
 			function($data) {
-				$usersGrid.delRowData(selectedRowId);
+				// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+				if (handleApplicativeErrors($data)) {
+					// error was found and displayed, nothing else to do
+				} else {
+					// no Convertigo exception nor status false (error code), handles sequence response
+					$usersGrid.delRowData(selectedRowId);
+					$("#dialog-info-user-entry-deleted").dialog({
+						resizable: false,
+						modal: true,
+						buttons: [
+							{
+								text: "OK",
+								click: function() {
+									$(this).dialog("close");
+								}
+							}
+						]
+					});
+				}
 			}
 		);
 	}
@@ -216,18 +373,34 @@ function getUsers() {
 	
 	libKeyringCall(
 		"GetUsersAndApplications",
-		"default",
+		"ctxGetUsersAndApplications",
 		{ },
 		function($data) {
-			$usersGrid.clearGridData();
-			
-			$data.find("user").each(function(index) {
-				var $user = $(this);
-				var userID = $user.attr("id");
-				var username = $user.attr("name");
-				var applications = $user.attr("applications");
-				$usersGrid.addRowData(userID, { id: userID, name: username, applications: applications });
-			});
+			// Handles Convertigo exception in XML response or error code (status false) to automatically pop the error dialog
+			if (handleApplicativeErrors($data)) {
+				// error was found and displayed, nothing else to do
+			} else {
+				// no Convertigo exception nor status false (error code), handles sequence response
+				$usersGrid.clearGridData();
+				
+				$data.find(">users>user").each(function(index) {
+					var $user = $(this);
+					var userID = $user.attr("id");
+					var username = $user.attr("name");
+					var applications = "";
+					$user.find(">applications>application").each(function(index) {
+						var $app = $(this);
+						var appName = $app.text();
+						if (applications != "") {
+							applications += ", ";
+						}
+						applications += appName;
+					});
+					$usersGrid.addRowData(userID, { id: userID, name: username, applications: applications });
+				});
+				// sorting the jqgrid
+				$usersGrid.sortGrid("name", true, "asc");
+			}
 		}
 	);		
 }
