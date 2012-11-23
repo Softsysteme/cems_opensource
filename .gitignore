@@ -37,6 +37,7 @@ Studio/projects/lib_GoogleMaps/_private
 Studio/projects/lib_GoogleSpreadsheets/*.temp.*
 Studio/projects/lib_GoogleSpreadsheets/_data
 Studio/projects/lib_GoogleSpreadsheets/_private
+Studio/projects/lib_Keyring/Traces
 Studio/projects/lib_Keyring/_data
 Studio/projects/lib_Keyring/_private
 Studio/projects/lib_Keyring/lib_Keyring.temp.wsdl
