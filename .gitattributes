@@ -3302,6 +3302,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/EngineLogViewComparator
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/EngineLogViewLabelProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/LogLine.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/clear_logs.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/hide_logs_parameters.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_contains.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_endswith.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_equals.png -text
@@ -3309,6 +3310,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_variable.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_set_enddate.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_set_startdate.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/restore_logs.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager2.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ConnectorTreeObject.java -text
