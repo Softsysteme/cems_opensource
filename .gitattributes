@@ -3200,6 +3200,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_add_variable.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_set_enddate.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/log_ctx_menu_set_startdate.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/real_time_logs.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/restore_logs.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager2.java -text svneol=unset#text/plain
