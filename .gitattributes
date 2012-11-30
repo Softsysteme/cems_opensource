@@ -3380,19 +3380,19 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/information_c
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/isusedby_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/requires_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/AbstractNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/AbstractNodeWithDatabaseObjectReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/AbstractParentNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/CicsConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/EntryHandlerNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ExitHandlerNode.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/Folder.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/HtmlConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/HttpConnectorNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/InformationNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/IsUsedByNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/JavelinConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProjectNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProxyHttpConnectorNode.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ReferenceObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RequiresNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RootNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ScreenClassNode.java -text
