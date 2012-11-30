@@ -3282,7 +3282,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/IsUsedByNode.j
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/JavelinConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProjectNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProxyHttpConnectorNode.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ReferenceObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RequiresNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RootNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ScreenClassNode.java -text
