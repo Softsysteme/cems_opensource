@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:demo_SalesForce_ns="http://www.convertigo.com/convertigo/projects/demo_SalesForce" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_SalesForce">
+    <xsd:element name="SalesForceConnector__EmptyLeadsView" type="demo_SalesForce_ns:SalesForceConnector__EmptyLeadsViewRequestData"/>
+    <xsd:complexType name="SalesForceConnector__EmptyLeadsViewRequestData">
+        <xsd:sequence>
+            <xsd:element name="viewName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SalesForceConnector__EmptyLeadsViewResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="demo_SalesForce_ns:SalesForceConnector__EmptyLeadsViewResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SalesForceConnector__EmptyLeadsViewResponseData"/>
+    <xsd:complexType name="SalesForceConnector__EmptyLeadsViewResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="demo_SalesForce_ns:SalesForceConnector__EmptyLeadsViewResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
