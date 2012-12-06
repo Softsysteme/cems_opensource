@@ -1751,6 +1751,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/IContainerOrdered.java -text svneo
 Studio/src/com/twinsoft/convertigo/beans/core/IContextMaintainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IElementRefAffectation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/IInfoProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IMultiValued.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/INillableProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaAttributeGenerator.java -text svneol=unset#text/plain
@@ -3178,6 +3179,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataOrNullPropertyDe
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataTypeDetectionPolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DomainsListingEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DynamicComboBoxPropertyDescriptor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DynamicInfoPropertyDescriptor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EditorFrameworkDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EmulatorTechnologyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EnvParametersEditor.java -text svneol=unset#text/plain
@@ -3221,7 +3223,9 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinZoneSupport.j
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/KeywordEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/LetterCasePolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyModifySupport.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicInfoEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicTagsEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithInfoEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithTagsEditorAdvance.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithValidatorEditor.java -text svneol=unset#text/plain
