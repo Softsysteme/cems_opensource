@@ -65,7 +65,8 @@ public class List extends XmlService{
 
     			String version = project.getVersion();
     			
-    			String exported = project.getInfoForProperty("exported", request.getLocale());
+    			DateFormat df = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT, request.getLocale());
+    			String exported = project.getInfoForProperty("exported", df, request.getLocale());
     			
     			Element projectElement = document.createElement("project");
     			projectElement.setAttribute("name", projectName);
