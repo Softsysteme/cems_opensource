@@ -63,9 +63,15 @@ public class List extends XmlService{
     			String comment = project.getComment();
     			if (comment.length() > 100) comment = comment.substring(0, 100) + "...";
 
+    			String version = project.getVersion();
+    			
+    			String exported = project.getInfoForProperty("exported", request.getLocale());
+    			
     			Element projectElement = document.createElement("project");
     			projectElement.setAttribute("name", projectName);
     			projectElement.setAttribute("comment", comment);
+    			projectElement.setAttribute("version", version);
+    			projectElement.setAttribute("exported", exported);
     			projectElement.setAttribute("deployDate", deployDate);
     			projectsListElement.appendChild(projectElement);
     		}
