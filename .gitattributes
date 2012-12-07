@@ -2826,6 +2826,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerRefreshAction.
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerSaveAllAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectPrintAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/SetupAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ButtonSpec.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateExtractionRuleDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateHandlerDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateHandlerDialogComposite.java -text
@@ -3037,7 +3038,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_next[!!-~]tab.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_previous[!!-~]tab.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_refresh.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_stop.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ButtonSpec.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistStepAction.java -text svneol=unset#text/plain
