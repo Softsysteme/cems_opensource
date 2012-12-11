@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="HelloWorld" targetNamespace="http://www.convertigo.com/convertigo/projects/HelloWorld" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:HelloWorld_ns="http://www.convertigo.com/convertigo/projects/HelloWorld" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/HelloWorld"><xsd:include schemaLocation="HelloWorld.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="http__testResponse">
+    <wsdl:part name="parameters" element="HelloWorld_ns:http__testResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="TestHTMLResponse">
+    <wsdl:part name="parameters" element="HelloWorld_ns:TestHTMLResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="TestHTMLRequest">
+    <wsdl:part name="parameters" element="HelloWorld_ns:TestHTML">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="http__testRequest">
+    <wsdl:part name="parameters" element="HelloWorld_ns:http__test">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="HelloWorldPortType">
+    <wsdl:operation name="http__test">
+<wsdl:documentation/>
+      <wsdl:input message="HelloWorld_ns:http__testRequest">
+    </wsdl:input>
+      <wsdl:output message="HelloWorld_ns:http__testResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestHTML">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="HelloWorld_ns:TestHTMLRequest">
+    </wsdl:input>
+      <wsdl:output message="HelloWorld_ns:TestHTMLResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloWorldSOAPBinding" type="HelloWorld_ns:HelloWorldPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="http__test">
+<wsdl:documentation/>
+      <soap:operation soapAction="HelloWorld?http__test"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestHTML">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="HelloWorld?TestHTML"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloWorld">
+    <wsdl:port name="HelloWorldSOAP" binding="HelloWorld_ns:HelloWorldSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/HelloWorld/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

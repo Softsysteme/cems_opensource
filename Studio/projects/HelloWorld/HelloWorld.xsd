@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:HelloWorld_ns="http://www.convertigo.com/convertigo/projects/HelloWorld" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/HelloWorld">
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="HelloWorld_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="HelloWorld_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:element name="http__test" type="HelloWorld_ns:http__testRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="http__testResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="HelloWorld_ns:http__testResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="http__testRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="http__testResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="HelloWorld_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:element name="TestHTML" type="HelloWorld_ns:TestHTMLRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="TestHTMLResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="HelloWorld_ns:TestHTMLResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="TestHTMLRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="TestHTML_document_transaction_document_DIVType">
+        <xsd:attribute name="id" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="TestHTML_document_transaction_documentType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="DIV" type="HelloWorld_ns:TestHTML_document_transaction_document_DIVType"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="TestHTML_document_transactionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="HelloWorld_ns:TestHTML_document_transaction_documentType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TestHTML_document_htmlType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TestHTMLResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="transaction" type="HelloWorld_ns:TestHTML_document_transactionType"/>
+            <xsd:element minOccurs="0" name="html" type="HelloWorld_ns:TestHTML_document_htmlType"/>
+            <xsd:element minOccurs="0" name="error" type="HelloWorld_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:element name="html__test" type="HelloWorld_ns:html__testRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="html__testResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="HelloWorld_ns:html__testResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="html__testRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="html_test_document_DIVType">
+        <xsd:attribute name="id" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="html__testResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="DIV" type="HelloWorld_ns:html_test_document_DIVType"/>
+            <xsd:element minOccurs="0" name="error" type="HelloWorld_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+</xsd:schema>

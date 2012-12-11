@@ -399,6 +399,13 @@ Studio/lib/xerces-2_11_0/xercesImpl.jar -text
 Studio/lib/xerces-2_11_0/xercesSamples.jar -text
 Studio/lib/xerces-2_11_0/xml-apis.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
+Studio/projects/HelloWorld/.project -text svneol=unset#text/plain
+Studio/projects/HelloWorld/HelloWorld.wsdl -text svneol=unset#text/plain
+Studio/projects/HelloWorld/HelloWorld.xml -text svneol=unset#text/plain
+Studio/projects/HelloWorld/HelloWorld.xsd -text svneol=unset#text/plain
+Studio/projects/HelloWorld/css/custom.css -text svneol=unset#text/plain
+Studio/projects/HelloWorld/index.html -text svneol=unset#text/plain
+Studio/projects/HelloWorld/js/custom.js -text svneol=unset#text/plain
 Studio/projects/crawlingProject/crawlingProject.sql -text
 Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/plain
 Studio/projects/crawlingProject/crawlingProject.xml -text svneol=unset#text/plain
