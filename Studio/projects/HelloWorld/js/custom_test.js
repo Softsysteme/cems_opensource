@@ -21,7 +21,7 @@ $.extend(true, C8O, {
 	 */
 	init_vars : {
 //		enc : "false", /** enables rsa encoding */
-//		testplatform : "auto" /** auto/true/false : automatically redirect to the testplatform if no parameter is set, force testplaform if true or just call C8O if false */
+		testplatform : "false" /** auto/true/false : automatically redirect to the testplatform if no parameter is set, force testplaform if true or just call C8O if false */
 	},
 	/**
 	 * vars variables values can be set at any time, 
@@ -226,9 +226,10 @@ $.extend(true, C8O, {
  *  return : true > lets weblib perform the first call
  *             false > break the processing of request
  */
-//C8O.addHook("init_finished", function (data) {
-//	return false;
-//});
+C8O.addHook("init_finished", function (data) {
+	C8O.call({ __sequence: "TestAll" });
+	return false;
+});
 
 /**
  *  mashup_event hook
@@ -270,9 +271,25 @@ $.extend(true, C8O, {
  *  return : true > lets weblib perform the xml
  *             false > break the processing of xml
  */
-//C8O.addHook("xml_response", function (xml) {
-//	return true;
-//});
+C8O.addHook("xml_response", function (xml) {
+	var $xml = $(xml);
+	var $testResultsTable = $("#test_results");
+	$xml.find("test").each(function(index, value) {
+		var $item = $(value);
+		var icon = "error.png";
+		var error = "";
+		if ($item.attr("success") == "true") {
+			icon = "ok.png";
+		}
+		else {
+			error = $item.attr("error");
+		}
+		var result = "<img src=\"images/" + icon + "\" width=\"32\" height=\"32\"/>" + error;
+		$testResultsTable.append("<tr><td>" + $item.attr("name") + "</td><td>" + result + "</td></<tr>");
+	});
+	
+	return false;
+});
 
 /**
  *  text_response hook

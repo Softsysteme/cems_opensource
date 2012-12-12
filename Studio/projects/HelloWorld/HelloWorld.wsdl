@@ -3,60 +3,10 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/HelloWorld"><xsd:include schemaLocation="HelloWorld.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="http__testResponse">
-    <wsdl:part name="parameters" element="HelloWorld_ns:http__testResponse">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="TestHTMLResponse">
-    <wsdl:part name="parameters" element="HelloWorld_ns:TestHTMLResponse">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="TestHTMLRequest">
-    <wsdl:part name="parameters" element="HelloWorld_ns:TestHTML">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="http__testRequest">
-    <wsdl:part name="parameters" element="HelloWorld_ns:http__test">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:portType name="HelloWorldPortType">
-    <wsdl:operation name="http__test">
-<wsdl:documentation/>
-      <wsdl:input message="HelloWorld_ns:http__testRequest">
-    </wsdl:input>
-      <wsdl:output message="HelloWorld_ns:http__testResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestHTML">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="HelloWorld_ns:TestHTMLRequest">
-    </wsdl:input>
-      <wsdl:output message="HelloWorld_ns:TestHTMLResponse">
-    </wsdl:output>
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="HelloWorldSOAPBinding" type="HelloWorld_ns:HelloWorldPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="http__test">
-<wsdl:documentation/>
-      <soap:operation soapAction="HelloWorld?http__test"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TestHTML">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="HelloWorld?TestHTML"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="HelloWorld">
     <wsdl:port name="HelloWorldSOAP" binding="HelloWorld_ns:HelloWorldSOAPBinding">
