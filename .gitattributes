@@ -2749,7 +2749,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialog.ja
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TrialRegistrationDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.png -text
@@ -3444,13 +3443,16 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGenera
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizardPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementInfoWizardPage.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ChooseWorkspaceLocationPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/AlreadyPscKeyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/LicensePage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/PscKeyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistrationPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SetupWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SummaryPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/WorkspaceCreationPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/WorkspaceMigrationPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/countries.txt -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/util/MobileUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/AbstractContext.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractManager.java -text
