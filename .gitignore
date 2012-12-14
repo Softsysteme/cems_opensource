@@ -4,9 +4,6 @@ Studio/bin/*
 Studio/icons/Thumbs.db
 Studio/icons/consoles/Thumbs.db
 Studio/icons/studio/Thumbs.db
-Studio/projects/HelloWorld/HelloWorld.temp.wsdl
-Studio/projects/HelloWorld/HelloWorld.temp.xsd
-Studio/projects/HelloWorld/_private
 Studio/projects/demo_SalesForce/.project
 Studio/projects/demo_SalesForce/_data
 Studio/projects/demo_SalesForce/_private
@@ -88,6 +85,9 @@ Studio/projects/sampleMobileWebToPdf/.settings
 Studio/projects/sampleMobileWebToPdf/Traces
 Studio/projects/sampleMobileWebToPdf/_data
 Studio/projects/sampleMobileWebToPdf/_private
+Studio/projects/sample_HelloWorld/HelloWorld.temp.wsdl
+Studio/projects/sample_HelloWorld/HelloWorld.temp.xsd
+Studio/projects/sample_HelloWorld/_private
 Studio/projects/sample_database_HSQLDB/*.temp.*
 Studio/projects/sample_database_HSQLDB/Traces
 Studio/projects/sample_database_HSQLDB/_data

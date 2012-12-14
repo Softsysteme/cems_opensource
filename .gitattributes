@@ -399,18 +399,6 @@ Studio/lib/xerces-2_11_0/xercesImpl.jar -text
 Studio/lib/xerces-2_11_0/xercesSamples.jar -text
 Studio/lib/xerces-2_11_0/xml-apis.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
-Studio/projects/HelloWorld/.project -text svneol=unset#text/plain
-Studio/projects/HelloWorld/HelloWorld.wsdl -text svneol=unset#text/plain
-Studio/projects/HelloWorld/HelloWorld.xml -text svneol=unset#text/plain
-Studio/projects/HelloWorld/HelloWorld.xsd -text svneol=unset#text/plain
-Studio/projects/HelloWorld/Traces/legacy/demo.etr -text
-Studio/projects/HelloWorld/css/custom.css -text svneol=unset#text/plain
-Studio/projects/HelloWorld/images/error.png -text
-Studio/projects/HelloWorld/images/ok.png -text
-Studio/projects/HelloWorld/index.html -text svneol=unset#text/plain
-Studio/projects/HelloWorld/js/custom.js -text svneol=unset#text/plain
-Studio/projects/HelloWorld/js/custom_test.js -text svneol=unset#text/plain
-Studio/projects/HelloWorld/test.html -text svneol=unset#text/plain
 Studio/projects/crawlingProject/crawlingProject.sql -text
 Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/plain
 Studio/projects/crawlingProject/crawlingProject.xml -text svneol=unset#text/plain
@@ -910,6 +898,18 @@ Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/server.js -te
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/.project -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/HelloWorld.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/HelloWorld.xml -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/HelloWorld.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/Traces/legacy/demo.etr -text
+Studio/projects/sample_HelloWorld/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/images/error.png -text
+Studio/projects/sample_HelloWorld/images/ok.png -text
+Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/.project -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.xml -text svneol=unset#text/plain
