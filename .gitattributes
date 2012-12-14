@@ -948,6 +948,16 @@ Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/server.js -te
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/images/error.png -text
+Studio/projects/sample_HelloWorld/images/ok.png -text
+Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/sample_HelloWorld.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/.project -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.xml -text svneol=unset#text/plain
@@ -3618,6 +3628,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampl
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLConnectorWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleHSQLDBWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleXLSWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleHelloWorldWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerFullFeaturedJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerRssNYTimesWizard.java -text svneol=unset#text/plain
