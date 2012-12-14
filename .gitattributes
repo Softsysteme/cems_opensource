@@ -371,6 +371,7 @@ Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
 Studio/lib/msxml.jar -text svneol=unset#unset
 Studio/lib/mysql-connector.jar -text
+Studio/lib/mysql-connector_fake.jar -text
 Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
 Studio/lib/quartz-1.7.1.jar -text
@@ -1717,8 +1718,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_colo
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipper_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipperconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipperconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/CicsConnector.properties -text
@@ -2739,6 +2740,22 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/XmlHttpTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/XmlHttpTransactionBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/cicstransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/cicstransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/htmltransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/htmltransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/transaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/transaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/xmlhttptransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/xmlhttptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/CicsTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/ExternalBrowserTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.properties -text
