@@ -906,9 +906,9 @@ Studio/projects/sample_HelloWorld/images/ok.png -text
 Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
-Studio/projects/sample_HelloWorld/sample_HelloWorld.wsdl -text svneol=unset#text/plain
-Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text svneol=unset#text/plain
-Studio/projects/sample_HelloWorld/sample_HelloWorld.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/sample_HelloWorld.wsdl -text
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xsd -text
 Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/.project -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.wsdl -text svneol=unset#text/plain

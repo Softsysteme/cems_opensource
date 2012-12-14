@@ -85,9 +85,9 @@ Studio/projects/sampleMobileWebToPdf/.settings
 Studio/projects/sampleMobileWebToPdf/Traces
 Studio/projects/sampleMobileWebToPdf/_data
 Studio/projects/sampleMobileWebToPdf/_private
-Studio/projects/sample_HelloWorld/HelloWorld.temp.wsdl
-Studio/projects/sample_HelloWorld/HelloWorld.temp.xsd
 Studio/projects/sample_HelloWorld/_private
+Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.wsdl
+Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.xsd
 Studio/projects/sample_database_HSQLDB/*.temp.*
 Studio/projects/sample_database_HSQLDB/Traces
 Studio/projects/sample_database_HSQLDB/_data
