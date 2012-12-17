@@ -2680,6 +2680,8 @@ Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseMultiValuedVariable.j
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseMultiValuedVariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseVariable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/TestCaseVariableBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/variables/images/stepvariable_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/variables/images/stepvariable_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/variables/images/variable_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/variables/res/HttpStatementMultiValuedVariable.properties -text svneol=unset#text/plain
