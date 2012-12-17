@@ -2055,11 +2055,15 @@ Studio/src/com/twinsoft/convertigo/beans/screenclasses/JavelinScreenClass.java -
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/JavelinScreenClassBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/SiteClipperScreenClass.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/SiteClipperScreenClassBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/screenclasses/images/screenclass_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/screenclasses/images/screenclass_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/HtmlScreenClass.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/JavelinScreenClass.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/screenclasses/res/SiteClipperScreenClass.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sequences/GenericSequence.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sequences/GenericSequenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/sequences/images/genericsequence_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/sequences/res/GenericSequence.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/sna/CommandSNA.java -text
 Studio/src/com/twinsoft/convertigo/beans/sna/CommandSNABeanInfo.java -text
