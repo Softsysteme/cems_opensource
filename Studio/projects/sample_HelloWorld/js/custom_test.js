@@ -273,19 +273,28 @@ C8O.addHook("init_finished", function (data) {
  */
 C8O.addHook("xml_response", function (xml) {
 	var $xml = $(xml);
-	var $testResultsTable = $("#test_results");
+	var $testPlatform = $("#testPlatform").empty();
+	var $status = $("#status").empty();
 	$xml.find("test").each(function(index, value) {
 		var $item = $(value);
-		var icon = "error.png";
+		var connection = $item.attr("id");
+		var icon = "iconError";
+		var status = "error";
 		var error = "";
 		if ($item.attr("success") == "true") {
-			icon = "ok.png";
+			icon = "iconValid";
+			status = "valid";
 		}
 		else {
 			error = $item.attr("error");
 		}
-		var result = "<img src=\"images/" + icon + "\" width=\"32\" height=\"32\"/>" + error;
-		$testResultsTable.append("<tr><td>" + $item.attr("name") + "</td><td>" + result + "</td></<tr>");
+		
+		$testPlatform.append(
+				$("<div/>").addClass("blockitem icon" + connection + " " + status).text( $item.attr("name") )
+		);
+		$status.append(
+				$("<div/>").addClass("blockitem " + icon ).text( error )
+		);
 	});
 	
 	return false;
