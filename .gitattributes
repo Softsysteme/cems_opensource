@@ -2899,6 +2899,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectDeployDialogComposite.
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectDeployErrorDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectDeploySuccessfulDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectMobileCreationSuccessfulDialog.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectVersionUpdateDialog.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectVersionUpdateDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/SchemaObjectsDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/SchemaObjectsDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialog.java -text svneol=unset#text/plain
