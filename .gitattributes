@@ -3376,6 +3376,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/options.png -tex
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/restore_defaults.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/search.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/select_columns.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager2.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ConnectorTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/CriteriaTreeObject.java -text
