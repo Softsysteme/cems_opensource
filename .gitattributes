@@ -2854,7 +2854,9 @@ Studio/src/com/twinsoft/convertigo/eclipse/ConvertigoWindowListener.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/ConvertigoWorkbenchListener.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/DeploymentConfiguration.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/DeploymentConfigurationManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/DeploymentConfigurationReadOnly.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/DeploymentInformation.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/DeploymentKey.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/EmbeddedTomcat.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/EvaluationVersionException.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/MashupActionConfiguration.java -text
