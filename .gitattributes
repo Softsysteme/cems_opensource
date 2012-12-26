@@ -372,7 +372,6 @@ Studio/lib/jtds-1.2.2.jar -text
 Studio/lib/mariadb-client-1.0.0.jar -text
 Studio/lib/msxml.jar -text svneol=unset#unset
 Studio/lib/mysql-connector.jar -text
-Studio/lib/mysql-connector_fake.jar -text
 Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
 Studio/lib/quartz-1.7.1.jar -text
