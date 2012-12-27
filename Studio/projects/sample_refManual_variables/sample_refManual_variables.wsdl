@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sample_refManual_variables" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sample_refManual_variables_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_variables">
+<wsdl:definitions name="sample_refManual_variables" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_refManual_variables_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_variables">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_variables"><xsd:include schemaLocation="sample_refManual_variables.xsd"/></xsd:schema>
   </wsdl:types>
@@ -11,20 +11,195 @@
     <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="userLoginWithDefaultResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:userLoginWithDefaultResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchYahooRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__searchYahoo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="userLoginWithDefaultRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:userLoginWithDefault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testLoginWithValuesResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:testLoginWithValuesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testLoginWithValuesRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:testLoginWithValues">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchYahooResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__searchYahooResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__multiSearchGoogleHTTPResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="userLoginRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:userLogin">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="userLoginResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:userLoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testLoginResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:testLoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleHTTPResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="testLoginRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:testLogin">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__multiSearchGoogleHTTPRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTP">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__searchGoogleHTTPRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTP">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sample_refManual_variablesPortType">
     <wsdl:operation name="GoogleConnector__multiSearchGoogle">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequest">
     </wsdl:input>
       <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__multiSearchGoogleHTTP">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogleHTTP">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchYahoo">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__searchYahooRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__searchYahooResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLogin">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:testLoginRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:testLoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLoginWithValues">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:testLoginWithValuesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:testLoginWithValuesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:userLoginRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:userLoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLoginWithDefault">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_variables_ns:userLoginWithDefaultRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:userLoginWithDefaultResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sample_refManual_variablesSOAPBinding" type="sample_refManual_variables_ns:sample_refManual_variablesPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="GoogleConnector__multiSearchGoogle">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <soap:operation soapAction="sample_refManual_variables?GoogleConnector__multiSearchGoogle"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__multiSearchGoogleHTTP">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?GoogleConnector__multiSearchGoogleHTTP"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchGoogleHTTP">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?GoogleConnector__searchGoogleHTTP"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleConnector__searchYahoo">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?GoogleConnector__searchYahoo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLogin">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?testLogin"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLoginWithValues">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?testLoginWithValues"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?userLogin"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLoginWithDefault">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_refManual_variables?userLoginWithDefault"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
