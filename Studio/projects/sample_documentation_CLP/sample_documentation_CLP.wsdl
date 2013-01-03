@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sample_documentation_CLP" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_documentation_CLP_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="sample_documentation_CLP" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_documentation_CLP_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP"><xsd:include schemaLocation="sample_documentation_CLP.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="demo5250Connector__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CLP_ns:demo5250Connector__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demo5250Connector__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CLP_ns:demo5250Connector__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sample_documentation_CLPPortType">
+    <wsdl:operation name="demo5250Connector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_documentation_CLP_ns:demo5250Connector__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CLP_ns:demo5250Connector__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sample_documentation_CLPSOAPBinding" type="sample_documentation_CLP_ns:sample_documentation_CLPPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="demo5250Connector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_documentation_CLP?demo5250Connector__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sample_documentation_CLP">
     <wsdl:port name="sample_documentation_CLPSOAP" binding="sample_documentation_CLP_ns:sample_documentation_CLPSOAPBinding">
