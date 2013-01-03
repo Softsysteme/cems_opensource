@@ -45,6 +45,7 @@ import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
+import com.twinsoft.convertigo.engine.admin.services.mobiles.GetBuildStatus;
 import com.twinsoft.convertigo.engine.enums.Visibility;
 import com.twinsoft.convertigo.engine.util.GenericUtils;
 
@@ -94,10 +95,21 @@ public class GetRequestables extends XmlService {
 			}
 		}
 		
+		boolean hasMobileDevice = false;
 		for (MobileDevice device : project.getMobileDeviceList()) {
 			Element e_device = createDatabaseObjectElement(document, device);
 			e_device.setAttribute("classname", device.getClass().getSimpleName());
 			e_project.appendChild(e_device);
+			hasMobileDevice = true;
+		}
+		
+		if (hasMobileDevice) {
+			try {
+				String mobileProjectName = GetBuildStatus.getFinalApplicationName(projectName);
+				e_project.setAttribute("mobileProjectName", mobileProjectName);
+			} catch (Exception e) {
+				Engine.logAdmin.error("Failed to retrieve the application mobile name", e);
+			}
 		}
 		
 		root.appendChild(e_project);
