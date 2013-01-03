@@ -1,12 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="demo_legacyCRM" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_legacyCRM" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:demo_legacyCRM_ns="http://www.convertigo.com/convertigo/projects/demo_legacyCRM" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="demo_legacyCRM" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_legacyCRM" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:demo_legacyCRM_ns="http://www.convertigo.com/convertigo/projects/demo_legacyCRM" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/demo_legacyCRM"><xsd:include schemaLocation="demo_legacyCRM.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="legacyCRMConnector__functions_libraryRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__functions_library">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__refreshCRMResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__refreshCRMResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__loginCRMRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__loginCRM">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__editClientCRMRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__editClientCRM">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__editClientCRMResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__editClientCRMResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__functions_libraryResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__functions_libraryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__refreshCRMRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__refreshCRM">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__makecsvResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__makecsvResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__loginCRMResponse">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__loginCRMResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="legacyCRMConnector__makecsvRequest">
+    <wsdl:part name="parameters" element="demo_legacyCRM_ns:legacyCRMConnector__makecsv">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="demo_legacyCRMPortType">
+    <wsdl:operation name="legacyCRMConnector__DefaultTransaction">
+<wsdl:documentation/>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__editClientCRM">
+<wsdl:documentation/>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__editClientCRMRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__editClientCRMResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__functions_library">
+<wsdl:documentation/>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__functions_libraryRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__functions_libraryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__loginCRM">
+<wsdl:documentation/>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__loginCRMRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__loginCRMResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__makecsv">
+<wsdl:documentation/>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__makecsvRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__makecsvResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__refreshCRM">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="demo_legacyCRM_ns:legacyCRMConnector__refreshCRMRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_legacyCRM_ns:legacyCRMConnector__refreshCRMResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="demo_legacyCRMSOAPBinding" type="demo_legacyCRM_ns:demo_legacyCRMPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="legacyCRMConnector__DefaultTransaction">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__Default_transaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__editClientCRM">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__editClientCRM"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__functions_library">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__functions_library"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__loginCRM">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__loginCRM"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__makecsv">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__makecsv"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="legacyCRMConnector__refreshCRM">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="demo_legacyCRM?legacyCRMConnector__refreshCRM"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="demo_legacyCRM">
     <wsdl:port name="demo_legacyCRMSOAP" binding="demo_legacyCRM_ns:demo_legacyCRMSOAPBinding">
