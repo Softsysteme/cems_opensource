@@ -1,306 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CLI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI">
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sample_documentation_CLI_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CLI_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="demo5250Connector__DefaultTransaction" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionRequestData"/>
-<xsd:element name="demo5250Connector__DefaultTransactionResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="demo5250Connector__DefaultTransactionRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__DefaultTransactionResponseData"/>
-<xsd:complexType name="GetArticleData_blocksType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:GetArticleData_articlesType"/>
-<xsd:element minOccurs="0" name="article_status" type="sample_documentation_CLI_ns:GetArticleData_article_statusType"/>
-<xsd:element minOccurs="0" name="article_rsp" type="sample_documentation_CLI_ns:GetArticleData_article_rspType"/>
-<xsd:element minOccurs="0" name="product_group" type="sample_documentation_CLI_ns:GetArticleData_product_groupType"/>
-</xsd:sequence>
-<xsd:attribute name="page-number" use="optional"/>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_article_rspType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="size"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="underline"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_articlesType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_documentation_CLI_ns:GetArticleData_rowType"/>
-</xsd:sequence>
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="height"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="offset"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="rows"/>
-<xsd:attribute name="titleheight"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="width"/>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_rowType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="code" type="sample_documentation_CLI_ns:GetArticleData_codeType"/>
-<xsd:element minOccurs="0" name="name" type="sample_documentation_CLI_ns:GetArticleData_nameType"/>
-<xsd:element minOccurs="0" name="status" type="sample_documentation_CLI_ns:GetArticleData_statusType"/>
-</xsd:sequence>
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="index"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="page"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_statusType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_nameType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_codeType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_article_statusType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="size"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="underline"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="GetArticleData_product_groupType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleDataResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sample_documentation_CLI_ns:ConvertigoError"/>
-<xsd:element maxOccurs="unbounded" name="blocks" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocksType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocksType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articlesType"/>
-<xsd:element minOccurs="0" name="article_status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_statusType"/>
-<xsd:element minOccurs="0" name="article_rsp" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_rspType"/>
-<xsd:element minOccurs="0" name="product_group" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_product_groupType"/>
-</xsd:sequence>
-<xsd:attribute name="page-number" use="optional"/>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_article_rspType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="size"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="underline"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_articlesType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_rowType"/>
-</xsd:sequence>
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="height"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="offset"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="rows"/>
-<xsd:attribute name="titleheight"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="width"/>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_rowType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="code" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_codeType"/>
-<xsd:element minOccurs="0" name="name" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_nameType"/>
-<xsd:element minOccurs="0" name="status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_statusType"/>
-</xsd:sequence>
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="index"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="page"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_codeType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_statusType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_nameType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_article_statusType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="size"/>
-<xsd:attribute name="type"/>
-<xsd:attribute name="underline"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="demo5250Connector__GetArticleData_blocks_product_groupType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="background"/>
-<xsd:attribute name="column"/>
-<xsd:attribute name="foreground"/>
-<xsd:attribute name="history"/>
-<xsd:attribute name="line"/>
-<xsd:attribute name="name"/>
-<xsd:attribute name="reverse"/>
-<xsd:attribute name="type"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:element name="demo5250Connector__GetArticleData" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="demo5250Connector__GetArticleDataResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="demo5250Connector__GetArticleDataRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sample_documentation_CLI_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CLI_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__DefaultTransactionResponseData"/>
+    <xsd:complexType name="GetArticleData_blocksType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:GetArticleData_articlesType"/>
+            <xsd:element minOccurs="0" name="article_status" type="sample_documentation_CLI_ns:GetArticleData_article_statusType"/>
+            <xsd:element minOccurs="0" name="article_rsp" type="sample_documentation_CLI_ns:GetArticleData_article_rspType"/>
+            <xsd:element minOccurs="0" name="product_group" type="sample_documentation_CLI_ns:GetArticleData_product_groupType"/>
+        </xsd:sequence>
+        <xsd:attribute name="page-number" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_article_rspType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="size"/>
+                <xsd:attribute name="type"/>
+                <xsd:attribute name="underline"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_articlesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_documentation_CLI_ns:GetArticleData_rowType"/>
+        </xsd:sequence>
+        <xsd:attribute name="background"/>
+        <xsd:attribute name="column"/>
+        <xsd:attribute name="foreground"/>
+        <xsd:attribute name="height"/>
+        <xsd:attribute name="line"/>
+        <xsd:attribute name="name"/>
+        <xsd:attribute name="offset"/>
+        <xsd:attribute name="reverse"/>
+        <xsd:attribute name="rows"/>
+        <xsd:attribute name="titleheight"/>
+        <xsd:attribute name="type"/>
+        <xsd:attribute name="width"/>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_rowType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="code" type="sample_documentation_CLI_ns:GetArticleData_codeType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_documentation_CLI_ns:GetArticleData_nameType"/>
+            <xsd:element minOccurs="0" name="status" type="sample_documentation_CLI_ns:GetArticleData_statusType"/>
+        </xsd:sequence>
+        <xsd:attribute name="background"/>
+        <xsd:attribute name="column"/>
+        <xsd:attribute name="foreground"/>
+        <xsd:attribute name="index"/>
+        <xsd:attribute name="line"/>
+        <xsd:attribute name="name"/>
+        <xsd:attribute name="page"/>
+        <xsd:attribute name="reverse"/>
+        <xsd:attribute name="type"/>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_statusType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_codeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_article_statusType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="size"/>
+                <xsd:attribute name="type"/>
+                <xsd:attribute name="underline"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetArticleData_product_groupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleDataResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_documentation_CLI_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" name="blocks" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocksType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocksType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articlesType"/>
+            <xsd:element minOccurs="0" name="article_status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_statusType"/>
+            <xsd:element minOccurs="0" name="article_rsp" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_rspType"/>
+            <xsd:element minOccurs="0" name="product_group" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_product_groupType"/>
+        </xsd:sequence>
+        <xsd:attribute name="page-number" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_article_rspType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="size"/>
+                <xsd:attribute name="type"/>
+                <xsd:attribute name="underline"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_articlesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_rowType"/>
+        </xsd:sequence>
+        <xsd:attribute name="background"/>
+        <xsd:attribute name="column"/>
+        <xsd:attribute name="foreground"/>
+        <xsd:attribute name="height"/>
+        <xsd:attribute name="line"/>
+        <xsd:attribute name="name"/>
+        <xsd:attribute name="offset"/>
+        <xsd:attribute name="reverse"/>
+        <xsd:attribute name="rows"/>
+        <xsd:attribute name="titleheight"/>
+        <xsd:attribute name="type"/>
+        <xsd:attribute name="width"/>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_rowType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="code" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_codeType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_nameType"/>
+            <xsd:element minOccurs="0" name="status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_statusType"/>
+        </xsd:sequence>
+        <xsd:attribute name="background"/>
+        <xsd:attribute name="column"/>
+        <xsd:attribute name="foreground"/>
+        <xsd:attribute name="index"/>
+        <xsd:attribute name="line"/>
+        <xsd:attribute name="name"/>
+        <xsd:attribute name="page"/>
+        <xsd:attribute name="reverse"/>
+        <xsd:attribute name="type"/>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_codeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_statusType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_articles_row_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_article_statusType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="size"/>
+                <xsd:attribute name="type"/>
+                <xsd:attribute name="underline"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="demo5250Connector__GetArticleData_blocks_product_groupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="background"/>
+                <xsd:attribute name="column"/>
+                <xsd:attribute name="foreground"/>
+                <xsd:attribute name="history"/>
+                <xsd:attribute name="line"/>
+                <xsd:attribute name="name"/>
+                <xsd:attribute name="reverse"/>
+                <xsd:attribute name="type"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:element name="demo5250Connector__GetArticleData" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="demo5250Connector__GetArticleDataResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="demo5250Connector__GetArticleDataRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:element name="demo5250Connector__DefaultTransaction" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="demo5250Connector__DefaultTransactionResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="demo5250Connector__DefaultTransactionRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
 </xsd:schema>
