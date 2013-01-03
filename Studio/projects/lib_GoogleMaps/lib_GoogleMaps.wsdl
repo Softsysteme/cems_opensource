@@ -3,20 +3,44 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleMaps"><xsd:include schemaLocation="lib_GoogleMaps.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="GoogleMapsConnector__MarkLocationRequest">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocation">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="GoogleMapsApiConnector__GeoCodeByLatLngRequest">
     <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByLatLng">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsConnector__ShowMapRequest">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMap">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="GoogleMapsApiConnector__GeoCodeByAddressResponse">
     <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByAddressResponse">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="GoogleMapsApiConnector__GeoCodeByAddressRequest">
-    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByAddress">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="GoogleMapsApiConnector__GeoCodeByLatLngResponse">
     <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByLatLngResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsConnector__MarkLocationsResponse">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsConnector__MarkLocationsRequest">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocations">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsConnector__ShowMapResponse">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsConnector__MarkLocationResponse">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleMapsApiConnector__GeoCodeByAddressRequest">
+    <wsdl:part name="parameters" element="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByAddress">
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="lib_GoogleMapsPortType">
@@ -38,6 +62,29 @@ The Geocoding API supports reverse geocoding directly using the latlng parameter
       <wsdl:input message="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByLatLngRequest">
     </wsdl:input>
       <wsdl:output message="lib_GoogleMaps_ns:GoogleMapsApiConnector__GeoCodeByLatLngResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__MarkLocation">
+<wsdl:documentation><![CDATA[Call this transaction to mark a new location on the current map.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__MarkLocations">
+<wsdl:documentation/>
+      <wsdl:input message="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationsRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleMaps_ns:GoogleMapsConnector__MarkLocationsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__ShowMap">
+<wsdl:documentation><![CDATA[This is the first transaction to call. It will result in displaying a GoogleMaps widget centered on the location provided, with the specified parameters.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -62,6 +109,38 @@ The Geocoding API supports reverse geocoding directly using the latlng parameter
 The Geocoding API supports reverse geocoding directly using the latlng parameter.
 ]]></wsdl:documentation>
       <soap:operation soapAction="lib_GoogleMaps?GoogleMapApiConnector__GeoCodeByLatLng"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__MarkLocation">
+<wsdl:documentation><![CDATA[Call this transaction to mark a new location on the current map.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleMaps?GoogleMapsConnector__MarkLocation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__MarkLocations">
+<wsdl:documentation/>
+      <soap:operation soapAction="lib_GoogleMaps?GoogleMapsConnector__MarkLocations"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoogleMapsConnector__ShowMap">
+<wsdl:documentation><![CDATA[This is the first transaction to call. It will result in displaying a GoogleMaps widget centered on the location provided, with the specified parameters.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleMaps?GoogleMapsConnector__ShowMap"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
