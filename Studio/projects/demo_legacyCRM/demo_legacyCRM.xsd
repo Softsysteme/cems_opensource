@@ -17,7 +17,7 @@
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="demo_legacyCRM_ns:ConvertigoErrorContextVariable"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="legacyCRMConnector__DefaultTransactionResponseData"/>
+    <xsd:complexType name="legacyCRMConnector__XMLizeResponseData"/>
     <xsd:complexType name="legacyCRMConnector__editClientCRMResponseData"/>
     <xsd:complexType name="legacyCRMConnector__functions_libraryResponseData"/>
     <xsd:complexType name="legacyCRMConnector__loginCRMResponseData"/>
@@ -35,17 +35,17 @@
         <xsd:sequence/>
     </xsd:complexType>
     <xsd:complexType name="legacyCRMConnector__testResponseData"/>
-    <xsd:element name="legacyCRMConnector__DefaultTransaction" type="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransactionRequestData">
+    <xsd:element name="legacyCRMConnector__XMLize" type="demo_legacyCRM_ns:legacyCRMConnector__XMLizeRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="legacyCRMConnector__DefaultTransactionResponse">
+    <xsd:element name="legacyCRMConnector__XMLizeResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="demo_legacyCRM_ns:legacyCRMConnector__DefaultTransactionResponseData"/>
+                <xsd:element name="response" type="demo_legacyCRM_ns:legacyCRMConnector__XMLizeResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="legacyCRMConnector__DefaultTransactionRequestData">
+    <xsd:complexType name="legacyCRMConnector__XMLizeRequestData">
         <xsd:annotation/>
         <xsd:sequence>
             <xsd:element name="city" type="xsd:string">

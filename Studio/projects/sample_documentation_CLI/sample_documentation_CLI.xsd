@@ -17,7 +17,7 @@
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CLI_ns:ConvertigoErrorContextVariable"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="demo5250Connector__DefaultTransactionResponseData"/>
+    <xsd:complexType name="demo5250Connector__XMLizeResponseData"/>
     <xsd:complexType name="GetArticleData_blocksType">
         <xsd:sequence>
             <xsd:element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:GetArticleData_articlesType"/>
@@ -292,17 +292,17 @@
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>
-    <xsd:element name="demo5250Connector__DefaultTransaction" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionRequestData">
+    <xsd:element name="demo5250Connector__XMLize" type="sample_documentation_CLI_ns:demo5250Connector__XMLizeRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="demo5250Connector__DefaultTransactionResponse">
+    <xsd:element name="demo5250Connector__XMLizeResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__DefaultTransactionResponseData"/>
+                <xsd:element name="response" type="sample_documentation_CLI_ns:demo5250Connector__XMLizeResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="demo5250Connector__DefaultTransactionRequestData">
+    <xsd:complexType name="demo5250Connector__XMLizeRequestData">
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>
