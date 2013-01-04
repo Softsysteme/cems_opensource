@@ -125,24 +125,81 @@
     </xsd:complexType>
     <xsd:complexType name="html__testResponseData">
         <xsd:sequence>
-            <xsd:group minOccurs="0" ref="sample_HelloWorld_ns:htmlTypes"/>
+            <xsd:element minOccurs="0" name="error" type="sample_HelloWorld_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="message" type="sample_HelloWorld_ns:messageTextType"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:element name="html__xmlize" type="sample_HelloWorld_ns:html__xmlizeRequestData">
+    <xsd:element name="legacy__test" type="sample_HelloWorld_ns:legacy__testRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="html__xmlizeResponse">
+    <xsd:element name="legacy__testResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="sample_HelloWorld_ns:html__xmlizeResponseData"/>
+                <xsd:element name="response" type="sample_HelloWorld_ns:legacy__testResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="html__xmlizeRequestData">
+    <xsd:complexType name="legacy__testRequestData">
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>
-    <xsd:complexType name="html__xmlizeResponseData">
+    <xsd:complexType name="legacy__testResponseData"/>
+    <xsd:element name="legacy__XMLize" type="sample_HelloWorld_ns:legacy__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="legacy__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_HelloWorld_ns:legacy__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="legacy__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="city" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>city</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="company" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>company</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="contact" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>contact</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="street" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>street</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="telephone" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>telephone</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="legacy__XMLizeResponseData"/>
+    <xsd:element name="html__XMLize" type="sample_HelloWorld_ns:html__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="html__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_HelloWorld_ns:html__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="html__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="html__XMLizeResponseData">
         <xsd:sequence>
             <xsd:group minOccurs="0" ref="sample_HelloWorld_ns:htmlTypes"/>
         </xsd:sequence>
