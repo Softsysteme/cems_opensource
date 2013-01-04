@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="template_javelinDKU" targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelinDKU" xmlns:template_javelinDKU_ns="http://www.convertigo.com/convertigo/projects/template_javelinDKU" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="template_javelinDKU" targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelinDKU" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:template_javelinDKU_ns="http://www.convertigo.com/convertigo/projects/template_javelinDKU">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelinDKU"><xsd:include schemaLocation="template_javelinDKU.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="javelinDKUTemplateConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="template_javelinDKU_ns:javelinDKUTemplateConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="javelinDKUTemplateConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="template_javelinDKU_ns:javelinDKUTemplateConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="template_javelinDKUPortType">
+    <wsdl:operation name="javelinDKUTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_javelinDKU_ns:javelinDKUTemplateConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="template_javelinDKU_ns:javelinDKUTemplateConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="template_javelinDKUSOAPBinding" type="template_javelinDKU_ns:template_javelinDKUPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="javelinDKUTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_javelinDKU?javelinDKUTemplateConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="template_javelinDKU">
     <wsdl:port name="template_javelinDKUSOAP" binding="template_javelinDKU_ns:template_javelinDKUSOAPBinding">

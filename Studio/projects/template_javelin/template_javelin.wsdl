@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="template_javelin" targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelin" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:template_javelin_ns="http://www.convertigo.com/convertigo/projects/template_javelin" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="template_javelin" targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelin" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_javelin_ns="http://www.convertigo.com/convertigo/projects/template_javelin" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_javelin"><xsd:include schemaLocation="template_javelin.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="javelinTemplateConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="template_javelin_ns:javelinTemplateConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="javelinTemplateConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="template_javelin_ns:javelinTemplateConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="template_javelinPortType">
+    <wsdl:operation name="javelinTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_javelin_ns:javelinTemplateConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="template_javelin_ns:javelinTemplateConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="template_javelinSOAPBinding" type="template_javelin_ns:template_javelinPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="javelinTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_javelin?javelinTemplateConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="template_javelin">
     <wsdl:port name="template_javelinSOAP" binding="template_javelin_ns:template_javelinSOAPBinding">

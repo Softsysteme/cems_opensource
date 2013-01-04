@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="template_HTTP" targetNamespace="http://www.convertigo.com/convertigo/projects/template_HTTP" xmlns:template_HTTP_ns="http://www.convertigo.com/convertigo/projects/template_HTTP" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="template_HTTP" targetNamespace="http://www.convertigo.com/convertigo/projects/template_HTTP" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:template_HTTP_ns="http://www.convertigo.com/convertigo/projects/template_HTTP">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_HTTP"><xsd:include schemaLocation="template_HTTP.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="HTTPTemplateConnector__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="template_HTTP_ns:HTTPTemplateConnector__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTTPTemplateConnector__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="template_HTTP_ns:HTTPTemplateConnector__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="template_HTTPPortType">
+    <wsdl:operation name="HTTPTemplateConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_HTTP_ns:HTTPTemplateConnector__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="template_HTTP_ns:HTTPTemplateConnector__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="template_HTTPSOAPBinding" type="template_HTTP_ns:template_HTTPPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HTTPTemplateConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_HTTP?HTTPTemplateConnector__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="template_HTTP">
     <wsdl:port name="template_HTTPSOAP" binding="template_HTTP_ns:template_HTTPSOAPBinding">

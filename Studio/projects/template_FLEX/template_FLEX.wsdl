@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="template_FLEX" targetNamespace="http://www.convertigo.com/convertigo/projects/template_FLEX" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_FLEX_ns="http://www.convertigo.com/convertigo/projects/template_FLEX" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="template_FLEX" targetNamespace="http://www.convertigo.com/convertigo/projects/template_FLEX" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_FLEX_ns="http://www.convertigo.com/convertigo/projects/template_FLEX" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_FLEX"><xsd:include schemaLocation="template_FLEX.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="template_FLEXConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="template_FLEX_ns:template_FLEXConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="template_FLEXConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="template_FLEX_ns:template_FLEXConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="template_FLEXPortType">
+    <wsdl:operation name="template_FLEXConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_FLEX_ns:template_FLEXConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="template_FLEX_ns:template_FLEXConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="template_FLEXSOAPBinding" type="template_FLEX_ns:template_FLEXPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="template_FLEXConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_FLEX?template_FLEXConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="template_FLEX">
     <wsdl:port name="template_FLEXSOAP" binding="template_FLEX_ns:template_FLEXSOAPBinding">
