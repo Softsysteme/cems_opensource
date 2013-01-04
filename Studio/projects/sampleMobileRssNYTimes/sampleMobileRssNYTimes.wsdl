@@ -1,12 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sampleMobileRssNYTimes" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileRssNYTimes_ns="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions name="sampleMobileRssNYTimes" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sampleMobileRssNYTimes_ns="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileRssNYTimes"><xsd:include schemaLocation="sampleMobileRssNYTimes.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="getAndStoreFeedsTreeRequest">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getAndStoreFeedsTree">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAndStoreFeedsRequest">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getAndStoreFeeds">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAndStoreFeedsResponse">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getAndStoreFeedsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSubFeedsTreeRequest">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getSubFeedsTree">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAndStoreFeedsTreeResponse">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getAndStoreFeedsTreeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loadFeedsTreeResponse">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:loadFeedsTreeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loadFeedsTreeRequest">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:loadFeedsTree">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSubFeedsTreeResponse">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getSubFeedsTreeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFeedRequest">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getFeed">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getFeedResponse">
+    <wsdl:part name="parameters" element="sampleMobileRssNYTimes_ns:getFeedResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sampleMobileRssNYTimesPortType">
+    <wsdl:operation name="getAndStoreFeeds">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileRssNYTimes_ns:getAndStoreFeedsRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileRssNYTimes_ns:getAndStoreFeedsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAndStoreFeedsTree">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileRssNYTimes_ns:getAndStoreFeedsTreeRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileRssNYTimes_ns:getAndStoreFeedsTreeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFeed">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileRssNYTimes_ns:getFeedRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileRssNYTimes_ns:getFeedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubFeedsTree">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileRssNYTimes_ns:getSubFeedsTreeRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileRssNYTimes_ns:getSubFeedsTreeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadFeedsTree">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileRssNYTimes_ns:loadFeedsTreeRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileRssNYTimes_ns:loadFeedsTreeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileRssNYTimesSOAPBinding" type="sampleMobileRssNYTimes_ns:sampleMobileRssNYTimesPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getAndStoreFeeds">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileRssNYTimes?getAndStoreFeeds"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAndStoreFeedsTree">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileRssNYTimes?getAndStoreFeedsTree"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFeed">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileRssNYTimes?getFeed"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSubFeedsTree">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileRssNYTimes?getSubFeedsTree"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadFeedsTree">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileRssNYTimes?loadFeedsTree"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sampleMobileRssNYTimes">
     <wsdl:port name="sampleMobileRssNYTimesSOAP" binding="sampleMobileRssNYTimes_ns:sampleMobileRssNYTimesSOAPBinding">

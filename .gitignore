@@ -72,7 +72,10 @@ Studio/projects/sampleMobileSiebel/*.temp.*
 Studio/projects/sampleMobileSiebel/Traces
 Studio/projects/sampleMobileSiebel/_data
 Studio/projects/sampleMobileSiebel/_private
+Studio/projects/sampleMobileUsDirectoryDemo/*.temp.*
 Studio/projects/sampleMobileUsDirectoryDemo/.settings
+Studio/projects/sampleMobileUsDirectoryDemo/Traces
+Studio/projects/sampleMobileUsDirectoryDemo/_private
 Studio/projects/sampleMobileVacation/*.temp.wsdl
 Studio/projects/sampleMobileVacation/*.temp.xsd
 Studio/projects/sampleMobileVacation/.settings

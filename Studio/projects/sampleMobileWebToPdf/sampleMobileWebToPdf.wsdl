@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sampleMobileWebToPdf" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileWebToPdf_ns="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="sampleMobileWebToPdf" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileWebToPdf_ns="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf"><xsd:include schemaLocation="sampleMobileWebToPdf.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="Html2Pdf__DownloadRequest">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__Download">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Html2Pdf__DownloadResponse">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__DownloadResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Html2Pdf__XMLizeResponse">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Html2Pdf__XMLizeRequest">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Html2Pdf__PrepareDownloadRequest">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownload">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Html2Pdf__PrepareDownloadResponse">
+    <wsdl:part name="parameters" element="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sampleMobileWebToPdfPortType">
+    <wsdl:operation name="Html2Pdf__Download">
+<wsdl:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
+]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileWebToPdf_ns:Html2Pdf__DownloadRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileWebToPdf_ns:Html2Pdf__DownloadResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Html2Pdf__PrepareDownload">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Html2Pdf__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileWebToPdfSOAPBinding" type="sampleMobileWebToPdf_ns:sampleMobileWebToPdfPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Html2Pdf__Download">
+<wsdl:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
+]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileWebToPdf?Html2Pdf__Download"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Html2Pdf__PrepareDownload">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileWebToPdf?Html2Pdf__PrepareDownload"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Html2Pdf__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileWebToPdf?Html2Pdf__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sampleMobileWebToPdf">
     <wsdl:port name="sampleMobileWebToPdfSOAP" binding="sampleMobileWebToPdf_ns:sampleMobileWebToPdfSOAPBinding">

@@ -1,1824 +1,1824 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileSiebel_ns="http://www.convertigo.com/convertigo/projects/sampleMobileSiebel" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileSiebel">
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileSiebel_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sampleMobileSiebel_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:group name="SenchaConnectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:group name="default_connectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:complexType name="SiebelConnector__LogoffResponseData"/>
-<xsd:complexType name="SiebelConnector__NewQueryResponseData"/>
-<xsd:complexType name="complex1314639069984StepType">
-<xsd:annotation/>
-<xsd:sequence/>
-<xsd:attribute name="attribute" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-<xsd:attribute name="attribute" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="CustomerStep1314639069984StepType">
-<xsd:annotation/>
-<xsd:sequence/>
-<xsd:attribute name="attribute" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-<xsd:attribute name="attribute" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="Customer1314639069984StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Customer" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
-</xsd:sequence>
-<xsd:attribute name="ROWID" type="xsd:anyURI"/>
-<xsd:attribute name="SELECTED" type="xsd:boolean"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_USER_AGENTType">
-<xsd:attribute name="MARKUP" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType">
-<xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
-<xsd:attribute name="FIELD" type="xsd:anyURI"/>
-<xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
-<xsd:attribute name="TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="CALCULATED" type="xsd:boolean"/>
-<xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
-<xsd:attribute name="HIDDEN" type="xsd:boolean"/>
-<xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
-<xsd:attribute name="REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="SCALE" type="xsd:byte"/>
-<xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
-<xsd:attribute name="TEXT_LENGTH" type="xsd:short"/>
-<xsd:attribute name="FORMAT" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType">
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType"/>
-</xsd:sequence>
-<xsd:attribute name="ROWID" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
-<xsd:attribute name="CALCULATED" type="xsd:boolean"/>
-<xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
-<xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
-<xsd:attribute name="FIELD" type="xsd:anyURI"/>
-<xsd:attribute name="HIDDEN" type="xsd:boolean"/>
-<xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="LIST_EDITABLE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
-<xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
-<xsd:attribute name="REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="SCALE" type="xsd:byte"/>
-<xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
-<xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
-<xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="FORMAT" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="xsd:anyURI"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLETType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType"/>
-<xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CLASS" type="xsd:anyURI"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="MODE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
-<xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
-<xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
-<xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
-<xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
-<xsd:attribute name="TITLE" type="xsd:anyURI"/>
-<xsd:attribute name="ROW_COUNTER" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="TITLE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREENType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEWType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CAPTION" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_GotoView_document_APPLICATIONType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_USER_AGENTType"/>
-<xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREENType"/>
-</xsd:sequence>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector__GotoViewResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATIONType"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-<xsd:attribute name="connector" type="xsd:anyURI"/>
-<xsd:attribute name="context" type="xsd:anyURI"/>
-<xsd:attribute name="contextId" type="xsd:anyURI"/>
-<xsd:attribute name="fromcache" type="xsd:boolean"/>
-<xsd:attribute name="generated" type="xsd:anyURI"/>
-<xsd:attribute name="project" type="xsd:anyURI"/>
-<xsd:attribute name="sequence" type="xsd:anyURI"/>
-<xsd:attribute name="signature" type="xsd:long"/>
-<xsd:attribute name="transaction" type="xsd:anyURI"/>
-<xsd:attribute name="version" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="complex1314717533155StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="complex1314721639449StepType">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="Item1314717533155StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="Item1314721665156StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="Customers1314721639449StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Item" type="sampleMobileSiebel_ns:Item1314721665156StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="complex1314721866944StepType">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="Item1314721756532StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314885744031StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885744091StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314885744091StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314885743971StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoPreviousSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314885834428StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885834488StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314972467515StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314972467275StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoPreviousSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314972467455StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314972467515StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314973039966StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973040026StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314973040026StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="item1314721756532StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="customers1314721866944StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314721756532StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="sequence1314973078981StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:ConvertSiebelXMLResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314973484246StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314711058801StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314973484186StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973484246StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314973774378StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973774393StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314973774393StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314973774333StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoFirstSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314974669744StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314974669504StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoLastSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314974669684StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314974669744StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1314972598954StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314972599014StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="customers1314972598999StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314972599014StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314885834488StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="sequence1314978032040StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:GotoLastSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="sequence1314978031989StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:GotoFirstSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="sequence1314978032089StepType">
-<xsd:annotation/>
-</xsd:complexType>
-<xsd:complexType name="customers1314895394226StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885834488StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1314885834368StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoNextSetResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="complex1315498757562StepType">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_USER_AGENTType">
-<xsd:attribute name="MARKUP" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType">
-<xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
-<xsd:attribute name="FIELD" type="xsd:anyURI"/>
-<xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
-<xsd:attribute name="TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="CALCULATED" type="xsd:boolean"/>
-<xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
-<xsd:attribute name="HIDDEN" type="xsd:boolean"/>
-<xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
-<xsd:attribute name="REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="SCALE" type="xsd:byte"/>
-<xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
-<xsd:attribute name="TEXT_LENGTH" type="xsd:short"/>
-<xsd:attribute name="FORMAT" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType">
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType"/>
-</xsd:sequence>
-<xsd:attribute name="ROWID" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
-<xsd:attribute name="CALCULATED" type="xsd:boolean"/>
-<xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
-<xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
-<xsd:attribute name="FIELD" type="xsd:anyURI"/>
-<xsd:attribute name="HIDDEN" type="xsd:boolean"/>
-<xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="LIST_EDITABLE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
-<xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
-<xsd:attribute name="REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="SCALE" type="xsd:byte"/>
-<xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
-<xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
-<xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="TYPE" type="xsd:anyURI"/>
-<xsd:attribute name="FORMAT" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LIST_OPTIONType">
-<xsd:attribute name="CAPTION" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LISTType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="OPTION" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LIST_OPTIONType"/>
-</xsd:sequence>
-<xsd:attribute name="VALUE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="PICK_LIST" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LISTType"/>
-</xsd:sequence>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
-<xsd:attribute name="FIELD" type="xsd:anyURI"/>
-<xsd:attribute name="MAX_LENGTH" type="xsd:byte"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
-</xsd:sequence>
-<xsd:attribute name="ROWID" type="xsd:anyURI"/>
-<xsd:attribute name="SELECTED" type="xsd:boolean"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
-<xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLETType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType"/>
-<xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
-<xsd:element minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CLASS" type="xsd:anyURI"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="MODE" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
-<xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
-<xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
-<xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
-<xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
-<xsd:attribute name="TITLE" type="xsd:anyURI"/>
-<xsd:attribute name="ROW_COUNTER" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-<xsd:attribute name="TITLE" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREENType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEWType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CAPTION" type="xsd:anyURI"/>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATIONType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_USER_AGENTType"/>
-<xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREENType"/>
-</xsd:sequence>
-<xsd:attribute name="NAME" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector__ExecuteQueryResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATIONType"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-<xsd:attribute name="connector" type="xsd:anyURI"/>
-<xsd:attribute name="context" type="xsd:anyURI"/>
-<xsd:attribute name="contextId" type="xsd:anyURI"/>
-<xsd:attribute name="fromcache" type="xsd:boolean"/>
-<xsd:attribute name="generated" type="xsd:anyURI"/>
-<xsd:attribute name="project" type="xsd:anyURI"/>
-<xsd:attribute name="sequence" type="xsd:anyURI"/>
-<xsd:attribute name="signature" type="xsd:long"/>
-<xsd:attribute name="transaction" type="xsd:anyURI"/>
-<xsd:attribute name="version" type="xsd:anyURI"/>
-</xsd:complexType>
-<xsd:complexType name="transaction1318436556496StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_USER_AGENTType">
-<xsd:attribute name="MARKUP" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
-<xsd:attribute name="CALCULATED" type="xsd:boolean"/>
-<xsd:attribute name="DATATYPE" type="xsd:string"/>
-<xsd:attribute name="DISPLAY_NAME" type="xsd:string"/>
-<xsd:attribute name="FIELD" type="xsd:string"/>
-<xsd:attribute name="HIDDEN" type="xsd:boolean"/>
-<xsd:attribute name="HTML_TYPE" type="xsd:string"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="LIST_EDITABLE" type="xsd:string"/>
-<xsd:attribute name="NAME" type="xsd:string"/>
-<xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
-<xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
-<xsd:attribute name="REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="SCALE" type="xsd:byte"/>
-<xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
-<xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
-<xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
-<xsd:attribute name="TYPE" type="xsd:string"/>
-<xsd:attribute name="FORMAT" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
-<xsd:attribute name="NAME" type="xsd:string"/>
-<xsd:attribute name="VARIABLE" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
-</xsd:sequence>
-<xsd:attribute name="ROWID" type="xsd:string"/>
-<xsd:attribute name="SELECTED" type="xsd:boolean"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLETType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="xsd:string"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CLASS" type="xsd:string"/>
-<xsd:attribute name="ID" type="xsd:byte"/>
-<xsd:attribute name="MODE" type="xsd:string"/>
-<xsd:attribute name="NAME" type="xsd:string"/>
-<xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
-<xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
-<xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
-<xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
-<xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
-<xsd:attribute name="ROW_COUNTER" type="xsd:string"/>
-<xsd:attribute name="TITLE" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEWType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="NAME" type="xsd:string"/>
-<xsd:attribute name="TITLE" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREENType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEWType"/>
-</xsd:sequence>
-<xsd:attribute name="ACTIVE" type="xsd:boolean"/>
-<xsd:attribute name="CAPTION" type="xsd:string"/>
-<xsd:attribute name="NAME" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector_Login_document_APPLICATIONType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_USER_AGENTType"/>
-<xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREENType"/>
-</xsd:sequence>
-<xsd:attribute name="NAME" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="SiebelConnector__LoginResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATIONType"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-<xsd:attribute name="connector" type="xsd:string"/>
-<xsd:attribute name="context" type="xsd:string"/>
-<xsd:attribute name="contextId" type="xsd:string"/>
-<xsd:attribute name="fromcache" type="xsd:boolean"/>
-<xsd:attribute name="generated" type="xsd:string"/>
-<xsd:attribute name="project" type="xsd:string"/>
-<xsd:attribute name="sequence" type="xsd:string"/>
-<xsd:attribute name="signature" type="xsd:long"/>
-<xsd:attribute name="transaction" type="xsd:string"/>
-<xsd:attribute name="version" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="item1341588715859StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="customers1341588715853StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1341588715859StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="Login" type="sampleMobileSiebel_ns:LoginRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="LoginResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:LoginResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="LoginRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEUserName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEPassword" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="LoginResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATIONType"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1341587341047StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__LoginResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="Logoff" type="sampleMobileSiebel_ns:LogoffRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="LogoffResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:LogoffResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="LogoffRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEUserName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="LogoffResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1341827371738StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__LogoffResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SiebelInvoke" type="sampleMobileSiebel_ns:SiebelInvokeRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelInvokeResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelInvokeResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelInvokeRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEMethod" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEMethod</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEGetApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEGetApplet</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SiebelInvokeResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1314975307230StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314975307230StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314975307290StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314975307290StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="transaction1314975307020StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1341928173675StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:complexType name="customers1341928173669StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1341928173675StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1315496078525StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SiebelConnector__Login" type="sampleMobileSiebel_ns:SiebelConnector__LoginRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelConnector__LoginResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__LoginResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelConnector__LoginRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWECmd" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWECmd</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEUserName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEUserName</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEPassword" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEPassword</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEDataOnly" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEDataOnly</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetNoTempl" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetNoTempl</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetMarkup" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetMarkup</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="GotoView" type="sampleMobileSiebel_ns:GotoViewRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="GotoViewResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:GotoViewResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="GotoViewRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="GotoViewResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1314973552642StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1314973552552StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1314973552642StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973552672StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1314973552672StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
-<xsd:element name="SiebelConnector__Logoff" type="sampleMobileSiebel_ns:SiebelConnector__LogoffRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelConnector__LogoffResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__LogoffResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelConnector__LogoffRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWECmd" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>Actual Command</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEUserName" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEUserName</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEDataOnly" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEDataOnly</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetNoTempl" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetNoTempl</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetMarkup" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetMarkup</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SiebelConnector__ExecuteQuery" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelConnector__ExecuteQueryResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelConnector__ExecuteQueryRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWECmd" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWECmd</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEApplet</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEDataOnly" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEDataOnly</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetNoTempl" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetNoTempl</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetMarkup" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetMarkup</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEMethod" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEMethod</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Location" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>Location</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWENeedContext" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWENeedContext</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Name" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>Name</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="StartRowNum" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>StartRowNum</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="State" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>State</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SiebelConnector__GotoView" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelConnector__GotoViewResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelConnector__GotoViewRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWECmd" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWECmd</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEDataOnly" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEDataOnly</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetNoTempl" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetNoTempl</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetMarkup" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetMarkup</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEKeepContext" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEGetApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEGetApplet</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWENeedContext" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWENeedContext</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="SiebelConnector__NewQuery" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SiebelConnector__NewQueryResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SiebelConnector__NewQueryRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWECmd" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEMethod" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetMarkup" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetMarkup</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEDataOnly" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWESetNoTempl" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWESetNoTempl</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWENeedContext" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWENeedContext</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEReqRowId" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEReqRowId</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEBID" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEBID</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="Search" type="sampleMobileSiebel_ns:SearchRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="SearchResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileSiebel_ns:SearchResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="SearchRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="SWEView" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="SWEApplet" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>SWEView</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Name" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Location" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="SearchResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Error" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1315498757562StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1341928218623StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="transaction1315496043273StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="customers1315498757562StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1315500276779StepType">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="item1315500276779StepType">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Name" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Location" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="City" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="State" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element minOccurs="0" name="Country" type="xsd:string">
-<xsd:annotation/>
-</xsd:element>
-</xsd:sequence>
-<xsd:attribute name="rowID" type="xsd:string" use="optional">
-<xsd:annotation/>
-</xsd:attribute>
-</xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileSiebel_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sampleMobileSiebel_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:group name="SenchaConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:group name="default_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:complexType name="SiebelConnector__LogoffResponseData"/>
+    <xsd:complexType name="SiebelConnector__NewQueryResponseData"/>
+    <xsd:complexType name="complex1314639069984StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+        <xsd:attribute name="attribute" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+        <xsd:attribute name="attribute" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="CustomerStep1314639069984StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+        <xsd:attribute name="attribute" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+        <xsd:attribute name="attribute" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="Customer1314639069984StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Customer" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ROWID" type="xsd:anyURI"/>
+        <xsd:attribute name="SELECTED" type="xsd:boolean"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_USER_AGENTType">
+        <xsd:attribute name="MARKUP" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType">
+        <xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="FIELD" type="xsd:anyURI"/>
+        <xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
+        <xsd:attribute name="TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="CALCULATED" type="xsd:boolean"/>
+        <xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="HIDDEN" type="xsd:boolean"/>
+        <xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="SCALE" type="xsd:byte"/>
+        <xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="TEXT_LENGTH" type="xsd:short"/>
+        <xsd:attribute name="FORMAT" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType">
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ROWID" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
+        <xsd:attribute name="CALCULATED" type="xsd:boolean"/>
+        <xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="FIELD" type="xsd:anyURI"/>
+        <xsd:attribute name="HIDDEN" type="xsd:boolean"/>
+        <xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="LIST_EDITABLE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
+        <xsd:attribute name="REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="SCALE" type="xsd:byte"/>
+        <xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
+        <xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="FORMAT" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="xsd:anyURI"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLETType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType"/>
+            <xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CLASS" type="xsd:anyURI"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="MODE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
+        <xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
+        <xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
+        <xsd:attribute name="TITLE" type="xsd:anyURI"/>
+        <xsd:attribute name="ROW_COUNTER" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="TITLE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATION_SCREENType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREEN_VIEWType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CAPTION" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_GotoView_document_APPLICATIONType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_USER_AGENTType"/>
+            <xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATION_SCREENType"/>
+        </xsd:sequence>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector__GotoViewResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_GotoView_document_APPLICATIONType"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:anyURI"/>
+        <xsd:attribute name="context" type="xsd:anyURI"/>
+        <xsd:attribute name="contextId" type="xsd:anyURI"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:anyURI"/>
+        <xsd:attribute name="project" type="xsd:anyURI"/>
+        <xsd:attribute name="sequence" type="xsd:anyURI"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:anyURI"/>
+        <xsd:attribute name="version" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="complex1314717533155StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="complex1314721639449StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="Item1314717533155StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Item1314721665156StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Customers1314721639449StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Item" type="sampleMobileSiebel_ns:Item1314721665156StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="complex1314721866944StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="Item1314721756532StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314885744031StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885744091StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314885744091StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314885743971StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoPreviousSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314885834428StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885834488StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314972467515StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314972467275StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoPreviousSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314972467455StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314972467515StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314973039966StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973040026StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314973040026StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="item1314721756532StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314721866944StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314721756532StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence1314973078981StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:ConvertSiebelXMLResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314973484246StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314711058801StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314973484186StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973484246StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314973774378StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973774393StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314973774393StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314973774333StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoFirstSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314974669744StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314974669504StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoLastSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314974669684StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314974669744StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314972598954StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314972599014StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314972598999StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314972599014StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314885834488StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="sequence1314978032040StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:GotoLastSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence1314978031989StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:GotoFirstSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence1314978032089StepType">
+        <xsd:annotation/>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314895394226StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314885834488StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314885834368StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoNextSetResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="complex1315498757562StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_USER_AGENTType">
+        <xsd:attribute name="MARKUP" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType">
+        <xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="FIELD" type="xsd:anyURI"/>
+        <xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
+        <xsd:attribute name="TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="CALCULATED" type="xsd:boolean"/>
+        <xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="HIDDEN" type="xsd:boolean"/>
+        <xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="SCALE" type="xsd:byte"/>
+        <xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="TEXT_LENGTH" type="xsd:short"/>
+        <xsd:attribute name="FORMAT" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADER_COLUMNType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType">
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROW_FIELDType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ROWID" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATA_ROWType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
+        <xsd:attribute name="CALCULATED" type="xsd:boolean"/>
+        <xsd:attribute name="DATATYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="DISPLAY_NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="FIELD" type="xsd:anyURI"/>
+        <xsd:attribute name="HIDDEN" type="xsd:boolean"/>
+        <xsd:attribute name="HTML_TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="LIST_EDITABLE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
+        <xsd:attribute name="REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="SCALE" type="xsd:byte"/>
+        <xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
+        <xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="TYPE" type="xsd:anyURI"/>
+        <xsd:attribute name="FORMAT" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LIST_OPTIONType">
+        <xsd:attribute name="CAPTION" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LISTType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="OPTION" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LIST_OPTIONType"/>
+        </xsd:sequence>
+        <xsd:attribute name="VALUE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="PICK_LIST" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELD_PICK_LISTType"/>
+        </xsd:sequence>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="VARIABLE" type="xsd:anyURI"/>
+        <xsd:attribute name="FIELD" type="xsd:anyURI"/>
+        <xsd:attribute name="MAX_LENGTH" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ROWID" type="xsd:anyURI"/>
+        <xsd:attribute name="SELECTED" type="xsd:boolean"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
+            <xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLETType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_HEADERType"/>
+            <xsd:element minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
+            <xsd:element minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CLASS" type="xsd:anyURI"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="MODE" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
+        <xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
+        <xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
+        <xsd:attribute name="TITLE" type="xsd:anyURI"/>
+        <xsd:attribute name="ROW_COUNTER" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+        <xsd:attribute name="TITLE" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATION_SCREENType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREEN_VIEWType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CAPTION" type="xsd:anyURI"/>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_ExecuteQuery_document_APPLICATIONType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_USER_AGENTType"/>
+            <xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATION_SCREENType"/>
+        </xsd:sequence>
+        <xsd:attribute name="NAME" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector__ExecuteQueryResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_ExecuteQuery_document_APPLICATIONType"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:anyURI"/>
+        <xsd:attribute name="context" type="xsd:anyURI"/>
+        <xsd:attribute name="contextId" type="xsd:anyURI"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:anyURI"/>
+        <xsd:attribute name="project" type="xsd:anyURI"/>
+        <xsd:attribute name="sequence" type="xsd:anyURI"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:anyURI"/>
+        <xsd:attribute name="version" type="xsd:anyURI"/>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1318436556496StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_USER_AGENTType">
+        <xsd:attribute name="MARKUP" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType">
+        <xsd:attribute name="CALCULATED" type="xsd:boolean"/>
+        <xsd:attribute name="DATATYPE" type="xsd:string"/>
+        <xsd:attribute name="DISPLAY_NAME" type="xsd:string"/>
+        <xsd:attribute name="FIELD" type="xsd:string"/>
+        <xsd:attribute name="HIDDEN" type="xsd:boolean"/>
+        <xsd:attribute name="HTML_TYPE" type="xsd:string"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="LIST_EDITABLE" type="xsd:string"/>
+        <xsd:attribute name="NAME" type="xsd:string"/>
+        <xsd:attribute name="NUMBER_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="READ_ONLY" type="xsd:boolean"/>
+        <xsd:attribute name="REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="SCALE" type="xsd:byte"/>
+        <xsd:attribute name="TEXT_BASED" type="xsd:boolean"/>
+        <xsd:attribute name="TEXT_LENGTH" type="xsd:byte"/>
+        <xsd:attribute name="TOTAL_REQUIRED" type="xsd:boolean"/>
+        <xsd:attribute name="TYPE" type="xsd:string"/>
+        <xsd:attribute name="FORMAT" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="COLUMN" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADER_COLUMNType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType">
+        <xsd:attribute name="NAME" type="xsd:string"/>
+        <xsd:attribute name="VARIABLE" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="FIELD" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROW_FIELDType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ROWID" type="xsd:string"/>
+        <xsd:attribute name="SELECTED" type="xsd:boolean"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATA_ROWType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_HEADERType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LIST_RS_DATAType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLETType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="LIST" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_LISTType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_HEADER" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="RS_DATA" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLET_RS_DATAType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CLASS" type="xsd:string"/>
+        <xsd:attribute name="ID" type="xsd:byte"/>
+        <xsd:attribute name="MODE" type="xsd:string"/>
+        <xsd:attribute name="NAME" type="xsd:string"/>
+        <xsd:attribute name="NO_DELETE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_EXEC_QUERY" type="xsd:boolean"/>
+        <xsd:attribute name="NO_INSERT" type="xsd:boolean"/>
+        <xsd:attribute name="NO_MERGE" type="xsd:boolean"/>
+        <xsd:attribute name="NO_UPDATE" type="xsd:boolean"/>
+        <xsd:attribute name="ROW_COUNTER" type="xsd:string"/>
+        <xsd:attribute name="TITLE" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREEN_VIEWType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="APPLET" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEW_APPLETType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="NAME" type="xsd:string"/>
+        <xsd:attribute name="TITLE" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATION_SCREENType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="VIEW" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREEN_VIEWType"/>
+        </xsd:sequence>
+        <xsd:attribute name="ACTIVE" type="xsd:boolean"/>
+        <xsd:attribute name="CAPTION" type="xsd:string"/>
+        <xsd:attribute name="NAME" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector_Login_document_APPLICATIONType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="USER_AGENT" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_USER_AGENTType"/>
+            <xsd:element minOccurs="0" name="SCREEN" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATION_SCREENType"/>
+        </xsd:sequence>
+        <xsd:attribute name="NAME" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelConnector__LoginResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATIONType"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="item1341588715859StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="customers1341588715853StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1341588715859StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1341928173675StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="customers1341928173669StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1341928173675StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1315496078525StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SiebelConnector__Login" type="sampleMobileSiebel_ns:SiebelConnector__LoginRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelConnector__LoginResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__LoginResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelConnector__LoginRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWECmd" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWECmd</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEUserName" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEUserName</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEPassword" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEPassword</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEDataOnly" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEDataOnly</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetNoTempl" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetNoTempl</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetMarkup" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetMarkup</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SiebelConnector__Logoff" type="sampleMobileSiebel_ns:SiebelConnector__LogoffRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelConnector__LogoffResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__LogoffResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelConnector__LogoffRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWECmd" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Actual Command</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEUserName" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEUserName</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEDataOnly" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEDataOnly</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetNoTempl" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetNoTempl</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetMarkup" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetMarkup</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SiebelConnector__ExecuteQuery" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelConnector__ExecuteQueryResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelConnector__ExecuteQueryRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWECmd" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWECmd</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEApplet</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEDataOnly" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEDataOnly</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetNoTempl" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetNoTempl</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetMarkup" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetMarkup</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEMethod" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEMethod</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Location" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Location</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWENeedContext" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWENeedContext</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Name" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Name</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="StartRowNum" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>StartRowNum</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="State" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>State</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SiebelConnector__GotoView" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelConnector__GotoViewResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelConnector__GotoViewRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWECmd" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWECmd</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEDataOnly" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEDataOnly</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetNoTempl" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetNoTempl</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetMarkup" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetMarkup</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEKeepContext" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEGetApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEGetApplet</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWENeedContext" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWENeedContext</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SiebelConnector__NewQuery" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelConnector__NewQueryResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelConnector__NewQueryRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWECmd" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEMethod" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetMarkup" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetMarkup</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEDataOnly" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWESetNoTempl" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWESetNoTempl</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWENeedContext" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWENeedContext</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEReqRowId" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEReqRowId</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEBID" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEBID</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GotoView" type="sampleMobileSiebel_ns:GotoViewRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GotoViewResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:GotoViewResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GotoViewRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GotoViewResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="Error" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1314973552642StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314973552552StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__GotoViewResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314973552642StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314973552672StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314973552672StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:element name="Login" type="sampleMobileSiebel_ns:LoginRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="LoginResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:LoginResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="LoginRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWEUserName" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEPassword" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="LoginResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="Error" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="APPLICATION" type="sampleMobileSiebel_ns:SiebelConnector_Login_document_APPLICATIONType"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1341587341047StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__LoginResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Logoff" type="sampleMobileSiebel_ns:LogoffRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="LogoffResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:LogoffResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="LogoffRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWEUserName" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="LogoffResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1341827371738StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__LogoffResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Search" type="sampleMobileSiebel_ns:SearchRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SearchResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SearchResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SearchRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Name" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Location" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="Error" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Error" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1315498757562StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1341928218623StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__ExecuteQueryResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1315496043273StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__NewQueryResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1315498757562StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1315500276779StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1315500276779StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:element name="SiebelInvoke" type="sampleMobileSiebel_ns:SiebelInvokeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="SiebelInvokeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileSiebel_ns:SiebelInvokeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="SiebelInvokeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="SWEView" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEView</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEMethod" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEMethod</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="SWEGetApplet" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>SWEGetApplet</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SiebelInvokeResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileSiebel_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="Error" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="customers" type="sampleMobileSiebel_ns:customers1314975307230StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="customers1314975307230StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileSiebel_ns:item1314975307290StepType">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="item1314975307290StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="AccountNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Name" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Location" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="StreetAddress" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="City" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="State" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Country" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MainPhoneNumber" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SlmAccount" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MvgContactId" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="FundEligibleFlag" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="rowID" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1314975307020StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="sampleMobileSiebel_ns:SiebelConnector__InvokeMethodResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
 </xsd:schema>

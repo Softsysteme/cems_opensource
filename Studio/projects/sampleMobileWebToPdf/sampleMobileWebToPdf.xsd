@@ -1,95 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileWebToPdf_ns="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileWebToPdf">
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileWebToPdf_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sampleMobileWebToPdf_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:group name="SenchaConnectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:element name="Html2Pdf__XMLize" type="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="Html2Pdf__XMLizeResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="Html2Pdf__XMLizeRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="Html2Pdf__XMLizeResponseData">
-<xsd:sequence>
-<xsd:group minOccurs="0" ref="sampleMobileWebToPdf_ns:default_connectorTypes"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:group name="default_connectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:complexType name="Html2Pdf__DownloadResponseData"/>
-<xsd:element name="Html2Pdf__PrepareDownload" type="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="Html2Pdf__PrepareDownloadResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="Html2Pdf__PrepareDownloadRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="url" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>new variable</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="Html2Pdf__PrepareDownloadResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:element name="Html2Pdf__Download" type="sampleMobileWebToPdf_ns:Html2Pdf__DownloadRequestData">
-<xsd:annotation>
-<xsd:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileWebToPdf_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sampleMobileWebToPdf_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:group name="SenchaConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:group name="default_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:element name="Html2Pdf__Download" type="sampleMobileWebToPdf_ns:Html2Pdf__DownloadRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
 ]]></xsd:documentation>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="Html2Pdf__DownloadResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__DownloadResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="Html2Pdf__DownloadRequestData">
-<xsd:annotation>
-<xsd:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Html2Pdf__DownloadResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__DownloadResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Html2Pdf__DownloadRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Download file pre Downloaded by PrepareDownload. Can be called many times with some browser implementation.
 ]]></xsd:documentation>
-</xsd:annotation>
-<xsd:sequence/>
-</xsd:complexType>
+        </xsd:annotation>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="Html2Pdf__DownloadResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Html2Pdf__PrepareDownload" type="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="Html2Pdf__PrepareDownloadResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__PrepareDownloadResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Html2Pdf__PrepareDownloadRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="url" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Html2Pdf__PrepareDownloadResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="ready" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Html2Pdf__XMLize" type="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="Html2Pdf__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileWebToPdf_ns:Html2Pdf__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Html2Pdf__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="Html2Pdf__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sampleMobileWebToPdf_ns:Html2PdfTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="Html2PdfTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileWebToPdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
 </xsd:schema>

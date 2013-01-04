@@ -1,120 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileUsDirectoryDemo_ns="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileUsDirectoryDemo">
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileUsDirectoryDemo_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sampleMobileUsDirectoryDemo_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:group name="SenchaConnectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:group name="default_connectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:group name="usdirectoryConnectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
-<xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:errorTextType"/>
-<xsd:element minOccurs="0" name="errorMessage" type="sampleMobileUsDirectoryDemo_ns:errorMessageTextType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="sampleMobileUsDirectoryDemo_ns:resultsTableType"/>
-<xsd:element minOccurs="0" name="error" type="xsd:string"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:complexType name="errorTextType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="referer" type="xsd:string" use="optional"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:complexType name="item_resultsRowType">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="name" type="xsd:string"/>
-<xsd:element minOccurs="0" name="address" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="resultsTableType">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileUsDirectoryDemo_ns:item_resultsRowType"/>
-</xsd:sequence>
-<xsd:attribute name="referer" type="xsd:string" use="optional"/>
-</xsd:complexType>
-<xsd:complexType name="errorMessageTextType">
-<xsd:simpleContent>
-<xsd:extension base="xsd:string">
-<xsd:attribute name="referer" type="xsd:string" use="optional"/>
-</xsd:extension>
-</xsd:simpleContent>
-</xsd:complexType>
-<xsd:element name="usdirectoryConnector__DefaultTransaction" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__DefaultTransactionRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="usdirectoryConnector__DefaultTransactionResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__DefaultTransactionResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="usdirectoryConnector__DefaultTransactionRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="usdirectoryConnector__DefaultTransactionResponseData"/>
-<xsd:element name="usdirectoryConnector__searchBusiness" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="usdirectoryConnector__searchBusinessResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="usdirectoryConnector__searchBusinessRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="city" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>description</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="business" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>description</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="state" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>description</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="usdirectoryConnector__searchBusinessResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
-<xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:errorTextType"/>
-<xsd:element minOccurs="0" name="errorMessage" type="sampleMobileUsDirectoryDemo_ns:errorMessageTextType"/>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="sampleMobileUsDirectoryDemo_ns:resultsTableType"/>
-<xsd:element minOccurs="0" name="error" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileUsDirectoryDemo_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sampleMobileUsDirectoryDemo_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:group name="SenchaConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:group name="default_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:element name="usdirectoryConnector__searchBusiness" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="usdirectoryConnector__searchBusinessResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__searchBusinessResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="usdirectoryConnector__searchBusinessRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="business" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>description</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="city" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>description</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="state" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>description</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="usdirectoryConnector__searchBusinessResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:errorTextType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sampleMobileUsDirectoryDemo_ns:errorMessageTextType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="sampleMobileUsDirectoryDemo_ns:resultsTableType"/>
+            <xsd:element minOccurs="0" name="error" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="usdirectoryConnector__XMLize" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="usdirectoryConnector__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileUsDirectoryDemo_ns:usdirectoryConnector__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="usdirectoryConnector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="usdirectoryConnector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sampleMobileUsDirectoryDemo_ns:usdirectoryConnectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="usdirectoryConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileUsDirectoryDemo_ns:errorTextType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sampleMobileUsDirectoryDemo_ns:errorMessageTextType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="sampleMobileUsDirectoryDemo_ns:resultsTableType"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:complexType name="errorTextType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="item_resultsRowType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="name" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="address" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="resultsTableType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="sampleMobileUsDirectoryDemo_ns:item_resultsRowType"/>
+        </xsd:sequence>
+        <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="errorMessageTextType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
 </xsd:schema>
