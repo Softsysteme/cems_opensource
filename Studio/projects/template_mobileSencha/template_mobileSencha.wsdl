@@ -3,20 +3,28 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_mobileSencha"><xsd:include schemaLocation="template_mobileSencha.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="LoginResponse">
-    <wsdl:part name="parameters" element="template_mobileSencha_ns:LoginResponse">
+  <wsdl:message name="void__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="template_mobileSencha_ns:void__DefaultTransaction">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="LoadListRequest">
-    <wsdl:part name="parameters" element="template_mobileSencha_ns:LoadList">
+  <wsdl:message name="LoginResponse">
+    <wsdl:part name="parameters" element="template_mobileSencha_ns:LoginResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="LoadListResponse">
     <wsdl:part name="parameters" element="template_mobileSencha_ns:LoadListResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="LoadListRequest">
+    <wsdl:part name="parameters" element="template_mobileSencha_ns:LoadList">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="LoginRequest">
     <wsdl:part name="parameters" element="template_mobileSencha_ns:Login">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="void__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="template_mobileSencha_ns:void__DefaultTransactionResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="template_mobileSenchaPortType">
@@ -36,6 +44,13 @@
       <wsdl:input message="template_mobileSencha_ns:LoginRequest">
     </wsdl:input>
       <wsdl:output message="template_mobileSencha_ns:LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_mobileSencha_ns:void__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="template_mobileSencha_ns:void__DefaultTransactionResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -58,6 +73,16 @@
 
 ]]></wsdl:documentation>
       <soap:operation soapAction="template_mobileSencha?Login"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_mobileSencha?void__DefaultTransaction"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
