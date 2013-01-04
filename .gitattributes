@@ -401,6 +401,999 @@ Studio/lib/xerces-2_11_0/xercesImpl.jar -text
 Studio/lib/xerces-2_11_0/xercesSamples.jar -text
 Studio/lib/xerces-2_11_0/xml-apis.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
+Studio/projects/crawlingProject/crawlingProject.sql -text
+Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/plain
+Studio/projects/crawlingProject/crawlingProject.xml -text svneol=unset#text/plain
+Studio/projects/crawlingProject/crawlingProject.xsd -text svneol=unset#text/plain
+Studio/projects/crawlingProject/index.jsp -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/accountDetails.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/common.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/contacts.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/css/common.css -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/css/custom.css -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/css/dStandard.css -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/css/elements.css -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/demo_SalesForce.wsdl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/demo_SalesForce.xml -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/demo_SalesForce.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/detailsContact.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/donothing.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/img/ascending.png -text
+Studio/projects/demo_SalesForce/img/btn_continue.png -text
+Studio/projects/demo_SalesForce/img/btn_initialize.png -text
+Studio/projects/demo_SalesForce/img/close_window.png -text
+Studio/projects/demo_SalesForce/img/crm.png -text
+Studio/projects/demo_SalesForce/img/descending.png -text
+Studio/projects/demo_SalesForce/img/e_back.gif -text
+Studio/projects/demo_SalesForce/img/e_back.png -text
+Studio/projects/demo_SalesForce/img/e_refresh.gif -text
+Studio/projects/demo_SalesForce/img/e_refresh.png -text
+Studio/projects/demo_SalesForce/img/erp.png -text
+Studio/projects/demo_SalesForce/img/loading.gif -text
+Studio/projects/demo_SalesForce/img/logo_hm_summ_saleforce.gif -text
+Studio/projects/demo_SalesForce/img/poweredbyc8o.jpg -text
+Studio/projects/demo_SalesForce/img/poweredbyc8o_SF.jpg -text
+Studio/projects/demo_SalesForce/img/question.gif -text
+Studio/projects/demo_SalesForce/img/question.png -text
+Studio/projects/demo_SalesForce/img/title.png -text
+Studio/projects/demo_SalesForce/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/searchResults.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/changeLanguage.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/createCampaign.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/createLeadsView.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/emptyLeadsView.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/initializeDemo.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/insertLead.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/leads.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/leadsdetails.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/loggedIn.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsl/notConnected.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/Traces/legacyCRMConnector/demo.etr -text
+Studio/projects/demo_legacyCRM/css/calendar-system.css -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/css/csc.css -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/css/exception.css -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/css/sna.css -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/css/tooltip.css -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/datascsv.xls -text
+Studio/projects/demo_legacyCRM/deco.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/demo_legacyCRM.wsdl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/demo_legacyCRM.xml -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/demo_legacyCRM.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/editClient.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/error.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/images/arrow-right-double.png -text
+Studio/projects/demo_legacyCRM/images/arrow-right-triple.gif -text
+Studio/projects/demo_legacyCRM/images/ascending.gif -text
+Studio/projects/demo_legacyCRM/images/ascending_sug.gif -text
+Studio/projects/demo_legacyCRM/images/bg.jpg -text
+Studio/projects/demo_legacyCRM/images/bg_btn.png -text
+Studio/projects/demo_legacyCRM/images/bg_fenetre.png -text
+Studio/projects/demo_legacyCRM/images/bg_fenetre2.png -text
+Studio/projects/demo_legacyCRM/images/convertigo-small.gif -text
+Studio/projects/demo_legacyCRM/images/convertigo-small.png -text
+Studio/projects/demo_legacyCRM/images/croix.gif -text
+Studio/projects/demo_legacyCRM/images/descending.gif -text
+Studio/projects/demo_legacyCRM/images/ex_ascending.gif -text
+Studio/projects/demo_legacyCRM/images/ex_descending.gif -text
+Studio/projects/demo_legacyCRM/images/hide.gif -text
+Studio/projects/demo_legacyCRM/images/menuarrow.gif -text
+Studio/projects/demo_legacyCRM/images/menuarrow2.gif -text
+Studio/projects/demo_legacyCRM/images/msxml_inst.gif -text
+Studio/projects/demo_legacyCRM/images/separator.gif -text
+Studio/projects/demo_legacyCRM/images/show.gif -text
+Studio/projects/demo_legacyCRM/images/slider-arrow-bottom.gif -text
+Studio/projects/demo_legacyCRM/images/slider-arrow-top.gif -text
+Studio/projects/demo_legacyCRM/images/sort_num.gif -text
+Studio/projects/demo_legacyCRM/images/sort_text.gif -text
+Studio/projects/demo_legacyCRM/images/spacer.gif -text
+Studio/projects/demo_legacyCRM/images/spec/Thumbs.db -text
+Studio/projects/demo_legacyCRM/images/spec/csv_button.png -text
+Studio/projects/demo_legacyCRM/images/spec/csv_button_over.png -text
+Studio/projects/demo_legacyCRM/images/spec/email.png -text
+Studio/projects/demo_legacyCRM/images/spec/excel.png -text
+Studio/projects/demo_legacyCRM/images/spec/loupe-01.png -text
+Studio/projects/demo_legacyCRM/images/spec/pixel.png -text
+Studio/projects/demo_legacyCRM/images/spec/selectarrow.png -text
+Studio/projects/demo_legacyCRM/images/spec/tree_plus-01.png -text
+Studio/projects/demo_legacyCRM/images/spec/tree_plus-02.png -text
+Studio/projects/demo_legacyCRM/images/spec/tree_plus-03.png -text
+Studio/projects/demo_legacyCRM/images/spec/tws_horiz_top_logo.png -text
+Studio/projects/demo_legacyCRM/images/tab-sel-left-border.gif -text
+Studio/projects/demo_legacyCRM/images/tab-sel-middle.gif -text
+Studio/projects/demo_legacyCRM/images/tab-sel-right-border.gif -text
+Studio/projects/demo_legacyCRM/images/tab-unsel-left-border.gif -text
+Studio/projects/demo_legacyCRM/images/tab-unsel-middle.gif -text
+Studio/projects/demo_legacyCRM/images/tab-unsel-right-border.gif -text
+Studio/projects/demo_legacyCRM/images/twinsoft.gif -text
+Studio/projects/demo_legacyCRM/images/twinsoft.png -text
+Studio/projects/demo_legacyCRM/images/unsort.gif -text
+Studio/projects/demo_legacyCRM/images/wait.gif -text
+Studio/projects/demo_legacyCRM/index.html -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/makecsv.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/scripts/calendar-en.js -text
+Studio/projects/demo_legacyCRM/scripts/calendar-fr.js -text
+Studio/projects/demo_legacyCRM/scripts/calendar-setup.js -text
+Studio/projects/demo_legacyCRM/scripts/calendar.js -text
+Studio/projects/demo_legacyCRM/scripts/contextMenu.js -text
+Studio/projects/demo_legacyCRM/scripts/csc.js -text
+Studio/projects/demo_legacyCRM/scripts/keymapsna.js -text
+Studio/projects/demo_legacyCRM/scripts/keymapvt220.js -text
+Studio/projects/demo_legacyCRM/scripts/position.js -text
+Studio/projects/demo_legacyCRM/scripts/scriptlib-param.js -text
+Studio/projects/demo_legacyCRM/scripts/scriptlib.js -text
+Studio/projects/demo_legacyCRM/scripts/selectMenu.js -text
+Studio/projects/demo_legacyCRM/scripts/tooltip.js -text
+Studio/projects/demo_legacyCRM/scripts/xmlparse.js -text
+Studio/projects/demo_legacyCRM/sna.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/activewidgettable.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/buttonsPanel.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/checkbox.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/checkboxesPanel.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/choice.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/container.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/date.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/field.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/image.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/keyword.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/menu.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/panel.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/radio.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/radioPanel.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/separator.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/slider.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/snamenu.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/static.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/tabbox.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/table-mod.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/table.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/templates/tablex.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/variables.xsl -text svneol=unset#text/plain
+Studio/projects/demo_mashup/css/custom.css -text svneol=unset#text/plain
+Studio/projects/demo_mashup/demo.html -text svneol=unset#text/plain
+Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
+Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
+Studio/projects/demo_mashup/demo_mashup.xsd -text svneol=unset#text/plain
+Studio/projects/demo_mashup/images/header-flex.jpg -text
+Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
+Studio/projects/demo_mashup/resources/bg_center.png -text
+Studio/projects/demo_mashup/resources/bg_footer_center.png -text
+Studio/projects/demo_mashup/resources/bg_footer_left.png -text
+Studio/projects/demo_mashup/resources/bg_footer_right.png -text
+Studio/projects/demo_mashup/resources/bg_footer_up_center.png -text
+Studio/projects/demo_mashup/resources/bg_footer_up_left.png -text
+Studio/projects/demo_mashup/resources/bg_footer_up_right.png -text
+Studio/projects/demo_mashup/resources/demo.css -text svneol=unset#text/plain
+Studio/projects/demo_mashup/resources/dot_h.jpg -text
+Studio/projects/demo_mashup/resources/favicon.ico -text
+Studio/projects/demo_mashup/resources/header.jpg -text
+Studio/projects/demo_mashup/resources/logo-convertigo-184x75.jpg -text
+Studio/projects/demo_mashup/resources/picto_crayon.jpg -text
+Studio/projects/demo_mashup/resources/picto_ecran.jpg -text
+Studio/projects/demo_usDirectory/businessSearchResults.xsl -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/css/custom.css -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/demo_usDirectory.wsdl -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/demo_usDirectory.xml -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/demo_usDirectory.xsd -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/displaylogo.xsl -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/img/close_window.png -text
+Studio/projects/demo_usDirectory/img/e_back.gif -text
+Studio/projects/demo_usDirectory/img/e_back.png -text
+Studio/projects/demo_usDirectory/img/e_refresh.gif -text
+Studio/projects/demo_usDirectory/img/e_refresh.png -text
+Studio/projects/demo_usDirectory/img/googlemaps_logo_small.png -text
+Studio/projects/demo_usDirectory/img/loading.gif -text
+Studio/projects/demo_usDirectory/img/poweredbyc8o.jpg -text
+Studio/projects/demo_usDirectory/img/question.png -text
+Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
+Studio/projects/demo_usDirectory/img/title.png -text
+Studio/projects/demo_usDirectory/img/toERPicon.png -text
+Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/lib_GoogleDocs.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newRecord.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newRow.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newRow.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newSpreadsheet.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newWorksheet.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/newWorksheet.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/tableData.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/template/tableData.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleMaps/.project -text
+Studio/projects/lib_GoogleMaps/css/custom.css -text svneol=unset#text/plain
+Studio/projects/lib_GoogleMaps/index.html -text
+Studio/projects/lib_GoogleMaps/js/custom.js -text svneol=unset#text/plain
+Studio/projects/lib_GoogleMaps/lib_GoogleMaps.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleMaps/lib_GoogleMaps.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleMaps/lib_GoogleMaps.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/.project -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/lib_GoogleSpreadsheets.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/lib_GoogleSpreadsheets.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/lib_GoogleSpreadsheets.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newRecord.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newRow.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newRow.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newSpreadsheet.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newWorksheet.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/newWorksheet.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/tableData.xml -text svneol=unset#text/plain
+Studio/projects/lib_GoogleSpreadsheets/template/tableData.xsl -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.project -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/css/custom.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/css/ellipsis-xbl.xml -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/css/start/images/ui-bg_flat_55_999999_40x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_flat_75_aaaaaa_40x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_glass_45_0078ae_1x400.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_glass_55_f8da4e_1x400.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_glass_75_79c9ec_1x400.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_0078ae_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_056b93_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_d8e7f3_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_e0fdff_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_f5e175_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_f7a50d_256x240.png -text
+Studio/projects/lib_Keyring/css/start/images/ui-icons_fcd113_256x240.png -text
+Studio/projects/lib_Keyring/css/start/jquery-ui-1.8.18.custom.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/css/ui.jqgrid.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/errorCodesLabels.xml -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-bg.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-bg1251.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-cat.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-cn.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-cs.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-da.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-de.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-dk.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-el.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-en.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-es.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-fa.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-fi.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-fr.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-gl.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-he.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-hr.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-hr1250.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-hu.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-is.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-it.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-ja.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-lt.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-mne.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-nl.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-no.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-pl.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-pt-br.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-pt.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-ro.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-ru.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-sk.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-sr-latin.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-sr.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-sv.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-th.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-tr.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/i18n/grid.locale-ua.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery-1.8.2.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery-ui-1.8.24.custom.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery.jqGrid.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/js/jquery.jqGrid.src.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.xml -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/lib_Keyring.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.addons.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.postext.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/grid.setcolumns.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.contextmenu.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.searchFilter.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/jquery.tablednd.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/searchFilter.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/ui.multiselect.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/plugins/ui.multiselect.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/sample.xml -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/admin.html -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/css/keyring.css -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/img/bg_menu.jpg -text
+Studio/projects/lib_Keyring/widgets/img/menu_fleche.png -text
+Studio/projects/lib_Keyring/widgets/img/wait.gif -text
+Studio/projects/lib_Keyring/widgets/js/admin.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/js/common.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/js/keychain.js -text svneol=unset#text/plain
+Studio/projects/lib_Keyring/widgets/keychain.html -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/.project -text
+Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
+Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text
+Studio/projects/lib_LinkedIn/lib_LinkedIn.xsd -text
+Studio/projects/lib_Yammer/.project -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/lib_Yammer.temp.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/lib_Yammer.temp.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/lib_Yammer.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/lib_Yammer.xml -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/lib_Yammer.xsd -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/.project -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/details.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/listDisplay.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/searchForm.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xml -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xsd -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
+Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/jquery.mobile.datebox.1.0.1.min.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/jquery.mobile.datebox.1.0.1.min.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/sampleMobileJQuery.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/sources/downloadForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/Readme.txt -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/sampleMobilePdf.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/sampleMobilePdf.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/sampleMobilePdf.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/16x16.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/57x57.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/feed_icon_10x10.gif -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/feed_icon_12x12.gif -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/feed_icon_16x16.gif -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/phoneStartup320x480.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/phoneStartup480x320.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/phoneStartup640x960.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/phoneStartup960x640.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/tabletStartup1024x768.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/img/tabletStartup768x1024.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/configPanel.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/feedPanel.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/feedsPanel.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/Readme.txt -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/data/storedFeeds.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/data/storedFeedsTree.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/16x16.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/57x57.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/phoneStartup320x480.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/phoneStartup480x320.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/phoneStartup640x960.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/phoneStartup960x640.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/tabletStartup1024x768.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/tabletStartup768x1024.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/customersForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/details.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/googleMap.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/loginForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/logoffForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/searchForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/states.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/Readme.txt -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/sampleMobileSiebel.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/sampleMobileSiebel.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/sampleMobileSiebel.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/usdirectory.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/57x57.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/phoneStartup320x480.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/phoneStartup480x320.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/phoneStartup640x960.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/phoneStartup960x640.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/picture.jpg -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/tabletStartup1024x768.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/tabletStartup768x1024.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/googleMap.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/listDisplay.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/searchForm.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/sass/config.rb -text
+Studio/projects/sampleMobileUsDirectoryDemo/sass/usdirectory.scss -text
+Studio/projects/sampleMobileVacation/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/sampleMobileVacation.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/sampleMobileVacation.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/sampleMobileVacation.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Calendar.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Deconnection.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Details.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/DetailsKO.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/LoginEmpty.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/LoginKO.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/NextMonth.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/NextWeek.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/PreviousMonth.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/PreviousWeek.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Refuse.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Requests.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Start.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/webservice/Validate.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/download.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileWebToPdf/sampleMobileWebToPdf.xsd -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/.project -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/Traces/legacy/demo.etr -text
+Studio/projects/sample_HelloWorld/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/images/bg-blanc-contenu.png -text
+Studio/projects/sample_HelloWorld/images/bg-gris-contenu.png -text
+Studio/projects/sample_HelloWorld/images/bg-gris-rubrique.png -text
+Studio/projects/sample_HelloWorld/images/header.png -text
+Studio/projects/sample_HelloWorld/images/iconError.png -text
+Studio/projects/sample_HelloWorld/images/iconHTML.png -text
+Studio/projects/sample_HelloWorld/images/iconHTTP.png -text
+Studio/projects/sample_HelloWorld/images/iconHTTPs.png -text
+Studio/projects/sample_HelloWorld/images/iconLegacy.png -text
+Studio/projects/sample_HelloWorld/images/iconOK.png -text
+Studio/projects/sample_HelloWorld/images/logo-convertigo.png -text
+Studio/projects/sample_HelloWorld/images/puce.png -text
+Studio/projects/sample_HelloWorld/images/top-bg-blanc-contenu.png -text
+Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
+Studio/projects/sample_HelloWorld/sample_HelloWorld.wsdl -text
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text
+Studio/projects/sample_HelloWorld/sample_HelloWorld.xsd -text
+Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/.project -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.xml -text svneol=unset#text/plain
+Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.xsd -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/.project -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/sample_database_XLS.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/sample_database_XLS.xml -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/sample_database_XLS.xsd -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/xls/emptyPeopleTable.xls -text
+Studio/projects/sample_database_XLS/xls/fullPeopleTable.xls -text
+Studio/projects/sample_documentation_CLI/.project -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLI/Traces/demo5250Connector/legacyintegrator-01.etr -text
+Studio/projects/sample_documentation_CLI/articlesList.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLI/articlesListWithCMCevent.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLI/img/googleSearch_logo.png -text
+Studio/projects/sample_documentation_CLI/sample_documentation_CLI.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLI/sample_documentation_CLI.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLI/sample_documentation_CLI.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/Traces/demo5250Connector/demo.etr -text
+Studio/projects/sample_documentation_CLP/css/calendar-system.css -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/css/exception.css -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/css/mashupUtils.css -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/css/sna.css -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/css/tooltip.css -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/error.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/images/arrow-right-triple.gif -text
+Studio/projects/sample_documentation_CLP/images/ascending.gif -text
+Studio/projects/sample_documentation_CLP/images/ascending_sug.gif -text
+Studio/projects/sample_documentation_CLP/images/btn-arrow-02.png -text
+Studio/projects/sample_documentation_CLP/images/btn-arrow.png -text
+Studio/projects/sample_documentation_CLP/images/button-gfx.png -text
+Studio/projects/sample_documentation_CLP/images/convertigo-small.gif -text
+Studio/projects/sample_documentation_CLP/images/croix.gif -text
+Studio/projects/sample_documentation_CLP/images/descending.gif -text
+Studio/projects/sample_documentation_CLP/images/disabledbutton-gfx.png -text
+Studio/projects/sample_documentation_CLP/images/ex_ascending.gif -text
+Studio/projects/sample_documentation_CLP/images/ex_descending.gif -text
+Studio/projects/sample_documentation_CLP/images/loading.gif -text
+Studio/projects/sample_documentation_CLP/images/menuarrow.gif -text
+Studio/projects/sample_documentation_CLP/images/menuarrow2.gif -text
+Studio/projects/sample_documentation_CLP/images/msxml_inst.gif -text
+Studio/projects/sample_documentation_CLP/images/pixel.gif -text
+Studio/projects/sample_documentation_CLP/images/separator.gif -text
+Studio/projects/sample_documentation_CLP/images/slider-arrow-bottom.gif -text
+Studio/projects/sample_documentation_CLP/images/slider-arrow-top.gif -text
+Studio/projects/sample_documentation_CLP/images/sort_num.gif -text
+Studio/projects/sample_documentation_CLP/images/sort_text.gif -text
+Studio/projects/sample_documentation_CLP/images/spacer.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-sel-left-border.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-sel-middle.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-sel-right-border.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-unsel-left-border.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-unsel-middle.gif -text
+Studio/projects/sample_documentation_CLP/images/tab-unsel-right-border.gif -text
+Studio/projects/sample_documentation_CLP/images/tabs-sprite.png -text
+Studio/projects/sample_documentation_CLP/images/text-bg.png -text
+Studio/projects/sample_documentation_CLP/images/toolbar_bg.png -text
+Studio/projects/sample_documentation_CLP/images/twinsoft.gif -text
+Studio/projects/sample_documentation_CLP/images/unsort.gif -text
+Studio/projects/sample_documentation_CLP/images/wait.gif -text
+Studio/projects/sample_documentation_CLP/index.html -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/sample_documentation_CLP.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/sample_documentation_CLP.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/sample_documentation_CLP.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/scripts/calendar-en.js -text
+Studio/projects/sample_documentation_CLP/scripts/calendar-fr.js -text
+Studio/projects/sample_documentation_CLP/scripts/calendar-setup.js -text
+Studio/projects/sample_documentation_CLP/scripts/calendar.js -text
+Studio/projects/sample_documentation_CLP/scripts/contextMenu.js -text
+Studio/projects/sample_documentation_CLP/scripts/keymapsna.js -text
+Studio/projects/sample_documentation_CLP/scripts/keymapvt220.js -text
+Studio/projects/sample_documentation_CLP/scripts/mashupUtils.js -text
+Studio/projects/sample_documentation_CLP/scripts/position.js -text
+Studio/projects/sample_documentation_CLP/scripts/scriptlib-param.js -text
+Studio/projects/sample_documentation_CLP/scripts/scriptlib.js -text
+Studio/projects/sample_documentation_CLP/scripts/selectMenu.js -text
+Studio/projects/sample_documentation_CLP/scripts/tooltip.js -text
+Studio/projects/sample_documentation_CLP/scripts/xmlparse.js -text
+Studio/projects/sample_documentation_CLP/sna.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/activewidgettable.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/buttonsPanel.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/checkbox.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/checkboxesPanel.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/choice.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/commands.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/date.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/field.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/image.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/keyword.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/mashupUtils.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/menu.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/panel.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/radio.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/radioPanel.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/separator.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/slider.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/snamenu.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/static.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/status.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/tabbox.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/table-mod.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/templates/table.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/variables.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/.project -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/hub/default_hub.html -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/hub/default_hub.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/images/convertigo-small.gif -text
+Studio/projects/sample_documentation_CMC/sample_documentation_CMC.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/sample_documentation_CMC.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/sample_documentation_CMC.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/databaseUtils/empty[!!-~]database[!!-~]creation[!!-~]script.sql -text
+Studio/projects/sample_documentation_CMS/sample_documentation_CMS.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/sample_documentation_CMS.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/sample_documentation_CMS.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWC/results.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWC/sample_documentation_CWC.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWC/sample_documentation_CWC.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWC/sample_documentation_CWC.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWI/results.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWI/sample_documentation_CWI.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWI/sample_documentation_CWI.xml -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CWI/sample_documentation_CWI.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_http/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_http/sample_refManual_http.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_http/sample_refManual_http.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_http/sample_refManual_http.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/css/bluebg.css -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/js/alert.js -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/sample_refManual_siteClipper.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/sample_refManual_siteClipper.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_siteClipper/sample_refManual_siteClipper.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/sample_refManual_statements.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/sample_refManual_statements.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/sample_refManual_statements.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/xsl/leads.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/xsl/leadsdetails.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/xsl/notConnected.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_statements/xsl/results.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/sample_refManual_steps.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/sample_refManual_steps.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/sample_refManual_steps.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/xsl/email.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/results.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/sample_refManual_variables.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/sample_refManual_variables.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/sample_refManual_variables.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/New_Style_sheet.xsl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/img/button_img.png -text
+Studio/projects/sample_refManual_webClipper/logo-convertigo.png -text
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xml -text svneol=unset#text/plain
+Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/.project -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/sample_sequencer.wsdl -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/sample_sequencer.xml -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/sample_sequencer.xsd -text svneol=unset#text/plain
+Studio/projects/template_CICS/template_CICS.wsdl -text svneol=unset#text/plain
+Studio/projects/template_CICS/template_CICS.xml -text svneol=unset#text/plain
+Studio/projects/template_CICS/template_CICS.xsd -text svneol=unset#text/plain
+Studio/projects/template_FLEX/.actionScriptProperties -text
+Studio/projects/template_FLEX/.flexProperties -text
+Studio/projects/template_FLEX/.project -text svneol=unset#text/plain
+Studio/projects/template_FLEX/.settings/com.adobe.flexbuilder.project.prefs -text svneol=unset#text/plain
+Studio/projects/template_FLEX/.settings/org.eclipse.ltk.core.refactoring.prefs -text svneol=unset#text/plain
+Studio/projects/template_FLEX/build.xml -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/AC_OETags.js -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/history/history.css -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/history/history.js -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/history/historyFrame.html -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/index.template.html -text svneol=unset#text/plain
+Studio/projects/template_FLEX/html-template/playerProductInstall.swf -text
+Studio/projects/template_FLEX/index.html -text
+Studio/projects/template_FLEX/js/AC_OETags.js -text svneol=unset#text/plain
+Studio/projects/template_FLEX/js/history/history.css -text svneol=unset#text/plain
+Studio/projects/template_FLEX/js/history/history.js -text svneol=unset#text/plain
+Studio/projects/template_FLEX/js/history/historyFrame.html -text svneol=unset#text/plain
+Studio/projects/template_FLEX/src/ConvertiFlexRun.mxml -text svneol=unset#text/plain
+Studio/projects/template_FLEX/src/skins/C8oButtonSkin.mxml -text
+Studio/projects/template_FLEX/src/skins/C8oDropDownListItemRenderer.mxml -text
+Studio/projects/template_FLEX/src/skins/C8oDropDownListSkin.mxml -text
+Studio/projects/template_FLEX/src/skins/C8oTextInputSkin.mxml -text svneol=unset#text/plain
+Studio/projects/template_FLEX/src/skins/ImageButtonSkin.mxml -text svneol=unset#text/plain
+Studio/projects/template_FLEX/template_FLEX.wsdl -text svneol=unset#text/plain
+Studio/projects/template_FLEX/template_FLEX.xml -text svneol=unset#text/plain
+Studio/projects/template_FLEX/template_FLEX.xsd -text svneol=unset#text/plain
+Studio/projects/template_FLEX/themes/c8o/images/background.jpg -text
+Studio/projects/template_FLEX/themes/c8o/images/gridColonsSeparator.jpg -text
+Studio/projects/template_FLEX/themes/c8o/images/loading.swf -text
+Studio/projects/template_FLEX/themes/c8o/styleskin.css -text svneol=unset#text/plain
+Studio/projects/template_FLEX/themes/flex/images/background.jpg -text
+Studio/projects/template_FLEX/themes/flex/images/gridColonsSeparator.jpg -text
+Studio/projects/template_FLEX/themes/flex/images/loading.swf -text
+Studio/projects/template_FLEX/themes/flex/styleskin.css -text svneol=unset#text/plain
+Studio/projects/template_FLEX/themes/legacy/images/background.jpg -text
+Studio/projects/template_FLEX/themes/legacy/images/gridColonsSeparator.jpg -text
+Studio/projects/template_FLEX/themes/legacy/images/loading.swf -text
+Studio/projects/template_FLEX/themes/legacy/styleskin.css -text svneol=unset#text/plain
+Studio/projects/template_HTTP/template_HTTP.wsdl -text svneol=unset#text/plain
+Studio/projects/template_HTTP/template_HTTP.xml -text svneol=unset#text/plain
+Studio/projects/template_HTTP/template_HTTP.xsd -text svneol=unset#text/plain
+Studio/projects/template_SQL/.project -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.wsdl -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.xml -text svneol=unset#text/plain
+Studio/projects/template_SQL/template_SQL.xsd -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/.project -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/css/custom.css -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/css/custom.css -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/css/jquery-ui-1.8.23.custom.css -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_flat_0_aaaaaa_40x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_flat_15_cd0a0a_40x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_100_e4f1fb_1x400.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_50_3baae3_1x400.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_80_d7ebf9_1x400.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-hard_70_000000_1x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-soft_100_deedf7_1x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-soft_25_ffef8f_1x100.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_2694e8_256x240.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_2e83ff_256x240.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_3d80b3_256x240.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_72a7cf_256x240.png -text
+Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_ffffff_256x240.png -text
+Studio/projects/template_SQL_jQueryWeb/html/index.html -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/js/custom.js -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/js/jquery-1.7.2.min.js -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/html/js/jquery-ui-1.8.18.custom.min.js -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/images/convertigo-small.gif -text
+Studio/projects/template_SQL_jQueryWeb/index.html -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/js/custom.js -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.wsdl -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xml -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xsd -text svneol=unset#text/plain
+Studio/projects/template_crawling/crawlingProjectTemplate.wsdl -text
+Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset#text/plain
+Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text
+Studio/projects/template_interactionHub/hub/default_hub.html -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/hub/default_hub.xml -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/template_interactionHub.wsdl -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/template_interactionHub.xml -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/template_interactionHub.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelin/css/calendar-system.css -text
+Studio/projects/template_javelin/css/exception.css -text
+Studio/projects/template_javelin/css/mashupUtils.css -text
+Studio/projects/template_javelin/css/sna.css -text
+Studio/projects/template_javelin/css/tooltip.css -text
+Studio/projects/template_javelin/error.xsl -text
+Studio/projects/template_javelin/images/arrow-right-triple.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/ascending.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/ascending_sug.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/bg_repeaty.jpg -text
+Studio/projects/template_javelin/images/bg_titletable.jpg -text
+Studio/projects/template_javelin/images/btn-arrow-02.png -text
+Studio/projects/template_javelin/images/btn-arrow.png -text
+Studio/projects/template_javelin/images/button-gfx.png -text
+Studio/projects/template_javelin/images/button-gfx_over.png -text
+Studio/projects/template_javelin/images/convertigo-small.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/croix.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/descending.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/disabledbutton-gfx.png -text
+Studio/projects/template_javelin/images/ex_ascending.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/ex_descending.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/icon_details_error_xsl.png -text
+Studio/projects/template_javelin/images/icon_error_xsl.png -text
+Studio/projects/template_javelin/images/loading.gif -text
+Studio/projects/template_javelin/images/logo_convertigo_mashup_server300_error.png -text
+Studio/projects/template_javelin/images/menuarrow.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/menuarrow2.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/msxml_inst.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/pixel.gif -text
+Studio/projects/template_javelin/images/separator.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/slider-arrow-bottom.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/slider-arrow-top.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/sort_num.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/sort_text.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/spacer.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-sel-left-border.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-sel-middle.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-sel-right-border.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-unsel-left-border.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-unsel-middle.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tab-unsel-right-border.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/tabs-sprite.png -text
+Studio/projects/template_javelin/images/text-bg.png -text
+Studio/projects/template_javelin/images/toolbar_bg.png -text
+Studio/projects/template_javelin/images/twinsoft.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/unsort.gif -text svneol=unset#unset
+Studio/projects/template_javelin/images/wait.gif -text
+Studio/projects/template_javelin/scripts/calendar-en.js -text
+Studio/projects/template_javelin/scripts/calendar-fr.js -text
+Studio/projects/template_javelin/scripts/calendar-setup.js -text
+Studio/projects/template_javelin/scripts/calendar.js -text
+Studio/projects/template_javelin/scripts/contextMenu.js -text
+Studio/projects/template_javelin/scripts/keymapsna.js -text
+Studio/projects/template_javelin/scripts/keymapvt220.js -text
+Studio/projects/template_javelin/scripts/mashupUtils.js -text
+Studio/projects/template_javelin/scripts/position.js -text
+Studio/projects/template_javelin/scripts/scriptlib-param.js -text
+Studio/projects/template_javelin/scripts/scriptlib.js -text
+Studio/projects/template_javelin/scripts/selectMenu.js -text
+Studio/projects/template_javelin/scripts/tooltip.js -text
+Studio/projects/template_javelin/scripts/xmlparse.js -text
+Studio/projects/template_javelin/sna.xsl -text
+Studio/projects/template_javelin/template_javelin.wsdl -text svneol=unset#text/plain
+Studio/projects/template_javelin/template_javelin.xml -text svneol=unset#text/plain
+Studio/projects/template_javelin/template_javelin.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelin/templates/activewidgettable.xsl -text
+Studio/projects/template_javelin/templates/buttonsPanel.xsl -text
+Studio/projects/template_javelin/templates/checkbox.xsl -text
+Studio/projects/template_javelin/templates/checkboxesPanel.xsl -text
+Studio/projects/template_javelin/templates/choice.xsl -text
+Studio/projects/template_javelin/templates/commands.xsl -text
+Studio/projects/template_javelin/templates/date.xsl -text
+Studio/projects/template_javelin/templates/field.xsl -text
+Studio/projects/template_javelin/templates/image.xsl -text
+Studio/projects/template_javelin/templates/keyword.xsl -text
+Studio/projects/template_javelin/templates/mashupUtils.xsl -text
+Studio/projects/template_javelin/templates/menu.xsl -text
+Studio/projects/template_javelin/templates/panel.xsl -text
+Studio/projects/template_javelin/templates/radio.xsl -text
+Studio/projects/template_javelin/templates/radioPanel.xsl -text
+Studio/projects/template_javelin/templates/separator.xsl -text
+Studio/projects/template_javelin/templates/slider.xsl -text
+Studio/projects/template_javelin/templates/snamenu.xsl -text
+Studio/projects/template_javelin/templates/static.xsl -text
+Studio/projects/template_javelin/templates/status.xsl -text
+Studio/projects/template_javelin/templates/tabbox.xsl -text
+Studio/projects/template_javelin/templates/table-mod.xsl -text
+Studio/projects/template_javelin/templates/table.xsl -text
+Studio/projects/template_javelin/variables.xsl -text
+Studio/projects/template_javelinDKU/css/calendar-system.css -text
+Studio/projects/template_javelinDKU/css/exception.css -text
+Studio/projects/template_javelinDKU/css/sna.css -text
+Studio/projects/template_javelinDKU/css/tooltip.css -text
+Studio/projects/template_javelinDKU/error.xsl -text
+Studio/projects/template_javelinDKU/images/arrow-right-triple.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/ascending.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/ascending_sug.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/convertigo-small.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/croix.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/descending.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/ex_ascending.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/ex_descending.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/icon_details_error_xsl.png -text
+Studio/projects/template_javelinDKU/images/icon_error_xsl.png -text
+Studio/projects/template_javelinDKU/images/logo_convertigo_mashup_server300_error.png -text
+Studio/projects/template_javelinDKU/images/menuarrow.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/menuarrow2.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/msxml_inst.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/pixel.png -text
+Studio/projects/template_javelinDKU/images/separator.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/slider-arrow-bottom.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/slider-arrow-top.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/sort_num.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/sort_text.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/spacer.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-sel-left-border.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-sel-middle.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-sel-right-border.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-unsel-left-border.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-unsel-middle.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/tab-unsel-right-border.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/twinsoft.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/unsort.gif -text svneol=unset#unset
+Studio/projects/template_javelinDKU/images/wait-blue.gif -text
+Studio/projects/template_javelinDKU/images/wait.gif -text
+Studio/projects/template_javelinDKU/scripts/calendar-en.js -text
+Studio/projects/template_javelinDKU/scripts/calendar-fr.js -text
+Studio/projects/template_javelinDKU/scripts/calendar-setup.js -text
+Studio/projects/template_javelinDKU/scripts/calendar.js -text
+Studio/projects/template_javelinDKU/scripts/contextMenu.js -text
+Studio/projects/template_javelinDKU/scripts/keymapdku.js -text
+Studio/projects/template_javelinDKU/scripts/keymapvt220.js -text
+Studio/projects/template_javelinDKU/scripts/position.js -text
+Studio/projects/template_javelinDKU/scripts/scriptlib-param.js -text
+Studio/projects/template_javelinDKU/scripts/scriptlib.js -text
+Studio/projects/template_javelinDKU/scripts/selectMenu.js -text
+Studio/projects/template_javelinDKU/scripts/tooltip.js -text
+Studio/projects/template_javelinDKU/scripts/xmlparse.js -text
+Studio/projects/template_javelinDKU/sna.xsl -text
+Studio/projects/template_javelinDKU/template_javelinDKU.wsdl -text svneol=unset#text/plain
+Studio/projects/template_javelinDKU/template_javelinDKU.xml -text svneol=unset#text/plain
+Studio/projects/template_javelinDKU/template_javelinDKU.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelinDKU/templates/activewidgettable.xsl -text
+Studio/projects/template_javelinDKU/templates/checkbox.xsl -text
+Studio/projects/template_javelinDKU/templates/choice.xsl -text
+Studio/projects/template_javelinDKU/templates/date.xsl -text
+Studio/projects/template_javelinDKU/templates/field.xsl -text
+Studio/projects/template_javelinDKU/templates/image.xsl -text
+Studio/projects/template_javelinDKU/templates/keyword.xsl -text
+Studio/projects/template_javelinDKU/templates/panel.xsl -text
+Studio/projects/template_javelinDKU/templates/radio.xsl -text
+Studio/projects/template_javelinDKU/templates/separator.xsl -text
+Studio/projects/template_javelinDKU/templates/slider.xsl -text
+Studio/projects/template_javelinDKU/templates/snamenu.xsl -text
+Studio/projects/template_javelinDKU/templates/static.xsl -text
+Studio/projects/template_javelinDKU/templates/tabbox.xsl -text
+Studio/projects/template_javelinDKU/templates/table-mod.xsl -text
+Studio/projects/template_javelinDKU/templates/table.xsl -text
+Studio/projects/template_javelinDKU/variables.xsl -text
+Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -text svneol=unset#text/plain
+Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
+Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/templates_jscode.js -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_pages.html -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/config.xml -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/c8o.css -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/16x16.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/57x57.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/phoneStartup320x480.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/phoneStartup480x320.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/phoneStartup640x960.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/phoneStartup960x640.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/tabletStartup1024x768.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/tabletStartup768x1024.png -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sass/c8o.scss -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sass/config.rb -text
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/details.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/googleMap.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/listDisplay.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/loginForm.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/searchForm.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/data/list.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileSencha/template_mobileSencha.wsdl -text
+Studio/projects/template_mobileSencha/template_mobileSencha.xml -text
+Studio/projects/template_mobileSencha/template_mobileSencha.xsd -text svneol=unset#text/plain
+Studio/projects/template_sequence/template_sequence.wsdl -text svneol=unset#text/plain
+Studio/projects/template_sequence/template_sequence.xml -text svneol=unset#text/plain
+Studio/projects/template_sequence/template_sequence.xsd -text svneol=unset#text/plain
+Studio/projects/template_siteClipper/template_siteClipper.wsdl -text svneol=unset#text/plain
+Studio/projects/template_siteClipper/template_siteClipper.xml -text svneol=unset#text/plain
+Studio/projects/template_siteClipper/template_siteClipper.xsd -text svneol=unset#text/plain
+Studio/projects/template_webClipping/template_webClipping.wsdl -text svneol=unset#text/plain
+Studio/projects/template_webClipping/template_webClipping.xml -text svneol=unset#text/plain
+Studio/projects/template_webClipping/template_webClipping.xsd -text svneol=unset#text/plain
+Studio/projects/template_webIntegration/template_webIntegration.wsdl -text svneol=unset#text/plain
+Studio/projects/template_webIntegration/template_webIntegration.xml -text svneol=unset#text/plain
+Studio/projects/template_webIntegration/template_webIntegration.xsd -text svneol=unset#text/plain
 Studio/readme.txt -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/BeansDoc.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/CheckBeans.java -text svneol=unset#text/plain

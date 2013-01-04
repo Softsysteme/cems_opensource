@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:h="library://ns.adobe.com/flex/halo"
+			   xmlns:cx= "library://com.convertigo.convertiflex"
+			   xmlns:mx="library://ns.adobe.com/flex/mx" styleName="styleApplication" xmlns:convertiflex="com.convertigo.convertiflex.*" creationComplete="onLoadComplete()">
+	
+	<fx:Style source="../themes/c8o/styleskin.css"/>
+	
+	<convertiflex:ConvertiFlex styleName="convertiflexContainer" id="convertiflex" width="{appWidth}" height="{appHeight}" shadowBar="none" scalable="true" resizable="true" buttonBar="true" titleBar="none" useLoading="true" displayDisabledButtons="true">
+		<mx:Canvas id="views" width="{appWidth}" height="{appHeight}" horizontalScrollPolicy="off" verticalScrollPolicy="off" >
+			<mx:Canvas id="screenTwo" width="{appWidth}" height="{appHeight}">
+				<s:BorderContainer width="{appWidth}" height="{appHeight}" id="mainContainer2" styleName="mainContainer" >					
+					<!---
+					the s:BorderContainer (id="titleContainer1") is the container
+					on which will be displayed the 'title' controls
+					-->
+					<s:BorderContainer id="titleContainer2"  x="{spacerWidth}" y="{spacerHeight}" width="{titleContainerWidth}" height="{titleContainerHeight}" styleName="titleContainer">
+						<s:layout>
+							<s:HorizontalLayout verticalAlign="middle" />							
+						</s:layout>
+					</s:BorderContainer>
+					<!---
+					the s:BorderContainer (id="buttonContainer1") is the container
+					on which will be displayed command buttons
+					-->
+					<s:BorderContainer x="{spacerWidth}" y="{titleContainerHeight + spacerHeight*2}" width="{buttonContainerWidth}" height="{buttonContainerHeight}" id="buttonContainer2" styleName="buttonContainer" >
+						<s:layout>
+							<s:VerticalLayout paddingLeft="{int(spacerWidth)}" paddingRight="{int(spacerWidth)}"/>
+						</s:layout>
+					</s:BorderContainer>
+					<!---
+					the s:BorderContainer (id="displayContainer1") is the container
+					on which will be displayed rendered controls
+					-->
+					<s:BorderContainer id="displayContainer2" x="{buttonContainerWidth + spacerWidth*2}" y="{titleContainerHeight + spacerHeight*2}" width="{displayContainerWidth}" height="{displayContainerHeight}" styleName="displayContainer" />
+					<s:BorderContainer id="shadowContainer2"  x="{spacerWidth}" y="{appHeight - shadowContainerHeight - spacerHeight*2}" width="{shadowContainerWidth}" height="{shadowContainerHeight}" styleName="shadowContainer" />
+				</s:BorderContainer>
+			</mx:Canvas>
+			<mx:Canvas id="screenOne" width="{appWidth}" height="{appHeight}">
+				<s:BorderContainer width="{appWidth}" height="{appHeight}" id="mainContainer1" styleName="mainContainer" >					
+					<!---
+					the s:BorderContainer (id="titleContainer1") is the container
+					on which will be displayed the 'title' controls
+					-->
+					<s:BorderContainer id="titleContainer1"  x="{spacerWidth}" y="{spacerHeight}" width="{titleContainerWidth}" height="{titleContainerHeight}" styleName="titleContainer">
+						<s:layout>
+							<s:HorizontalLayout verticalAlign="middle" />							
+						</s:layout>
+					</s:BorderContainer>
+					<!---
+					the s:BorderContainer (id="buttonContainer1") is the container
+					on which will be displayed command buttons
+					-->
+					<s:BorderContainer x="{spacerWidth}" y="{titleContainerHeight + spacerHeight*2}" width="{buttonContainerWidth}" height="{buttonContainerHeight}" id="buttonContainer1" styleName="buttonContainer" >
+						<s:layout>
+							<s:VerticalLayout paddingLeft="{int(spacerWidth)}" paddingRight="{int(spacerWidth)}"/>
+						</s:layout>
+					</s:BorderContainer>
+					<!---
+					the s:BorderContainer (id="displayContainer1") is the container
+					on which will be displayed rendered controls
+					-->
+					<s:BorderContainer id="displayContainer1" x="{buttonContainerWidth + spacerWidth*2}" y="{titleContainerHeight + spacerHeight*2}" width="{displayContainerWidth}" height="{displayContainerHeight}" styleName="displayContainer" />
+					<s:BorderContainer id="shadowContainer1"  x="{spacerWidth}" y="{appHeight - shadowContainerHeight - spacerHeight*2}" width="{shadowContainerWidth}" height="{shadowContainerHeight}" styleName="shadowContainer" />
+				</s:BorderContainer>
+			</mx:Canvas>
+		</mx:Canvas>
+		<s:Label id="ver" x="{appWidth-70}" y="{appHeight-shadowContainerHeight}" initialize="ver.text = mx_internal::VERSION;" visible="true" />
+	</convertiflex:ConvertiFlex>		
+	
+	<fx:Script>		
+		<![CDATA[
+			import com.convertigo.convertiflex.ConvertiFlex;
+			
+			[Bindable] private var appWidth:Number;
+			[Bindable] private var appHeight:Number;
+			[Bindable] private var spacerWidth:Number;
+			[Bindable] private var spacerHeight:Number;
+			[Bindable] private var titleContainerWidth:Number;
+			[Bindable] private var titleContainerHeight:Number;
+			[Bindable] private var buttonContainerWidth:Number;
+			[Bindable] private var buttonContainerHeight:Number;
+			[Bindable] private var displayContainerWidth:Number;
+			[Bindable] private var displayContainerHeight:Number;
+			[Bindable] private var shadowContainerWidth:Number;
+			[Bindable] private var shadowContainerHeight:Number;
+			
+			public function onLoadComplete():void {
+				/**
+				 * initialize our app & components sizes
+				 */
+				appWidth = 700;
+				appHeight = 470;
+				spacerWidth = 4;
+				spacerHeight = 4;
+				shadowContainerWidth = appWidth-spacerWidth*2;
+				shadowContainerHeight = appHeight/23;
+				titleContainerWidth = appWidth-spacerWidth*2;
+				titleContainerHeight = 38;
+				buttonContainerWidth = 98;
+				buttonContainerHeight = appHeight-shadowContainerHeight-titleContainerHeight-spacerHeight*4;
+				displayContainerWidth = appWidth-buttonContainerWidth-spacerWidth*3;
+				displayContainerHeight = buttonContainerHeight;
+				
+				convertiflex.createFrameless(this);
+			}			
+		]]>		
+	</fx:Script>
+</s:Application>

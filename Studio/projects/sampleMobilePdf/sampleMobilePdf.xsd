@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobilePdf_ns="http://www.convertigo.com/convertigo/projects/sampleMobilePdf" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobilePdf">
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobilePdf_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sampleMobilePdf_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:group name="SenchaConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:group name="default_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:element name="pdfArticleConnector__getArticle" type="sampleMobilePdf_ns:pdfArticleConnector__getArticleRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="pdfArticleConnector__getArticleResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobilePdf_ns:pdfArticleConnector__getArticleResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="pdfArticleConnector__getArticleRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="pdfArticleConnector__getArticleResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="pdfArticleConnector__XMLize" type="sampleMobilePdf_ns:pdfArticleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="pdfArticleConnector__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobilePdf_ns:pdfArticleConnector__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="pdfArticleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="pdfArticleConnector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sampleMobilePdf_ns:pdfArticleConnectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="pdfArticleConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:element name="LoadList" type="sampleMobilePdf_ns:LoadListRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="LoadListResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobilePdf_ns:LoadListResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="LoadListRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="LoadListResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="Login" type="sampleMobilePdf_ns:LoginRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Sample Login sequence. Change this sequence to anything enabling a Login with a user and password to the target system. The best way is to call a Login transaction.
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="LoginResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobilePdf_ns:LoginResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="LoginRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[Sample Login sequence. Change this sequence to anything enabling a Login with a user and password to the target system. The best way is to call a Login transaction.
+
+
+]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="user" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="password" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="LoginResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobilePdf_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="logon" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="logon" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

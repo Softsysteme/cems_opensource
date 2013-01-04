@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_CICS" targetNamespace="http://www.convertigo.com/convertigo/projects/template_CICS" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_CICS_ns="http://www.convertigo.com/convertigo/projects/template_CICS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_CICS"><xsd:include schemaLocation="template_CICS.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CICSConnector__DefaultCICSTransactionResponse">
+    <wsdl:part name="parameters" element="template_CICS_ns:CICSConnector__DefaultCICSTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CICSConnector__DefaultCICSTransactionRequest">
+    <wsdl:part name="parameters" element="template_CICS_ns:CICSConnector__DefaultCICSTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="template_CICSPortType">
+    <wsdl:operation name="CICSConnector__DefaultCICSTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_CICS_ns:CICSConnector__DefaultCICSTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="template_CICS_ns:CICSConnector__DefaultCICSTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="template_CICSSOAPBinding" type="template_CICS_ns:template_CICSPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CICSConnector__DefaultCICSTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_CICS?CICSConnector__DefaultCICSTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="template_CICS">
+    <wsdl:port name="template_CICSSOAP" binding="template_CICS_ns:template_CICSSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_CICS/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

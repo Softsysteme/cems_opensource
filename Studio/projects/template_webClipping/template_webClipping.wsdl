@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_webClipping" targetNamespace="http://www.convertigo.com/convertigo/projects/template_webClipping" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:template_webClipping_ns="http://www.convertigo.com/convertigo/projects/template_webClipping" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_webClipping"><xsd:include schemaLocation="template_webClipping.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="webClippingTemplateConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="template_webClipping_ns:webClippingTemplateConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="webClippingTemplateConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="template_webClipping_ns:webClippingTemplateConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="template_webClippingPortType">
+    <wsdl:operation name="webClippingTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_webClipping_ns:webClippingTemplateConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="template_webClipping_ns:webClippingTemplateConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="template_webClippingSOAPBinding" type="template_webClipping_ns:template_webClippingPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="webClippingTemplateConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_webClipping?webClippingTemplateConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="template_webClipping">
+    <wsdl:port name="template_webClippingSOAP" binding="template_webClipping_ns:template_webClippingSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_webClipping/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

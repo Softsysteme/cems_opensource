@@ -1,0 +1,445 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace m "controls.*"; 
+
+global {	
+	fontFamily: "Lucida Console";
+	fontSize: 12;
+	fontWeight: normal;
+	selectionColor: #A0A0A0;
+	focusColor: #6a6a6a;
+	rollOverColor: #b5b5b5;
+}
+
+/*
+	default & base styles used is Convertiflex
+*/
+s|Application {
+	foregroundColor:#00ff00;
+	backgroundColor:#000000;
+}
+
+s|CheckBox {
+}
+
+/*
+MUST BE SET TO THIS VALUE FOR 3D
+*/
+mx|Container {
+	backgroundAlpha:0.0;
+}
+
+/*
+ComboBox style
+*/
+s|DropDownList {
+	skinClass: ClassReference("skins.C8oDropDownListSkin");
+	
+	chromeColor:#d5d5d5;
+	
+	color:#05252c;
+	alternatingItemColors: #ffffff, #eaf5ff;
+	textRollOverColor:#05252c;
+	overTextColor:#00ff00;
+	overBackgroundColor:#f0b26c;
+	
+	selectionColor:#f0b26c;
+	
+	selectedTextColor:#000000;
+	selectedBackgroundColor:#ffff00;
+}
+
+s|BorderContainer {
+	backgroundColor:black;
+	borderColor:black;
+	cornerRadius:8;
+	borderWeight:1;
+} 
+
+mx|DateChooser {
+	fontFamily: Calibri;
+	fontSize: 11;
+	color: #686868;
+	
+	textAlign:left;
+	
+	borderStyle: solid;
+	borderVisible: true;
+	borderColor:#dadada;
+	focusColor:#b6ff00;
+	cornerRadius:4;
+	selectionColor:#a2d2ff;
+	todayColor:#2B333C;
+	
+	textInputStyleName:textInput;	
+}
+
+s|TextInput {
+	fontFamily: "Lucida Console";
+	textIndent:3;
+	
+	borderColor: #cfffb2;
+	focusColor:#00ff00;
+}
+
+.textInput {
+	skinClass: ClassReference("skins.C8oTextInputSkin");
+	
+	fillColor:#eaffdd;
+	fillColorFocus:#ffffff;
+	
+	strokeColor:#cfffb2;
+	strokeColorFocus:#ffffff;
+	
+	color: #404040;
+	colorInvalid:#ff0000;
+	
+	fontSize: 11;
+	selectionColor: #cfffb2;
+}
+
+mx|Image {
+}
+
+s|Button {
+}
+
+s|Label {
+	lineBreak:explicit;
+	textDecoration:none;
+	baselineShift:0;
+	verticalAlign:middle;
+}
+
+mx|AdvancedDataGrid  {
+	/**
+	header attributes
+	*/
+	headerColors: #ffffff, #c0c0c0;
+	rollOverColor:#f0f0f0;	
+	
+	/**
+	grid attributes
+	*/
+	fontSize:10;
+	fontWeight:normal;	
+	
+	borderStyle:solid;
+	borderAlpha:1.0;
+	borderColor:#ececec;
+	
+	alternatingItemColors: #ffffff, #eaf5ff;
+	
+	contentBackgroundAlpha: 1.0;
+	contentBackgroundColor: red;
+	selectionColor:#ffc772;
+	
+	verticalGridLines: true;	
+	verticalGridLineColor: #f0f0f0;	
+	
+	/**
+	table cells text color
+	*/
+	color:#000000;
+	iconColor:#ffffff;
+}
+
+.advancedDataGrid {
+	/**
+	headerSeparatorSkin:Embed(source='images/gridColonsSeparator.jpg');
+	*/
+	
+	shadowVisible:false;
+	shadowColor:#000000;
+	shadowBlur:30.0;
+	shadowAngle:45;
+	shadowAlpha:0.25;
+	shadowDistance:0;
+	
+	insetX:-10;
+	insetY:0;
+}
+
+.dataGridHeaderStyleName {
+	textRollOverColor:#009abb;
+	horizontalAlign:left;
+	verticalAlign:middle;
+	color:#000000;
+	fontSize:10;
+	fontWeight:normal;  
+}
+
+.separator {
+	hidden:false;
+	color:green;
+}
+
+/*
+Container styles
+*/
+/*
+menu container
+*/
+.styleMenuContainer {
+	borderAlpha:0.0;	
+	backgroundAlpha:0.0;
+}
+
+.loading {
+	/**
+	path containing :// or ./ are considered absolute
+	otherwise root directory will be appended to form 
+	an absolute url
+	*/
+	loadingAnimation:"themes/legacy/images/loading.swf";
+	cornerRadius:24;
+	fontFamily:Arial;
+	fontSize:12;
+	fontWeight:bold;
+	backgroundColor:#333333;
+	backgroundAlpha:0.4;
+	borderStyle:thin;
+	borderColor:#595959;
+	borderWidth:2;
+	textColor:#00ff00;
+	textAlign:center;
+}
+
+/*
+title within title container
+*/
+/*
+title container
+*/
+.titleContainer {
+	fontSize:16;
+	fontWeight:bold;	
+	cornerRadius:8;
+	borderAlpha: 0;
+	backgroundColor:#000000;
+	borderColor:#000000;
+	textAlign:center;	
+	color:green;
+}
+
+.mainContainer {
+	backgroundColor:black;
+	backgroundAlpha:1.0;
+}
+
+/*
+buttonContainer & displayContainer styles
+*/
+.buttonContainer {
+	buttonTextAlign:left;
+	corner-radius:7;
+	borderColor:#070707;
+	borderWeight:1;
+	borderAlpha:0.15;	
+	backgroundColor:#000000;
+}
+
+.paneContainer {
+	/*	
+	backgroundColor:#f7f7f7;
+	backgroundAlpha:1.0;
+	*/
+}
+
+.stackContainer {
+	/*	
+	backgroundColor:#00ff00;
+	backgroundAlpha:1.0;
+	*/
+}
+
+.flexContainer {
+}
+
+.convertiflexContainer {
+	borderAlpha:0.0;
+	backgroundAlpha:0.0;
+}
+
+.displayContainer {
+	cornerRadius:7;
+	borderColor:#000000;
+	borderWeight:1;
+	borderAlpha:0.15;	
+	backgroundAlpha:1.0;
+	backgroundColor:#000000;
+	backgroundImage: Embed(source="images/background.jpg");
+	color:#00ff00;
+}
+
+/*
+shadows at the bottom
+*/
+.shadowContainer {
+	corner-radius:8;
+	backgroundAlpha:0.1;
+	backgroundColor:#bfbfbf;
+	borderAlpha:0.0;	
+}
+
+/*
+title within title container
+*/
+.title {
+	borderAlpha: 0;
+	textAlign:left;
+	contentBackgroundAlpha:0.0;
+}
+
+
+.menuK2000 {
+	textColor:#ffffff;
+	backgroundColor:#163A2e;
+	menuSelected:#00a000;
+	menuUnselected:#163A2E;
+	menuClicked:#7f0000;
+	
+	fontFamily:"Lucida Console";
+	fontWeight:normal;
+	fontSize:14;
+}
+
+.Panel {
+	borderColor:#00ff00;
+	borderAlpha:0.15;
+	borderWeight:5;
+	backgroundColor:#00ff00;
+	backgroundAlpha:0.25;
+	
+	shadowVisible:true;
+	shadowColor:#00ff00;
+	shadowBlur:30.0;
+	shadowAngle:0;
+	shadowAlpha:0.5;
+	shadowDistance:0;
+	
+	insetX:0;
+	insetY:5;
+}
+
+/*
+	buttonContainer buttons styles
+*/
+.keywords
+{
+	skinClass:ClassReference("skins.C8oButtonSkin");
+	textAlign:center;
+	
+	fontSize:10;
+	color: #404040;
+	textRollOverColor:#009abb;
+	textDownColor:#ffffff;
+	textBackgroundAlpha:0.0;
+	
+	cornerRadius: 4;
+	borderThickness: 1;
+	
+	borderColors: #E0E0E0, #808080;
+	overBorderColors: #808080, #e0e0e0;
+	downBorderColors: #808080, #e0e0e0;
+	
+	fillColors: #ffffff, #d5d5d5;
+	overFillColors:#ffffff, #787878;
+	downFillColors:#848484, #d5d5d5;
+}
+
+.grid {
+	alternatingItemColors: #f7f7f7, #ffffff;
+	color:#404040;
+	borderAlpha: 1;
+	borderColor: #000000;
+	borderStyle: solid;
+	borderVisible: true;
+}
+
+.header {	
+	fontWeight: bold;
+	color:#FFFFFF;
+}
+
+.styleSpinMenu {
+	color:#414141;
+	focusBarStartColor:#fefefe;
+	focusBarEndColor:#f1f5f5;
+	colors:#dadada, #ffffff, #ffffff, #dadada;
+	wheelBorderColor:#ebecee;
+	wheelBorderThickness:1;
+	wheelBorderSideThickness:1;
+}
+
+.titre {
+	color:#4682B4;
+}
+
+
+/* Foreground color styles for static text */
+.span.colorwhite {
+	color: white;
+}
+
+.span.colorblack {
+	color: #000000;
+}
+
+.span.colorcyan {
+	color: cyan;
+}
+
+.span.colormagenta {
+	color: magenta;
+}
+
+.span.coloryellow {
+	color: yellow;
+}
+
+.span.colorred {
+	color: red;
+}
+
+.span.colorgreen {
+	color: lime;
+}
+
+.span.colorblue {
+	color: #a6caf0;
+}
+
+/* Background color styles for static text */
+.span.bgcolorwhite {
+	
+}
+
+.span.bgcolorblack {
+	
+}
+
+.span.bgcolorcyan {
+	backgroundColor: #66CCFF;
+}
+
+.span.bgcolormagenta  {
+	backgroundColor: magenta;
+}
+.span.bgcoloryellow {
+	backgroundColor: #FFFF00;
+}
+
+.span.bgcolorred {
+	backgroundColor: #ff3d3d;
+}
+
+.span.bgcolorgreen {
+	
+}
+
+.span.bgcolorblue {
+	backgroundColor: #66CCFF;
+}
+

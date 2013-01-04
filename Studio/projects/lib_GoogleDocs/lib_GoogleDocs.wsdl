@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="lib_GoogleDocs" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleDocs" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:lib_GoogleDocs_ns="http://www.convertigo.com/convertigo/projects/lib_GoogleDocs" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleDocs"><xsd:include schemaLocation="lib_GoogleDocs.xsd"/>
+  	</xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="lib_GoogleDocsPortType">
+  </wsdl:portType>
+  <wsdl:binding name="lib_GoogleDocsSOAPBinding" type="lib_GoogleDocs_ns:lib_GoogleDocsPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="lib_GoogleDocs">
+    <wsdl:port name="lib_GoogleDocsSOAP" binding="lib_GoogleDocs_ns:lib_GoogleDocsSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/lib_GoogleDocs/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

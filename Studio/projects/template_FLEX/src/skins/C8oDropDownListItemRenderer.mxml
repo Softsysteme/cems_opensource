@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				autoDrawBackground="true">
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected"/>
+	</s:states>
+	
+	<s:Label text="{data.label}" color.normal="{getStyle('color')}" Color.selected backgroundColor.selected="{getStyle('selectionColor')}" color.selected="{getStyle('selectedTextColor')}"
+			 backgroundColor.hovered="{getStyle('overBackgroundColor')}" color.hovered="{getStyle('overTextColor')}"
+			 width="100%" height="25" paddingLeft="5" paddingTop="5"/>
+</s:ItemRenderer>
+

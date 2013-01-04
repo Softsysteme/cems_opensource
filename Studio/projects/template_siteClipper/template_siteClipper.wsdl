@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_siteClipper" targetNamespace="http://www.convertigo.com/convertigo/projects/template_siteClipper" xmlns:template_siteClipper_ns="http://www.convertigo.com/convertigo/projects/template_siteClipper" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_siteClipper"><xsd:include schemaLocation="template_siteClipper.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="template_siteClipperConnector__DefaultTransactionRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="template_siteClipperConnector__DefaultTransactionResponse_RPC">
+    <wsdl:part name="response" type="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="template_siteClipperConnector__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="template_siteClipper_ns:template_siteClipperConnector__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="template_siteClipperConnector__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="template_siteClipperPortType_RPC">
+    <wsdl:operation name="template_siteClipperConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="template_siteClipperPortType">
+    <wsdl:operation name="template_siteClipperConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="template_siteClipper_ns:template_siteClipperConnector__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="template_siteClipperSOAPBinding" type="template_siteClipper_ns:template_siteClipperPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="template_siteClipperConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_siteClipper?template_siteClipperConnector__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="template_siteClipperSOAPBinding_RPC" type="template_siteClipper_ns:template_siteClipperPortType_RPC">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="template_siteClipperConnector__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_siteClipper?template_siteClipperConnector__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/template_siteClipper"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/template_siteClipper"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="template_siteClipper">
+    <wsdl:port name="template_siteClipperSOAP" binding="template_siteClipper_ns:template_siteClipperSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_siteClipper/.wsl"/>
+    </wsdl:port>
+    <wsdl:port name="template_siteClipperSOAP_RPC" binding="template_siteClipper_ns:template_siteClipperSOAPBinding_RPC">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_siteClipper/.ws"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

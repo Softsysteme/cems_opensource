@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_webIntegration" targetNamespace="http://www.convertigo.com/convertigo/projects/template_webIntegration" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_webIntegration_ns="http://www.convertigo.com/convertigo/projects/template_webIntegration" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_webIntegration"><xsd:include schemaLocation="template_webIntegration.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="HTML_Connector__XMLizeResponse">
+    <wsdl:part name="parameters" element="template_webIntegration_ns:HTML_Connector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTML_Connector__XMLizeRequest">
+    <wsdl:part name="parameters" element="template_webIntegration_ns:HTML_Connector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="template_webIntegrationPortType">
+    <wsdl:operation name="HTML_Connector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_webIntegration_ns:HTML_Connector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="template_webIntegration_ns:HTML_Connector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="template_webIntegrationSOAPBinding" type="template_webIntegration_ns:template_webIntegrationPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HTML_Connector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_webIntegration?HTML_Connector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="template_webIntegration">
+    <wsdl:port name="template_webIntegrationSOAP" binding="template_webIntegration_ns:template_webIntegrationSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_webIntegration/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
