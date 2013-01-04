@@ -17,18 +17,18 @@
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="template_SQL_ns:ConvertigoErrorContextVariable"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="void__Default_transactionResponseData"/>
-    <xsd:element name="void__Default_transaction" type="template_SQL_ns:void__Default_transactionRequestData">
+    <xsd:complexType name="void__DefaultTransactionResponseData"/>
+    <xsd:element name="void__DefaultTransaction" type="template_SQL_ns:void__DefaultTransactionRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="void__Default_transactionResponse">
+    <xsd:element name="void__DefaultTransactionResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="template_SQL_ns:void__Default_transactionResponseData"/>
+                <xsd:element name="response" type="template_SQL_ns:void__DefaultTransactionResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="void__Default_transactionRequestData">
+    <xsd:complexType name="void__DefaultTransactionRequestData">
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>

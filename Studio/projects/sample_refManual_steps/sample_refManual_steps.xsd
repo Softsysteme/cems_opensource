@@ -187,21 +187,21 @@
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
-    <xsd:element name="void__Default_transaction" type="sample_refManual_steps_ns:void__Default_transactionRequestData">
+    <xsd:element name="void__DefaultTransaction" type="sample_refManual_steps_ns:void__DefaultTransactionRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="void__Default_transactionResponse">
+    <xsd:element name="void__DefaultTransactionResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_steps_ns:void__Default_transactionResponseData"/>
+                <xsd:element name="response" type="sample_refManual_steps_ns:void__DefaultTransactionResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="void__Default_transactionRequestData">
+    <xsd:complexType name="void__DefaultTransactionRequestData">
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>
-    <xsd:complexType name="void__Default_transactionResponseData"/>
+    <xsd:complexType name="void__DefaultTransactionResponseData"/>
     <xsd:complexType name="complex1342441465121StepType">
         <xsd:annotation/>
         <xsd:sequence>
