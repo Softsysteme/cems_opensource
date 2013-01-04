@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleDocumentationMobilizerSencha_ns="http://www.convertigo.com/convertigo/projects/sampleDocumentationMobilizerSencha" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleDocumentationMobilizerSencha">
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleDocumentationMobilizerSencha_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sampleDocumentationMobilizerSencha_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:group name="SenchaConnectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleDocumentationMobilizerSencha_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
-<xsd:element name="NewConnector__default_transaction" type="sampleDocumentationMobilizerSencha_ns:NewConnector__default_transactionRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="NewConnector__default_transactionResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sampleDocumentationMobilizerSencha_ns:NewConnector__default_transactionResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="NewConnector__default_transactionRequestData">
-<xsd:annotation/>
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="NewConnector__default_transactionResponseData">
-<xsd:sequence>
-<xsd:group minOccurs="0" ref="sampleDocumentationMobilizerSencha_ns:default_connectorTypes"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:group name="default_connectorTypes">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sampleDocumentationMobilizerSencha_ns:ConvertigoError"/>
-</xsd:sequence>
-</xsd:group>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleDocumentationMobilizerSencha_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sampleDocumentationMobilizerSencha_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:group name="SenchaConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleDocumentationMobilizerSencha_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:group name="default_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleDocumentationMobilizerSencha_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:element name="NewConnector__XMLize" type="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="NewConnector__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="NewConnector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="NewConnector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sampleDocumentationMobilizerSencha_ns:NewConnectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="NewConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleDocumentationMobilizerSencha_ns:ConvertigoError"/>
+        </xsd:sequence>
+    </xsd:group>
 </xsd:schema>
