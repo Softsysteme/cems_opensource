@@ -1,12 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sample_refManual_http" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http" xmlns:sample_refManual_http_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="sample_refManual_http" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_refManual_http_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_http">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http"><xsd:include schemaLocation="sample_refManual_http.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetDepartmentRequest">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartment">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetEmployeeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployeeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myDepartmentsListResponse">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myDepartmentsListRequest">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myEmployeesListResponse">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myEmployeesListRequest">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetEmployeeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployee">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sample_refManual_httpPortType">
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myDepartmentsList">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsListRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myEmployeesList">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesListRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myGetDepartment">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartmentRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myGetEmployee">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployeeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sample_refManual_httpSOAPBinding" type="sample_refManual_http_ns:sample_refManual_httpPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myDepartmentsList">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__myDepartmentsList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myEmployeesList">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__myEmployeesList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myGetDepartment">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__myGetDepartment"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myGetEmployee">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__myGetEmployee"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sample_refManual_http">
     <wsdl:port name="sample_refManual_httpSOAP" binding="sample_refManual_http_ns:sample_refManual_httpSOAPBinding">

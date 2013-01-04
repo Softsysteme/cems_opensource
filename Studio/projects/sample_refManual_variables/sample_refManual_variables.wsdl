@@ -39,6 +39,10 @@
     <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="GoogleConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="userLoginRequest">
     <wsdl:part name="parameters" element="sample_refManual_variables_ns:userLogin">
     </wsdl:part>
@@ -49,6 +53,10 @@
   </wsdl:message>
   <wsdl:message name="testLoginResponse">
     <wsdl:part name="parameters" element="sample_refManual_variables_ns:testLoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GoogleConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_variables_ns:GoogleConnector__XMLizeResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="GoogleConnector__searchGoogleHTTPResponse">
@@ -68,6 +76,34 @@
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="sample_refManual_variablesPortType">
+    <wsdl:operation name="testLogin">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:testLoginRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:testLoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLoginWithValues">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:testLoginWithValuesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:testLoginWithValuesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:userLoginRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:userLoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLoginWithDefault">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_variables_ns:userLoginWithDefaultRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_variables_ns:userLoginWithDefaultResponse">
+    </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GoogleConnector__multiSearchGoogle">
 <wsdl:documentation/>
       <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequest">
@@ -96,37 +132,56 @@
       <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__searchYahooResponse">
     </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="testLogin">
-<wsdl:documentation/>
-      <wsdl:input message="sample_refManual_variables_ns:testLoginRequest">
-    </wsdl:input>
-      <wsdl:output message="sample_refManual_variables_ns:testLoginResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="testLoginWithValues">
-<wsdl:documentation/>
-      <wsdl:input message="sample_refManual_variables_ns:testLoginWithValuesRequest">
-    </wsdl:input>
-      <wsdl:output message="sample_refManual_variables_ns:testLoginWithValuesResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="userLogin">
-<wsdl:documentation/>
-      <wsdl:input message="sample_refManual_variables_ns:userLoginRequest">
-    </wsdl:input>
-      <wsdl:output message="sample_refManual_variables_ns:userLoginResponse">
-    </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="userLoginWithDefault">
+    <wsdl:operation name="GoogleConnector__XMLize">
 <wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="sample_refManual_variables_ns:userLoginWithDefaultRequest">
+      <wsdl:input message="sample_refManual_variables_ns:GoogleConnector__XMLizeRequest">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_variables_ns:userLoginWithDefaultResponse">
+      <wsdl:output message="sample_refManual_variables_ns:GoogleConnector__XMLizeResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sample_refManual_variablesSOAPBinding" type="sample_refManual_variables_ns:sample_refManual_variablesPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="testLogin">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?testLogin"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testLoginWithValues">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?testLoginWithValues"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?userLogin"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLoginWithDefault">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_variables?userLoginWithDefault"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GoogleConnector__multiSearchGoogle">
 <wsdl:documentation/>
       <soap:operation soapAction="sample_refManual_variables?GoogleConnector__multiSearchGoogle"/>
@@ -167,39 +222,9 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="testLogin">
-<wsdl:documentation/>
-      <soap:operation soapAction="sample_refManual_variables?testLogin"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="testLoginWithValues">
-<wsdl:documentation/>
-      <soap:operation soapAction="sample_refManual_variables?testLoginWithValues"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="userLogin">
-<wsdl:documentation/>
-      <soap:operation soapAction="sample_refManual_variables?userLogin"/>
-      <wsdl:input>
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="userLoginWithDefault">
+    <wsdl:operation name="GoogleConnector__XMLize">
 <wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="sample_refManual_variables?userLoginWithDefault"/>
+      <soap:operation soapAction="sample_refManual_variables?GoogleConnector__XMLize"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>

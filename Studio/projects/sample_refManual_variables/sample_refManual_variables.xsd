@@ -17,47 +17,6 @@
             <xsd:element name="stacktrace" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:element name="GoogleConnector__Default_HTML_Transaction" type="sample_refManual_variables_ns:GoogleConnector__Default_HTML_TransactionRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="GoogleConnector__Default_HTML_TransactionResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__Default_HTML_TransactionResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="GoogleConnector__Default_HTML_TransactionRequestData">
-        <xsd:annotation/>
-        <xsd:sequence/>
-    </xsd:complexType>
-    <xsd:complexType name="GoogleConnector__Default_HTML_TransactionResponseData"/>
-    <xsd:element name="GoogleConnector__multiSearchGoogle" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="GoogleConnector__multiSearchGoogleResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="GoogleConnector__multiSearchGoogleRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="keywords">
-                <xsd:annotation>
-                    <xsd:appinfo>Keywords to be searched</xsd:appinfo>
-                </xsd:annotation>
-                <xsd:complexType>
-                    <xsd:sequence>
-                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
-                    </xsd:sequence>
-                </xsd:complexType>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="GoogleConnector__multiSearchGoogleResponseData"/>
     <xsd:element name="GoogleConnector__testVariablesVisibility" type="sample_refManual_variables_ns:GoogleConnector__testVariablesVisibilityRequestData">
         <xsd:annotation/>
     </xsd:element>
@@ -159,92 +118,6 @@
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="GoogleConnector__testVariablesVisibilityResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
-            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:element name="GoogleConnector__multiSearchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="GoogleConnector__multiSearchGoogleHTTPResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="keywords">
-                <xsd:annotation>
-                    <xsd:appinfo>Keywords to be searched</xsd:appinfo>
-                </xsd:annotation>
-                <xsd:complexType>
-                    <xsd:sequence>
-                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
-                    </xsd:sequence>
-                </xsd:complexType>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
-            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:element name="GoogleConnector__searchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="GoogleConnector__searchGoogleHTTPResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="GoogleConnector__searchGoogleHTTPRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="keyword" type="xsd:string">
-                <xsd:annotation>
-                    <xsd:appinfo>Keyword to be searched</xsd:appinfo>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="GoogleConnector__searchGoogleHTTPResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
-            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:element name="GoogleConnector__searchYahoo" type="sample_refManual_variables_ns:GoogleConnector__searchYahooRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="GoogleConnector__searchYahooResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchYahooResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="GoogleConnector__searchYahooRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="keyword" type="xsd:string">
-                <xsd:annotation>
-                    <xsd:appinfo>new variable</xsd:appinfo>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="GoogleConnector__searchYahooResponseData">
         <xsd:sequence>
             <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
@@ -417,5 +290,168 @@
                 <xsd:annotation/>
             </xsd:element>
         </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__multiSearchGoogle" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__multiSearchGoogleResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__multiSearchGoogleRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="keywords">
+                <xsd:annotation>
+                    <xsd:appinfo>Keywords to be searched</xsd:appinfo>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__multiSearchGoogleResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__multiSearchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__multiSearchGoogleHTTPResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__multiSearchGoogleHTTPResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="keywords">
+                <xsd:annotation>
+                    <xsd:appinfo>Keywords to be searched</xsd:appinfo>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__multiSearchGoogleHTTPResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__searchGoogleHTTP" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__searchGoogleHTTPResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchGoogleHTTPResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__searchGoogleHTTPRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="keyword" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Keyword to be searched</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__searchGoogleHTTPResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__searchYahoo" type="sample_refManual_variables_ns:GoogleConnector__searchYahooRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__searchYahooResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__searchYahooResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__searchYahooRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="keyword" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__searchYahooResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__XMLize" type="sample_refManual_variables_ns:GoogleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_variables_ns:GoogleConnector__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sample_refManual_variables_ns:GoogleConnectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="GoogleConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_variables_ns:ConvertigoError"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="listResults" type="sample_refManual_variables_ns:listResultsTableType"/>
+            <xsd:element minOccurs="0" name="errorMessage" type="sample_refManual_variables_ns:errorMessageTextType"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:complexType name="resultItem_listResultsRowType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="title" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="url" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="errorMessageTextType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="listResultsTableType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="resultItem" type="sample_refManual_variables_ns:resultItem_listResultsRowType"/>
+        </xsd:sequence>
+        <xsd:attribute name="referer" type="xsd:string" use="optional"/>
     </xsd:complexType>
 </xsd:schema>

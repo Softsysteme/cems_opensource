@@ -1,29 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sample_refManual_statements" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements" xmlns:sample_refManual_statements_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_statements" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions name="sample_refManual_statements" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sample_refManual_statements_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_statements" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"><xsd:include schemaLocation="sample_refManual_statements.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="googleSearchConnector__goToGoogleComResponse">
-    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse">
+  <wsdl:message name="ConvertigoWebSiteConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__goToGoogleComResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponseData">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__goToGoogleComRequest_RPC">
-  </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleRequest">
-    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogle">
+  <wsdl:message name="ConvertigoIntranetConnector__GoToHolidaysAppResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="googleSearchConnector__searchGoogleResponse_RPC">
     <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponseData">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleRequest_RPC">
+  <wsdl:message name="simpleGoogleConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:SalesForceConnector__LoginResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginFromPreferencesResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__PreferencesRegistrationResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoWebSiteConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleFormConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__searchBusinessRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:usDirectoryConnector__searchBusiness">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleOnePageResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:usDirectoryConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__fillFormResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleFormConnector__fillFormResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleOnePageResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__searchBusinessResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__PreferencesRegistrationRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistration">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleFormConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleFormConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__googleSearchResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__GoLeadsRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__GoLeads">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitRequest_RPC">
     <wsdl:part name="keyword" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="maxPages" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__GoLeadsResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:SalesForceConnector__GoLeadsResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__GoToHolidaysAppResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppResponseData">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="googleSearchConnector__searchGoogleOnePageRequest_RPC">
     <wsdl:part name="keyword" type="xsd:string">
     </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__GoToHolidaysAppRequest_RPC">
+    <wsdl:part name="username" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="password" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__Login">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoWebSiteConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:simpleGoogleConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__fillFormResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleFormConnector__fillFormResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__GoLeadsResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__GoLeadsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleRequest_RPC">
+    <wsdl:part name="keyword" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__googleSearchRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:simpleGoogleConnector__googleSearch">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__fillFormRequest_RPC">
+    <wsdl:part name="inputs" type="sample_refManual_statements_ns:ArrayOf_xsd_string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:usDirectoryConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__googleSearchRequest_RPC">
+    <wsdl:part name="keyword" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__searchBusinessResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConvertigoWebSiteConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__PreferencesRegistrationRequest_RPC">
+    <wsdl:part name="username" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="password" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimit">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__searchBusinessRequest_RPC">
+    <wsdl:part name="business" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="cityZIPcode" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="state" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__goToGoogleComRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="ConvertigoIntranetConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginFromPreferencesRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferences">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__GoLeadsRequest_RPC">
+    <wsdl:part name="viewName" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__fillFormRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleFormConnector__fillForm">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="simpleGoogleConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__XMLizeResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:SalesForceConnector__XMLizeResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginFromPreferencesRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="googleFormConnector__XMLizeRequest_RPC">
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginRequest_RPC">
+    <wsdl:part name="username" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="password" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usDirectoryConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:usDirectoryConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__XMLizeRequest_RPC">
   </wsdl:message>
   <wsdl:message name="googleSearchConnector__goToGoogleComRequest">
     <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__goToGoogleCom">
@@ -33,71 +275,103 @@
     <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePage">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitRequest_RPC">
-    <wsdl:part name="keyword" type="xsd:string">
-    </wsdl:part>
-    <wsdl:part name="maxPages" type="xsd:string">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="googleSearchConnector__searchGoogleResponse">
     <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponse">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleOnePageResponse">
-    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponse">
+  <wsdl:message name="SalesForceConnector__PreferencesRegistrationResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationResponse">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleOnePageResponse_RPC">
-    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponseData">
+  <wsdl:message name="SalesForceConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__XMLize">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__goToGoogleComResponse_RPC">
-    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponseData">
+  <wsdl:message name="simpleGoogleConnector__googleSearchResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchResponseData">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitRequest">
-    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimit">
+  <wsdl:message name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitResponse">
-    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponse">
+  <wsdl:message name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponseData">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="googleSearchConnector__searchGoogleWithLimitResponse_RPC">
-    <wsdl:part name="response" type="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponseData">
+  <wsdl:message name="ConvertigoIntranetConnector__GoToHolidaysAppRequest">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysApp">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:portType name="sample_refManual_statementsPortType_RPC">
-    <wsdl:operation name="googleSearchConnector__searchGoogleOnePage">
+  <wsdl:message name="SalesForceConnector__LoginResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:SalesForceConnector__LoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SalesForceConnector__LoginFromPreferencesResponse_RPC">
+    <wsdl:part name="response" type="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesResponseData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="googleSearchConnector__goToGoogleComResponse">
+    <wsdl:part name="parameters" element="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_refManual_statementsPortType">
+    <wsdl:operation name="ConvertigoIntranetConnector__GoToHolidaysApp">
 <wsdl:documentation/>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageRequest_RPC">
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppRequest">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponse_RPC">
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppResponse">
     </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="googleSearchConnector__searchGoogleWithLimit">
+    <wsdl:operation name="ConvertigoIntranetConnector__XMLize">
 <wsdl:documentation/>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitRequest_RPC">
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeRequest">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponse_RPC">
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__fillForm">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleFormConnector__fillFormRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleFormConnector__fillFormResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleFormConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleFormConnector__XMLizeResponse">
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__goToGoogleCom">
 <wsdl:documentation/>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComRequest_RPC">
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComRequest">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse_RPC">
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse">
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__searchGoogle">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleRequest_RPC">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleRequest">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponse_RPC">
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponse">
     </wsdl:output>
     </wsdl:operation>
-  </wsdl:portType>
-  <wsdl:portType name="sample_refManual_statementsPortType">
     <wsdl:operation name="googleSearchConnector__searchGoogleOnePage">
 <wsdl:documentation/>
       <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageRequest">
@@ -112,23 +386,301 @@
       <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponse">
     </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__GoLeads">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__GoLeadsRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__GoLeadsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__Login">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__LoginRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__LoginFromPreferences">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__PreferencesRegistration">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__googleSearch">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__searchBusiness">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_statements_ns:usDirectoryConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:usDirectoryConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="sample_refManual_statementsPortType_RPC">
+    <wsdl:operation name="ConvertigoIntranetConnector__GoToHolidaysApp">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoIntranetConnector__GoToHolidaysAppResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoIntranetConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoIntranetConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentationResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:ConvertigoWebSiteConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__fillForm">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleFormConnector__fillFormRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleFormConnector__fillFormResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleFormConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleFormConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__goToGoogleCom">
 <wsdl:documentation/>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComRequest">
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComRequest_RPC">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse">
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__goToGoogleComResponse_RPC">
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__searchGoogle">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleRequest">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleRequest_RPC">
     </wsdl:input>
-      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponse">
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__searchGoogleOnePage">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleOnePageResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__searchGoogleWithLimit">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__searchGoogleWithLimitResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:googleSearchConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:googleSearchConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__GoLeads">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__GoLeadsRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__GoLeadsResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__Login">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__LoginRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__LoginResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__LoginFromPreferences">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__LoginFromPreferencesResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__PreferencesRegistration">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__PreferencesRegistrationResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:SalesForceConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:SalesForceConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__googleSearch">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:simpleGoogleConnector__googleSearchResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__XMLize">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:simpleGoogleConnector__XMLizeResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__searchBusiness">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:usDirectoryConnector__searchBusinessResponse_RPC">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_statements_ns:usDirectoryConnector__XMLizeRequest_RPC">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_statements_ns:usDirectoryConnector__XMLizeResponse_RPC">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sample_refManual_statementsSOAPBinding" type="sample_refManual_statements_ns:sample_refManual_statementsPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConvertigoIntranetConnector__GoToHolidaysApp">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoIntranetConnector__GoToHolidaysApp"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoIntranetConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoIntranetConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoWebSiteConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__fillForm">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleFormConnector__fillForm"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleFormConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__goToGoogleCom">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__goToGoogleCom"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__searchGoogle">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogle"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__searchGoogleOnePage">
 <wsdl:documentation/>
       <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogleOnePage"/>
@@ -149,9 +701,9 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="googleSearchConnector__goToGoogleCom">
+    <wsdl:operation name="googleSearchConnector__XMLize">
 <wsdl:documentation/>
-      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__goToGoogleCom"/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__XMLize"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -159,9 +711,89 @@
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="googleSearchConnector__searchGoogle">
+    <wsdl:operation name="SalesForceConnector__GoLeads">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__GoLeads"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__Login">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__Login"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__LoginFromPreferences">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__LoginFromPreferences"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__PreferencesRegistration">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__PreferencesRegistration"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__googleSearch">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?simpleGoogleConnector__googleSearch"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?simpleGoogleConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__searchBusiness">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?usDirectoryConnector__searchBusiness"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__XMLize">
 <wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogle"/>
+      <soap:operation soapAction="sample_refManual_statements?usDirectoryConnector__XMLize"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -172,6 +804,86 @@
   </wsdl:binding>
   <wsdl:binding name="sample_refManual_statementsSOAPBinding_RPC" type="sample_refManual_statements_ns:sample_refManual_statementsPortType_RPC">
     <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConvertigoIntranetConnector__GoToHolidaysApp">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoIntranetConnector__GoToHolidaysApp"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoIntranetConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoIntranetConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoWebSiteConnector__downloadOperatingGuidePDFdocumentation"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertigoWebSiteConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?ConvertigoWebSiteConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__fillForm">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleFormConnector__fillForm"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleFormConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleFormConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__goToGoogleCom">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__goToGoogleCom"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="googleSearchConnector__searchGoogle">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogle"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="googleSearchConnector__searchGoogleOnePage">
 <wsdl:documentation/>
       <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogleOnePage"/>
@@ -192,9 +904,9 @@
         <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="googleSearchConnector__goToGoogleCom">
+    <wsdl:operation name="googleSearchConnector__XMLize">
 <wsdl:documentation/>
-      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__goToGoogleCom"/>
+      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__XMLize"/>
       <wsdl:input>
         <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
       </wsdl:input>
@@ -202,9 +914,89 @@
         <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="googleSearchConnector__searchGoogle">
+    <wsdl:operation name="SalesForceConnector__GoLeads">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__GoLeads"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__Login">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__Login"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__LoginFromPreferences">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__LoginFromPreferences"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__PreferencesRegistration">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__PreferencesRegistration"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SalesForceConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?SalesForceConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__googleSearch">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?simpleGoogleConnector__googleSearch"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="simpleGoogleConnector__XMLize">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?simpleGoogleConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__searchBusiness">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_statements?usDirectoryConnector__searchBusiness"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usDirectoryConnector__XMLize">
 <wsdl:documentation><![CDATA[]]></wsdl:documentation>
-      <soap:operation soapAction="sample_refManual_statements?googleSearchConnector__searchGoogle"/>
+      <soap:operation soapAction="sample_refManual_statements?usDirectoryConnector__XMLize"/>
       <wsdl:input>
         <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://www.convertigo.com/convertigo/projects/sample_refManual_statements"/>
       </wsdl:input>
