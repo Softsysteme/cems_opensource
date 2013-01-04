@@ -1080,16 +1080,6 @@ Studio/projects/sample_refManual_webClipper/logo-convertigo.png -text
 Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xml -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/sample_refManual_webClipper.xsd -text svneol=unset#text/plain
-Studio/projects/sequenceProjectSample/error.xsl -text svneol=unset#text/plain
-Studio/projects/sequenceProjectSample/error_fr.xsl -text svneol=unset#text/plain
-Studio/projects/sequenceProjectSample/img/close_window.png -text
-Studio/projects/sequenceProjectSample/img/e_back.gif -text
-Studio/projects/sequenceProjectSample/img/e_refresh.gif -text
-Studio/projects/sequenceProjectSample/img/loading.gif -text
-Studio/projects/sequenceProjectSample/img/title.png -text
-Studio/projects/sequenceProjectSample/index.jsp -text svneol=unset#text/plain
-Studio/projects/sequenceProjectSample/script/scriptlib.js -text
-Studio/projects/sequenceProjectSample/sequenceProjectSample.xml -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.wsdl -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.xml -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.xsd -text svneol=unset#text/plain

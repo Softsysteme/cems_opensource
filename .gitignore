@@ -152,11 +152,6 @@ Studio/projects/sample_refManual_webClipper/*.temp.*
 Studio/projects/sample_refManual_webClipper/Traces
 Studio/projects/sample_refManual_webClipper/_data
 Studio/projects/sample_refManual_webClipper/_private
-Studio/projects/sequenceProjectSample/.project
-Studio/projects/sequenceProjectSample/.settings
-Studio/projects/sequenceProjectSample/Traces
-Studio/projects/sequenceProjectSample/_data
-Studio/projects/sequenceProjectSample/_private
 Studio/projects/template_CICS/.project
 Studio/projects/template_CICS/Traces
 Studio/projects/template_CICS/_data
