@@ -3,12 +3,32 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CMS"><xsd:include schemaLocation="sample_documentation_CMS.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="DatabaseConnector__InsertArticleResponse">
-    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleResponse">
+  <wsdl:message name="InsertDataInBaseResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:InsertDataInBaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DatabaseConnector__SelectArticlesRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__SelectArticles">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetXMLDataRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:GetXMLData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsertDataInBaseRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:InsertDataInBase">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="DatabaseConnector__InsertWebSiteResponse">
     <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="New_SequenceResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:New_SequenceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DatabaseConnector__SelectArticlesResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__SelectArticlesResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="DatabaseConnector__InsertArticleRequest">
@@ -17,6 +37,26 @@
   </wsdl:message>
   <wsdl:message name="DatabaseConnector__InsertWebSiteRequest">
     <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSite">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DatabaseConnector__SelectAllArticlesRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__SelectAllArticles">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DatabaseConnector__InsertArticleResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__InsertArticleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DatabaseConnector__SelectAllArticlesResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:DatabaseConnector__SelectAllArticlesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="New_SequenceRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:New_Sequence">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetXMLDataResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CMS_ns:GetXMLDataResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="sample_documentation_CMSPortType">
@@ -28,10 +68,45 @@
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DatabaseConnector__InsertWebSite">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <wsdl:input message="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteRequest">
     </wsdl:input>
       <wsdl:output message="sample_documentation_CMS_ns:DatabaseConnector__InsertWebSiteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseConnector__SelectAllArticles">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CMS_ns:DatabaseConnector__SelectAllArticlesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CMS_ns:DatabaseConnector__SelectAllArticlesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseConnector__SelectArticles">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CMS_ns:DatabaseConnector__SelectArticlesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CMS_ns:DatabaseConnector__SelectArticlesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXMLData">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CMS_ns:GetXMLDataRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CMS_ns:GetXMLDataResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataInBase">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CMS_ns:InsertDataInBaseRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CMS_ns:InsertDataInBaseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="New_Sequence">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_documentation_CMS_ns:New_SequenceRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CMS_ns:New_SequenceResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -48,8 +123,58 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DatabaseConnector__InsertWebSite">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <soap:operation soapAction="sample_documentation_CMS?DatabaseConnector__InsertWebSite"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseConnector__SelectAllArticles">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CMS?DatabaseConnector__SelectAllArticles"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseConnector__SelectArticles">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CMS?DatabaseConnector__SelectArticles"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXMLData">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CMS?GetXMLData"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDataInBase">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CMS?InsertDataInBase"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="New_Sequence">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_documentation_CMS?New_Sequence"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
