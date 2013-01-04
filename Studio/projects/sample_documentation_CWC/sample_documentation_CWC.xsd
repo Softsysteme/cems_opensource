@@ -1,62 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CWC_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CWC" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CWC">
-<xsd:complexType name="ConvertigoErrorContextVariable">
-<xsd:attribute name="name" type="xsd:string"/>
-<xsd:attribute name="value" type="xsd:string"/>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoError">
-<xsd:sequence>
-<xsd:element name="context" type="sample_documentation_CWC_ns:ConvertigoErrorContext"/>
-<xsd:element name="exception" type="xsd:string"/>
-<xsd:element name="message" type="xsd:string"/>
-<xsd:element name="stacktrace" type="xsd:string"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="ConvertigoErrorContext">
-<xsd:sequence>
-<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CWC_ns:ConvertigoErrorContextVariable"/>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="GoogleConnector__DefaultWebClippingTransactionRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="GoogleConnector__DefaultWebClippingTransactionResponseData"/>
-<xsd:element name="GoogleConnector__GoGoogleCom" type="sample_documentation_CWC_ns:GoogleConnector__GoGoogleComRequestData"/>
-<xsd:element name="GoogleConnector__GoGoogleComResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CWC_ns:GoogleConnector__GoGoogleComResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="GoogleConnector__GoGoogleComRequestData">
-<xsd:sequence/>
-</xsd:complexType>
-<xsd:complexType name="GoogleConnector__GoGoogleComResponseData"/>
-<xsd:element name="GoogleConnector__SearchGoogleClip" type="sample_documentation_CWC_ns:GoogleConnector__SearchGoogleClipRequestData">
-<xsd:annotation/>
-</xsd:element>
-<xsd:element name="GoogleConnector__SearchGoogleClipResponse">
-<xsd:complexType>
-<xsd:sequence>
-<xsd:element name="response" type="sample_documentation_CWC_ns:GoogleConnector__SearchGoogleClipResponseData"/>
-</xsd:sequence>
-</xsd:complexType>
-</xsd:element>
-<xsd:complexType name="GoogleConnector__SearchGoogleClipRequestData">
-<xsd:annotation/>
-<xsd:sequence>
-<xsd:element name="keyword" type="xsd:string">
-<xsd:annotation>
-<xsd:appinfo>keyword to be searched</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-</xsd:sequence>
-</xsd:complexType>
-<xsd:complexType name="GoogleConnector__SearchGoogleClipResponseData">
-<xsd:sequence>
-<xsd:element minOccurs="0" name="error" type="sample_documentation_CWC_ns:ConvertigoError"/>
-<xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
-</xsd:sequence>
-</xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence>
+            <xsd:element name="context" type="sample_documentation_CWC_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CWC_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__GoGoogleCom" type="sample_documentation_CWC_ns:GoogleConnector__GoGoogleComRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__GoGoogleComResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_documentation_CWC_ns:GoogleConnector__GoGoogleComResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__GoGoogleComRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__GoGoogleComResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_documentation_CWC_ns:ConvertigoError"/>
+            <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__SearchGoogleClip" type="sample_documentation_CWC_ns:GoogleConnector__SearchGoogleClipRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__SearchGoogleClipResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_documentation_CWC_ns:GoogleConnector__SearchGoogleClipResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__SearchGoogleClipRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="keyword" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>keyword to be searched</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__SearchGoogleClipResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_documentation_CWC_ns:ConvertigoError"/>
+            <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleConnector__XMLize" type="sample_documentation_CWC_ns:GoogleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GoogleConnector__XMLizeResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_documentation_CWC_ns:GoogleConnector__XMLizeResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleConnector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleConnector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sample_documentation_CWC_ns:GoogleConnectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="GoogleConnectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_documentation_CWC_ns:ConvertigoError"/>
+            <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+        </xsd:sequence>
+    </xsd:group>
 </xsd:schema>
