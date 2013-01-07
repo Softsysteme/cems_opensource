@@ -3615,6 +3615,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilize
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerVacationWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerWebToPdfWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSenchaMobileWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencer1SampleWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSiteClipperProjectWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewVT220ConnectorWizard.java -text
