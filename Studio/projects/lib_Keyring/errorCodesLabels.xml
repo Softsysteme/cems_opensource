@@ -130,7 +130,7 @@
 	</erreur>
 	<erreur>
 		<code>32</code>
-		<label></label>
+		<label>The user does not exist in database</label>
 	</erreur>
 	<erreur>
 		<code>33</code>
