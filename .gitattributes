@@ -1337,50 +1337,9 @@ Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -te
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/templates_jscode.js -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/android/icon72hdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/android/icon96xhdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/bada/icon128.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/badawac/icon48type5.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/badawac/icon50type3.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/badawac/icon80type4.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/bb/icon80.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/ios/icon57.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/ios/icon572x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/ios/icon72.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/ios/icon722x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/webos/icon64.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/winphone/icon173tile.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/winphone/icon48.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/icon/winphone/icon62tile.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/hdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/hdpiLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/ldpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/ldpiLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/mdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/mdpiLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/xhdpi.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/android/xhdpiLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/bada/screenPortrait.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/badawac/splashType3.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/badawac/splashType4.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/badawac/splashType5.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/bb/splash225.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPad.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPad2x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/webos/splash64.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_pages.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
