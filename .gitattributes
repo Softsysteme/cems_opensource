@@ -1336,9 +1336,7 @@ Studio/projects/template_javelinDKU/variables.xsl -text
 Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/icon.png -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
@@ -1387,10 +1385,8 @@ Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_page
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
-Studio/projects/template_mobileSencha/DisplayObjects/mobile/config.xml -text
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/c8o.css -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_mobileSencha/DisplayObjects/mobile/icon.png -text
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
