@@ -759,7 +759,9 @@ Studio/projects/sampleMobileJQuery/sampleMobileJQuery.wsdl -text svneol=unset#te
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/icon.png -text
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
