@@ -872,6 +872,7 @@ Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.wsdl -text svneol=
 Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileSiebel/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
