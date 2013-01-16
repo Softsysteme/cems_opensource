@@ -935,6 +935,7 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/config.xml -te
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/icon.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/36x36.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/picture.jpg -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
