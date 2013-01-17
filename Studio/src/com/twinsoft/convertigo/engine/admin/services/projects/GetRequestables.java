@@ -72,10 +72,9 @@ public class GetRequestables extends XmlService {
 		Element e_project = createDatabaseObjectElement(document, project);		
 		Connector defaultConnector = project.getDefaultConnector();
 		e_project.setAttribute("defaultConnector", defaultConnector.getName());	
-		e_project.setAttribute("defaultTransaction", defaultConnector.getDefaultTransaction().getName());	
-
-		String sessionId = request.getSession().getId();
-		boolean bAdminRole = Engine.authenticatedSessionManager.hasRole(sessionId, Role.WEB_ADMIN);
+		e_project.setAttribute("defaultTransaction", defaultConnector.getDefaultTransaction().getName());
+		
+		boolean bAdminRole = Engine.authenticatedSessionManager.hasRole(request.getSession(), Role.WEB_ADMIN);
 		
 		for (Connector connector : project.getConnectorsList()) {			
 			Element e_connector = createDatabaseObjectElement(document, connector);				
