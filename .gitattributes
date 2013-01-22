@@ -5100,6 +5100,7 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/splash/webos/splash64.png -text
