@@ -799,6 +799,7 @@ Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPadL
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/res/splash/webos/splash64.png -text
@@ -855,6 +856,7 @@ Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/spla
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/res/splash/webos/splash64.png -text
@@ -912,6 +914,7 @@ Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiP
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileSiebel/DisplayObjects/mobile/res/splash/webos/splash64.png -text
@@ -975,6 +978,7 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/webos/splash64.png -text
@@ -1033,6 +1037,7 @@ Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splash
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/res/splash/webos/splash64.png -text
@@ -1095,6 +1100,7 @@ Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splash
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileWebToPdf/DisplayObjects/mobile/res/splash/webos/splash64.png -text
