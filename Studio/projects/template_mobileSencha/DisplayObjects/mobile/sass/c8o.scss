@@ -1,0 +1,66 @@
+//1. Variable overrides, example:
+	/* *** Global *** */
+	$base-color: #d5d5d5; /* Grey convertigo color*/
+	$base-gradient: 'bevel'; /* Type of general gradient 'matte', 'bevel', 'glossy', 'recessed', and 'flat'*/
+	
+	/* *** My Variables *** */
+	$bg-color: #00a4c8;
+	
+	/* *** Toolbar style *** */
+	$toolbar-background-color: #FF6600;
+	$toolbar-gradient: 'glossy';
+    
+	/* *** Forms *** */
+	$form-bg-color: #dddddd; //Background color of panel which contents form
+	$form-light:#aaaaaa; //Background color of labels and border
+	$form-dark : #666666; //Text color of labels and form's title
+	$form-field-bg-color:#dddddd; //Background color of fields
+	$form-field-height:60;//Height of line of each form's field
+	//$form-label-width:100;//Width labels (fixed in settingsForm.js 's code)
+
+ 
+// 2. Include Sencha Touch styles
+	@import 'sencha-touch/default/all';
+	@include sencha-panel;
+	@include sencha-buttons;
+	@include sencha-sheet;
+	@include sencha-picker;
+	@include sencha-tabs;
+	@include sencha-toolbar;
+	@include sencha-toolbar-forms;
+	@include sencha-carousel;
+	@include sencha-indexbar;
+	@include sencha-list;
+	@include sencha-list-paging;
+	@include sencha-list-pullrefresh;
+	@include sencha-layout;
+	@include sencha-form;
+	@include sencha-msgbox;
+	@include sencha-loading-spinner;
+ 
+//3. Define custom styles (can use SASS/Compass), example:
+
+	//first toolbar
+	.x-toolbar .x-layout-box-inner .x-field p {
+		margin:0;
+		padding:0;
+		margin-top:5px;
+		text-shadow: 0 1px 1px #fff;
+		color: #8f8f8f !important;
+		font-size:1.2em;
+	}
+	.x-toolbar .x-layout-box-inner .x-field p img {
+		margin-top:-5px;
+		margin-left:15px;
+		vertical-align:middle;
+	}
+	
+	//2nd toolbar
+	.x-toolbar .x-toolbar-title {
+		@include background-gradient($bg-color, 'bevel');
+		@include bevel-box('highlight');
+		-webkit-box-shadow: 0px 2px 8px #224047 inset;
+		color:#006699;
+		text-shadow: 0 1px 1px #7ce6ff;
+		border-bottom:1px solid #006699;
+	}
