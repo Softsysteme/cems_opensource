@@ -3976,6 +3976,7 @@ Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboCategory.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboExplorerManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboGroup.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboParent.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HeaderName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HtmlLocation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/MimeType.java -text svneol=unset#text/plain
