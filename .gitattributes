@@ -2891,6 +2891,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/HttpTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/HttpTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransactionBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransaction.java -text
@@ -2918,6 +2920,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/ExternalBrowserTransac
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HttpTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JavelinTransaction.properties -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/JsonHttpTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/XmlHttpTransaction.properties -text
@@ -5207,6 +5210,7 @@ Studio/tomcat/webapps/convertigo/scripts/project.js -text svneol=unset#text/plai
 Studio/tomcat/webapps/convertigo/scripts/scriptlib.js -text
 Studio/tomcat/webapps/convertigo/scripts/selectMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/siteclipper.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/scripts/template.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/df.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/gatein.js -text svneol=unset#text/plain
