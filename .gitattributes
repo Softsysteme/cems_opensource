@@ -2828,6 +2828,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/HttpTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/HttpTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransactionBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransaction.java -text
@@ -2842,6 +2844,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_col
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png -text
@@ -2855,6 +2859,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/ExternalBrowserTransac
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HttpTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JavelinTransaction.properties -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/JsonHttpTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/XmlHttpTransaction.properties -text
