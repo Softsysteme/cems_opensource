@@ -2907,6 +2907,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_col
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png -text
