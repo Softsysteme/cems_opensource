@@ -104,4 +104,33 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
+    <xsd:element name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2" type="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__testRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2Response">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__testResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2RequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2ResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sample_refManual_http_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
 </xsd:schema>
