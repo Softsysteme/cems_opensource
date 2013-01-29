@@ -2819,6 +2819,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLGenerateDatesStep.properti
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLGenerateStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLSplitStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLTransformStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/AbstractHttpTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/AbstractHttpTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/CicsTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/CicsTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/ComparableFieldElement.java -text svneol=unset#text/plain
@@ -2854,6 +2856,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/images/transaction_color_1
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/transaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/xmlhttptransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/xmlhttptransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/AbstractHttpTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/CicsTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/ExternalBrowserTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.properties -text
