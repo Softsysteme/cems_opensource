@@ -3357,6 +3357,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinPropertyEdito
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinPropertyTableEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinStringEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinZoneSupport.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JsonArrayTranslationPolicyEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/KeywordEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/LetterCasePolicyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyModifySupport.java -text
