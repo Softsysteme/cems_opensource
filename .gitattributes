@@ -3951,6 +3951,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/logs/Get.java -text svn
 Studio/src/com/twinsoft/convertigo/engine/admin/services/logs/Purge.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetBuildStatus.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetPackage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetResources.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/LaunchBuild.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Delete.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Deploy.java -text svneol=unset#text/plain
