@@ -33,6 +33,7 @@ import com.twinsoft.convertigo.beans.core.Connector;
 import com.twinsoft.convertigo.beans.core.DatabaseObject;
 import com.twinsoft.convertigo.beans.core.ITestCaseContainer;
 import com.twinsoft.convertigo.beans.core.IVariableContainer;
+import com.twinsoft.convertigo.beans.core.MobileApplication;
 import com.twinsoft.convertigo.beans.core.MobileDevice;
 import com.twinsoft.convertigo.beans.core.Project;
 import com.twinsoft.convertigo.beans.core.RequestableObject;
@@ -94,20 +95,26 @@ public class GetRequestables extends XmlService {
 			}
 		}
 		
-		boolean hasMobileDevice = false;
-		for (MobileDevice device : project.getMobileDeviceList()) {
-			Element e_device = createDatabaseObjectElement(document, device);
-			e_device.setAttribute("classname", device.getClass().getSimpleName());
-			e_project.appendChild(e_device);
-			hasMobileDevice = true;
-		}
-		
+		MobileApplication mobileApplication = project.getMobileApplication();
+		boolean hasMobileDevice = mobileApplication != null;
 		if (hasMobileDevice) {
+			Element e_mobileApplication = createDatabaseObjectElement(document, mobileApplication);
+			e_mobileApplication.setAttribute("applicationID", mobileApplication.getApplicationId());
+			e_mobileApplication.setAttribute("endpoint", mobileApplication.getEndpoint());
+			e_project.appendChild(e_mobileApplication);
+
+			for (MobileDevice device : mobileApplication.getMobileDeviceList()) {
+				Element e_device = createDatabaseObjectElement(document, device);
+				e_device.setAttribute("classname", device.getClass().getSimpleName());
+				e_mobileApplication.appendChild(e_device);
+				hasMobileDevice = true;
+			}
+		
 			try {
 				String mobileProjectName = GetBuildStatus.getFinalApplicationName(projectName);
-				e_project.setAttribute("mobileProjectName", mobileProjectName);
+				e_mobileApplication.setAttribute("mobileProjectName", mobileProjectName);
 			} catch (Exception e) {
-				Engine.logAdmin.error("Failed to retrieve the application mobile name", e);
+				Engine.logAdmin.error("Failed to retrieve the application mobile name (cf. config.xml)", e);
 			}
 		}
 		
