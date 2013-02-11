@@ -44,6 +44,7 @@ import com.twinsoft.convertigo.engine.admin.services.UploadService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
 import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
+import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.SessionKey;
 import com.twinsoft.convertigo.engine.admin.util.ServiceUtils;
 
 @ServiceDefinition(name = "Deploy", roles = { Role.WEB_ADMIN, Role.TRIAL }, parameters = { @ServiceParameterDefinition(name = "bAssembleXsl", description = "assembling xsl") }, returnValue = "")
@@ -94,7 +95,7 @@ public class Deploy extends UploadService {
 		if (Boolean.parseBoolean(EnginePropertiesManager
 				.getProperty(PropertyName.NOTIFICATIONS_NOTIFY_PROJECT_DEPLOYMENT))) {
 
-			final String fUser = (String) request.getSession().getAttribute("user");
+			final String fUser = (String) request.getSession().getAttribute(SessionKey.ADMIN_USER.toString());
 			final String fProjectName = projectName;
 
 			new Thread(new Runnable() {
