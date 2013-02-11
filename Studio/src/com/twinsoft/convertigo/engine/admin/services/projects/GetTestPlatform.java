@@ -24,6 +24,7 @@ package com.twinsoft.convertigo.engine.admin.services.projects;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang.StringUtils;
 import org.codehaus.jettison.json.JSONArray;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -51,7 +52,7 @@ import com.twinsoft.convertigo.engine.enums.Visibility;
 import com.twinsoft.convertigo.engine.util.GenericUtils;
 
 @ServiceDefinition(
-		name = "Get",
+		name = "GetTestPlatform",
 		roles = { Role.TEST_PLATFORM },
 		parameters = {
 				@ServiceParameterDefinition(
@@ -61,7 +62,7 @@ import com.twinsoft.convertigo.engine.util.GenericUtils;
 			},
 		returnValue = "all project's objects and properties"
 	)
-public class GetRequestables extends XmlService {
+public class GetTestPlatform extends XmlService {
 
 	protected void getServiceResult(HttpServletRequest request, Document document) throws Exception {
 		Element root = document.getDocumentElement();
@@ -99,8 +100,26 @@ public class GetRequestables extends XmlService {
 		boolean hasMobileDevice = mobileApplication != null;
 		if (hasMobileDevice) {
 			Element e_mobileApplication = createDatabaseObjectElement(document, mobileApplication);
-			e_mobileApplication.setAttribute("applicationID", mobileApplication.getApplicationId());
-			e_mobileApplication.setAttribute("endpoint", mobileApplication.getEndpoint());
+			
+			String applicationID = mobileApplication.getApplicationId();
+			if ("".equals(applicationID)) {
+				applicationID = "com.convertigo.mobile." + applicationID;
+			}
+			else {
+				// The user can have setup an application ID that could be non valid:
+				// application ID can only contains alpha numeric ASCII characters.
+				applicationID = com.twinsoft.convertigo.engine.util.StringUtils.normalize(applicationID);
+				applicationID = StringUtils.remove(applicationID, "_");
+			}
+			e_mobileApplication.setAttribute("applicationID", applicationID);
+
+			String endpoint = mobileApplication.getEndpoint();
+			if ("".equals(endpoint)) {
+				endpoint = request.getRequestURL().toString();
+				endpoint = endpoint.substring(0, endpoint.indexOf("/admin/services/"));
+			}
+			e_mobileApplication.setAttribute("endpoint", endpoint);
+			
 			e_project.appendChild(e_mobileApplication);
 
 			for (MobileDevice device : mobileApplication.getMobileDeviceList()) {

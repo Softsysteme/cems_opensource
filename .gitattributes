@@ -3965,7 +3965,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Delete.java -t
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Deploy.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Export.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Get.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetRequestables.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetTestPlatform.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Reload.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/cleanDOM.xsl -text svneol=unset#text/plain
