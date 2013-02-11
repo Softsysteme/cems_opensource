@@ -214,6 +214,8 @@ Studio/lib/apache/bcel/README.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/bcel-5.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-1.2.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
+Studio/lib/apache/commons/commons-io-2.2.jar -text
+Studio/lib/apache/commons/commons-io-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-lang-2.5.jar -text
 Studio/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar -text
 Studio/lib/avalon.jar -text svneol=unset#unset
@@ -264,8 +266,6 @@ Studio/lib/axis2-1.6.2/lib/commons-fileupload-1.2.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-3.1.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/axis2-1.6.2/lib/commons-io-1.4.jar -text
-Studio/lib/axis2-1.6.2/lib/commons-io-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-logging-1.1.1.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-logging-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/endorsed/geronimo-jaxws_2.2_spec-1.0.jar -text
@@ -3961,6 +3961,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetBuildStatus.
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetPackage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetResources.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/LaunchBuild.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/MobileResourceHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Delete.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Deploy.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Export.java -text svneol=unset#text/plain

@@ -24,7 +24,6 @@ package com.twinsoft.convertigo.engine.admin.services.projects;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.lang.StringUtils;
 import org.codehaus.jettison.json.JSONArray;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -101,23 +100,10 @@ public class GetTestPlatform extends XmlService {
 		if (hasMobileDevice) {
 			Element e_mobileApplication = createDatabaseObjectElement(document, mobileApplication);
 			
-			String applicationID = mobileApplication.getApplicationId();
-			if ("".equals(applicationID)) {
-				applicationID = "com.convertigo.mobile." + applicationID;
-			}
-			else {
-				// The user can have setup an application ID that could be non valid:
-				// application ID can only contains alpha numeric ASCII characters.
-				applicationID = com.twinsoft.convertigo.engine.util.StringUtils.normalize(applicationID);
-				applicationID = StringUtils.remove(applicationID, "_");
-			}
+			String applicationID = mobileApplication.getComputedApplicationId();
 			e_mobileApplication.setAttribute("applicationID", applicationID);
 
-			String endpoint = mobileApplication.getEndpoint();
-			if ("".equals(endpoint)) {
-				endpoint = request.getRequestURL().toString();
-				endpoint = endpoint.substring(0, endpoint.indexOf("/admin/services/"));
-			}
+			String endpoint = mobileApplication.getComputedEndpoint(request);
 			e_mobileApplication.setAttribute("endpoint", endpoint);
 			
 			e_project.appendChild(e_mobileApplication);
