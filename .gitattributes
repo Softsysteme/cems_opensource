@@ -3267,6 +3267,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateEJBFromWSDLAction
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateFormFromTransactionAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateInheritedScreenClassAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateMobileApplicationAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateMobileDeviceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreatePoolAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreatePropertyTableColumnAction.java -text svneol=unset#text/plain
@@ -3388,6 +3389,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EditorFrameworkDialo
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EmulatorTechnologyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EnvParametersEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FieldListEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FlashUpdateBuildModeEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FontEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HtmlTransactionVariablesEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpDataEncodingEditor.java -text svneol=unset#text/plain
@@ -3533,65 +3535,66 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/scroll_lock.png 
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/search.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/select_columns.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager2.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ConnectorTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/CriteriaTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/DatabaseObjectTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ExtractionRuleTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/FolderTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/HandlersDeclarationTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/IEditableTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/IOrderableTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/IPropertyTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/InfoPropertyDescriptor.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/MobileDeviceTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ObjectsFolderTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectExplorerView.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectLoadingJob.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectManager.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/PropertyData.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/PropertyTableColumnTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/PropertyTableRowTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/PropertyTableTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ReferenceTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ResourceFolderTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ResourceTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ResourceXslTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ScreenClassTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ScriptablePropertyDescriptor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/SequenceTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/SheetTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/StatementTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/StepSourceEvent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/StepSourceListener.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/StepTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TemplateTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TestCaseTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TraceTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TransactionTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreeObjectEvent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreeObjectListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreeObjectSorter.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreeParent.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/TreePath.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/UnloadedProjectTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/VariableTreeObject.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/VariableTreeObject2.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ViewContentProvider.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ViewImageProvider.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ViewLabelDecorator.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ViewLabelProvider.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/XMLRecordDescriptionRowTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/XMLRecordDescriptionTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/XMLTableDescriptionColumnTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/XMLTableDescriptionRowTreeObject.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/XMLTableDescriptionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_checkedin.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_checkedout.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_default.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_linked.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/bean_nocvs.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ConnectorTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/CriteriaTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/DatabaseObjectTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ExtractionRuleTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FolderTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/HandlersDeclarationTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IEditableTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IOrderableTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IPropertyTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobileApplicationTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobileDeviceTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ObjectsFolderTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ProjectTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/PropertyTableColumnTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/PropertyTableRowTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/PropertyTableTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ReferenceTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ResourceFolderTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ResourceTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ResourceXslTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ScreenClassTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/SequenceTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/SheetTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/StatementTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/StepTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TemplateTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TestCaseTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TraceTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TransactionTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UnloadedProjectTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject2.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLRecordDescriptionRowTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLRecordDescriptionTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableDescriptionColumnTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableDescriptionRowTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableDescriptionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/propertysheet/PropertySheetView.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/ReferencesView.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefContentProvider.java -text
