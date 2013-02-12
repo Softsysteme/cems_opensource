@@ -4138,6 +4138,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/ProjectUtils.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/engine/util/RegexpUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/RemoteAdmin.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/RemoteAdminException.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/util/Replacement.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/RhinoUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/SOAPUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/SchemaUtils.java -text svneol=unset#text/plain
