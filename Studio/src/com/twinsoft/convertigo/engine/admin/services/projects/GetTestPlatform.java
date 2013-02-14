@@ -130,6 +130,7 @@ public class GetTestPlatform extends XmlService {
 		Element elt = document.createElement(dbo.getDatabaseType().toLowerCase());
 		elt.setAttribute("name", dbo.getName());
 		elt.setAttribute("comment", dbo.getComment());
+		elt.setAttribute("version", dbo.getVersion());
 		return elt;
 	}
 	
