@@ -3757,6 +3757,7 @@ Studio/src/com/twinsoft/convertigo/engine/RsaManager.java -text svneol=unset#tex
 Studio/src/com/twinsoft/convertigo/engine/SecurityToken.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityTokenException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityTokenManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/StartupDiagnostics.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ThreadManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/TracePlayerManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/UsageMonitor.java -text svneol=unset#text/plain
