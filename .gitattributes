@@ -748,17 +748,17 @@ Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.ws
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/jquery.mobile.datebox.1.0.1.min.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/icon.png -text
-Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/jquery.mobile.datebox.1.0.1.min.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/sampleMobileJQuery.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobilePdf/DisplayObjects/mobile/icon.png -text
@@ -1544,14 +1544,14 @@ Studio/projects/template_javelinDKU/variables.xsl -text
 Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/templates_jscode.js -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_pages.html -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/c8o.css -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/template_mobileSencha/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
@@ -4931,6 +4931,7 @@ Studio/tomcat/webapps/convertigo/css/autocomplete.css -text
 Studio/tomcat/webapps/convertigo/css/button.css -text
 Studio/tomcat/webapps/convertigo/css/common.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/contextMenu.css -text
+Studio/tomcat/webapps/convertigo/css/flashupdate.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
 Studio/tomcat/webapps/convertigo/css/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/images/ajaxloader.png -text
@@ -5215,6 +5216,7 @@ Studio/tomcat/webapps/convertigo/scripts/calendar.js -text
 Studio/tomcat/webapps/convertigo/scripts/common.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/contextMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/cookies.js -text
+Studio/tomcat/webapps/convertigo/scripts/flashupdate.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/flexlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/jquery.mobile.js -text svneol=unset#text/plain
@@ -5242,6 +5244,7 @@ Studio/tomcat/webapps/convertigo/scripts/weblib_wrapper.js -text svneol=unset#te
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/icon.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/img/favicon.ico -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/icon/android/icon72hdpi.png -text
