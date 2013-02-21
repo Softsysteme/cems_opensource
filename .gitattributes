@@ -3389,7 +3389,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EditorFrameworkDialo
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EmulatorTechnologyEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/EnvParametersEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FieldListEditor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FlashUpdateBuildModeEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/FontEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HtmlTransactionVariablesEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpDataEncodingEditor.java -text svneol=unset#text/plain
