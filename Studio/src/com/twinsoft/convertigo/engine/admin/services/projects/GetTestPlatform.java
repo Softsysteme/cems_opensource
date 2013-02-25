@@ -46,7 +46,6 @@ import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
-import com.twinsoft.convertigo.engine.admin.services.mobiles.GetBuildStatus;
 import com.twinsoft.convertigo.engine.enums.Visibility;
 import com.twinsoft.convertigo.engine.util.GenericUtils;
 
@@ -116,10 +115,10 @@ public class GetTestPlatform extends XmlService {
 			}
 		
 			try {
-				String mobileProjectName = GetBuildStatus.getFinalApplicationName(projectName);
+				String mobileProjectName = mobileApplication.getComputedApplicationName();
 				e_mobileApplication.setAttribute("mobileProjectName", mobileProjectName);
 			} catch (Exception e) {
-				Engine.logAdmin.error("Failed to retrieve the application mobile name (cf. config.xml)", e);
+				Engine.logAdmin.error("Failed to retrieve the application mobile name", e);
 			}
 		}
 		
