@@ -4190,6 +4190,7 @@ Studio/tomcat/lib/tomcat-i18n-fr.jar -text
 Studio/tomcat/lib/tomcat-i18n-ja.jar -text
 Studio/tomcat/lib/tomcat-juli.jar -text
 Studio/tomcat/webapps/ROOT/index.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/WEB-INF/classes/com/eviware/soapui/impl/wsdl/support/xsd/SampleXmlUtil.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/emulators.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/jdbc_drivers.properties -text
