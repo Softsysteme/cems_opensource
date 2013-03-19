@@ -2086,6 +2086,8 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/IResponseRu
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/IRule.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/Injector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/InjectorBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/JavaScript.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/JavaScriptBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ModifyHeader.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ModifyHeaderBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ModifyHeaderOfRequest.java -text svneol=unset#text/plain
@@ -2106,12 +2108,20 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RemoveHeade
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RemoveHeaderFromResponseBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ReplaceString.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ReplaceStringBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RequestJavaScript.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RequestJavaScriptBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ResponseJavaScript.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ResponseJavaScriptBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteAbsoluteUrl.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteAbsoluteUrlBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLocationHeader.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLocationHeaderBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjectorBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/responsejavascript_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/responsejavascript_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_16x16.png -text
@@ -2172,6 +2182,7 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/CssInje
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/FileInjector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/Header.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/Injector.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/JavaScript.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ModifyHeader.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ModifyHeaderOfRequest.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ModifyHeaderOfResponse.properties -text svneol=unset#text/plain
@@ -2182,6 +2193,8 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RemoveH
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RemoveHeaderFromRequest.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RemoveHeaderFromResponse.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ReplaceString.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RequestJavaScript.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ResponseJavaScript.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RewriteAbsoluteUrl.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RewriteLocationHeader.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ScriptInjector.properties -text svneol=unset#text/plain
