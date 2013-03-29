@@ -25,6 +25,8 @@ Studio/projects/demo_usDirectory/_data
 Studio/projects/demo_usDirectory/_private
 Studio/projects/demo_usDirectory/demo_usDirectory.temp.wsdl
 Studio/projects/demo_usDirectory/demo_usDirectory.temp.xsd
+Studio/projects/lib_Authentication/Traces
+Studio/projects/lib_Authentication/_private
 Studio/projects/lib_GoogleDocs/*.temp.*
 Studio/projects/lib_GoogleDocs/Traces
 Studio/projects/lib_GoogleDocs/_data
