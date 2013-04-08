@@ -4202,7 +4202,6 @@ Studio/src/com/twinsoft/convertigo/engine/requesters/BinaryServletRequester.java
 Studio/src/com/twinsoft/convertigo/engine/requesters/ClientXsltServletRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/ConvertigoXsltServletRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/DefaultRequester.java -text
-Studio/src/com/twinsoft/convertigo/engine/requesters/FileRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/GenericRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/HttpSessionListener.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/InternalRequester.java -text svneol=unset#text/plain
@@ -4250,9 +4249,9 @@ Studio/src/com/twinsoft/convertigo/engine/trace/ibm/TracePlayer.java -text
 Studio/src/com/twinsoft/convertigo/engine/trace/ibm/TraceReader.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/DefaultInternalTranslator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/translators/DefaultServletTranslator.java -text
+Studio/src/com/twinsoft/convertigo/engine/translators/InputDocumentBuilder.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/translators/NullTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/PoolTranslator.java -text
-Studio/src/com/twinsoft/convertigo/engine/translators/SimpleTextTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/Translator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/WebServiceTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Base64.java -text
