@@ -50,7 +50,7 @@ function CemsPrintScreen() {
 CemsPrintScreen.prototype = {
   _JSON: null,
   _init: function () {
-	  this._JSON = Cc["@mozilla.org/dom/json;1"].createInstance(Ci.nsIJSON); 
+    this._JSON = Cc["@mozilla.org/dom/json;1"].createInstance(Ci.nsIJSON); 
   },
   notifyCertProblem: function(interfaceRequestor, sslStatus, json) {
     try {
@@ -62,13 +62,19 @@ CemsPrintScreen.prototype = {
       json.scale = 1.0 * json.scale;
       
       if (json.left < 0 || json.width <= 0) {
-    	  json.left = 0;
-    	  json.width = documentElement.scrollWidth;
+        json.left = 0;
+        json.width = Math.max(
+          documentElement.scrollWidth,
+          window.document.body.scrollWidth
+        );
       }
       
       if (json.top < 0 || json.height <= 0) {
-    	  json.top = 0;
-    	  json.height = documentElement.scrollHeight;
+        json.top = 0;
+        json.height = Math.max(
+          documentElement.scrollHeight,
+          window.document.body.scrollHeight
+        );
       }
       
       var canvas = window.document.createElement("canvas");
