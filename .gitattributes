@@ -3386,6 +3386,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_next[!!-~]tab.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_previous[!!-~]tab.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_refresh.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_stop.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/AbstractStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistStepAction.java -text svneol=unset#text/plain
@@ -3408,6 +3409,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardPasteAction.ja
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateConnectorAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateCriteriaAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateEJBFromWSDLAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateEmptyStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateFormFromTransactionAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateInheritedScreenClassAction.java -text
@@ -3423,6 +3425,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateSheetAction.java 
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateSheetFromXMLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStubFromXMLAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTagNameFromSelectionZoneAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTestCaseAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTransactionAction.java -text
@@ -3465,6 +3468,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectValidateXSDActio
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/RedoAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceEditWSDLTypeAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceExecuteSelectedAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceExecuteSelectedFromStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceImportFromXsdAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceStepEditWSDLTypeAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SetDefaultConnectorAction.java -text
@@ -3490,6 +3494,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionEditHandlers
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionEditWSDLTypeAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionExecuteDefaultAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionExecuteSelectedAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionExecuteSelectedFromStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionShowVariableAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionStepEditWSDLTypeAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionWriteVariableAction.java -text
