@@ -4166,6 +4166,8 @@ Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_4.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration7_0_0.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/MigrationUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/AbstractBiller.java -text
+Studio/src/com/twinsoft/convertigo/engine/plugins/Altares.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/plugins/AltaresBiller.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/Biller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/EnvoiSMSBiller.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalBiller.java -text
