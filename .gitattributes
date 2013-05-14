@@ -750,11 +750,9 @@ Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xs
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/jquery.mobile.datebox.1.0.1.min.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/jquery.mobile.datebox.1.0.1.min.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain

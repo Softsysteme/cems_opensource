@@ -141,6 +141,8 @@ C8O.addHook("document_ready", function () {
 		$("#password").val(localStorage.getItem('password'));
 	}
 	
+	$("#date").val(new Date().toJSON().slice(0,10));
+	
 	/* 
 	 * add a submit event handler on each form
 	 * to perform a C8O.call on the submitted form
