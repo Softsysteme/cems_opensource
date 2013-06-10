@@ -371,6 +371,8 @@ Studio/lib/internal/vt220-090918.jar -text
 Studio/lib/jCharts-0.7.2.jar -text
 Studio/lib/jacob.jar -text svneol=unset#unset
 Studio/lib/jakarta-regexp-1.2.jar -text svneol=unset#unset
+Studio/lib/javapns/JavaPNS_2.2.jar -text
+Studio/lib/javapns/bcprov-jdk15-146.jar -text
 Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
