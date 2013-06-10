@@ -2802,6 +2802,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/ParallelStep.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/beans/steps/ParallelStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ProcessExecStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ProcessExecStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/PushNotificationStep.java -text
+Studio/src/com/twinsoft/convertigo/beans/steps/PushNotificationStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadCSVStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadCSVStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadFileStep.java -text svneol=unset#text/plain
@@ -2944,6 +2946,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/parallel_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/processexec_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/pushnotificationstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/pushnotificationstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_16x16.png -text
@@ -2997,6 +3001,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveFileStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/MoveStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ParallelStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ProcessExecStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/PushNotificationStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadCSVStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadFileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadXMLStep.properties -text svneol=unset#text/plain
