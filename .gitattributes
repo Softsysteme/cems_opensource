@@ -344,6 +344,9 @@ Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/ejb.jar -text
 Studio/lib/engine-htmlparsers.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
+Studio/lib/gcm/gcm-server.jar -text
+Studio/lib/gcm/json_simple-1.1.jar -text
+Studio/lib/gcm/mockito-all-1.8.5.jar -text
 Studio/lib/hibernate/antlr-2.7.6.jar -text
 Studio/lib/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar -text
 Studio/lib/hibernate/hibernate3.jar -text
