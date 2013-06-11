@@ -2872,6 +2872,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/XMLGenerateDatesStep.java -text s
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLGenerateDatesStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLGenerateStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLGenerateStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/XMLSortStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/XMLSortStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLSplitStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLSplitStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLTransformStep.java -text svneol=unset#text/plain
@@ -2960,6 +2962,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/while_16x16.png -text
@@ -3035,6 +3039,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLElementStep.properties -te
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLErrorStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLGenerateDatesStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLGenerateStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLSortStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLSplitStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/XMLTransformStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/AbstractHttpTransaction.java -text svneol=unset#text/plain
