@@ -5,10 +5,10 @@ use createSignRequest <your name> to create a valid .certSigningRequest file you
 
 	https://developer.apple.com/account/ios/certificate/certificateList.action web site.
 
-Be sure to request a "Apple Push Notification service SSL (Sandbox)" type of certificate
+Be sure to request a "Apple Push Notification service SSL (Production)" type of certificate
 the certificate will downloaded from apple's web site in the form of :
 
-	aps_developpment.cer
+	aps_production.cer
 
 Then, use createSSLKey <your name> to create a valid .p12 ssl key
 
