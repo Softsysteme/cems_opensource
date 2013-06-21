@@ -2286,6 +2286,10 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLoca
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLocationHeaderBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjectorBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/responsejavascript_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/responsejavascript_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderRequest_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_addheaderResponse_color_16x16.png -text
