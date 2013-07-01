@@ -410,6 +410,7 @@ Studio/lib/xerces-2_11_0/serializer.jar -text
 Studio/lib/xerces-2_11_0/xercesImpl.jar -text
 Studio/lib/xerces-2_11_0/xercesSamples.jar -text
 Studio/lib/xerces-2_11_0/xml-apis.jar -text
+Studio/lib/yuicompressor-2.4.7.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
 Studio/projects/C8oPushManager/.project -text
 Studio/projects/C8oPushManager/AppleCertificateTool/aps_development.cer -text
@@ -4087,6 +4088,7 @@ Studio/src/com/twinsoft/convertigo/engine/ProjectInMigrationProcessException.jav
 Studio/src/com/twinsoft/convertigo/engine/ProxyManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/PseudoCertificate.java -text
 Studio/src/com/twinsoft/convertigo/engine/RemoteAdministration.java -text
+Studio/src/com/twinsoft/convertigo/engine/ResourceCompressorManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/RsaManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SchemaManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityToken.java -text svneol=unset#text/plain
@@ -5427,6 +5429,7 @@ Studio/tomcat/webapps/convertigo/scripts/ctf.core.js -text svneol=unset#text/pla
 Studio/tomcat/webapps/convertigo/scripts/flashupdate.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/flexlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/scripts/jquery.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/jquery.mobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/keyboard.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapdku.js -text
