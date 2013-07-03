@@ -2915,6 +2915,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copy_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/copystep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/countstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/countstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/createDirectory_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/csvR_16x16.png -text
@@ -2987,8 +2989,12 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/splitstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/splitstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/transformstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/transformstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/while_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/while_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/xmlR_16x16.png -text
