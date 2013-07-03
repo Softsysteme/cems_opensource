@@ -4307,6 +4307,7 @@ Studio/src/com/twinsoft/convertigo/engine/translators/NullTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/PoolTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/Translator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/WebServiceTranslator.java -text
+Studio/src/com/twinsoft/convertigo/engine/translators/XmlServletTranslator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/Base64.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Base64v21.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/COBOLUtils.java -text
