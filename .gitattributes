@@ -3204,6 +3204,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInStepAction.
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToMultiValuedVariableAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToSingleValuedVariableAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToXMLConcatStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToXMLElementStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CicsTransactionImportCopybookAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardCopyAction.java -text
