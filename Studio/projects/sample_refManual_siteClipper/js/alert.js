@@ -1,0 +1,1 @@
+alert("Test a script injector");

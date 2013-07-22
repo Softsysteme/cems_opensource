@@ -1,0 +1,180 @@
+/** insert your custom css code here */
+/** Commented default style from CEMS 6.1.10 */
+
+#wait_div div {
+/* 	-moz-opacity: 0.2; */
+/* 	background-color: #B5D3E7; */
+/* 	filter: alpha(opacity=20); */
+/* 	height: 100%; */
+/* 	left: 0; */
+/* 	opacity: 0.2; */
+/* 	position: fixed; */
+/* 	top: 0px; */
+/* 	width: 100%; */
+/* 	z-index:99998 */
+}
+
+#wait_div img {
+/* 	left: 50%; */
+/* 	position: fixed; */
+/* 	top: 50%; */
+/* 	z-index: 99999; */
+}
+
+
+body {
+	background: #fff;	
+	font-family: helvetica, arial, sans-serif;
+	font-size: 11px;
+	color:#818181;
+}
+#global {
+	width:900px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 16px;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #00a4c8;
+	font-weight: normal;
+	line-height: 22px;
+	/margin-bottom:0px;
+	-margin-bottom:0px;
+}
+hr {
+	width: 100%;
+	text-align: left;
+	margin: auto auto 15px 0 !important; 
+	/margin: 10px 0 10px 0; 
+	-margin: 10px 0 10px 0;
+	border: none 0; 
+	border-top: 1px dotted #aeaeae;
+	height: 1px;
+	float:left;
+}
+ul {
+	/margin-top:15px;
+	-margin-top:15px;
+	margin-left:0px;
+}
+ul li {
+	color:#666666;
+	size:12px;
+	line-height:18px;
+	list-style-image:url(../images/puce.png);
+}
+.logo {
+	width: 195px;
+	height: 70px;
+	float: left;
+	margin-top:30px;
+}
+.visuel {
+	float: left;
+	width:900px;
+	margin:10px 0 10px 1px;
+	height: 115px;
+}
+.header {
+	float:left;
+	width:1024px;
+}
+.footer {
+	clear: both;
+	float: left;
+	width: 871px;
+	height:30px;
+	text-align:center;
+	font-size:10px;
+	padding:15px;
+	/margin-top:70px;
+	-margin-top:70px;
+	margin-top:80px !important;
+}
+.content {
+	margin-top:15px;
+	width:900px;
+	float: left;
+	/background:transparent url('../images/bg-gris-contenu.png')  no-repeat;
+	-background:transparent url('../images/bg-gris-contenu.png')  no-repeat;
+	-moz-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; 
+	-webkit-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;  
+	-khtml-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; 
+	border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; 	
+	background-image: -moz-linear-gradient(top, #f3f2f1 , #ffffff );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f2f1 ), to(#ffffff ));
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f2f1 ,endColorstr=#ffffff );
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f2f1 ,endColorstr=#ffffff )";		
+}
+.topcentre {
+	width:871px;
+	height:15px;
+	margin:0 0 0 15px;
+	float:left;
+	background: transparent url(../images/top-bg-blanc-contenu.png) top no-repeat;
+}
+.centre {
+	width:871px;
+	/height:100%;
+	-height:100%;
+	margin:0 0 0 16px;
+	float:left;
+	background: transparent url(../images/bg-blanc-contenu.png) top repeat-y;
+}
+.contentcentre, .contentcentrestatus {
+	width:266px;
+	height:120px;
+	float:left;	
+}
+.contentrub, .contentstatus {
+	width:266px;
+	margin:0 5px 0 15px;
+	float:left;
+	margin-bottom:25px;
+}
+.contentstatus, .contentcentrestatus {
+	width:532px;
+}
+.blockitem {
+	height:31px;
+	font-size:14px;
+	padding-top:15px;
+	margin:10px 0; 
+	padding-left:60px;
+	background-color:#f3f2f1;
+	-moz-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;  
+	-khtml-border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; 
+	border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; 	
+}
+.iconError, .iconValid {
+	font-size:11px;
+	padding-left:50px;
+}
+.iconhtml {
+	background: #f3f2f1 url(../images/iconHTML.png) no-repeat 10px 5px;
+}
+.iconhttp {
+	background: #f3f2f1 url(../images/iconHTTP.png) no-repeat 10px 8px;
+}
+.iconhttps {
+	background: #f3f2f1 url(../images/iconHTTPs.png) no-repeat 10px 8px;
+}
+.iconlegacy {
+	background: #f3f2f1 url(../images/iconLEGACY.png) no-repeat 10px 8px;
+}
+.iconError {
+	color:#ff0000;
+	background: #f3f2f1 url(../images/iconError.png) no-repeat 10px 10px;
+}
+.iconValid {
+	background: #f3f2f1 url(../images/iconOK.png) no-repeat 10px 10px;
+}
+.error {
+	color:#ff0000;
+	/*background-color:#ffdddd;*/
+}
+.valid {
+	color:#00a4c8;
+}
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="demo_usDirectory" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:demo_usDirectory_ns="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory"><xsd:include schemaLocation="demo_usDirectory.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="usdirectoryConnector__usdirectoryResponse">
+    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__usdirectoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usdirectoryConnector__usdSearchByNameResponse">
+    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__usdSearchByNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usdirectoryConnector__usdSearchByNameRequest">
+    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__usdSearchByName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usdirectoryConnector__usdirectoryRequest">
+    <wsdl:part name="parameters" element="demo_usDirectory_ns:usdirectoryConnector__usdirectory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="demo_usDirectoryPortType">
+    <wsdl:operation name="usdirectoryConnector__usdirectory">
+<wsdl:documentation/>
+      <wsdl:input message="demo_usDirectory_ns:usdirectoryConnector__usdirectoryRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_usDirectory_ns:usdirectoryConnector__usdirectoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usdirectoryConnector__usdSearchByName">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="demo_usDirectory_ns:usdirectoryConnector__usdSearchByNameRequest">
+    </wsdl:input>
+      <wsdl:output message="demo_usDirectory_ns:usdirectoryConnector__usdSearchByNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="demo_usDirectorySOAPBinding" type="demo_usDirectory_ns:demo_usDirectoryPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="usdirectoryConnector__usdirectory">
+<wsdl:documentation/>
+      <soap:operation soapAction="demo_usDirectory?usdirectoryConnector__usdirectory"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usdirectoryConnector__usdSearchByName">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="demo_usDirectory?usdirectoryConnector__usdSearchByName"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="demo_usDirectory">
+    <wsdl:port name="demo_usDirectorySOAP" binding="demo_usDirectory_ns:demo_usDirectorySOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/demo_usDirectory/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

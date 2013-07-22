@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileVacation_ns="http://www.convertigo.com/convertigo/projects/sampleMobileVacation" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileVacation">
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileVacation_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sampleMobileVacation_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="transaction1315303771993StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__loginResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315310669689StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__deconnexionResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="Fake" type="sampleMobileVacation_ns:FakeRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FakeResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleMobileVacation_ns:FakeResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="FakeRequestData">
+<xsd:annotation>
+<xsd:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></xsd:documentation>
+</xsd:annotation>
+<xsd:sequence>
+<xsd:element name="sequence" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>new variable</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="FakeResponseData">
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="complex1315928095107StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="row_mesDemandesRowType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="Nom" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Duree" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Type" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Debut" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Fin" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Date" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315401051057StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__mesDemandesResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316011398352StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__refuserResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316011869142StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__annulerRefuserResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrierTableType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semaines_calendrierRowType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateur_calendrierRowType"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="XMLTextTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="semaines_calendrierRowType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaine" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="collaborateur_calendrierRowType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="statut" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316013233626StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__annulerBPUResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1316160847799StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1315407557678StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__calendrierResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrier1316160847799StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1316160995693StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1315995868716StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__nextMonthResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrier1316160995693StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315990828519StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__nextweekResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrier1316161120661StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrier1316161449255StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315996066278StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__previousMonthResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="complex1316161595911StepType">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="transaction1315994572251StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__previousweekResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="calendrier1316161595911StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315927909858StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__mesDemandesResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316012626291StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__validerRefuserResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316167734969StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__validerResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315303015878StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__startResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1315304013264StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__loginResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316683488681StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__actualiserResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:group name="conges_mobileConnectorTypes">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="error" type="sampleMobileVacation_ns:ConvertigoError"/>
+<xsd:element minOccurs="0" name="messageDeconnexion" type="sampleMobileVacation_ns:messageDeconnexionTextType"/>
+<xsd:element minOccurs="0" name="erreur" type="sampleMobileVacation_ns:erreurTextType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="Messages" type="sampleMobileVacation_ns:MessagesRecordType"/>
+<xsd:element minOccurs="0" name="username" type="sampleMobileVacation_ns:usernameTextType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="mesDemandes" type="sampleMobileVacation_ns:mesDemandesTableType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaines" type="sampleMobileVacation_ns:semainesRecordType"/>
+<xsd:element minOccurs="0" name="alertMessage" type="sampleMobileVacation_ns:alertMessageTextType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="collaborateur" type="sampleMobileVacation_ns:collaborateurTableType"/>
+<xsd:element minOccurs="0" name="erreurLogin" type="sampleMobileVacation_ns:erreurLoginTextType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="motifs" type="sampleMobileVacation_ns:motifsTableType"/>
+</xsd:sequence>
+</xsd:group>
+<xsd:complexType name="erreurMessageTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="motifsTableType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="option" type="sampleMobileVacation_ns:option_motifsRowType"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="semainesRecordType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="semaine" type="xsd:string"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="statut_collaborateurRowType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="label" type="xsd:string"/>
+<xsd:element minOccurs="0" name="type" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="nbdemandes_mesDemandesRowType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="value" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="usernameTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="collaborateurTableType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="statut" type="sampleMobileVacation_ns:statut_collaborateurRowType"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="erreurLoginTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="erreurTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="messageDeconnexionTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="mesDemandesTableType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="demande" type="sampleMobileVacation_ns:demande_mesDemandesRowType"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="nbdemandes" type="sampleMobileVacation_ns:nbdemandes_mesDemandesRowType"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="option_motifsRowType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="label" type="xsd:string"/>
+<xsd:element minOccurs="0" name="index" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="MessagesRecordType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="row" type="xsd:string"/>
+</xsd:sequence>
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:complexType>
+<xsd:complexType name="demande_mesDemandesRowType">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="Nom" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Duree" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Type" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Debut" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Fin" type="xsd:string"/>
+<xsd:element minOccurs="0" name="Date" type="xsd:string"/>
+<xsd:element minOccurs="0" name="index" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="alertMessageTextType">
+<xsd:simpleContent>
+<xsd:extension base="xsd:string">
+<xsd:attribute name="referer" type="xsd:string" use="optional"/>
+</xsd:extension>
+</xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="transaction1316701354217StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__startResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316013724987StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__validerBPUResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="transaction1316700470690StepType">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element minOccurs="0" name="document" type="sampleMobileVacation_ns:conges_mobileConnector__startResponseData">
+<xsd:annotation/>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="Fake__Default_transaction" type="sampleMobileVacation_ns:Fake__Default_transactionRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Fake__Default_transactionResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sampleMobileVacation_ns:Fake__Default_transactionResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Fake__Default_transactionRequestData">
+<xsd:annotation/>
+<xsd:sequence/>
+</xsd:complexType>
+<xsd:complexType name="Fake__Default_transactionResponseData"/>
+</xsd:schema>

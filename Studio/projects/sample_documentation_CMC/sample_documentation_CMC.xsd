@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CMC_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CMC" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CMC">
+<xsd:complexType name="ConvertigoErrorContext">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CMC_ns:ConvertigoErrorContextVariable"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoErrorContextVariable">
+<xsd:attribute name="name" type="xsd:string"/>
+<xsd:attribute name="value" type="xsd:string"/>
+</xsd:complexType>
+<xsd:complexType name="ConvertigoError">
+<xsd:sequence>
+<xsd:element name="context" type="sample_documentation_CMC_ns:ConvertigoErrorContext"/>
+<xsd:element name="exception" type="xsd:string"/>
+<xsd:element name="message" type="xsd:string"/>
+<xsd:element name="stacktrace" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="Void__DefaultHubResponseData"/>
+<xsd:element name="Void__DefaultHub" type="sample_documentation_CMC_ns:Void__DefaultHubRequestData">
+<xsd:annotation/>
+</xsd:element>
+<xsd:element name="Void__DefaultHubResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="response" type="sample_documentation_CMC_ns:Void__DefaultHubResponseData"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="Void__DefaultHubRequestData">
+<xsd:annotation/>
+<xsd:sequence>
+<xsd:element name="__hub_page" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo>basename for hub/*.xml interaction file and hub/*.html banner file</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

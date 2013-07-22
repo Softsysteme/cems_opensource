@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hub>
+<!--
+Code your interactions in this XML.
+ -->
+
+	<origin name="ListOfArticles">
+		<event name="event_articleClicked">
+			<target name="GoogleClip">
+				<mapping><![CDATA[
+					return {
+						// action
+						__transaction : "SearchGoogleClip",
+						
+						// parameters
+						keyword : payload.name
+					}
+				]]></mapping>
+			</target>
+		</event>
+	</origin>
+
+</hub>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleDocumentationMobilizerSencha" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleDocumentationMobilizerSencha" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleDocumentationMobilizerSencha_ns="http://www.convertigo.com/convertigo/projects/sampleDocumentationMobilizerSencha" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleDocumentationMobilizerSencha"><xsd:include schemaLocation="sampleDocumentationMobilizerSencha.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="NewConnector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="NewConnector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sampleDocumentationMobilizerSenchaPortType">
+    <wsdl:operation name="NewConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleDocumentationMobilizerSencha_ns:NewConnector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sampleDocumentationMobilizerSenchaSOAPBinding" type="sampleDocumentationMobilizerSencha_ns:sampleDocumentationMobilizerSenchaPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="NewConnector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sampleDocumentationMobilizerSencha?NewConnector__XMLize"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sampleDocumentationMobilizerSencha">
+    <wsdl:port name="sampleDocumentationMobilizerSenchaSOAP" binding="sampleDocumentationMobilizerSencha_ns:sampleDocumentationMobilizerSenchaSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleDocumentationMobilizerSencha/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

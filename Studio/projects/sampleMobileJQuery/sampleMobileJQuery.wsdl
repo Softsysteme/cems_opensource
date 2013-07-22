@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleMobileJQuery" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileJQuery_ns="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery"><xsd:include schemaLocation="sampleMobileJQuery.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="sampleMobileJQueryPortType">
+  </wsdl:portType>
+  <wsdl:binding name="sampleMobileJQuerySOAPBinding" type="sampleMobileJQuery_ns:sampleMobileJQueryPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="sampleMobileJQuery">
+    <wsdl:port name="sampleMobileJQuerySOAP" binding="sampleMobileJQuery_ns:sampleMobileJQuerySOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleMobileJQuery/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_database_HSQLDB" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_database_HSQLDB" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_database_HSQLDB_ns="http://www.convertigo.com/convertigo/projects/sample_database_HSQLDB" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_database_HSQLDB"><xsd:include schemaLocation="sample_database_HSQLDB.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="databaseConnector__selectAllFromAVariableTableRequest">
+    <wsdl:part name="parameters" element="sample_database_HSQLDB_ns:databaseConnector__selectAllFromAVariableTable">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__selectAllFromAVariableTableResponse">
+    <wsdl:part name="parameters" element="sample_database_HSQLDB_ns:databaseConnector__selectAllFromAVariableTableResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_database_HSQLDBPortType">
+    <wsdl:operation name="databaseConnector__selectAllFromAVariableTable">
+<wsdl:documentation><![CDATA[Sample transaction selecting all rows of a table, which table name is passed as a variable to the transaction.
+
+Two test cases are implementing the 2 possible cases, in order to list the rows of the 2 tables of the database.
+]]></wsdl:documentation>
+      <wsdl:input message="sample_database_HSQLDB_ns:databaseConnector__selectAllFromAVariableTableRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_database_HSQLDB_ns:databaseConnector__selectAllFromAVariableTableResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_database_HSQLDBSOAPBinding" type="sample_database_HSQLDB_ns:sample_database_HSQLDBPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="databaseConnector__selectAllFromAVariableTable">
+<wsdl:documentation><![CDATA[Sample transaction selecting all rows of a table, which table name is passed as a variable to the transaction.
+
+Two test cases are implementing the 2 possible cases, in order to list the rows of the 2 tables of the database.
+]]></wsdl:documentation>
+      <soap:operation soapAction="sample_database_HSQLDB?databaseConnector__selectAllFromAVariableTable"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_database_HSQLDB">
+    <wsdl:port name="sample_database_HSQLDBSOAP" binding="sample_database_HSQLDB_ns:sample_database_HSQLDBSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_database_HSQLDB/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

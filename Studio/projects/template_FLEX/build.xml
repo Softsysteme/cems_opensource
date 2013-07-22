@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<project name="TFlex" default="main" basedir=".">
+	<!-- Change the value of flex_home by your SDK Flex path -->
+	<property name="FLEX_HOME" value="FLEX_SDK_FOLDER" />
+	<taskdef name="mxmlc" classname="flex.ant.MxmlcTask" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+	<taskdef name="html-wrapper" classname="flex.ant.HtmlWrapperTask" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+	<taskdef resource="flexTasks.tasks" />
+
+	<target name="main" depends="clean, swf" />
+
+	<target name="swf">
+		<mxmlc file="src/ConvertiFlexRun.mxml" output="bin/ConvertiFlexRun.swf"
+			compiler.as3="true">
+
+			<!-- Get default compiler options. -->
+			<load-config filename="${FLEX_HOME}/frameworks/flex-config.xml" />
+
+			<!--
+				List of path elements that form the roots of ActionScript class
+				hierarchies.
+			-->
+			<source-path path-element="${FLEX_HOME}/frameworks" />
+
+			<!-- List of SWC files or directories that contain SWC files. -->
+			<library-path dir="${FLEX_HOME}/frameworks" append="true">
+				<include name="libs/framework.swc" />
+				<include name="../bundles/{locale}" />
+			</library-path>
+
+			<library-path dir="lib" append="true">
+				<include name="*.swc" />
+			</library-path>
+		</mxmlc>
+	</target>
+
+	<target name="clean">
+	</target>
+
+</project>

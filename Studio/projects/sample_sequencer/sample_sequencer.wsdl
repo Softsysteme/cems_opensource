@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_sequencer" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_sequencer" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_sequencer_ns="http://www.convertigo.com/convertigo/projects/sample_sequencer">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_sequencer"><xsd:include schemaLocation="sample_sequencer.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="databaseConnector__InsertCapitalRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__InsertCapital">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTMLconnector__ListFrCitiesRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:HTMLconnector__ListFrCities">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTMLconnector__ListUSCitiesResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:HTMLconnector__ListUSCitiesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__SelectAllCapitalsResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__SelectAllCapitalsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTMLconnector__ListUSCitiesRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:HTMLconnector__ListUSCities">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__InsertCityRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__InsertCity">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__InsertCityResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__InsertCityResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__SelectAllCapitalsRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__SelectAllCapitals">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HTMLconnector__ListFrCitiesResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:HTMLconnector__ListFrCitiesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__InsertCapitalResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__InsertCapitalResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__SelectAllCitiesResponse">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__SelectAllCitiesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="databaseConnector__SelectAllCitiesRequest">
+    <wsdl:part name="parameters" element="sample_sequencer_ns:databaseConnector__SelectAllCities">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_sequencerPortType">
+    <wsdl:operation name="databaseConnector__SelectAllCapitals">
+<wsdl:documentation/>
+      <wsdl:input message="sample_sequencer_ns:databaseConnector__SelectAllCapitalsRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:databaseConnector__SelectAllCapitalsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__SelectAllCities">
+<wsdl:documentation/>
+      <wsdl:input message="sample_sequencer_ns:databaseConnector__SelectAllCitiesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:databaseConnector__SelectAllCitiesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__InsertCity">
+<wsdl:documentation/>
+      <wsdl:input message="sample_sequencer_ns:databaseConnector__InsertCityRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:databaseConnector__InsertCityResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__InsertCapital">
+<wsdl:documentation/>
+      <wsdl:input message="sample_sequencer_ns:databaseConnector__InsertCapitalRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:databaseConnector__InsertCapitalResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HTMLconnector__ListUSCities">
+<wsdl:documentation/>
+      <wsdl:input message="sample_sequencer_ns:HTMLconnector__ListUSCitiesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:HTMLconnector__ListUSCitiesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HTMLconnector__ListFrCities">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_sequencer_ns:HTMLconnector__ListFrCitiesRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_sequencer_ns:HTMLconnector__ListFrCitiesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_sequencerSOAPBinding" type="sample_sequencer_ns:sample_sequencerPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="databaseConnector__SelectAllCapitals">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_sequencer?databaseConnector__SelectAllCapitals"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__SelectAllCities">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_sequencer?databaseConnector__SelectAllCities"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__InsertCity">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_sequencer?databaseConnector__InsertCity"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="databaseConnector__InsertCapital">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_sequencer?databaseConnector__InsertCapital"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HTMLconnector__ListUSCities">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_sequencer?HTMLconnector__ListUSCities"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HTMLconnector__ListFrCities">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_sequencer?HTMLconnector__ListFrCities"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_sequencer">
+    <wsdl:port name="sample_sequencerSOAP" binding="sample_sequencer_ns:sample_sequencerSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_sequencer/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
