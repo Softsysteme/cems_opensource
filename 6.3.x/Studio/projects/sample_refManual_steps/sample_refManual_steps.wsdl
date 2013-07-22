@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_refManual_steps" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_steps" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sample_refManual_steps_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_steps">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_steps"><xsd:include schemaLocation="sample_refManual_steps.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IterationOnJSResponse">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:IterationOnJSResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IterationOnJSRequest">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:IterationOnJS">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchOneKeywordRequest">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchOneKeyword">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchSeveralKeywordsRequest">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchSeveralKeywords">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchSeveralKeywordsResponse">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchSeveralKeywordsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchSeveralKeywordsInParallelResponse">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchSeveralKeywordsInParallelResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchOneKeywordResponse">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchOneKeywordResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendEmailRequest">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SendEmail">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendEmailResponse">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SendEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SearchSeveralKeywordsInParallelRequest">
+    <wsdl:part name="parameters" element="sample_refManual_steps_ns:SearchSeveralKeywordsInParallel">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_refManual_stepsPortType">
+    <wsdl:operation name="IterationOnJS">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_steps_ns:IterationOnJSRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_steps_ns:IterationOnJSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOneKeyword">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_steps_ns:SearchOneKeywordRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_steps_ns:SearchOneKeywordResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSeveralKeywords">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_steps_ns:SearchSeveralKeywordsRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_steps_ns:SearchSeveralKeywordsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSeveralKeywordsInParallel">
+<wsdl:documentation/>
+      <wsdl:input message="sample_refManual_steps_ns:SearchSeveralKeywordsInParallelRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_steps_ns:SearchSeveralKeywordsInParallelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_steps_ns:SendEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_steps_ns:SendEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_refManual_stepsSOAPBinding" type="sample_refManual_steps_ns:sample_refManual_stepsPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="IterationOnJS">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_steps?IterationOnJS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOneKeyword">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_steps?SearchOneKeyword"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSeveralKeywords">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_steps?SearchSeveralKeywords"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSeveralKeywordsInParallel">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_refManual_steps?SearchSeveralKeywordsInParallel"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_refManual_steps?SendEmail"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_refManual_steps">
+    <wsdl:port name="sample_refManual_stepsSOAP" binding="sample_refManual_steps_ns:sample_refManual_stepsSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_refManual_steps/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

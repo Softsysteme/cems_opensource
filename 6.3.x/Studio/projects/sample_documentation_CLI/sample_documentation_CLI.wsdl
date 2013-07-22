@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sample_documentation_CLI" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sample_documentation_CLI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI"><xsd:include schemaLocation="sample_documentation_CLI.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="demo5250Connector__XMLizeRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CLI_ns:demo5250Connector__XMLize">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demo5250Connector__GetArticleDataRequest">
+    <wsdl:part name="parameters" element="sample_documentation_CLI_ns:demo5250Connector__GetArticleData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demo5250Connector__GetArticleDataResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demo5250Connector__XMLizeResponse">
+    <wsdl:part name="parameters" element="sample_documentation_CLI_ns:demo5250Connector__XMLizeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sample_documentation_CLIPortType">
+    <wsdl:operation name="demo5250Connector__GetArticleData">
+<wsdl:documentation/>
+      <wsdl:input message="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="demo5250Connector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_documentation_CLI_ns:demo5250Connector__XMLizeRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_documentation_CLI_ns:demo5250Connector__XMLizeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sample_documentation_CLISOAPBinding" type="sample_documentation_CLI_ns:sample_documentation_CLIPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="demo5250Connector__GetArticleData">
+<wsdl:documentation/>
+      <soap:operation soapAction="sample_documentation_CLI?demo5250Connector__GetArticleData"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="demo5250Connector__XMLize">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_documentation_CLI?demo5250Connector__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sample_documentation_CLI">
+    <wsdl:port name="sample_documentation_CLISOAP" binding="sample_documentation_CLI_ns:sample_documentation_CLISOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sample_documentation_CLI/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

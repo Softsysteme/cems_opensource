@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="template_interactionHub" targetNamespace="http://www.convertigo.com/convertigo/projects/template_interactionHub" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:template_interactionHub_ns="http://www.convertigo.com/convertigo/projects/template_interactionHub" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/template_interactionHub"><xsd:include schemaLocation="template_interactionHub.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="void__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="template_interactionHub_ns:void__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="void__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="template_interactionHub_ns:void__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="template_interactionHubPortType">
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="template_interactionHub_ns:void__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="template_interactionHub_ns:void__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="template_interactionHubSOAPBinding" type="template_interactionHub_ns:template_interactionHubPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="template_interactionHub?void__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="template_interactionHub">
+    <wsdl:port name="template_interactionHubSOAP" binding="template_interactionHub_ns:template_interactionHubSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/template_interactionHub/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

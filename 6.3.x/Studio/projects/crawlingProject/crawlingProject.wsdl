@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="crawlingProject" targetNamespace="http://www.convertigo.com/convertigo/projects/crawlingProject" xmlns:crawlingProject_ns="http://www.convertigo.com/convertigo/projects/crawlingProject" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/crawlingProject"><xsd:include schemaLocation="crawlingProject.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:portType name="crawlingProjectPortType">
+  </wsdl:portType>
+  <wsdl:binding name="crawlingProjectSOAPBinding" type="crawlingProject_ns:crawlingProjectPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="crawlingProject">
+    <wsdl:port name="crawlingProjectSOAP" binding="crawlingProject_ns:crawlingProjectSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/crawlingProject/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+    <status>1</status>
+    <calendar>
+        <weeks>
+            <week/>
+            <week>W40 Oct 3 to Oct 9, 2011</week>
+            <week>W41 Oct 10 to Oct 16, 2011</week>
+        </weeks>
+        <employee>
+            <status>Valentine Joyce</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+        <employee>
+            <status>Ray Fischer</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+        <employee>
+            <status>Megan David</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+        <employee>
+            <status>Nita Thompson</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+        <employee>
+            <status>Reed Douglas</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+        <employee>
+            <status>Steel Mcdonald</status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+            <status><label> </label><type /></status>
+        </employee>
+    </calendar>
+</document>
+<!--
+Generated by Convertigo Entreprise Mashup Server
+Requester: ClientXsltServletRequester
+-->

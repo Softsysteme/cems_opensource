@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="lib_GoogleSpreadsheets" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleSpreadsheets" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:lib_GoogleSpreadsheets_ns="http://www.convertigo.com/convertigo/projects/lib_GoogleSpreadsheets" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleSpreadsheets"><xsd:include schemaLocation="lib_GoogleSpreadsheets.xsd"/>
+  	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SpreadsheetConnector__HelperGetWorksheetIdRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetWorksheetId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__LoginRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__Login">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetSpreadsheetKeyResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetSpreadsheetKeyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetSpreadsheetKeyRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetSpreadsheetKey">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordsListRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordsList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usingGoogleSpreadsheetsRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:usingGoogleSpreadsheets">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetDeleteRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetDelete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowAddResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowAddResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__SpreadsheetsListResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__SpreadsheetsListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetWorksheetIdResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetWorksheetIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordAddRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordAdd">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetsListResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetsListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordAddResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordAddResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordDeleteResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordDeleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TablesListResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TablesListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetsListRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetsList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetAddRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetAdd">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetTableNumberResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetTableNumberResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="usingGoogleSpreadsheetsResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:usingGoogleSpreadsheetsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetRecordNumberResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetRecordNumberResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetDeleteResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetDeleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowsListRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowsList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__LoginResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__LoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TableAddRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableAdd">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetRecordNumberRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetRecordNumber">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetTableNumberRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetTableNumber">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowsListResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowsListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TableAddResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableAddResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetListRowIdRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetListRowId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowAddRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowAdd">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TableDeleteRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableDelete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowDeleteResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowDeleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__ListRowDeleteRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowDelete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__WorksheetAddResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetAddResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordsListResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordsListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__SpreadsheetsListRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__SpreadsheetsList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__HelperGetListRowIdResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetListRowIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TableDeleteResponse">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableDeleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__RecordDeleteRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordDelete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SpreadsheetConnector__TablesListRequest">
+    <wsdl:part name="parameters" element="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TablesList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="lib_GoogleSpreadsheetsPortType">
+    <wsdl:operation name="usingGoogleSpreadsheets">
+<wsdl:documentation><![CDATA[This sequence is a sample use of the Web service methods provided by SpreadsheetConnector.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:usingGoogleSpreadsheetsRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:usingGoogleSpreadsheetsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetListRowId">
+<wsdl:documentation><![CDATA[This transaction retrieves a list row ID by splitting list row entry data from the list row metafeed.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetListRowIdRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetListRowIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetRecordNumber">
+<wsdl:documentation><![CDATA[This transaction retrieves a record ID by splitting record entry data from the record metafeed.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetRecordNumberRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetRecordNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetSpreadsheetKey">
+<wsdl:documentation><![CDATA[This transaction retrieves a spreadsheet key by splitting spreadsheet entry data from the spreadsheet metafeed.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetSpreadsheetKeyRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetSpreadsheetKeyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetTableNumber">
+<wsdl:documentation><![CDATA[This transaction retrieves a table number by splitting table entry data from the table metafeed.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetTableNumberRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetTableNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetWorksheetId">
+<wsdl:documentation><![CDATA[This transaction retrieves a worksheet ID by splitting worksheet entry data from the worksheet metafeed.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetWorksheetIdRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__HelperGetWorksheetIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowAdd">
+<wsdl:documentation><![CDATA[Adds a new row on an existing table on a specified worksheet.
+\n
+\nSpreadsheets inserts the new row immediately after the last row that appears in the list-based feed, which is to say immediately before the first entirely blank row.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowAddRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowAddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowDelete">
+<wsdl:documentation><![CDATA[Deletes a list row from a specified table of a given spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowDeleteRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowDeleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowsList">
+<wsdl:documentation><![CDATA[A given worksheet generally contains multiple rows, each containing multiple cells. You can request data from the worksheet as a list-based feed, in which each entry represents a row.
+\n
+\nThe list feed makes some assumptions about how the data is laid out in the spreadsheet. In particular, the list feed treats the first row of the worksheet as a header row; Spreadsheets dynamically creates XML elements named after the contents of header-row cells. Users who want to provide Data API feeds should not put any data other than column headers in the first row of a worksheet.
+\n
+\nThe list feed contains all rows after the first row up to the first blank row. The first blank row terminates the data set. If expected data isn't appearing in a feed, check the worksheet manually to see whether there's an unexpected blank row in the middle of the data. In particular, if the second row of the spreadsheet is blank, then the list feed will contain no data.
+\n
+\nA row in a list feed is as many columns wide as the worksheet itself.
+\n
+\nThis transaction retrieves a list-based feed with all the tables from the specified worksheet of the specified spreadsheet.
+\n
+\nEach entry represents a row in the worksheet. The <title> element contains the contents of the first cell in the row, and the <content> element contains a textual representation of the data from all the other cells in the row.
+\nEach item in the gsx namespace represents the contents of a cell in the row, with elements in the gsx namespace named after the contents of the header cells?that is, the cells in the first row of the worksheet. If a particular header cell is empty, then a unique column ID is used for the gsx element name. If the header cell's content contains a space, it will be removed in the gsx element name.
+\n
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowsListRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__ListRowsListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__Login">
+<wsdl:documentation><![CDATA[&lt;![CDATA[Accesses a user's Google account.
+\n
+\nOnce the login information has been successfully authenticated, Google returns a token, which your application will reference each time it requests access to the user's account. This token reference will automatically be added by Convertigo for all transactions executed in the same context. 
+\n
+\nThe token remains valid for a set length of time, which is defined by whichever Google service you're working with.
+\n
+\nThere are four possible responses to a login request:
+\n
+\n    * success
+\n    * failure, with an explanatory error code
+\n    * invalid request, generally resulting from a malformed request
+\n    * failure with a CAPTCHA challenge
+\n
+\nA success response contains an authorization token labeled "Auth". This token must be included in all subsequent requests to the Google service for this account, which will be automatically done by Convertigo for every transaction executed in the same context. Authorization tokens should be closely guarded and should not be given to any other application, as they represent access to the user's account. The time limit on the token varies depending on which service issued it.
+\n
+\nFor example: 
+\n
+\n<?xml version="1.0" encoding="ISO-8859-1"?>
+\n<document connector="SpreadsheetConnector" context="..." contextId="..." fromcache="false" generated="Fri Jun 18 10:27:46 CEST 2010" project="lib_GoogleDocs" sequence="" signature="1276849666418" transaction="Login" version="5.0.5">
+\n	&lt;![CDATA[SID=DQAAAHkAAADyn8dvG5TFFMaMRRKTuPP9lm-z20JRq-MTwtjhgykgulbT0gTX39tCyc67oV5BZI7ixNFzF9KzEMcuFtyPHI0PPoBdwPYSj6jkaU597EWwPJ8h9sfth554serMEBXbEH2Fyj1I9hB8hqz5iacmDCen-xsB725nTVqPJ5kIS9buIg
+\n	LSID=DQAAdrygerhcAA5F9fwhUi7Zaj_YgewWD9Ubvd7Z-3Y7ZfEMionrvM7AXises5Yp_5eG2FHrmmHVpuOo01AgxmWCRp2ScsawFWBywK-trw4iw1VylzaFM1ZKdWYttgjxh8ESdJpBokUnRtLPiPidRnQ4liNeC9EBal2xM16Mnvte_aWh-sbaw
+\n	Auth=DQAAAHwAAAA5F9fwhUi7Zaj_YgewWD9Ubvd7Z-3Y7sfhkn<sdgM7AXises5Yp_5eG2FHrmmHVpu2dl5DaYiiGHSWEbMrQddfghfjfgjhKjk2yu61xtDj3Rj3Dpgpf31t-BZzXQOr45thNrxXFBpI8ceYleaAlhh0JGL6ytV2lhbLcyARA
+\n	]]]]&gt;&lt;![CDATA[>
+\n</document>
+\n
+\n
+\nA failure response includes one or more error codes and a URL with the error message that can be displayed for the user. Please note that ClientLogin does not differentiate between a failure due to an incorrect password or one due to an unrecognized user name (for example, if the user has not yet signed up for an account). Your application needs to handle all possible error messages as appropriate.
+\n
+\nFor example:
+\n
+\n<?xml version="1.0" encoding="ISO-8859-1"?>
+\n<document connector="SpreadsheetConnector" context="..." contextId="..." fromcache="false" generated="Fri Jun 18 10:40:33 CEST 2010" project="lib_GoogleDocs" sequence="" signature="1276850433668" transaction="Login" version="5.0.5">
+\n	&lt;![CDATA[Error=BadAuthentication
+\n	]]]]&gt;&lt;![CDATA[>
+\n</document>
+\n
+\n
+\nA failure response with a CAPTCHA challenge means that Google has decided, for whatever reason, that additional security measures should be taken. This response is accompanied by a CAPTCHA image URL and a token representing the specific CAPTCHA challenge.
+\nTo handle the challenge, the application must display the CAPTCHA image and solicit an answer from the user. To display the CAPTCHA image, use the value of CaptchaUrl returned with the failure response, prefixing it with the Google Accounts URL: "http://www.google.com/accounts/". Once the user provides an answer, resend the login request by calling again the Login transaction, this time including the CAPTCHA token (loginToken) and the user's answer (captchaString). Google validates the user's answer before authorizing access to the account. ]]&gt;
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__LoginRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordAdd">
+<wsdl:documentation><![CDATA[Adds a new record into a specified table of a specified spreadsheet.
+\n
+\nYou can specify the record's title, and the columns names and matching values to insert.
+\n
+\nWhen you insert a new record, Spreadsheets adds the new data to a row in the worksheet, then adds a new record to the table using the newly added data.
+\n
+\nThe choice of which worksheet row to put the data in is determined by the table's mode:
+\n
+\n    * If the table is set to use insert mode, then Spreadsheets adds a new row to the worksheet, and puts the new data in that new row.
+\n    * If the table is set to use overwrite mode, then Spreadsheets uses the next unused row from the worksheet. If there are no unused rows in the worksheet, then Spreadsheets adds a new row to the worksheet, as if the table were set to use insert mode.
+\n
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordAddRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordAddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordDelete">
+<wsdl:documentation><![CDATA[Deletes a record from a specified table of a given spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordDeleteRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordDeleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordsList">
+<wsdl:documentation><![CDATA[A table consists of a set of records. For a given table, you can retrieve that table's record feed to see the contents of the records.
+\n
+\nNote that the order of items in each record is the same as the order of columns in the table definition, which may not match the order of columns in the GUI.
+\n
+\nThis transaction retrieves a table's record feed with all the records from the specified table of the specified spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordsListRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__RecordsListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__SpreadsheetsList">
+<wsdl:documentation><![CDATA[Retrieves a list of the currently authenticated user's spreadsheets.
+\n
+\nThe result is a "metafeed," a feed that lists all of that user's feeds of a particular type; in this case, each entry in the feed represents a spreadsheet associated with the user.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__SpreadsheetsListRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__SpreadsheetsListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TableAdd">
+<wsdl:documentation><![CDATA[Adds a table on a specified worksheet.
+\n
+\nYou can specify the header row, the start row for the data, the number of rows, and the columns (and order of columns) to use. Thus, the table can consist of a header row, any number of data rows that are adjacent in the worksheet, and any set of columns, in any order
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableAddRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableAddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TableDelete">
+<wsdl:documentation><![CDATA[Deletes a table from a given spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableDeleteRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TableDeleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TablesList">
+<wsdl:documentation><![CDATA[A table feed is a feed that allows you to treat part or all of a worksheet somewhat like a table in a database - that is, as a set of structured data items.
+\n
+\nA table feed shows data in rows, that are called records. The table shown in a table feed can be a subset of the data in the worksheet; it can even use a set of disjoint columns, and you can define multiple tables in a single worksheet. Also, table data can come from anywhere in the worksheet; a table doesn't have to start at the top left corner of the worksheet.
+\n
+\nTables don't exist until you explicitly create them - before you can use a table feed, you have to explicitly define where the table data comes from, using the Data API.
+\n
+\nThis transaction retrieves a table feed with all the tables from the specified spreadsheet.
+\n
+\nIf there are several worksheets in the specified spreadsheet, it retrieves all tables from all worksheets.
+\n
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TablesListRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__TablesListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetAdd">
+<wsdl:documentation><![CDATA[Adds a new worksheet with a title in a given spreadsheet.
+\n
+\nSpreadsheets inserts the new worksheet immediately after the last worksheet that appears in Spreadsheets UI.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetAddRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetAddResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetDelete">
+<wsdl:documentation><![CDATA[Deletes a worksheet from a given spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetDeleteRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetDeleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetsList">
+<wsdl:documentation><![CDATA[A given spreadsheet may contain multiple worksheets. For each spreadsheet, there's a worksheets metafeed listing all the worksheets in that spreadsheet.
+\n
+\nThis transaction retrieves a list of worksheets in a given spreadsheet.
+]]></wsdl:documentation>
+      <wsdl:input message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetsListRequest">
+    </wsdl:input>
+      <wsdl:output message="lib_GoogleSpreadsheets_ns:SpreadsheetConnector__WorksheetsListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="lib_GoogleSpreadsheetsSOAPBinding" type="lib_GoogleSpreadsheets_ns:lib_GoogleSpreadsheetsPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="usingGoogleSpreadsheets">
+<wsdl:documentation><![CDATA[This sequence is a sample use of the Web service methods provided by SpreadsheetConnector.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?usingGoogleSpreadsheets"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetListRowId">
+<wsdl:documentation><![CDATA[This transaction retrieves a list row ID by splitting list row entry data from the list row metafeed.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__HelperGetListRowId"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetRecordNumber">
+<wsdl:documentation><![CDATA[This transaction retrieves a record ID by splitting record entry data from the record metafeed.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__HelperGetRecordNumber"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetSpreadsheetKey">
+<wsdl:documentation><![CDATA[This transaction retrieves a spreadsheet key by splitting spreadsheet entry data from the spreadsheet metafeed.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__HelperGetSpreadsheetKey"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetTableNumber">
+<wsdl:documentation><![CDATA[This transaction retrieves a table number by splitting table entry data from the table metafeed.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__HelperGetTableNumber"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__HelperGetWorksheetId">
+<wsdl:documentation><![CDATA[This transaction retrieves a worksheet ID by splitting worksheet entry data from the worksheet metafeed.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__HelperGetWorksheetId"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowAdd">
+<wsdl:documentation><![CDATA[Adds a new row on an existing table on a specified worksheet.
+\n
+\nSpreadsheets inserts the new row immediately after the last row that appears in the list-based feed, which is to say immediately before the first entirely blank row.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__ListRowAdd"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowDelete">
+<wsdl:documentation><![CDATA[Deletes a list row from a specified table of a given spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__ListRowDelete"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__ListRowsList">
+<wsdl:documentation><![CDATA[A given worksheet generally contains multiple rows, each containing multiple cells. You can request data from the worksheet as a list-based feed, in which each entry represents a row.
+\n
+\nThe list feed makes some assumptions about how the data is laid out in the spreadsheet. In particular, the list feed treats the first row of the worksheet as a header row; Spreadsheets dynamically creates XML elements named after the contents of header-row cells. Users who want to provide Data API feeds should not put any data other than column headers in the first row of a worksheet.
+\n
+\nThe list feed contains all rows after the first row up to the first blank row. The first blank row terminates the data set. If expected data isn't appearing in a feed, check the worksheet manually to see whether there's an unexpected blank row in the middle of the data. In particular, if the second row of the spreadsheet is blank, then the list feed will contain no data.
+\n
+\nA row in a list feed is as many columns wide as the worksheet itself.
+\n
+\nThis transaction retrieves a list-based feed with all the tables from the specified worksheet of the specified spreadsheet.
+\n
+\nEach entry represents a row in the worksheet. The <title> element contains the contents of the first cell in the row, and the <content> element contains a textual representation of the data from all the other cells in the row.
+\nEach item in the gsx namespace represents the contents of a cell in the row, with elements in the gsx namespace named after the contents of the header cells?that is, the cells in the first row of the worksheet. If a particular header cell is empty, then a unique column ID is used for the gsx element name. If the header cell's content contains a space, it will be removed in the gsx element name.
+\n
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__ListRowsList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__Login">
+<wsdl:documentation><![CDATA[&lt;![CDATA[Accesses a user's Google account.
+\n
+\nOnce the login information has been successfully authenticated, Google returns a token, which your application will reference each time it requests access to the user's account. This token reference will automatically be added by Convertigo for all transactions executed in the same context. 
+\n
+\nThe token remains valid for a set length of time, which is defined by whichever Google service you're working with.
+\n
+\nThere are four possible responses to a login request:
+\n
+\n    * success
+\n    * failure, with an explanatory error code
+\n    * invalid request, generally resulting from a malformed request
+\n    * failure with a CAPTCHA challenge
+\n
+\nA success response contains an authorization token labeled "Auth". This token must be included in all subsequent requests to the Google service for this account, which will be automatically done by Convertigo for every transaction executed in the same context. Authorization tokens should be closely guarded and should not be given to any other application, as they represent access to the user's account. The time limit on the token varies depending on which service issued it.
+\n
+\nFor example: 
+\n
+\n<?xml version="1.0" encoding="ISO-8859-1"?>
+\n<document connector="SpreadsheetConnector" context="..." contextId="..." fromcache="false" generated="Fri Jun 18 10:27:46 CEST 2010" project="lib_GoogleDocs" sequence="" signature="1276849666418" transaction="Login" version="5.0.5">
+\n	&lt;![CDATA[SID=DQAAAHkAAADyn8dvG5TFFMaMRRKTuPP9lm-z20JRq-MTwtjhgykgulbT0gTX39tCyc67oV5BZI7ixNFzF9KzEMcuFtyPHI0PPoBdwPYSj6jkaU597EWwPJ8h9sfth554serMEBXbEH2Fyj1I9hB8hqz5iacmDCen-xsB725nTVqPJ5kIS9buIg
+\n	LSID=DQAAdrygerhcAA5F9fwhUi7Zaj_YgewWD9Ubvd7Z-3Y7ZfEMionrvM7AXises5Yp_5eG2FHrmmHVpuOo01AgxmWCRp2ScsawFWBywK-trw4iw1VylzaFM1ZKdWYttgjxh8ESdJpBokUnRtLPiPidRnQ4liNeC9EBal2xM16Mnvte_aWh-sbaw
+\n	Auth=DQAAAHwAAAA5F9fwhUi7Zaj_YgewWD9Ubvd7Z-3Y7sfhkn<sdgM7AXises5Yp_5eG2FHrmmHVpu2dl5DaYiiGHSWEbMrQddfghfjfgjhKjk2yu61xtDj3Rj3Dpgpf31t-BZzXQOr45thNrxXFBpI8ceYleaAlhh0JGL6ytV2lhbLcyARA
+\n	]]]]&gt;&lt;![CDATA[>
+\n</document>
+\n
+\n
+\nA failure response includes one or more error codes and a URL with the error message that can be displayed for the user. Please note that ClientLogin does not differentiate between a failure due to an incorrect password or one due to an unrecognized user name (for example, if the user has not yet signed up for an account). Your application needs to handle all possible error messages as appropriate.
+\n
+\nFor example:
+\n
+\n<?xml version="1.0" encoding="ISO-8859-1"?>
+\n<document connector="SpreadsheetConnector" context="..." contextId="..." fromcache="false" generated="Fri Jun 18 10:40:33 CEST 2010" project="lib_GoogleDocs" sequence="" signature="1276850433668" transaction="Login" version="5.0.5">
+\n	&lt;![CDATA[Error=BadAuthentication
+\n	]]]]&gt;&lt;![CDATA[>
+\n</document>
+\n
+\n
+\nA failure response with a CAPTCHA challenge means that Google has decided, for whatever reason, that additional security measures should be taken. This response is accompanied by a CAPTCHA image URL and a token representing the specific CAPTCHA challenge.
+\nTo handle the challenge, the application must display the CAPTCHA image and solicit an answer from the user. To display the CAPTCHA image, use the value of CaptchaUrl returned with the failure response, prefixing it with the Google Accounts URL: "http://www.google.com/accounts/". Once the user provides an answer, resend the login request by calling again the Login transaction, this time including the CAPTCHA token (loginToken) and the user's answer (captchaString). Google validates the user's answer before authorizing access to the account. ]]&gt;
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__Login"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordAdd">
+<wsdl:documentation><![CDATA[Adds a new record into a specified table of a specified spreadsheet.
+\n
+\nYou can specify the record's title, and the columns names and matching values to insert.
+\n
+\nWhen you insert a new record, Spreadsheets adds the new data to a row in the worksheet, then adds a new record to the table using the newly added data.
+\n
+\nThe choice of which worksheet row to put the data in is determined by the table's mode:
+\n
+\n    * If the table is set to use insert mode, then Spreadsheets adds a new row to the worksheet, and puts the new data in that new row.
+\n    * If the table is set to use overwrite mode, then Spreadsheets uses the next unused row from the worksheet. If there are no unused rows in the worksheet, then Spreadsheets adds a new row to the worksheet, as if the table were set to use insert mode.
+\n
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__RecordAdd"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordDelete">
+<wsdl:documentation><![CDATA[Deletes a record from a specified table of a given spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__RecordDelete"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__RecordsList">
+<wsdl:documentation><![CDATA[A table consists of a set of records. For a given table, you can retrieve that table's record feed to see the contents of the records.
+\n
+\nNote that the order of items in each record is the same as the order of columns in the table definition, which may not match the order of columns in the GUI.
+\n
+\nThis transaction retrieves a table's record feed with all the records from the specified table of the specified spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__RecordsList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__SpreadsheetsList">
+<wsdl:documentation><![CDATA[Retrieves a list of the currently authenticated user's spreadsheets.
+\n
+\nThe result is a "metafeed," a feed that lists all of that user's feeds of a particular type; in this case, each entry in the feed represents a spreadsheet associated with the user.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__SpreadsheetsList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TableAdd">
+<wsdl:documentation><![CDATA[Adds a table on a specified worksheet.
+\n
+\nYou can specify the header row, the start row for the data, the number of rows, and the columns (and order of columns) to use. Thus, the table can consist of a header row, any number of data rows that are adjacent in the worksheet, and any set of columns, in any order
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__TableAdd"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TableDelete">
+<wsdl:documentation><![CDATA[Deletes a table from a given spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__TableDelete"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__TablesList">
+<wsdl:documentation><![CDATA[A table feed is a feed that allows you to treat part or all of a worksheet somewhat like a table in a database - that is, as a set of structured data items.
+\n
+\nA table feed shows data in rows, that are called records. The table shown in a table feed can be a subset of the data in the worksheet; it can even use a set of disjoint columns, and you can define multiple tables in a single worksheet. Also, table data can come from anywhere in the worksheet; a table doesn't have to start at the top left corner of the worksheet.
+\n
+\nTables don't exist until you explicitly create them - before you can use a table feed, you have to explicitly define where the table data comes from, using the Data API.
+\n
+\nThis transaction retrieves a table feed with all the tables from the specified spreadsheet.
+\n
+\nIf there are several worksheets in the specified spreadsheet, it retrieves all tables from all worksheets.
+\n
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__TablesList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetAdd">
+<wsdl:documentation><![CDATA[Adds a new worksheet with a title in a given spreadsheet.
+\n
+\nSpreadsheets inserts the new worksheet immediately after the last worksheet that appears in Spreadsheets UI.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__WorksheetAdd"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetDelete">
+<wsdl:documentation><![CDATA[Deletes a worksheet from a given spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__WorksheetDelete"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpreadsheetConnector__WorksheetsList">
+<wsdl:documentation><![CDATA[A given spreadsheet may contain multiple worksheets. For each spreadsheet, there's a worksheets metafeed listing all the worksheets in that spreadsheet.
+\n
+\nThis transaction retrieves a list of worksheets in a given spreadsheet.
+]]></wsdl:documentation>
+      <soap:operation soapAction="lib_GoogleSpreadsheets?SpreadsheetConnector__WorksheetsList"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="lib_GoogleSpreadsheets">
+    <wsdl:port name="lib_GoogleSpreadsheetsSOAP" binding="lib_GoogleSpreadsheets_ns:lib_GoogleSpreadsheetsSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/lib_GoogleSpreadsheets/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
