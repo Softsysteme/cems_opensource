@@ -373,7 +373,6 @@ Studio/lib/jakarta-regexp-1.2.jar -text svneol=unset#unset
 Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
-Studio/lib/mariadb-java-client-1.1.1.jar -text
 Studio/lib/mariadb-java-client-1.1.3.jar -text
 Studio/lib/msxml.jar -text svneol=unset#unset
 Studio/lib/mysql-connector.jar -text
@@ -1678,6 +1677,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/XMLNode.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLNodeBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLNodeList.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLNodeListBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/common/XMLPrintScreen.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/common/XMLPrintScreenBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/XMLRecord.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLRecordBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/common/XMLRectangle.java -text
@@ -1782,6 +1783,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/images/xmlnode_color_16x16.png -
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlnode_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlnodelist_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlnodelist_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xmlprintscreen_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/common/images/xmlprintscreen_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlrecord_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlrecord_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/common/images/xmlsplitnodes_color_16x16.png -text
@@ -1837,6 +1840,7 @@ Studio/src/com/twinsoft/convertigo/beans/common/res/XMLHttpHeaders.properties -t
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLHttpUrl.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLNode.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLNodeList.properties -text
+Studio/src/com/twinsoft/convertigo/beans/common/res/XMLPrintScreen.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLRecord.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLSplitNodes.properties -text
 Studio/src/com/twinsoft/convertigo/beans/common/res/XMLTable.properties -text
@@ -2650,6 +2654,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/TransactionStep.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/steps/TransactionStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/WhileStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/WhileStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/WriteBase64Step.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/WriteBase64StepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/WriteCSVStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/WriteCSVStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/WriteFileStep.java -text svneol=unset#text/plain
@@ -2819,6 +2825,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/TestStep.properties -text svn
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ThenStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/TransactionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/WhileStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/WriteBase64Step.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/WriteCSVStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/WriteFileStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/WriteXMLStep.properties -text svneol=unset#text/plain
@@ -3870,6 +3877,7 @@ Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboParent.java -text svne
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HeaderName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HtmlLocation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/ImageFormat.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/MimeType.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Parameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Visibility.java -text svneol=unset#text/plain
@@ -4139,12 +4147,12 @@ Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/appstartup.xpt -te
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/autocomplete.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/autoconfig.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/caps.xpt -text
+Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/cemsPrintScreen.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/chardet.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/chrome.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/commandhandler.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/commandlines.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/composer.xpt -text
-Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/compreg.dat -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/content_base.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/content_html.xpt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/content_htmldoc.xpt -text
