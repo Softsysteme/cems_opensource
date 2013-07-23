@@ -383,7 +383,6 @@ Studio/lib/javapns/bcprov-jdk15-146.jar -text
 Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
-Studio/lib/mariadb-java-client-1.1.1.jar -text
 Studio/lib/mariadb-java-client-1.1.3.jar -text
 Studio/lib/msxml.jar -text svneol=unset#unset
 Studio/lib/mysql-connector.jar -text
