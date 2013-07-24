@@ -3197,6 +3197,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_previous[!!-~]tab.png -t
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_refresh.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_stop.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/AbstractStubAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToAttributeStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToElementStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistStepAction.java -text svneol=unset#text/plain
@@ -3213,6 +3215,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToMultiValuedVari
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToSimpleSourceStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToSingleValuedVariableAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToSourceStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToXMLAttributeStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToXMLConcatStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToXMLElementStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CicsTransactionImportCopybookAction.java -text
