@@ -98,6 +98,7 @@ public class GetRequestables extends XmlService {
 		for (MobileDevice device : project.getMobileDeviceList()) {
 			Element e_device = createDatabaseObjectElement(document, device);
 			e_device.setAttribute("classname", device.getClass().getSimpleName());
+			e_device.setAttribute("ressource_path", device.getResourcesPath());
 			e_project.appendChild(e_device);
 			hasMobileDevice = true;
 		}
