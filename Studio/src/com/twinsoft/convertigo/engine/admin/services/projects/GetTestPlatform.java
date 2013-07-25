@@ -110,6 +110,7 @@ public class GetTestPlatform extends XmlService {
 			for (MobileDevice device : mobileApplication.getMobileDeviceList()) {
 				Element e_device = createDatabaseObjectElement(document, device);
 				e_device.setAttribute("classname", device.getClass().getSimpleName());
+				e_device.setAttribute("ressource_path", device.getResourcesPath());
 				e_mobileApplication.appendChild(e_device);
 				hasMobileDevice = true;
 			}

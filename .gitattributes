@@ -139,6 +139,8 @@ Studio/icons/studio/information_16x16.gif -text
 Studio/icons/studio/interaction_hub_color_32x32.png -text
 Studio/icons/studio/javelinconnector_color_32x32.gif -text
 Studio/icons/studio/key.gif -text
+Studio/icons/studio/launch_fullscreen_16x16.gif -text
+Studio/icons/studio/launch_test_platform_16x16.png -text
 Studio/icons/studio/learn_transaction.gif -text
 Studio/icons/studio/library_googleMaps_color_32x32.png -text
 Studio/icons/studio/library_googleSpreadsheets_color_32x32.png -text
@@ -150,6 +152,7 @@ Studio/icons/studio/new_line.d.gif -text
 Studio/icons/studio/new_line.gif -text
 Studio/icons/studio/new_screenclass.d.gif -text
 Studio/icons/studio/new_screenclass.gif -text
+Studio/icons/studio/open_test_platform_16x16.png -text
 Studio/icons/studio/options.gif -text
 Studio/icons/studio/panel_color_32x32.gif -text
 Studio/icons/studio/pause.d.gif -text
@@ -3507,7 +3510,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableExtractionRuleAct
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/GetOptionsAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileDeviceFullScreenProjectAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileDeviceProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/MyAbstractAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OpenProjectTestPlatformAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputRecursiveStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectCleanXSDAction.java -text svneol=unset#text/plain
