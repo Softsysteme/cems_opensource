@@ -266,6 +266,7 @@ Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/logs/engine.log*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys.txt
 Studio/tomcat/webapps/convertigo/WEB-INF/trial_deploy.ser
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner-work
+Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/compreg.dat
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/xpti.dat
 Studio/tomcat/webapps/convertigo/cache_proxy
 Studio/tomcat/webapps/convertigo/templates/project/*.car
