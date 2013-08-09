@@ -53,6 +53,10 @@ $.extend(true, C8O, {
 //		log_level: "warn", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
+	},
+	
+	options : {
+//		loading : {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
 	}
 });
 
@@ -63,7 +67,7 @@ $.extend(true, C8O, {
 
 /**
  * addHook function
- * some part of the weblib can be customized using a hook
+ * some part of the C8O can be customized using a hook
  * just specify the hook name and its handler
  * all existing hook are explain bellow
  * name: string of the hook name
@@ -110,7 +114,7 @@ $.extend(true, C8O, {
  * data: string (query form) or Object (key/value) or HTML Form element
  *          used as AJAX parameters
  */
-//C8O.call(data)
+//C8O.call(data);
 
 /**
  * canLog function
@@ -119,7 +123,7 @@ $.extend(true, C8O, {
  * return: true > can log
  *           false > cannot log
  */
-//C8O.canLog(level)
+//C8O.canLog(level);
 
 /**
  * convertHTML function
@@ -128,7 +132,24 @@ $.extend(true, C8O, {
  * output (optional): HTML element where the input copy is appended
  * return: HTML element, output element or a new <fragment> element with the imported input
  */
-//C8O.convertHTML(input, output)
+//C8O.convertHTML(input, output);
+
+/**
+ * formToData function
+ * copy all form's inputs into the data object or a new one.
+ * Inputs names are the keys and inputs values are the values of the data object.
+ * In case of multivalued, value is turn into an array. 
+ * form: raw or jQuery FORM element
+ * data (optional): object (key/value) where values are copied
+ * return: the data object or a new one with copied form's inputs values
+ */
+//C8O.formToData($form, data);
+
+/**
+ * getBrowserLanguage function
+ * return: a string of the current detected language, in 2 characters
+ */
+//C8O.getBrowserLanguage();
 
 /**
  * getLastCallParameter function
@@ -159,6 +180,19 @@ $.extend(true, C8O, {
 //C8O.isUndefined(obj);
 
 /**
+ * log object and functions
+ * write the msg string into the console.log if available
+ * or call the hook "log" if added.
+ * msg: string with the message to log
+ * e (optional): exception object to add to the log
+ */
+//C8O.log.error(msg, e);
+//C8O.log.warn(msg, e);
+//C8O.log.info(msg, e);
+//C8O.log.debug(msg, e);
+//C8O.log.trace(msg, e);
+
+/**
  * removeRecallParameter function
  * reversed effect of addRecallParameter function
  * remove a parameter from automatically
@@ -166,6 +200,39 @@ $.extend(true, C8O, {
  * parameter_name: parameter name to remove from the list
  */
 //C8O.removeRecallParameter(parameter_name);
+
+/**
+ * toJSON function
+ * return a string representation of the data object (key/value) in a JSON format
+ * data: object to transform
+ * return: string of the data object in a JSON format 
+ */
+//C8O.toJSON(data);
+
+/**
+ * translate function
+ * if the i18n is enabled (C8O.ro_vars.files not empty)
+ * this function translate each text node and each attribute content that contain
+ * the __MSG_key__ marker, using the current dictionary.
+ * It can also translate a key and return its value.
+ * elt: element to translate or a string to translate
+ * return: string translated or nothing in case of element parameter 
+ */
+//C8O.translate(elt);
+
+/**
+ * waitHide function
+ * hide the wait screen
+ * by hiding the #c8oloading element and stop jquerymobile loading
+ */
+//C8O.waitHide();
+
+/**
+ * waitShow function
+ * show the wait screen
+ * by showing the #c8oloading element and start jquerymobile loading
+ */
+//C8O.waitShow();
 
 /*******************************************************
  * List of possible hooks *
@@ -179,10 +246,39 @@ $.extend(true, C8O, {
  *  or perform request itself
  *  
  *  data: key/value map of parameters sent to CEMS
- *  return: true > lets weblib perform the call
- *             false > weblib doen't perform the call
+ *  return: true > lets C8O perform the call
+ *             false > C8O doen't perform the call
  */
 //C8O.addHook("call", function (data) {
+//	return true;
+//});
+
+/**
+ *  call_complete hook
+ *  called after the xml_response, text_response or call_error hook
+ *  
+ *  jqXHR: the jQuery object that enhance the XHR used by the call
+ *  textStatus: text status of the Ajax response
+ *  data: data used to generate the C8O.call
+ *  return: true > hide the wait div if no pending call
+ *             false > lets the wait div
+ */
+//C8O.addHook("call_complete", function (jqXHR, textStatus, data) {
+//	return true;
+//});
+
+/**
+ *  call_error hook
+ *  called call_complete hook, in case of an Ajax error (network error, unparsable response)
+ *  
+ *  jqXHR: the jQuery object that enhance the XHR used by the call
+ *  textStatus: text status of the Ajax response
+ *  errorThrown: caught cause of the error
+ *  data: data used to generate the C8O.call
+ *  return: true > log the error with C8O.log.error
+ *             false > don't log the error
+ */
+//C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
 //	return true;
 //});
 
@@ -192,11 +288,42 @@ $.extend(true, C8O, {
  *  can perform some DOM tweak
  *  or break the processing of request
  *  
- *  return: true > lets weblib perform the init
+ *  return: true > lets C8O perform the init
  *             false > break the processing of request
  */
 //C8O.addHook("document_ready", function () {
 //	return true;
+//});
+
+/**
+ *  init_finished hook
+ *  used at page loading after C8O initialization
+ *  or break the processing of request
+ *  
+ *  return: true > lets CTF handle the document
+ *             false > break the processing of request
+ */
+//C8O.addHook("init_finished", function (data) {
+//	return true;
+//});
+
+/**
+ *  log hook
+ *  used on each C8O.log.xxx call.
+ *  Allow to:
+ *   * handle log message (put in div, send request …)
+ *   * prevent log writing (return false)
+ *   * modify the message (return a new msg content).
+ *  
+ *  level: "string" level of this log, between error/warn/info/debug/trace
+ *  msg: "string" the log message
+ *  e: can be anything or nothing, but linked with the error
+ *  return: "string" > logs in console and override the msg
+ *             false > doesn't log in console
+ *             nothing or true > logs in console
+ */
+//C8O.addHook("log", function (level, msg, e) {
+//	return false;
 //});
 
 /**
@@ -205,10 +332,10 @@ $.extend(true, C8O, {
  *  using the XML response from CEMS
  *  
  *  xml: pure DOM document
- *  return: true > lets weblib perform the xml
+ *  return: true > lets the CTF perform the xml
  *             false > break the processing of xml
  */
-//C8O.addHook("xml_response", function (xml) {
+//C8O.addHook("xml_response", function (xml, data) {
 //	return true;
 //});
 
@@ -217,7 +344,7 @@ $.extend(true, C8O, {
  *  used at C8O.call calling and display a transparent mask
  *  that prevents the user to act
  *  
- *  return: true > lets weblib display the loading mask
+ *  return: true > lets C8O display the loading mask
  *             false > doesn't display anything
  */
 //C8O.addHook("loading_start", function () {
@@ -228,9 +355,11 @@ $.extend(true, C8O, {
  *  loading_stop hook
  *  used after xml_response execution
  *  
- *  return: true > lets weblib hide the loading mask
+ *  return: true > lets C8O hide the loading mask
  *             false > doesn't hide anything
  */
 //C8O.addHook("loading_stop", function () {
 //	return true;
 //});
+
+
