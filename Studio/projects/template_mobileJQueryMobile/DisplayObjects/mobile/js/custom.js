@@ -55,8 +55,8 @@ $.extend(true, C8O, {
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
 	},
 	
-	options : {
-//		loading : {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
+	options: {
+//		loading: {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
 	},
 	
 	routingTable: [
@@ -152,7 +152,7 @@ $.extend(true, C8O, {
 
 /**
  * appendValue function
- * append value in data.key :
+ * append value in data.key:
  * * set value if no previous
  * * make or reuse an array and push the value at the end
  * data: Object (key/value) that will be modified
