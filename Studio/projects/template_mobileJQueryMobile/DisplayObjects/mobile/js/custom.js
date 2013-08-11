@@ -31,7 +31,7 @@ $.extend(true, C8O, {
 	},
 	
 	/**
-	 * ro_vars variables values can only be set directly here, not dynamically
+	 * ro_vars read-only variables values can only be set directly here, not dynamically
 	 */
 	ro_vars: {
 //		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
@@ -57,7 +57,70 @@ $.extend(true, C8O, {
 	
 	options : {
 //		loading : {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
-	}
+	},
+	
+	routingTable: [
+//		{
+//			/**
+//			 * afterRendering function
+//			 * called after the rendering process.
+//			 * $doc: JQuery object of the XML document response
+//			 * c8oData: key/value parameters of the request
+//			 */
+//			afterRendering: function ($doc, c8oData) {
+//				
+//			},
+//			
+//			/**
+//			 * beforeRendering function
+//			 * called before the rendering process.
+//			 * $doc: JQuery object of the XML document response
+//			 * c8oData: key/value parameters of the request
+//			 */
+//			beforeRendering: function ($doc, c8oData) {
+//				
+//			},
+//			
+//			/**
+//			 * condition function or selector
+//			 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
+//			 * Called before the page changes.
+//			 * The condition is considered as validated if the jQuery selector returns a non empty list,
+//			 * or if the JS function returns true
+//			 * $doc: JQuery object of the XML document response
+//			 * c8oData: key/value parameters of the request
+//			 */
+//			condition: "jQuery selector",
+//			condition: function ($doc, c8oData) {
+//				return true;
+//			},
+//			
+//			/**
+//			 * fromPage parameter
+//			 * list of HTML element ID defining the page we come from
+//			 * before calling the C8O request
+//			 * (useful in order to route to different pages according to the origin page).
+//			 * Use the .is(selector) from JQuery.
+//			 * Sample: “#page1, #page2, #page3 ”
+//			 */
+//			fromPage: "",
+//			
+//			/**
+//			 * goToPage parameter
+//			 * an HTML page or an HTML element ID to display after the C8O call.
+//			 * If not present, it means a local rendering (i.e. in the same page).
+//			 */
+//			goToPage: "",
+//			
+//			/**
+//			 * options parameter
+//			 * an optional transition information
+//			 * (matching the jQueryMobile transition object format)
+//			 * used to display the page given in the goToPage parameter.
+//			 */
+//			options: {}
+//		},
+	]
 });
 
 /*******************************************************
