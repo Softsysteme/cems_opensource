@@ -402,27 +402,4 @@ $.extend(true, C8O, {
 //	return true;
 //});
 
-/**
- *  loading_start hook
- *  used at C8O.call calling and display a transparent mask
- *  that prevents the user to act
- *  
- *  return: true > lets C8O display the loading mask
- *             false > doesn't display anything
- */
-//C8O.addHook("loading_start", function () {
-//	return true;
-//});
-
-/**
- *  loading_stop hook
- *  used after xml_response execution
- *  
- *  return: true > lets C8O hide the loading mask
- *             false > doesn't hide anything
- */
-//C8O.addHook("loading_stop", function () {
-//	return true;
-//});
-
 
