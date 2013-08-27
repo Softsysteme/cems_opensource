@@ -2693,6 +2693,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/XMLTransformStep.java -text svneo
 Studio/src/com/twinsoft/convertigo/beans/steps/XMLTransformStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/attrib_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/b64W_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/b64W_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/break_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/break_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/complex_16x16.png -text
