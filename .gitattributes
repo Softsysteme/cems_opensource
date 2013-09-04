@@ -2773,6 +2773,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/splitstep_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/splitstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transactionstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/transformstep_16x16.png -text
