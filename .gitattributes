@@ -4236,6 +4236,7 @@ Studio/src/com/twinsoft/convertigo/engine/plugins/AbstractBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/Altares.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/AltaresBiller.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/Biller.java -text
+Studio/src/com/twinsoft/convertigo/engine/plugins/BnppPlugin.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/EnvoiSMSBiller.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalInfogreffeBiller.java -text
@@ -4244,6 +4245,8 @@ Studio/src/com/twinsoft/convertigo/engine/plugins/Infogreffe.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/InfogreffeBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/InseeBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/LCABiller.java -text
+Studio/src/com/twinsoft/convertigo/engine/plugins/Plugin.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/plugins/PluginsManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/Pobi.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/PobiBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/PobiProxyBiller.java -text
