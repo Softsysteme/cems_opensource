@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <topics>
 	<name>template_patterns</name>
+	<name>calling_convertigo</name>
+	<name>listening_convertigo</name>
 	<name>list_view</name>
 </topics>

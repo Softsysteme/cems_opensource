@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<topic>
+	<name>calling_convertigo</name>
+	<title>Calling Convertigo</title>
+	<sample>
+		<title>Directive: data-c8o-call</title>
+		<description>This sample demonstrates the basic way to call a Convertigo requestable.</description>
+		<source>
+			<button data-c8o-call=".getData">Test</button>
+			
+			<div data-c8o-listen=".getData">
+				<p>Shop: __=location name__</p>
+				<p>Address: __=location address__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Using an HTML form</title>
+		<description>This sample demonstrates how to call a Convertigo requestable inside an HTML.</description>
+		<source>
+			<form data-c8o-call=".pushForm">
+				<label for="firstname">First name:</label>
+				<input name="firstname" id="firstname" value="" placeholder="Enter your first name"/>
+				<label for="lastname">Last name:</label>
+				<input name="lastname" id="lastname" value="" placeholder="Enter your last name"/>
+				<button>Test</button>
+			</form>
+			
+			<div data-c8o-listen=".pushForm">
+				<p>First name: __=firstname__</p>
+				<p>Last name: __=lastname__</p>
+			</div>
+		</source>
+	</sample>
+</topic>
