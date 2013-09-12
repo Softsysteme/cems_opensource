@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<topic>
+	<name>list_view</name>
+	<title>List view</title>
+	<sample>
+		<title>Simple list view</title>
+		<description>
+			<p>This sample demonstrates the usage of the following directives:</p>
+			<ul>
+				<li>data-c8o-call</li>
+				<li>data-c8o-listen</li>
+				<li>data-c8o-each (iteration)</li>
+			</ul>
+		</description>
+		<source>
+			<button data-c8o-call=".getData">Test</button>
+			<p>List of available books:</p>
+			<div data-c8o-listen=".getData">
+				<ul data-role="listview" data-divider-theme="d" data-c8o-each="book">
+					<li><a href="">__=title__ (__=author__)</a></li>
+				</ul>
+			</div>
+		</source>
+	</sample>
+</topic>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<topic>
+	<name>template_patterns</name>
+	<title>Template patterns</title>
+	<sample>
+		<title>Simple template pattern</title>
+		<description>This sample demonstrates the simplier way to use templating in an HTML page.</description>
+		<source>
+			<button data-c8o-call=".getShop">Test</button>
+			
+			<div data-c8o-listen=".getShop">
+				<p>Shop: __=location name__</p>
+				<p>Address: __=location address__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Advanced (JSON) template pattern</title>
+		<description>This sample demonstrates the advanced way to use templating in an HTML page.
+		This is specially useful when we want to access to XML attributes for instance.</description>
+		<source>
+			<button data-c8o-call=".getCatalog">Test</button>
+			
+			<div data-c8o-listen=".getCatalog">
+				<p>First book title: __=catalog book:first title__</p>
+				<p>ID: __{ "find": "catalog > book:first", "attr": "id" }__</p>
+			</div>
+		</source>
+	</sample>
+</topic>

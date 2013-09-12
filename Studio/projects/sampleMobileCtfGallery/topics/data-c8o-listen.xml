@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<topic>
+	<name>data-c8o-listen</name>
+	<title>Listening Convertigo</title>
+	<source>&lt;button data-c8o-call=".getData"&gt;Test&lt;/button&gt;
+		
+&lt;div data-c8o-listen=".getData"&gt;
+	&lt;p&gt;First book: __=catalog book:first title__&lt;/p&gt;
+	&lt;p&gt;ID: __{ "find": "catalog &gt; book:first", "attr": "id" }__&lt;/p&gt;
+&lt;/div&gt;</source>
+	<sample>
+		<button data-c8o-call=".getData">Test</button>
+		
+		<div data-c8o-listen=".getData">
+			<p>First book title: __=catalog book:first title__</p>
+			<p>ID: __{ "find": "catalog > book:first", "attr": "id" }__</p>
+		</div>
+	</sample>
+</topic>

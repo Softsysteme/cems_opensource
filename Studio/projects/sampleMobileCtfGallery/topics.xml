@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <topics>
-	<name>simple_template_pattern</name>
-	<name>json_template_pattern</name>
-	<name>data-c8o-call</name>
-	<name>data-c8o-listen</name>
+	<name>template_patterns</name>
+	<name>list_view</name>
 </topics>

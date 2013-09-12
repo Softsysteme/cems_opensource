@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <shop>
-	<name>My famous shop</name>
-	<address>
-		<street>Boulevard Haussmann</street>
-		<city>Paris</city>
-		<zipcode>75000</zipcode>
-		<country>France</country>
-	</address>
+	<location>
+		<name>My famous shop</name>
+		<address>
+			<street>Boulevard Haussmann</street>
+			<city>Paris</city>
+			<zipcode>75000</zipcode>
+			<country>France</country>
+		</address>
+	</location>
 	<catalog>
 	   <book id="bk101">
 	      <author>Gambardella, Matthew</author>
