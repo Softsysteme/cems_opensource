@@ -4841,6 +4841,10 @@ Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons36black.png -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons36white.png -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.structure.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.structure.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/admin.css -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.png -text
