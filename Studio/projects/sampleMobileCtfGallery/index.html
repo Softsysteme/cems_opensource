@@ -44,7 +44,7 @@
 			</div>
 		
 			<div data-role="content">
-				<p>Select a topic in the left panel, and you will see it in live in your browser.</p>
+				<p>Select a topic in the left panel, and you will be able to try it in live in your browser.</p>
 			</div>
 		
 		</div>
@@ -68,12 +68,17 @@
 					
 					<div>__{ "find": "description", "type": "fragment" }__</div>
 					
-					<h4>Source code</h4>
-					<div><script type="syntaxhighlighter" class="brush: html">
-					<![CDATA[__{ "find": "source > *", "type": "fragment", "formatter": "formatHtmlSourceCode" }__]]></script></div>
+					<div class="sample_source">
+						<h4>Source code</h4>
+						<div><script type="syntaxhighlighter" class="brush: html">
+							<![CDATA[__{ "find": "source > *", "type": "fragment", "formatter": "formatHtmlSourceCode" }__]]>
+						</script></div>
+					</div>
 	
-					<h4>Sample</h4>
-					<div class="sample_test">__{ "find": "source > *", "type": "fragment" }__</div>
+					<div class="sample_test">
+						<h4>Sample</h4>
+						<div class="sample_test_exec">__{ "find": "source > *", "type": "fragment" }__</div>
+					</div>
 				</div>
 			</div>
 		
