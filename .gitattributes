@@ -739,6 +739,12 @@ Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xm
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/css/images/ajaxloader.gif -text
+Studio/projects/sampleMobileCtfGallery/css/images/icons18black.png -text
+Studio/projects/sampleMobileCtfGallery/css/images/icons18white.png -text
+Studio/projects/sampleMobileCtfGallery/css/images/icons36black.png -text
+Studio/projects/sampleMobileCtfGallery/css/images/icons36white.png -text
+Studio/projects/sampleMobileCtfGallery/css/jqm_convertigo_theme.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/data.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/js/custom.js -text svneol=unset#text/plain
