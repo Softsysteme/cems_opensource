@@ -15,8 +15,8 @@
 		</source>
 	</sample>
 	<sample>
-		<title>Using an HTML form</title>
-		<description>This sample demonstrates how to call a Convertigo requestable inside an HTML.</description>
+		<title>HTML form</title>
+		<description>This sample demonstrates how to call a Convertigo requestable inside a HTML form.</description>
 		<source>
 			<form data-c8o-call=".pushForm">
 				<label for="firstname">First name:</label>
@@ -25,6 +25,45 @@
 				<input name="lastname" id="lastname" value="" placeholder="Enter your last name"/>
 				<button>Test</button>
 			</form>
+			
+			<div data-c8o-listen=".pushForm">
+				<p>First name: __=firstname__</p>
+				<p>Last name: __=lastname__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Call without an HTML form element</title>
+		<description>
+			This sample demonstrates how to call a Convertigo requestable without an HTML form element.
+			In this sample, the call parameters are located into SPAN elements, therefore are visible in the HTML flow.
+		</description>
+		<source>
+			<div>
+				<a href="#" data-c8o-call=".pushForm">
+					Call <span data-c8o-variable="firstname">John</span> <span data-c8o-variable="lastname">Doe</span>
+				</a>
+			</div>
+			
+			<div data-c8o-listen=".pushForm">
+				<p>First name: __=firstname__</p>
+				<p>Last name: __=lastname__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Call without an HTML form element and with invisible parameters</title>
+		<description>
+			This sample demonstrates how to call a Convertigo requestable without an HTML form element.
+			In this sample, the call parameters are located into a data-c8o-variables directive,
+			therefore are not visible in the HTML flow.
+		</description>
+		<source>
+			<div>
+				<a href="#" data-c8o-call=".pushForm" data-c8o-variables='{ "firstname": "John", "lastname": "Doe"}'>
+					Call
+				</a>
+			</div>
 			
 			<div data-c8o-listen=".pushForm">
 				<p>First name: __=firstname__</p>

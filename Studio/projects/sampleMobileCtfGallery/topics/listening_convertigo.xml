@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <topic>
 	<name>listening_convertigo</name>
-	<title>Listening Convertigo</title>
+	<title>Listening to Convertigo</title>
 	<sample>
 		<title>Directive: data-c8o-listen</title>
 		<description>This sample demonstrates the basic way to listen to a Convertigo requestable.</description>

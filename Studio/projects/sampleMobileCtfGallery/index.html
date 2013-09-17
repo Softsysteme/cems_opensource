@@ -62,23 +62,32 @@
 				<h1 data-c8o-listen=".getTopic">__=topic > title__</h1>
 			</div>
 		
-			<div data-role="content" data-c8o-listen=".getTopic" data-c8o-after-rendering="onAfterRendering_getTopic" data-c8O-each="sample">
-				<div class="sample">
-					<h3>__=sample title__</h3>
-					
-					<div>__{ "find": "description", "type": "fragment" }__</div>
-					
-					<div class="sample_source">
-						<h4>Source code</h4>
-						<div><script type="syntaxhighlighter" class="brush: html">
+			<div data-role="content" data-c8o-listen=".getTopic" data-c8o-after-rendering="onAfterRendering_getTopic">
+				<div>
+					<p>The following subjects are treated here:</p>
+					<ul data-c8o-each="sample">
+						<li>__=sample title__</li>
+					</ul>
+				</div>
+				
+				<div data-c8O-each="sample">
+					<div class="sample">
+						<h3>__=sample title__</h3>
+						
+						<div>__{ "find": "description", "type": "fragment" }__</div>
+						
+						<div class="sample_source">
+							<h4>Source code</h4>
+							<div><script type="syntaxhighlighter" class="brush: html">
 							<![CDATA[__{ "find": "source > *", "type": "fragment", "formatter": "formatHtmlSourceCode" }__]]>
 						</script></div>
-					</div>
-	
-					<div class="sample_test">
-						<h4>Sample</h4>
-						<div class="sample_test_exec">__{ "find": "source > *", "type": "fragment" }__</div>
-					</div>
+						</div>
+		
+						<div class="sample_test">
+							<h4>Sample</h4>
+							<div class="sample_test_exec">__{ "find": "source > *", "type": "fragment" }__</div>
+						</div>
+				</div>
 				</div>
 			</div>
 		
