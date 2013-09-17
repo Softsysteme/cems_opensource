@@ -731,20 +731,6 @@ Studio/projects/lib_Yammer/lib_Yammer.temp.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.xml -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.xsd -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/.project -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/icon.png -text
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/app.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/details.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/listDisplay.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/searchForm.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/server.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/DisplayObjects/mobile/sources/topToolbar.js -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.wsdl -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xml -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationMobilizerSencha/sampleDocumentationMobilizerSencha.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
