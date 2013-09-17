@@ -6,7 +6,7 @@
 		<title>Directive: data-c8o-call</title>
 		<description>This sample demonstrates the basic way to call a Convertigo requestable.</description>
 		<source>
-			<button data-c8o-call=".getData">Test</button>
+			<button data-c8o-call=".getData">Get data</button>
 			
 			<div data-c8o-listen=".getData">
 				<p>Shop: __=location name__</p>
@@ -20,10 +20,10 @@
 		<source>
 			<form data-c8o-call=".pushForm">
 				<label for="firstname">First name:</label>
-				<input name="firstname" id="firstname" value="" placeholder="Enter your first name"/>
+				<input name="firstname" id="firstname" value="" placeholder="Enter your first name">aze</input>
 				<label for="lastname">Last name:</label>
-				<input name="lastname" id="lastname" value="" placeholder="Enter your last name"/>
-				<button>Test</button>
+				<input name="lastname" id="lastname" value="" placeholder="Enter your last name">aze</input>
+				<button>Post form</button>
 			</form>
 			
 			<div data-c8o-listen=".pushForm">
