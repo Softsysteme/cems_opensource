@@ -17,11 +17,6 @@
         <xsd:attribute name="name" type="xsd:string"/>
         <xsd:attribute name="value" type="xsd:string"/>
     </xsd:complexType>
-    <xsd:group name="SenchaConnectorTypes">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="template_mobileJQueryMobile_ns:ConvertigoError"/>
-        </xsd:sequence>
-    </xsd:group>
     <xsd:group name="default_connectorTypes">
         <xsd:sequence>
             <xsd:element minOccurs="0" name="error" type="template_mobileJQueryMobile_ns:ConvertigoError"/>
