@@ -47,4 +47,22 @@
 			</div>
 		</source>
 	</sample>
+	<sample>
+		<title>JQueryMobile grid</title>
+		<description>
+			<p>This sample demonstrates the usage of a JQueryMobile grid.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries" data-c8o-variables='{ "__user_reference": "grid" }'>Get countries</button>
+			<div data-c8o-listen=".getCountries" data-c8o-listen-condition='document[userReference="grid"]'>
+				<div class="ui-grid-d" data-c8o-each="country">
+				    <div class="ui-block-a"><div class="ui-bar ui-bar-e">__{ "attr": "name", "formatter": "formatCountry" }__</div></div>
+				    <div class="ui-block-b"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(1)", "attr": "name" }__</div></div>
+				    <div class="ui-block-c"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(2)", "attr": "name" }__</div></div>
+				    <div class="ui-block-d"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(3)", "attr": "name" }__</div></div>
+				    <div class="ui-block-e"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(4)", "attr": "name" }__</div></div>
+				</div>
+			</div>
+		</source>
+	</sample>
 </topic>
