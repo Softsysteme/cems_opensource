@@ -33,33 +33,25 @@
 
 		<div data-role="page" id="main" data-theme="z">
 	
-			<div data-role="panel" id="galleryPanel" data-c8o-listen=".getTopics">
-				<ul data-role="listview" data-theme="z" data-c8o-each="topic">
-				    <li class="sample"><a href="" data-c8o-call=".getTopic" data-c8o-variables='{ "name": "__=name__"}'>__=title__</a></li>
-				</ul>
-			</div>
-		
 			<div data-role="header" data-theme="z">
-				<a href="#galleryPanel" data-icon="bars">Show topics</a>
 				<h1>Welcome to the CTF gallery!</h1>
 			</div>
 		
 			<div data-role="content" data-theme="z">
-				<p>Select a topic in the left panel, and you will be able to try it in live in your browser.</p>
+				<div>Getting topics, please wait a while...</div>
+			
+				<div data-c8o-listen=".getTopics">
+					<ul data-role="listview" data-theme="z" data-c8o-each="topic">
+					    <li class="sample"><a href="" data-c8o-call=".getTopic" data-c8o-variables='{ "name": "__=name__"}'>__=title__</a></li>
+					</ul>
+				</div>
 			</div>
 		
 		</div>
 
-		<div data-role="page" id="showTopic" data-theme="z">
+		<div data-role="page" id="showTopic" data-theme="z" data-add-back-btn="true">
 	
-			<div data-role="panel" id="galleryPanel2" data-c8o-listen=".getTopics">
-				<ul data-role="listview" data-divider-theme="d" data-c8o-each="topic">
-				    <li class="sample"><a href="" data-c8o-call=".getTopic" data-c8o-variables='{ "name": "__=name__"}'>__=title__</a></li>
-				</ul>
-			</div>
-		
 			<div data-role="header" data-theme="z">
-				<a href="#galleryPanel2" data-icon="bars">Show topics</a>
 				<h1 data-c8o-listen=".getTopic">__=topic > title__</h1>
 			</div>
 		
