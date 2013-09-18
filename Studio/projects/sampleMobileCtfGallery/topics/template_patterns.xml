@@ -4,7 +4,7 @@
 	<title>Template patterns</title>
 	<sample>
 		<title>Simple template pattern</title>
-		<description>This sample demonstrates the simplier way to use templating in an HTML page.</description>
+		<description>This sample demonstrates the basic way to use templating in an HTML page.</description>
 		<source>
 			<button data-c8o-call=".getShop">Get shop</button>
 			
@@ -23,7 +23,7 @@
 			
 			<div data-c8o-listen=".getCatalog">
 				<p>First book title: __=catalog book:first title__</p>
-				<p>ID: __{ "find": "catalog > book:first", "attr": "id" }__</p>
+				<p>ID: __{ "find": "catalog &gt; book:first", "attr": "id" }__</p>
 			</div>
 		</source>
 	</sample>
