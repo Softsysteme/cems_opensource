@@ -3,7 +3,7 @@
 	<name>calling_convertigo</name>
 	<title>Calling Convertigo</title>
 	<sample>
-		<title>Directive: data-c8o-call</title>
+		<title>Directive data-c8o-call</title>
 		<description>This sample demonstrates the basic way to call a Convertigo requestable.</description>
 		<source>
 			<button data-c8o-call=".getData">Get data</button>
