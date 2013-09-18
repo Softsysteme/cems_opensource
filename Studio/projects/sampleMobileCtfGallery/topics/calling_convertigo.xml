@@ -20,9 +20,9 @@
 		<source>
 			<form data-c8o-call=".pushForm">
 				<label for="firstname">First name:</label>
-				<input name="firstname" id="firstname" value="" placeholder="Enter your first name">aze</input>
+				<input name="firstname" id="firstname" value="" placeholder="Enter your first name"/>
 				<label for="lastname">Last name:</label>
-				<input name="lastname" id="lastname" value="" placeholder="Enter your last name">aze</input>
+				<input name="lastname" id="lastname" value="" placeholder="Enter your last name"/>
 				<button>Post form</button>
 			</form>
 			
@@ -40,12 +40,12 @@
 		</description>
 		<source>
 			<div>
-				<a href="#" data-c8o-call=".pushForm">
+				<a href="#" data-c8o-call=".pushDiv">
 					Call <span data-c8o-variable="firstname">John</span> <span data-c8o-variable="lastname">Doe</span>
 				</a>
 			</div>
 			
-			<div data-c8o-listen=".pushForm">
+			<div data-c8o-listen=".pushDiv">
 				<p>First name: __=firstname__</p>
 				<p>Last name: __=lastname__</p>
 			</div>
@@ -60,12 +60,12 @@
 		</description>
 		<source>
 			<div>
-				<a href="#" data-c8o-call=".pushForm" data-c8o-variables='{ "firstname": "John", "lastname": "Doe"}'>
+				<a href="#" data-c8o-call=".pushDiv2" data-c8o-variables='{ "firstname": "John", "lastname": "Doe"}'>
 					Call
 				</a>
 			</div>
 			
-			<div data-c8o-listen=".pushForm">
+			<div data-c8o-listen=".pushDiv2">
 				<p>First name: __=firstname__</p>
 				<p>Last name: __=lastname__</p>
 			</div>
