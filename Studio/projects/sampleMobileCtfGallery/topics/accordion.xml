@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<topic>
+	<name>accordion</name>
+	<title>Accordion</title>
+	<sample>
+		<title>Simple accordion</title>
+		<description>
+			<p>This sample demonstrates the usage of an accordion with CTF.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries">Build accordion</button>
+			<div data-role="collapsible-set" data-inset="false" data-c8o-listen=".getCountries" data-c8o-each="country">
+			    <div data-role="collapsible">
+			        <h3>__{ "attr": "name" }__</h3>
+			        <ul data-role="listview" data-inset="false" data-c8o-each="city">
+			            <li>__{ "attr": "name" }__</li>
+			        </ul>
+			    </div>
+			</div>
+		</source>
+	</sample>
+</topic>

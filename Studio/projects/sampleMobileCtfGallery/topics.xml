@@ -3,7 +3,8 @@
 	<name>template_patterns</name>
 	<name>calling_convertigo</name>
 	<name>listening_convertigo</name>
-	<name>list_view</name>
 	<name>table</name>
 	<name>data_accumulation</name>
+	<name>list_view</name>
+	<name>accordion</name>
 </topics>

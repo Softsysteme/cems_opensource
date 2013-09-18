@@ -764,6 +764,7 @@ Studio/projects/sampleMobileCtfGallery/sh/shLegacy.js -text svneol=unset#text/pl
 Studio/projects/sampleMobileCtfGallery/sh/shThemeDefault.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/accordion.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/calling_convertigo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/data_accumulation.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/list_view.xml -text svneol=unset#text/plain
