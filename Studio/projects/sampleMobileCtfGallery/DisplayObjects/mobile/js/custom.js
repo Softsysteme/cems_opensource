@@ -50,7 +50,7 @@ $.extend(true, C8O, {
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
 		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
-		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
+//		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
 	},
@@ -81,68 +81,6 @@ $.extend(true, C8O, {
 			]
 		}
 	]
-//	routingTable: [
-//		{
-//			/**
-//			 * afterRendering function
-//			 * called after the rendering process.
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			afterRendering: function ($doc, c8oData) {
-//				
-//			},
-//			
-//			/**
-//			 * beforeRendering function
-//			 * called before the rendering process.
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			beforeRendering: function ($doc, c8oData) {
-//				
-//			},
-//			
-//			/**
-//			 * condition function or selector
-//			 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
-//			 * Called before the page changes.
-//			 * The condition is considered as validated if the jQuery selector returns a non empty list,
-//			 * or if the JS function returns true
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			condition: "jQuery selector",
-//			condition: function ($doc, c8oData) {
-//				return true;
-//			},
-//			
-//			/**
-//			 * fromPage parameter
-//			 * list of HTML element ID defining the page we come from
-//			 * before calling the C8O request
-//			 * (useful in order to route to different pages according to the origin page).
-//			 * Use the .is(selector) from JQuery.
-//			 * Sample: “#page1, #page2, #page3 ”
-//			 */
-//			fromPage: "",
-//			
-//			/**
-//			 * goToPage parameter
-//			 * an HTML page or an HTML element ID to display after the C8O call.
-//			 * If not present, it means a local rendering (i.e. in the same page).
-//			 */
-//			goToPage: "",
-//			
-//			/**
-//			 * options parameter
-//			 * an optional transition information
-//			 * (matching the jQueryMobile transition object format)
-//			 * used to display the page given in the goToPage parameter.
-//			 */
-//			options: {}
-//		},
-//	]
 });
 
 /*******************************************************
