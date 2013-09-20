@@ -1,12 +1,36 @@
 /*******************************************************
  *******************************************************
- * public jQuery Mobile C8O API for CEMS 6.1.0 *
+ * public C8O API for CEMS 6.3.0
+ * for a jQuery Mobile application using the CTF
+ * 
+ * Dependences in HTML file:
+ * * jquery(.min).js
+ * * c8o.core.js
+ * * c8o.jquerymobile.js
+ * * ctf.core.js
+ * * ctf.jquerymobile.js
+ * * custom.js (this file)
+ * * jquery.mobile(.min).js
  *******************************************************
  *******************************************************/
 
-$(document).bind('mobileinit',function(){
+var Geoloc = {
+	geocoder : new google.maps.Geocoder(),
+	map : null,
+	exMarker : null,
+	adress : null
+};
+
+$(document).bind('mobileinit',function() {
    $.mobile.selectmenu.prototype.options.nativeMenu = false;
 });
+
+function getNumberOfItems(fragment) {
+	var $fragment = $(fragment);
+	var n = $fragment.children().length;
+	return ("" + n);
+}
+
 
 /*******************************************************
  * Global variables *
@@ -14,16 +38,76 @@ $(document).bind('mobileinit',function(){
 
 $.extend(true, C8O, {
 	/**
-	* vars variables values can be set at any time.
-	* 
-	* Value can be modified by code, 
-	* for example: C8O.vars.ajax_method="GET"
-	*/
-	vars : {
-		geocoder : new google.maps.Geocoder()
-//		ajax_method : "POST", /** POST/GET : http method to request CEMS */
-//		requester_prefix : "" /** string prepend to the .xml or .cxml requester */
-}
+	 * init_vars variables values can only be set before the "init_finish" hook,
+	 * by the code,
+	 * their values must be strings, 
+	 * their state cannot be modified later.
+	 */
+	init_vars: {
+//		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string while select the browser language */
+	},
+	
+	/**
+	 * ro_vars read-only variables values can only be set directly here, not dynamically
+	 */
+	ro_vars: {
+//		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+	},
+	
+	/**
+	 * vars variables values can be set at any time.
+	 * by the code, or by passing arguments to C8O.call() by adding __ 
+	 * their values must be strings,
+	 * their state can be modified later.
+	 * 
+	 * Value can be modified by code, 
+	 * for example: C8O.vars.ajax_method="GET"
+	 */
+	vars: {
+//		ajax_method: "POST", /** POST/GET: http method to request CEMS */
+//		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
+		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
+		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
+//		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
+//		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
+	},
+	
+	options: {
+//		loading: {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
+	},
+
+	routingTable : [
+		{
+			calledRequest: "*",
+			actions: [
+			    {
+					condition: "error",
+			    	goToPage: "#errorMessage"
+	 			}
+			],
+			options: {transition : "pop"}
+		},
+		{
+			calledRequest: ".Login",
+			actions: [
+			    {
+					condition: "logon",
+			    	goToPage: "#search"
+	 			}
+			],
+			options: {transition : "pop"}
+		},
+		{
+			calledRequest: ".LoadList",
+			actions: [
+			    {
+					condition: "results",
+			    	goToPage: "#listing"
+	 			}
+			],
+			options: {transition : "pop"}
+		}
+	]
 });
 
 /*******************************************************
@@ -33,11 +117,11 @@ $.extend(true, C8O, {
 
 /**
  * addHook function
- * some part of the weblib can be customized using a hook
+ * some part of the C8O can be customized using a hook
  * just specify the hook name and its handler
  * all existing hook are explain bellow
- * name : string of the hook name
- * fn : function of the handler
+ * name: string of the hook name
+ * fn: function of the handler
  */
 //C8O.addHook(name, fn);
 
@@ -48,26 +132,81 @@ $.extend(true, C8O, {
  *  already added parameter are __connector and __context
  *  to save a new value for a parameter, specify it to the C8O.call() function
  *  or call C8O.addRecallParameter again
- *  parameter_name : string of the parameter name to automatically send
- *  parameter_value (optional) : initial value for this parameter
+ *  parameter_name: string of the parameter name to automatically send
+ *  parameter_value (optional): initial value for this parameter
  */
 //C8O.addRecallParameter(parameter_name, parameter_value);
+
+/**
+ * appendValue function
+ * append value in data.key:
+ * * set value if no previous
+ * * make or reuse an array and push the value at the end
+ * data: Object (key/value) that will be modified
+ * key: string, key of the data to modify
+ * value: any object pushed into data.key
+ */
+//C8O.appendValue(data, key, value);
+
+/**
+ * appendValues function
+ * merge values of the source Object into the data Object
+ * using appendValue on each source keys
+ * data: Object (key/value) that will be modified
+ * source: Object (key/value) that will be merged into data but not modified
+ */
+//C8O.appendValues(data, source);
 
 /**
  * call function
  * make an AJAX request to CEMS in order to execute
  * a transaction or a sequence using specified parameters
- * data : string (query form) or Object (key/value) or HTML Form element
+ * data: string (query form) or Object (key/value) or HTML Form element
  *          used as AJAX parameters
  */
-//C8O.call(data)
+//C8O.call(data);
+
+/**
+ * canLog function
+ * tell if the actual C8O.vars.log_level allow to log
+ * level: string (error/warn/info/debug/trace) log level to test
+ * return: true > can log
+ *           false > cannot log
+ */
+//C8O.canLog(level);
+
+/**
+ * convertHTML function
+ * copy an XML element to an HTML element or create a new fragment
+ * input: XML element to copy to an HTML element into the ouput or a new fragment element
+ * output (optional): HTML element where the input copy is appended
+ * return: HTML element, output element or a new <fragment> element with the imported input
+ */
+//C8O.convertHTML(input, output);
+
+/**
+ * formToData function
+ * copy all form's inputs into the data object or a new one.
+ * Inputs names are the keys and inputs values are the values of the data object.
+ * In case of multivalued, value is turn into an array. 
+ * form: raw or jQuery FORM element
+ * data (optional): object (key/value) where values are copied
+ * return: the data object or a new one with copied form's inputs values
+ */
+//C8O.formToData($form, data);
+
+/**
+ * getBrowserLanguage function
+ * return: a string of the current detected language, in 2 characters
+ */
+//C8O.getBrowserLanguage();
 
 /**
  * getLastCallParameter function
  * used for retrieve a parameter from the previous call
  *  or all parameter in a object key/value
- *  key : string of the parameter name
- *  return : string of the parameter value or undefined
+ *  key: string of the parameter name
+ *  return: string of the parameter value or undefined
  *             or retrieve object with key/value of all parameters
  */
 //C8O.getLastCallParameter(key);
@@ -75,8 +214,8 @@ $.extend(true, C8O, {
 /**
  * isDefined function
  * just check the existence of the argument
- * obj : something to test
- * return : true > obj exists
+ * obj: something to test
+ * return: true > obj exists
  *            false > obj doesn't exist
  */
 //C8O.isDefined(obj);
@@ -84,20 +223,66 @@ $.extend(true, C8O, {
 /**
  * isUndefined function
  * just check the existence of the argument
- * obj : something to test
- * return : true > obj doesn't exist
- *            false > obj exist
+ * obj: something to test
+ * return: true > obj doesn't exist
+ *            false > obj exists
  */
 //C8O.isUndefined(obj);
+
+/**
+ * log object and functions
+ * write the msg string into the console.log if available
+ * or call the hook "log" if added.
+ * msg: string with the message to log
+ * e (optional): exception object to add to the log
+ */
+//C8O.log.error(msg, e);
+//C8O.log.warn(msg, e);
+//C8O.log.info(msg, e);
+//C8O.log.debug(msg, e);
+//C8O.log.trace(msg, e);
 
 /**
  * removeRecallParameter function
  * reversed effect of addRecallParameter function
  * remove a parameter from automatically
  * added parameter list
- * parameter_name : parameter name to remove from the list
+ * parameter_name: parameter name to remove from the list
  */
 //C8O.removeRecallParameter(parameter_name);
+
+/**
+ * toJSON function
+ * return a string representation of the data object (key/value) in a JSON format
+ * data: object to transform
+ * return: string of the data object in a JSON format 
+ */
+//C8O.toJSON(data);
+
+/**
+ * translate function
+ * if the i18n is enabled (C8O.ro_vars.files not empty)
+ * this function translate each text node and each attribute content that contain
+ * the __MSG_key__ marker, using the current dictionary.
+ * It can also translate a key and return its value.
+ * elt: element to translate or a string to translate
+ * return: string translated or nothing in case of element parameter 
+ */
+//C8O.translate(elt);
+
+/**
+ * waitHide function
+ * hide the wait screen
+ * by hiding the #c8oloading element and stop jquerymobile loading
+ */
+//C8O.waitHide();
+
+/**
+ * waitShow function
+ * show the wait screen
+ * by showing the #c8oloading element and start jquerymobile loading
+ */
+//C8O.waitShow();
 
 /*******************************************************
  * List of possible hooks *
@@ -110,12 +295,41 @@ $.extend(true, C8O, {
  *  can tweak data before sending
  *  or perform request itself
  *  
- *  data : key/value map of parameters sent to CEMS
- *  return : true > lets weblib perform the call
- *             false > weblib doen't perform the call
+ *  data: key/value map of parameters sent to CEMS
+ *  return: true > lets C8O perform the call
+ *             false > C8O doen't perform the call
  */
 //C8O.addHook("call", function (data) {
-//return true;
+//	return true;
+//});
+
+/**
+ *  call_complete hook
+ *  called after the xml_response, text_response or call_error hook
+ *  
+ *  jqXHR: the jQuery object that enhance the XHR used by the call
+ *  textStatus: text status of the Ajax response
+ *  data: data used to generate the C8O.call
+ *  return: true > hide the wait div if no pending call
+ *             false > lets the wait div
+ */
+//C8O.addHook("call_complete", function (jqXHR, textStatus, data) {
+//	return true;
+//});
+
+/**
+ *  call_error hook
+ *  called call_complete hook, in case of an Ajax error (network error, unparsable response)
+ *  
+ *  jqXHR: the jQuery object that enhance the XHR used by the call
+ *  textStatus: text status of the Ajax response
+ *  errorThrown: caught cause of the error
+ *  data: data used to generate the C8O.call
+ *  return: true > log the error with C8O.log.error
+ *             false > don't log the error
+ */
+//C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
+//	return true;
 //});
 
 /**
@@ -124,7 +338,7 @@ $.extend(true, C8O, {
  *  can perform some DOM tweak
  *  or break the processing of request
  *  
- *  return : true > lets weblib perform the init
+ *  return: true > lets C8O perform the init
  *             false > break the processing of request
  */
 C8O.addHook("document_ready", function () {
@@ -136,35 +350,37 @@ C8O.addHook("document_ready", function () {
 		$("#rememberme").attr("disabled", "disabled");
 	} else if (localStorage.getItem('userId') !== null) {
 		// sets back the values from the local storage to the form's fields
-		$("#rememberme").attr("checked", "checked");
+		$("#rememberme").prop("checked", true);
 		$("#userId").val(localStorage.getItem('userId'));
 		$("#password").val(localStorage.getItem('password'));
 	}
 	
 	$("#date").val(new Date().toJSON().slice(0,10));
 	
-	/* 
-	 * add a submit event handler on each form
-	 * to perform a C8O.call on the submitted form
-	 * and stop the submit action (by the return false statement)
-	 */  
-	$("form").submit(function () {
-		C8O.call(this);
-		return false;
+	$("#loginButton").click(function() {
+		if ($("#rememberme").prop("checked")) {
+			// stocking in local storage the login data
+			localStorage.setItem('userId', $("#userId").val());
+			localStorage.setItem('password', $("#password").val())
+		} else if (C8O.isDefined(localStorage) && localStorage.getItem('userId') !== null) {
+			// removing from local storage the login data
+			localStorage.removeItem('userId');
+			localStorage.removeItem('password');
+		}
 	});
 	
 	/*
 	 * define a click event handler on the "localize" button to execute the map 
-	 * and display the last accessed address stored in "C8O.vars.address" variable
+	 * and display the last accessed address stored in "Geoloc.address" variable
 	 */
 	$("#localize").click(function() {
-		C8O.vars.geocoder.geocode({address: C8O.vars.address}, 
+		Geoloc.geocoder.geocode({address: Geoloc.address}, 
 			function (results, status) {
-				if (C8O.isDefined(C8O.vars.exMarker)) {
-					C8O.vars.exMarker.setMap(null);
+				if (C8O.isDefined(Geoloc.exMarker)) {
+					Geoloc.exMarker.setMap(null);
 				}
-				if (C8O.isUndefined(C8O.vars.map)) {
-					C8O.vars.map = new google.maps.Map(
+				if (C8O.isUndefined(Geoloc.map)) {
+					Geoloc.map = new google.maps.Map(
 							document.getElementById("map-canvas"),
 							{
 								zoom: 14,
@@ -172,9 +388,9 @@ C8O.addHook("document_ready", function () {
 							}
 					);
 				}
-				C8O.vars.map.setCenter(results[0].geometry.location);
-				C8O.vars.exMarker = new google.maps.Marker({
-					map: C8O.vars.map,
+				Geoloc.map.setCenter(results[0].geometry.location);
+				Geoloc.exMarker = new google.maps.Marker({
+					map: Geoloc.map,
 					position: results[0].geometry.location
 				});
 				$.mobile.changePage($("#map"));
@@ -186,68 +402,48 @@ C8O.addHook("document_ready", function () {
 });
 
 /**
+ *  init_finished hook
+ *  used at page loading after C8O initialization
+ *  or break the processing of request
+ *  
+ *  return: true > lets CTF handle the document
+ *             false > break the processing of request
+ */
+//C8O.addHook("init_finished", function (data) {
+//	return true;
+//});
+
+/**
+ *  log hook
+ *  used on each C8O.log.xxx call.
+ *  Allow to:
+ *   * handle log message (put in div, send request …)
+ *   * prevent log writing (return false)
+ *   * modify the message (return a new msg content).
+ *  
+ *  level: "string" level of this log, between error/warn/info/debug/trace
+ *  msg: "string" the log message
+ *  e: can be anything or nothing, but linked with the error
+ *  return: "string" > logs in console and override the msg
+ *             false > doesn't log in console
+ *             nothing or true > logs in console
+ */
+//C8O.addHook("log", function (level, msg, e) {
+//	return false;
+//});
+
+/**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
  *  
- *  xml : pure DOM document
- *  return : true > lets weblib perform the xml
+ *  xml: pure DOM document
+ *  return: true > lets the CTF perform the xml
  *             false > break the processing of xml
  */
-C8O.addHook("xml_response", function (xml) {
-
-	var $doc = $(xml.documentElement);
-	var lastTr = C8O.getLastCallParameter("__transaction");
-	var lastSeq = C8O.getLastCallParameter("__sequence");
-	
-	/*
-	 * Handles Convertigo exception XML response
-	 * to automatically pop the error dialog
-	 */
-	if ($doc.find(">error").length) {
-		// erreur exception Convertigo
-		$("#errorMessageTarget").text($doc.find(">error>message").text());
-		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
-	} else {
-	/*
-	 * no Convertigo exception
-	 * figures out which transaction or sequence was last called
-	 * to handle its response in a dedicated function
-	 */
-		if(lastSeq == "Login") {
-			/* returning from Login sequence */
-			loginResponse($doc);
-		} else if(lastSeq == "LoadList") {
-			/* returning from LoadList sequence */
-			loadListResponse($doc);
-		}
-	}
-
-	return true;
-});
-
-/**
-* Executed on Login sequence response
-* @param $doc : the jQuery object of the document response from Convertigo
-*/
-function loginResponse ($doc) {
-	if ($("#rememberme").attr("checked")) {
-		// stocking in local storage the login data
-		localStorage.setItem('userId', $("#userId").val());
-		localStorage.setItem('password', $("#password").val())
-	} else if (C8O.isDefined(localStorage) && localStorage.getItem('userId') !== null) {
-		// removing from local storage the login data
-		localStorage.removeItem('userId');
-		localStorage.removeItem('password');
-	}
-	var logon = $doc.find(">logon").text();
-	if(logon == "true") {
-		$.mobile.changePage($("#search"));
-	} else {
-		$("#errorMessageTarget").text("Login failed");
-		$.mobile.changePage($("#errorMessage"), {transition : "pop"});
-	}
-}
+//C8O.addHook("xml_response", function (xml, data) {
+//	return true;
+//});
 
 /**
 * Executed on LoadList sequence response
@@ -276,7 +472,7 @@ function loadListResponse($doc) {
 					$("<h3/>").text(title)
 				)
 			).click(function () {
-				C8O.vars.address = address;
+				Geoloc.address = address;
 				var $ul_details = $("#maindetails ul").empty();
 				$ul_details.append(
 					$("<li/>").append(
@@ -309,26 +505,3 @@ function loadListResponse($doc) {
 	
 	$.mobile.changePage($("#listing"));
 }
-
-/**
- *  loading_start hook
- *  used at C8O.call calling and display a transparent mask
- *  that prevents the user to act
- *  
- *  return : true > lets weblib display the loading mask
- *             false > doesn't display anything
- */
-//C8O.addHook("loading_start", function () {
-//return true;
-//});
-
-/**
- *  loading_stop hook
- *  used after xml_response execution
- *  
- *  return : true > lets weblib hide the loading mask
- *             false > doesn't hide anything
- */
-//C8O.addHook("loading_stop", function () {
-//return true;
-//});
