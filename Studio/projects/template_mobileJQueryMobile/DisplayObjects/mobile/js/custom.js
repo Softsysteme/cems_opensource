@@ -27,6 +27,7 @@ $.extend(true, C8O, {
 	 * their state cannot be modified later.
 	 */
 	init_vars: {
+//		enc: "false", /** enables rsa encoding */
 //		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string will select the browser language */
 	},
 	

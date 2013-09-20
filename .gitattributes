@@ -1336,8 +1336,6 @@ Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -tex
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/templates_jscode.js -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/templates_pages.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.wsdl -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
