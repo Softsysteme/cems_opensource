@@ -147,7 +147,7 @@
 			<div data-role="content">
 				<ul data-role="listview" data-inset="true" data-theme="c" data-c8o-listen=".LoadList" data-c8o-each="result">
 					<li>
-						<a href="#">
+						<a href="#" data-c8o-call=".GetDetails" data-c8o-variables='{ "id": "__=id__" }'>
 							<img data-c8o-use="true" data-c8o-use-src="__=img__"/>
 							<h3>__=title__</h3>
 						</a>
@@ -169,12 +169,18 @@
 			<div data-role="content">
 				<h3>Room details</h3>
 				<div id="maindetails" data-role="content" data-theme="s">
-					<ul data-role="listview" data-inset="true" data-theme="c">
+					<ul data-role="listview" data-inset="true" data-theme="c" data-c8o-listen=".GetDetails">
+						<li><b>__=title__</b></li>
+						<li><b id="address">__=address__</b></li>
+						<li><b>__=price__</b></li>
+						<li><b>__=total__</b></li>
+						<li></li>
 					</ul>					
 				</div>
 				
 				<h3>Description</h3>
 				<div id="description" data-role="content" data-theme="s">
+					__=description__
 				</div>
 				<button id="localize" data-theme="b">Localize</button>
 			</div>

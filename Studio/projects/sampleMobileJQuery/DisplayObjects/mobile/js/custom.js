@@ -16,9 +16,8 @@
 
 var Geoloc = {
 	geocoder : new google.maps.Geocoder(),
-	map : null,
-	exMarker : null,
-	adress : null
+	map : undefined,
+	exMarker : undefined
 };
 
 $(document).bind('mobileinit',function() {
@@ -67,7 +66,7 @@ $.extend(true, C8O, {
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
 		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
-		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
+//		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
 	},
@@ -103,6 +102,16 @@ $.extend(true, C8O, {
 			    {
 					condition: "results",
 			    	goToPage: "#listing"
+	 			}
+			],
+			options: {transition : "pop"}
+		},
+		{
+			calledRequest: ".GetDetails",
+			actions: [
+			    {
+					condition: "result",
+			    	goToPage: "#details"
 	 			}
 			],
 			options: {transition : "pop"}
@@ -374,7 +383,7 @@ C8O.addHook("document_ready", function () {
 	 * and display the last accessed address stored in "Geoloc.address" variable
 	 */
 	$("#localize").click(function() {
-		Geoloc.geocoder.geocode({address: Geoloc.address}, 
+		Geoloc.geocoder.geocode({address: $("#address").text()}, 
 			function (results, status) {
 				if (C8O.isDefined(Geoloc.exMarker)) {
 					Geoloc.exMarker.setMap(null);
@@ -444,64 +453,3 @@ C8O.addHook("document_ready", function () {
 //C8O.addHook("xml_response", function (xml, data) {
 //	return true;
 //});
-
-/**
-* Executed on LoadList sequence response
-* @param $doc : the jQuery object of the document response from Convertigo
-*/
-function loadListResponse($doc) {
-	//clean the list of results
-	var $ul = $("#listing ul");
-	$ul.empty();
-
-	var $results = $doc.find(">results>result");
-	$("#nbleave").text($results.length);
-
-	$results.each(function () {
-		var $result = $(this);
-		var img = $result.find(">img").text();
-		var title = $result.find(">title").text();
-		var address = $result.find(">address").text();
-		var description = $result.find(">description").text();
-		var price = $result.find(">price").text();
-		var total = $result.find(">total").text();
-		$ul.append(
-			$("<li/>").append(
-				$("<a/>").attr("href", "#").append(
-					$("<img/>").attr("src", img),
-					$("<h3/>").text(title)
-				)
-			).click(function () {
-				Geoloc.address = address;
-				var $ul_details = $("#maindetails ul").empty();
-				$ul_details.append(
-					$("<li/>").append(
-						$("<b/>").text("Title : "), title
-					),
-					$("<li/>").append(
-							$("<b/>").text("Address : "), address
-					),
-					$("<li/>").append(
-							$("<b/>").text("Price : "), price
-					),
-					$("<li/>").append(
-							$("<b/>").text("Total : "), total
-					)
-				);
-				
-				$("#description").empty().append($("<p/>").text(description));
-				$.mobile.changePage($("#details"));
-
-				try {
-					$ul_details.listview("refresh");
-				} catch (e) {}
-			})
-		);
-	});
-	
-	try {
-		$ul.listview("refresh");
-	} catch (e) {}
-	
-	$.mobile.changePage($("#listing"));
-}

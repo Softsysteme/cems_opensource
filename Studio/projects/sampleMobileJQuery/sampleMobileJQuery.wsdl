@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sampleMobileJQuery" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileJQuery_ns="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+<wsdl:definitions name="sampleMobileJQuery" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:sampleMobileJQuery_ns="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileJQuery"><xsd:include schemaLocation="sampleMobileJQuery.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="GetDetailsResponse">
+    <wsdl:part name="parameters" element="sampleMobileJQuery_ns:GetDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetDetailsRequest">
+    <wsdl:part name="parameters" element="sampleMobileJQuery_ns:GetDetails">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sampleMobileJQueryPortType">
+    <wsdl:operation name="GetDetails">
+<wsdl:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileJQuery_ns:GetDetailsRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileJQuery_ns:GetDetailsResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileJQuerySOAPBinding" type="sampleMobileJQuery_ns:sampleMobileJQueryPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetDetails">
+<wsdl:documentation><![CDATA[Sample List sequence. This just returns the static list.xml data contained in the 'data' Folder Change this to anthing you want to return live data form target applications. 
+]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileJQuery?GetDetails"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="sampleMobileJQuery">
     <wsdl:port name="sampleMobileJQuerySOAP" binding="sampleMobileJQuery_ns:sampleMobileJQuerySOAPBinding">
