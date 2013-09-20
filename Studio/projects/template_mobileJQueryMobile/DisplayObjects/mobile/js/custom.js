@@ -62,64 +62,96 @@ $.extend(true, C8O, {
 	routingTable: [
 //		{
 //			/**
-//			 * afterRendering function
-//			 * called after the rendering process.
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			afterRendering: function ($doc, c8oData) {
+//			* calledRequest parameter
+//			* indicate on which requestables result the actions occurs
+//			* Can be one or more requestables, comma separated with the form :
+//			* [project].connector.transaction
+//			* or
+//			* [project].sequence
+//			* or
+//			* [project].connector.* or [project].* or *
+//			*/
+//			calledRequest: "<the called C8O requestables>",
+//
+//			/**
+//			* actions parameter
+//			* array of action, all executed in order if the current result match the 'calledRequest'
+//			*/
+//			actions: [
+//				/**
+//				 * afterRendering function
+//				 * called after the rendering process.
+//				 * $doc: JQuery object of the XML document response
+//				 * c8oData: key/value parameters of the request
+//				 */
+//				afterRendering: function ($doc, c8oData) {
 //				
-//			},
-//			
-//			/**
-//			 * beforeRendering function
-//			 * called before the rendering process.
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			beforeRendering: function ($doc, c8oData) {
-//				
-//			},
-//			
-//			/**
-//			 * condition function or selector
-//			 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
-//			 * Called before the page changes.
-//			 * The condition is considered as validated if the jQuery selector returns a non empty list,
-//			 * or if the JS function returns true
-//			 * $doc: JQuery object of the XML document response
-//			 * c8oData: key/value parameters of the request
-//			 */
-//			condition: "jQuery selector",
-//			condition: function ($doc, c8oData) {
-//				return true;
-//			},
-//			
-//			/**
-//			 * fromPage parameter
-//			 * list of HTML element ID defining the page we come from
-//			 * before calling the C8O request
-//			 * (useful in order to route to different pages according to the origin page).
-//			 * Use the .is(selector) from JQuery.
-//			 * Sample: “#page1, #page2, #page3 ”
-//			 */
-//			fromPage: "",
-//			
-//			/**
-//			 * goToPage parameter
-//			 * an HTML page or an HTML element ID to display after the C8O call.
-//			 * If not present, it means a local rendering (i.e. in the same page).
-//			 */
-//			goToPage: "",
-//			
-//			/**
-//			 * options parameter
-//			 * an optional transition information
-//			 * (matching the jQueryMobile transition object format)
-//			 * used to display the page given in the goToPage parameter.
-//			 */
-//			options: {}
+//				},
+//
+//				/**
+//				 * beforeRendering function
+//				 * called before the rendering process.
+//				 * $doc: JQuery object of the XML document response
+//				 * c8oData: key/value parameters of the request
+//				 */
+//				beforeRendering: function ($doc, c8oData) {
+//					
+//				},
+//
+//				/**
+//				 * condition function or selector
+//				 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
+//				 * Called before the page changes.
+//				 * The condition is considered as validated if the jQuery selector returns a non empty list,
+//				 * or if the JS function returns true
+//				 * $doc: JQuery object of the XML document response
+//				 * c8oData: key/value parameters of the request
+//				 */
+//				condition: "jQuery selector",
+//				condition: function ($doc, c8oData) {
+//					return true;
+//				},
+//
+//				/**
+//				 * fromPage parameter
+//				 * list of HTML element ID defining the page we come from
+//				 * before calling the C8O request
+//			 	* (useful in order to route to different pages according to the origin page).
+//				 * Use the .is(selector) from JQuery.
+//				 * Sample: “#page1, #page2, #page3 ”
+//				 */
+//				fromPage: "",
+//
+//				/**
+//				 * goToPage parameter
+//				 * an HTML page or an HTML element ID to display after the C8O call.
+//				 * If not present, it means a local rendering (i.e. in the same page).
+//				 */
+//				goToPage: "",
+//
+//				/**
+//				 * options parameter
+//				 * an optional transition information
+//				 * (matching the jQueryMobile transition object format)
+//				 * used to display the page given in the goToPage parameter.
+//				 */
+//				options: {}
 //		},
+//		/** full template condensed, must be comma separated */
+//		{
+//			calledRequest: "<the called C8O requestables>",
+//			actions: [
+//				afterRendering: function ($doc, c8oData) {
+//				},
+//				beforeRendering: function ($doc, c8oData) {
+//				},
+//				condition: "<jQuery selector or function>",
+//				fromPage: "<page ID>",
+//				goToPage: "<page ID>",
+//				options: {
+//				},
+//			]
+//		}
 	]
 });
 
