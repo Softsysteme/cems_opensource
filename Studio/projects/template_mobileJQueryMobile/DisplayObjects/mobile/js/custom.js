@@ -27,7 +27,7 @@ $.extend(true, C8O, {
 	 * their state cannot be modified later.
 	 */
 	init_vars: {
-//		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string while select the browser language */
+//		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string will select the browser language */
 	},
 	
 	/**
