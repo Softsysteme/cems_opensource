@@ -3594,23 +3594,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.jav
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/ModelessWizardDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizardPage.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/device_Android.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/device_BlackBerry6.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/device_iPad.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/device_iPhone3.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/device_iPhone4.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_details.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_googleMap.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_listDisplay.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_loginForm.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_searchForm.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/feature_topToolbar.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/logo_sencha.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_android.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_apple.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_auto.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_bb6.png -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/images/look_senchatouch.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ExportWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ExportWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/import_export/ImportWizard.java -text svneol=unset#text/plain
