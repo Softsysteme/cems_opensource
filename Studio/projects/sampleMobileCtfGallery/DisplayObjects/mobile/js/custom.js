@@ -61,6 +61,17 @@ $.extend(true, C8O, {
 	
 	routingTable : [
 		{
+			calledRequest: ".getTopics",
+			condition: "topic",
+			actions: [
+			    {
+			    	beforeRendering: function ($doc, c8oData) {
+			    		$("#waitMessage").hide();
+			    	}
+	 			}
+			]
+		},
+		{
 			calledRequest: ".getTopic",
 			condition: "topic",
 			actions: [
