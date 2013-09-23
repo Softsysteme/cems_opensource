@@ -3,9 +3,9 @@
 	id="com.convertigo.mobile.template" version="1.0.0">
 
 	<!-- This name is also the application name on your device -->
-	<name>Convertigo jQuery Mobile</name>
+	<name>Convertigo CTF gallery</name>
 
-	<description>Mobile jQuery for Mobile Project Sample</description>
+	<description>Convertigo CTF gallery</description>
 
 	<author href="http://www.convertigo.com" email="sales@convertigo.com">Convertigo
 	</author>
