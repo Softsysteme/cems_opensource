@@ -64,7 +64,7 @@ $.extend(true, C8O, {
 //		{
 //			/**
 //			* calledRequest parameter
-//			* indicate on which requestables result the actions occurs
+//			* indicates on which requestables result the actions occur
 //			* Can be one or more requestables, comma separated with the form :
 //			* [project].connector.transaction
 //			* or
@@ -76,7 +76,7 @@ $.extend(true, C8O, {
 //
 //			/**
 //			* actions parameter
-//			* array of action, all executed in order if the current result match the 'calledRequest'
+//			* array of actions, all executed in order if the current result match the 'calledRequest'
 //			*/
 //			actions: [
 //				/**
