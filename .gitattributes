@@ -746,9 +746,14 @@ Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/images/icons18w
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/images/icons36black.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/images/icons36white.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/jqm_convertigo_theme.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/en.json -text
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/fr.json -text
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/pt.json -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom-sample-i18n.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/lib.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/vkbeautify.0.99.00.beta.js -text svneol=unset#text/plain
@@ -820,6 +825,7 @@ Studio/projects/sampleMobileCtfGallery/topics.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/accordion.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/calling_convertigo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/data_accumulation.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/i18n.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/list_view.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/listening_convertigo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/table.xml -text svneol=unset#text/plain

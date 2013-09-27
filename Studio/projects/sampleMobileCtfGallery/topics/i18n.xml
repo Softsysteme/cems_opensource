@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<topic type="iframe">
+	<name>i18n</name>
+	<title>Internationalization</title>
+	<sample>
+		<title>Internationalization</title>
+		<description>
+			<p>This sample demonstrates the usage of internationalized messages.</p>
+		</description>
+		<source url="i18n.html"/>
+		<source url="js/custom-sample-i18n.js"/>
+	</sample>
+</topic>

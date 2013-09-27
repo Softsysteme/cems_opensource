@@ -58,12 +58,11 @@
 		</div>
 
 		<div data-role="page" id="showTopic" data-theme="z" data-add-back-btn="true">
-	
 			<div data-role="header" data-theme="z" data-position="fixed">
-				<h1 data-c8o-listen=".getTopic">__=topic &gt; title__</h1>
+				<h1 data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type!='iframe']">__=topic &gt; title__</h1>
 			</div>
 		
-			<div data-role="content" data-theme="z" data-c8o-listen=".getTopic" data-c8o-after-rendering="onAfterRendering_getTopic">
+			<div data-role="content" data-theme="z" data-c8o-after-rendering="onAfterRendering_getTopic" data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type!='iframe']">
 				<div>
 					<p>The following subjects are treated here:</p>
 					<ul data-c8o-each="sample">
@@ -93,7 +92,44 @@
 					</div>
 				</div>
 			</div>
-		
 		</div>
+
+		<div data-role="page" id="showTopicIFrame" data-theme="z" data-add-back-btn="true">
+			<div data-role="header" data-theme="z" data-position="fixed">
+				<h1 data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type='iframe']">__=topic &gt; title__</h1>
+			</div>
+		
+			<div data-role="content" data-theme="z" data-c8o-after-rendering="onAfterRendering_getTopic" data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type='iframe']">
+				<div>
+					<p>The following subjects are treated here:</p>
+					<ul data-c8o-each="sample">
+						<li>__=sample title__</li>
+					</ul>
+				</div>
+				
+				<div data-c8O-each="sample">
+					<div class="sample">
+						<h3 class="ui-bar-c titleSample">__=sample title__</h3>
+						
+						<div class="contentSample">
+							<div>__{ "find": "description", "type": "fragment" }__</div>
+							
+							<div class="sample_source" data-c8o-each="source">
+								<h4>Source code (__{ "find": ".", "attr": "url" }__)</h4>
+								<div><script type="syntaxhighlighter">
+									<![CDATA[__{ "find": ".", "type": "fragment", "formatter": "getAndFormatHtmlSourceCode" }__]]>
+								</script></div>
+							</div>
+			
+							<div class="sample_test">
+								<h4>Sample</h4>
+								<iframe class="sample_test_exec" data-c8o-use="true" data-c8o-use-src='__{ "find": "source", "attr": "url" }__'></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
