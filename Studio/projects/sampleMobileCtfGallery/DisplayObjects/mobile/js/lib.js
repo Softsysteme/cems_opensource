@@ -45,7 +45,7 @@ function getAndFormatHtmlSourceCode(fragment) {
             var code = formatHtmlSourceCode(data);
             
             $parent.empty();
-            if (url.endsWith(".js")) {
+            if (url.endsWith(".js") || url.endsWith(".json")) {
             	$cdata.addClass("brush: js");
             }
             else {

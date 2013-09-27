@@ -21,6 +21,8 @@ C8O.addHook("document_ready", function () {
 	// Update the language combo with the current selected language
 	var $i18nSelector = $("#i18nSelector");
 	$i18nSelector.val(C8O.init_vars.i18n);
-
+	$i18nSelector.change(function() {
+		alert(C8O.translate("languageChanged"));
+	});
 	return true;
 });

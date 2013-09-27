@@ -1,4 +1,5 @@
 {
 "welcomeMessage": "Bienvenue dans l'exemple I18N",
+"languageChanged": "Vous avez modifié la langue, n'oubliez pas de valider votre modification!",
 "changeLanguageButton": "Modifier la langue"
 }
