@@ -3823,6 +3823,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/logs/Purge.java -text s
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetBuildStatus.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetPackage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetResources.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/GetSourcePackage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/LaunchBuild.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/mobiles/MobileResourceHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Delete.java -text svneol=unset#text/plain
