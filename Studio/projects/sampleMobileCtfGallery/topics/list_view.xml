@@ -16,7 +16,7 @@
 			<button data-c8o-call=".getData">Test</button>
 			<p>List of available books:</p>
 			<div data-c8o-listen=".getData">
-				<ul data-role="listview" data-divider-theme="d" data-c8o-each="book">
+				<ul data-role="listview" data-theme="d" data-c8o-each="book">
 					<li><a href="">__=title__ (__=author__)</a></li>
 				</ul>
 			</div>
