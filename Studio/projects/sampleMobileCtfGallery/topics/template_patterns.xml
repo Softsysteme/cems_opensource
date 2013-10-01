@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<topic>
+	<name>template_patterns</name>
+	<title>Template patterns</title>
+	<sample>
+		<title>Simple template pattern</title>
+		<description>This sample demonstrates the basic way to use templating in an HTML page.</description>
+		<source>
+			<button data-c8o-call=".getShop">Get shop</button>
+			
+			<div data-c8o-listen=".getShop">
+				<p>Shop: __=location name__</p>
+				<p>Address: __=location address__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Advanced (JSON) template pattern</title>
+		<description>This sample demonstrates the advanced way to use templating in an HTML page.
+		This is specially useful when we want to access to XML attributes for instance.</description>
+		<source>
+			<button data-c8o-call=".getCatalog">Get catalog</button>
+			
+			<div data-c8o-listen=".getCatalog">
+				<p>First book title: __=catalog book:first title__</p>
+				<p>ID: __{ "find": "catalog &gt; book:first", "attr": "id" }__</p>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Delayed template pattern</title>
+		<description>This sample demonstrates how to set an image tag source.
+		Sometimes we have to use some HTML attributes but only at runtime, and not at design time.
+		Especially in case of HTML templates used in iterations: the HTML nodes of the templates
+		are present only for the CTF, but not for a GUI library such as JQuery mobile for instance.</description>
+		<source>
+			<button data-c8o-call=".getImage">Get image</button>
+			
+			<div data-c8o-listen=".getImage">
+				<img data-c8o-use="on" data-c8o-use-src="__=image__"/>
+			</div>
+		</source>
+	</sample>
+</topic>

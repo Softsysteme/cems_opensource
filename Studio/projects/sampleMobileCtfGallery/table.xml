@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<catalog>
+	<country name="france">
+		<city name="paris"/>
+		<city name="bordeaux"/>
+		<city name="marseille"/>
+		<city name="lyon"/>
+		<city name="lille"/>
+		<city name="nantes"/>
+		<city name="perpignan"/>
+		<city name="toulouse"/>
+		<city name="biarritz"/>
+		<city name="toulon"/>
+	</country>
+	<country name="usa">
+		<city name="new york"/>
+		<city name="chicago"/>
+		<city name="washington"/>
+		<city name="dallas"/>
+		<city name="san francisco"/>
+		<city name="los angeles"/>
+		<city name="seattle"/>
+		<city name="houston"/>
+		<city name="miami"/>
+		<city name="las vegas"/>
+	</country>
+	<country name="germany">
+		<city name="munchen"/>
+		<city name="berlin"/>
+		<city name="frankfurt"/>
+		<city name="stuttgart"/>
+		<city name="dusseldorf"/>
+		<city name="hambourg"/>
+		<city name="hannover"/>
+		<city name="essen"/>
+		<city name="rostock"/>
+		<city name="kiel"/>
+	</country>
+</catalog>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<topic>
+	<name>listening_convertigo</name>
+	<title>Listening to Convertigo</title>
+	<sample>
+		<title>Directive data-c8o-listen</title>
+		<description>This sample demonstrates the basic way to listen to a Convertigo requestable.</description>
+		<source>
+			<button data-c8o-call=".getData">Get data</button>
+			
+			<div data-c8o-listen=".getData">
+				<p>Shop: __=location name__</p>
+				<p>Address: __=location address__</p>
+			</div>
+		</source>
+	</sample>
+</topic>

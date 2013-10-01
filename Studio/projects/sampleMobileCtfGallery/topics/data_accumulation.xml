@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<topic>
+	<name>data_Accumulation</name>
+	<title>Data accumulation</title>
+	<sample>
+		<title>Simple accumulation</title>
+		<description>
+			<p>This sample demonstrates the usage of accumulation within CTF template.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getTime">Add time</button>
+			<div data-c8o-listen=".getTime" data-c8o-accumulate="append">
+				<p>__=time__</p>
+			</div>
+		</source>
+	</sample>
+</topic>
