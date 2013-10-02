@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<topic type="iframe">
+	<name>routing_table</name>
+	<title>Routing table</title>
+	<sample>
+		<title>Basic routing table</title>
+		<description>
+			<p>This sample demonstrates how to setup a basic routing table.</p>
+			<p>You basically have 2 steps:
+				<ol>
+					<li>Fill in the routing table Javascript structure
+					(located in the js/custom-sample-routing-table.js file)</li>
+					<li>Setup the data-c8o-call directives (in the
+					routing_table.html file) according to your routing table</li>
+				</ol>
+			</p>
+		</description>
+		<source url="routing_table.html"/>
+		<source url="js/custom-sample-routing-table.js"/>
+	</sample>
+</topic>

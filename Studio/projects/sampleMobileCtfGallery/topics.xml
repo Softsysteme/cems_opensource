@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <topics>
+	<name>routing_table</name>
 	<name>template_patterns</name>
 	<name>calling_convertigo</name>
 	<name>listening_convertigo</name>
