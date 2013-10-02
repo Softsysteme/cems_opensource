@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+		
+		<link rel="apple-touch-icon" href="res/icon/ios/icon57.png" />
+		<link rel="apple-touch-startup-image" href="res/splash/ios/splashiPhone320x460.png" />
+
+		<title>Routing table sample</title>
+		
+		<link href="../../../../css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/jqm_convertigo_theme.css" type="text/css" rel="stylesheet" />
+		<link href="css/custom.css" type="text/css" rel="stylesheet"/>
+		
+		<script src="../../../../scripts/jquery.min.js" type="text/javascript"></script>
+
+		<script src="../../../../scripts/c8o.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/c8o.jquerymobile.js" type="text/javascript"></script>
+		<script src="../../../../scripts/ctf.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/ctf.jquerymobile.js" type="text/javascript"></script>
+		
+		<script src="js/custom-sample-routing-table.js" type="text/javascript"></script>
+
+		<script src="../../../../scripts/jquery.mobile.min.js" type="text/javascript"></script>
+	</head>
+	<body>	
+
+		<div data-role="page" id="main" data-theme="z">
+	
+			<div data-role="header" data-theme="z" data-position="fixed">
+				<h1>Routing table sample</h1>
+			</div>
+		
+			<div data-role="content" data-theme="z">
+				<button data-c8o-call=".doNothing">Click here to go to page #2</button>
+				<button data-c8o-call=".doNothing" data-c8o-variables='{ "__user_reference": "page3"}'>Click here to go to page #3</button>
+			</div>
+		
+		</div>
+
+		<div data-role="page" id="page2" data-theme="z" data-add-back-btn="true">
+			<div data-role="header" data-theme="z" data-position="fixed">
+				<h1>Page #2</h1>
+			</div>
+		
+			<div data-role="content" data-theme="z" data-c8o-after-rendering="onAfterRendering_getTopic" data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type!='iframe']">
+				<p>This is the page #2!</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="page3" data-theme="z" data-add-back-btn="true">
+			<div data-role="header" data-theme="z" data-position="fixed">
+				<h1>Page #3</h1>
+			</div>
+		
+			<div data-role="content" data-theme="z" data-c8o-after-rendering="onAfterRendering_getTopic" data-c8o-listen=".getTopic" data-c8o-listen-condition="topic[type!='iframe']">
+				<p>This is the page #3!</p>
+			</div>
+		</div>
+
+	</body>
+</html>

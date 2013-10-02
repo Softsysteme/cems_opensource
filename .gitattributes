@@ -905,6 +905,7 @@ Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom-sample-i18n.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom-sample-routing-table.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/lib.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/vkbeautify.0.99.00.beta.js -text svneol=unset#text/plain
@@ -949,6 +950,7 @@ Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/res/splash/ios/spla
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/res/splash/webos/splash64.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/routing_table.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/sh/shAutoloader.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/sh/shBrushCss.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/sh/shBrushJScript.js -text svneol=unset#text/plain
@@ -977,6 +979,7 @@ Studio/projects/sampleMobileCtfGallery/topics/data_accumulation.xml -text svneol
 Studio/projects/sampleMobileCtfGallery/topics/i18n.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/list_view.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/listening_convertigo.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/routing_table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/template_patterns.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain

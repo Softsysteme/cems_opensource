@@ -4,7 +4,7 @@
 /* = Common/background 
 ------------------------------------- */
 *, html {
-	white-space: normal !important;/* texte non sectionné si trop long */
+	white-space: normal !important;/* texte non sectionnï¿½ si trop long */
 	-webkit-font-smoothing: antialiased;
 }
 html {
@@ -13,6 +13,10 @@ html {
 body {
 	height: 100%;
 	background-color: #f3f2f1;
+}
+iframe {
+	height: 500px;
+	width: 350px;
 }
 .ui-page {
     background: transparent;
