@@ -134,7 +134,7 @@
 	</erreur>
 	<erreur>
 		<code>33</code>
-		<label></label>
+		<label>Unable to disable user</label>
 	</erreur>
 	<erreur>
 		<code>34</code>
