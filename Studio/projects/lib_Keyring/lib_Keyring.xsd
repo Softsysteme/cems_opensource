@@ -1903,81 +1903,6 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:element name="AddApplication" type="lib_Keyring_ns:AddApplicationRequestData">
-        <xsd:annotation/>
-    </xsd:element>
-    <xsd:element name="AddApplicationResponse">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="response" type="lib_Keyring_ns:AddApplicationResponseData"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="AddApplicationRequestData">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element name="application" type="xsd:string">
-                <xsd:annotation>
-                    <xsd:appinfo>new variable</xsd:appinfo>
-                </xsd:annotation>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="AddApplicationResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
-            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="application" type="lib_Keyring_ns:application1351258496034StepType">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
-                <xsd:annotation/>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="transaction1338370210999StepType">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__GetApplicationIDResponseData">
-                <xsd:annotation/>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="transaction1333096742386StepType">
-        <xsd:annotation/>
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__AddApplicationResponseData">
-                <xsd:annotation/>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:complexType name="application1351258496034StepType">
-        <xsd:annotation/>
-        <xsd:sequence/>
-        <xsd:attribute name="id" type="xsd:string" use="optional">
-            <xsd:annotation/>
-        </xsd:attribute>
-    </xsd:complexType>
     <xsd:element name="AddAuthentication" type="lib_Keyring_ns:AddAuthenticationRequestData">
         <xsd:annotation/>
     </xsd:element>
@@ -3011,6 +2936,81 @@
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="DB__IsUserDisabledResponseData"/>
+    <xsd:element name="AddApplication" type="lib_Keyring_ns:AddApplicationRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="AddApplicationResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:AddApplicationResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="AddApplicationRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="application" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="AddApplicationResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="application" type="lib_Keyring_ns:application1351258496034StepType">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1338370210999StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__GetApplicationIDResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1333096742386StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__AddApplicationResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="application1351258496034StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+        <xsd:attribute name="id" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
+    </xsd:complexType>
     <xsd:element name="IsUserDisabled" type="lib_Keyring_ns:IsUserDisabledRequestData">
         <xsd:annotation/>
     </xsd:element>
@@ -3063,6 +3063,9 @@
         <xsd:attribute name="id" type="xsd:string" use="optional">
             <xsd:annotation/>
         </xsd:attribute>
+        <xsd:attribute name="disabled" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
     </xsd:complexType>
     <xsd:complexType name="transaction1380805137387StepType">
         <xsd:annotation/>
@@ -3071,5 +3074,72 @@
                 <xsd:annotation/>
             </xsd:element>
         </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetUserID" type="lib_Keyring_ns:GetUserIDRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="GetUserIDResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Keyring_ns:GetUserIDResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GetUserIDRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="user" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="GetUserIDResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_Keyring_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="user" type="lib_Keyring_ns:user1357812481124StepType">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorCode" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="errorDetails" type="xsd:string">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="transaction1351605686612StepType">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="document" type="lib_Keyring_ns:DB__GetUserIDResponseData">
+                <xsd:annotation/>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="user1357812481124StepType">
+        <xsd:annotation/>
+        <xsd:sequence/>
+        <xsd:attribute name="id" type="xsd:string" use="optional">
+            <xsd:annotation/>
+        </xsd:attribute>
     </xsd:complexType>
 </xsd:schema>
