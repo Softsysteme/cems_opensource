@@ -754,9 +754,9 @@ Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/pt.json -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom-sample-i18n.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom-sample-routing-table.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom_sample_i18n.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom_sample_routing_table.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/lib.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/vkbeautify.0.99.00.beta.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
