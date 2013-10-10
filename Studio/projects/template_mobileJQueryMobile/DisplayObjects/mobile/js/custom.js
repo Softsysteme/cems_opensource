@@ -11,6 +11,17 @@
  * * ctf.jquerymobile.js
  * * custom.js (this file)
  * * jquery.mobile(.min).js
+ * 
+ * Please find documentation of CTF here:
+ * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * or
+ * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * 
+ * and the documenation of internationalization (i18n) here:
+ * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * or
+ * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * 
  *******************************************************
  *******************************************************/
 
