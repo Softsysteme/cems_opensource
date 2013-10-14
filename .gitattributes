@@ -5200,10 +5200,8 @@ Studio/tomcat/webapps/convertigo/scripts/archive/jquery.mobile.1.0.1.min.js -tex
 Studio/tomcat/webapps/convertigo/scripts/archive/jquery.mobile.1.2.0.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/jquery.mobile.1.3.1.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/jquery.mobilelib.6.1.10.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/archive/jquery.mobilelib.7.0.0.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib.6.1.10.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib.6.2.0.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/archive/weblib.7.0.0.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib_plugins.6.1.10/df.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib_plugins.6.1.10/gatein.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib_plugins.6.1.10/hub.js -text svneol=unset#text/plain
@@ -5216,21 +5214,13 @@ Studio/tomcat/webapps/convertigo/scripts/archive/weblib_wrapper.6.1.10.js -text 
 Studio/tomcat/webapps/convertigo/scripts/archive/weblib_wrapper.6.2.0.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/autocomplete.js -text
 Studio/tomcat/webapps/convertigo/scripts/button.js -text
-Studio/tomcat/webapps/convertigo/scripts/c8o.core.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/c8o.desktop.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/c8o.jquerymobile.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/c8o.scriptlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/calendar.js -text
 Studio/tomcat/webapps/convertigo/scripts/common.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/contextMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/cookies.js -text
-Studio/tomcat/webapps/convertigo/scripts/ctf.core.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/ctf.jquerymobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/flashupdate.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/flexlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.mobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/keyboard.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapdku.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapsna.js -text
