@@ -4887,6 +4887,18 @@ Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=u
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/c8o.desktop.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/images/ajaxloader.gif -text
+Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons18black.png -text
+Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons18white.png -text
+Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons36black.png -text
+Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons36white.png -text
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.structure.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.structure.min.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/admin.css -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.png -text
@@ -4921,7 +4933,6 @@ Studio/tomcat/webapps/convertigo/css/images/icons18black.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons18white.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons36black.png -text
 Studio/tomcat/webapps/convertigo/css/images/icons36white.png -text
-Studio/tomcat/webapps/convertigo/css/jquery.mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/sna.css -text
