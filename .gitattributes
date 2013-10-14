@@ -4927,12 +4927,6 @@ Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Regular-webfont.wo
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/fontfaceROBOTO.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/flashupdate_images/bg_ios.jpg -text
 Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
-Studio/tomcat/webapps/convertigo/css/images/ajaxloader.gif -text
-Studio/tomcat/webapps/convertigo/css/images/ajaxloader.png -text
-Studio/tomcat/webapps/convertigo/css/images/icons18black.png -text
-Studio/tomcat/webapps/convertigo/css/images/icons18white.png -text
-Studio/tomcat/webapps/convertigo/css/images/icons36black.png -text
-Studio/tomcat/webapps/convertigo/css/images/icons36white.png -text
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/sna.css -text
