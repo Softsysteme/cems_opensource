@@ -1,6 +1,6 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 6.3.0
+ * public C8O API for CEMS 7.1.0
  * for a jQuery Mobile application using the CTF
  * 
  * Dependences in HTML file:
