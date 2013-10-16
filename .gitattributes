@@ -5266,7 +5266,6 @@ Studio/tomcat/webapps/convertigo/scripts/project.js -text svneol=unset#text/plai
 Studio/tomcat/webapps/convertigo/scripts/scriptlib.js -text
 Studio/tomcat/webapps/convertigo/scripts/selectMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/siteclipper.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/template.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/df.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/gatein.js -text svneol=unset#text/plain
