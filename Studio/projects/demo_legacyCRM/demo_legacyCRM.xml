@@ -313,8 +313,10 @@ function onXmlGenerated() {
 	// Locate the element that contains our XPath
 	var tmpEl = Packages.org.apache.xpath.XPathAPI.selectNodeIterator(dom.getDocumentElement(), myXPath).nextNode();
 	// Extract the selected <row>
-	var rowEl = tmpEl.getParentNode();
-	var delEl = rowEl.getParentNode().removeChild(rowEl);
+	if (tmpEl != null) {
+		var rowEl = tmpEl.getParentNode();
+		var delEl = rowEl.getParentNode().removeChild(rowEl);
+	}
 }
 
 function putInField(data, col, lin, enter) {

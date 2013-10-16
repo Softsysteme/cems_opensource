@@ -890,6 +890,7 @@ Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.ws
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/images/ajaxloader.gif -text

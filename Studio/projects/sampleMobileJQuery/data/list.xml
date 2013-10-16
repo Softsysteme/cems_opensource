@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <results>
 	<result>
+		<id>1</id>
 		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
 		<title>Montparnasse</title>
 		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
@@ -11,6 +12,7 @@
 		<description>Center close to two public parkings.</description>
 	</result>
 	<result>
+		<id>2</id>
 		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
 		<title>Invalides</title>
 		<address>103 rue de Grenelle Paris France, 75007</address>
@@ -18,6 +20,7 @@
 		<total>216,00 €</total>
 	</result>
 	<result>
+		<id>3</id>
 		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
 		<title>Haussmann</title>
 		<address>18, rue Pasquier Paris France, 75008</address>
@@ -27,6 +30,7 @@
 		<description>Well served by public transport.</description>
 	</result>
 	<result>
+		<id>4</id>
 		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
 		<title>72 Faubourg St Honoré</title>
 		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
@@ -37,6 +41,7 @@
 		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
 	</result>
 	<result>
+		<id>5</id>
 		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
 		<title>Batignolles</title>
 		<address>57 rue d’Amsterdam Paris France, 75008</address>
