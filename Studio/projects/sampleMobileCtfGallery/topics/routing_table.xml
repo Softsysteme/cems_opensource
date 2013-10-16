@@ -9,7 +9,7 @@
 			<p>You basically have 2 steps:
 				<ol>
 					<li>Fill in the routing table Javascript structure
-					(located in the js/custom-sample-routing-table.js file)</li>
+					(located in the js/custom_sample_routing_table.js file)</li>
 					<li>Setup the data-c8o-call directives (in the
 					routing_table.html file) according to your routing table</li>
 				</ol>
