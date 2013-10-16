@@ -16,6 +16,6 @@
 			</p>
 		</description>
 		<source url="routing_table.html"/>
-		<source url="js/custom-sample-routing-table.js"/>
+		<source url="js/custom_sample_routing_table.js"/>
 	</sample>
 </topic>
