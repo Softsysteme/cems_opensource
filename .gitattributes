@@ -432,7 +432,6 @@ Studio/projects/C8oPushManager/AppleCertificateTool/pushdemo.key -text
 Studio/projects/C8oPushManager/AppleCertificateTool/pushdemo.p12 -text
 Studio/projects/C8oPushManager/AppleCertificateTool/readme.txt -text
 Studio/projects/C8oPushManager/C8oPushManager.xml -text
-Studio/projects/C8oPushManager/index.html -text
 Studio/projects/C8oPushManager/xsd/C8oPushManager.xsd -text
 Studio/projects/C8oPushManager/xsd/internal/GoogleClientLogin/Login.xsd -text
 Studio/projects/crawlingProject/crawlingProject.sql -text
