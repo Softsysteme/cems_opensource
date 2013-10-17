@@ -4871,6 +4871,8 @@ Studio/tomcat/webapps/convertigo/css/autocomplete.css -text
 Studio/tomcat/webapps/convertigo/css/button.css -text
 Studio/tomcat/webapps/convertigo/css/common.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/contextMenu.css -text
+Studio/tomcat/webapps/convertigo/css/flashupdate.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/css/flashupdate_android.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/GoogleAndroidLicense.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Bold-webfont.eot -text
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Bold-webfont.svg -text
@@ -4882,6 +4884,7 @@ Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Regular-webfont.tt
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Regular-webfont.woff -text
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/fontfaceROBOTO.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/flashupdate_images/bg_ios.jpg -text
+Studio/tomcat/webapps/convertigo/css/flashupdate_ios.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
