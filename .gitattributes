@@ -5156,6 +5156,7 @@ Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile-1.3.2.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.cordova.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.core.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.desktop.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.jquerymobile.js -text svneol=unset#text/plain

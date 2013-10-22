@@ -7,6 +7,7 @@
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.jquerymobile.js
+ * * ~ c8o.cordova.js (for builded application)
  * * ctf.core.js
  * * ctf.jquerymobile.js
  * * custom.js (this file)
@@ -47,6 +48,13 @@ $.extend(true, C8O, {
 	 */
 	ro_vars: {
 //		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+	},
+	
+	/**
+	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.js
+	 */
+	cordova: {
+//		androidSenderID: ""
 	},
 	
 	/**
@@ -457,6 +465,45 @@ $.extend(true, C8O, {
 //});
 
 /**
+ *  push_notification hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when a notification is received on the mobile device
+ *  
+ *  level: "string" sender of the notification : GCM (Google) or APN (Apple)
+ *  msg: "string" the message content of the notification
+ *  event: "object" the raw object from the notification, sender specific
+ *  return: true > lets c8o.cordova handle the response (Apple badge or sound)
+ *            false > do nothing
+ */
+//C8O.addHook("push_notification", function (sender, msg, event) {
+//	return true;
+//});
+
+/**
+ *  push_register_failed hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration failed on the mobile
+ *  
+ *  error: "string" cause of the error
+ */
+//C8O.addHook("push_register_failed", function (error) {
+//	
+//});
+
+/**
+ *  push_register_success hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration success on the mobile
+ *  
+ *  result: content from the notification system
+ *  return: true > lets c8o.cordova handle the response and notify C8O PushManager
+ *            false > do nothing
+ */
+//C8O.addHook("push_register_success", function (result) {
+//	return true;
+//});
+
+/**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
@@ -468,5 +515,3 @@ $.extend(true, C8O, {
 //C8O.addHook("xml_response", function (xml, data) {
 //	return true;
 //});
-
-
