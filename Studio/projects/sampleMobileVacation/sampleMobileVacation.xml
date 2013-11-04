@@ -388,5 +388,22 @@
                 <java.lang.Long value="960"/>
             </property>
         </mobiledevice>
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.WindowsPhone" priority="0">
+        	<property name="comment">
+        		<java.lang.String value=""/>
+        	</property>
+        	<property name="name">
+        		<java.lang.String value="WindowsPhone"/>
+        	</property>
+        	<property name="resourcesPath">
+        		<java.lang.String value="DisplayObjects/mobile/"/>
+        	</property>
+        	<property name="screenHeight">
+        		<java.lang.Long value="768"/>
+        	</property>
+        	<property name="screenWidth">
+        		<java.lang.Long value="1280"/>
+        	</property>
+		</mobiledevice>     
     </project>
 </convertigo>

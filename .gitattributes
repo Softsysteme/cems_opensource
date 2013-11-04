@@ -2132,6 +2132,8 @@ Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone3.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone3BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone4.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/IPhone4BeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/WindowsPhone.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/WindowsPhoneBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/android_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/images/apple_color_16x16.png -text
@@ -2147,6 +2149,7 @@ Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/BlackBerry6.propertie
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPad.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPhone3.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/IPhone4.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobiledevices/res/WindowsPhone.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/FileReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/FileReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/IFileReference.java -text svneol=unset#text/plain
