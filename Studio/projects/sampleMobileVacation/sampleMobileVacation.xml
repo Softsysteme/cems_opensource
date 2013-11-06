@@ -388,12 +388,12 @@
                 <java.lang.Long value="960"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.WindowsPhone" priority="0">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.WindowsPhone7" priority="0">
         	<property name="comment">
         		<java.lang.String value=""/>
         	</property>
         	<property name="name">
-        		<java.lang.String value="WindowsPhone"/>
+        		<java.lang.String value="WindowsPhone7"/>
         	</property>
         	<property name="resourcesPath">
         		<java.lang.String value="DisplayObjects/mobile/"/>
