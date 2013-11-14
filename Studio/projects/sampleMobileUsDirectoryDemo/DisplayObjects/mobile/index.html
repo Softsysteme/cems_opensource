@@ -190,7 +190,7 @@
 					</select>
 					<input type="submit" value="Search"/>
 				</form>
-				<p><em>Fill in the required fields and hit the search button.</em></p>
+				<p><em><small>Fill in the required fields and hit the search button.</small></em></p>
 			</div>
 		</div>
 		
@@ -234,14 +234,14 @@
 		<div data-role="dialog" id="errorMessage" data-title="Error" data-theme="f">
 			
 			<!-- top bar -->
-			<div data-role="header" data-theme="b">
+			<div data-role="header" data-theme="a">
 				<h1>Error</h1>
 			</div>
 			
 			<!-- content -->
 			<div data-role="content">
-				<p id="errorMessageTarget" data-c8o-listen=".getStatus">__=error__</p>
-				<a href="#" data-role="button" data-add-back-btn="true" data-icon="back" data-rel="back" data-theme="b">Close</a>
+				<p id="errorMessageTarget" data-c8o-listen="*">__=error__</p>
+				<a href="#" data-role="button" data-add-back-btn="true" data-icon="back" data-rel="back" data-theme="a">Close</a>
 			</div>
 		</div>
 	</body>

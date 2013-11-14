@@ -77,6 +77,19 @@ $.extend(true, C8O, {
 	},
 	
 	routingTable: [
+		{//Error management
+			calledRequest : "*",
+			actions : [
+			    {
+					condition : ">error",
+					goToPage : "#errorMessage",
+					options : {
+						transition : "none",
+						role: "dialog"
+					}
+			    }
+			]
+		},          
 		{
 			/**
 			* calledRequest parameter
