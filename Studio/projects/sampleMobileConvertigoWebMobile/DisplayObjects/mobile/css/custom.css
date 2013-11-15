@@ -1,0 +1,80 @@
+/** insert your custom css code here */
+p {
+	text-align: justify;	
+}
+#xsl_result {
+	display : none;
+}
+#c8oloading {
+	top: 0px;
+}
+/* ** welcome page ** */
+#welcome #logoConvertigo {
+	margin: 0 auto 0;
+	width:110px;
+}
+#welcome #logoConvertigo img {
+	text-align:center;
+}
+
+.list-item-speaker {
+	/*min-height:30px;*/
+}
+a.ui-link-inherit {
+	min-height:30px !important;
+}
+.thumb-speaker-small {
+    /*float:left;*/
+    margin:5px 20px 7px 20px;
+}
+.listIcon .ui-btn-inner a.ui-link-inherit {
+	padding-left: 80px !important;
+}
+.ce {
+	color:#666666;
+}
+.ee {
+	color:#006699;
+}
+.cle {
+	color:#03744f;
+}
+.xe {
+	color:#ff7e00;
+}
+.subscription strong {
+	position: relative;
+	top: -6px;
+	display: inline-block;
+	height: 25px;
+	font-size: 42px;
+}
+
+/* *** Forms *** */
+label, button {
+	float:left;
+	clear:both;
+}
+.error, .valid {
+	font-size:0.8em;
+}
+input.error { border: 1px solid red; }
+label.error {
+	float:left;
+	background: #980000 url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/unchecked.gif') no-repeat;
+	padding:5px 16px;
+	margin-left: .3em;
+	color: #fff;
+	-webkit-box-shadow: 0px 1px 4px #ccc;
+	box-shadow: 0px 1px 4px #ccc;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: 0 0px 0 white !important;
+}
+label.valid {
+	background: url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/checked.gif') no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+	color: green;
+}

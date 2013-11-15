@@ -738,6 +738,86 @@ Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mash
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/.project -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/images/ajaxloader.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/images/icons18black.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/images/icons18white.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/images/icons36black.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/images/icons36white.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/jqm_convertigo_theme.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/css/jqm_convertigo_theme.min.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/icon.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/36x36.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/48x48.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/72x72.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/iconHover.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_ce.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_cle.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_demo.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_ee.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_technical.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_video.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/icon_xe.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/logo_convertigo.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/phoneStartup.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/img/tabletStartup.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/js/jquery.mobile1.0.min.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/js/jquery.validate.min.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/js/jquery1.6.4.min.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/android/icon72hdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/android/icon96xhdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/bada/icon128.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/badawac/icon48type5.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/badawac/icon50type3.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/badawac/icon80type4.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/bb/icon80.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/ios/icon57.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/ios/icon572x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/ios/icon72.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/ios/icon722x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/webos/icon64.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/winphone/icon173tile.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/winphone/icon48.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/icon/winphone/icon62tile.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/hdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/hdpiLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/ldpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/ldpiLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/mdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/mdpiLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/xhdpi.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/android/xhdpiLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/bada/screenPortrait.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/badawac/splashType3.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/badawac/splashType4.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/badawac/splashType5.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/bb/splash225.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPad.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPad2x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/webos/splash64.png -text
+Studio/projects/sampleMobileConvertigoWebMobile/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
+Studio/projects/sampleMobileConvertigoWebMobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/index.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/sampleMobileConvertigoWebMobile.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/sampleMobileConvertigoWebMobile.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileConvertigoWebMobile/sampleMobileConvertigoWebMobile.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
