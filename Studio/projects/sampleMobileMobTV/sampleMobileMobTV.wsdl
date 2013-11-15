@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="sampleMobileMobTV" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sampleMobileMobTV_ns="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV"><xsd:include schemaLocation="sampleMobileMobTV.xsd"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="void__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="sampleMobileMobTV_ns:void__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="void__DefaultTransactionResponse">
+    <wsdl:part name="parameters" element="sampleMobileMobTV_ns:void__DefaultTransactionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="sampleMobileMobTVPortType">
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileMobTV_ns:void__DefaultTransactionRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileMobTV_ns:void__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="sampleMobileMobTVSOAPBinding" type="sampleMobileMobTV_ns:sampleMobileMobTVPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="void__DefaultTransaction">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileMobTV?void__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="sampleMobileMobTV">
+    <wsdl:port name="sampleMobileMobTVSOAP" binding="sampleMobileMobTV_ns:sampleMobileMobTVSOAPBinding">
+      <soap:address location="http://localhost:18080/convertigo/projects/sampleMobileMobTV/.wsl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

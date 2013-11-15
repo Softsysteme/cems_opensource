@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- optional ios meta -->
+		<!-- show the splashscreen in ios webapp mode -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- You may use the other optional metas -->
+		<!-- <meta name="apple-touch-fullscreen" content="yes" />-->
+		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" />-->
+		<!-- <meta name="format-detection" content="telephone=no" />-->
+		
+		<!-- viewport -->
+		<!-- use this viewport for standard webApp + PhoneGap -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+		
+		<!-- use this viewport for iPhone iOS 4 and iOS 5 webApp -->
+		<!-- <meta name="viewport" content="user-scalable=yes, width=device-width, height=device-height, initial-scale=1" />-->
+		
+		<!-- use this viewport for iPad webApp -->
+		<!-- <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1" />-->
+		
+		<title>Sample mobile MOBTV 4.0</title>
+		
+		<!-- iPhone parameters -->
+		<link rel="apple-touch-icon" href="res/icon/ios/icon57.png" />
+		<link rel="apple-touch-startup-image" href="res/splash/ios/splashiPhone320x460.png" />
+
+		<!--
+			by default, your project will use the latest JS and CSS resources version provided in the Convertigo server
+			where it is deployed. If you want to use a specific version, comment out the current links and comment in
+			the /6.x.x version of links to the resource you want to use. Be sure to use the same version for all the links
+			to the resources.
+			
+			Also, all links are by default on the minified version of the resources. We provide for your convenience links
+			to the non minifed versions, just commend out the non minified and comment in the minified links if you want to
+			use	them.
+		-->
+			 	
+		
+    	<!-- CSS inclusions -->
+		<link href="../../../../css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+		
+<!-- 	<link href="../../../../css/jquery.mobile.css" rel="stylesheet" type="text/css" /> -->
+<!-- 	<link href="../../../../css/6.3.0/jquery.mobile.min.css" rel="stylesheet" type="text/css" /> -->
+<!-- 	<link href="../../../../css/6.3.0/jquery.mobile.css" rel="stylesheet" type="text/css" /> -->
+
+		<!--
+			Local project custom css
+			===================================
+			custom.css will hold all your custom CSS styles
+		-->
+		<link href="css/mobtv.css" rel="stylesheet" />
+		<link href="css/custom.css" rel="stylesheet" />
+
+		
+		<!-- Scripts inclusions -->
+        <!--
+        	PhoneGap JS library
+        	===================
+        	WARNING : If this application uses some phongap/cordova APIs (GPS, Sensors, Camera, Etc..) be
+        	sure to comment out the following link. 
+        -->
+        <!-- <script src="cordova.js" type="text/javascript"></script> -->
+        
+        <!--
+        	jQuery library
+        	==============
+        	Convertigo mobile apps are based on JQuery. the following links will reference the current jQuery
+        	library.
+        -->
+		<script src="../../../../scripts/jquery.min.js" type="text/javascript"></script>
+<!-- 	<script src="../../../../scripts/jquery.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/jquery.min.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/jquery.js" type="text/javascript"></script> -->
+		
+		<!--
+			Convertigo jQuery c8o mobilelib
+			===============================
+			The following links will reference the Convertigo mobilelib providing your application's access
+			to the Convertigo Server. Be sure all the links are placed in the following order.
+		-->
+		<script src="../../../../scripts/c8o.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/c8o.jquerymobile.js" type="text/javascript"></script>
+		<script src="../../../../scripts/ctf.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/ctf.jquerymobile.js" type="text/javascript"></script>
+		
+<!-- 	<script src="../../../../scripts/6.3.0/c8o.core.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/c8o.jquerymobile.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/ctf.core.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/ctf.jquerymobile.js" type="text/javascript"></script> -->
+		
+		<!--
+			Local project custom script
+			===================================
+			custom.js will hold all your custom logic and controller.
+			WARNING : Be sure this link is placed between the "jQuery c8o mobilelib" and the "JQuery Mobile" library.  
+		-->
+		<script src="js/custom.js" type="text/javascript"></script>
+		
+		<!--
+			jQuery mobile library
+			=====================
+			Provides the mobile UI features to your app.
+			WARNING: Must be the last link referenced in the <head> section.
+		-->
+		<script src="../../../../scripts/jquery.mobile.min.js" type="text/javascript"></script>
+<!-- 	<script src="../../../../scripts/jquery.mobile.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/jquery.mobile.min.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/6.3.0/jquery.mobile.js" type="text/javascript"></script> -->
+
+	</head>
+	
+	<body>
+		<!-- Home screen -->
+        <div data-role="page" data-theme="f" id="home" data-title="MobTV 4.0">
+        	<!-- header -->
+        	<div data-role="header" data-theme="f">
+        		<h1>Accueil</h1>
+			</div><!-- /header -->
+			
+			<!-- content -->
+			<div data-role="content" data-theme="f">	
+				<ul data-role="listview">
+					<li><a href="#" data-c8o-call=".tv1">Début de soirée</a></li>
+					<li><a href="#" data-c8o-call=".tv2">Fin de soirée</a></li>
+					<li><a href="about.html">A propos...</a></li>
+				</ul>	
+			</div><!-- /content -->
+			
+			<!-- footer -->
+			<div data-role="footer" data-theme="f" data-position="fixed">
+				<h4>MOBTV</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- End Home screen -->
+		
+		<!-- Prime Time screen -->
+		<div data-role="page" id="primeTime" data-theme="f" data-add-back-btn="true">
+			<!-- header -->
+			<div data-role="header" data-theme="f">
+				<h1>1ere partie</h1>
+			</div><!-- /header -->
+			
+			<!-- content -->
+			<div data-role="content" data-theme="f">
+				<ul data-role="listview" data-divider-theme="a" data-c8o-listen=".tv1">	
+					<li data-role="list-divider">__=date__</li>
+			    	<li data-role="list-divider">Grandes Chaines</li>
+			    	<li style="padding: 6px;"></li>
+		    	</ul>
+				<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv1" data-c8o-each="GCH">	
+					<li>
+						<a href="#prog_page" data-prog_img_chn="__=img_chaine_prog1_prog2__" data-prog_img="__=img_prog1__" data-prog_hour="__=hour_prog1__" data-prog_name="__=name_prog1__" data-prog_subject="__=subject_prog1__" data-prog_type="__=type_prog1__" data-prog_sum="__=sum_prog1__"><img data-c8o-use="on" data-c8o-use-src="__=img_chaine_prog1_prog2__" style="margin-top: 25px;" /><h3>__=name_prog1__</h3><p>__=hour_prog1__</p></a>
+					</li>
+		    	</ul>
+		    	<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv1">	
+					<li data-role="list-divider">__=date__</li>
+			    	<li data-role="list-divider">TNT</li>
+			    	<li style="padding: 6px;"></li>
+		    	</ul>
+		    	<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv1" data-c8o-each="TNT">	
+					<li>
+						<a href="#prog_page" data-prog_img_chn="__=img_chaine_prog1_prog2__" data-prog_img="__=img_prog1__" data-prog_hour="__=hour_prog1__" data-prog_name="__=name_prog1__" data-prog_subject="__=subject_prog1__" data-prog_type="__=type_prog1__" data-prog_sum="__=sum_prog1__"><img data-c8o-use="on" data-c8o-use-src="__=img_chaine_prog1_prog2__" style="margin-top: 25px;" /><h3>__=name_prog1__</h3><p>__=hour_prog1__</p></a>
+					</li>
+		    	</ul>
+			</div><!-- /content -->
+			
+			<!-- footer -->
+			<div data-role="footer">
+				<h4>MOBTV</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- END Prime Time screen -->
+		
+		<!-- Second Time screen -->
+		<div data-role="page" id="2ndTime" data-theme="f" data-add-back-btn="true">
+			<!-- header -->
+			<div data-role="header">
+				<h1>2e partie</h1>
+			</div><!-- /header -->
+			
+			<!-- content -->
+			<div data-role="content">
+				<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv2">	
+					<li data-role="list-divider">__=date__</li>
+			    	<li data-role="list-divider">Grandes Chaines</li>
+			    	<li style="padding: 6px;"></li>
+		    	</ul>
+				<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv2" data-c8o-each="GCH">	
+					<li>
+						<a href="#prog_page" data-prog_img_chn="__=img_chaine_prog1_prog2__" data-prog_img="__=img_prog2__" data-prog_hour="__=hour_prog2__" data-prog_name="__=name_prog2__" data-prog_subject="__=subject_prog2__" data-prog_type="__=type_prog2__" data-prog_sum="__=sum_prog2__"><img data-c8o-use="on" data-c8o-use-src="__=img_chaine_prog1_prog2__" style="margin-top: 25px;" /><h3>__=name_prog2__</h3><p>__=hour_prog2__</p></a>
+					</li>
+		    	</ul>
+		    	<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv2">	
+					<li data-role="list-divider">__=date__</li>
+			    	<li data-role="list-divider">TNT</li>
+			    	<li style="padding: 6px;"></li>
+		    	</ul>
+		    	<ul data-role="listview" data-theme="f" data-divider-theme="a" data-c8o-listen=".tv2" data-c8o-each="TNT">	
+					<li>
+						<a href="#prog_page" data-prog_img_chn="__=img_chaine_prog1_prog2__" data-prog_img="__=img_prog2__" data-prog_hour="__=hour_prog2__" data-prog_name="__=name_prog2__" data-prog_subject="__=subject_prog2__" data-prog_type="__=type_prog2__" data-prog_sum="__=sum_prog2__"><img data-c8o-use="on" data-c8o-use-src="__=img_chaine_prog1_prog2__" style="margin-top: 25px;" /><h3>__=name_prog2__</h3><p>__=hour_prog2__</p></a>
+					</li>
+		    	</ul>
+			</div><!-- /content -->
+			
+			<!-- footer -->
+			<div data-role="footer">
+				<h4>MOBTV</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- End Second Time screen -->
+		
+		<!-- Programme screen -->
+		<div data-role="page" id="prog_page" data-theme="f" data-add-back-btn="true" data-title="">
+			<!-- header -->
+			<div data-role="header" data-theme="f">
+				<h1 id="prog_title"></h1>
+			</div><!-- /header -->
+			
+			<!-- content -->
+			<div data-role="content" data-theme="f">
+		        <fieldset class="ui-grid-a ui-bar">
+					<div class="ui-block-a"><div style="padding: 4px 0 8px 4px"><img id="prog_img_chn" style="border: 0; vertical-align: middle;" /></div><div style="padding: 0 0 8px 4px"><img id="prog_img" style="border: 0; vertical-align: middle;" /></div></div>
+					<div class="ui-block-b"><div id="prog_hour"></div><div id="prog_name"></div><div id="prog_subject"></div><div id="prog_type"></div></div>
+				</fieldset>
+				<fieldset class="ui-bar">
+					<div class="ui-block-a">
+						<div id="prog_resume" style="padding: 4px">
+							<div name="sum" data-c8o-listen=".mobtvConnector.getSummary" data-c8o-listen-condition="summary">__=summary__</div>
+							<div name="sum" data-c8o-listen=".mobtvConnector.getSummary" data-c8o-listen-condition="serie" data-c8o-each="serie">
+								<div>__=titre__</div>
+								<div>__=sum__</div>
+								<br/>
+							</div>
+						</div>
+						<div id="button_sum"></div>
+					</div>
+				</fieldset>
+			</div><!-- /content -->
+			
+			<!-- footer -->
+			<div data-role="footer"  data-theme="f" data-position="fixed">
+				<h4>MOBTV</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		<!-- END Programme screen -->
+		
+		<!-- Error page - Error message popup  -->
+		<div data-role="dialog" id="errorMessage" data-title="Error" data-theme="f">
+			
+			<!-- top bar -->
+			<div data-role="header" data-theme="a">
+				<h1>Error</h1>
+			</div>
+			
+			<!-- content -->
+			<div data-role="content">
+				<p id="errorMessageTarget" data-c8o-listen="*">__=error__</p>
+				<a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="g">Close</a>
+			</div>
+		</div>
+	</body>
+</html>

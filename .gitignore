@@ -61,6 +61,10 @@ Studio/projects/sampleMobileJQuery/*.temp.*
 Studio/projects/sampleMobileJQuery/Traces
 Studio/projects/sampleMobileJQuery/_data
 Studio/projects/sampleMobileJQuery/_private
+Studio/projects/sampleMobileMobTV/Traces
+Studio/projects/sampleMobileMobTV/_private
+Studio/projects/sampleMobileMobTV/sampleMobileMobTV.temp.wsdl
+Studio/projects/sampleMobileMobTV/sampleMobileMobTV.temp.xsd
 Studio/projects/sampleMobileRssNYTimes/Traces
 Studio/projects/sampleMobileRssNYTimes/_private
 Studio/projects/sampleMobileRssNYTimes/sampleMobileRssNYTimes.temp.wsdl
