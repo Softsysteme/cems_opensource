@@ -1,5 +1,0 @@
-
-// Handles the transaction start event.
-function onTransactionStarted() {
-    context.connector.sUrl += database;
-}
