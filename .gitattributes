@@ -752,6 +752,18 @@ Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableRequestables.xsd 
 Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableRights.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableUsers.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/xsd/lib_Keyring.xsd -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/.project -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/_private/lib_CouchDB.CreateViewAndQuery.Complex.Complex.Complex1.DefineMapFunction[!!-~]DefineMapFunction -text
+Studio/projects/lib_CouchDB/_private/lib_CouchDB__lib_CouchDBConnector__CreateDatabase -text
+Studio/projects/lib_CouchDB/_private/lib_CouchDB__lib_CouchDBConnector__DocumentCreate -text
+Studio/projects/lib_CouchDB/_private/lib_CouchDB__lib_CouchDBConnector__Query -text
+Studio/projects/lib_CouchDB/css/custom.css -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/index.html -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/js/custom.js -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/lib_CouchDB.xml -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentCreateOrUpdate.xsd -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/ViewGet.xsd -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/xsd/lib_CouchDB.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xml -text svneol=unset#text/plain

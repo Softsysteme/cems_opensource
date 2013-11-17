@@ -1,0 +1,4 @@
+MapFunction = "function(doc){emit(doc._id, {mysecondfield: doc.field1, mythirdfield:doc.SubElement1[0].field1})}";
+
+
+
