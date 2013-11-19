@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CemsXulrunner_win32_win32_x86
+Bundle-SymbolicName: com.twinsoft.convertigo.studio.xulrunner.win32_win32_x86;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Convertigo
+Fragment-Host: com.twinsoft.convertigo.studio
+Eclipse-PlatformFilter: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86))

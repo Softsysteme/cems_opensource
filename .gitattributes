@@ -1,4 +1,596 @@
 * text=auto !eol
+CemsXulrunner_linux_gtk_x86/.project -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/META-INF/MANIFEST.MF -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/build.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/.autoreg -text
+CemsXulrunner_linux_gtk_x86/xulrunner/LICENSE -text
+CemsXulrunner_linux_gtk_x86/xulrunner/README.txt -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/classic.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/classic.manifest -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/comm.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/comm.manifest -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/en-US.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/en-US.manifest -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default16.png -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default32.png -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default48.png -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/pippki.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/pippki.manifest -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/toolkit.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/chrome/toolkit.manifest -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/FeedProcessor.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/accessibility.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/alerts.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/appshell.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/appstartup.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/autocomplete.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/autoconfig.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/caps.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/chardet.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/chrome.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/commandhandler.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/commandlines.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/composer.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/compreg.dat -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_base.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_html.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_htmldoc.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_xmldoc.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_xslt.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/content_xtf.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/contentprefs.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/cookie.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/directory.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/docshell.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_base.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_canvas.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_core.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_css.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_events.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_html.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_json.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_loadsave.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_offline.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_range.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_sidebar.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_storage.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_stylesheets.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_svg.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_traversal.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_views.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_xbl.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_xpath.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/dom_xul.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/downloads.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/editor.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/embed_base.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/extensions.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/exthandler.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/exthelper.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/fastfind.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/feeds.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/filepicker.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/find.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/gfx.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/htmlparser.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/imgicon.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/imglib2.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/inspector.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/intl.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/jar.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/jsconsole-clhandler.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/jsdservice.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/layout_base.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/layout_printing.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/layout_xul.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/layout_xul_tree.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/libdbusservice.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/libimgicon.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/locale.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/loginmgr.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/lwbrk.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/mimetype.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/mozbrwsr.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/mozfind.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_about.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_cache.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_cookie.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_dns.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_file.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_ftp.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_http.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_res.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_socket.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_strconv.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/necko_viewsource.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsAddonRepository.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsBadCertHandler.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsBlocklistService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsContentDispatchChooser.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsContentPrefService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsDefaultCLH.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsDictionary.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsDownloadManagerUI.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsExtensionManager.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsFilePicker.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsHandlerService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsHelperAppDlg.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsLivemarkService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsLoginInfo.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsLoginManager.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsLoginManagerPrompter.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsProgressDialog.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsProxyAutoConfig.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsResetPref.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsTaggingService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsTryToClose.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsURLFormatter.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsUpdateService.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsWebHandlerApp.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsXULAppInstall.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/nsXmlRpcClient.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/oji.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/parentalcontrols.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/pipboot.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/pipnss.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/pippki.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/places.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/plugin.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/pluginGlue.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/pref.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/prefetch.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/profile.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/proxyObjInst.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/rdf.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/satchel.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/saxparser.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/shistory.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/spellchecker.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/storage-Legacy.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/storage.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/toolkitprofile.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/toolkitremote.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/txEXSLTRegExFunctions.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/components/txmgr.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/txtsvc.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/uconv.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/unicharutil.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/update.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/uriloader.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/urlformatter.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/webBrowser_core.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/webbrowserpersist.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/webshell_idls.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/widget.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/windowds.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/windowwatcher.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xml-rpc.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_base.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_components.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_ds.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_io.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_system.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_threads.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_xpti.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpconnect.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpinstall.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpti.dat -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xulapp.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xulapp_setup.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xuldoc.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xultmpl.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/components/zipwriter.xpt -text
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/autoconfig/platform.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/autoconfig/prefcalls.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/pref/xulrunner.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/US/chrome/userChrome-example.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/US/chrome/userContent-example.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/US/localstore.rdf -text
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/chrome/userChrome-example.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/chrome/userContent-example.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/defaults/profile/localstore.rdf -text
+CemsXulrunner_linux_gtk_x86/xulrunner/dependentlibs.list -text
+CemsXulrunner_linux_gtk_x86/xulrunner/dictionaries/en-US.aff -text
+CemsXulrunner_linux_gtk_x86/xulrunner/dictionaries/en-US.dic -text
+CemsXulrunner_linux_gtk_x86/xulrunner/greprefs/all[!!-~](copie).js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/greprefs/all.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/greprefs/security-prefs.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/greprefs/xpinstall.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/icons/document.png -text
+CemsXulrunner_linux_gtk_x86/xulrunner/icons/mozicon16.xpm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/icons/mozicon50.xpm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/javaxpcom.jar -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libfreebl3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libjavaxpcomglue.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libjemalloc.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libmozjs.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libnspr4.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libnss3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libnssckbi.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libnssdbm3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libnssutil3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libplc4.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libplds4.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libsmime3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libsoftokn3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libsqlite3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libssl3.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libxpcom.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/libxul.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/DownloadUtils.jsm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/ISO8601DateUtils.jsm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/JSON.jsm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/Microformats.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/PluralForm.jsm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/XPCOMUtils.jsm -text
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/debug.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/modules/utils.js -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/mozilla-xremote-client -text
+CemsXulrunner_linux_gtk_x86/xulrunner/nsinstall -text
+CemsXulrunner_linux_gtk_x86/xulrunner/platform.ini -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/plugins/libnullplugin.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/plugins/libunixprintplugin.so -text
+CemsXulrunner_linux_gtk_x86/xulrunner/regxpcom -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/EditorOverride.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/arrow.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/arrowd.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/broken-image.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/charsetData.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/charsetalias.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/contenteditable.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/designmode.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/dtd/mathml.dtd -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/dtd/xhtml11.dtd -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/html40Latin1.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/html40Special.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/html40Symbols.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/htmlEntityVersions.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/mathml20.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/entityTables/transliterate.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/fonts/mathfont.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/fonts/mathfontSTIXNonUnicode.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/fonts/mathfontSTIXSize1.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/fonts/mathfontStandardSymbolsL.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/fonts/mathfontUnicode.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/forms.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/grabber.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/hiddenWindow.html -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/html.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/html/folder.png -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/langGroups.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/language.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/loading-image.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/mathml.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/quirk.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/svg.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-after-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-after-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-after.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-before-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-before-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-column-before.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-after-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-after-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-after.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-before-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-before-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-add-row-before.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-column-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-column-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-column.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-row-active.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-row-hover.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/table-remove-row.gif -text
+CemsXulrunner_linux_gtk_x86/xulrunner/res/ua.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/unixcharset.properties -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/res/viewsource.css -text svneol=unset#text/plain
+CemsXulrunner_linux_gtk_x86/xulrunner/run-mozilla.sh -text
+CemsXulrunner_linux_gtk_x86/xulrunner/ssltunnel -text
+CemsXulrunner_linux_gtk_x86/xulrunner/updater -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xpcshell -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xpidl -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xpt_dump -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xpt_link -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xulrunner -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xulrunner-bin -text
+CemsXulrunner_linux_gtk_x86/xulrunner/xulrunner-stub -text
+CemsXulrunner_win32_win32_x86/.project -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/META-INF/MANIFEST.MF -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/build.properties -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/AccessibleMarshal.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/IA2Marshal.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/LICENSE -text
+CemsXulrunner_win32_win32_x86/xulrunner/MozillaGlue.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/MozillaInterfaces-src.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/MozillaInterfaces.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/README.txt -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/classic.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/classic.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/comm.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/comm.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/en-US.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/en-US.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/pippki.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/pippki.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/toolkit.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/chrome/toolkit.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/FeedProcessor.js -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/accessibility-msaa.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/accessibility.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/alerts.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/appshell.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/appstartup.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/autocomplete.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/autoconfig.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/caps.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/cemsPrintScreen.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/chardet.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/chrome.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/commandhandler.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/commandlines.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/composer.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_html.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_htmldoc.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_xmldoc.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_xslt.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/content_xtf.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/contentprefs.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/cookie.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/directory.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/docshell_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_canvas.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_core.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_css.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_events.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_html.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_json.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_loadsave.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_offline.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_range.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_sidebar.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_storage.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_stylesheets.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_svg.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_traversal.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_views.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_xbl.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_xpath.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/dom_xul.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/downloads.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/editor.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/embed_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/extensions.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/exthandler.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/exthelper.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/fastfind.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/feeds.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/find.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/gfx.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/htmlparser.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/imgicon.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/imglib2.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/inspector.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/intl.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/jar.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/jsconsole-clhandler.js -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/jsdservice.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/layout_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/layout_printing.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/layout_xul.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/layout_xul_tree.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/locale.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/loginmgr.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/lwbrk.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/mimetype.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/mozbrwsr.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/mozfind.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_about.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_cache.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_cookie.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_dns.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_file.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_ftp.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_http.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_res.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_socket.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_strconv.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/necko_viewsource.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsAddonRepository.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsBadCertHandler.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsBlocklistService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsContentDispatchChooser.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsContentPrefService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsDefaultCLH.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsDictionary.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsDownloadManagerUI.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsExtensionManager.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsHandlerService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsHelperAppDlg.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsLivemarkService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsLoginInfo.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsLoginManager.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsLoginManagerPrompter.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsPostUpdateWin.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsProgressDialog.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsProxyAutoConfig.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsResetPref.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsTaggingService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsTryToClose.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsURLFormatter.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsUpdateService.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsWebHandlerApp.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsXULAppInstall.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/nsXmlRpcClient.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/oji.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/parentalcontrols.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/pipboot.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/pipnss.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/pippki.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/places.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/plugin.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/pluginGlue.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/pref.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/prefetch.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/profile.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/proxyObject.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/rdf.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/satchel.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/saxparser.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/shistory.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/spellchecker.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/storage-Legacy.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/storage.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/toolkitprofile.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/txEXSLTRegExFunctions.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/components/txmgr.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/txtsvc.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/uconv.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/unicharutil.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/update.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/uriloader.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/urlformatter.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/webBrowser_core.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/webbrowserpersist.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/webshell_idls.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/widget.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/windowds.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/windowwatcher.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xml-rpc.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_base.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_components.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_ds.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_io.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_system.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_thread.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpcom_xpti.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpconnect.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xpinstall.xpt -text svneol=unset#unset
+CemsXulrunner_win32_win32_x86/xulrunner/components/xulapp.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xulapp_setup.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xuldoc.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/xultmpl.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/components/zipwriter.xpt -text
+CemsXulrunner_win32_win32_x86/xulrunner/crashreporter.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/crashreporter.ini -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/autoconfig/platform.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/autoconfig/prefcalls.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/pref/xulrunner.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/US/chrome/userChrome-example.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/US/chrome/userContent-example.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/US/localstore.rdf -text
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/chrome/userChrome-example.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/chrome/userContent-example.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/defaults/profile/localstore.rdf -text
+CemsXulrunner_win32_win32_x86/xulrunner/dependentlibs.list -text
+CemsXulrunner_win32_win32_x86/xulrunner/dictionaries/en-US.aff -text
+CemsXulrunner_win32_win32_x86/xulrunner/dictionaries/en-US.dic -text
+CemsXulrunner_win32_win32_x86/xulrunner/freebl3.chk -text
+CemsXulrunner_win32_win32_x86/xulrunner/freebl3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/greprefs/all.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/greprefs/security-prefs.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/greprefs/xpinstall.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/javaxpcom.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/javaxpcomglue.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/js3250.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/DownloadUtils.jsm -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/ISO8601DateUtils.jsm -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/JSON.jsm -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/Microformats.js -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/PluralForm.jsm -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/XPCOMUtils.jsm -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/debug.js -text
+CemsXulrunner_win32_win32_x86/xulrunner/modules/utils.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/mozcrt19.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/mozctl.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/mozctlx.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/mybrowser/application.ini -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/mybrowser/chrome/chrome.manifest -text
+CemsXulrunner_win32_win32_x86/xulrunner/mybrowser/chrome/en-US.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/mybrowser/chrome/mybrowser.jar -text
+CemsXulrunner_win32_win32_x86/xulrunner/mybrowser/defaults/preferences/mybrowser-prefs.js -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/nspr4.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/nss3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/nssckbi.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/nssdbm3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/nssutil3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/platform.ini -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/plc4.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/plds4.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/plugins/npnul32.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/EditorOverride.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/arrow.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/arrowd.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/broken-image.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/charsetData.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/charsetalias.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/contenteditable.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/designmode.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/dtd/mathml.dtd -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/dtd/xhtml11.dtd -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/html40Latin1.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/html40Special.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/html40Symbols.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/htmlEntityVersions.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/mathml20.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/entityTables/transliterate.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfont.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfontSTIXNonUnicode.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfontSTIXSize1.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfontStandardSymbolsL.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfontSymbol.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/fonts/mathfontUnicode.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/forms.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/grabber.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/hiddenWindow.html -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/html.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/html/folder.png -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/langGroups.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/language.properties -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/loading-image.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/mathml.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/quirk.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/svg.css -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-after-active.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-after-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-after.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-before-active.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-before-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-column-before.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-after-active.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-after-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-after.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-before-active.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-before-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-add-row-before.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-column-active.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-column-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-column.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-row-active.gif -text svneol=unset#unset
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-row-hover.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/table-remove-row.gif -text
+CemsXulrunner_win32_win32_x86/xulrunner/res/ua.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/res/viewsource.css -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/res/wincharset.properties -text svneol=unset#text/plain
+CemsXulrunner_win32_win32_x86/xulrunner/smime3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/softokn3.chk -text svneol=unset#unset
+CemsXulrunner_win32_win32_x86/xulrunner/softokn3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/sqlite3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/ssl3.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/updater.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xpcom.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/xpcshell.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xpidl.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xpt_dump.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xpt_link.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xul.dll -text
+CemsXulrunner_win32_win32_x86/xulrunner/xulrunner-stub.exe -text
+CemsXulrunner_win32_win32_x86/xulrunner/xulrunner.exe -text
 Server/.classpath -text svneol=unset#text/plain
 Server/.project -text svneol=unset#text/plain
 Server/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
@@ -17,7 +609,9 @@ Studio/.project -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
+Studio/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 Studio/build-templates.xml -text svneol=unset#text/plain
+Studio/build.properties -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProject.xml -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProjectE.xml -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProjectWhithExemple.xml -text svneol=unset#text/plain
@@ -347,6 +941,7 @@ Studio/lib/axis2-1.6.2/lib/xmlbeans-2.3.0.jar -text
 Studio/lib/axis2-1.6.2/lib/xmlbeans-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/backport/backport-util-concurrent-3.1.jar -text
 Studio/lib/backport/backport-util-concurrent-LICENSE.txt -text svneol=unset#text/plain
+Studio/lib/beans.jar -text
 Studio/lib/commons-collections-3.1.jar -text
 Studio/lib/cos.jar -text
 Studio/lib/ctgclient.jar -text
@@ -354,6 +949,7 @@ Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/ejb.jar -text
 Studio/lib/engine-htmlparsers.jar -text
+Studio/lib/engine.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/gcm/gcm-server.jar -text
 Studio/lib/gcm/json_simple-1.1.jar -text
@@ -404,6 +1000,7 @@ Studio/lib/soapui/commons-cli-1.0.jar -text
 Studio/lib/soapui/not-yet-commons-ssl-0.3.11.jar -text
 Studio/lib/soapui/soapui-3.5.1.jar -text
 Studio/lib/soapui/soapui-xmlbeans-3.5.1.jar -text
+Studio/lib/studio.jar -text
 Studio/lib/tomcat-dbcp.jar -text
 Studio/lib/tools.jar -text svneol=unset#unset
 Studio/lib/wro4j-core-1.6.3.jar -text
