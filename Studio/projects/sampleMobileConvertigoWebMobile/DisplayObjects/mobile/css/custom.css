@@ -1,4 +1,8 @@
-/** insert your custom css code here */
+/* = Common 
+----------------------------------------- */
+h1 {
+	margin-bottom: 0;
+}
 p {
 	text-align: justify;	
 }
@@ -8,7 +12,8 @@ p {
 #c8oloading {
 	top: 0px;
 }
-/* ** welcome page ** */
+/* = Welcome page 
+----------------------------------------- */
 #welcome #logoConvertigo {
 	margin: 0 auto 0;
 	width:110px;
@@ -30,17 +35,14 @@ a.ui-link-inherit {
 .listIcon .ui-btn-inner a.ui-link-inherit {
 	padding-left: 80px !important;
 }
-.ce {
+.community {
 	color:#666666;
 }
-.ee {
+.enterprise {
 	color:#006699;
 }
-.cle {
+.extended {
 	color:#03744f;
-}
-.xe {
-	color:#ff7e00;
 }
 .subscription strong {
 	position: relative;
@@ -50,11 +52,8 @@ a.ui-link-inherit {
 	font-size: 42px;
 }
 
-/* *** Forms *** */
-label, button {
-	float:left;
-	clear:both;
-}
+/* = Forms 
+----------------------------------------- */
 .error, .valid {
 	font-size:0.8em;
 }

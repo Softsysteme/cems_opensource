@@ -37,4 +37,114 @@
         <xsd:annotation/>
         <xsd:sequence/>
     </xsd:complexType>
+    <xsd:element name="convertigo_HTML_connector__SetMouseOver" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="convertigo_HTML_connector__SetMouseOverResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="convertigo_HTML_connector__SetMouseOverRequestData">
+        <xsd:annotation/>
+        <xsd:sequence>
+            <xsd:element name="link" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_DescriptionType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Title" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Text" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="puceText" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_httpconnectType">
+        <xsd:attribute name="average" type="xsd:byte"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_getxuldocumentType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_getcurrentscreenclassType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_applyextractionrulesType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_generatedomType">
+        <xsd:attribute name="average" type="xsd:byte"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_othersType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_task_getdocumentType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_taskType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="httpconnect" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_httpconnectType"/>
+            <xsd:element minOccurs="0" name="getxuldocument" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_getxuldocumentType"/>
+            <xsd:element minOccurs="0" name="getcurrentscreenclass" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_getcurrentscreenclassType"/>
+            <xsd:element minOccurs="0" name="applyextractionrules" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_applyextractionrulesType"/>
+            <xsd:element minOccurs="0" name="generatedom" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_generatedomType"/>
+            <xsd:element minOccurs="0" name="others" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_othersType"/>
+            <xsd:element minOccurs="0" name="getdocument" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_task_getdocumentType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_request_hostType">
+        <xsd:attribute name="average" type="xsd:byte"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_request_convertigoType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_request_totalstatType">
+        <xsd:attribute name="average" type="xsd:short"/>
+        <xsd:attribute name="current" type="xsd:byte"/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statistics_requestType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="host" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_request_hostType"/>
+            <xsd:element minOccurs="0" name="convertigo" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_request_convertigoType"/>
+            <xsd:element minOccurs="0" name="totalstat" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_request_totalstatType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector_SetMouseOver_document_statisticsType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="task" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_taskType"/>
+            <xsd:element minOccurs="0" name="request" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statistics_requestType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector__SetMouseOverResponseData">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_DescriptionType"/>
+            <xsd:element minOccurs="0" name="statistics" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector_SetMouseOver_document_statisticsType"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileConvertigoWebMobile_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="expires" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
 </xsd:schema>

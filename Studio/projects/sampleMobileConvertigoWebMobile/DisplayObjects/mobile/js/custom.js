@@ -131,7 +131,7 @@ $.extend(true, C8O, {
 //					 * before calling the C8O request
 //				 	* (useful in order to route to different pages according to the origin page).
 //					 * Use the .is(selector) from JQuery.
-//					 * Sample: “#page1, #page2, #page3 ”
+//					 * Sample: #page1, #page2, #page3
 //					 */
 //					fromPage: "",
 //	
@@ -152,23 +152,16 @@ $.extend(true, C8O, {
 //				}
 //			]
 //		},
-//		/** full template condensed, must be comma separated */
-//		{
-//			calledRequest: "<the called C8O requestables>",
-//			actions: [
-//				{
-//					afterRendering: function ($doc, c8oData) {
-//					},
-//					beforeRendering: function ($doc, c8oData) {
-//					},
-//					condition: "<jQuery selector or function>",
-//					fromPage: "<page ID>",
-//					goToPage: "<page ID>",
-//					options: {
-//					}
-//				}
-//			]
-//		}
+		/** full template condensed, must be comma separated */
+		{
+			calledRequest: ".convertigo_HTML_connector.SetMouseOver",
+			actions: [
+				{
+					condition: ">Description",
+					goToPage: "#featureMatrixDetail",
+				}
+			]
+		}
 	]
 });
 
@@ -412,59 +405,11 @@ C8O.addHook("document_ready", function () {
 		});
 	}
 	
-	$('.communityEdition').click(function() {
-		//appelle la transaction et le connecteur dans convertigo
-		//C8O.call("__connector=convertigo_HTML_connector&__transaction=SetMouseOver&link=community");
-		//difference entre une chaine ci dessus et une écriture objet JSON : moins de souci sur les caractères spéciaux
-		C8O.call({
-			__connector : "convertigo_HTML_connector", //pas obligatoire car connector par defaut
-			__transaction : "SetMouseOver",
-			link : "community"
-		});
-		return false;
-	});
-	
-	$('.enterpriseEdition').click(function() {
-		//appelle la transaction et le connecteur dans convertigo
-		//C8O.call("__connector=convertigo_HTML_connector&__transaction=SetMouseOver&link=enterprise");
-		C8O.call({
-			__connector : "convertigo_HTML_connector",
-			__transaction : "SetMouseOver",
-			link : "enterprise"
-		});
-		return false;
-	});
-	
-	$('.cloudEdition').click(function() {
-		//appelle la transaction et le connecteur dans convertigo
-		//C8O.call("__connector=convertigo_HTML_connector&__transaction=SetMouseOver&link=cloud");
-		C8O.call({
-			__connector : "convertigo_HTML_connector",
-			__transaction : "SetMouseOver",
-			link : "cloud"
-		});		
-		return false;
-	});
-	
-	$('.extendedEdition').click(function() {
-		//appelle la transaction et le connecteur dans convertigo
-		//C8O.call("__connector=convertigo_HTML_connector&__transaction=SetMouseOver&link=extended");
-		C8O.call({
-			__connector : "convertigo_HTML_connector",
-			__transaction : "SetMouseOver",
-			link : "extended"
-		});
-		return false;
-	});
-	
 	$('.quitSite').click(function() {
 		closeApplication();
 	});
 	
-	//submit for the form to view demos
-	/*$.validator.setDefaults({
-		   debug: true,
-	});*/
+
 	$('#email').each(function() {
 	    var default_value = this.value;
 	    $(this).focus(function() {
@@ -572,206 +517,8 @@ C8O.addHook("document_ready", function () {
  *  return: true > lets the CTF perform the xml
  *             false > break the processing of xml
  */
-C8O.addHook("xml_response", function (xml) {
-	var link = C8O.getLastCallParameter("link");
-	var $xml = $(xml);
-	
-	//Load community edition in the community edition page on webmobile
-	if (link == "community") {
-		var myboxContent = $("#communityEdition div[data-role=content]").empty(); //pour vider le conteneur et le selectionner
-		var myboxCollapse = $("<div/>").attr("data-role","collapsible-set").attr("data-theme","d").attr("data-content-theme","c");
-		myboxContent.append(myboxCollapse);
-
-		$xml.find("document > Description").each(function()
-		{	
-			var title = $(this).find("Title").text();
-			var text = $(this).find("Text").text();
-			
-			if( title == "Community Edition")
-			{
-				var h1 = $("<h1/>");
-				h1.append(title);
-				myboxContent.prepend(h1);		
-			}
-			if( title.search(new RegExp(/license/i)) != -1 )
-			{
-				var h3 = $("<h3 class=\"licence\">Licence: </h3>");
-				h3.append(title);
-				myboxCollapse.before(h3, "<h3 class=\"subscription\">Subscription: Free </h3><h2 class=\"ce\">Description</h2>");
-			}
-			
-			
-			var div = $("<div/>");
-			div.attr("data-role","collapsible");
-			div.attr("data-collapsed","true");
-			div.append("<h3>" + title + "</h3>");
-			myboxCollapse.append(div);
-			
-			if (text)
-			{
-				div.append("<p>" + text + "</p>");
-			}
-			else {
-				var ul = $("<ul/>");
-				div.append(ul);
-				$(this).find("puceText").each(function() {
-					ul.append("<li>" + $(this).text() + "</li>");
-				});
-			}
-			
-		});
-		myboxCollapse.find(">div").collapsible({refresh: true});
-		$.mobile.changePage($("#communityEdition"), {transition : "pop"});
-		return;
-		
-	//Load enterprise edition in the enterprise edition page on webmobile
-	}else if (link == "enterprise") {
-		var myboxContent = $("#enterpriseEdition div[data-role=content]").empty();;
-		var myboxCollapse = $("<div/>").attr("data-role","collapsible-set").attr("data-theme","d").attr("data-content-theme","c");
-		myboxContent.append(myboxCollapse);
-
-		$xml.find("document > Description").each(function()
-		{	
-			var title = $(this).find("Title").text();
-			var text = $(this).find("Text").text();
-			
-			if( title == "Enterprise Edition")
-			{
-				var h1 = $("<h1/>");
-				h1.append(title).css("color","#006699");
-				myboxContent.prepend(h1);
-			}
-			
-			if( title.search(new RegExp(/license/i)) != -1 )
-			{
-				var h3 = $("<h3 class=\"licence\">Licence: </h3>");
-				h3.append(title);
-				myboxCollapse.before(h3, "<h3 class=\"subscription\">Subscription: Based on CPU cores </h3><h2 class=\"ee\">Description</h2>");
-			}
-			var div = $("<div/>");
-			div.attr("data-role","collapsible");
-			div.attr("data-collapsed","true");
-			div.append("<h3>" + title + "</h3>");
-			myboxCollapse.append(div);
-			
-			if (text)
-			{
-				div.append("<p>" + text + "</p>");
-			}
-			else {
-				var ul = $("<ul/>");
-				div.append(ul);
-				$(this).find("puceText").each(function() {
-					ul.append("<li>" + $(this).text() + "</li>");
-				});
-			}
-			
-		});
-		myboxCollapse.find(">div").collapsible({refresh: true});
-		$.mobile.changePage($("#enterpriseEdition"), {transition : "pop"});
-		return;
-	
-	//Load cloud edition in the cloud edition page on webmobile
-	} else if (link == "cloud") {
-		var myboxContent = $("#cloudEdition div[data-role=content]").empty();;
-		var myboxCollapse = $("<div/>").attr("data-role","collapsible-set").attr("data-theme","d").attr("data-content-theme","c");
-		myboxContent.append(myboxCollapse);
-
-		$xml.find("document > Description").each(function()
-		{	
-			var title = $(this).find("Title").text();
-			var text = $(this).find("Text").text();
-			
-			if( title == "Cloud Edition")
-			{
-				var h1 = $("<h1/>");
-				h1.append(title).css("color","#03744f");
-				myboxContent.prepend(h1);
-			}
-			
-			if( title.search(new RegExp(/license/i)) != -1 )
-			{
-				var h3 = $("<h3 class=\"licence\">Licence: </h3>");
-				h3.append(title);
-				myboxCollapse.before(h3, "<h3 class=\"subscription\">Subscription: Based on Compute Units </h3><h2 class=\"cle\">Description</h2>");
-			}
-			var div = $("<div/>");
-			div.attr("data-role","collapsible");
-			div.attr("data-collapsed","true");
-			div.append("<h3>" + title + "</h3>");
-			myboxCollapse.append(div);
-
-			if (text)
-			{
-				div.append("<p>" + text + "</p>");
-			}
-			else {
-				var ul = $("<ul/>");
-				div.append(ul);
-				$(this).find("puceText").each(function() {
-					ul.append("<li>" + $(this).text() + "</li>");
-				});
-			}
-			
-		});
-		myboxCollapse.find(">div").collapsible({refresh: true});
-		$.mobile.changePage($("#cloudEdition"), {transition : "pop"});
-		return;
-		
-	//Load extended edition in the extended edition page on webmobile
-	}else if (link == "extended") {
-		var myboxContent = $("#extendedEdition div[data-role=content]").empty();;
-		var myboxCollapse = $("<div/>").attr("data-role","collapsible-set").attr("data-theme","d").attr("data-content-theme","c");
-		myboxContent.append(myboxCollapse);
-
-		$xml.find("document > Description").each(function()
-		{	
-			var title = $(this).find("Title").text();
-			var text = $(this).find("Text").text();
-			
-			if( title == "eXtended Edition")
-			{
-				var h1 = $("<h1/>");
-				h1.append(title).css("color","#ff7e00");
-				myboxContent.prepend(h1);
-			}
-			
-			if( title.search(new RegExp(/license/i)) != -1 )
-			{
-				var h3 = $("<h3 class=\"licence\">Licence: </h3>");
-				h3.append(title);
-				myboxCollapse.before(h3, "<h3 class=\"subscription\">Subscription: <strong>&infin;</strong></h3><h2 class=\"xe\">Description</h2>");
-
-			}
-			var div = $("<div/>");
-			div.attr("data-role","collapsible");
-			div.attr("data-collapsed","true");
-			div.append("<h3>" + title + "</h3>");
-			myboxCollapse.append(div);
-
-			if (text)
-			{
-				div.append("<p>" + text + "</p>");
-			}
-			else {
-				var ul = $("<ul/>");
-				div.append(ul);
-				$(this).find("puceText").each(function() {
-					ul.append("<li>" + $(this).text() + "</li>");
-				});
-			}
-			
-		});
-		myboxCollapse.find(">div").collapsible({refresh: true});
-		$.mobile.changePage($("#extendedEdition"), {transition : "pop"});
-		return;
-	} else {
-		//Error case
-		$.mobile.changePage('#dialogError', {transition: 'pop', role: 'dialog'});
-	}
-	
-
-	return true;
-});
+//C8O.addHook("xml_response", function (xml) {
+//	return true;
+//});
 
 

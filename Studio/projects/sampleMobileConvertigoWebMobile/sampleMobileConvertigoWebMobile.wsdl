@@ -1,30 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="sampleMobileConvertigoWebMobile" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:sampleMobileConvertigoWebMobile_ns="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:definitions name="sampleMobileConvertigoWebMobile" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sampleMobileConvertigoWebMobile_ns="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile"><xsd:include schemaLocation="sampleMobileConvertigoWebMobile.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="void__DefaultTransactionRequest">
-    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:void__DefaultTransaction">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="void__DefaultTransactionResponse">
     <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:void__DefaultTransactionResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="convertigo_HTML_connector__SetMouseOverRequest">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOver">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="convertigo_HTML_connector__SetMouseOverResponse">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="void__DefaultTransactionRequest">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:void__DefaultTransaction">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="sampleMobileConvertigoWebMobilePortType">
     <wsdl:operation name="void__DefaultTransaction">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <wsdl:input message="sampleMobileConvertigoWebMobile_ns:void__DefaultTransactionRequest">
     </wsdl:input>
       <wsdl:output message="sampleMobileConvertigoWebMobile_ns:void__DefaultTransactionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertigo_HTML_connector__SetMouseOver">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="sampleMobileConvertigoWebMobileSOAPBinding" type="sampleMobileConvertigoWebMobile_ns:sampleMobileConvertigoWebMobilePortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="void__DefaultTransaction">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <soap:operation soapAction="sampleMobileConvertigoWebMobile?void__DefaultTransaction"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertigo_HTML_connector__SetMouseOver">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileConvertigoWebMobile?convertigo_HTML_connector__SetMouseOver"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>

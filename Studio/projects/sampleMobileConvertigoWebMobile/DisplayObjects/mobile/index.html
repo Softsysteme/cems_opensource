@@ -51,7 +51,7 @@
 			===================================
 			custom.css will hold all your custom CSS styles
 		-->
-		<link href="css/jqm_convertigo_theme.min.css" rel="stylesheet" />
+		<link href="css/jqm_convertigo_theme.css" rel="stylesheet" />
 		<link href="css/custom.css" rel="stylesheet" />
 
 		
@@ -119,18 +119,20 @@
 	
 	<body>
 	<!-- 01 Start of first page - home //theme d = convertigo -->
-		<div data-role="page" id="welcome" data-title="Convertigo web mobile" data-theme="d"  data-fullscreen="true" data-position="fixed" data-c8o-call=".convertigo_HTML_connector.SetMouseOver">
+		<div data-role="page" id="welcome" data-title="Convertigo web mobile" data-theme="d"  data-fullscreen="true" data-position="fixed">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
 				<h1>Convertigo</h1>		
 				<a href="#" data-icon="delete" class="quitSite ui-btn-right" data-rel="dialog">Quit</a>	
 			</div>
 			<!-- content -->
-			<div data-role="content" class="listIcon" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
+			<div data-role="content" class="listIcon">
 				<div id="logoConvertigo"><img src="img/logo_convertigo.png" alt="Logo Convertigo" width="110" height="40"></div>
 				<p>Convertigo provides the most efficient <strong>open source</strong> software to <strong>integrate</strong> business logic and data from <strong>enterprise or cloud</strong> sources and publish them to <strong>mobile</strong> devices or portals.</p>
-				<ul data-role="listview" data-inset="true" data-c8o-each="Description">
-					<li>__=Title__</li>
+				<ul data-role="listview" data-inset="true">
+					<li class="list-item-speaker"><a href="http://www.youtube.com/watch?v=kM2fE3WT-rM"><img src="img/icon_video.png" class="thumb-speaker-small" />Discover Convertigo</a></li>
+					<li class="list-item-speaker"><a href="#featureMatrixMenu" id="technicalInfo"><img src="img/icon_technical.png" class="thumb-speaker-small" />Technical info</a></li>
+					<li class="list-item-speaker"><a href="#contactus" id="viewDemos"><img src="img/icon_demo.png" class="thumb-speaker-small" />View demos</a></li>
 				</ul>
 			</div>
 		</div>
@@ -144,18 +146,20 @@
 				<a href="#" data-icon="delete" class="quitSite">Quit</a>	
 			</div>
 			<!-- content -->
-			<div data-role="content" class="listIcon" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
+			<div data-role="content" class="listIcon">
 				<p>Discover technical features of the different Convertigo Editions.<br/>
 				<em>Touch a button to know more about an edition</em>.
 				</p>
-				<ul data-role="listview" data-inset="true" data-c8o-each="Description">
-					<li>__=Title__</li>
+				<ul data-role="listview" data-inset="true">
+					<li class="list-item-speaker"><a href="#" class="communityEdition" data-c8o-call=".convertigo_HTML_connector.SetMouseOver" data-c8o-variables='{"link":"community"}'><img src="img/icon_ce.png" class="thumb-speaker-small" /><span class="ce">Community Edition &gt;</span></a></li>
+					<li class="list-item-speaker"><a href="#" class="enterpriseEdition" data-c8o-call=".convertigo_HTML_connector.SetMouseOver" data-c8o-variables='{"link":"enterprise"}'><img src="img/icon_ee.png" class="thumb-speaker-small"/><span class="ee">Standard Edition &gt;</span></a></li>
+					<li class="list-item-speaker"><a href="#" class="extendedEdition" data-c8o-call=".convertigo_HTML_connector.SetMouseOver" data-c8o-variables='{"link":"extended"}'><img src="img/icon_xe.png" class="thumb-speaker-small" /><span class="xe">Extended Edition &gt;</span></a></li>
 				</ul>
 			</div>
 		</div>
 		
-	<!-- 03 page - feature matrix Community Edition //theme d = convertigo -->
-		<div data-role="page" id="communityEdition" data-title="Convertigo web mobile" data-theme="d">
+	<!-- 03 page - feature matrix detail //theme d = convertigo -->
+		<div data-role="page" id="featureMatrixDetail" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
 				<a href="#featureMatrixMenu" data-icon="back">Back</a>
@@ -164,63 +168,23 @@
 			</div>		
 			<!-- content -->
 			<div data-role="content" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
-				<ul data-role="collapsible" data-inset="true" data-c8o-each="Description">
-					<li>__=Text__</li>
-				</ul>
+				<h1 class="__=feature__">__=>Description:first Title__</h1>
+				<p>__=>Description:first Text__</p>
+				<h3 class="licence">Licence: __=>Description:nth-child(2) Title__</h3>
+				<h3>Description</h3>
+				<div data-role="collapsible-set" data-theme="d" data-content-theme="c" data-c8o-each=">Description:nth-child(n+2)">
+					<div data-role="collapsible" data-collapsed="true">
+						<h3>__=Title__</h3>
+						<p>__=Text__</p>
+						<ul data-c8o-each=">puceText">
+							<li>__=.__</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<!-- 04 page - feature matrix Enterprise Edition //theme d = convertigo -->
-		<div data-role="page" id="enterpriseEdition" data-title="Convertigo web mobile" data-theme="d">
-			<!-- top bar -->
-			<div data-role="header" data-theme="d">
-				<a href="#featureMatrixMenu" data-icon="back">Back</a>
-				<h1>Feature Matrix</h1>		
-				<a href="#" data-icon="delete" class="quitSite">Quit</a>	
-			</div>
-			<!-- content -->
-			<div data-role="content" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
-				<ul data-role="collapsible" data-inset="true" data-c8o-each="Description">
-					<li>__=Text__</li>
-				</ul>
-			</div>
-		</div>
-		
-		<!-- 05 page - feature matrix Cloud Edition //theme d = convertigo -->
-		<div data-role="page" id="cloudEdition" data-title="Convertigo web mobile" data-theme="d">
-			<!-- top bar -->
-			<div data-role="header" data-theme="d">
-				<a href="#featureMatrixMenu" data-icon="back">Back</a>
-				<h1>Feature Matrix</h1>		
-				<a href="#" data-icon="delete" class="quitSite">Quit</a>	
-			</div>
-			<!-- content -->
-			<div data-role="content" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
-				<ul data-role="collapsible" data-inset="true" data-c8o-each="Description">
-					<li>__=Text__</li>
-				</ul>
-			</div>
-		</div>
-		
-		<!-- 06 page - feature matrix eXtended Edition //theme d = convertigo -->
-		<div data-role="page" id="extendedEdition" data-title="Convertigo web mobile" data-theme="d">
-			<!-- top bar -->
-			<div data-role="header" data-theme="d">
-				<a href="#featureMatrixMenu" data-icon="back">Back</a>
-				<h1>Feature Matrix</h1>		
-				<a href="#" data-icon="delete" class="quitSite">Quit</a>	
-			</div>
-
-			<!-- content -->
-			<div data-role="content" data-c8o-listen=".convertigo_HTML_connector.SetMouseOver">
-				<ul data-role="collapsible" data-inset="true" data-c8o-each="Description">
-					<li>__=Text__</li>
-				</ul>
-			</div>
-		</div>
-		
-		
-	<!-- 08 page - forms //theme d = convertigo -->
+	<!-- 04 page - forms //theme d = convertigo -->
 		<div data-role="page" id="contactus" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
@@ -231,23 +195,20 @@
 			<!-- content -->
 			<div data-role="content">
 				<p><em>Fields this form to see demos, please.</em></p>
-				<div data-role="content">
-					<form id="contactForm" data-c8o-call=".convertigo_HTML_connector.SetMouseOver">
-						<input type="hidden" name="c8o-2" value="c8o-2" />
-						<label for="fistName">First Name</label>
-						<input type="text" id="firstname" name="firstname"/>
-						<br/><label for="lastName">Last Name</label>
-						<input type="text" id="lastname" name="lastname"/>
-						<br/><label for="email">Email</label>
-						<input type="email" id="email" value="Your email here" name="email"/>
-						<br/><br/>
-						<button value="register" ></button>
-					</form>
-				</div>
+				<form id="contactForm">
+					<input type="hidden" name="c8o-2" value="c8o-2" />
+					<label for="fistName">First Name</label>
+					<input type="text" id="firstname" name="firstname"/>
+					<label for="lastName">Last Name</label>
+					<input type="text" id="lastname" name="lastname"/>
+					<label for="email">Email</label>
+					<input type="email" id="email" value="Your email here" name="email"/>
+					<button value="register" ></button>
+				</form>
 			</div>
 		</div>
 		
-		<!-- 09 page - List demos //theme d = convertigo -->
+		<!-- 05 page - List demos //theme d = convertigo -->
 		<div data-role="page" id="listDemos" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
@@ -258,15 +219,18 @@
 			<!-- content -->
 			<div data-role="content">
 				<ul data-role="listview">
-					<h3>__=Title__</h3>
-					<p>__=Texte__</p>
+					<li><a href="http://vmmosaic2.i-cubed.com:8080/convertigo/projects/PGMobile/DisplayObjects/mobile/index.html"><h3>P&G Mobile</h3><p>Sencha Application Project Demo.<br/><em>iOS, Android, Blackberry</em></p></a></li>
+					<li><a href="http://vmmosaic2.i-cubed.com:8080/convertigo/projects/I3DirectoryDemo/DisplayObjects/mobile/index.html"><h3>I-Cubed Directory</h3><p>Sencha Application Project Demo.<br/><em>iOS, Android, Blackberry</em></p></a></li>
+					<li><a href="http://vmmosaic2.i-cubed.com:8080/convertigo/projects/RentalApp/DisplayObjects/mobile/index.html"><h3>Rental APP</h3><p>Sencha Application Project Demo.<br/><em>iOS, Android, Blackberry</em></p></a></li>
+					<li><a href="http://vmmosaic2.i-cubed.com:8080/convertigo/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/index.html"><h3>US Directory</h3><p>Sencha Application Project Demo.<br/><em>iOS, Android, Blackberry</em></p></a></li>
+					<li><a href="http://demo.convertigo.net/cems/projects/sampleMobileRssNYTimes/DisplayObjects/mobile/index.html"><h3>RSS New York Times</h3><p>Sencha Application Project Demo.<br/><em>iOS, Android, Blackberry</em></p></a></li>
 <!--					<li><a href="http://trial.convertigo.net/cems/projects/RememberMe/DisplayObjects/mobile/index.html"><h3>Remember Me</h3><p>Sencha/PhoneGap Application Project Demo.<br/><em>iOS, Android, Blackberry</em><br/><em>Login: <strong>greg</strong>, Password: <strong>123456789</strong></em></p></a></li>-->
 				</ul>
 			</div>
 		</div>
 		
-		<!-- 10 page - dialog //theme d = convertigo -->
-		<div id="dialog" data-title="Convertigo web mobile" data-theme="d">
+		<!-- 06 page - dialog //theme d = convertigo -->
+		<div data-role="dialog" id="dialog" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
 				<h1>Message</h1>				
@@ -279,8 +243,8 @@
 			</div>
 		</div>
 		
-		<!-- 11 page - dialog Error //theme d = convertigo -->
-		<div id="dialogError" data-title="Convertigo web mobile" data-theme="d">
+		<!-- 07 page - dialog Error //theme d = convertigo -->
+		<div data-role="dialog" id="dialogError" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
 				<h1>Error Message</h1>				
@@ -293,8 +257,8 @@
 			</div>
 		</div>
 		
-		<!-- 12 page - dialog Form //theme d = convertigo -->
-		<div id="dialogForm" data-title="Convertigo web mobile" data-theme="d">
+		<!-- 08 page - dialog Form //theme d = convertigo -->
+		<div data-role="dialog" id="dialogForm" data-title="Convertigo web mobile" data-theme="d">
 			<!-- top bar -->
 			<div data-role="header" data-theme="d">
 				<h1>Message</h1>				
