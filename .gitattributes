@@ -609,6 +609,7 @@ Studio/.project -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
+Studio/CMS_doc_database.properties -text svneol=unset#text/plain
 Studio/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 Studio/build-templates.xml -text svneol=unset#text/plain
 Studio/build.properties -text svneol=unset#text/plain
@@ -945,6 +946,8 @@ Studio/lib/beans.jar -text
 Studio/lib/commons-collections-3.1.jar -text
 Studio/lib/cos.jar -text
 Studio/lib/ctgclient.jar -text
+Studio/lib/db2jcc-licence.jar -text
+Studio/lib/db2jcc.jar -text
 Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/ejb.jar -text
