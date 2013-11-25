@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_OAuth_ns="http://www.convertigo.com/convertigo/projects/lib_OAuth" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_OAuth">
+    <xsd:element name="lib_OAuthV2Connector__DefaultTransaction" type="lib_OAuth_ns:lib_OAuthV2Connector__DefaultTransactionRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:complexType name="lib_OAuthV2Connector__DefaultTransactionRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:element name="lib_OAuthV2Connector__DefaultTransactionResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_OAuth_ns:lib_OAuthV2Connector__DefaultTransactionResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="lib_OAuthV2Connector__DefaultTransactionResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_OAuth_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:string"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="lib_OAuthV2Connector__DefaultTransactionResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="lib_OAuth_ns:lib_OAuthV2Connector__DefaultTransactionResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

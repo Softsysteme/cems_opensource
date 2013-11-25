@@ -1485,6 +1485,17 @@ Studio/projects/lib_LinkedIn/.project -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xsd -text
+Studio/projects/lib_OAuth/.project -text
+Studio/projects/lib_OAuth/css/custom.css -text
+Studio/projects/lib_OAuth/index.html -text
+Studio/projects/lib_OAuth/js/custom.js -text
+Studio/projects/lib_OAuth/lib_OAuth.xml -text
+Studio/projects/lib_OAuth/xsd/internal/OobTokenConnector/GetVerifyCode.xsd -text
+Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV1Connector/RetreiveAccessToken.xsd -text
+Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV1Connector/RetreiveRequestToken.xsd -text
+Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/DefaultTransaction.xsd -text
+Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/GetBearerToken.xsd -text
+Studio/projects/lib_OAuth/xsd/lib_OAuth.xsd -text
 Studio/projects/lib_Twitter/.project -text
 Studio/projects/lib_Twitter/css/custom.css -text
 Studio/projects/lib_Twitter/index.html -text
