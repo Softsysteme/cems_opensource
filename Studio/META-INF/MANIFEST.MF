@@ -193,4 +193,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.wst.jsdt.ui,
  org.eclipse.wst.jsdt.core
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
