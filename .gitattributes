@@ -14,7 +14,6 @@ CemsXulrunner_linux_gtk_x86/xulrunner/chrome/en-US.manifest -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default16.png -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default32.png -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/icons/default/default48.png -text
-CemsXulrunner_linux_gtk_x86/xulrunner/chrome/pippki.jar -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/pippki.manifest -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/toolkit.jar -text
 CemsXulrunner_linux_gtk_x86/xulrunner/chrome/toolkit.manifest -text
@@ -31,7 +30,6 @@ CemsXulrunner_linux_gtk_x86/xulrunner/components/chrome.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/commandhandler.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/commandlines.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/composer.xpt -text
-CemsXulrunner_linux_gtk_x86/xulrunner/components/compreg.dat -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/content_base.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/content_html.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/content_htmldoc.xpt -text
@@ -176,7 +174,6 @@ CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_threads.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xpcom_xpti.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xpconnect.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xpinstall.xpt -text
-CemsXulrunner_linux_gtk_x86/xulrunner/components/xpti.dat -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xulapp.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xulapp_setup.xpt -text
 CemsXulrunner_linux_gtk_x86/xulrunner/components/xuldoc.xpt -text
