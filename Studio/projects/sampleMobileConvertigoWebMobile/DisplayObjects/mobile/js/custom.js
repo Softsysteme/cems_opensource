@@ -154,11 +154,20 @@ $.extend(true, C8O, {
 //		},
 		/** full template condensed, must be comma separated */
 		{
+			calledRequest: ".convertigo_HTML_connector.Connect",
+			actions: [
+				{
+					condition: ">connected", 
+					goToPage: "#featureMatrixMenu"
+				}
+			]
+		},
+		{
 			calledRequest: ".convertigo_HTML_connector.SetMouseOver",
 			actions: [
 				{
 					condition: ">Description",
-					goToPage: "#featureMatrixDetail",
+					goToPage: "#featureMatrixDetail"
 				}
 			]
 		}

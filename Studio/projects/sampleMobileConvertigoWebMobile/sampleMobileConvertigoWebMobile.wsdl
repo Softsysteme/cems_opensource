@@ -3,12 +3,28 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile"><xsd:include schemaLocation="sampleMobileConvertigoWebMobile.xsd"/></xsd:schema>
   </wsdl:types>
+  <wsdl:message name="convertigo_HTML_connector__ConnectRequest">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__Connect">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="convertigo_HTML_connector__ConnectResponse">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="void__DefaultTransactionResponse">
     <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:void__DefaultTransactionResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="convertigo_HTML_connector__ConnectResponse">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="convertigo_HTML_connector__SetMouseOverRequest">
     <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOver">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="convertigo_HTML_connector__ConnectRequest">
+    <wsdl:part name="parameters" element="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__Connect">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="convertigo_HTML_connector__SetMouseOverResponse">
@@ -28,10 +44,17 @@
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="convertigo_HTML_connector__SetMouseOver">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <wsdl:input message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverRequest">
     </wsdl:input>
       <wsdl:output message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__SetMouseOverResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertigo_HTML_connector__Connect">
+<wsdl:documentation/>
+      <wsdl:input message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectRequest">
+    </wsdl:input>
+      <wsdl:output message="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -48,8 +71,28 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="convertigo_HTML_connector__SetMouseOver">
-<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+<wsdl:documentation/>
       <soap:operation soapAction="sampleMobileConvertigoWebMobile?convertigo_HTML_connector__SetMouseOver"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertigo_HTML_connector__Connect">
+<wsdl:documentation/>
+      <soap:operation soapAction="sampleMobileConvertigoWebMobile?convertigo_HTML_connector__Connect"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="convertigo_HTML_connector__Connect">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sampleMobileConvertigoWebMobile?convertigo_HTML_connector__ConnectGoTo"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>

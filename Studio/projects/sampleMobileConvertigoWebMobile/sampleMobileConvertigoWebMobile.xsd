@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileConvertigoWebMobile_ns="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile">
+<xsd:schema xmlns:sampleMobileConvertigoWebMobile_ns="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileConvertigoWebMobile">
     <xsd:complexType name="ConvertigoErrorContext">
         <xsd:sequence>
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileConvertigoWebMobile_ns:ConvertigoErrorContextVariable"/>
@@ -146,5 +146,56 @@
         <xsd:attribute name="signature" type="xsd:long"/>
         <xsd:attribute name="transaction" type="xsd:string"/>
         <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:element name="convertigo_HTML_connector__Connect" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="convertigo_HTML_connector__ConnectResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connector__ConnectResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="convertigo_HTML_connector__ConnectRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector__ConnectResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileConvertigoWebMobile_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="connected" type="sampleMobileConvertigoWebMobile_ns:connectedTextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector__XMLizeRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="convertigo_HTML_connector__XMLizeResponseData">
+        <xsd:sequence>
+            <xsd:group minOccurs="0" ref="sampleMobileConvertigoWebMobile_ns:convertigo_HTML_connectorTypes"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:group name="convertigo_HTML_connectorTypes">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileConvertigoWebMobile_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="connected" type="sampleMobileConvertigoWebMobile_ns:connectedTextType"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="sampleMobileConvertigoWebMobile_ns:DescriptionRecordType"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:complexType name="DescriptionRecordType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Title" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="puceText" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="connectedTextType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="referer" type="xsd:string" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 </xsd:schema>

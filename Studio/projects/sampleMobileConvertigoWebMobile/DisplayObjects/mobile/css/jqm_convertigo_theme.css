@@ -440,7 +440,7 @@ a.ui-link-inherit {
 }
 /* loading icon */
 .ui-icon-loading {
-	background: url(images/ajaxloader.gif);
+	background: url(images/ajaxloader.png);
 	background-size: 46px 46px;
 }
 /* Button corner class
