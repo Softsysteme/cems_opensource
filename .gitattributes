@@ -5157,6 +5157,7 @@ Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-bu
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-bullet-red.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-close.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-convertigo.png -text
+Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-creation-date.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-delete.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-delete.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-delete1.png -text
@@ -5164,15 +5165,15 @@ Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-de
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-deploy.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-edit.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-edit.png -text
+Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-help.png -text
+Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-help2.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-install.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-install.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-jobgroup-add.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-jobgroup-add.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-js-properties.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-js-properties.png -text
-Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-last-date.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-last-date.png -text
-Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-last-date1.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-modify.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-modify.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-picto-properties.jpg -text
