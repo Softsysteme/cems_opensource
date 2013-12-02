@@ -1,23 +1,36 @@
-/* = Common
---------------------------------------------- */
-.ui-page {
-	background: transparent;
-}
-.ui-overlay-b {
-	background-color: #ccc;
+/** insert your custom css code here */
+
+img {
+	border:0;
 }
 
-/* = Program Screen
---------------------------------------------- */
-.ui-grid-a .ui-block-a {
-	width: 36%;
+
+/* *** prog detail *** */
+#imgChaine {
+	padding: 4px 0 8px 4px;
 }
-.ui-grid-a .ui-block-b {
-	width: 64%;
+#imgChaine img, #imgProg img {
+	vertical-align: middle;
 }
-#prog_hour, #prog_name {
-	font-weight: bold;
+#hour_prog {
+	padding-top: 10px;
 }
-#prog_resume {
-	font-size: 80%;
+#imgProg {
+	padding: 0 0 8px 4px;
+}
+#resButton {
+	padding: 4px;
+}
+#resume {
+	/*width: 98%;*/ 
+	padding: 10px 1px 10px 10px;
+}
+
+/* *** about *** */
+#about table {
+	border:0;
+	border-collapse: 8px;
+}
+#about table tr td {
+	border:0;
 }

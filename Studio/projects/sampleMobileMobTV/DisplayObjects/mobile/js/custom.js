@@ -11,6 +11,17 @@
  * * ctf.jquerymobile.js
  * * custom.js (this file)
  * * jquery.mobile(.min).js
+ * 
+ * Please find documentation of CTF here:
+ * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * or
+ * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * 
+ * and the documenation of internationalization (i18n) here:
+ * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * or
+ * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * 
  *******************************************************
  *******************************************************/
 
@@ -18,8 +29,6 @@
 /*******************************************************
  * Global variables *
  *******************************************************/
-
-var $curProg = null;
 
 $.extend(true, C8O, {
 	/**
@@ -50,6 +59,7 @@ $.extend(true, C8O, {
 	 * for example: C8O.vars.ajax_method="GET"
 	 */
 	vars: {
+		stub : false
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
 //		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
@@ -81,105 +91,115 @@ $.extend(true, C8O, {
 //			* array of actions, all executed in order if the current result match the 'calledRequest'
 //			*/
 //			actions: [
-//				/**
-//				 * afterRendering function
-//				 * called after the rendering process.
-//				 * $doc: JQuery object of the XML document response
-//				 * c8oData: key/value parameters of the request
-//				 */
-//				afterRendering: function ($doc, c8oData) {
-//				
-//				},
-//
-//				/**
-//				 * beforeRendering function
-//				 * called before the rendering process.
-//				 * $doc: JQuery object of the XML document response
-//				 * c8oData: key/value parameters of the request
-//				 */
-//				beforeRendering: function ($doc, c8oData) {
+//				{
+//					/**
+//					 * afterRendering function
+//					 * called after the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					afterRendering: function ($doc, c8oData) {
 //					
-//				},
-//
-//				/**
-//				 * condition function or selector
-//				 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
-//				 * Called before the page changes.
-//				 * The condition is considered as validated if the jQuery selector returns a non empty list,
-//				 * or if the JS function returns true
-//				 * $doc: JQuery object of the XML document response
-//				 * c8oData: key/value parameters of the request
-//				 */
-//				condition: "jQuery selector",
-//				condition: function ($doc, c8oData) {
-//					return true;
-//				},
-//
-//				/**
-//				 * fromPage parameter
-//				 * list of HTML element ID defining the page we come from
-//				 * before calling the C8O request
-//			 	* (useful in order to route to different pages according to the origin page).
-//				 * Use the .is(selector) from JQuery.
-//				 * Sample: #page1, #page2, #page3
-//				 */
-//				fromPage: "",
-//
-//				/**
-//				 * goToPage parameter
-//				 * an HTML page or an HTML element ID to display after the C8O call.
-//				 * If not present, it means a local rendering (i.e. in the same page).
-//				 */
-//				goToPage: "",
-//
-//				/**
-//				 * options parameter
-//				 * an optional transition information
-//				 * (matching the jQueryMobile transition object format)
-//				 * used to display the page given in the goToPage parameter.
-//				 */
-//				options: {}
+//					},
+//	
+//					/**
+//					 * beforeRendering function
+//					 * called before the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					beforeRendering: function ($doc, c8oData) {
+//						
+//					},
+//	
+//					/**
+//					 * condition function or selector
+//					 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
+//					 * Called before the page changes.
+//					 * The condition is considered as validated if the jQuery selector returns a non empty list,
+//					 * or if the JS function returns true
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					condition: "jQuery selector",
+//					condition: function ($doc, c8oData) {
+//						return true;
+//					},
+//	
+//					/**
+//					 * fromPage parameter
+//					 * list of HTML element ID defining the page we come from
+//					 * before calling the C8O request
+//				 	* (useful in order to route to different pages according to the origin page).
+//					 * Use the .is(selector) from JQuery.
+//					 * Sample: “#page1, #page2, #page3 ”
+//					 */
+//					fromPage: "",
+//	
+//					/**
+//					 * goToPage parameter
+//					 * an HTML page or an HTML element ID to display after the C8O call.
+//					 * If not present, it means a local rendering (i.e. in the same page).
+//					 */
+//					goToPage: "",
+//	
+//					/**
+//					 * options parameter
+//					 * an optional transition information
+//					 * (matching the jQueryMobile transition object format)
+//					 * used to display the page given in the goToPage parameter.
+//					 */
+//					options: {}
+//				}
+//			]
 //		},
-		/** full template condensed, must be comma separated */
-		{//Error management
-			calledRequest : "*",
-			actions : [
-			    {
-					condition : ">error",
-					goToPage : "#errorMessage",
-					options : {
-						transition : "none",
-						role: "dialog"
-					}
-			    }
-			]
-		},
-		{
-			calledRequest: ".tv1",
-			actions: [{
-				afterRendering: function ($doc, c8oData) {
-				},
-				beforeRendering: function ($doc, c8oData) {
-				},
-				condition: ">GCH>name_prog1",
-				"fromPage": "#home",
-				goToPage: "#primeTime",
-				options: {
-				},
+//		/** full template condensed, must be comma separated */
+//		{
+//			calledRequest: "<the called C8O requestables>",
+//			actions: [
+//				{
+//					afterRendering: function ($doc, c8oData) {
+//					},
+//					beforeRendering: function ($doc, c8oData) {
+//					},
+//					condition: "<jQuery selector or function>",
+//					fromPage: "<page ID>",
+//					goToPage: "<page ID>",
+//					options: {
+//					}
+//				}
+//			]
+//		}
+		{//Convertigo exception or applicative error management
+			calledRequest:".*",
+			actions : [{
+				condition: errorCondition,
+				goToPage: "#errorMessage",
+				options: {}
 			}]
 		},
 		{
-			calledRequest: ".tv2",
+			calledRequest: ".getProgTv",
 			actions: [{
-				afterRendering: function ($doc, c8oData) {
-				},
-				beforeRendering: function ($doc, c8oData) {
-				},
-				condition: ">GCH>name_prog2",
-				"fromPage": "#home",
+				condition: firstPartCondition,
+				goToPage: "#primeTime",
+				options: {}
+			}]
+		},
+		{
+			calledRequest: ".getProgTv",
+			actions: [{
+				condition: secondPartCondition,
 				goToPage: "#2ndTime",
-				options: {
-				},
+				options: {}
+			}]
+		},
+		{
+			calledRequest: ".getProgDetails",
+			actions: [{
+				condition: detailsCondition,
+				goToPage: "#progDetail",
+				options: {}
 			}]
 		}
 	]
@@ -188,6 +208,88 @@ $.extend(true, C8O, {
 /*******************************************************
  * Functions *
  *******************************************************/
+
+/**
+ * listen condition for standard error management
+ */
+function errorCondition ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('1')").length || $doc.find("error>exception").length) {
+		return true;
+	}
+	return false;
+}
+
+/**
+* Formatter fonction to display error message in HTML 
+* @param value : the value to display 
+*/
+function formatErrorMessage (value) {
+	$(this).html(value);
+}
+
+/**
+* listen condition for first part of night screen
+*/
+function firstPartCondition ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && $doc.find("GCH1").length)
+		return true;
+	return false;
+}
+
+/**
+* listen condition for second part of night screen
+*/
+function secondPartCondition ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && $doc.find("GCH2").length)
+		return true;
+	return false;
+}
+
+
+/**
+* listen condition for details response
+*/
+function detailsCondition ($doc, c8oData) {
+	if (detailsCondition_summary($doc, c8oData) || 
+		detailsCondition_serie_docu ($doc, c8oData) || 
+		detailsCondition_serie ($doc, c8oData) || 
+		detailsCondition_movie ($doc, c8oData))
+			return true;
+	return false;
+}
+/**
+* listen condition for details response
+*/
+function detailsCondition_summary ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && $doc.find("summary").length)
+		return true;
+	return false;
+}
+/**
+* listen condition for details response
+*/
+function detailsCondition_serie_docu ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && ($doc.find("serie_docu").length || $doc.find("summary_serie_docu").length))
+		return true;
+	return false;
+}
+/**
+* listen condition for details response
+*/
+function detailsCondition_serie ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && $doc.find("serie").length)
+		return true;
+	return false;
+}
+/**
+* listen condition for details response
+*/
+function detailsCondition_movie ($doc, c8oData) {
+	if ($doc.find("returnCode:contains('0')").length && ($doc.find("synopsis").length || $doc.find("movie_infos").length))
+		return true;
+	return false;
+}
+
 
 
 /**
@@ -416,59 +518,9 @@ $.extend(true, C8O, {
  *  return: true > lets C8O perform the init
  *             false > break the processing of request
  */
-C8O.addHook("document_ready", function () {
-	$(document).on("pagebeforechange", function(e, data){
-		if(typeof data.toPage === "string"){
-			var url = $.mobile.path.parseUrl( data.toPage ), pageSelector = url.hash.replace( /\?.*$/, "" );
-			//console.log('pageSelector', pageSelector);
-			switch(pageSelector){
-			case '#prog_page':
-				$("div[name='sum']").empty();
-				for(var i=0;i<$curProg.attributes.length;i++){
-					if($curProg.attributes[i].name.indexOf("data-")!=-1){
-						var type = $("#"+$curProg.attributes[i].name.substring(5))[0].tagName;
-						var tgt = "#"+$curProg.attributes[i].name.substring(5);
-						switch (type){
-							case "IMG":
-								$(tgt).attr("src",$curProg.attributes[i].value);
-								break;
-							case "BUTTON":
-								$(tgt).attr("data-c8o-variables",'{"href":"'+$curProg.attributes[i].value+'"}');
-								$(tgt).button().button('refresh');
-								break;
-							default:
-								$(tgt).html($curProg.attributes[i].value);
-								break;
-						}
-					}
-				}
-				break;
-			default:
-			}
-		}
-	});
-	
-	$(document).on("pagebeforeshow", function(e, data){
-		if($.mobile.activePage.attr('id') == "prog_page"){
-			$('#prog_page').attr("data-title", $("#prog_name").text());
-			$("#prog_title, title").text($("#prog_name").text());
-		}
-	});
-		
-	$('#primeTime div[data-role="content"], #2ndTime div[data-role="content"]').on("click", "a", function(){
-		//console.log('click listview', $(this));
-		if($("#prog_sum").length<1)
-			$("#button_sum").append('<button data-c8o-call=".mobtvConnector.getSummary" id="prog_sum">Résumé</button>');
-		//
-		$curProg = this;
-	});
-	
-	$('#prog_page div[data-role="content"]').on("click", '#button_sum', function(){
-		$("#button_sum").empty();
-	});
-
-	return true;
-});
+//C8O.addHook("document_ready", function () {
+//	return true;
+//});
 
 /**
  *  get_language hook
@@ -496,9 +548,27 @@ C8O.addHook("document_ready", function () {
  *  return: true > lets CTF handle the document
  *             false > break the processing of request
  */
-//C8O.addHook("init_finished", function (params) {
-//	return true;
-//});
+C8O.addHook("init_finished", function (params) {
+	// copy data from the list to the details page when clicking on one item
+	$(document).on("click", ".progItem", function(){
+		var $item = $(this).find(".savingData");
+		var name_prog = $item.attr("name_prog");
+		var img_chaine = $item.attr("img_chaine");
+		var img_prog = $item.attr("img_prog");
+		var hour_prog = $item.attr("hour_prog");
+		
+		$("#progDetail").attr("data-title", name_prog);
+		$("#prog_title").text(name_prog);
+		$("#prog_img_chn").attr("src", img_chaine);
+		$("#prog_img").attr("src", img_prog);
+		$("#prog_hour").text(hour_prog);
+		$("#prog_name").text(name_prog);
+		$("#prog_subject").text($item.attr("subject_prog"));
+		$("#prog_type").text($item.attr("type_prog"));
+	});
+	
+	return true;
+});
 
 /**
  *  log hook
