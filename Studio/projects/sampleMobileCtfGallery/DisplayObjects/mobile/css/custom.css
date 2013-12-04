@@ -72,3 +72,8 @@ iframe {
 	margin-bottom: 10px;
 	color: #006699;
 }
+#warn {
+	font-weight: bold;
+	margin: 4px 0;
+	color: red;
+}

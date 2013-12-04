@@ -25,7 +25,8 @@ C8O.addHook("document_ready", function () {
 		// Use C8O.translate to get the translation for the
 		// key 'languageChanged' (JavaScript are not translated
 		// during the C8O core lib standard process).
-		alert(C8O.translate("languageChanged"));
+		//alert(C8O.translate("languageChanged"));
+		$("#warn").text(C8O.translate("languageChanged"));
 	});
 	return true;
 });
