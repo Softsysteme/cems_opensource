@@ -4,33 +4,10 @@ img {
 	border:0;
 }
 
-
-/* *** prog detail *** */
-#imgChaine {
-	padding: 4px 0 8px 4px;
-}
-#imgChaine img, #imgProg img {
-	vertical-align: middle;
-}
-#hour_prog {
-	padding-top: 10px;
-}
-#imgProg {
-	padding: 0 0 8px 4px;
-}
-#resButton {
-	padding: 4px;
-}
-#resume {
-	/*width: 98%;*/ 
-	padding: 10px 1px 10px 10px;
+.ui-page {
+	background: transparent
 }
 
-/* *** about *** */
-#about table {
-	border:0;
-	border-collapse: 8px;
-}
-#about table tr td {
-	border:0;
+.ui-content .myMargin.ui-listview {
+	margin: 0 -15px;
 }

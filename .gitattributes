@@ -928,7 +928,6 @@ Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#tex
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/about.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajax-loader.gif -text
@@ -949,7 +948,6 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/jquery.mobile.struct
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/jquery.mobile.theme-1.1.0.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/jquery.mobile.theme-1.1.0.min.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/jquery_theme_m.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/mobtv.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/36x36.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/48x48.png -text

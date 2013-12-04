@@ -56,8 +56,8 @@
 		<link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/jquery.mobile.theme-1.1.0.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/jquery_theme_m.css" rel="stylesheet" type="text/css" />
-        <link href="css/custom.css" rel="stylesheet" />
-
+        <link href="css/custom.css" rel="stylesheet" type="text/css" />
+		
 		
 		<!-- Scripts inclusions -->
         <!--
@@ -124,7 +124,7 @@
 		<!-- Home screen -->
 	    <div data-role="page" id="home" data-theme="b" data-title="MobTV 4.0">
         	<!-- header -->
-        	<div data-role="header" data-theme="b">
+        	<div data-role="header" data-theme="b" data-position="fixed">
         		<h1>Accueil</h1>
 			</div>
 			<!-- End header -->
@@ -148,7 +148,7 @@
 		<!-- Prime Time screen -->
 		<div data-role="page" id="primeTime" data-theme="b" data-add-back-btn="true">
 			<!-- header -->
-			<div data-role="header" data-theme="b">
+			<div data-role="header" data-theme="b" data-position="fixed">
 				<h1>1ère partie</h1>
 			</div>
 			<!-- End header -->
@@ -158,11 +158,11 @@
 					<!-- current date -->
 					<li data-role="list-divider" data-theme="n">__=date__</li>
 				</ul>
-				<ul data-role="listview" data-theme="c" data-divider-theme="m">	
+				<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin">	
 			    	<!-- great channels - title of first part of night -->
 			    	<li data-role="list-divider">Grandes chaines</li>
 			 	</ul>
-			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" data-c8o-each="GCH1">
+			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="GCH1">
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="c">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
@@ -177,11 +177,11 @@
 						</a>
 			    	</li>
 		    	</ul>
-		    	<ul data-role="listview" data-theme="c" data-divider-theme="m">	
+		    	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin">	
 			    	<!-- TNT - title of first part of night -->
 		    		<li data-role="list-divider">TNT</li>
 		    	</ul>
-			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" data-c8o-each="TNT1">
+			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="TNT1">
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="c">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
@@ -208,7 +208,7 @@
 		<!-- Second Time screen -->
 		<div data-role="page" id="2ndTime" data-theme="b" data-add-back-btn="true">
 			<!-- header -->
-			<div data-role="header" data-theme="b">
+			<div data-role="header" data-theme="b" data-position="fixed">
 				<h1>2ème partie</h1>
 			</div>
 			<!-- End header -->
@@ -218,11 +218,11 @@
 					<!-- current date -->
 					<li data-role="list-divider" data-theme="n">__=date__</li>
 				</ul>
-				<ul data-role="listview" data-theme="c" data-divider-theme="m">	
+				<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin">	
 			    	<!-- great channels - title of first part of night -->
 			    	<li data-role="list-divider">Grandes chaines</li>
 			 	</ul>
-			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" data-c8o-each="GCH2">
+			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="GCH2">
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="c">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
@@ -237,11 +237,11 @@
 						</a>
 			    	</li>
 		    	</ul>
-		    	<ul data-role="listview" data-theme="c" data-divider-theme="m">	
+		    	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin">	
 			    	<!-- TNT - title of first part of night -->
 		    		<li data-role="list-divider">TNT</li>
 		    	</ul>
-			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" data-c8o-each="TNT2">
+			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="TNT2">
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="c">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails"  data-c8o-variables='{"href":"__=sum_prog__"}'>
@@ -269,7 +269,7 @@
 		<!-- Prog Detail screen -->
 		<div data-role="page" id="progDetail" data-theme="b" data-add-back-btn="true">
 			<!-- header -->
-			<div data-role="header" data-theme="b">
+			<div data-role="header" data-theme="b" data-position="fixed">
 				<h1 id="prog_title"></h1>
 			</div>
 			<!-- End header -->
@@ -336,7 +336,7 @@
 		<!-- About screen -->
 		<div data-role="page" data-theme="b" id="about" data-title="A propos..." data-add-back-btn="true">
 			<!-- header -->
-			<div data-role="header" data-theme="b">
+			<div data-role="header" data-theme="b" data-position="fixed">
 				<h1>A propos...</h1>
 			</div>
 			<!-- End header -->
