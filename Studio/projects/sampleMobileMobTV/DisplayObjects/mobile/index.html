@@ -164,7 +164,8 @@
 			 	</ul>
 			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="GCH1">
 			 		<!-- great channels - content of first part of night -->
-			    	<li data-theme="c">
+			    	<li data-theme="c" data-c8o-if="sum_prog">
+			    		<!-- Case with a link to click -->
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
@@ -176,6 +177,14 @@
 							hour_prog="__=hour_prog__" subject_prog="__=subject_prog__" type_prog="__=type_prog__"/>
 						</a>
 			    	</li>
+			    	<li data-theme="c" data-c8o-if-not="sum_prog">
+			    		<!-- Case without a link to click -->
+						 <!--  li content -->
+						<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
+						<h3>__=name_prog__</h3>
+						<p>__=hour_prog__</p>
+						<!-- End li content -->
+			    	</li>
 		    	</ul>
 		    	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin">	
 			    	<!-- TNT - title of first part of night -->
@@ -183,7 +192,7 @@
 		    	</ul>
 			 	<ul data-role="listview" data-theme="c" data-divider-theme="m" class="myMargin" data-c8o-each="TNT1">
 			 		<!-- TNT - content of first part of night -->
-			    	<li data-theme="c">
+			    	<li data-theme="c" data-c8o-if="sum_prog">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
@@ -194,6 +203,13 @@
 							<span style="display:none" class="savingData" img_chaine="__=img_chaine__" img_prog="__=img_prog__" name_prog="__=name_prog__" 
 							hour_prog="__=hour_prog__" subject_prog="__=subject_prog__" type_prog="__=type_prog__"/>
 						</a>
+			    	</li>
+			    	<li data-theme="c" data-c8o-if-not="sum_prog">
+						<!-- li content -->
+						<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
+						<h3>__=name_prog__</h3>
+						<p>__=hour_prog__</p>
+						<!-- End li content -->
 			    	</li>
 		    	</ul>		    	
 			</div>
