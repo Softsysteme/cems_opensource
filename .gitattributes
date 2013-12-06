@@ -3701,6 +3701,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleHSQLD
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleXLSWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleHelloWorldWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobileCtfGalleryWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerConvertigoWebMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerMobTvWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerSimpleAppWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerUsDirectoryWizard.java -text svneol=unset#text/plain
