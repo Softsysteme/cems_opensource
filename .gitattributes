@@ -3937,6 +3937,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ArrayEditorRow.java 
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ArrayEditorRowList.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ArrayOrNullEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/BrowserDefinitionEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/CacheEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/CacheEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/CariocaServiceCodeEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/CariocaServiceCodeEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ChoiceCharacterPolicyEditor.java -text
