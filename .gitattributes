@@ -3306,6 +3306,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_16x16.png
 Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/getContext_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/getContext_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.png -text
@@ -3354,6 +3356,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/serial_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/setAuthenticatedUser_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/setAuthenticatedUser_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/setContext_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/setContext_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_16x16.png -text
