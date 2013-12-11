@@ -957,6 +957,7 @@ Studio/projects/sampleMobileCtfGallery/table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/accordion.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/calling_convertigo.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/conditional_templating.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/data_accumulation.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/i18n.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/list_view.xml -text svneol=unset#text/plain
