@@ -2560,6 +2560,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStep.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/GetAuthenticatedUserStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/GetAuthenticatedUserStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/GetContextStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/GetContextStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IThenElseContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStepBeanInfo.java -text svneol=unset#text/plain
@@ -2617,6 +2619,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/SerialStep.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/beans/steps/SerialStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SetAuthenticatedUserStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SetAuthenticatedUserStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/SetContextStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/SetContextStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleIteratorStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleIteratorStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleSourceStep.java -text svneol=unset#text/plain
@@ -2802,6 +2806,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ExceptionStep.properties -tex
 Studio/src/com/twinsoft/convertigo/beans/steps/res/FunctionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/GenerateHashCodeStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/GetAuthenticatedUserStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/GetContextStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistStep.properties -text svneol=unset#text/plain
@@ -2830,6 +2835,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ReturnStep.properties -text s
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SequenceStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SerialStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SetAuthenticatedUserStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/SetContextStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleIteratorStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleSourceStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleStep.properties -text svneol=unset#text/plain
