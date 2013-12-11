@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<topic>
+	<name>conditional_templating</name>
+	<title>Conditional templating</title>
+	<sample>
+		<title>If and If not</title>
+		<description>
+			<p>This sample demonstrates the usage of "if" and "if not" with CTF.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getSimpleData">Test</button>
+			<div data-c8o-listen=".getSimpleData">
+				<div data-c8o-if="location>name">
+					<h2>__=name__</h2>
+					<div data-c8o-if="address>*">
+						<span>
+							<p>__=street__ (__=city__)</p>
+						</span>
+					</div>
+					<div data-c8o-if="email">
+						<p>Email: __=email__</p>
+					</div>
+					<div data-c8o-if-not="email">
+						<p>You don't have an email address</p>
+					</div>					
+				</div>
+			</div>
+		</source>
+	</sample>
+</topic>
