@@ -296,23 +296,19 @@ CemsXulrunner_linux_gtk_x86/xulrunner/xulrunner-stub -text
 CemsXulrunner_macosx_cocoa_x86/.project -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/build.properties -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/.autoreg -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/LICENSE -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/README.txt -text svneol=unset#text/plain
+CemsXulrunner_macosx_cocoa_x86/xulrunner/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/Resources/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/XUL -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/classic.jar -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/classic.manifest -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/comm.jar -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/comm.manifest -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/en-US.jar -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/en-US.manifest -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/icons/default/default16.png -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/icons/default/default32.png -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/icons/default/default48.png -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/pippki.manifest -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/toolkit.jar -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/chrome/toolkit.manifest -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/FeedProcessor.js -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/components/accessibility.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/alerts.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/appshell.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/appstartup.xpt -text
@@ -377,8 +373,7 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/components/layout_base.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/layout_printing.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/layout_xul.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/layout_xul_tree.xpt -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/components/libdbusservice.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/components/libimgicon.so -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/components/libalerts_s.dylib -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/locale.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/loginmgr.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/lwbrk.xpt -text
@@ -456,6 +451,7 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/components/webBrowser_core.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/webbrowserpersist.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/webshell_idls.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/widget.xpt -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/components/widget_cocoa.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/windowds.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/windowwatcher.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xml-rpc.xpt -text
@@ -473,6 +469,15 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xulapp_setup.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xuldoc.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xultmpl.xpt -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/zipwriter.xpt -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/MacOS/crashreporter -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/MacOS/crashreporter.ini -text svneol=unset#text/plain
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/PkgInfo -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Resources/English.lproj/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Resources/English.lproj/MainMenu.nib/classes.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Resources/English.lproj/MainMenu.nib/info.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Resources/English.lproj/MainMenu.nib/keyedobjects.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/crashreporter.app/Contents/Resources/crashreporter.icns -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/defaults/autoconfig/platform.js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/defaults/autoconfig/prefcalls.js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/defaults/pref/xulrunner.js -text svneol=unset#text/plain
@@ -485,31 +490,28 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/defaults/profile/localstore.rdf -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/dependentlibs.list -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/dictionaries/en-US.aff -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/dictionaries/en-US.dic -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/greprefs/all[!!-~](copie).js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/greprefs/all.js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/greprefs/security-prefs.js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/greprefs/xpinstall.js -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/icons/document.png -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/icons/mozicon16.xpm -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/icons/mozicon50.xpm -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/javaxpcom.jar -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libfreebl3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libjavaxpcomglue.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libjemalloc.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libmozjs.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libnspr4.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libnss3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssckbi.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssdbm3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssutil3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libplc4.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libplds4.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libsmime3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libsoftokn3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libsqlite3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libssl3.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libxpcom.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/libxul.so -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libfreebl3.chk -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libfreebl3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libjavaxpcomglue.jnilib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libmozjs.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libnspr4.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libnss3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssckbi.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssdbm3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libnssutil3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libplc4.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libplds4.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libsmime3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libsoftokn3.chk -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libsoftokn3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libsqlite3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libssl3.dylib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libwidget.rsrc -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/libxpcom.dylib -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/DownloadUtils.jsm -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/ISO8601DateUtils.jsm -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/JSON.jsm -text
@@ -518,19 +520,55 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/PluralForm.jsm -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/XPCOMUtils.jsm -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/debug.js -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/modules/utils.js -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/mozilla-xremote-client -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/nsinstall -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/platform.ini -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/libnullplugin.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/libunixprintplugin.so -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/regxpcom -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/Default[!!-~]Plugin.plugin/Contents/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/Default[!!-~]Plugin.plugin/Contents/MacOS/Default[!!-~]Plugin -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/Default[!!-~]Plugin.plugin/Contents/PkgInfo -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/Default[!!-~]Plugin.plugin/Contents/Resources/Default[!!-~]Plugin.rsrc -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/Default[!!-~]Plugin.plugin/Contents/Resources/English.lproj/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/MacOS/JavaEmbeddingPlugin -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/MacOS/JavaEmbeddingPlugin.policy -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/PkgInfo -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/Resources/English.lproj/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/JavaEmbeddingPlugin.bundle/Contents/Resources/Java/JavaEmbeddingPlugin.jar -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/MacOS/MRJPlugin -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/MacOS/MRJPlugin.jar -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/MacOS/MRJPlugin.policy -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/MacOS/MRJPlugin.properties -text svneol=unset#text/plain
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/PkgInfo -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/Resources/English.lproj/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/plugins/MRJPlugin.plugin/Contents/Resources/MRJPlugin.rsrc -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/EditorOverride.css -text svneol=unset#text/plain
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/MainMenu.nib/classes.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/MainMenu.nib/info.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/MainMenu.nib/keyedobjects.nib -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/arrow.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/arrowd.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/broken-image.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/charsetData.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/charsetalias.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/contenteditable.css -text svneol=unset#text/plain
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/arrowN.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/arrowS.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/colResize.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/help.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/rowResize.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeNE.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeNESW.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeNS.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeNW.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeNWSE.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeSE.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/sizeSW.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/spin1.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/spin2.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/spin3.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/spin4.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/vtIBeam.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/zoomIn.tiff -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/cursors/zoomOut.tiff -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/designmode.css -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/dtd/mathml.dtd -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/dtd/xhtml11.dtd -text svneol=unset#text/plain
@@ -553,6 +591,7 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/res/html/folder.png -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/langGroups.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/language.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/loading-image.gif -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/res/maccharset.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/mathml.css -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/quirk.css -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/svg.css -text svneol=unset#text/plain
@@ -575,18 +614,18 @@ CemsXulrunner_macosx_cocoa_x86/xulrunner/res/table-remove-row-active.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/table-remove-row-hover.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/table-remove-row.gif -text
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/ua.css -text svneol=unset#text/plain
-CemsXulrunner_macosx_cocoa_x86/xulrunner/res/unixcharset.properties -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/res/viewsource.css -text svneol=unset#text/plain
 CemsXulrunner_macosx_cocoa_x86/xulrunner/run-mozilla.sh -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/ssltunnel -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/updater -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xpcshell -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xpidl -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xpt_dump -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xpt_link -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xulrunner -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Info.plist -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/MacOS/updater -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/PkgInfo -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Resources/English.lproj/InfoPlist.strings -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Resources/English.lproj/MainMenu.nib/classes.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Resources/English.lproj/MainMenu.nib/info.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Resources/English.lproj/MainMenu.nib/keyedobjects.nib -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/updater.app/Contents/Resources/updater.icns -text
+CemsXulrunner_macosx_cocoa_x86/xulrunner/xulrunner -text svneol=unset#unset
 CemsXulrunner_macosx_cocoa_x86/xulrunner/xulrunner-bin -text
-CemsXulrunner_macosx_cocoa_x86/xulrunner/xulrunner-stub -text
 CemsXulrunner_win32_win32_x86/.project -text svneol=unset#text/plain
 CemsXulrunner_win32_win32_x86/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 CemsXulrunner_win32_win32_x86/build.properties -text svneol=unset#text/plain

@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: CemsXulrunner_linux_gtk_x86
-Bundle-SymbolicName: com.twinsoft.convertigo.studio.xulrunner.linux_gtk_x86;singleton:=true
+Bundle-Name: CemsXulrunner_macosx_cocoa_x86
+Bundle-SymbolicName: com.twinsoft.convertigo.studio.xulrunner.macosx_cocoa_x86;singleton:=true
 Bundle-Version: 0.0.0.build
 Fragment-Host: com.twinsoft.convertigo.studio
-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=x86))
+Eclipse-PlatformFilter: (& (osgi.ws=cocoa) (osgi.os=macosx) (osgi.arch=x86))
 Bundle-Vendor: Convertigo

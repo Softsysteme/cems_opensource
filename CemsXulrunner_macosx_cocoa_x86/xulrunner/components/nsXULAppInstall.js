@@ -1,5 +1,5 @@
 /* -*- Mode: C++; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
-//@line 41 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
+//@line 41 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
 
 const nsIFile             = Components.interfaces.nsIFile;
 const nsIINIParser        = Components.interfaces.nsIINIParser;
@@ -193,13 +193,11 @@ const AppInstall = {
     catch (e) { }
 
     if (aDirectory == null) {
-//@line 244 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
-      aDirectory = Components.classes["@mozilla.org/file/local;1"].
-        createInstance(nsILocalFile);
-      aDirectory.initWithPath("/usr/lib");
+//@line 240 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
+      aDirectory = getDirectoryKey("LocApp");
       if (vendor)
-        aDirectory.append(vendor.toLowerCase());
-//@line 251 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
+        aDirectory.append(vendor);
+//@line 251 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
     }
     else {
       aDirectory = aDirectory.clone();
@@ -210,9 +208,9 @@ const AppInstall = {
     }
 
     if (aLeafName == "") {
-//@line 267 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
-      aLeafName = appName.toLowerCase();
-//@line 270 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
+//@line 262 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
+      aLeafName = appName + ".app";
+//@line 270 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
     }
 
     aDirectory.append(aLeafName);
@@ -220,14 +218,70 @@ const AppInstall = {
       aDirectory.create(nsIFile.DIRECTORY_TYPE, 0755);
     }
 
-//@line 341 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
-    extractor.copyTo(aDirectory);
+//@line 278 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
+    aDirectory.append("Contents");
+    if (!aDirectory.exists()) {
+      aDirectory.create(nsIFile.DIRECTORY_TYPE, 0755);
+    }
+ 
+    var version = iniParser.getString("App", "Version");
+    var buildID = iniParser.getString("App", "BuildID");
+
+    var infoString = "";
+    if (vendor) {
+      infoString = vendor + " ";
+    }
+    infoString += appName + " " + version;
+
+    var plistFile = aDirectory.clone();
+    plistFile.append("Info.plist");
+    var ostream = openFileOutputStream(plistFile);
+
+    var contents =
+    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+    "<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n" +
+    "<plist version=\"1.0\">\n" +
+    "<dict>\n" +
+    "<key>CFBundleInfoDictionaryVersion</key>\n" +
+    "<string>6.0</string>\n" +
+    "<key>CFBundlePackageType</key>\n" +
+    "<string>APPL</string>\n" +
+    "<key>CFBundleExecutable</key>\n" +
+    "<string>xulrunner</string>\n" +
+    "<key>NSAppleScriptEnabled</key>\n" +
+    "<true/>\n" +
+    "<key>CFBundleGetInfoString</key>\n" +
+    "<string>" + infoString + "</string>\n" +
+    "<key>CFBundleName</key>\n" +
+    "<string>" + appName + "</string>\n" +
+    "<key>CFBundleShortVersionString</key>\n" +
+    "<string>" + version + "</string>\n" +
+    "<key>CFBundleVersion</key>\n" +
+    "<string>" + version + "." + buildID + "</string>\n" +
+    "</dict>\n" +
+    "</plist>";
+
+    // "<key>CFBundleIdentifier</key>\n" +
+    // "<string>org.%s.%s</string>\n" +
+    // "<key>CFBundleSignature</key>\n" +
+    // "<string>MOZB</string>\n" +
+    // "<key>CFBundleIconFile</key>\n" +
+    // "<string>document.icns</string>\n" +
+
+    ostream.write(contents, contents.length);
+    ostream.close();
+
+    var contentsDir = aDirectory.clone();
+    contentsDir.append("MacOS");
 
     var xulrunnerBinary = getDirectoryKey("XCurProcD");
-    xulrunnerBinary.append("xulrunner-stub");
+    xulrunnerBinary.append("xulrunner");
 
-    xulrunnerBinary.copyTo(aDirectory, appName.toLowerCase() + "");
-//@line 348 "/home/nicolasa/Développement/Source/mozilla/xulrunner/setup/nsXULAppInstall.js"
+    xulrunnerBinary.copyTo(contentsDir, "xulrunner");
+
+    aDirectory.append("Resources");
+    extractor.copyTo(aDirectory);
+//@line 348 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/xulrunner/setup/nsXULAppInstall.js"
   }
 };
 

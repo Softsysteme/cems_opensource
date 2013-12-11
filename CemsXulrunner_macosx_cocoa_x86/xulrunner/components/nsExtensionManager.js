@@ -1,6 +1,6 @@
 /* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /*
-//@line 44 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 44 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
 */
 
 //
@@ -147,7 +147,7 @@ var gManifestNeedsFlush   = false;
 var gIDTest = /^(\{[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\}|[a-z0-9-\._]*\@[a-z0-9-\._]+)$/i;
 
 // shared code for suppressing bad cert dialogs
-//@line 40 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/shared/src/badCertHandler.js"
+//@line 40 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/shared/src/badCertHandler.js"
 
 /**
  * Only allow built-in certs for HTTPS connections.  See bug 340198.
@@ -213,7 +213,7 @@ BadCertHandler.prototype = {
     return this;
   }
 };
-//@line 191 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 191 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
 
 /**
  * Creates a Version Checker object.
@@ -1376,7 +1376,7 @@ DirectoryInstallLocation.prototype = {
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIInstallLocation])
 };
 
-//@line 1499 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 1499 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
 
 /**
  * An object which handles the installation of an Extension.
@@ -2365,7 +2365,7 @@ function ExtensionManager() {
     InstallLocations.put(systemLocation);
   }
 
-//@line 2502 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 2502 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
 
   // Register Additional Install Locations
   var categoryManager = Cc["@mozilla.org/categorymanager;1"].
@@ -2729,7 +2729,7 @@ ExtensionManager.prototype = {
   _installGlobalItem: function(file) {
     if (!file || !file.exists())
       throw new Error("Unable to find the file specified on the command line!");
-//@line 2871 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 2871 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
     var installManifestFile = extractRDFFileToTempDir(file, FILE_INSTALL_MANIFEST, true);
     if (!installManifestFile.exists())
       throw new Error("The package is missing an install manifest!");
@@ -5487,13 +5487,13 @@ ExtensionManager.prototype = {
       // count to 0 to prevent this dialog from being displayed again.
       this._downloadCount = 0;
       var result;
-//@line 5629 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 5635 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
       result = this._confirmCancelDownloads(this._downloadCount,
                                             "quitCancelDownloadsAlertTitle",
-                                            "quitCancelDownloadsAlertMsgMultiple",
-                                            "quitCancelDownloadsAlertMsg",
-                                            "dontQuitButtonWin");
-//@line 5641 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+                                            "quitCancelDownloadsAlertMsgMacMultiple",
+                                            "quitCancelDownloadsAlertMsgMac",
+                                            "dontQuitButtonMac");
+//@line 5641 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
       if (subject instanceof Ci.nsISupportsPRBool)
         subject.data = result;
     }
@@ -6007,7 +6007,7 @@ ExtensionItemUpdater.prototype = {
   _listener           : null,
 
   /* ExtensionItemUpdater
-//@line 6180 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 6180 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
   */
   checkForUpdates: function(aItems, aItemCount, aUpdateCheckType,
                             aListener) {
@@ -6365,7 +6365,7 @@ RDFItemUpdater.prototype = {
 
   onDatasourceLoaded: function(aDatasource, aLocalItem) {
     /*
-//@line 6578 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
+//@line 6578 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in"
     */
     if (!aDatasource.GetAllResources().hasMoreElements()) {
       LOG("RDFItemUpdater:onDatasourceLoaded: Datasource empty.\r\n" +

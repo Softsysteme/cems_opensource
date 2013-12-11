@@ -1,3 +1,7 @@
+CemsXulrunner_linux_gtk_x86/xulrunner/components/compreg.dat
+CemsXulrunner_linux_gtk_x86/xulrunner/components/xpti.dat
+CemsXulrunner_macosx_cocoa_x86/xulrunner/components/compreg.dat
+CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xpti.dat
 CemsXulrunner_win32_win32_x86/xulrunner/components/compreg.dat
 CemsXulrunner_win32_win32_x86/xulrunner/components/xpti.dat
 Server/src/com/convertigo

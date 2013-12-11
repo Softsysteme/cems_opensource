@@ -1,4 +1,4 @@
-//@line 37 "/home/nicolasa/Développement/Source/mozilla/toolkit/components/urlformatter/src/nsURLFormatter.js"
+//@line 37 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/components/urlformatter/src/nsURLFormatter.js"
 /**
  * @class nsURLFormatterService
  *

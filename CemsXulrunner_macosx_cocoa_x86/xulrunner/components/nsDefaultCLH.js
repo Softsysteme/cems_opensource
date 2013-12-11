@@ -1,4 +1,4 @@
-//@line 38 "/home/nicolasa/Développement/Source/mozilla/toolkit/components/nsDefaultCLH.js"
+//@line 38 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/components/nsDefaultCLH.js"
 
 const nsISupports              = Components.interfaces.nsISupports;
 

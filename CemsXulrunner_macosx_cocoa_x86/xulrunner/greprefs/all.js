@@ -134,20 +134,10 @@ pref("gfx.color_management.display_profile", "");
 pref("accessibility.browsewithcaret", false);
 pref("accessibility.warn_on_browsewithcaret", true);
 
-//@line 138 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-// Tab focus model bit field:
-// 1 focuses text controls, 2 focuses other form elements, 4 adds links.
-// Most users will want 1, 3, or 7.
-// On OS X, we use Full Keyboard Access system preference,
-// unless accessibility.tabfocus is set by the user.
-pref("accessibility.tabfocus", 7);
-pref("accessibility.tabfocus_applies_to_xul", false);
-
-// On OS X, we follow the "Click in the scrollbar to:" system preference
-// unless this preference was set manually
-pref("ui.scrollToClick", 0);
-
-//@line 154 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+//@line 151 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+// Only on mac tabfocus is expected to handle UI widgets as well as web content
+pref("accessibility.tabfocus_applies_to_xul", true);
+//@line 154 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 
 pref("accessibility.usetexttospeech", "");
 pref("accessibility.usebrailledisplay", "");
@@ -207,7 +197,6 @@ pref("slider.snapMultiplier", 0);
 
 // option to choose plug-in finder
 pref("application.use_ns_plugin_finder", false);
-pref("plugin.disable", true);
 
 // URI fixup prefs
 pref("browser.fixup.alternate.enabled", true);
@@ -528,7 +517,9 @@ pref("network.protocol-handler.external.data", false);
 pref("network.protocol-handler.external.ms-help", false);
 pref("network.protocol-handler.external.shell", false);
 pref("network.protocol-handler.external.vnd.ms.radio", false);
-//@line 536 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+//@line 534 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+pref("network.protocol-handler.external.help", false);
+//@line 536 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 pref("network.protocol-handler.external.disk", false);
 pref("network.protocol-handler.external.disks", false);
 pref("network.protocol-handler.external.afp", false);
@@ -758,7 +749,7 @@ pref("network.negotiate-auth.gsslib", "");
 // Specify if the gss lib comes standard with the OS
 pref("network.negotiate-auth.using-native-gsslib", true);
 
-//@line 771 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+//@line 771 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 
 // The following prefs are used to enable automatic use of the operating
 // system's NTLM implementation to silently authenticate the user with their
@@ -782,9 +773,9 @@ pref("network.hosts.nntp_server",           "news.mozilla.org");
 
 pref("permissions.default.image",           1); // 1-Accept, 2-Deny, 3-dontAcceptForeign
 
-//@line 796 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-pref("network.proxy.type",                  5);
-//@line 803 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+//@line 801 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+pref("network.proxy.type",                  0);
+//@line 803 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 
 pref("network.proxy.ftp",                   "");
 pref("network.proxy.ftp_port",              0);
@@ -1118,154 +1109,276 @@ pref("font.minimum-size.x-western", 0);
 pref("font.minimum-size.x-unicode", 0);
 pref("font.minimum-size.x-user-def", 0);
 
-//@line 1520 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+//@line 1520 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 
-//@line 1937 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-
-//@line 2134 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-
-//@line 2225 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-
-//@line 2228 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
-// Handled differently under Mac/Windows
-pref("network.hosts.smtp_server", "localhost");
-pref("network.hosts.pop_server", "pop");
-pref("network.protocol-handler.warn-external.file", false);
-pref("layout.css.dpi", -1); // max(96dpi, System setting)
+//@line 1522 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+// Mac specific preference defaults
 pref("browser.drag_out_of_frame_style", 1);
-pref("editor.singleLine.pasteNewlines", 0);
+pref("ui.key.saveLink.shift", false); // true = shift, false = meta
+pref("ui.click_hold_context_menus", false);
 
-// Middle-mouse handling
-pref("middlemouse.paste", true);
-pref("middlemouse.contentLoadURL", true);
-pref("middlemouse.openNewWindow", true);
-pref("middlemouse.scrollbarPosition", true);
+// default fonts (in UTF8 and using canonical names)
+// to determine canonical font names, use a debug build and 
+// enable NSPR logging for module fontInfoLog:5
+// canonical names immediately follow '(fontinit) family:' in the log
 
-// Clipboard behavior
-pref("clipboard.autocopy", true);
+pref("font.name.serif.ar", "Al Bayan");
+pref("font.name.sans-serif.ar", "Geeza Pro");
+pref("font.name.monospace.ar", "Geeza Pro");
+pref("font.name.cursive.ar", "DecoType Naskh");
+pref("font.name.fantasy.ar", "KufiStandardGK");
+pref("font.name-list.serif.ar", "Al Bayan");
+pref("font.name-list.sans-serif.ar", "Geeza Pro");
+pref("font.name-list.monospace.ar", "Geeza Pro");
+pref("font.name-list.cursive.ar", "DecoType Naskh");
+pref("font.name-list.fantasy.ar", "KufiStandardGK");
 
-pref("browser.urlbar.clickSelectsAll", false);
+pref("font.name.serif.el", "Lucida Grande");
+pref("font.name.sans-serif.el", "Lucida Grande");
+pref("font.name.monospace.el", "Lucida Grande");
+pref("font.name.cursive.el", "Lucida Grande");
+pref("font.name.fantasy.el", "Lucida Grande");
+pref("font.name-list.serif.el", "Lucida Grande");
+pref("font.name-list.sans-serif.el", "Lucida Grande");
+pref("font.name-list.monospace.el", "Lucida Grande");
+pref("font.name-list.cursive.el", "Lucida Grande");
+pref("font.name-list.fantasy.el", "Lucida Grande");
 
-// Tab focus model bit field:
-// 1 focuses text controls, 2 focuses other form elements, 4 adds links.
-// Leave this at the default, 7, to match mozilla1.0-era user expectations.
-// pref("accessibility.tabfocus", 1);
+pref("font.name.serif.he", "Raanana");
+pref("font.name.sans-serif.he", "Arial Hebrew");
+pref("font.name.monospace.he", "Arial Hebrew");
+pref("font.name.cursive.he", "Corsiva Hebrew");
+pref("font.name.fantasy.he", "Corsiva Hebrew");
+pref("font.name-list.serif.he", "Raanana");
+pref("font.name-list.sans-serif.he", "Arial Hebrew");
+pref("font.name-list.monospace.he", "Arial Hebrew");
+pref("font.name-list.cursive.he", "Corsiva Hebrew");
+pref("font.name-list.fantasy.he", "Corsiva Hebrew");
 
-// autocomplete keyboard grab workaround
-pref("autocomplete.grab_during_popup", true);
-pref("autocomplete.ungrab_during_mode_switch", true);
+pref("font.name.serif.ja", "Hiragino Mincho Pro"); 
+pref("font.name.sans-serif.ja", "Hiragino Kaku Gothic Pro"); 
+pref("font.name.monospace.ja", "Osaka-Mono"); 
+pref("font.name-list.serif.ja", "Hiragino Mincho Pro"); 
+pref("font.name-list.sans-serif.ja", "Hiragino Kaku Gothic Pro"); 
+pref("font.name-list.monospace.ja", "Osaka-Mono"); 
 
-// Default to using the system filepicker if possible, but allow
-// toggling to use the XUL filepicker
-pref("ui.allow_platform_file_picker", true);
+pref("font.name.serif.ko", "AppleMyungjo"); 
+pref("font.name.sans-serif.ko", "AppleGothic"); 
+pref("font.name.monospace.ko", "AppleGothic"); 
+pref("font.name-list.serif.ko", "AppleMyungjo"); 
+pref("font.name-list.sans-serif.ko", "AppleGothic"); 
+pref("font.name-list.monospace.ko", "AppleGothic"); 
 
-// should NetworkManager be authoritative for online/offline status?
-pref("toolkit.networkmanager.disable", false);
+pref("font.name.serif.th", "Thonburi");
+pref("font.name.sans-serif.th", "Thonburi");
+pref("font.name.monospace.th", "Ayuthaya");
+pref("font.name-list.serif.th", "Thonburi");
+pref("font.name-list.sans-serif.th", "Thonburi");
+pref("font.name-list.monospace.th", "Ayuthaya");
 
-pref("helpers.global_mime_types_file", "/etc/mime.types");
-pref("helpers.global_mailcap_file", "/etc/mailcap");
-pref("helpers.private_mime_types_file", "~/.mime.types");
-pref("helpers.private_mailcap_file", "~/.mailcap");
-pref("java.global_java_version_file", "/etc/.java/versions");
-pref("java.private_java_version_file", "~/.java/versions");
-pref("java.default_java_location_solaris", "/usr/j2se");
-pref("java.default_java_location_others", "/usr/java");
-pref("java.java_plugin_library_name", "javaplugin_oji");
-pref("applications.telnet", "xterm -e telnet %h %p");
-pref("applications.tn3270", "xterm -e tn3270 %h");
-pref("applications.rlogin", "xterm -e rlogin %h");
-pref("applications.rlogin_with_user", "xterm -e rlogin %h -l %u");
-pref("print.print_command", "lpr ${MOZ_PRINTER_NAME:+-P\"$MOZ_PRINTER_NAME\"}");
-pref("print.printer_list", ""); // list of printers, separated by spaces
-pref("print.print_reversed", false);
-pref("print.print_color", true);
-pref("print.print_landscape", false);
-pref("print.print_paper_size", 0);
+pref("font.name.serif.tr", "Times");
+pref("font.name.sans-serif.tr", "Helvetica");
+pref("font.name.monospace.tr", "Courier");
+pref("font.name.cursive.tr", "Apple Chancery");
+pref("font.name.fantasy.tr", "Papyrus");
+pref("font.name-list.serif.tr", "Times");
+pref("font.name-list.sans-serif.tr", "Helvetica");
+pref("font.name-list.monospace.tr", "Courier");
+pref("font.name-list.cursive.tr", "Apple Chancery");
+pref("font.name-list.fantasy.tr", "Papyrus");
 
-// print_extra_margin enables platforms to specify an extra gap or margin
-// around the content of the page for Print Preview only
-pref("print.print_extra_margin", 0); // twips
+pref("font.name.serif.x-armn", "Mshtakan");
+pref("font.name.sans-serif.x-armn", "Mshtakan");
+pref("font.name.monospace.x-armn", "Mshtakan");
+pref("font.name-list.serif.x-armn", "Mshtakan");
+pref("font.name-list.sans-serif.x-armn", "Mshtakan");
+pref("font.name-list.monospace.x-armn", "Mshtakan");
+ 
+pref("font.name.serif.x-baltic", "Times");
+pref("font.name.sans-serif.x-baltic", "Helvetica");
+pref("font.name.monospace.x-baltic", "Courier");
+pref("font.name.cursive.x-baltic", "Apple Chancery");
+pref("font.name.fantasy.x-baltic", "Papyrus");
+pref("font.name-list.serif.x-baltic", "Times");
+pref("font.name-list.sans-serif.x-baltic", "Helvetica");
+pref("font.name-list.monospace.x-baltic", "Courier");
+pref("font.name-list.cursive.x-baltic", "Apple Chancery");
+pref("font.name-list.fantasy.x-baltic", "Papyrus");
 
-pref("print.whileInPrintPreview", false);
+// no suitable fonts for bengali ship with mac os x
+// however two can be freely downloaded
+// SolaimanLipi, Rupali http://ekushey.org/?page/mac_download
+pref("font.name.serif.x-beng", "সোলাইমান লিপি");
+pref("font.name.sans-serif.x-beng", "রূপালী");
+pref("font.name.monospace.x-beng", "রূপালী");
+pref("font.name-list.serif.x-beng", "সোলাইমান লিপি");
+pref("font.name-list.sans-serif.x-beng", "রূপালী");
+pref("font.name-list.monospace.x-beng", "রূপালী");
 
-pref("font.allow_double_byte_special_chars", true);
-// font names
+pref("font.name.serif.x-cans", "Euphemia UCAS");
+pref("font.name.sans-serif.x-cans", "Euphemia UCAS");
+pref("font.name.monospace.x-cans", "Euphemia UCAS");
+pref("font.name-list.serif.x-cans", "Euphemia UCAS");
+pref("font.name-list.sans-serif.x-cans", "Euphemia UCAS");
+pref("font.name-list.monospace.x-cans", "Euphemia UCAS");
 
-pref("font.alias-list", "sans,sans-serif,serif,monospace");
+pref("font.name.serif.x-central-euro", "Times");
+pref("font.name.sans-serif.x-central-euro", "Helvetica");
+pref("font.name.monospace.x-central-euro", "Courier");
+pref("font.name.cursive.x-central-euro", "Apple Chancery");
+pref("font.name.fantasy.x-central-euro", "Papyrus");
+pref("font.name-list.serif.x-central-euro", "Times");
+pref("font.name-list.sans-serif.x-central-euro", "Helvetica");
+pref("font.name-list.monospace.x-central-euro", "Courier");
+pref("font.name-list.cursive.x-central-euro", "Apple Chancery");
+pref("font.name-list.fantasy.x-central-euro", "Papyrus");
 
-// ar
+pref("font.name.serif.x-cyrillic", "Times CY");
+pref("font.name.sans-serif.x-cyrillic", "Helvetica CY");
+pref("font.name.monospace.x-cyrillic", "Monaco CY");
+pref("font.name.cursive.x-cyrillic", "Geneva CY");
+pref("font.name.fantasy.x-cyrillic", "Charcoal CY");
+pref("font.name-list.serif.x-cyrillic", "Times CY");
+pref("font.name-list.sans-serif.x-cyrillic", "Helvetica CY");
+pref("font.name-list.monospace.x-cyrillic", "Monaco CY");
+pref("font.name-list.cursive.x-cyrillic", "Geneva CY");
+pref("font.name-list.fantasy.x-cyrillic", "Charcoal CY");
 
-pref("font.name.serif.el", "serif");
-pref("font.name.sans-serif.el", "sans-serif");
-pref("font.name.monospace.el", "monospace");
+pref("font.name.serif.x-devanagari", "Devanagari MT");
+pref("font.name.sans-serif.x-devanagari", "Devanagari MT");
+pref("font.name.monospace.x-devanagari", "Devanagari MT");
+pref("font.name-list.serif.x-devanagari", "Devanagari MT");
+pref("font.name-list.sans-serif.x-devanagari", "Devanagari MT");
+pref("font.name-list.monospace.x-devanagari", "Devanagari MT");
 
-pref("font.name.serif.he", "serif");
-pref("font.name.sans-serif.he", "sans-serif");
-pref("font.name.monospace.he", "monospace");
+// no suitable fonts for ethiopic ship with mac os x
+// however one can be freely downloaded
+// Abyssinica SIL http://scripts.sil.org/AbyssinicaSIL_Download
+pref("font.name.serif.x-ethi", "Abyssinica SIL");
+pref("font.name.sans-serif.x-ethi", "Abyssinica SIL");
+pref("font.name.monospace.x-ethi", "Abyssinica SIL");
+pref("font.name-list.serif.x-ethi", "Abyssinica SIL");
+pref("font.name-list.sans-serif.x-ethi", "Abyssinica SIL");
+pref("font.name-list.monospace.x-ethi", "Abyssinica SIL");
 
-pref("font.name.serif.ja", "serif");
-pref("font.name.sans-serif.ja", "sans-serif");
-pref("font.name.monospace.ja", "monospace");
+// no suitable fonts for georgian ship with mac os x
+// however some can be freely downloaded
+// TITUS Cyberbit Basic http://titus.fkidg1.uni-frankfurt.de/unicode/tituut.asp
+// Zuzumbo http://homepage.mac.com/rsiradze/FileSharing91.html
+pref("font.name.serif.x-geor", "TITUS Cyberbit Basic");
+pref("font.name.sans-serif.x-geor", "Zuzumbo");
+pref("font.name.monospace.x-geor", "Zuzumbo");
+pref("font.name-list.serif.x-geor", "TITUS Cyberbit Basic"); 
+pref("font.name-list.sans-serif.x-geor", "Zuzumbo");
+pref("font.name-list.monospace.x-geor", "Zuzumbo");
 
-pref("font.name.serif.ko", "serif");
-pref("font.name.sans-serif.ko", "sans-serif");
-pref("font.name.monospace.ko", "monospace");
+pref("font.name.serif.x-gujr", "Gujarati MT");
+pref("font.name.sans-serif.x-gujr", "Gujarati MT");
+pref("font.name.monospace.x-gujr", "Gujarati MT");
+pref("font.name-list.serif.x-gujr", "Gujarati MT"); 
+pref("font.name-list.sans-serif.x-gujr", "Gujarati MT");
+pref("font.name-list.monospace.x-gujr", "Gujarati MT");
 
-pref("font.name.serif.th", "serif");
-pref("font.name.sans-serif.th", "sans-serif");
-pref("font.name.monospace.th", "monospace");
+pref("font.name.serif.x-guru", "Gurmukhi MT");
+pref("font.name.sans-serif.x-guru", "Gurmukhi MT");
+pref("font.name.monospace.x-guru", "Gurmukhi MT");
+pref("font.name-list.serif.x-guru", "Gurmukhi MT"); 
+pref("font.name-list.sans-serif.x-guru", "Gurmukhi MT");
+pref("font.name-list.monospace.x-guru", "Gurmukhi MT");
 
-pref("font.name.serif.tr", "serif");
-pref("font.name.sans-serif.tr", "sans-serif");
-pref("font.name.monospace.tr", "monospace");
+// no suitable fonts for khmer ship with mac os x
+// add this section when fonts exist
 
-pref("font.name.serif.x-baltic", "serif");
-pref("font.name.sans-serif.x-baltic", "sans-serif");
-pref("font.name.monospace.x-baltic", "monospace");
+// no suitable fonts for malayalam ship with mac os x
+// add this section when fonts exist
 
-pref("font.name.serif.x-central-euro", "serif");
-pref("font.name.sans-serif.x-central-euro", "sans-serif");
-pref("font.name.monospace.x-central-euro", "monospace");
+// no suitable fonts for oriya ship with mac os x
+// add this section when fonts exist
 
-pref("font.name.serif.x-cyrillic", "serif");
-pref("font.name.sans-serif.x-cyrillic", "sans-serif");
-pref("font.name.monospace.x-cyrillic", "monospace");
+// no suitable fonts for telugu ship with mac os x
+// however one can be freely downloaded
+// Pothana http://web.nickshanks.com/typography/telugu/
+pref("font.name.serif.x-telu", "Pothana");
+pref("font.name.sans-serif.x-telu", "Pothana");
+pref("font.name.monospace.x-telu", "Pothana");
+pref("font.name-list.serif.x-telu", "Pothana");
+pref("font.name-list.sans-serif.x-telu", "Pothana");
+pref("font.name-list.monospace.x-telu", "Pothana");
 
-pref("font.name.serif.x-unicode", "serif");
-pref("font.name.sans-serif.x-unicode", "sans-serif");
-pref("font.name.monospace.x-unicode", "monospace");
+// no suitable fonts for kannada ship with mac os x
+// however one can be freely downloaded
+// Kedage http://web.nickshanks.com/typography/kannada/
+pref("font.name.serif.x-knda", "Kedage");
+pref("font.name.sans-serif.x-knda", "Kedage");
+pref("font.name.monospace.x-knda", "Kedage");
+pref("font.name-list.serif.x-knda", "Kedage");
+pref("font.name-list.sans-serif.x-knda", "Kedage");
+pref("font.name-list.monospace.x-knda", "Kedage");
 
-pref("font.name.serif.x-user-def", "serif");
-pref("font.name.sans-serif.x-user-def", "sans-serif");
-pref("font.name.monospace.x-user-def", "monospace");
+// no suitable fonts for sinhala ship with mac os x
+// add this section when fonts exist
 
-pref("font.name.serif.x-western", "serif");
-pref("font.name.sans-serif.x-western", "sans-serif");
-pref("font.name.monospace.x-western", "monospace");
+pref("font.name.serif.x-tamil", "InaiMathi");
+pref("font.name.sans-serif.x-tamil", "InaiMathi");
+pref("font.name.monospace.x-tamil", "InaiMathi");
+pref("font.name-list.serif.x-tamil", "InaiMathi");
+pref("font.name-list.sans-serif.x-tamil", "InaiMathi");
+pref("font.name-list.monospace.x-tamil", "InaiMathi");
 
-pref("font.name.serif.zh-CN", "serif");
-pref("font.name.sans-serif.zh-CN", "sans-serif");
-pref("font.name.monospace.zh-CN", "monospace");
+pref("font.name.serif.x-unicode", "Times");
+pref("font.name.sans-serif.x-unicode", "Helvetica");
+pref("font.name.monospace.x-unicode", "Courier");
+pref("font.name.cursive.x-unicode", "Apple Chancery");
+pref("font.name.fantasy.x-unicode", "Papyrus");
+pref("font.name-list.serif.x-unicode", "Times");
+pref("font.name-list.sans-serif.x-unicode", "Helvetica");
+pref("font.name-list.monospace.x-unicode", "Courier");
+pref("font.name-list.cursive.x-unicode", "Apple Chancery");
+pref("font.name-list.fantasy.x-unicode", "Papyrus");
 
-// ming_uni.ttf (HKSCS-2001) 
-// http://www.info.gov.hk/digital21/eng/hkscs/download/uime.exe
-pref("font.name.serif.zh-HK", "serif");
-pref("font.name.sans-serif.zh-HK", "sans-serif");
-pref("font.name.monospace.zh-HK", "monospace");
+pref("font.name.serif.x-western", "Times");
+pref("font.name.sans-serif.x-western", "Helvetica");
+pref("font.name.monospace.x-western", "Courier");
+pref("font.name.cursive.x-western", "Apple Chancery");
+pref("font.name.fantasy.x-western", "Papyrus");
+pref("font.name-list.serif.x-western", "Times");
+pref("font.name-list.sans-serif.x-western", "Helvetica");
+pref("font.name-list.monospace.x-western", "Courier");
+pref("font.name-list.cursive.x-western", "Apple Chancery");
+pref("font.name-list.fantasy.x-western", "Papyrus");
 
-// zh-TW
+pref("font.name.serif.zh-CN", "STSong");
+pref("font.name.sans-serif.zh-CN", "STHeiti");
+pref("font.name.monospace.zh-CN", "STHeiti");
+pref("font.name-list.serif.zh-CN", "STSong");
+pref("font.name-list.sans-serif.zh-CN", "STHeiti");
+pref("font.name-list.monospace.zh-CN", "STHeiti");
+
+pref("font.name.serif.zh-TW", "Apple LiSung"); 
+pref("font.name.sans-serif.zh-TW", "Apple LiGothic");  
+pref("font.name.monospace.zh-TW", "Apple LiGothic");  
+pref("font.name-list.serif.zh-TW", "Apple LiSung"); 
+pref("font.name-list.sans-serif.zh-TW", "Apple LiGothic");  
+pref("font.name-list.monospace.zh-TW", "Apple LiGothic");  
+
+pref("font.name.serif.zh-HK", "LiSong Pro");
+pref("font.name.sans-serif.zh-HK", "LiHei Pro");
+pref("font.name.monospace.zh-HK", "LiHei Pro");
+pref("font.name-list.serif.zh-HK", "LiSong Pro");
+pref("font.name-list.sans-serif.zh-HK", "LiHei Pro");
+pref("font.name-list.monospace.zh-HK", "LiHei Pro");
 
 pref("font.default.ar", "sans-serif");
 pref("font.size.variable.ar", 16);
-pref("font.size.fixed.ar", 12);
+pref("font.size.fixed.ar", 13);
 
 pref("font.default.el", "serif");
 pref("font.size.variable.el", 16);
-pref("font.size.fixed.el", 12);
+pref("font.size.fixed.el", 13);
 
 pref("font.default.he", "sans-serif");
 pref("font.size.variable.he", 16);
-pref("font.size.fixed.he", 12);
+pref("font.size.fixed.he", 13);
 
 pref("font.default.ja", "sans-serif");
 pref("font.size.variable.ja", 16);
@@ -1278,59 +1391,19 @@ pref("font.size.fixed.ko", 16);
 pref("font.default.th", "serif");
 pref("font.size.variable.th", 16);
 pref("font.size.fixed.th", 13);
-pref("font.minimum-size.th", 13);
+pref("font.minimum-size.th", 10);
 
 pref("font.default.tr", "serif");
 pref("font.size.variable.tr", 16);
-pref("font.size.fixed.tr", 12);
-
-pref("font.default.x-baltic", "serif");
-pref("font.size.variable.x-baltic", 16);
-pref("font.size.fixed.x-baltic", 12);
-
-pref("font.default.x-central-euro", "serif");
-pref("font.size.variable.x-central-euro", 16);
-pref("font.size.fixed.x-central-euro", 12);
-
-pref("font.default.x-cyrillic", "serif");
-pref("font.size.variable.x-cyrillic", 16);
-pref("font.size.fixed.x-cyrillic", 12);
-
-pref("font.default.x-unicode", "serif");
-pref("font.size.variable.x-unicode", 16);
-pref("font.size.fixed.x-unicode", 12);
-
-pref("font.default.x-user-def", "serif");
-pref("font.size.variable.x-user-def", 16);
-pref("font.size.fixed.x-user-def", 12);
-
-pref("font.default.x-western", "serif");
-pref("font.size.variable.x-western", 16);
-pref("font.size.fixed.x-western", 12);
-
-pref("font.default.zh-CN", "sans-serif");
-pref("font.size.variable.zh-CN", 16);
-pref("font.size.fixed.zh-CN", 16);
-
-pref("font.default.zh-TW", "sans-serif");
-pref("font.size.variable.zh-TW", 16);
-pref("font.size.fixed.zh-TW", 16);
-
-pref("font.default.zh-HK", "sans-serif");
-pref("font.size.variable.zh-HK", 16);
-pref("font.size.fixed.zh-HK", 16);
-
-pref("font.default.x-devanagari", "serif");
-pref("font.size.variable.x-devanagari", 16);
-pref("font.size.fixed.x-devanagari", 13);
-
-pref("font.default.x-tamil", "serif");
-pref("font.size.variable.x-tamil", 16);
-pref("font.size.fixed.x-tamil", 13);
+pref("font.size.fixed.tr", 13);
 
 pref("font.default.x-armn", "serif");
 pref("font.size.variable.x-armn", 16);
 pref("font.size.fixed.x-armn", 13);
+
+pref("font.default.x-baltic", "serif");
+pref("font.size.variable.x-baltic", 16);
+pref("font.size.fixed.x-baltic", 13);
 
 pref("font.default.x-beng", "serif");
 pref("font.size.variable.x-beng", 16);
@@ -1339,6 +1412,18 @@ pref("font.size.fixed.x-beng", 13);
 pref("font.default.x-cans", "serif");
 pref("font.size.variable.x-cans", 16);
 pref("font.size.fixed.x-cans", 13);
+
+pref("font.default.x-central-euro", "serif");
+pref("font.size.variable.x-central-euro", 16);
+pref("font.size.fixed.x-central-euro", 13);
+
+pref("font.default.x-cyrillic", "serif");
+pref("font.size.variable.x-cyrillic", 16);
+pref("font.size.fixed.x-cyrillic", 13);
+
+pref("font.default.x-devanagari", "serif");
+pref("font.size.variable.x-devanagari", 16);
+pref("font.size.fixed.x-devanagari", 13);
 
 pref("font.default.x-ethi", "serif");
 pref("font.size.variable.x-ethi", 16);
@@ -1364,6 +1449,10 @@ pref("font.default.x-mlym", "serif");
 pref("font.size.variable.x-mlym", 16);
 pref("font.size.fixed.x-mlym", 13);
 
+pref("font.default.x-tamil", "serif");
+pref("font.size.variable.x-tamil", 16);
+pref("font.size.fixed.x-tamil", 13);
+
 pref("font.default.x-orya", "serif");
 pref("font.size.variable.x-orya", 16);
 pref("font.size.fixed.x-orya", 13);
@@ -1380,21 +1469,77 @@ pref("font.default.x-sinh", "serif");
 pref("font.size.variable.x-sinh", 16);
 pref("font.size.fixed.x-sinh", 13);
 
-/* PostScript print module prefs */
-// pref("print.postscript.enabled",      true);
-pref("print.postscript.paper_size",    "letter");
-pref("print.postscript.orientation",   "portrait");
-pref("print.postscript.print_command", "lpr ${MOZ_PRINTER_NAME:+-P\"$MOZ_PRINTER_NAME\"}");
+pref("font.default.x-unicode", "serif");
+pref("font.size.variable.x-unicode", 16);
+pref("font.size.fixed.x-unicode", 13);
 
-//@line 2490 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+pref("font.default.x-western", "serif");
+pref("font.size.variable.x-western", 16);
+pref("font.size.fixed.x-western", 13);
 
-//@line 2558 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+pref("font.default.zh-CN", "sans-serif");
+pref("font.size.variable.zh-CN", 15);
+pref("font.size.fixed.zh-CN", 16);
 
-//@line 2584 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+pref("font.default.zh-TW", "sans-serif");
+pref("font.size.variable.zh-TW", 15);
+pref("font.size.fixed.zh-TW", 16);
 
-//@line 2604 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+pref("font.default.zh-HK", "sans-serif");
+pref("font.size.variable.zh-HK", 15);
+pref("font.size.fixed.zh-HK", 16);
 
-//@line 2612 "/home/nicolasa/Développement/Source/mozilla/modules/libpref/src/init/all.js"
+// Apple's Symbol is Unicode so use it
+pref("font.mathfont-family", "STIXNonUnicode, STIXSize1, STIXGeneral, Symbol, DejaVu Sans, Cambria Math");
+
+// individual font faces to be treated as independent families
+// names are Postscript names of each face
+pref("font.single-face-list", "Osaka-Mono");
+
+// optimization hint for fonts with localized names to be read in at startup, otherwise read in at lookup miss
+// names are canonical family names (typically English names)
+pref("font.preload-names-list", "Hiragino Kaku Gothic Pro,Hiragino Mincho Pro,STSong");
+
+pref("browser.urlbar.clickAtEndSelects", false);
+
+// Override the Windows settings: no menu key, meta accelerator key. ctrl for general access key in HTML/XUL
+// Use 17 for Ctrl, 18 for Option, 224 for Cmd, 0 for none
+pref("ui.key.menuAccessKey", 0);
+pref("ui.key.accelKey", 224);
+// (pinkerton, joki, saari) IE5 for mac uses Control for access keys. The HTML4 spec
+// suggests to use command on mac, but this really sucks (imagine someone having a "q"
+// as an access key and not letting you quit the app!). As a result, we've made a 
+// command decision 1 day before tree lockdown to change it to the control key.
+pref("ui.key.generalAccessKey", -1);
+
+// If generalAccessKey is -1, use the following two prefs instead.
+// Use 0 for disabled, 1 for Shift, 2 for Ctrl, 4 for Alt, 8 for Meta (Cmd)
+// (values can be combined, e.g. 3 for Ctrl+Shift)
+pref("ui.key.chromeAccess", 2);
+pref("ui.key.contentAccess", 2);
+
+// print_extra_margin enables platforms to specify an extra gap or margin
+// around the content of the page for Print Preview only
+pref("print.print_extra_margin", 90); // twips (90 twips is an eigth of an inch)
+
+// This indicates whether it should use the native dialog or the XP Dialog
+pref("print.use_native_print_dialog", true);
+
+//@line 1937 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2134 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2225 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2490 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2558 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2584 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2604 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
+
+//@line 2612 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/modules/libpref/src/init/all.js"
 
 // Login Manager prefs
 pref("signon.rememberSignons",              true);

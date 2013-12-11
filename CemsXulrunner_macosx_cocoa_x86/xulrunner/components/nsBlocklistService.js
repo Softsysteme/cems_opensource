@@ -1,6 +1,6 @@
 /* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /*
-//@line 41 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
+//@line 41 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
 */
 
 const Cc = Components.classes;
@@ -45,7 +45,7 @@ var gABI = null;
 var gOSVersion = null;
 
 // shared code for suppressing bad cert dialogs
-//@line 40 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/shared/src/badCertHandler.js"
+//@line 40 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/shared/src/badCertHandler.js"
 
 /**
  * Only allow built-in certs for HTTPS connections.  See bug 340198.
@@ -111,7 +111,7 @@ BadCertHandler.prototype = {
     return this;
   }
 };
-//@line 86 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
+//@line 86 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
 
 /**
  * Logs a string to the error console.
@@ -359,7 +359,15 @@ function Blocklist() {
     gOSVersion = encodeURIComponent(osVersion);
   }
 
-//@line 342 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
+//@line 334 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
+  // Mac universal build should report a different ABI than either macppc
+  // or mactel.
+  var macutils = Components.classes["@mozilla.org/xpcom/mac-utils;1"]
+                           .getService(Components.interfaces.nsIMacUtils);
+
+  if (macutils.isUniversalBinary)
+    gABI = "Universal-gcc3";
+//@line 342 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
 }
 
 Blocklist.prototype = {
@@ -553,7 +561,7 @@ Blocklist.prototype = {
   },
 
   /**
-//@line 584 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
+//@line 584 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsBlocklistService.js"
    */
 
   _loadBlocklistFromFile: function(file) {

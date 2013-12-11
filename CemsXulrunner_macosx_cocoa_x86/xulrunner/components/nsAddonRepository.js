@@ -1,6 +1,6 @@
 /* -*- Mode: C++; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /*
-//@line 38 "/home/nicolasa/Développement/Source/mozilla/toolkit/mozapps/extensions/src/nsAddonRepository.js"
+//@line 38 "/builds/tinderbox/Xr-Mozilla1.9-Release/Darwin_8.8.4_Depend/mozilla/toolkit/mozapps/extensions/src/nsAddonRepository.js"
 */
 
 const Cc = Components.classes;
