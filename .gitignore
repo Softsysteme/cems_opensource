@@ -1,5 +1,3 @@
-CemsXulrunner_linux_gtk_x86/xulrunner/components/compreg.dat
-CemsXulrunner_linux_gtk_x86/xulrunner/components/xpti.dat
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/compreg.dat
 CemsXulrunner_macosx_cocoa_x86/xulrunner/components/xpti.dat
 CemsXulrunner_win32_win32_x86/xulrunner/components/compreg.dat
@@ -244,3 +242,5 @@ Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/xpti.dat
 Studio/tomcat/webapps/convertigo/cache_proxy
 Studio/tomcat/webapps/convertigo/templates/project/*.car
 Studio/tomcat/work/*
+Xulrunner_linux.gtk.x86/xulrunner/components/compreg.dat
+Xulrunner_linux.gtk.x86/xulrunner/components/xpti.dat
