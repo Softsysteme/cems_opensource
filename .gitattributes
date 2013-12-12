@@ -913,11 +913,14 @@ Studio/projects/sampleMobileCtfGallery/topics/calling_convertigo.xml -text svneo
 Studio/projects/sampleMobileCtfGallery/topics/conditional_templating.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/data_accumulation.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/i18n.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/iterative_templating.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/late_rendering.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/list_view.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/listening_convertigo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/routing_table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/template_patterns.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileCtfGallery/topics/templating_simple_patterns.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain

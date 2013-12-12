@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <topics>
-	<name>routing_table</name>
-	<name>template_patterns</name>
 	<name>calling_convertigo</name>
 	<name>listening_convertigo</name>
-	<name>table</name>
-	<name>data_accumulation</name>
-	<name>list_view</name>
-	<name>accordion</name>
-	<name>i18n</name>
+	<name>templating_simple_patterns</name>
 	<name>conditional_templating</name>
+	<name>iterative_templating</name>
+	<name>data_accumulation</name>
+	<name>late_rendering</name>
+	<name>routing_table</name>
+	<name>i18n</name>
 </topics>

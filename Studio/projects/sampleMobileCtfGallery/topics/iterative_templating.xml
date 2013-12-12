@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<topic>
+	<name>iterative_templating</name>
+	<title>Iterative templating</title>
+	<sample>
+		<title>JQueryMobile table</title>
+		<description>
+			<p>This sample demonstrates the usage of nested iterations in a JQueryMobile table.</p>
+		</description>
+		<source>
+			<script language="JavaScript">
+				function formatCountry(data) {
+					return data.toUpperCase();
+				}
+			</script>
+			<button data-c8o-call=".getCountries" data-c8o-variables='{ "__user_reference": "table" }'>Get countries</button>
+			<div data-c8o-listen=".getCountries" data-c8o-listen-condition='document[userReference="table"]'>
+				<table data-role="table" class="ui-body-d ui-shadow table-stripe ui-responsive">
+					<thead class="ui-bar-d">
+						<tr>
+							<th>City #1</th>
+							<th>City #2</th>
+							<th>City #3</th>
+							<th>City #4</th>
+							<th>City #5</th>
+							<th>City #6</th>
+							<th>City #7</th>
+							<th>City #8</th>
+							<th>City #9</th>
+							<th>City #10</th>
+						</tr>
+					</thead>
+					<tbody data-c8o-each="country">
+						<tr>
+							<td colspan="10" align="center"><b>__{ "attr": "name", "formatter": "formatCountry" }__</b></td>
+						</tr>
+						<tr data-c8o-each="city">
+							<td>__{ "attr": "name" }__</td>
+						</tr>
+			      </tbody>
+			   </table>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Multi dimensional list</title>
+		<description>
+			<p>This sample demonstrates the usage of nested iterations in a multi dimensional list.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries" data-c8o-variables='{ "__user_reference": "list" }'>Get countries</button>
+			<div data-c8o-listen=".getCountries" data-c8o-listen-condition='document[userReference="list"]'>
+			   <ul data-c8o-each="country">
+			      <li>
+			      	<b>__{ "attr": "name", "formatter": "formatCountry" }__</b>
+			      	<ul data-c8o-each="city">
+			      		<li>__{ "attr": "name" }__</li>
+			      	</ul>
+			      </li>
+			   </ul>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>JQueryMobile grid</title>
+		<description>
+			<p>This sample demonstrates the usage of a JQueryMobile grid.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries" data-c8o-variables='{ "__user_reference": "grid" }'>Get countries</button>
+			<div data-c8o-listen=".getCountries" data-c8o-listen-condition='document[userReference="grid"]'>
+				<div class="ui-grid-d" data-c8o-each="country">
+				    <div class="ui-block-a"><div class="ui-bar ui-bar-e">__{ "attr": "name", "formatter": "formatCountry" }__</div></div>
+				    <div class="ui-block-b"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(1)", "attr": "name" }__</div></div>
+				    <div class="ui-block-c"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(2)", "attr": "name" }__</div></div>
+				    <div class="ui-block-d"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(3)", "attr": "name" }__</div></div>
+				    <div class="ui-block-e"><div class="ui-bar ui-bar-e">__{ "find": "city:nth-child(4)", "attr": "name" }__</div></div>
+				</div>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Simple list view</title>
+		<description>
+			<p>This sample demonstrates the usage of the following directives:</p>
+			<ul>
+				<li>data-c8o-call</li>
+				<li>data-c8o-listen</li>
+				<li>data-c8o-each (iteration)</li>
+			</ul>
+		</description>
+		<source>
+			<button data-c8o-call=".getData">Test</button>
+			<p>List of available books:</p>
+			<div data-c8o-listen=".getData">
+				<ul data-role="listview" data-theme="d" data-c8o-each="book">
+					<li><a href="">__=title__ (__=author__)</a></li>
+				</ul>
+			</div>
+		</source>
+	</sample>
+	<sample>
+		<title>Simple accordion</title>
+		<description>
+			<p>This sample demonstrates the usage of an accordion with CTF.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries">Build accordion</button>
+			<div data-role="collapsible-set" data-inset="false" data-c8o-listen=".getCountries" data-c8o-each="country">
+			    <div data-role="collapsible">
+			        <h3>__{ "attr": "name" }__</h3>
+			        <ul data-role="listview" data-inset="false" data-c8o-each="city">
+			            <li>__{ "attr": "name" }__</li>
+			        </ul>
+			    </div>
+			</div>
+		</source>
+	</sample>
+</topic>

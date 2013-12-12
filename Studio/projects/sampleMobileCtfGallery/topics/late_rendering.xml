@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<topic>
+	<name>late_rendering</name>
+	<title>Late rendering</title>
+	<sample>
+		<title>Simple list(with late rendering)</title>
+		<description>
+			<p>This sample demonstrates the usage of a list using late rendering with CTF.</p>
+		</description>
+		<source>
+			<button data-c8o-call=".getCountries">Build list</button>
+			<div data-c8o-listen=".getCountries" data-c8o-each="country">
+		        <a href="#" data-c8o-render='displayMore___{"mode":"index"}__'>__{ "attr": "name" }__</a>
+		        <div data-c8o-late-render='displayMore___{"mode":"index"}__'>
+			        <ul data-c8o-each="city" >
+			            <li >__{ "attr": "name" }__</li>
+			        </ul>
+		        </div>
+			</div>
+		</source>
+	</sample>
+</topic>
