@@ -8,7 +8,7 @@
 			<p>This sample demonstrates the usage of internationalized messages.</p>
 		</description>
 		<source url="i18n.html"/>
-		<source url="js/custom-sample-i18n.js"/>
+		<source url="js/custom_sample_i18n.js"/>
 		<source url="i18n/en.json"/>
 		<source url="i18n/fr.json"/>
 		<source url="i18n/pt.json"/>
