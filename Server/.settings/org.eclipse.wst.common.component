@@ -107,63 +107,6 @@
         <dependent-module archiveName="soapui-xmlbeans-3.5.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/soapui/soapui-xmlbeans-3.5.1.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="annotations-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/annotations-api.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="bootstrap.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/bootstrap.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="catalina.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/catalina.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="catalina-ant.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/catalina-ant.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="catalina-ha.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/catalina-ha.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="catalina-tribes.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/catalina-tribes.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="commons-daemon.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/commons-daemon.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="el-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/el-api.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="jasper.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/jasper.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="jasper-el.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/jasper-el.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="jasper-jdt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/jasper-jdt.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="jsp-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/jsp-api.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="servlet-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/servlet-api.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-coyote.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-coyote.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-dbcp.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-dbcp.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-i18n-es.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-i18n-es.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-i18n-fr.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-i18n-fr.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-i18n-ja.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-i18n-ja.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-juli.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/tomcat/lib/tomcat-juli.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
         <dependent-module archiveName="aviva-111114.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/internal/aviva-111114.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>

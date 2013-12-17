@@ -24,7 +24,7 @@ import org.w3c.dom.NodeList;
 public class UpdateLibraries {
 	
 	private static Pattern absoluteModule = Pattern.compile("module:/classpath/lib/((?:\\w+:)?/.*)");
-
+	
 	private static void print(String line) {
 		System.out.println(line);
 	}
@@ -115,7 +115,7 @@ public class UpdateLibraries {
 			line = line.trim().replace(",", "");
 			File library = new File(studioDir, line);
 			
-			if (line.endsWith(".jar") && library.exists()) {
+			if (line.endsWith(".jar") && !line.startsWith("tomcat/") && library.exists()) {
 				Element dependentModule = componentXml.createElement("dependent-module");
 				dependentModule.setAttribute("archiveName", library.getName());
 				dependentModule.setAttribute("deploy-path", "/WEB-INF/lib");
