@@ -388,7 +388,7 @@
                 <java.lang.Long value="960"/>
             </property>
         </mobiledevice>
-        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.WindowsPhone7" priority="0">
+        <mobiledevice classname="com.twinsoft.convertigo.beans.mobiledevices.WindowsPhone77" priority="0">
         	<property name="comment">
         		<java.lang.String value=""/>
         	</property>
