@@ -20,6 +20,7 @@ Studio/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
 Studio/CMS_doc_database.properties -text svneol=unset#text/plain
 Studio/META-INF/MANIFEST.MF -text svneol=unset#text/plain
+Studio/ant-contrib-1.0b3.jar -text
 Studio/build-templates.xml -text svneol=unset#text/plain
 Studio/build.properties -text svneol=unset#text/plain
 Studio/cheats/CreateCompleteProject.xml -text svneol=unset#text/plain
