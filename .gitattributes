@@ -3860,6 +3860,7 @@ Studio/src/com/twinsoft/convertigo/engine/JobManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/KeyExpiredException.java -text
 Studio/src/com/twinsoft/convertigo/engine/LogParameters.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MaxCvsExceededException.java -text
+Studio/src/com/twinsoft/convertigo/engine/MaxNumberOfContextsException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MigrationJob.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MigrationListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MigrationManager.java -text svneol=unset#text/plain
