@@ -264,6 +264,7 @@ Studio/src/com/twinsoft/convertigo/engine/parsers
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/cache/*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/logs/engine.log*
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys.txt
+Studio/tomcat/webapps/convertigo/WEB-INF/lib/*.jar
 Studio/tomcat/webapps/convertigo/WEB-INF/trial_deploy.ser
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner-work
 Studio/tomcat/webapps/convertigo/WEB-INF/xulrunner/components/compreg.dat
