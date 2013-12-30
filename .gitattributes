@@ -18,6 +18,9 @@ Studio/.project -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.core.runtime.prefs -text svneol=unset#text/plain
 Studio/.settings/org.eclipse.jdt.core.prefs -text svneol=unset#text/plain
+Studio/.settings/org.eclipse.jst.jsp.core.prefs -text svneol=unset#text/plain
+Studio/.settings/org.eclipse.wst.validation.prefs -text svneol=unset#text/plain
+Studio/.settings/org.eclipse.wst.xsl.core.prefs -text svneol=unset#text/plain
 Studio/CMS_doc_database.properties -text svneol=unset#text/plain
 Studio/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 Studio/ant-contrib-1.0b3.jar -text
