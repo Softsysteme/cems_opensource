@@ -1,2 +1,0 @@
-content mybrowser jar:mybrowser.jar!/content/mybrowser/
-locale mybrowser en-US jar:en-US.jar!/locale/en-US/mybrowser/
