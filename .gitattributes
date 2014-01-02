@@ -4639,16 +4639,8 @@ Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.css -text svneol=
 Studio/tomcat/webapps/convertigo/css/6.3.0/jquery.mobile.theme.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/7.1.0/c8o.desktop.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/7.1.0/images/ajaxloader.gif -text
-Studio/tomcat/webapps/convertigo/css/7.1.0/images/icons18black.png -text
-Studio/tomcat/webapps/convertigo/css/7.1.0/images/icons18white.png -text
-Studio/tomcat/webapps/convertigo/css/7.1.0/images/icons36black.png -text
-Studio/tomcat/webapps/convertigo/css/7.1.0/images/icons36white.png -text
 Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.min.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.structure.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.structure.min.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.theme.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/7.1.0/jquery.mobile.theme.min.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/admin.css -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/archive/images/ajaxloader.png -text
@@ -4949,7 +4941,6 @@ Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.js -text svneol=unset#text
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile-1.3.2.min.map -text
-Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/6.3.0/jquery.mobile.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.cordova.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.core.js -text svneol=unset#text/plain
@@ -4966,8 +4957,7 @@ Studio/tomcat/webapps/convertigo/scripts/7.1.0/ctf.jquerymobile.js -text svneol=
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery-1.10.2.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.min.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.min.map -text
-Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.mobile-1.3.2.min.map -text
+Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.mobile-1.4.0.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.mobile.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.mobile.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/admin.js -text
