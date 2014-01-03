@@ -605,6 +605,7 @@ Studio/projects/demo_usDirectory/img/question.png -text
 Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
 Studio/projects/demo_usDirectory/img/title.png -text
 Studio/projects/demo_usDirectory/img/toERPicon.png -text
+Studio/projects/demo_usDirectory/index.html -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
