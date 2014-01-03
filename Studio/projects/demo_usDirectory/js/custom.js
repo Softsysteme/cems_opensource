@@ -273,7 +273,7 @@ $.extend(true, C8O, {
  *             other > do standard resize
  */
 C8O.addHook("resize_calculation", function () {
-	if ($.browser.msie) {
+	if (navigator.userAgent.match(/msie/i)) {
 		$("body").attr("scroll", "no");
 	} else {
 		window.frameElement.scrolling = "no";
