@@ -4162,26 +4162,12 @@ Studio/tomcat/conf/.keystore -text
 Studio/tomcat/conf/context.xml -text
 Studio/tomcat/conf/tomcat-users.xml -text
 Studio/tomcat/conf/web.xml -text
-Studio/tomcat/lib/annotations-api.jar -text
-Studio/tomcat/lib/bootstrap.jar -text
-Studio/tomcat/lib/catalina-ant.jar -text
-Studio/tomcat/lib/catalina-ha.jar -text
-Studio/tomcat/lib/catalina-tribes.jar -text
-Studio/tomcat/lib/catalina.jar -text
-Studio/tomcat/lib/commons-daemon.jar -text
-Studio/tomcat/lib/el-api.jar -text
+Studio/tomcat/lib/ecj-4.2.2.jar -text
 Studio/tomcat/lib/hsqldb.jar -text
-Studio/tomcat/lib/jasper-el.jar -text
-Studio/tomcat/lib/jasper-jdt.jar -text
-Studio/tomcat/lib/jasper.jar -text
-Studio/tomcat/lib/jsp-api.jar -text
-Studio/tomcat/lib/servlet-api.jar -text
-Studio/tomcat/lib/tomcat-coyote.jar -text
 Studio/tomcat/lib/tomcat-dbcp.jar -text
-Studio/tomcat/lib/tomcat-i18n-es.jar -text
-Studio/tomcat/lib/tomcat-i18n-fr.jar -text
-Studio/tomcat/lib/tomcat-i18n-ja.jar -text
-Studio/tomcat/lib/tomcat-juli.jar -text
+Studio/tomcat/lib/tomcat-embed-core.jar -text
+Studio/tomcat/lib/tomcat-embed-jasper.jar -text
+Studio/tomcat/lib/tomcat-embed-logging-juli.jar -text
 Studio/tomcat/webapps/ROOT/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/com/eviware/soapui/impl/wsdl/support/xsd/SampleXmlUtil.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svneol=unset#text/plain
