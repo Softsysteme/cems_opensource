@@ -4163,7 +4163,6 @@ Studio/tomcat/conf/context.xml -text
 Studio/tomcat/conf/tomcat-users.xml -text
 Studio/tomcat/conf/web.xml -text
 Studio/tomcat/lib/ecj-4.2.2.jar -text
-Studio/tomcat/lib/hsqldb.jar -text
 Studio/tomcat/lib/tomcat-dbcp.jar -text
 Studio/tomcat/lib/tomcat-embed-core.jar -text
 Studio/tomcat/lib/tomcat-embed-jasper.jar -text
