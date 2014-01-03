@@ -570,6 +570,7 @@ Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/images/header-flex.jpg -text
+Studio/projects/demo_mashup/index.html -text svneol=unset#text/plain
 Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
 Studio/projects/demo_mashup/resources/bg_center.png -text
 Studio/projects/demo_mashup/resources/bg_footer_center.png -text
