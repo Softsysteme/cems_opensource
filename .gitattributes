@@ -118,7 +118,7 @@ Studio/icons/studio/dbo_save.d.gif -text
 Studio/icons/studio/dbo_save.gif -text
 Studio/icons/studio/debug.d.gif -text
 Studio/icons/studio/debug.gif -text
-Studio/icons/studio/declare_global_symbols_16x16.gif -text
+Studio/icons/studio/declare_global_symbols_16x16.png -text
 Studio/icons/studio/delete.gif -text
 Studio/icons/studio/demo_c8o_web_mobile_color_32x32.png -text
 Studio/icons/studio/demo_ctfgallery_color_32x32.png -text
@@ -4277,6 +4277,7 @@ Studio/tomcat/webapps/convertigo/admin/images/carioca.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/certificate.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/connect.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/connection.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-alert-global-symbols.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-bg-gris-center.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-bg-gris-left.png -text
 Studio/tomcat/webapps/convertigo/admin/images/convertigo-administration-bg-gris-right.png -text
