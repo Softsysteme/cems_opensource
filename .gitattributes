@@ -193,6 +193,7 @@ Studio/icons/studio/siteclipperconnector_color_32x32.gif -text
 Studio/icons/studio/sort_asc.gif -text
 Studio/icons/studio/sort_desc.gif -text
 Studio/icons/studio/sqlconnector_color_32x32.gif -text
+Studio/icons/studio/statistics.gif -text
 Studio/icons/studio/step_by_step.d.gif -text
 Studio/icons/studio/step_by_step.gif -text
 Studio/icons/studio/stop_transaction.d.gif -text
@@ -3311,6 +3312,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectExportAction.jav
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectImportWsReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectOpenAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectSaveAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectStatsAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectValidateXSDAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/RedoAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceEditWSDLTypeAction.java -text svneol=unset#text/plain
