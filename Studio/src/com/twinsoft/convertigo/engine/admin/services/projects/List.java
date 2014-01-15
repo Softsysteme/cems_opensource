@@ -32,11 +32,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.twinsoft.convertigo.beans.core.Project;
+import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.EngineException;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
-import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 
 @ServiceDefinition(
 		name = "GetProjects",
@@ -75,8 +75,8 @@ public class List extends XmlService{
     			projectElement.setAttribute("exported", exported);
     			projectElement.setAttribute("deployDate", deployDate);
     			if (project.undefinedGlobalSymbols == true) {
-    				projectElement.setAttribute("gsymbols", "notcreate");
-    			}
+    				projectElement.setAttribute("undefined_symbols", "true");
+    			} 
     			projectsListElement.appendChild(projectElement);
     		}
     		catch (EngineException e) {

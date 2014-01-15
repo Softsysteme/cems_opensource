@@ -3954,6 +3954,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Deploy.java -t
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Export.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Get.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetTestPlatform.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetUndefinedSymbols.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Reload.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/cleanDOM.xsl -text svneol=unset#text/plain
