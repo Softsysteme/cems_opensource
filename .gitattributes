@@ -3042,13 +3042,16 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectVersionUpdateDialog.ja
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ProjectVersionUpdateDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/SchemaObjectsDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/SchemaObjectsDialogComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/StatisticsDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/dialog_statistic.jpg -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/project_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSource.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSourceTransfer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/TreeDragListener.java -text svneol=unset#text/plain
@@ -3288,7 +3291,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateVariableAction.ja
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateWSDLTypeFromXMLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateWebServiceJavaClientFromWSDLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomAdditionsAction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomStatsAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomStatisticsAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DatabaseObjectCreateAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DatabaseObjectDecreasePriorityAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DatabaseObjectDeleteAction.java -text
@@ -3708,8 +3711,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_selector.gi
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomStatsWizard.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomStatsWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/ModelessWizardDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/SampleNewWizardPage.java -text
