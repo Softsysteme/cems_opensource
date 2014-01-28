@@ -5065,6 +5065,7 @@ Studio/tomcat/webapps/convertigo/licenses/BSD.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/EPL-1.0.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/IBM-PL-1.0.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/LGPL-2.1.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/licenses/MIT-QRcode.txt -text
 Studio/tomcat/webapps/convertigo/licenses/MIT-VT-parser.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/MIT-jquery.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/MIT-slf4j.txt -text svneol=unset#text/plain
@@ -5073,12 +5074,16 @@ Studio/tomcat/webapps/convertigo/licenses/MPL-1.1.txt -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/licenses/OTN.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/aviva.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/axis.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/licenses/backport-util-concurrent-LICENSE.txt -text
 Studio/tomcat/webapps/convertigo/licenses/bcel.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/licenses/dom4j.txt -text
 Studio/tomcat/webapps/convertigo/licenses/hsqldb.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/java.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/licenses/jaxen.txt -text
 Studio/tomcat/webapps/convertigo/licenses/jcharts.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/jettison.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/licenses/jt400.txt -text
 Studio/tomcat/webapps/convertigo/licenses/openssl.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/rhino-debugger.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/scribe.txt -text svneol=unset#text/plain
