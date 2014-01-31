@@ -346,7 +346,6 @@ Studio/lib/axis2-1.6.2/lib/xmlbeans-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/backport/backport-util-concurrent-3.1.jar -text
 Studio/lib/backport/backport-util-concurrent-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/commons-collections-3.1.jar -text
-Studio/lib/cos.jar -text
 Studio/lib/ctgclient.jar -text
 Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
