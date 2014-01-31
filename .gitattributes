@@ -3075,6 +3075,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/BrowserEditorInput.ja
 Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/DreamfaceEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/DreamfaceEditorInput.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/CtfCompletionProposalsComputer.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/Entry.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/c8oCompletionDict.xml -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/AbstractConnectorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/CicsConnectorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ConnectorEditor.java -text
