@@ -1210,9 +1210,13 @@ Studio/projects/sample_refManual_statements/xsl/leadsdetails.xsl -text svneol=un
 Studio/projects/sample_refManual_statements/xsl/notConnected.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_statements/xsl/results.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_steps/.project -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/images/New-York-Tourist-Map.jpg -text
+Studio/projects/sample_refManual_steps/images/New-York.jpg -text
 Studio/projects/sample_refManual_steps/sample_refManual_steps.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_steps/sample_refManual_steps.xml -text svneol=unset#text/plain
 Studio/projects/sample_refManual_steps/sample_refManual_steps.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_steps/xsd/sample_refManual_steps.xsd -text svneol=unset#text/plain
 Studio/projects/sample_refManual_steps/xsl/email.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/.project -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/results.xsl -text svneol=unset#text/plain
