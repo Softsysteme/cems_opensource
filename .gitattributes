@@ -3053,8 +3053,18 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComp
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/dialog_statistic.jpg -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/html_connector_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/http_connector_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/javelin_connector_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/pool_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/project_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/proxy_connector_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/references_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/sequencer_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/siteclipper_connector_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/sql_connector_16x16.png -text
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/test_cases_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSource.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/StepSourceTransfer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dnd/TreeDragListener.java -text svneol=unset#text/plain
@@ -3962,6 +3972,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Delete.java -t
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Deploy.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Export.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Get.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetStatistic.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetTestPlatform.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/GetUndefinedSymbols.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/List.java -text svneol=unset#text/plain
@@ -4379,6 +4390,7 @@ Studio/tomcat/webapps/convertigo/admin/images/convertigo_icon.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/creation.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/delete.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/deploy.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/dialog_statistic.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/disable.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/dote.png -text
 Studio/tomcat/webapps/convertigo/admin/images/download.gif -text
@@ -4395,12 +4407,15 @@ Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-activ
 Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-hover.png -text
 Studio/tomcat/webapps/convertigo/admin/images/header&background/tabs/tab-r-idle.png -text
 Studio/tomcat/webapps/convertigo/admin/images/help.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/html_connector_16x16.png -text
+Studio/tomcat/webapps/convertigo/admin/images/http_connector_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/icon_arrow_grey.png -text
 Studio/tomcat/webapps/convertigo/admin/images/icon_details_error_xsl.png -text
 Studio/tomcat/webapps/convertigo/admin/images/icon_error_xsl.png -text
 Studio/tomcat/webapps/convertigo/admin/images/identification.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/information.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/information_16x16.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/javelin_connector_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/job_group.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/key.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/last_access.gif -text
@@ -4442,9 +4457,13 @@ Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_itcen
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_site.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_test.png -text
 Studio/tomcat/webapps/convertigo/admin/images/ok.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/pool_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/project.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/project_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/properties.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/proxy_connector_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/quit.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/references_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/refresh.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/restart-engine.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/running-off.gif -text
@@ -4455,10 +4474,14 @@ Studio/tomcat/webapps/convertigo/admin/images/scheduler.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/scheduler_job.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/separator.png -text
 Studio/tomcat/webapps/convertigo/admin/images/sequence.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/sequencer_16x16.png -text
+Studio/tomcat/webapps/convertigo/admin/images/siteclipper_connector_16x16.png -text
+Studio/tomcat/webapps/convertigo/admin/images/sql_connector_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/start-engine.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/stop-engine.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/stop.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/sync.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/test_cases_16x16.png -text
 Studio/tomcat/webapps/convertigo/admin/images/traceplayer.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/transaction.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/upgrade.gif -text
