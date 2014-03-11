@@ -1502,6 +1502,7 @@ Studio/projects/template_webIntegration/template_webIntegration.wsdl -text svneo
 Studio/projects/template_webIntegration/template_webIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_webIntegration/template_webIntegration.xsd -text svneol=unset#text/plain
 Studio/readme.txt -text svneol=unset#text/plain
+Studio/src/com/eviware/soapui/impl/wsdl/support/xsd/SampleXmlUtil.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/BeansDoc.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/CheckBeans.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/Version.java -text
