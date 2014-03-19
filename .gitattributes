@@ -3862,6 +3862,7 @@ Studio/src/com/twinsoft/convertigo/engine/ConnectorsMonitor.java -text
 Studio/src/com/twinsoft/convertigo/engine/Context.java -text
 Studio/src/com/twinsoft/convertigo/engine/ContextLauncher.java -text
 Studio/src/com/twinsoft/convertigo/engine/ContextManager.java -text
+Studio/src/com/twinsoft/convertigo/engine/ConvertigoError.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ConvertigoException.java -text
 Studio/src/com/twinsoft/convertigo/engine/DatabaseObjectImportedEvent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/DatabaseObjectListener.java -text svneol=unset#text/plain
@@ -4006,6 +4007,7 @@ Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboExplorerManager.java -
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboGroup.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboParent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboUtils.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/ErrorType.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HeaderName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HtmlLocation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/ImageFormat.java -text svneol=unset#text/plain
