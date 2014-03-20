@@ -794,24 +794,42 @@ function showErrorDetails() {
 // Implements the XML  Ajax ready state listener
 // ********************************************************************************************
 function XSLT_transformation(){
-	var resultDiv = document.getElementById("resultDiv");
-	if(window.XSLTProcessor){
-		var xsltProcessor = new XSLTProcessor();
-		xsltProcessor.importStylesheet(xslDom);
-		fragment = xsltProcessor.transformToFragment(xmlDocument, document);
-		
-		var mydiv = document.createElement("div");
-		var myattb = document.createAttribute("id");
-		myattb.value = "resultDiv";
-		mydiv.setAttributeNode( myattb );
-		
-		mydiv.appendChild(fragment);				
-		resultDiv.parentNode.replaceChild(mydiv,resultDiv);
-	}else{
-		oldTrBgcolor = null;
-		strResult = xmlDocument.transformNode(xslDom);
-		resultDiv.innerHTML = strResult;
-	}
+    var resultDiv = document.getElementById("resultDiv");
+    if(window.XSLTProcessor){
+          var xsltProcessor = new XSLTProcessor();
+          xsltProcessor.importStylesheet(xslDom);
+          fragment = xsltProcessor.transformToFragment(xmlDocument, document);
+         
+          var mydiv = document.createElement("div");
+          var myattb = document.createAttribute("id");
+          myattb.value = "resultDiv";
+          mydiv.setAttributeNode( myattb );
+         
+          mydiv.appendChild(fragment);                   
+          resultDiv.parentNode.replaceChild(mydiv,resultDiv);
+    }else{
+          oldTrBgcolor = null;
+          if (typeof (xmlDocument.transformNode) != "undefined")
+        {
+                strResult = xmlDocument.transformNode(xslDom);
+        } else {
+          try {
+              var xslt = new ActiveXObject("Msxml2.XSLTemplate");
+              var xslDoc = new ActiveXObject("Msxml2.FreeThreadedDOMDocument");
+              xslDoc.load(xslDom);
+              xslt.stylesheet = xslDoc;
+              var xslProc = xslt.createProcessor();
+              xslProc.input = xmlDocument;
+              xslProc.transform();
+              strResult =  xslProc.output;
+            }
+            catch (e) {
+                alert("The type [XSLTProcessor] and the function [XmlDocument.transformNode] are not supported by this browser, can't transform XML document to HTML string!");
+                return null;
+            }
+        }
+          resultDiv.innerHTML = strResult;
+    }
 }
 
 function ajaxReadyStateListener()
