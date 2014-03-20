@@ -767,7 +767,7 @@ function addCalendars() {
          }
          pattern = myPatternElements.join(separator);
          Calendar.setup({
-            inputField  : thisCal[0],   // id of the input field
+            inputField  : thisCal[0] + "_n1",   // id of the input field
 	       	ifFormat    : pattern,   // format of the input field
 	       	daFormat  : pattern
 	    	});
