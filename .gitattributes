@@ -3829,6 +3829,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSiteClipperPro
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewVT220ConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebClippingConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebServiceReferenceWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/SQLQueriesComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/SQLQueriesPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ServiceCodeWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
