@@ -61,7 +61,7 @@ $.extend(true, C8O, {
 	vars: {
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
-		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
+		first_call: "false" /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
 //		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
