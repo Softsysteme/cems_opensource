@@ -34,7 +34,7 @@ import com.twinsoft.convertigo.beans.core.DatabaseObject;
 import com.twinsoft.convertigo.beans.core.ITestCaseContainer;
 import com.twinsoft.convertigo.beans.core.IVariableContainer;
 import com.twinsoft.convertigo.beans.core.MobileApplication;
-import com.twinsoft.convertigo.beans.core.MobileDevice;
+import com.twinsoft.convertigo.beans.core.MobilePlatform;
 import com.twinsoft.convertigo.beans.core.Project;
 import com.twinsoft.convertigo.beans.core.RequestableObject;
 import com.twinsoft.convertigo.beans.core.Sequence;
@@ -47,6 +47,7 @@ import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
 import com.twinsoft.convertigo.engine.enums.Visibility;
+import com.twinsoft.convertigo.engine.util.CachedIntrospector;
 import com.twinsoft.convertigo.engine.util.GenericUtils;
 
 @ServiceDefinition(
@@ -105,12 +106,16 @@ public class GetTestPlatform extends XmlService {
 			String endpoint = mobileApplication.getComputedEndpoint(request);
 			e_mobileApplication.setAttribute("endpoint", endpoint);
 			
+			String version = mobileApplication.getComputedApplicationVersion();
+			e_mobileApplication.setAttribute("applicationVersion", version);
+			
 			e_project.appendChild(e_mobileApplication);
 
-			for (MobileDevice device : mobileApplication.getMobileDeviceList()) {
-				Element e_device = createDatabaseObjectElement(document, device);
-				e_device.setAttribute("classname", device.getClass().getSimpleName());
-				e_device.setAttribute("ressource_path", device.getResourcesPath());
+			for (MobilePlatform platform : mobileApplication.getMobilePlatformList()) {
+				Element e_device = createDatabaseObjectElement(document, platform);
+				e_device.setAttribute("classname", platform.getClass().getSimpleName());
+				e_device.setAttribute("displayName", CachedIntrospector.getBeanInfo(platform.getClass()).getBeanDescriptor().getDisplayName());
+				e_device.setAttribute("packageType", platform.getPackageType());
 				e_mobileApplication.appendChild(e_device);
 				hasMobileDevice = true;
 			}
@@ -121,6 +126,7 @@ public class GetTestPlatform extends XmlService {
 			} catch (Exception e) {
 				Engine.logAdmin.error("Failed to retrieve the application mobile name", e);
 			}
+			
 		}
 		
 		root.appendChild(e_project);
