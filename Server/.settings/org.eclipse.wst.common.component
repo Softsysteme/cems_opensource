@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="ConvertigoServer">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
@@ -77,9 +77,6 @@
         <dependent-module archiveName="xmlgraphics-commons-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="backport-util-concurrent-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/backport/backport-util-concurrent-3.1.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
         <dependent-module archiveName="xercesImpl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/xerces-2_11_0/xercesImpl.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
@@ -152,25 +149,31 @@
         <dependent-module archiveName="ctgclient.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/ctgclient.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="antlr-2.7.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/antlr-2.7.6.jar">
+        <dependent-module archiveName="antlr-2.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/antlr-2.7.7.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="hibernate-jpa-2.0-api-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar">
+        <dependent-module archiveName="hibernate-commons-annotations-4.0.4.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/hibernate-commons-annotations-4.0.4.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="hibernate3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/hibernate3.jar">
+        <dependent-module archiveName="hibernate-core-4.3.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/hibernate-core-4.3.1.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="javassist-3.12.0.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/javassist-3.12.0.GA.jar">
+        <dependent-module archiveName="hibernate-jpa-2.1-api-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/hibernate-jpa-2.1-api-1.0.0.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="jta-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/jta-1.1.jar">
+        <dependent-module archiveName="jandex-1.1.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/jandex-1.1.0.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="slf4j-api-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/slf4j-api-1.6.1.jar">
+        <dependent-module archiveName="javassist-3.18.1-GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/javassist-3.18.1-GA.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="slf4j-nop-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/slf4j-nop-1.6.1.jar">
+        <dependent-module archiveName="jboss-logging-3.1.3.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/jboss-logging-3.1.3.GA.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-annotations-1.2.0.Beta1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/jboss-logging-annotations-1.2.0.Beta1.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-transaction-api_1.2_spec-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/hibernate/jboss-transaction-api_1.2_spec-1.0.0.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="tas-v25667.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.1.x/lib/internal/tas-v25667.jar">

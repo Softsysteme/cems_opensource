@@ -356,8 +356,6 @@ Studio/lib/axis2-1.6.2/lib/xml-resolver-1.2.jar -text
 Studio/lib/axis2-1.6.2/lib/xml-resolver-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/xmlbeans-2.3.0.jar -text
 Studio/lib/axis2-1.6.2/lib/xmlbeans-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/backport/backport-util-concurrent-3.1.jar -text
-Studio/lib/backport/backport-util-concurrent-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/commons-collections-3.1.jar -text
 Studio/lib/ctgclient.jar -text
 Studio/lib/db2jcc-licence.jar -text
@@ -4952,7 +4950,6 @@ Studio/tomcat/webapps/convertigo/licenses/MPL-1.1.txt -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/licenses/OTN.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/aviva.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/axis.txt -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/licenses/backport-util-concurrent-LICENSE.txt -text
 Studio/tomcat/webapps/convertigo/licenses/bcel.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/licenses/dom4j.txt -text
 Studio/tomcat/webapps/convertigo/licenses/hsqldb.txt -text svneol=unset#text/plain
