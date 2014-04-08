@@ -136,7 +136,6 @@ Studio/icons/studio/excel.gif -text
 Studio/icons/studio/expand_all_nodes.gif -text
 Studio/icons/studio/explorer.gif -text
 Studio/icons/studio/find.gif -text
-Studio/icons/studio/flex_color_32x32.gif -text
 Studio/icons/studio/greenscreen.gif -text
 Studio/icons/studio/handle_data_stable.gif -text
 Studio/icons/studio/handlers_other.gif -text
@@ -1233,44 +1232,6 @@ Studio/projects/sample_sequencer/sample_sequencer.xsd -text svneol=unset#text/pl
 Studio/projects/template_CICS/template_CICS.wsdl -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.xml -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.xsd -text svneol=unset#text/plain
-Studio/projects/template_FLEX/.actionScriptProperties -text
-Studio/projects/template_FLEX/.flexProperties -text
-Studio/projects/template_FLEX/.project -text svneol=unset#text/plain
-Studio/projects/template_FLEX/.settings/com.adobe.flexbuilder.project.prefs -text svneol=unset#text/plain
-Studio/projects/template_FLEX/.settings/org.eclipse.ltk.core.refactoring.prefs -text svneol=unset#text/plain
-Studio/projects/template_FLEX/build.xml -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/AC_OETags.js -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/history/history.css -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/history/history.js -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/history/historyFrame.html -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/index.template.html -text svneol=unset#text/plain
-Studio/projects/template_FLEX/html-template/playerProductInstall.swf -text
-Studio/projects/template_FLEX/index.html -text
-Studio/projects/template_FLEX/js/AC_OETags.js -text svneol=unset#text/plain
-Studio/projects/template_FLEX/js/history/history.css -text svneol=unset#text/plain
-Studio/projects/template_FLEX/js/history/history.js -text svneol=unset#text/plain
-Studio/projects/template_FLEX/js/history/historyFrame.html -text svneol=unset#text/plain
-Studio/projects/template_FLEX/src/ConvertiFlexRun.mxml -text svneol=unset#text/plain
-Studio/projects/template_FLEX/src/skins/C8oButtonSkin.mxml -text
-Studio/projects/template_FLEX/src/skins/C8oDropDownListItemRenderer.mxml -text
-Studio/projects/template_FLEX/src/skins/C8oDropDownListSkin.mxml -text
-Studio/projects/template_FLEX/src/skins/C8oTextInputSkin.mxml -text svneol=unset#text/plain
-Studio/projects/template_FLEX/src/skins/ImageButtonSkin.mxml -text svneol=unset#text/plain
-Studio/projects/template_FLEX/template_FLEX.wsdl -text svneol=unset#text/plain
-Studio/projects/template_FLEX/template_FLEX.xml -text svneol=unset#text/plain
-Studio/projects/template_FLEX/template_FLEX.xsd -text svneol=unset#text/plain
-Studio/projects/template_FLEX/themes/c8o/images/background.jpg -text
-Studio/projects/template_FLEX/themes/c8o/images/gridColonsSeparator.jpg -text
-Studio/projects/template_FLEX/themes/c8o/images/loading.swf -text
-Studio/projects/template_FLEX/themes/c8o/styleskin.css -text svneol=unset#text/plain
-Studio/projects/template_FLEX/themes/flex/images/background.jpg -text
-Studio/projects/template_FLEX/themes/flex/images/gridColonsSeparator.jpg -text
-Studio/projects/template_FLEX/themes/flex/images/loading.swf -text
-Studio/projects/template_FLEX/themes/flex/styleskin.css -text svneol=unset#text/plain
-Studio/projects/template_FLEX/themes/legacy/images/background.jpg -text
-Studio/projects/template_FLEX/themes/legacy/images/gridColonsSeparator.jpg -text
-Studio/projects/template_FLEX/themes/legacy/images/loading.swf -text
-Studio/projects/template_FLEX/themes/legacy/styleskin.css -text svneol=unset#text/plain
 Studio/projects/template_HTTP/template_HTTP.wsdl -text svneol=unset#text/plain
 Studio/projects/template_HTTP/template_HTTP.xml -text svneol=unset#text/plain
 Studio/projects/template_HTTP/template_HTTP.xsd -text svneol=unset#text/plain
@@ -3755,12 +3716,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ConfigureSQLConne
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ConfigureSQLConnectorPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/EmulatorTechnologyWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270ConnectorWizard.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270FlexWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270GSWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270MobileWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New3270WebWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250ConnectorWizard.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250FlexWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250GSWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250MobileWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/New5250WebWizard.java -text
@@ -5025,7 +4984,6 @@ Studio/tomcat/webapps/convertigo/scripts/common.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/contextMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/cookies.js -text
 Studio/tomcat/webapps/convertigo/scripts/flashupdate.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/flexlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/keyboard.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapdku.js -text

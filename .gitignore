@@ -134,11 +134,6 @@ Studio/projects/template_CICS/_data
 Studio/projects/template_CICS/_private
 Studio/projects/template_CICS/template_CICS.temp.wsdl
 Studio/projects/template_CICS/template_CICS.temp.xsd
-Studio/projects/template_FLEX/*.temp.wsdl
-Studio/projects/template_FLEX/*.temp.xsd
-Studio/projects/template_FLEX/_data
-Studio/projects/template_FLEX/_private
-Studio/projects/template_FLEX/bin
 Studio/projects/template_HTTP/.project
 Studio/projects/template_HTTP/Traces
 Studio/projects/template_HTTP/_data
