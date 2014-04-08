@@ -5054,6 +5054,7 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/config.xml
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/icon.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/img/favicon.ico -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
