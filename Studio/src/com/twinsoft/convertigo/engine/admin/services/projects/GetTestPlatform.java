@@ -46,6 +46,7 @@ import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
+import com.twinsoft.convertigo.engine.enums.Accessibility;
 import com.twinsoft.convertigo.engine.enums.Visibility;
 import com.twinsoft.convertigo.engine.util.CachedIntrospector;
 import com.twinsoft.convertigo.engine.util.GenericUtils;
@@ -96,8 +97,7 @@ public class GetTestPlatform extends XmlService {
 		}
 		
 		MobileApplication mobileApplication = project.getMobileApplication();
-		boolean hasMobileDevice = mobileApplication != null;
-		if (hasMobileDevice) {
+		if (mobileApplication != null && (mobileApplication.getAccessibilityEnum() == Accessibility.Public || bAdminRole)) {
 			Element e_mobileApplication = createDatabaseObjectElement(document, mobileApplication);
 			
 			String applicationID = mobileApplication.getComputedApplicationId();
@@ -117,7 +117,6 @@ public class GetTestPlatform extends XmlService {
 				e_device.setAttribute("displayName", CachedIntrospector.getBeanInfo(platform.getClass()).getBeanDescriptor().getDisplayName());
 				e_device.setAttribute("packageType", platform.getPackageType());
 				e_mobileApplication.appendChild(e_device);
-				hasMobileDevice = true;
 			}
 		
 			try {
