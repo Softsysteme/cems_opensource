@@ -1444,9 +1444,9 @@ Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
-Studio/projects/template_sequence/template_sequence.wsdl -text svneol=unset#text/plain
 Studio/projects/template_sequence/template_sequence.xml -text svneol=unset#text/plain
-Studio/projects/template_sequence/template_sequence.xsd -text svneol=unset#text/plain
+Studio/projects/template_sequence/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_sequence/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/template_siteClipper/template_siteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/template_siteClipper/template_siteClipper.xml -text svneol=unset#text/plain
 Studio/projects/template_siteClipper/template_siteClipper.xsd -text svneol=unset#text/plain
