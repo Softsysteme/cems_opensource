@@ -1273,9 +1273,9 @@ Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset
 Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text
 Studio/projects/template_interactionHub/hub/default_hub.html -text svneol=unset#text/plain
 Studio/projects/template_interactionHub/hub/default_hub.xml -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/template_interactionHub.wsdl -text svneol=unset#text/plain
 Studio/projects/template_interactionHub/template_interactionHub.xml -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/template_interactionHub.xsd -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_interactionHub/xsd/template_interactionHub.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelin/css/calendar-system.css -text
 Studio/projects/template_javelin/css/exception.css -text
 Studio/projects/template_javelin/css/mashupUtils.css -text
