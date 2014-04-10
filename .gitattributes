@@ -1415,9 +1415,7 @@ Studio/projects/template_javelinDKU/scripts/selectMenu.js -text
 Studio/projects/template_javelinDKU/scripts/tooltip.js -text
 Studio/projects/template_javelinDKU/scripts/xmlparse.js -text
 Studio/projects/template_javelinDKU/sna.xsl -text
-Studio/projects/template_javelinDKU/template_javelinDKU.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelinDKU/template_javelinDKU.xml -text svneol=unset#text/plain
-Studio/projects/template_javelinDKU/template_javelinDKU.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinDKU/templates/activewidgettable.xsl -text
 Studio/projects/template_javelinDKU/templates/checkbox.xsl -text
 Studio/projects/template_javelinDKU/templates/choice.xsl -text
@@ -1435,6 +1433,8 @@ Studio/projects/template_javelinDKU/templates/tabbox.xsl -text
 Studio/projects/template_javelinDKU/templates/table-mod.xsl -text
 Studio/projects/template_javelinDKU/templates/table.xsl -text
 Studio/projects/template_javelinDKU/variables.xsl -text
+Studio/projects/template_javelinDKU/xsd/internal/javelinDKUTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelinDKU/xsd/template_javelinDKU.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
