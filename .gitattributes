@@ -1435,9 +1435,9 @@ Studio/projects/template_javelinDKU/templates/table.xsl -text
 Studio/projects/template_javelinDKU/variables.xsl -text
 Studio/projects/template_javelinDKU/xsd/internal/javelinDKUTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinDKU/xsd/template_javelinDKU.xsd -text svneol=unset#text/plain
-Studio/projects/template_javelinIntegration/template_javelinIntegration.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
-Studio/projects/template_javelinIntegration/template_javelinIntegration.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelinIntegration/xsd/internal/javelinIntegrationTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelinIntegration/xsd/template_javelinIntegration.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
