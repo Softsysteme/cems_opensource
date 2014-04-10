@@ -1338,9 +1338,7 @@ Studio/projects/template_javelin/scripts/selectMenu.js -text
 Studio/projects/template_javelin/scripts/tooltip.js -text
 Studio/projects/template_javelin/scripts/xmlparse.js -text
 Studio/projects/template_javelin/sna.xsl -text
-Studio/projects/template_javelin/template_javelin.wsdl -text svneol=unset#text/plain
 Studio/projects/template_javelin/template_javelin.xml -text svneol=unset#text/plain
-Studio/projects/template_javelin/template_javelin.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelin/templates/activewidgettable.xsl -text
 Studio/projects/template_javelin/templates/buttonsPanel.xsl -text
 Studio/projects/template_javelin/templates/checkbox.xsl -text
@@ -1365,6 +1363,8 @@ Studio/projects/template_javelin/templates/tabbox.xsl -text
 Studio/projects/template_javelin/templates/table-mod.xsl -text
 Studio/projects/template_javelin/templates/table.xsl -text
 Studio/projects/template_javelin/variables.xsl -text
+Studio/projects/template_javelin/xsd/internal/javelinTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/template_javelin/xsd/template_javelin.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinDKU/css/calendar-system.css -text
 Studio/projects/template_javelinDKU/css/exception.css -text
 Studio/projects/template_javelinDKU/css/sna.css -text
