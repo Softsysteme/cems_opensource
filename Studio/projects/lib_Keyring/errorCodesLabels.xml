@@ -134,23 +134,23 @@
 	</erreur>
 	<erreur>
 		<code>33</code>
-		<label></label>
+		<label>Unable to disable user</label>
 	</erreur>
 	<erreur>
 		<code>34</code>
-		<label></label>
+		<label>Error while creating "application" table in database</label>
 	</erreur>
 	<erreur>
 		<code>35</code>
-		<label></label>
+		<label>Error while creating "user" table in database</label>
 	</erreur>
 	<erreur>
 		<code>36</code>
-		<label></label>
+		<label>Error while creating "keychain" table in database</label>
 	</erreur>
 	<erreur>
 		<code>37</code>
-		<label></label>
+		<label>Error while performing tables initialization</label>
 	</erreur>
 	<erreur>
 		<code>100</code>
@@ -183,5 +183,13 @@
 	<erreur>
 		<code>107</code>
 		<label>Missing at least one of the two parameters username or password</label>
+	</erreur>
+	<erreur>
+		<code>108</code>
+		<label>Missing application parameter</label>
+	</erreur>
+	<erreur>
+		<code>109</code>
+		<label>Missing user parameter</label>
 	</erreur>
 </document>
