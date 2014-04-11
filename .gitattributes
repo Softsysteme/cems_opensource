@@ -1265,9 +1265,9 @@ Studio/projects/template_SQL_jQueryWeb/html/js/jquery-ui-1.8.18.custom.min.js -t
 Studio/projects/template_SQL_jQueryWeb/images/convertigo-small.gif -text
 Studio/projects/template_SQL_jQueryWeb/index.html -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/js/custom.js -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.wsdl -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xml -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xsd -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_SQL_jQueryWeb/xsd/template_SQL_jQueryWeb.xsd -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.wsdl -text
 Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text
