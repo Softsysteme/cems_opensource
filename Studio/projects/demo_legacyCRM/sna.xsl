@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:lxslt="http://xml.apache.org/xslt" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output encoding="UTF-8" indent="no" media-type="text/html" method="html"/>
 
@@ -103,7 +103,7 @@
 						<img border="0" src="../../images/convertigo.gif"/>
 					</a>
 					<br/>
-					<font size="-1">Copyright © 2001-2011 Convertigo SA. All rights reserved.</font>
+					<font size="-1">Copyright Â© 2001-2011 Convertigo SA. All rights reserved.</font>
 				</p>
 			</body>
 		</html>
@@ -111,7 +111,7 @@
 	<xsl:template match="job">
 		<p>
 			<b>La transaction (job #<xsl:value-of select="@id"/>) est en cours 
-				d'éxécution ; veuillez patienter...</b>
+				d'Ã©xÃ©cution ; veuillez patienter...</b>
 		</p>
 		<p>
 			<xsl:apply-templates/>
@@ -746,7 +746,7 @@
 							<!--xsl:if test="number(translate(.,',.','.0'))=number(translate(.,',.','.0'))">
 								<xsl:attribute name="align">right</xsl:attribute>
 							</xsl:if-->
-							<xsl:if test="string-length(.) = 0"> </xsl:if>
+							<xsl:if test="string-length(.) = 0">Â </xsl:if>
 							<xsl:if test="string-length(.) != 0">
 								<!-- Container SPAN. Used only for positioning and framework behaviour -->
 								<span onclick="spanClick(this, {@column}, {@line})" ondblclick="spanClick(this, {@column}, {@line}); doAction('KEY_ENTER');" style="white-space: nowrap">
@@ -755,7 +755,7 @@
 										<!-- Foreground color style SPAN -->
 										<span class="color{@foreground}">
 											<span class="tableText">
-												<xsl:value-of select="."/> 
+												<xsl:value-of select="."/>Â 
 											</span>
 										</span>
 									</span>
@@ -771,7 +771,7 @@
 	<!-- TEMPLATE TITLE -->
 	<xsl:template match="Title" priority="1">
 		<td class="datatitle" onclick="onSortClicTD({position()})" style="width:{round(@size * $coefx)}px;height:{../../@titleheight * $coefy}px;" valign="center">
-			<xsl:if test="string-length(.) = 0"> </xsl:if>
+			<xsl:if test="string-length(.) = 0">Â </xsl:if>
 			<xsl:if test="string-length(.) != 0">
 				<xsl:for-each select="block">
 					<span class="datatitle">
@@ -1004,7 +1004,7 @@
 							<!--xsl:if test="number(translate(.,',.','.0'))=number(translate(.,',.','.0'))">
 								<xsl:attribute name="align">right</xsl:attribute>
 							</xsl:if-->
-							<xsl:if test="string-length(.) = 0"> </xsl:if>
+							<xsl:if test="string-length(.) = 0">Â </xsl:if>
 							<xsl:if test="string-length(.) != 0">
 								<!-- Container SPAN. Used only for positioning and framework behaviour -->
 								<span onclick="spanClick(this, {@column}, {@line})" ondblclick="spanClick(this, {@column}, {@line}); doAction('KEY_ENTER');" style="white-space: nowrap">
@@ -1013,7 +1013,7 @@
 										<!-- Foreground color style SPAN -->
 										<span class="color{@foreground}">
 											<span class="tableText">
-												<xsl:value-of select="."/> 
+												<xsl:value-of select="."/>Â 
 											</span>
 										</span>
 									</span>
@@ -1029,7 +1029,7 @@
 	<!-- TEMPLATE TITLE -->
 	<xsl:template match="Title" priority="1">
 		<td class="datatitle" onclick="onSortClicTD({position()})" style="width:{round(@size * $coefx)}px;height:{../../@titleheight * $coefy}px;" valign="center">
-			<xsl:if test="string-length(.) = 0"> </xsl:if>
+			<xsl:if test="string-length(.) = 0">Â </xsl:if>
 			<xsl:if test="string-length(.) != 0">
 				<xsl:for-each select="block">
 					<span class="datatitle">
@@ -1082,12 +1082,12 @@
 					<xsl:if test="@selected = 'true'">
 						<input checked="true" id="{../@name}_r" name="{../@name}_r" onclick="document.javelin_form.{../@name}.value = '{@value}'" type="radio" value="{@value}"/>
 						<xsl:value-of select="@value"/>
-						 
+						Â 
 					</xsl:if>
 					<xsl:if test="string-length(@selected) = 0">
 						<input id="{../@name}_r" name="{../@name}_r" onclick="document.javelin_form.{../@name}.value = '{@value}'" type="radio" value="{@value}"/>
 						<xsl:value-of select="@value"/>
-						 
+						Â 
 					</xsl:if>
 				</xsl:for-each>
 			</span>
@@ -1152,20 +1152,20 @@
 						<tbody>
 							<tr>
 								<xsl:for-each select="tabBox/*[@type='tabBoxItem']">
-									<td class="tabSpacer"> </td>
+									<td class="tabSpacer">Â </td>
 									<xsl:choose>
 										<xsl:when test="./@selected = 'true'">
-											<td class="selectedTab"> <xsl:value-of select="."/> </td>
+											<td class="selectedTab">Â <xsl:value-of select="."/>Â </td>
 										</xsl:when>
 										<xsl:otherwise>
-											<td class="unselectedTab" onclick="currentFieldOnFocus='__field_c{./@column}_l{./@line}'; doAction('KEY_NPTUI');"> <xsl:value-of select="."/> </td>
+											<td class="unselectedTab" onclick="currentFieldOnFocus='__field_c{./@column}_l{./@line}'; doAction('KEY_NPTUI');">Â <xsl:value-of select="."/>Â </td>
 										</xsl:otherwise>
 									</xsl:choose>
 								</xsl:for-each>
-								<td class="tabSpacer" width="100%"> </td>
+								<td class="tabSpacer" width="100%">Â </td>
 							</tr>
 							<tr style="height: 100%">
-								<td class="openedTab" colspan="{count(tabBox/block)*2 + 1}"> </td>
+								<td class="openedTab" colspan="{count(tabBox/block)*2 + 1}">Â </td>
 							</tr>
 						</tbody>
 					</table>

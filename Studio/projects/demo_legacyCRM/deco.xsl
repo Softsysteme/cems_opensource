@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:lxslt="http://xml.apache.org/xslt">
 	<xsl:output method="html" indent="no" media-type="text/html" encoding="UTF-8" />
@@ -64,7 +64,7 @@
 					<input type="hidden" id="cursorColumn" value="{/document/@cursorColumn}"/>
 					<input type="hidden" id="cursorLine" value="{/document/@cursorLine}"/>
 					<div id="decodiv" style="position: absolute; top: 300px; left: 300px;">
-						Vous avez bien quitté l'application. Merci.
+						Vous avez bien quittÃ© l'application. Merci.
 					</div>
 				</xsl:for-each>
 				<input type="hidden" name="__javelin_current_field" id="__javelin_current_field"/>
