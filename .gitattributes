@@ -789,9 +789,7 @@ Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentCreateOrUp
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/ViewGet.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/lib_CouchDB.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
-Studio/projects/lib_GoogleDocs/lib_GoogleDocs.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xml -text svneol=unset#text/plain
-Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/newRecord.xsl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/newRow.xml -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/newRow.xsl -text svneol=unset#text/plain
@@ -800,6 +798,10 @@ Studio/projects/lib_GoogleDocs/template/newWorksheet.xml -text svneol=unset#text
 Studio/projects/lib_GoogleDocs/template/newWorksheet.xsl -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/tableData.xml -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/tableData.xsl -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/xsd/internal/GoogleDocsConnector/Login.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/xsd/internal/GoogleDocsConnector/RetreiveDocumentList.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/xsd/internal/GoogleDocsConnector/SearchDocuments.xsd -text svneol=unset#text/plain
+Studio/projects/lib_GoogleDocs/xsd/lib_GoogleDocs.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/.project -text
 Studio/projects/lib_GoogleMaps/css/custom.css -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/index.html -text
