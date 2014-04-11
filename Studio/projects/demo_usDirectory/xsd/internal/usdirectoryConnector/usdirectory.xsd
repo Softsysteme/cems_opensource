@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:demo_usDirectory_ns="http://www.convertigo.com/convertigo/projects/demo_usDirectory" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/demo_usDirectory">
+    <element name="usdirectoryConnector__usdirectory" type="demo_usDirectory_ns:usdirectoryConnector__usdirectoryRequestData">
+        <annotation/>
+    </element>
+    <complexType name="usdirectoryConnector__usdirectoryRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="usdirectoryConnector__usdirectoryResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="demo_usDirectory_ns:usdirectoryConnector__usdirectoryResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="usdirectoryConnector__usdirectoryResponseData">
+        <sequence>
+            <element minOccurs="0" name="error" type="demo_usDirectory_ns:ConvertigoError"/>
+            <element minOccurs="0" name="error" type="demo_usDirectory_ns:errorTextType"/>
+            <element minOccurs="0" name="errorMessage" type="demo_usDirectory_ns:errorMessageTextType"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="results" type="demo_usDirectory_ns:resultsTableType"/>
+        </sequence>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="errorTextType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="referer" type="string" use="optional"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="errorMessageTextType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="referer" type="string" use="optional"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="resultsTableType">
+        <sequence>
+            <element minOccurs="0" name="item" type="demo_usDirectory_ns:item_resultsRowType"/>
+        </sequence>
+        <attribute name="referer" type="string" use="optional"/>
+    </complexType>
+    <complexType name="item_resultsRowType">
+        <sequence>
+            <element minOccurs="0" name="name" type="string"/>
+            <element minOccurs="0" name="address" type="string"/>
+        </sequence>
+    </complexType>
+    <complexType name="usdirectoryConnector__usdirectoryResponseType">
+        <sequence>
+            <element name="document" type="demo_usDirectory_ns:usdirectoryConnector__usdirectoryResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="demo_usDirectory_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="demo_usDirectory_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>

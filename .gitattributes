@@ -633,9 +633,7 @@ Studio/projects/demo_mashup/xsd/demo_mashup.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/xsd/internal/Void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/css/custom.css -text svneol=unset#text/plain
-Studio/projects/demo_usDirectory/demo_usDirectory.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/demo_usDirectory.xml -text svneol=unset#text/plain
-Studio/projects/demo_usDirectory/demo_usDirectory.xsd -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/displaylogo.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/img/close_window.png -text
 Studio/projects/demo_usDirectory/img/e_back.gif -text
@@ -650,6 +648,10 @@ Studio/projects/demo_usDirectory/img/salesforce_logo.gif -text
 Studio/projects/demo_usDirectory/img/title.png -text
 Studio/projects/demo_usDirectory/img/toERPicon.png -text
 Studio/projects/demo_usDirectory/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsd/demo_usDirectory.xsd -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsd/internal/usdirectoryConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsd/internal/usdirectoryConnector/usdSearchByName.xsd -text svneol=unset#text/plain
+Studio/projects/demo_usDirectory/xsd/internal/usdirectoryConnector/usdirectory.xsd -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/.project -text svneol=unset#text/plain
