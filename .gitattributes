@@ -602,9 +602,7 @@ Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/makecsv.xsd -text
 Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/refreshCRM.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/css/custom.css -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo.html -text svneol=unset#text/plain
-Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
-Studio/projects/demo_mashup/demo_mashup.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/images/header-flex.jpg -text
 Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
 Studio/projects/demo_mashup/resources/bg_center.png -text
@@ -621,6 +619,8 @@ Studio/projects/demo_mashup/resources/header.jpg -text
 Studio/projects/demo_mashup/resources/logo-convertigo-184x75.jpg -text
 Studio/projects/demo_mashup/resources/picto_crayon.jpg -text
 Studio/projects/demo_mashup/resources/picto_ecran.jpg -text
+Studio/projects/demo_mashup/xsd/demo_mashup.xsd -text svneol=unset#text/plain
+Studio/projects/demo_mashup/xsd/internal/Void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/css/custom.css -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/demo_usDirectory.wsdl -text svneol=unset#text/plain
