@@ -22,15 +22,15 @@
 							<tr>
 								<td class="texte" colspan="2">
 									Please click on the following button to launch the demo initialization.
-									<br/> The initialization will insert demo leads to your SalesForce account 
+									<br/> The initialization will insert demo leads to the SalesForce account 
 									and will create a demo view to display these leads.
 									<br/> This process will take several minutes.
 									<br/>
 								</td>
 							</tr>
 							<tr>
-								<td align="left"><input type="image"  src="img/btn_initialize.png" alt="Initialize" name="Initialize" value="Initialize" onclick="initializeDemo();"/></td>
-								<td align="left"><input type="image"  src="img/btn_continue.png" alt="Continue" name="Continue" value="Continue" onclick="C8O.doMashupEvent('InitializationFinished');"/></td>
+								<td align="left"><img src="img/btn_initialize_disabled.png" title="Initialize button is disabled in the demo because the Leads Initialization is performed every day by a Scheduler in our Convertigo server." alt="Initialize button is disabled in the demo because the Leads Initialization is performed every day by a Scheduler in our Convertigo server." name="Initialize" value="Initialize"/></td>
+								<td align="left"><input type="image"  src="img/btn_continue.png" title="Continue" alt="Continue" name="Continue" value="Continue" onclick="C8O.doMashupEvent('InitializationFinished');"/></td>
 							</tr>
 						</table>
 					</td>

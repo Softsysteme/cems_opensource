@@ -468,6 +468,7 @@ Studio/projects/demo_SalesForce/donothing.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/img/ascending.png -text
 Studio/projects/demo_SalesForce/img/btn_continue.png -text
 Studio/projects/demo_SalesForce/img/btn_initialize.png -text
+Studio/projects/demo_SalesForce/img/btn_initialize_disabled.png -text
 Studio/projects/demo_SalesForce/img/close_window.png -text
 Studio/projects/demo_SalesForce/img/crm.png -text
 Studio/projects/demo_SalesForce/img/descending.png -text
