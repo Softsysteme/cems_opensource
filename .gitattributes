@@ -460,9 +460,7 @@ Studio/projects/demo_SalesForce/css/common.css -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/css/custom.css -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/css/dStandard.css -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/css/elements.css -text svneol=unset#text/plain
-Studio/projects/demo_SalesForce/demo_SalesForce.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/demo_SalesForce.xml -text svneol=unset#text/plain
-Studio/projects/demo_SalesForce/demo_SalesForce.xsd -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/detailsContact.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/donothing.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/img/ascending.png -text
@@ -486,6 +484,17 @@ Studio/projects/demo_SalesForce/img/question.png -text
 Studio/projects/demo_SalesForce/img/title.png -text
 Studio/projects/demo_SalesForce/js/custom.js -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/searchResults.xsl -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/demo_SalesForce.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/ChangeLanguage.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/CreateCampaign.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/CreateLeadsView.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/EditLead.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/EmptyLeadsView.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/GoLeads.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/InitializeDemo.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/InsertLead.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/Login.xsd -text svneol=unset#text/plain
+Studio/projects/demo_SalesForce/xsd/internal/SalesForceConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/changeLanguage.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/createCampaign.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/xsl/createLeadsView.xsl -text svneol=unset#text/plain
