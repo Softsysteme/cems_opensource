@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_GoogleMaps_ns="http://www.convertigo.com/convertigo/projects/lib_GoogleMaps" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_GoogleMaps">
+    <xsd:element name="GoogleMapsConnector__ShowMap" type="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[This is the first transaction to call. It will result in displaying a GoogleMaps widget centered on the location provided, with the specified parameters.
+]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="GoogleMapsConnector__ShowMapRequestData">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[This is the first transaction to call. It will result in displaying a GoogleMaps widget centered on the location provided, with the specified parameters.
+]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Location" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Location</xsd:appinfo>
+                    <xsd:documentation><![CDATA[Specify here a 'Google Compatible' address. This can be any like 'San Francisco', or 'Market street, San Francisco'
+]]></xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Zoom" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Zoom factor</xsd:appinfo>
+                    <xsd:documentation><![CDATA[Zoom factor to be used
+
+
+]]></xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Height" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Widget height</xsd:appinfo>
+                    <xsd:documentation><![CDATA[Height in Pixels
+]]></xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GoogleMapsConnector__ShowMapResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="GoogleMapsConnector__ShowMapResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="lib_GoogleMaps_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:string"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="GoogleMapsConnector__ShowMapResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="lib_GoogleMaps_ns:GoogleMapsConnector__ShowMapResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="lib_GoogleMaps_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="lib_GoogleMaps_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>
