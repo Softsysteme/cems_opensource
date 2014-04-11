@@ -780,7 +780,6 @@ Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableRights.xsd -text 
 Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableUsers.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/xsd/lib_Keyring.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/.project -text svneol=unset#text/plain
-Studio/projects/lib_CouchDB/_private/lib_CouchDB__lib_CouchDBConnector__DocumentCreateOrUpdate -text
 Studio/projects/lib_CouchDB/css/custom.css -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/index.html -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/js/custom.js -text svneol=unset#text/plain
@@ -5045,6 +5044,7 @@ Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/sharepoint.js -text svne
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/siteclipper.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/standalone.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_wrapper.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/templates/base/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
