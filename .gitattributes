@@ -503,9 +503,7 @@ Studio/projects/demo_legacyCRM/css/sna.css -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/css/tooltip.css -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/datascsv.xls -text
 Studio/projects/demo_legacyCRM/deco.xsl -text svneol=unset#text/plain
-Studio/projects/demo_legacyCRM/demo_legacyCRM.wsdl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/demo_legacyCRM.xml -text svneol=unset#text/plain
-Studio/projects/demo_legacyCRM/demo_legacyCRM.xsd -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/editClient.xsl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/error.xsl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/images/arrow-right-double.png -text
@@ -596,6 +594,12 @@ Studio/projects/demo_legacyCRM/templates/table-mod.xsl -text svneol=unset#text/p
 Studio/projects/demo_legacyCRM/templates/table.xsl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/templates/tablex.xsl -text svneol=unset#text/plain
 Studio/projects/demo_legacyCRM/variables.xsl -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/demo_legacyCRM.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/editClientCRM.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/loginCRM.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/makecsv.xsd -text svneol=unset#text/plain
+Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/refreshCRM.xsd -text svneol=unset#text/plain
 Studio/projects/demo_mashup/css/custom.css -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo.html -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.wsdl -text svneol=unset#text/plain
