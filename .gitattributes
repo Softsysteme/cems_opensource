@@ -1259,9 +1259,13 @@ Studio/projects/sample_documentation_CMC/sample_documentation_CMC.xml -text svne
 Studio/projects/sample_documentation_CMC/xsd/internal/Void/DefaultHub.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/xsd/sample_documentation_CMC.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMS/databaseUtils/empty[!!-~]database[!!-~]creation[!!-~]script.sql -text
-Studio/projects/sample_documentation_CMS/sample_documentation_CMS.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMS/sample_documentation_CMS.xml -text svneol=unset#text/plain
-Studio/projects/sample_documentation_CMS/sample_documentation_CMS.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/internal/DatabaseConnector/InsertArticle.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/internal/DatabaseConnector/InsertWebSite.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/internal/DatabaseConnector/SelectAllArticles.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/internal/DatabaseConnector/SelectArticles.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/internal/DatabaseConnector/defaultTransactionToBeConfigured.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMS/xsd/sample_documentation_CMS.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CWC/results.xsl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CWC/sample_documentation_CWC.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CWC/sample_documentation_CWC.xml -text svneol=unset#text/plain
