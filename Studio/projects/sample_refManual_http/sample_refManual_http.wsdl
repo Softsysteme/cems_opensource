@@ -3,12 +3,12 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_http"><xsd:include schemaLocation="sample_refManual_http.xsd"/></xsd:schema>
   </wsdl:types>
-  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
-    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetDepartmentRequest">
     <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartment">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetDepartmentResponse">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetEmployeeResponse">
@@ -19,16 +19,24 @@
     <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsListResponse">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myDepartmentsListRequest">
-    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsList">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="globalCompany_HR_WS_RESTconnector__myEmployeesListResponse">
     <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesListResponse">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__myDepartmentsListRequest">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myDepartmentsList">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="globalCompany_HR_WS_RESTconnector__myEmployeesListRequest">
     <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myEmployeesList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2Response">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__testResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2Request">
+    <wsdl:part name="parameters" element="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__test">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="globalCompany_HR_WS_RESTconnector__myGetEmployeeRequest">
@@ -62,6 +70,13 @@
       <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployeeRequest">
     </wsdl:input>
       <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__myGetEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <wsdl:input message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__testRequest">
+    </wsdl:input>
+      <wsdl:output message="sample_refManual_http_ns:globalCompany_HR_WS_RESTconnector__testResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -100,6 +115,16 @@
     <wsdl:operation name="globalCompany_HR_WS_RESTconnector__myGetEmployee">
 <wsdl:documentation/>
       <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__myGetEmployee"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="globalCompany_HR_WS_RESTconnector__testHttpTransaction_2">
+<wsdl:documentation><![CDATA[]]></wsdl:documentation>
+      <soap:operation soapAction="sample_refManual_http?globalCompany_HR_WS_RESTconnector__test"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
