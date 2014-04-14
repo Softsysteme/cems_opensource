@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sample_refManual_webClipper_ns="http://www.convertigo.com/convertigo/projects/sample_refManual_webClipper" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_refManual_webClipper">
+    <element name="convertigoWebSiteConnector__goToConvertigoCloudProductPage" type="sample_refManual_webClipper_ns:convertigoWebSiteConnector__goToConvertigoCloudProductPageRequestData">
+        <annotation/>
+    </element>
+    <complexType name="convertigoWebSiteConnector__goToConvertigoCloudProductPageRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="convertigoWebSiteConnector__goToConvertigoCloudProductPageResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="sample_refManual_webClipper_ns:convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseData">
+        <sequence>
+            <element minOccurs="0" name="error" type="sample_refManual_webClipper_ns:ConvertigoError"/>
+            <any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+        </sequence>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseType">
+        <sequence>
+            <element name="document" type="sample_refManual_webClipper_ns:convertigoWebSiteConnector__goToConvertigoCloudProductPageResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_refManual_webClipper_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="sample_refManual_webClipper_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>
