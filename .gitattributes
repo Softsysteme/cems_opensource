@@ -1152,11 +1152,11 @@ Studio/projects/sample_database_HSQLDB/sample_database_HSQLDB.xml -text svneol=u
 Studio/projects/sample_database_HSQLDB/xsd/internal/databaseConnector/selectAllFromAVariableTable.xsd -text svneol=unset#text/plain
 Studio/projects/sample_database_HSQLDB/xsd/sample_database_HSQLDB.xsd -text svneol=unset#text/plain
 Studio/projects/sample_database_XLS/.project -text svneol=unset#text/plain
-Studio/projects/sample_database_XLS/sample_database_XLS.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_database_XLS/sample_database_XLS.xml -text svneol=unset#text/plain
-Studio/projects/sample_database_XLS/sample_database_XLS.xsd -text svneol=unset#text/plain
 Studio/projects/sample_database_XLS/xls/emptyPeopleTable.xls -text
 Studio/projects/sample_database_XLS/xls/fullPeopleTable.xls -text
+Studio/projects/sample_database_XLS/xsd/internal/xlsFileConnector/selectFromPeople.xsd -text svneol=unset#text/plain
+Studio/projects/sample_database_XLS/xsd/sample_database_XLS.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLI/.project -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLI/Traces/demo5250Connector/legacyintegrator-01.etr -text
 Studio/projects/sample_documentation_CLI/articlesList.xsl -text svneol=unset#text/plain
