@@ -994,9 +994,12 @@ Studio/projects/lib_Twitter/js/custom.js -text
 Studio/projects/lib_Twitter/lib_Twitter.xml -text
 Studio/projects/lib_Twitter/xsd/lib_Twitter.xsd -text
 Studio/projects/lib_Yammer/.project -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/lib_Yammer.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/lib_Yammer.xml -text svneol=unset#text/plain
-Studio/projects/lib_Yammer/lib_Yammer.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/xsd/internal/Yammer/GetOAuthToken.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/xsd/internal/Yammer/Search.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/xsd/internal/Yammer/VerifyOAuthToken.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/xsd/internal/YammerHtml/Authenticate.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Yammer/xsd/lib_Yammer.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
