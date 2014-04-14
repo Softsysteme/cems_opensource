@@ -1003,9 +1003,9 @@ Studio/projects/lib_Yammer/xsd/lib_Yammer.xsd -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/.project -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/css/usdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/images/convertigo-enterprise-mashup-logo.png -text
-Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xml -text svneol=unset#text/plain
-Studio/projects/sampleDocumentationSiteClipper/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/xsd/internal/USDConnector/Default_transaction.xsd -text svneol=unset#text/plain
+Studio/projects/sampleDocumentationSiteClipper/xsd/sampleDocumentationSiteClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
