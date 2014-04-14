@@ -969,9 +969,13 @@ Studio/projects/lib_Keyring/xsd/internal/DB/UpdateUserByID.xsd -text svneol=unse
 Studio/projects/lib_Keyring/xsd/internal/DB/UpdateUserByName.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/xsd/lib_Keyring.xsd -text svneol=unset#text/plain
 Studio/projects/lib_LinkedIn/.project -text
-Studio/projects/lib_LinkedIn/lib_LinkedIn.wsdl -text
 Studio/projects/lib_LinkedIn/lib_LinkedIn.xml -text
-Studio/projects/lib_LinkedIn/lib_LinkedIn.xsd -text
+Studio/projects/lib_LinkedIn/xsd/internal/LinkedIn/GetConnections.xsd -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/xsd/internal/LinkedIn/GetOAuthToken.xsd -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/xsd/internal/LinkedIn/SearchPeople.xsd -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/xsd/internal/LinkedIn/VerifyOAuthToken.xsd -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/xsd/internal/LinkedInHtml/Authenticate.xsd -text svneol=unset#text/plain
+Studio/projects/lib_LinkedIn/xsd/lib_LinkedIn.xsd -text svneol=unset#text/plain
 Studio/projects/lib_OAuth/.project -text
 Studio/projects/lib_OAuth/css/custom.css -text
 Studio/projects/lib_OAuth/index.html -text
