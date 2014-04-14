@@ -1372,9 +1372,15 @@ Studio/projects/sample_refManual_webClipper/xsd/internal/convertigoWebSiteConnec
 Studio/projects/sample_refManual_webClipper/xsd/internal/convertigoWebSiteConnector/goToConvertigoCloudProductPage.xsd -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/xsd/sample_refManual_webClipper.xsd -text svneol=unset#text/plain
 Studio/projects/sample_sequencer/.project -text svneol=unset#text/plain
-Studio/projects/sample_sequencer/sample_sequencer.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_sequencer/sample_sequencer.xml -text svneol=unset#text/plain
-Studio/projects/sample_sequencer/sample_sequencer.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/HTMLconnector/ListFrCities.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/HTMLconnector/ListUSCities.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/HTMLconnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/databaseConnector/InsertCapital.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/databaseConnector/InsertCity.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/databaseConnector/SelectAllCapitals.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/internal/databaseConnector/SelectAllCities.xsd -text svneol=unset#text/plain
+Studio/projects/sample_sequencer/xsd/sample_sequencer.xsd -text svneol=unset#text/plain
 Studio/projects/template_CICS/template_CICS.xml -text svneol=unset#text/plain
 Studio/projects/template_CICS/xsd/internal/CICSConnector/DefaultCICSTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_CICS/xsd/template_CICS.xsd -text svneol=unset#text/plain

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sample_sequencer_ns="http://www.convertigo.com/convertigo/projects/sample_sequencer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_sequencer">
+    <element name="HTMLconnector__ListUSCities" type="sample_sequencer_ns:HTMLconnector__ListUSCitiesRequestData">
+        <annotation/>
+    </element>
+    <complexType name="HTMLconnector__ListUSCitiesRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="HTMLconnector__ListUSCitiesResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="sample_sequencer_ns:HTMLconnector__ListUSCitiesResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="HTMLconnector__ListUSCitiesResponseData">
+        <sequence>
+            <element minOccurs="0" name="error" type="sample_sequencer_ns:ConvertigoError"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="capitalsList" type="sample_sequencer_ns:capitalsListTableType"/>
+        </sequence>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="capitalsListTableType">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_sequencer_ns:row_capitalsListRowType"/>
+        </sequence>
+        <attribute name="referer" type="string" use="optional"/>
+    </complexType>
+    <complexType name="row_capitalsListRowType">
+        <sequence>
+            <element minOccurs="0" name="Abbreviation" type="string"/>
+            <element minOccurs="0" name="State" type="string"/>
+            <element minOccurs="0" name="Capital" type="string"/>
+        </sequence>
+    </complexType>
+    <complexType name="HTMLconnector__ListUSCitiesResponseType">
+        <sequence>
+            <element name="document" type="sample_sequencer_ns:HTMLconnector__ListUSCitiesResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_sequencer_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="sample_sequencer_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>

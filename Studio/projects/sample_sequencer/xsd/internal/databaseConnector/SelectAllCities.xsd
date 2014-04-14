@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sample_sequencer_ns="http://www.convertigo.com/convertigo/projects/sample_sequencer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_sequencer">
+    <element name="databaseConnector__SelectAllCities" type="sample_sequencer_ns:databaseConnector__SelectAllCitiesRequestData">
+        <annotation/>
+    </element>
+    <complexType name="databaseConnector__SelectAllCitiesRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="databaseConnector__SelectAllCitiesResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="sample_sequencer_ns:databaseConnector__SelectAllCitiesResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="databaseConnector__SelectAllCitiesResponseData">
+        <all>
+            <element minOccurs="0" name="error" type="sample_sequencer_ns:ConvertigoError"/>
+            <element minOccurs="0" name="sql_output">
+                <complexType>
+                    <sequence>
+                        <element maxOccurs="unbounded" minOccurs="0" name="row">
+                            <complexType>
+                                <attribute name="CITY_NAME" type="string"/>
+                                <attribute name="DEPARTMENT_NAME" type="string"/>
+                                <attribute name="DEPARTMENT_NUMBER" type="integer"/>
+                                <attribute name="ADMINISTRATIVE_AREA_NAME" type="string"/>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </complexType>
+            </element>
+        </all>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="databaseConnector__SelectAllCitiesResponseType">
+        <sequence>
+            <element name="document" type="sample_sequencer_ns:databaseConnector__SelectAllCitiesResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_sequencer_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="sample_sequencer_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>
