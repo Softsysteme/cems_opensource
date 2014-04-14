@@ -1355,9 +1355,13 @@ Studio/projects/sample_refManual_steps/xsd/sample_refManual_steps.xsd -text svne
 Studio/projects/sample_refManual_steps/xsl/email.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/.project -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/results.xsl -text svneol=unset#text/plain
-Studio/projects/sample_refManual_variables/sample_refManual_variables.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_variables/sample_refManual_variables.xml -text svneol=unset#text/plain
-Studio/projects/sample_refManual_variables/sample_refManual_variables.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/internal/GoogleConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/internal/GoogleConnector/multiSearchGoogle.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/internal/GoogleConnector/multiSearchGoogleHTTP.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/internal/GoogleConnector/searchGoogleHTTP.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/internal/GoogleConnector/searchYahoo.xsd -text svneol=unset#text/plain
+Studio/projects/sample_refManual_variables/xsd/sample_refManual_variables.xsd -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/.project -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/New_Style_sheet.xsl -text svneol=unset#text/plain
 Studio/projects/sample_refManual_webClipper/img/button_img.png -text
