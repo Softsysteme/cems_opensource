@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CLP_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLP">
+    <element name="demo5250Connector__XMLize" type="sample_documentation_CLP_ns:demo5250Connector__XMLizeRequestData">
+        <annotation/>
+    </element>
+    <complexType name="demo5250Connector__XMLizeRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="demo5250Connector__XMLizeResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="sample_documentation_CLP_ns:demo5250Connector__XMLizeResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="demo5250Connector__XMLizeResponseData">
+        <sequence>
+            <element minOccurs="0" name="error" type="sample_documentation_CLP_ns:ConvertigoError"/>
+            <element maxOccurs="unbounded" name="blocks" type="sample_documentation_CLP_ns:demo5250Connector__XMLize_blocksType"/>
+        </sequence>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="demo5250Connector__XMLize_blocksType">
+        <sequence>
+            <element minOccurs="0" name="commands" type="sample_documentation_CLP_ns:demo5250Connector__XMLize_blocks_commandsType"/>
+            <element minOccurs="0" name="block" type="sample_documentation_CLP_ns:demo5250Connector__XMLize_blocks_blockType"/>
+        </sequence>
+        <attribute name="page-number" use="optional"/>
+    </complexType>
+    <complexType name="demo5250Connector__XMLize_blocks_commandsType">
+        <sequence>
+            <element minOccurs="0" name="block" type="sample_documentation_CLP_ns:demo5250Connector__XMLize_blocks_commands_blockType"/>
+        </sequence>
+        <attribute name="background"/>
+        <attribute name="column"/>
+        <attribute name="foreground"/>
+        <attribute name="height"/>
+        <attribute name="line"/>
+        <attribute name="name"/>
+        <attribute name="reverse"/>
+        <attribute name="type"/>
+        <attribute name="width"/>
+    </complexType>
+    <complexType name="demo5250Connector__XMLize_blocks_commands_blockType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="action"/>
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="data"/>
+                <attribute name="foreground"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__XMLize_blocks_blockType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__XMLizeResponseType">
+        <sequence>
+            <element name="document" type="sample_documentation_CLP_ns:demo5250Connector__XMLizeResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CLP_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="sample_documentation_CLP_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>

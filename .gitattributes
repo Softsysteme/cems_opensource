@@ -1209,9 +1209,7 @@ Studio/projects/sample_documentation_CLP/images/twinsoft.gif -text
 Studio/projects/sample_documentation_CLP/images/unsort.gif -text
 Studio/projects/sample_documentation_CLP/images/wait.gif -text
 Studio/projects/sample_documentation_CLP/index.html -text svneol=unset#text/plain
-Studio/projects/sample_documentation_CLP/sample_documentation_CLP.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLP/sample_documentation_CLP.xml -text svneol=unset#text/plain
-Studio/projects/sample_documentation_CLP/sample_documentation_CLP.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLP/scripts/calendar-en.js -text
 Studio/projects/sample_documentation_CLP/scripts/calendar-fr.js -text
 Studio/projects/sample_documentation_CLP/scripts/calendar-setup.js -text
@@ -1251,6 +1249,8 @@ Studio/projects/sample_documentation_CLP/templates/tabbox.xsl -text svneol=unset
 Studio/projects/sample_documentation_CLP/templates/table-mod.xsl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLP/templates/table.xsl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CLP/variables.xsl -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/xsd/internal/demo5250Connector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CLP/xsd/sample_documentation_CLP.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/.project -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/hub/default_hub.html -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/hub/default_hub.xml -text svneol=unset#text/plain
