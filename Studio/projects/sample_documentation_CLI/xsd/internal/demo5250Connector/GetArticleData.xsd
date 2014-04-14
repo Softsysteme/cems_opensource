@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sample_documentation_CLI_ns="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_documentation_CLI">
+    <element name="demo5250Connector__GetArticleData" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataRequestData">
+        <annotation/>
+    </element>
+    <complexType name="demo5250Connector__GetArticleDataRequestData">
+        <annotation/>
+        <sequence/>
+    </complexType>
+    <element name="demo5250Connector__GetArticleDataResponse">
+        <complexType>
+            <sequence>
+                <element name="response" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponseData"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="demo5250Connector__GetArticleDataResponseData">
+        <sequence>
+            <element minOccurs="0" name="error" type="sample_documentation_CLI_ns:ConvertigoError"/>
+            <element maxOccurs="unbounded" name="blocks" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocksType"/>
+        </sequence>
+        <attribute name="connector" type="string"/>
+        <attribute name="context" type="string"/>
+        <attribute name="contextId" type="string"/>
+        <attribute name="fromStub" type="string"/>
+        <attribute name="fromcache" type="string"/>
+        <attribute name="generated" type="string"/>
+        <attribute name="project" type="string"/>
+        <attribute name="screenclass" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="signature" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="version" type="string"/>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocksType">
+        <sequence>
+            <element minOccurs="0" name="articles" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articlesType"/>
+            <element minOccurs="0" name="article_status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_statusType"/>
+            <element minOccurs="0" name="article_rsp" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_article_rspType"/>
+            <element minOccurs="0" name="product_group" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_product_groupType"/>
+        </sequence>
+        <attribute name="page-number" use="optional"/>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_articlesType">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="row" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_rowType"/>
+        </sequence>
+        <attribute name="background"/>
+        <attribute name="column"/>
+        <attribute name="foreground"/>
+        <attribute name="height"/>
+        <attribute name="line"/>
+        <attribute name="name"/>
+        <attribute name="offset"/>
+        <attribute name="reverse"/>
+        <attribute name="rows"/>
+        <attribute name="titleheight"/>
+        <attribute name="type"/>
+        <attribute name="width"/>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_articles_rowType">
+        <sequence>
+            <element minOccurs="0" name="code" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_codeType"/>
+            <element minOccurs="0" name="name" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_nameType"/>
+            <element minOccurs="0" name="status" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleData_blocks_articles_row_statusType"/>
+        </sequence>
+        <attribute name="background"/>
+        <attribute name="column"/>
+        <attribute name="foreground"/>
+        <attribute name="index"/>
+        <attribute name="line"/>
+        <attribute name="name"/>
+        <attribute name="page"/>
+        <attribute name="reverse"/>
+        <attribute name="type"/>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_articles_row_codeType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_articles_row_nameType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_articles_row_statusType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_article_statusType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="history"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="size"/>
+                <attribute name="type"/>
+                <attribute name="underline"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_article_rspType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="history"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="size"/>
+                <attribute name="type"/>
+                <attribute name="underline"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleData_blocks_product_groupType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="background"/>
+                <attribute name="column"/>
+                <attribute name="foreground"/>
+                <attribute name="history"/>
+                <attribute name="line"/>
+                <attribute name="name"/>
+                <attribute name="reverse"/>
+                <attribute name="type"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="demo5250Connector__GetArticleDataResponseType">
+        <sequence>
+            <element name="document" type="sample_documentation_CLI_ns:demo5250Connector__GetArticleDataResponseData"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoErrorContextVariable">
+        <attribute name="name" type="string"/>
+        <attribute name="value" type="string"/>
+    </complexType>
+    <complexType name="ConvertigoErrorContext">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_documentation_CLI_ns:ConvertigoErrorContextVariable"/>
+        </sequence>
+    </complexType>
+    <complexType name="ConvertigoError">
+        <sequence minOccurs="0">
+            <element name="code" type="integer"/>
+            <element name="message" type="string"/>
+            <element name="details" type="string"/>
+            <element name="context" type="sample_documentation_CLI_ns:ConvertigoErrorContext"/>
+            <element name="exception" type="string"/>
+            <element name="stacktrace" type="string"/>
+        </sequence>
+        <attribute name="project" type="string"/>
+        <attribute name="connector" type="string"/>
+        <attribute name="transaction" type="string"/>
+        <attribute name="sequence" type="string"/>
+        <attribute name="type">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="c8o"/>
+                    <enumeration value="project"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>
