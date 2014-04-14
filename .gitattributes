@@ -1255,9 +1255,9 @@ Studio/projects/sample_documentation_CMC/.project -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/hub/default_hub.html -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/hub/default_hub.xml -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/images/convertigo-small.gif -text
-Studio/projects/sample_documentation_CMC/sample_documentation_CMC.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMC/sample_documentation_CMC.xml -text svneol=unset#text/plain
-Studio/projects/sample_documentation_CMC/sample_documentation_CMC.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/xsd/internal/Void/DefaultHub.xsd -text svneol=unset#text/plain
+Studio/projects/sample_documentation_CMC/xsd/sample_documentation_CMC.xsd -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMS/databaseUtils/empty[!!-~]database[!!-~]creation[!!-~]script.sql -text
 Studio/projects/sample_documentation_CMS/sample_documentation_CMS.wsdl -text svneol=unset#text/plain
 Studio/projects/sample_documentation_CMS/sample_documentation_CMS.xml -text svneol=unset#text/plain
