@@ -5178,22 +5178,26 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBe
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry/res/icon/icon80.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry/res/splash/splash225.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/config.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/icon/icon80.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash225.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/icon/icon150.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/icon/icon86.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/icon/icon86over.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash1280x720.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash1280x768.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash720x1280.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash720x720.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBerry10/res/splash/splash768x1280.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon57.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon572x.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon72.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon722x.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPad.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPad2x.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPadLandscape.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPadLandscape2x.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPhone.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPhone2x.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPhone320x460.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPhoneLandscape.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/splashiPhoneLandscape2x.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default2xiphone.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default568h2xiphone.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultLandscape2xipad.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultLandscapeipad.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortrait2xipad.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortraitipad.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Defaultiphone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone7/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone7/res/icon/icon173tile.png -text
