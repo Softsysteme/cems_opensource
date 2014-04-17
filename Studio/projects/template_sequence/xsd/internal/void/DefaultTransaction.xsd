@@ -3,10 +3,6 @@
     <xsd:element name="void__DefaultTransaction" type="template_sequence_ns:void__DefaultTransactionRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:complexType name="void__DefaultTransactionRequestData">
-        <xsd:annotation/>
-        <xsd:sequence/>
-    </xsd:complexType>
     <xsd:element name="void__DefaultTransactionResponse">
         <xsd:complexType>
             <xsd:sequence>
@@ -14,27 +10,14 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="void__DefaultTransactionResponseData">
-        <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="template_sequence_ns:ConvertigoError"/>
-        </xsd:sequence>
-        <xsd:attribute name="connector" type="xsd:string"/>
-        <xsd:attribute name="context" type="xsd:string"/>
-        <xsd:attribute name="contextId" type="xsd:string"/>
-        <xsd:attribute name="fromStub" type="xsd:string"/>
-        <xsd:attribute name="fromcache" type="xsd:string"/>
-        <xsd:attribute name="generated" type="xsd:string"/>
-        <xsd:attribute name="project" type="xsd:string"/>
-        <xsd:attribute name="screenclass" type="xsd:string"/>
-        <xsd:attribute name="sequence" type="xsd:string"/>
-        <xsd:attribute name="signature" type="xsd:string"/>
-        <xsd:attribute name="transaction" type="xsd:string"/>
-        <xsd:attribute name="version" type="xsd:string"/>
-    </xsd:complexType>
     <xsd:complexType name="void__DefaultTransactionResponseType">
         <xsd:sequence>
             <xsd:element name="document" type="template_sequence_ns:void__DefaultTransactionResponseData"/>
         </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="void__DefaultTransactionRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
     </xsd:complexType>
     <xsd:complexType name="ConvertigoErrorContextVariable">
         <xsd:attribute name="name" type="xsd:string"/>
@@ -66,5 +49,22 @@
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="void__DefaultTransactionResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="error" type="template_sequence_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:string"/>
+        <xsd:attribute name="fromcache" type="xsd:string"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
     </xsd:complexType>
 </xsd:schema>
