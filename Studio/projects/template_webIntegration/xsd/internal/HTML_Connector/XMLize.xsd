@@ -34,40 +34,8 @@
     </complexType>
     <group name="HTML_ConnectorTypes">
         <sequence>
-            <element minOccurs="0" name="error" type="template_webIntegration_ns:ConvertigoError"/>
         </sequence>
     </group>
-    <complexType name="ConvertigoError">
-        <sequence minOccurs="0">
-            <element name="code" type="integer"/>
-            <element name="message" type="string"/>
-            <element name="details" type="string"/>
-            <element name="context" type="template_webIntegration_ns:ConvertigoErrorContext"/>
-            <element name="exception" type="string"/>
-            <element name="stacktrace" type="string"/>
-        </sequence>
-        <attribute name="project" type="string"/>
-        <attribute name="connector" type="string"/>
-        <attribute name="transaction" type="string"/>
-        <attribute name="sequence" type="string"/>
-        <attribute name="type">
-            <simpleType>
-                <restriction base="string">
-                    <enumeration value="c8o"/>
-                    <enumeration value="project"/>
-                </restriction>
-            </simpleType>
-        </attribute>
-    </complexType>
-    <complexType name="ConvertigoErrorContext">
-        <sequence>
-            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="template_webIntegration_ns:ConvertigoErrorContextVariable"/>
-        </sequence>
-    </complexType>
-    <complexType name="ConvertigoErrorContextVariable">
-        <attribute name="name" type="string"/>
-        <attribute name="value" type="string"/>
-    </complexType>
     <complexType name="HTML_Connector__XMLizeResponseType">
         <sequence>
             <element name="document" type="template_webIntegration_ns:HTML_Connector__XMLizeResponseData"/>
