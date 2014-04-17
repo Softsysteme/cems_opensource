@@ -34,41 +34,9 @@
     </complexType>
     <group name="webClippingTemplateConnectorTypes">
         <sequence>
-            <element minOccurs="0" name="error" type="template_webClipping_ns:ConvertigoError"/>
             <any maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
         </sequence>
     </group>
-    <complexType name="ConvertigoError">
-        <sequence minOccurs="0">
-            <element name="code" type="integer"/>
-            <element name="message" type="string"/>
-            <element name="details" type="string"/>
-            <element name="context" type="template_webClipping_ns:ConvertigoErrorContext"/>
-            <element name="exception" type="string"/>
-            <element name="stacktrace" type="string"/>
-        </sequence>
-        <attribute name="project" type="string"/>
-        <attribute name="connector" type="string"/>
-        <attribute name="transaction" type="string"/>
-        <attribute name="sequence" type="string"/>
-        <attribute name="type">
-            <simpleType>
-                <restriction base="string">
-                    <enumeration value="c8o"/>
-                    <enumeration value="project"/>
-                </restriction>
-            </simpleType>
-        </attribute>
-    </complexType>
-    <complexType name="ConvertigoErrorContext">
-        <sequence>
-            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="template_webClipping_ns:ConvertigoErrorContextVariable"/>
-        </sequence>
-    </complexType>
-    <complexType name="ConvertigoErrorContextVariable">
-        <attribute name="name" type="string"/>
-        <attribute name="value" type="string"/>
-    </complexType>
     <complexType name="webClippingTemplateConnector__XMLizeResponseType">
         <sequence>
             <element name="document" type="template_webClipping_ns:webClippingTemplateConnector__XMLizeResponseData"/>
