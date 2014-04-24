@@ -1,0 +1,13 @@
+/** insert your custom css code here */
+
+img {
+	border:0;
+}
+
+.ui-page {
+	background: transparent
+}
+
+.ui-content .myMargin.ui-listview {
+	margin: 0 -15px;
+}
