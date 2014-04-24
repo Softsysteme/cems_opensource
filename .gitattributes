@@ -1054,8 +1054,7 @@ Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#tex
 Studio/projects/sampleMobileJQuery/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/.project -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajax-loader.gif -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajax-loader.png -text
@@ -1093,7 +1092,6 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/loading2.gif -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/phoneStartup.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/tabletStartup.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/title.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
@@ -1136,12 +1134,37 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/splash/ios/splashiPh
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/splash/webos/splash64.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
-Studio/projects/sampleMobileMobTV/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/index.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/sampleMobileMobTV.wsdl -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/icon/icon62tile.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
 Studio/projects/sampleMobileMobTV/sampleMobileMobTV.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/sampleMobileMobTV.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/getProgTv.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/getSummary.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/xsd/sampleMobileMobTV.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
