@@ -1166,8 +1166,7 @@ Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/getProgTv.xsd -tex
 Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/getSummary.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/xsd/sampleMobileMobTV.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/.project -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/USdirectory.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/css/images/ajaxloader.gif -text
@@ -1179,7 +1178,6 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/36x36.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/picture.jpg -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/map/map.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
@@ -1223,12 +1221,10 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/webos/splash64.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
-Studio/projects/sampleMobileUsDirectoryDemo/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/index.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/xsd/internal/usdirectoryConnector/XMLize.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/xsd/internal/usdirectoryConnector/searchBusiness.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/xsd/sampleMobileUsDirectoryDemo.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
