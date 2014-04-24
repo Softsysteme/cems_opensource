@@ -1046,7 +1046,6 @@ Studio/projects/sampleMobileCtfGallery/topics/routing_table.xml -text svneol=uns
 Studio/projects/sampleMobileCtfGallery/topics/templating_simple_patterns.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
@@ -1054,6 +1053,8 @@ Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
