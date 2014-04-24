@@ -68,6 +68,10 @@ Studio/projects/sampleMobileMobTV/Traces
 Studio/projects/sampleMobileMobTV/_private
 Studio/projects/sampleMobileMobTV/sampleMobileMobTV.temp.wsdl
 Studio/projects/sampleMobileMobTV/sampleMobileMobTV.temp.xsd
+Studio/projects/sampleMobileUsDirectoryDemo/Traces
+Studio/projects/sampleMobileUsDirectoryDemo/_private
+Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.temp.wsdl
+Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.temp.xsd
 Studio/projects/sampleMobileVacation/*.temp.wsdl
 Studio/projects/sampleMobileVacation/*.temp.xsd
 Studio/projects/sampleMobileVacation/.settings
