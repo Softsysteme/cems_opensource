@@ -1184,16 +1184,10 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/andro
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/android/icon72hdpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/android/icon96xhdpi.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/bada/icon128.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/badawac/icon48type5.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/badawac/icon50type3.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/badawac/icon80type4.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/bb/icon80.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/ios/icon57.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/ios/icon572x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/ios/icon72.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/ios/icon722x.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/webos/icon64.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/winphone/icon173tile.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/winphone/icon48.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/icon/winphone/icon62tile.png -text
@@ -1205,11 +1199,6 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/and
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/android/mdpiLandscape.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/android/xhdpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/android/xhdpiLandscape.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/bada/screenPortrait.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/badawac/splashType3.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/badawac/splashType4.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/badawac/splashType5.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/bb/splash225.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPad.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPad2x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape.png -text
@@ -1219,8 +1208,37 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
-Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/webos/splash64.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/hdpiLandscape.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/ldpiLandscape.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/mdpiLandscape.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/xhdpiLandscape.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/icon/icon62tile.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/sampleMobileUsDirectoryDemo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/xsd/internal/usdirectoryConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/xsd/internal/usdirectoryConnector/searchBusiness.xsd -text svneol=unset#text/plain
