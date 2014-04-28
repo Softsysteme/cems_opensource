@@ -120,7 +120,7 @@
 		<!-- Home screen -->
 	    <div data-role="page" id="home" data-theme="a" data-title="MobTV 4.0">
         	<!-- header -->
-        	<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
+        	<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false">
         		<h1>Accueil</h1>
 			</div>
 			<!-- End header -->
@@ -134,7 +134,7 @@
 			</div>
 			<!-- End content -->
 			<!-- footer -->
-			<div data-role="footer" data-theme="a" data-position="fixed" data-tap-toggle="false">
+			<div data-role="footer" data-theme="b" data-position="fixed" data-tap-toggle="false">
 				<h4>MOBTV</h4>
 			</div>
 			<!-- End footer -->
@@ -144,21 +144,19 @@
 		<!-- Prime Time screen -->
 		<div data-role="page" id="primeTime" data-theme="a">
 			<!-- header -->
-			<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 				<h1>1ère partie</h1>
 			</div>
 			<!-- End header -->
 			<!-- content -->
 			<div data-role="content" data-c8o-listen=".getProgTv" data-c8o-listen-condition="firstPartCondition">
-				<ul data-role="listview" data-theme="n" data-divider-theme="n">
+				<ul data-role="listview">
 					<!-- current date -->
-					<li data-role="list-divider" data-theme="n">__=date__</li>
+					<li data-role="list-divider" data-theme="m">__=date__</li>
+					<!-- great channels - title of first part of night -->
+			    	<li data-role="list-divider" data-theme="n">Grandes chaines</li>
 				</ul>
-				<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin">	
-			    	<!-- great channels - title of first part of night -->
-			    	<li data-role="list-divider">Grandes chaines</li>
-			 	</ul>
-			 	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin" data-c8o-each="GCH1">
+			 	<ul data-role="listview" data-theme="a" data-c8o-each="GCH1" class="myMargin">
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 			    		<!-- Case with a link to click -->
@@ -182,11 +180,11 @@
 						<!-- End li content -->
 			    	</li>
 		    	</ul>
-		    	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin">	
+		    	<ul data-role="listview" data-theme="a" data-divider-theme="n" class="myMargin">	
 			    	<!-- TNT - title of first part of night -->
 		    		<li data-role="list-divider">TNT</li>
 		    	</ul>
-			 	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin" data-c8o-each="TNT1">
+			 	<ul data-role="listview" data-theme="a" data-c8o-each="TNT1" class="myMargin">
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
@@ -211,7 +209,7 @@
 			</div>
 			<!-- End content -->
 			<!-- footer -->
-			<div data-role="footer" data-theme="a">
+			<div data-role="footer" data-theme="b">
 				<h4>MOBTV</h4>
 			</div>
 			<!-- End footer -->
@@ -220,21 +218,19 @@
 		<!-- Second Time screen -->
 		<div data-role="page" id="2ndTime" data-theme="a">
 			<!-- header -->
-			<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 				<h1>2ème partie</h1>
 			</div>
 			<!-- End header -->
 			<!-- content -->
 			<div data-role="content" data-c8o-listen=".getProgTv" data-c8o-listen-condition="secondPartCondition">
-				<ul class="dateJour" data-role="listview" data-theme="n" data-divider-theme="n">
+				<ul class="dateJour" data-role="listview">
 					<!-- current date -->
-					<li data-role="list-divider" data-theme="n">__=date__</li>
+					<li data-role="list-divider" data-theme="m">__=date__</li>
+					<!-- great channels - title of first part of night -->
+			    	<li data-role="list-divider" data-theme="n">Grandes chaines</li>
 				</ul>
-				<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin">	
-			    	<!-- great channels - title of first part of night -->
-			    	<li data-role="list-divider">Grandes chaines</li>
-			 	</ul>
-			 	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin" data-c8o-each="GCH2">
+			 	<ul data-role="listview" data-theme="a" class="myMargin" data-c8o-each="GCH2" class="myMargin">
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 						<!-- Case with a link to click -->
@@ -258,11 +254,11 @@
 						<!-- End li content -->
 			    	</li>
 		    	</ul>
-		    	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin">	
+		    	<ul data-role="listview" data-theme="a" data-divider-theme="n" class="myMargin">	
 			    	<!-- TNT - title of first part of night -->
 		    		<li data-role="list-divider">TNT</li>
 		    	</ul>
-			 	<ul data-role="listview" data-theme="a" data-divider-theme="m" class="myMargin" data-c8o-each="TNT2">
+			 	<ul data-role="listview" data-theme="a" class="myMargin" data-c8o-each="TNT2">
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 			    		<!-- Case with a link to click -->
@@ -289,7 +285,7 @@
 			</div>
 			<!-- End content -->
 			<!-- footer -->
-			<div data-role="footer" data-theme="a">
+			<div data-role="footer" data-theme="b">
 				<h4>MOBTV</h4>
 			</div>
 			<!-- End footer -->
@@ -299,7 +295,7 @@
 		<!-- Prog Detail screen -->
 		<div data-role="page" id="progDetail" data-theme="a">
 			<!-- header -->
-			<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 				<h1 id="prog_title"></h1>
 			</div>
 			<!-- End header -->
@@ -356,7 +352,7 @@
 			</div>
 			<!-- End content -->
 			<!-- footer -->
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
 				<h4>MOBTV</h4>
 			</div>
 			<!-- End footer -->
@@ -366,7 +362,7 @@
 		<!-- About screen -->
 		<div data-role="page" data-theme="a" id="about" data-title="A propos...">
 			<!-- header -->
-			<div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" data-add-back-btn="true">
 				<h1>A propos...</h1>
 			</div>
 			<!-- End header -->
@@ -403,7 +399,7 @@
 			</div>
 			<!-- End content -->
 			<!-- footer -->
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
 				<h4>MOBTV</h4>
 			</div>
 			<!-- End footer -->
@@ -413,7 +409,7 @@
 		<!-- Error dialog page - Error message popup  -->
 		<div data-role="dialog" id="errorMessage" data-title="Error" data-theme="a">
 		    <!-- header -->
-		    <div data-role="header" data-theme="a">
+		    <div data-role="header" data-theme="b">
 		        <h1>Erreur</h1>
 		    </div>
 		    <!-- End header -->

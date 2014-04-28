@@ -1,134 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileMobTV_ns="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV">
-    <element name="mobtvConnector__getProgTv" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvRequestData">
-        <annotation/>
-    </element>
-    <complexType name="mobtvConnector__getProgTvRequestData">
-        <annotation/>
-        <sequence/>
-    </complexType>
-    <element name="mobtvConnector__getProgTvResponse">
-        <complexType>
-            <sequence>
-                <element name="response" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvResponseData"/>
-            </sequence>
-        </complexType>
-    </element>
-    <complexType name="mobtvConnector__getProgTvResponseData">
-        <sequence>
-            <element minOccurs="0" name="error" type="sampleMobileMobTV_ns:ConvertigoError"/>
-            <element minOccurs="0" name="date" type="sampleMobileMobTV_ns:dateTextType"/>
-            <element maxOccurs="unbounded" minOccurs="0" name="GCH1" type="sampleMobileMobTV_ns:GCH1RecordType"/>
-            <element maxOccurs="unbounded" minOccurs="0" name="GCH2" type="sampleMobileMobTV_ns:GCH2RecordType"/>
-            <element maxOccurs="unbounded" minOccurs="0" name="TNT1" type="sampleMobileMobTV_ns:TNT1RecordType"/>
-            <element maxOccurs="unbounded" minOccurs="0" name="TNT2" type="sampleMobileMobTV_ns:TNT2RecordType"/>
-        </sequence>
-        <attribute name="connector" type="string"/>
-        <attribute name="context" type="string"/>
-        <attribute name="contextId" type="string"/>
-        <attribute name="fromStub" type="string"/>
-        <attribute name="fromcache" type="string"/>
-        <attribute name="generated" type="string"/>
-        <attribute name="project" type="string"/>
-        <attribute name="screenclass" type="string"/>
-        <attribute name="sequence" type="string"/>
-        <attribute name="signature" type="string"/>
-        <attribute name="transaction" type="string"/>
-        <attribute name="version" type="string"/>
-    </complexType>
-    <complexType name="dateTextType">
-        <simpleContent>
-            <extension base="string">
-                <attribute name="referer" type="string" use="optional"/>
-            </extension>
-        </simpleContent>
-    </complexType>
-    <complexType name="GCH1RecordType">
-        <sequence>
-            <element minOccurs="0" name="img_chaine" type="string"/>
-            <element minOccurs="0" name="nom_chaine" type="string"/>
-            <element minOccurs="0" name="img_prog1" type="string"/>
-            <element minOccurs="0" name="hour_prog1" type="string"/>
-            <element minOccurs="0" name="name_prog1" type="string"/>
-            <element minOccurs="0" name="sum_prog1" type="string"/>
-        </sequence>
-        <attribute name="referer" type="string" use="optional"/>
-    </complexType>
-    <complexType name="GCH2RecordType">
-        <sequence>
-            <element minOccurs="0" name="img_chaine" type="string"/>
-            <element minOccurs="0" name="nom_chaine" type="string"/>
-            <element minOccurs="0" name="img_prog2" type="string"/>
-            <element minOccurs="0" name="hour_prog2" type="string"/>
-            <element minOccurs="0" name="name_prog2" type="string"/>
-            <element minOccurs="0" name="sum_prog2" type="string"/>
-        </sequence>
-        <attribute name="referer" type="string" use="optional"/>
-    </complexType>
-    <complexType name="TNT1RecordType">
-        <sequence>
-            <element minOccurs="0" name="img_chaine" type="string"/>
-            <element minOccurs="0" name="nom_chaine" type="string"/>
-            <element minOccurs="0" name="img_prog1" type="string"/>
-            <element minOccurs="0" name="hour_prog1" type="string"/>
-            <element minOccurs="0" name="name_prog1" type="string"/>
-            <element minOccurs="0" name="sum_prog1" type="string"/>
-            <element minOccurs="0" name="img_prog2" type="string"/>
-            <element minOccurs="0" name="hour_prog2" type="string"/>
-            <element minOccurs="0" name="name_prog2" type="string"/>
-            <element minOccurs="0" name="sum_prog2" type="string"/>
-        </sequence>
-        <attribute name="referer" type="string" use="optional"/>
-    </complexType>
-    <complexType name="TNT2RecordType">
-        <sequence>
-            <element minOccurs="0" name="img_chaine" type="string"/>
-            <element minOccurs="0" name="nom_chaine" type="string"/>
-            <element minOccurs="0" name="img_prog1" type="string"/>
-            <element minOccurs="0" name="hour_prog1" type="string"/>
-            <element minOccurs="0" name="name_prog1" type="string"/>
-            <element minOccurs="0" name="sum_prog1" type="string"/>
-            <element minOccurs="0" name="img_prog2" type="string"/>
-            <element minOccurs="0" name="hour_prog2" type="string"/>
-            <element minOccurs="0" name="name_prog2" type="string"/>
-            <element minOccurs="0" name="sum_prog2" type="string"/>
-        </sequence>
-        <attribute name="referer" type="string" use="optional"/>
-    </complexType>
-    <complexType name="mobtvConnector__getProgTvResponseType">
-        <sequence>
-            <element name="document" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvResponseData"/>
-        </sequence>
-    </complexType>
-    <complexType name="ConvertigoErrorContextVariable">
-        <attribute name="name" type="string"/>
-        <attribute name="value" type="string"/>
-    </complexType>
-    <complexType name="ConvertigoErrorContext">
-        <sequence>
-            <element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileMobTV_ns:ConvertigoErrorContextVariable"/>
-        </sequence>
-    </complexType>
-    <complexType name="ConvertigoError">
-        <sequence minOccurs="0">
-            <element name="code" type="integer"/>
-            <element name="message" type="string"/>
-            <element name="details" type="string"/>
-            <element name="context" type="sampleMobileMobTV_ns:ConvertigoErrorContext"/>
-            <element name="exception" type="string"/>
-            <element name="stacktrace" type="string"/>
-        </sequence>
-        <attribute name="project" type="string"/>
-        <attribute name="connector" type="string"/>
-        <attribute name="transaction" type="string"/>
-        <attribute name="sequence" type="string"/>
-        <attribute name="type">
-            <simpleType>
-                <restriction base="string">
-                    <enumeration value="c8o"/>
-                    <enumeration value="project"/>
-                </restriction>
-            </simpleType>
-        </attribute>
-    </complexType>
-</schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMobileMobTV_ns="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMobileMobTV">
+    <xsd:element name="mobtvConnector__getProgTv" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="mobtvConnector__getProgTvResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="mobtvConnector__getProgTvResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="sampleMobileMobTV_ns:mobtvConnector__getProgTvResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector__getProgTvRequestData">
+        <xsd:annotation/>
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector_getProgTv_document_GCH1Type">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="nom_chaine" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="img_prog" type="xsd:anyURI"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="hour_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="name_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="sum_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="subject_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="type_prog" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector_getProgTv_document_GCH2Type">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="nom_chaine" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="img_prog" type="xsd:anyURI"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="hour_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="name_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="sum_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="subject_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="type_prog" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector_getProgTv_document_TNT1Type">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="nom_chaine" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="img_prog" type="xsd:anyURI"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="hour_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="name_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="sum_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="subject_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="type_prog" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector_getProgTv_document_TNT2Type">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="nom_chaine" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="img_prog" type="xsd:anyURI"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="hour_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="name_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="sum_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="type_prog" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="subject_prog" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="mobtvConnector__getProgTvResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="date" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="GCH1" type="sampleMobileMobTV_ns:mobtvConnector_getProgTv_document_GCH1Type"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="GCH2" type="sampleMobileMobTV_ns:mobtvConnector_getProgTv_document_GCH2Type"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="TNT1" type="sampleMobileMobTV_ns:mobtvConnector_getProgTv_document_TNT1Type"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="TNT2" type="sampleMobileMobTV_ns:mobtvConnector_getProgTv_document_TNT2Type"/>
+            <xsd:element minOccurs="0" name="error" type="sampleMobileMobTV_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="expires" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sampleMobileMobTV_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="sampleMobileMobTV_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

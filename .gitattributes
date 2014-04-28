@@ -1056,17 +1056,7 @@ Studio/projects/sampleMobileJQuery/xsd/sampleMobileJQuery.xsd -text svneol=unset
 Studio/projects/sampleMobileMobTV/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajax-loader.gif -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajax-loader.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/ajaxloader.gif -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons-18-black.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons-18-white.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons-36-black.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons-36-white.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons18black.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons18white.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons36black.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/images/icons36white.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/jquery_theme_m.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/36x36.png -text
