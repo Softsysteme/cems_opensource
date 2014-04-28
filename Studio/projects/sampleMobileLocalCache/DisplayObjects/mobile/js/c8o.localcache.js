@@ -1,3 +1,25 @@
+/*
+ * Copyright (c) 2001-2014 Convertigo SA.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Affero General Public License
+ * as published by the Free Software Foundation; either version 3
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, see<http://www.gnu.org/licenses/>.
+ *
+ * $URL: http://sourceus/svn/convertigo/CEMS_opensource/trunk/Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.core.js $
+ * $Author: nicolasa $
+ * $Revision: 36779 $
+ * $Date: 2014-04-11 12:00:49 +0200 (ven., 11 avr. 2014) $
+ */
+
 /**
  * Delete all cache Entries
  */
@@ -122,7 +144,7 @@ C8O.insertInCache = function(key, data) {
  * Local cache is controlled with a JSON structure defining cache options :
  * 
  * __localCache = {
- * 	  "enabled": true orfalse,
+ * 	  "enabled": true or false,
  *    "policy" : "priority-local" or "priority-server",
  *    "ttl"    : timetolive in ms"
  * }
@@ -141,6 +163,7 @@ C8O.addHook("call", function (data) {
 			// we have cache options so handle local cache here
 			if (cacheOptions.policy == "priority-local") {
 				// We have to search for the data in the cache before calling the server
+				C8O.log.debug("c8o.cach: Priority local, first search local cache...");
 				C8O.searchCacheEntry(data, function(entry) {
 					if (C8O.isDefined(entry)) {
 						// we found an entry for this key, Create a fake XHR and notify CTF
@@ -160,6 +183,7 @@ C8O.addHook("call", function (data) {
 			} else if (cacheOptions.policy == "priority-server") {
 				// Call the server anyway.. If a network error occurs, we will be notified in the 
 				// call_error hook. Then, we will get the data from the cache if we have it.
+				C8O.log.debug("c8o.cach: Priority server, first call the server...");
 				C8O._ignoreCacheHook = true; // Set this flag to prevent _call looping
 				C8O._call(data);
 			}
@@ -171,7 +195,39 @@ C8O.addHook("call", function (data) {
 
 
 C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
-	C8O.log.debug("c8o.cach: network error occured for request : " + JSON.stringify(data) + " . Error is : " + JSON.stringify(errorThrown));
+	// _onError looping detection 
+	if (C8O._ignoreCacheHook) {
+		C8O._ignoreCacheHook = false;
+		return true;
+	}
+	
+	C8O.log.debug("c8o.cach: network error occured for request : " + JSON.stringify(data) + " . Error is : " + JSON.stringify(errorThrown) + "/" + textStatus);
+	// seems we do not have network or the server is unreachable.. Lookup in local cache
+	if (C8O.isDefined(data.__localCache)) {
+		var cacheOptions = JSON.parse(data.__localCache);
+		if (cacheOptions.enabled == true) {
+			// we have cache options so handle local cache here
+			if (cacheOptions.policy == "priority-server") {
+				C8O.searchCacheEntry(data, function(entry) {
+					if (C8O.isDefined(entry)) {
+						// we found an entry for this key, Create a fake XHR and notify CTF
+						// with the data found.
+				    	delete data.__localCache;
+				    	var fakeXHR = {
+								C8O_data: data
+						};
+						C8O._onCallComplete(fakeXHR, "success");
+						C8O._onCallSuccess(entry, "success", fakeXHR);
+					} else {
+						C8O.log.debug("c8o.cach: No data found in cache and no network, notify the error");
+						C8O._ignoreCacheHook = true; // Set this flag to prevent _call looping
+						C8O._onCallError(jqXHR, textStatus, errorThrown); 
+					}
+				});
+			}
+			return false;
+		}
+	}
 	return true;
 });
 
