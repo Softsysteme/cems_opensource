@@ -1203,7 +1203,6 @@ Studio/projects/sampleMobileUsDirectoryDemo/xsd/internal/usdirectoryConnector/se
 Studio/projects/sampleMobileUsDirectoryDemo/xsd/sampleMobileUsDirectoryDemo.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileVacation/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/favicon.ico -text
