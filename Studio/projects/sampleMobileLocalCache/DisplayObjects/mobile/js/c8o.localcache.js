@@ -142,7 +142,7 @@ C8O.addHook("call", function (data) {
 			C8O.searchCacheEntry(data, function(entry) {
 				if (C8O.isDefined(entry)) {
 					// we found an entry for this key, Create a fake XHR and notify CTF
-					// with the data found. return false to prevent the call to server
+					// with the data found.
 			    	delete data.__localCache;
 			    	var fakeXHR = {
 							C8O_data: data
