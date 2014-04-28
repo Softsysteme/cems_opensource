@@ -2432,14 +2432,20 @@ Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8.java -tex
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/android_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/android_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/blackberry10_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/blackberry10_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/blackberry_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/blackberry_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/ios_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/ios_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/web_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/web_color_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone_color_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows8_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows8_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone7_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone7_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone8_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone8_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/Android.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/BlackBerry.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/BlackBerry10.properties -text svneol=unset#text/plain
