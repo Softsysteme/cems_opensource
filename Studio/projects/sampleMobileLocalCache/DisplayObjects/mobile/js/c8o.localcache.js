@@ -122,9 +122,9 @@ C8O.insertInCache = function(key, data) {
  * Local cache is controlled with a JSON structure defining cache options :
  * 
  * __localCache = {
- * 	  "enabled": true/false,
- *    "policy" : "not-connected",
- *    "ttl"    : "timetolive"
+ * 	  "enabled": true orfalse,
+ *    "policy" : "priority-local" or "priority-server",
+ *    "ttl"    : timetolive in ms"
  * }
  * 
  */
@@ -139,25 +139,39 @@ C8O.addHook("call", function (data) {
 		var cacheOptions = JSON.parse(data.__localCache);
 		if (cacheOptions.enabled == true) {
 			// we have cache options so handle local cache here
-			C8O.searchCacheEntry(data, function(entry) {
-				if (C8O.isDefined(entry)) {
-					// we found an entry for this key, Create a fake XHR and notify CTF
-					// with the data found.
-			    	delete data.__localCache;
-			    	var fakeXHR = {
-							C8O_data: data
-					};
-					C8O._onCallComplete(fakeXHR, "success");
-					C8O._onCallSuccess(entry, "success", fakeXHR);
-				} else {
-					// No entry, so call the server normally
-					C8O._ignoreCacheHook = true; // Set this flag to prevent _call looping
-					C8O._call(data);
-				}
-			});
+			if (cacheOptions.policy == "priority-local") {
+				// We have to search for the data in the cache before calling the server
+				C8O.searchCacheEntry(data, function(entry) {
+					if (C8O.isDefined(entry)) {
+						// we found an entry for this key, Create a fake XHR and notify CTF
+						// with the data found.
+				    	delete data.__localCache;
+				    	var fakeXHR = {
+								C8O_data: data
+						};
+						C8O._onCallComplete(fakeXHR, "success");
+						C8O._onCallSuccess(entry, "success", fakeXHR);
+					} else {
+						// No entry, so call the server normally
+						C8O._ignoreCacheHook = true; // Set this flag to prevent _call looping
+						C8O._call(data);
+					}
+				});
+			} else if (cacheOptions.policy == "priority-server") {
+				// Call the server anyway.. If a network error occurs, we will be notified in the 
+				// call_error hook. Then, we will get the data from the cache if we have it.
+				C8O._ignoreCacheHook = true; // Set this flag to prevent _call looping
+				C8O._call(data);
+			}
 			return false;
 		}
 	}
+	return true;
+});
+
+
+C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
+	C8O.log.debug("c8o.cach: network error occured for request : " + JSON.stringify(data) + " . Error is : " + JSON.stringify(errorThrown));
 	return true;
 });
 

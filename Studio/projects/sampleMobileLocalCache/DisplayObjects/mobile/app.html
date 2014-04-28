@@ -146,7 +146,7 @@
 			<div data-role="content">
 				<h1>Search a Room</h1>
 				<form data-c8o-call=".LoadList">
-					<input type="hidden" name="__localCache" value='{"enabled":true, "policy":"not-connected", "ttl":"day"}' />
+					<input type="hidden" name="__localCache" value='{"enabled":true, "policy":"priority-local", "ttl":86400000}' />
 				
 					<div data-role="fieldcontain">
 					   <label for="country" class="select">Country</label>
@@ -213,7 +213,7 @@
 							<h3>__=title__</h3>
 							<span
 								style="display:none"
-								data-c8o-variable="__localCache">{"enabled":true, "policy":"not-connected", "ttl":"day"}
+								data-c8o-variable="__localCache">{"enabled":true, "policy":"priority-local", "ttl":86400000}
 							</span>
 						</a>
 					</li>

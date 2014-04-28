@@ -41,7 +41,6 @@
     <icon src="res/icon/icon48mdpi.png"   gap:platform="android" gap:density="mdpi" />
     <icon src="res/icon/icon72hdpi.png"   gap:platform="android" gap:density="hdpi" />
     <icon src="res/icon/icon96xhdpi.png"  gap:platform="android" gap:density="xhdpi" />
-<!--     <icon src="res/icon/android/icon144xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" /> -->
 	
 	<gap:splash src="splash.png" />
 	
@@ -64,7 +63,6 @@
     
 	<!-- Useful for debugging -->
 	<gap:plugin name="org.apache.cordova.console" />
-	<gap:plugin name="https://github.com/sulite/Cordova-SQLitePlugin-ICU-Android.git" />
 	
 
     <!-- Other optional plugins -->
