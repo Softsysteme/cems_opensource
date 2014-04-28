@@ -2,41 +2,124 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- optional meta -->
+		<!-- optional ios meta -->
 		<!-- show the splashscreen in ios webapp mode -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- You may use the other optional metas -->
 		<!-- <meta name="apple-touch-fullscreen" content="yes" />-->
 		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" />-->
 		<!-- <meta name="format-detection" content="telephone=no" />-->
-	<!-- viewport -->
+		
+		<!-- viewport -->
 		<!-- use this viewport for standard webApp + PhoneGap -->
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+		
+		<!-- use this viewport for iPhone iOS 4 and iOS 5 webApp -->
+		<!-- <meta name="viewport" content="user-scalable=yes, width=device-width, height=device-height, initial-scale=1" />-->
+		
 		<!-- use this viewport for iPad webApp -->
 		<!-- <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1" />-->
+		
 		<title>Vacation Acceptation</title>
 		
-	<!-- iPhone parameters -->
+		<!-- 	Switch back easy to the library version of the project creation by toggling comments ( ctrl + shift + c )  -->
+		
+		<!-- iPhone parameters -->
 		<link rel="apple-touch-icon" href="res/icon/ios/icon57.png" />
 		<link rel="apple-touch-startup-image" href="res/splash/ios/splashiPhone320x460.png" />
-
-<!-- 	Switch back easy to the library version of the project creation by toggling comments ( ctrl + shift + c )  -->
 		
-    <!-- CSS inclusions -->
+		<!--
+			by default, your project will use the latest JS and CSS resources version provided in the Convertigo server
+			where it is deployed. If you want to use a specific version, comment out the current links and comment in
+			the /x.x.x version of links to the resource you want to use. Be sure to use the same version for all the links
+			to the resources.
+			
+			Also, all links are by default on the minified version of the resources. We provide for your convenience links
+			to the non minifed versions, just commend out the non minified and comment in the minified links if you want to
+			use	them.
+		-->
+			 	
+		
+    	<!-- CSS inclusions -->
 		<link href="../../../../css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
-<!-- only uncomment for debug purpose, do not submit to phonegap without the min version		 -->
-<!-- 		<link href="../../../../css/jquery.mobile.css" rel="stylesheet" type="text/css" />		 -->
+		
+<!-- 	<link href="../../../../css/jquery.mobile.css" rel="stylesheet" type="text/css" /> -->
+<!-- 	<link href="../../../../css/7.1.0/jquery.mobile.min.css" rel="stylesheet" type="text/css" /> -->
+<!-- 	<link href="../../../../css/7.1.0/jquery.mobile.css" rel="stylesheet" type="text/css" /> -->
+
+		<!--
+			Local project custom css
+			===================================
+			custom.css will hold all your custom CSS styles
+		-->
 		<link href="css/custom.css" rel="stylesheet" />
-	
-	<!-- Scripts inclusions -->
-		<script src="../../../../scripts/jquery.min.js" type="text/javascript"></script>
-		<script src="../../../../scripts/jquery.mobilelib.js" type="text/javascript"></script>
+
+		
+		<!-- Scripts inclusions -->
+        <!--
+        	PhoneGap JS library
+        	===================
+        	To use some phonegap/cordova APIs (GPS, Sensors, Camera, Etc..)
+        -->
+        <script src="cordova.js" type="text/javascript"></script>
+        
+        <!--
+        	jQuery library (2.x)
+        	==============
+        	Convertigo mobile apps are based on JQuery. the following links will reference the current jQuery
+        	library.
+        -->
+		<script src="../../../../scripts/jquery2.min.js" type="text/javascript"></script>
+<!-- 	<script src="../../../../scripts/jquery2.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/jquery2.min.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/jquery2.js" type="text/javascript"></script> -->
+		
+		<!--
+			Convertigo jQuery c8o mobilelib
+			===============================
+			The following links will reference the Convertigo mobilelib providing your application's access
+			to the Convertigo Server. Be sure all the links are placed in the following order.
+			You can find documentation about CTF here:
+			http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+			or
+			http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+		-->
+		<script src="../../../../scripts/c8o.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/c8o.jquerymobile.js" type="text/javascript"></script>
+<!-- 		<script src="../../../../scripts/c8o.cordova.js" type="text/javascript"></script> -->
+		<script src="../../../../scripts/ctf.core.js" type="text/javascript"></script>
+		<script src="../../../../scripts/ctf.jquerymobile.js" type="text/javascript"></script>
+		
+<!-- 	<script src="../../../../scripts/7.1.0/c8o.core.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/c8o.jquerymobile.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/c8o.cordova.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/ctf.core.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/ctf.jquerymobile.js" type="text/javascript"></script> -->
+		
+		<!--
+			Local project custom script
+			===================================
+			custom.js will hold all your custom logic and controller.
+			WARNING : Be sure this link is placed between the "jQuery c8o mobilelib" and the "JQuery Mobile" library.  
+		-->
 		<script src="js/custom.js" type="text/javascript"></script>
+		
+		<!--
+			jQuery mobile library
+			=====================
+			Provides the mobile UI features to your app.
+			WARNING: Must be the last link referenced in the <head> section.
+		-->
 		<script src="../../../../scripts/jquery.mobile.min.js" type="text/javascript"></script>
-<!-- only uncomment for debug purpose, do not submit to phonegap without the min version		 -->
-<!-- 		<script src="../../../../scripts/jquery.mobile.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/jquery.mobile.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/jquery.mobile.min.js" type="text/javascript"></script> -->
+<!-- 	<script src="../../../../scripts/7.1.0/jquery.mobile.js" type="text/javascript"></script> -->
+
 	</head>
+	
 	<body>
-	<!-- Start of first page - login -->
+		<!-- Start of first page - login -->
 		<div data-role="page" id="authentication" data-title="Vacation Acceptation" data-theme="a">
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
@@ -44,15 +127,15 @@
 			</div>
 			<!-- content -->
 			<div data-role="content">
-				<form>
-					<input type="hidden" name="__sequence" value="Login" />
+				<form data-c8o-call=".Fake">
+					<input type="hidden" name="sequence" value="Requests"/>
 					<label for="userId">User (john)</label>
-					<input type="text" id="userId" name="userId" value="john" />
+					<input type="text" id="userId" name="userId" value="john" placeholder="your username" autocorrect="off" autocapitalize="off"/>
 					<label for="password">Password (1234)</label>
-					<input type="password" id="password" name="password" value="1234" />
-					<button data-theme="b" value="connection"></button>
-					<button data-theme="a" type="button" class="quit" value="quit"></button>
-				</form>
+					<input type="password" id="password" name="password" value="1234" placeholder="your password" autocorrect="off" autocapitalize="off"/>
+					<button data-theme="b">connection</button>
+				</form>				
+				<button data-theme="a" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}'>quit</button>
 			</div>
 		</div>
 		
@@ -61,17 +144,22 @@
 			
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
-				<a href="#" class="quit" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
-				<h1><span id="nbleave">XX</span> leaves to commit</h1>
- 				<a href="#" class="requests" data-role="button" data-icon="refresh" data-iconpos="notext">Refresh</a>
+ 				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="refresh" data-iconpos="notext">Refresh</a>
+				<h1 data-c8o-listen=""><span id="nbleave">XX</span> leaves to commit</h1>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
-			<div data-role="content">
-				<a id="seeCalendar" href="#calendar" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">See the team calendar</a>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-theme="c">
+			<div data-role="content" data-c8o-listen=".Fake">
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">See the team calendar</a>
+
+				<ul data-role="listview" data-inset="true" data-theme="c" data-c8o-each="requests>request">
+					<li>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Details","index":"__=index__"}'>
+							<h3>__=name__<br/>__=date__</h3>
+							<p>__=when__</p>
+						</a>
+					</li>
 				</ul>
 				<p id="info"></p>
 			</div>			
@@ -82,24 +170,24 @@
 			
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
-				<a href="#" class="quit" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Back</a>
 				<h1>Calendar</h1>
-				<a href="#" class="requests" data-role="button" data-icon="back" data-iconpos="notext">Return</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
 			<div class="calendarbar" data-role="content" data-theme="a">
 				<div>
 					<div style="float:left;">
-						<a href="PreviousMonth" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">M</a>
-						<a href="PreviousWeek" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">W</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousMonth"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">M</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousWeek"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">W</a>
 					</div>
 					<div style="float:right;">	
-						<a href="NextWeek" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">W</a>
-						<a href="NextMonth" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">M</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextWeek"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">W</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextMonth"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">M</a>
 					</div>
 				</div>
-				<a href="Calendar" data-role="button" data-inline="true" data-theme="b">Now</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-mini="true" data-inline="true" data-theme="b">Now</a>
 			</div>
 			<div id="calendars" data-role="content" data-theme="c">
 				<!--table calendar one week -->
@@ -116,15 +204,15 @@
 			<div class="calendarbar" data-role="content" data-theme="a">
 				<div>
 					<div style="float:left;">
-						<a href="PreviousMonth" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">M</a>
-						<a href="PreviousWeek" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">W</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousMonth"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">M</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousWeek"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="b">W</a>
 					</div>
 					<div style="float:right;">
-						<a href="NextWeek" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">W</a>
-						<a href="NextMonth" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">M</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextWeek"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">W</a>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextMonth"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="b">M</a>
 					</div>
 				</div>
-				<a href="Calendar" data-role="button" data-inline="true" data-theme="b">Now</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-mini="true" data-inline="true" data-theme="b">Now</a>
 			</div>
 		</div>
 		
@@ -133,21 +221,30 @@
 			
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
-				<a href="#" class="quit" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>				
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Return</a>			
 				<h1>Details</h1>
-				<a href="#" class="requests" data-role="button" data-icon="back" data-iconpos="notext">Return</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>	
 			</div>
 			
 			<!-- content -->
 			<div>
 				<div data-role="content" data-theme="a">
 					<fieldset class="ui-grid-a">
-						<div class="ui-block-a"><button id="validate" data-icon="check" data-theme="v" value="Validate"></button></div>
-						<div class="ui-block-b"><button id="refuse" data-icon="delete" data-theme="s" value="Refuse"></button></div>
+						<div class="ui-block-a"><button id="validate" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Validate"}' data-icon="check" data-theme="v">Validate</button></div>
+						<div class="ui-block-b"><button id="refuse" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Refuse"}' data-icon="delete" data-theme="s">Refuse</button></div>
 					</fieldset>
 				</div> 
-				<div id="maindetails" data-role="content" data-theme="s"></div>
-				<input id="index" type="hidden" value=""></input>
+				<div id="maindetails" data-theme="s" data-c8o-listen=".Fake">
+					<ul data-role="listview">
+						<li><strong>Name:</strong>  __=request>name__</li>
+						<li><strong>When:</strong>  __=request>when__</li>
+						<li><strong>Type:</strong>  __=request>type__</li>
+						<li><strong>Start:</strong>  __=request>start__</li>
+						<li><strong>End:</strong>  __=request>end__</li>		
+						<li><strong>Date:</strong>  __=request>date__</li>
+					</ul>					
+				<input id="index" type="hidden" value="__=request>index__" />		
+				</div>
 			</div>
 		</div>
 		
@@ -156,15 +253,20 @@
 			
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
-				<a href="#" class="quit" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Return</a>
 				<h1>Refuse reasons</h1>
-				<a href="#" class="requests" data-role="button" data-icon="back" data-iconpos="notext">Return</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
-			<div data-role="content">
+			<div data-role="content" data-c8o-listen=".Fake">
 				<h2>Select a reason</h2>
-				<ul data-role="listview" data-inset="true" data-theme="c">
+				<ul data-role="listview" data-inset="true" data-theme="c" data-c8o-each="reasons>option">
+					<li>
+						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Validate","index":"__=index__"}'>
+							<h3>__=label__</h3>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -175,13 +277,13 @@
 			<!-- top bar -->
 			<div data-role="header" data-theme="b">
 				<h1>Error message</h1>
-				<a href="#" class="quit" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
-			<div data-role="content" data-theme="c">
-				<p id="errorMessageTarget"></p>
-				<a href="#" data-role="button" data-add-back-btn="true" data-icon="back" data-rel="back" data-theme="b">Return</a>
+			<div data-role="content" data-theme="c" data-c8o-listen="*">
+				<a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="b">Return</a>
+				<p id="errorMessageTarget">__=alertMessage__</p>
 			</div>
 		</div>
 		
@@ -194,9 +296,9 @@
 			</div>
 			
 			<!-- content -->
-			<div data-role="content" data-theme="c">
-				<p id="alertMessageTarget">X</p>
-				<a href="#" data-role="button" data-add-back-btn="true" data-icon="back" data-rel="back" data-theme="b">Return</a>
+			<div data-role="content" data-theme="c" data-c8o-listen=".Fake">
+				<p id="alertMessageTarget">__=alertMessage__</p>
+				<a href="#listing" data-role="button" data-icon="back" data-theme="b">Return</a>
 			</div>
 		</div>
 		
@@ -210,7 +312,7 @@
 			
 			<!-- content -->
 			<div data-role="content" data-theme="c">
-				<button id="reload" value="Reload" data-theme="b"></button>
+				<a href="app.html" data-role="button" data-theme="b">Reload</a>
 			</div>
 		</div>
 		
