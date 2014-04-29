@@ -80,8 +80,20 @@ C8O.searchCacheEntry = function(key, callback) {
 				return(callback());
 			} else {
 				C8O.log.debug("c8o.cach: data found for: " + tKey + " Data is : " + results.rows.item(0).data);
-				var data = $.parseXML(results.rows.item(0).data);
-				return(callback(data));
+				$.ajax({
+					cache: false,
+					dataType: "xml",
+					url: results.rows.item(0).data,
+					success: function (xml) {
+						if (C8O.canLog("trace"))
+							C8O.log.trace("c8o.cach: data read from cache : " + C8O.getXmlAsString(xml));
+						callback(xml);
+					},
+					error: function (xhr, status, err) {
+						C8O.log.error("c8o.cach: errr reading data from cache : " + status + " error is : " + err);
+						callback();
+					}
+				});
 			}
 		});
 	}, function(error) {
@@ -116,23 +128,43 @@ C8O.insertInCache = function(key, data) {
 	var tKey = JSON.stringify(key);
 	var tData = C8O.getXmlAsString(data);
 	
-	C8O.log.debug("c8o.cach: cached data is : " + tData);
+	C8O.log.debug("c8o.cach: data to cache is : " + tData);
 	
-	C8O.db.transaction(function(tx){
-		tx.executeSql('SELECT key FROM cacheIndex WHERE key=?', [tKey], function(tx, results) {
-			if (results.rows.length == 0) {
-				C8O.log.debug("c8o.cach: create a cache entry for: " + tKey);
-				tx.executeSql('INSERT INTO cacheIndex (key, data) VALUES(? , ?)', [tKey, tData]);
-			} else {
-				C8O.log.debug("c8o.cach: update a cache entry for: " + tKey);
-				tx.executeSql('UPDATE cacheIndex SET data=? WHERE key=?', [tData, tKey]);
+	
+	if (C8O.cacheFileSystem) {
+		C8O.cacheFileSystem.root.getFile(
+			"data" + new Date().getTime() + ".cache", 
+			{create: true, exclusive: false},
+			function(fileEntry) {
+				C8O.log.debug("c8o.cach: fileCreated: " + JSON.stringify(fileEntry));
+				fileEntry.createWriter(
+					function(writer) {
+						C8O.log.debug("c8o.cach: writer Created: " + JSON.stringify(writer));
+						writer.onwrite = function(evt) {
+							C8O.log.debug("c8o.cach: write done: " + JSON.stringify(evt));
+							C8O.db.transaction(function(tx){
+								tx.executeSql('SELECT key FROM cacheIndex WHERE key=?', [tKey], function(tx, results) {
+									if (results.rows.length == 0) {
+										C8O.log.debug("c8o.cach: create a cache entry for: " + tKey);
+										tx.executeSql('INSERT INTO cacheIndex (key, data) VALUES(? , ?)', [tKey, writer.localURL]);
+									} 
+								});
+							}, function(error) {
+								C8O.log.error("c8o.cach: Error creating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
+							}, function() {
+								C8O.log.debug("c8o.cach: created a cache entry for: " + tKey);
+							});
+						};
+						writer.write(tData);
+					}, function(error) {
+						C8O.log.error("c8o.cach: Error creating writer: "  + error);
+					}
+				);
+			}, function(error) {
+				C8O.log.error("c8o.cach: error creating file: " + error);
 			}
-		});
-	}, function(error) {
-		C8O.log.error("c8o.cach: Error creating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
-	}, function() {
-		C8O.log.debug("c8o.cach: created a cache entry for: " + tKey);
-	});
+		);
+	}
 };
 
 /**
@@ -266,5 +298,16 @@ C8O.addHook("init_finished", function (params) {
 	});
 	
 	C8O.db = db;
+	
+	if (window.requestFileSystem) {
+	    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0,
+		    function(fileSystem) {
+	    		C8O.log.debug("c8o.cach: FileSystem is :" + JSON.stringify(fileSystem));
+	    		C8O.cacheFileSystem = fileSystem;
+		    }, function (error) {
+	    		C8O.log.error("c8o.cach: Error getting file system : " + error);
+		    }
+		);
+	}
 	return true;
 });
