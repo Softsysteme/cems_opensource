@@ -1062,6 +1062,7 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/img/favicon.ico -te
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/c8o.localcache.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text

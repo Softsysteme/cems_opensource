@@ -81,6 +81,7 @@ $.extend(true, C8O, {
 		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
+		toaster : ""
 	},
 	
 	options: {
@@ -94,6 +95,13 @@ $.extend(true, C8O, {
 			    {
 					condition: "error",
 			    	goToPage: "#errorMessage"
+	 			},
+	 			{
+	 				condition: "document[fromlocalcache]",
+	 				afterRendering: function($doc, $c8oData){
+	 					//from cache
+	 					toasterPositionFixe("from cache");
+	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -134,6 +142,18 @@ $.extend(true, C8O, {
 /*******************************************************
  * Functions *
  *******************************************************/
+
+/**
+* Function to manage the information toaster
+*/
+	function toasterPositionFixe(message) {
+		var positionScroll = window.pageYOffset;
+		var viewPortHeight = $(window).height();
+		var contentHeight = Math.abs( viewPortHeight / 2 );
+		var position = positionScroll + contentHeight;
+		C8O.vars.toaster.toast(message);
+		$(".toast-container").css("top",position+"px");
+	}
 
 
 /**
@@ -349,9 +369,11 @@ $.extend(true, C8O, {
  *  return: true > log the error with C8O.log.error
  *             false > don't log the error
  */
-//C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
-//	return true;
-//});
+C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
+	//no network
+	toasterPositionFixe("No network");
+	return true;
+});
 
 /**
  *  document_ready hook
@@ -363,6 +385,12 @@ $.extend(true, C8O, {
  *             false > break the processing of request
  */
 C8O.addHook("document_ready", function () {
+	
+	/* 
+	 * Init toaster
+	 */
+	C8O.vars.toaster = $.toaster({showTime:1500, centerX:true, centerY:true});
+	
 	/* 
 	 * handles username and password storing in local storage 
 	 * or removing from storage when checking or unchecking the "remember me" checkbox   
