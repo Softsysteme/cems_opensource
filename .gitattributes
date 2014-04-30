@@ -4446,11 +4446,13 @@ Studio/tomcat/conf/.keystore -text
 Studio/tomcat/conf/context.xml -text
 Studio/tomcat/conf/tomcat-users.xml -text
 Studio/tomcat/conf/web.xml -text
-Studio/tomcat/lib/ecj-4.2.2.jar -text
+Studio/tomcat/lib/ecj-P20140317-1600.jar -text
 Studio/tomcat/lib/tomcat-dbcp.jar -text
 Studio/tomcat/lib/tomcat-embed-core.jar -text
+Studio/tomcat/lib/tomcat-embed-el.jar -text
 Studio/tomcat/lib/tomcat-embed-jasper.jar -text
 Studio/tomcat/lib/tomcat-embed-logging-juli.jar -text
+Studio/tomcat/lib/tomcat7-embed-websocket.jar -text
 Studio/tomcat/webapps/ROOT/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/com/eviware/soapui/impl/wsdl/support/xsd/SampleXmlUtil.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/custom_additions.xml -text svneol=unset#text/plain
