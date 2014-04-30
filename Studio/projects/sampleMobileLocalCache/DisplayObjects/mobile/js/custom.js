@@ -95,13 +95,6 @@ $.extend(true, C8O, {
 			    {
 					condition: "error",
 			    	goToPage: "#errorMessage"
-	 			},
-	 			{
-	 				condition: "document[fromlocalcache]",
-	 				afterRendering: function($doc, $c8oData){
-	 					//from cache
-	 					toasterPositionFixe("from cache");
-	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -112,6 +105,14 @@ $.extend(true, C8O, {
 			    {
 					condition: "logon",
 			    	goToPage: "#search"
+	 			},
+	 			{
+	 				condition: "document[fromlocalcache]",
+	 				goToPage: "#search",
+	 				afterRendering: function($doc, $c8oData){
+	 					//from cache
+	 					toasterPositionFixe("from cache");
+	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -122,6 +123,14 @@ $.extend(true, C8O, {
 			    {
 					condition: "results",
 			    	goToPage: "#listing"
+	 			},
+	 			{
+	 				condition: "document[fromlocalcache]",
+	 				goToPage: "#listing",
+	 				afterRendering: function($doc, $c8oData){
+	 					//from cache
+	 					toasterPositionFixe("from cache");
+	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -132,6 +141,14 @@ $.extend(true, C8O, {
 			    {
 					condition: "result",
 			    	goToPage: "#details"
+	 			},
+	 			{
+	 				condition: "document[fromlocalcache]",
+	 				goToPage: "#details",
+	 				afterRendering: function($doc, $c8oData){
+	 					//from cache
+	 					toasterPositionFixe("from cache");
+	 				}
 	 			}
 			],
 			options: {transition : "pop"}
