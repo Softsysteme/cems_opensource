@@ -20,6 +20,71 @@
  * $Date: 2014-04-11 12:00:49 +0200 (ven., 11 avr. 2014) $
  */
 
+/**
+ * c8o.localcache.js
+ * 
+ * Implements LocalCache feature for Convertigo local apps.
+ * 
+ * Local cache stores automatically Convertigo server response in a local device database. In this way, if the
+ * network is not available, data can still be displayed to the user.
+ * 
+ * To use local cache feature :
+ * 
+ * - include the the c8o.localcache.js in your app.html. Be sure this is after your custom.js
+ * - Each time you want to cache a server response, add a __localCache variable to your call.
+ *   The __localCache is a JSON structure of this form :
+ *   
+ *   {
+ *   	"enabled": true, 				// or false, enables or disables cache for this c8o call.
+ *   	"policy" : "priority-server", 	// The app will try to get data from the server first, if no network, it will lookup
+ *										// in the cache. If data is found in the cache it is returned. If not, a network error occurs.
+ * 		"policy" : "priority-local",	// The app will try to get data from the local cache first. If data is not found in the cache,
+ *   									// the app will try to call the server. If The is not network, a network error is returned.
+ *   	"ttl"	 : value				// A time to live value in milliseconds. After this time, data will be discarded from cache/
+ *	}   
+ *    
+ */
+
+
+/**
+ * downloadAttachements
+ * 
+ * Downloads all attachments found in an XML response. An attachment is any node starting
+ * by an url pattern such as http:// or https://
+ * 
+ * @param xml, the xml dom response
+ * @callback, function called back when all downloads are finished with updated XML as argument
+ * @param notifications, a notification function called when each download is completed
+ */
+C8O.downloadAttachments = function(xml, callback, notifications) {
+	var haveToDownload = 0;
+	 $('*', xml).each(function () {
+		 var txt = $(this)[0].childNodes[0].nodeValue;
+		 if(txt.indexOf("http://") === 0  || txt.indexOf("https://") === 0) {
+			 var fileTransfer = new FileTransfer();
+			 var uri  = encodeURI(txt);
+			 var dest = C8O.cacheFileSystem.root.toURL() + "r_" + new Date().getTime() + uri; 
+			 C8O.log.debug("c8o.cach: Download resources from : " + uri + " to : " + dest);
+			 fileTransfer.download(
+				uri,
+				dest,
+				function(entry) {
+					C8O.log.debug("c8o.cach: Download resource complete : " + entry.toURL() + " wating for " + haveToDownload + " download(s) to complete" );
+					$(this).text(entry.toURL());
+					if (--haveToDownload === 0) {
+						C8O.log.debug("c8o.cach: Download all resources complete : " + C8O.getXmlAsString(xml));
+					}
+				},
+				function(error) {
+					C8O.log.error("c8o.cach: Download resources error : " + error.source + "," + error.target + "," + error.code);
+				},
+				true
+			);
+			haveToDownload++;
+		 }
+	 });
+};
+
 
 /**
  * handleExpired
@@ -217,6 +282,7 @@ C8O.insertInCache = function(key, data) {
 								C8O.log.error("c8o.cach: Error creating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
 							}, function() {
 								C8O.log.debug("c8o.cach: created a cache entry for: " + tKey);
+								C8O.downloadAttachments(data);
 							});
 						};
 						writer.write(tData);
@@ -267,6 +333,10 @@ C8O.addHook("call", function (data) {
 						// we found an entry for this key, Create a fake XHR and notify CTF
 						// with the data found.
 				    	delete data.__localCache;
+				    	
+				    	// add LocalCache attribute to response
+				    	$(entry).find("document").attr("localcache", "true");
+				    	
 				    	var fakeXHR = {
 								C8O_data: data
 						};
@@ -311,6 +381,10 @@ C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
 						// we found an entry for this key, Create a fake XHR and notify CTF
 						// with the data found.
 				    	delete data.__localCache;
+				    	
+				    	// add LocalCache attribute to response
+				    	$(entry).find("document").attr("localcache", "true");
+				    	
 				    	var fakeXHR = {
 								C8O_data: data
 						};
@@ -323,7 +397,6 @@ C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
 					}
 				});
 			}
-			return false;
 		}
 	}
 	return true;
