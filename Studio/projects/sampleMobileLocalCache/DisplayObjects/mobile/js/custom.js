@@ -105,14 +105,6 @@ $.extend(true, C8O, {
 			    {
 					condition: "logon",
 			    	goToPage: "#search"
-	 			},
-	 			{
-	 				condition: "document[fromlocalcache]",
-	 				goToPage: "#search",
-	 				afterRendering: function($doc, $c8oData){
-	 					//from cache
-	 					toasterPositionFixe("from cache");
-	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -123,14 +115,6 @@ $.extend(true, C8O, {
 			    {
 					condition: "results",
 			    	goToPage: "#listing"
-	 			},
-	 			{
-	 				condition: "document[fromlocalcache]",
-	 				goToPage: "#listing",
-	 				afterRendering: function($doc, $c8oData){
-	 					//from cache
-	 					toasterPositionFixe("from cache");
-	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -141,14 +125,6 @@ $.extend(true, C8O, {
 			    {
 					condition: "result",
 			    	goToPage: "#details"
-	 			},
-	 			{
-	 				condition: "document[fromlocalcache]",
-	 				goToPage: "#details",
-	 				afterRendering: function($doc, $c8oData){
-	 					//from cache
-	 					toasterPositionFixe("from cache");
-	 				}
 	 			}
 			],
 			options: {transition : "pop"}
@@ -530,6 +506,12 @@ C8O.addHook("init_finished", function (params) {
  *  return: true > lets the CTF perform the xml
  *             false > break the processing of xml
  */
-//C8O.addHook("xml_response", function (xml, data) {
-//	return true;
-//});
+C8O.addHook("xml_response", function (xml, data) {
+	// Check for the localcache attribute in the XML response.
+	// If we have it this leans that the data was retrieved from the cache
+	// Warn the user.
+	if ($("document", xml).attr("localcache") == "true") {
+		toasterPositionFixe("Data retreived from cache");
+	}
+	return true;
+});

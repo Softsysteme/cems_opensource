@@ -47,14 +47,28 @@
 
 
 /**
+ * Utility routine to pretty print a DOM as XML text
+ * 
+ *  @param xmlDom the jQuery dom to be returned as a String
+ *  @returns a String
+ */
+C8O.getXmlAsString = function(xmlDom){
+    return (typeof XMLSerializer!=="undefined") ? 
+         (new window.XMLSerializer()).serializeToString(xmlDom) : 
+         xmlDom.xml;
+};
+
+
+/**
  * downloadAttachements
  * 
  * Downloads all attachments found in an XML response. An attachment is any node starting
  * by an url pattern such as http:// or https://
  * 
  * @param xml, the xml dom response
- * @callback, function called back when all downloads are finished with updated XML as argument
- * @param notifications, a notification function called when each download is completed
+ * @callback, "function(xml) {}" called back when all downloads are finished with updated xml as argument
+ * @param notifications, a notification "function(remaining){}" called when each download is completed with
+ *                       the remaining downloads.
  */
 C8O.downloadAttachments = function(xml, callback, notifications) {
 	var haveToDownload = 0;
@@ -63,16 +77,21 @@ C8O.downloadAttachments = function(xml, callback, notifications) {
 		 if(txt.indexOf("http://") === 0  || txt.indexOf("https://") === 0) {
 			 var fileTransfer = new FileTransfer();
 			 var uri  = encodeURI(txt);
-			 var dest = C8O.cacheFileSystem.root.toURL() + "r_" + new Date().getTime() + uri; 
+			 var dest = C8O.cacheFileSystem.root.toURL() + "r_" + new Date().getTime() + uri;
+			 var currentNode = $(this);
 			 C8O.log.debug("c8o.cach: Download resources from : " + uri + " to : " + dest);
 			 fileTransfer.download(
 				uri,
 				dest,
 				function(entry) {
-					C8O.log.debug("c8o.cach: Download resource complete : " + entry.toURL() + " wating for " + haveToDownload + " download(s) to complete" );
-					$(this).text(entry.toURL());
+					if (notifications) {
+						notifications(haveToDownload);
+					}
+					C8O.log.debug("c8o.cach: Download resource complete : " + entry.toURL() + " waiting for " + haveToDownload + " download(s) to complete" );
+					currentNode.text(entry.toURL());
 					if (--haveToDownload === 0) {
-						C8O.log.debug("c8o.cach: Download all resources complete : " + C8O.getXmlAsString(xml));
+						C8O.log.debug("c8o.cach: Download all resources complete");
+						callback(xml);
 					}
 				},
 				function(error) {
@@ -89,7 +108,7 @@ C8O.downloadAttachments = function(xml, callback, notifications) {
 /**
  * handleExpired
  * 
- * Check for expired cache entries en remove them.
+ * Check for expired cache entries and remove them.
  */
 C8O.handleExpired = function() {
 	var now = new Date().getTime();
@@ -178,6 +197,56 @@ C8O.deleteCacheEntry = function(key) {
 	});	
 };
 
+
+/**
+ * Update cacheEntry
+ * 
+ * @param key, the key to update
+ * @param xml, the new xml data 
+ * 
+ * The SQL entry and the data on the file system will be deleted.
+ * 
+ */
+C8O.updateCacheEntry = function(key, xml) {
+	C8O.db.transaction(function(tx){
+		tx.executeSql('SELECT data FROM cacheIndex WHERE key=?', [key], function(tx, results) {
+			if (results.rows.length == 0) {
+				C8O.log.error("c8o.cach: update cache entry, no data found for key : " + key);
+			} else {
+				C8O.log.trace("c8o.cach: update cache entry, data found for: " + key + " Data is : " + results.rows.item(0).data);
+				var fileName = results.rows.item(0).data.substring(results.rows.item(0).data.lastIndexOf("/") + 1);
+				C8O.log.debug("c8o.cach: update cache entry, file to update is : " + fileName);
+				C8O.cacheFileSystem.root.getFile(
+					fileName,
+					null,
+					function(fileEntry) {
+						fileEntry.createWriter(
+							function (writer) {
+								C8O.log.debug("c8o.cach: update cache entry, writer created");
+								writer.onwrite = function(evt) {
+									C8O.log.debug("c8o.cach: update cache entry, file is updated");
+								};
+								writer.write(C8O.getXmlAsString(xml));
+							},
+							function (error) {
+								C8O.log.error("c8o.cach: update cache entry, error creating writer : " + error);
+							}
+						);
+					},
+					function (error) {
+						C8O.log.error("c8o.cach: update cache entry, error getting file entry : " + error);
+					}
+				);
+			}
+		});
+	}, function(error) {
+		C8O.log.error("c8o.cach: update cache entry, Error searching a cache entry for: " + key + " error is : " + JSON.stringify(error));
+	}, function() {
+		C8O.log.trace("c8o.cach: update cache entry searched a cache entry for: " + key);
+	});	
+};
+
+
 /**
  * Searches a cache Entry for a given key
  * 
@@ -226,17 +295,6 @@ C8O.searchCacheEntry = function(key, callback) {
 };
 
 
-/**
- * Utility routine to pretty print a DOM as XML text
- * 
- *  @param xmlDom the jQuery dom to be returned as a String
- *  @returns a String
- */
-C8O.getXmlAsString = function(xmlDom){
-    return (typeof XMLSerializer!=="undefined") ? 
-         (new window.XMLSerializer()).serializeToString(xmlDom) : 
-         xmlDom.xml;
-};
 
 /**
  * Inserts a request in the cache
@@ -282,7 +340,11 @@ C8O.insertInCache = function(key, data) {
 								C8O.log.error("c8o.cach: Error creating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
 							}, function() {
 								C8O.log.debug("c8o.cach: created a cache entry for: " + tKey);
-								C8O.downloadAttachments(data);
+								C8O.downloadAttachments(data, function(xml) {
+									C8O.log.debug("c8o.cach: Attachments are downloaded for: " + tKey);
+									C8O.log.debug("c8o.cach: So, update XML in cache: " + C8O.getXmlAsString(xml));
+									C8O.updateCacheEntry(tKey, xml);
+								});
 							});
 						};
 						writer.write(tData);
