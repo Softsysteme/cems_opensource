@@ -43,6 +43,10 @@
  *   	"ttl"	 : value				// A time to live value in milliseconds. After this time, data will be discarded from cache/
  *	}   
  *    
+ *    
+ *  When the data is returned, an localcache attribute is set to true on the document node. This enables the app to display messages
+ *  when the data is return from the cache.
+ *     
  */
 
 
@@ -58,6 +62,89 @@ C8O.getXmlAsString = function(xmlDom){
          xmlDom.xml;
 };
 
+/**
+ * AddtoDownloadQueue
+ * 
+ * Queues a resource to be downloaded.
+ * 
+ * @param xml, the xml referencing this resource
+ * @param node, the node to be modified once the resource is downloaded
+ * @param url, the resource url
+ * @param last, true if this is the last resource to be downloaded for this xml.
+ *  
+ */
+C8O.addToDownloadQueue = function(xml, node, url, last, callback) {
+	var downloadJob = {
+		"xml": xml,
+		"node": node,
+		"url":url,
+		"last": last,
+		"callback":callback
+	};
+	C8O.downloadQueue.push(downloadJob);
+};
+
+
+/**
+ * execudeDownloadQueue
+ * 
+ * Pulls out of the queue downloads to be done and execute the downloads.
+ * 
+ * Downloads are executed 10 x 10 do avoid server saturation. Each time a
+ * download is done, we update the resource reference in the reference xml.
+ * 
+ * When a download is finished for a resource marked as last, we
+ * trigger a cache update with the modified reference xml.
+ * 
+ */
+C8O.executeDownloadQueue = function() {
+	var haveToDownload = 0;
+	for (i=0; i< 10; i++) {
+		(function() {
+			var downloadJob = C8O.downloadQueue.shift();
+			if (C8O.isDefined(downloadJob)) {
+				var fileTransfer = new FileTransfer();
+				var uri  = encodeURI(downloadJob.url);
+				var dest = C8O.cacheFileSystem.root.toURL() + "r_" + uri;
+				C8O.log.trace("c8o.cach: Start download resources from : " + uri + " to : " + dest);
+				fileTransfer.download(
+					uri,
+					dest,
+					function(entry) {
+						C8O.log.debug("c8o.cach: Download resource complete : " + entry.toURL() + " remaining : " + haveToDownload);
+						downloadJob.node.text(entry.toURL());
+						if (downloadJob.last) {
+							C8O.log.debug("c8o.cach: last download, callback");
+							downloadJob.callback(downloadJob.xml);
+						}
+							
+						if (--haveToDownload === 0)
+							setTimeout(function() {
+								C8O.executeDownloadQueue();
+							},
+							500);
+					},
+					function(error) {
+						C8O.log.error("c8o.cach: Download resources error : " + error.source + "," + error.target + "," + error.code);
+						if (downloadJob.last) {
+							C8O.log.debug("c8o.cach: error, last download, callback");
+							downloadJob.callback(downloadJob.xml);
+						}
+						
+						if (--haveToDownload === 0)
+							setTimeout(function() {
+								C8O.executeDownloadQueue();
+							},
+							500);
+					},
+					true
+				);
+				haveToDownload++;
+			}
+		})();
+	}
+}
+
 
 /**
  * downloadAttachements
@@ -71,37 +158,25 @@ C8O.getXmlAsString = function(xmlDom){
  *                       the remaining downloads.
  */
 C8O.downloadAttachments = function(xml, callback, notifications) {
-	var haveToDownload = 0;
-	 $('*', xml).each(function () {
-		 var txt = $(this)[0].childNodes[0].nodeValue;
-		 if(txt.indexOf("http://") === 0  || txt.indexOf("https://") === 0) {
-			 var fileTransfer = new FileTransfer();
-			 var uri  = encodeURI(txt);
-			 var dest = C8O.cacheFileSystem.root.toURL() + "r_" + new Date().getTime() + uri;
-			 var currentNode = $(this);
-			 C8O.log.debug("c8o.cach: Download resources from : " + uri + " to : " + dest);
-			 fileTransfer.download(
-				uri,
-				dest,
-				function(entry) {
-					if (notifications) {
-						notifications(haveToDownload);
-					}
-					C8O.log.debug("c8o.cach: Download resource complete : " + entry.toURL() + " waiting for " + haveToDownload + " download(s) to complete" );
-					currentNode.text(entry.toURL());
-					if (--haveToDownload === 0) {
-						C8O.log.debug("c8o.cach: Download all resources complete");
-						callback(xml);
-					}
-				},
-				function(error) {
-					C8O.log.error("c8o.cach: Download resources error : " + error.source + "," + error.target + "," + error.code);
-				},
-				true
-			);
-			haveToDownload++;
-		 }
-	 });
+	
+	//Filter elements containing URLs..
+	var $set = $('*', xml).filter(function (index) {
+		var txt = $(this)[0].childNodes[0].nodeValue;
+		if(txt.indexOf("http://") === 0  || txt.indexOf("https://") === 0)
+			return true;
+		else
+			return false;
+	});
+	
+	// Add these in the download queue, mark last one
+	var len = $set.length -1;
+	C8O.log.debug("c8o.cach: download Attachments, Nb of attachments to download : " + (len+1)*1);
+	$set.each(function (index) {
+		var txt = $(this)[0].childNodes[0].nodeValue;
+		C8O.log.trace("c8o.cach: Add to download Queue url:" + txt + " index:" + index);
+		C8O.addToDownloadQueue(xml, $(this), txt, index == len ? true:false, callback);
+	});
+	C8O.executeDownloadQueue();
 };
 
 
@@ -342,7 +417,7 @@ C8O.insertInCache = function(key, data) {
 								C8O.log.debug("c8o.cach: created a cache entry for: " + tKey);
 								C8O.downloadAttachments(data, function(xml) {
 									C8O.log.debug("c8o.cach: Attachments are downloaded for: " + tKey);
-									C8O.log.debug("c8o.cach: So, update XML in cache: " + C8O.getXmlAsString(xml));
+									C8O.log.debug("c8o.cach: Update XML in cache: " + C8O.getXmlAsString(xml));
 									C8O.updateCacheEntry(tKey, xml);
 								});
 							});
@@ -510,5 +585,8 @@ C8O.addHook("init_finished", function (params) {
 		    }
 		);
 	}
+	
+	// Prepare the download queue...
+	C8O.downloadQueue = new Array();
 	return true;
 });

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <results>
 	<result>
 		<id>1</id>
@@ -47,5 +47,3048 @@
 		<address>57 rue d’Amsterdam Paris France, 75008</address>
 		<price>29,70 €</price>
 		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
+	</result>
+	<result>
+		<id>3</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0763_01.jpg</img>
+		<title>Haussmann</title>
+		<address>18, rue Pasquier Paris France, 75008</address>
+		<price>38,70 €</price>
+		<total>193,50 €</total>
+		<description>Beautiful independent building of 6 floors, located in the heart of Paris</description>
+		<description>Well served by public transport.</description>
+	</result>
+	<result>
+		<id>4</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0005_01.jpg</img>
+		<title>72 Faubourg St Honoré</title>
+		<address>72 rue du Faubourg Saint Honoré Paris France, 75008</address>
+		<price>34,20 €</price>
+		<total>171,00 €</total>
+		<description>Only 5 min from the Champs Elysees and close to major embassies</description>
+		<description>Rue du Faubourg Saint-Honoré is one of the most prestigious of Paris</description>
+		<description>Close to numerous cafes, restaurants, hotels and shopping centers.</description>
+	</result>
+	<result>
+		<id>5</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1655_01.jpg</img>
+		<title>Batignolles</title>
+		<address>57 rue d’Amsterdam Paris France, 75008</address>
+		<price>29,70 €</price>
+		<total>148,50 €</total>
+	</result>
+	<result>
+		<id>1</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/0966_01.jpg</img>
+		<title>Montparnasse</title>
+		<address>140 Bis Rue de Rennes Paris, Paris France, 75006</address>
+		<price>37,80 €</price>
+		<total>189,00 €</total>
+		<description>Ideally located within the exciting district of the Gare Montparnasse</description>
+		<description>More than 1600 square meters of fully equipped offices providing every comfort</description>
+		<description>Center close to two public parkings.</description>
+	</result>
+	<result>
+		<id>2</id>
+		<img>http://www.regus.com/assets/global/images/centers/thumbnails/1548_01.jpg</img>
+		<title>Invalides</title>
+		<address>103 rue de Grenelle Paris France, 75007</address>
+		<price>43,20 €</price>
+		<total>216,00 €</total>
 	</result>
 </results>
