@@ -30,7 +30,7 @@
  * 
  * To use local cache feature :
  * 
- * - include the the c8o.localcache.js in your app.html. Be sure this is after your custom.js
+ * - include the the c8o.localcache.js in your app.html. Be sure this is AFTER your custom.js
  * - Each time you want to cache a server response, add a __localCache variable to your call.
  *   The __localCache is a JSON structure of this form :
  *   
@@ -41,11 +41,17 @@
  * 		"policy" : "priority-local",	// The app will try to get data from the local cache first. If data is not found in the cache,
  *   									// the app will try to call the server. If The is not network, a network error is returned.
  *   	"ttl"	 : value				// A time to live value in milliseconds. After this time, data will be discarded from cache/
- *	}   
+ *	 }   
  *    
  *    
  *  When the data is returned, an localcache attribute is set to true on the document node. This enables the app to display messages
- *  when the data is return from the cache.
+ *  when the data is returned from the cache.
+ *  
+ *  Any resource referenced in the response by an url starting by http:// or https:// will be also downloaded. This download process
+ *  will be done in background task. If a network errors occurs while downloading, the target resources will be ignored.
+ *  
+ *  When all the resources have been downloaded (Or skipped because of network error) the cache response is updated with local reference
+ *  instead of the original network reference. In this way, resources can be used off line.  
  *     
  */
 
@@ -71,6 +77,7 @@ C8O.getXmlAsString = function(xmlDom){
  * @param node, the node to be modified once the resource is downloaded
  * @param url, the resource url
  * @param last, true if this is the last resource to be downloaded for this xml.
+ * @param callback, the callback to execute when the last resource is downloaded
  *  
  */
 C8O.addToDownloadQueue = function(xml, node, url, last, callback) {
