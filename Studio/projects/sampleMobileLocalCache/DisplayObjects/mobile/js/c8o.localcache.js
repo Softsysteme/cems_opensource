@@ -412,11 +412,42 @@ C8O.insertInCache = function(key, data) {
 						writer.onwrite = function(evt) {
 							C8O.log.debug("c8o.cach: write done: " + JSON.stringify(evt));
 							C8O.db.transaction(function(tx){
-								tx.executeSql('SELECT key FROM cacheIndex WHERE key=?', [tKey], function(tx, results) {
+								tx.executeSql('SELECT data FROM cacheIndex WHERE key=?', [tKey], function(tx, results) {
+									// We do not have this cache entry, so create a new one..
 									if (results.rows.length == 0) {
 										C8O.log.debug("c8o.cach: create a cache entry for: " + tKey);
 										tx.executeSql('INSERT INTO cacheIndex (key, data, expirydate) VALUES(? , ?, ?)', [tKey, writer.localURL, expDate]);
-									} 
+									} else {
+										// We have a cache entry for this key, delete the old one and update the entry with the new file.
+										C8O.log.debug("c8o.cach: Insert in cache, Update a cache entry for " + tKey + " fileName: " + results.rows.item(0).data);
+										var fileName = results.rows.item(0).data.substring(results.rows.item(0).data.lastIndexOf("/") + 1);
+										C8O.cacheFileSystem.root.getFile(
+												fileName,
+												null,
+												function(fileToRemoveEntry) {
+													fileEntry.remove(
+															function (fileToRemoveentry) {
+																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileEntry));
+																C8O.db.transaction(function(tx){
+																	tx.executeSql('UPDATE cacheIndex SET data=? , expirydate=? WHERE key=?', [writer.localURL, expDate, key], function(tx, results) {
+																		C8O.log.debug("c8o.cach: Insert in cache, updated cache entry : " + tKey);
+																	});
+																}, function(error) {
+																	C8O.log.error("c8o.cach: Insert in cache, Error updating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
+																}, function() {
+																	C8O.log.trace("c8o.cach: Insert in cache, updated a cache entry for: " + tKey);
+																});
+															},
+															function (error) {
+																C8O.log.error("c8o.cach: Insert in cache, error removing file entry : " + error);
+															}
+														);
+												},
+												function (error) {
+													C8O.log.error("c8o.cach: insert in cache, error getting fileEntry : " + error);
+												}
+											);										
+									}
 								});
 							}, function(error) {
 								C8O.log.error("c8o.cach: Error creating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
@@ -568,10 +599,10 @@ C8O.addHook("xml_response", function (xml, data) {
  * The database name uses the endpoint to have one database for each app
  */
 C8O.addHook("init_finished", function (params) {
-	var db = openDatabase('c8oLC_' + C8O.vars.endpoint_url, '1.0', 'Convertigo Local Cache', 2 * 1024 * 1024);
-	C8O.log.debug("c8o.cach: SQL database Created/opened : " + "c8oLC_" + C8O.vars.endpoint_url);
+	var db = openDatabase("c8oLC", "1.0", "Convertigo Local Cache", 2 * 1024 * 1024);
+	C8O.log.debug("c8o.cach: SQL database Created/opened : " + JSON.stringify(db));
 	db.transaction(function (tx) {
-		  tx.executeSql('CREATE TABLE IF NOT EXISTS cacheIndex (key unique, data, expirydate)');
+		  tx.executeSql('CREATE TABLE IF cacheIndex (key unique, data, expirydate)');
 	},
 	function(error) { // error call back
 		C8O.log.error("c8o.cach: Error creating 'cacheIndex' table: " + error);
