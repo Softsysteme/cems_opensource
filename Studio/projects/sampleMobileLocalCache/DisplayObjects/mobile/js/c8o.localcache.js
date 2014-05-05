@@ -425,7 +425,7 @@ C8O.insertInCache = function(key, data) {
 												fileName,
 												null,
 												function(fileToRemoveEntry) {
-													fileEntry.remove(
+													fileToRemoveEntry.remove(
 															function (fileToRemoveentry) {
 																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileEntry));
 																C8O.db.transaction(function(tx){
