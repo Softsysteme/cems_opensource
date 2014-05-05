@@ -427,7 +427,7 @@ C8O.insertInCache = function(key, data) {
 												function(fileToRemoveEntry) {
 													fileToRemoveEntry.remove(
 															function (fileToRemoveentry) {
-																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileEntry));
+																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileToRemoveentry));
 																C8O.db.transaction(function(tx){
 																	tx.executeSql('UPDATE cacheIndex SET data=? , expirydate=? WHERE key=?', [writer.localURL, expDate, key], function(tx, results) {
 																		C8O.log.debug("c8o.cach: Insert in cache, updated cache entry : " + tKey);
