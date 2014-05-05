@@ -193,8 +193,6 @@ Studio/projects/template_javelinIntegration/_data
 Studio/projects/template_javelinIntegration/_private
 Studio/projects/template_javelinIntegration/template_javelinIntegration.temp.wsdl
 Studio/projects/template_javelinIntegration/template_javelinIntegration.temp.xsd
-Studio/projects/template_mobileJQueryMobile/*.temp.wsdl
-Studio/projects/template_mobileJQueryMobile/*.temp.xsd
 Studio/projects/template_mobileJQueryMobile/.project
 Studio/projects/template_mobileJQueryMobile/Traces
 Studio/projects/template_mobileJQueryMobile/_data
