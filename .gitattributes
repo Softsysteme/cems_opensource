@@ -1085,10 +1085,6 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/ico
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
 Studio/projects/sampleMobileLocalCache/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/sampleMobileLocalCache.xml -text svneol=unset#text/plain
