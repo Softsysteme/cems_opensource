@@ -74,9 +74,11 @@ public class List extends XmlService{
     			projectElement.setAttribute("version", version);
     			projectElement.setAttribute("exported", exported);
     			projectElement.setAttribute("deployDate", deployDate);
-    			if (project.undefinedGlobalSymbols == true) {
+    			
+    			if (Engine.theApp.databaseObjectsManager.symbolsProjectCheckUndefined(projectName)) {
     				projectElement.setAttribute("undefined_symbols", "true");
     			} 
+    			
     			projectsListElement.appendChild(projectElement);
     		}
     		catch (EngineException e) {

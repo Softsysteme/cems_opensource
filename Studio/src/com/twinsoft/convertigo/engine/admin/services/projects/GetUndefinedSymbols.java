@@ -23,19 +23,18 @@
 package com.twinsoft.convertigo.engine.admin.services.projects;
 
 import java.util.Set;
+import java.util.TreeSet;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.twinsoft.convertigo.beans.core.Project;
 import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.XmlService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefinition;
-import com.twinsoft.convertigo.engine.util.ProjectUtils;
 
 @ServiceDefinition(
 		name = "GetUndefinedSymbols",
@@ -53,12 +52,11 @@ public class GetUndefinedSymbols extends XmlService {
 	protected void getServiceResult(HttpServletRequest request, Document document) throws Exception {
 		Element root = document.getDocumentElement();
 		String projectName = request.getParameter("projectName");
-		Project project = Engine.theApp.databaseObjectsManager.getOriginalProjectByName(projectName);
-		Set<String> undefinedSymbols = ProjectUtils.getUndefinedGlobalSymbols(project);
+		final Set<String> allUndefinedSymbols = Engine.theApp.databaseObjectsManager.symbolsGetUndefined(projectName);
 		
 		Element undefined_symbols = document.createElement("undefined_symbols");
-		if (undefinedSymbols!=null) {
-			for (String undefinedSymbol: undefinedSymbols) {
+		if (allUndefinedSymbols != null) {
+			for (String undefinedSymbol : new TreeSet<String>(allUndefinedSymbols)) {
 				Element symbol = document.createElement("symbol");
 				symbol.setTextContent(undefinedSymbol);
 				undefined_symbols.appendChild(symbol);

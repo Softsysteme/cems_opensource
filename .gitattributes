@@ -4154,6 +4154,7 @@ Studio/src/com/twinsoft/convertigo/engine/SecurityTokenManager.java -text svneol
 Studio/src/com/twinsoft/convertigo/engine/StartupDiagnostics.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ThreadManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/TracePlayerManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/UndefinedSymbolsException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/UsageMonitor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/Version.java -text
 Studio/src/com/twinsoft/convertigo/engine/admin/AdminServlet.java -text svneol=unset#text/plain
@@ -4197,11 +4198,14 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Monitor.java -te
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Start.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Stop.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Supervision.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Add.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Create.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Delete.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/DeleteAll.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Edit.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Export.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Import.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/List.java -text
-Studio/src/com/twinsoft/convertigo/engine/admin/services/global_symbols/Update.java -text
 Studio/src/com/twinsoft/convertigo/engine/admin/services/keys/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/keys/Update.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/logs/Download.java -text svneol=unset#text/plain
