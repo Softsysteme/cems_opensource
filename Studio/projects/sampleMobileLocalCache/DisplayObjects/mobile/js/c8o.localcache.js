@@ -250,7 +250,7 @@ C8O.deleteCacheEntry = function(key) {
 					function(fileEntry) {
 						fileEntry.remove(
 							function (entry) {
-								C8O.log.trace("c8o.cach: delete cache entry, file removed : " + JSON.stringify(fileEntry));
+								C8O.log.trace("c8o.cach: delete cache entry, file removed : " + fileEntry.localURL);
 								C8O.db.transaction(function(tx){
 									tx.executeSql('DELETE FROM cacheIndex WHERE key=?', [key], function(tx, results) {
 										C8O.log.debug("c8o.cach: Delete,  data deleted for : " + key);
@@ -405,10 +405,10 @@ C8O.insertInCache = function(key, data) {
 			"data" + new Date().getTime() + ".cache", 
 			{create: true, exclusive: false},
 			function(fileEntry) {
-				C8O.log.debug("c8o.cach: fileCreated: " + JSON.stringify(fileEntry));
+				C8O.log.debug("c8o.cach: fileCreated: " + fileEntry.localURL);
 				fileEntry.createWriter(
 					function(writer) {
-						C8O.log.debug("c8o.cach: writer Created: " + JSON.stringify(writer));
+						C8O.log.debug("c8o.cach: writer Created: " + writer.localURL);
 						writer.onwrite = function(evt) {
 							C8O.log.debug("c8o.cach: write done: " + JSON.stringify(evt));
 							C8O.db.transaction(function(tx){
@@ -427,7 +427,7 @@ C8O.insertInCache = function(key, data) {
 												function(fileToRemoveEntry) {
 													fileToRemoveEntry.remove(
 															function (success) {
-																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileToRemoveEntry));
+																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + fileToRemoveEntry.toURL);
 																C8O.db.transaction(function(tx){
 																	tx.executeSql('UPDATE cacheIndex SET data=? , expirydate=? WHERE key = ?', [writer.localURL, expDate, tKey], function(tx, results) {
 																		C8O.log.debug("c8o.cach: Insert in cache, update cache entry : " + tKey + " For data: " + writer.localURL +" Affected rows : " + results.rowsAffected);
@@ -616,7 +616,7 @@ C8O.addHook("init_finished", function (params) {
 	if (window.requestFileSystem) {
 	    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0,
 		    function(fileSystem) {
-	    		C8O.log.debug("c8o.cach: FileSystem is :" + JSON.stringify(fileSystem));
+	    		C8O.log.debug("c8o.cach: FileSystem is OK");
 	    		C8O.cacheFileSystem = fileSystem;
 		    }, function (error) {
 	    		C8O.log.error("c8o.cach: Error getting file system : " + error);
