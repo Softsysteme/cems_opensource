@@ -54,6 +54,9 @@
     
 	<!-- Useful for debugging -->
 	<gap:plugin name="org.apache.cordova.console" />
+	
+	<!-- The SQLlite plugin for Windows Phone 8 for localcache -->
+	<gap:plugin name="https://github.com/brodybits/Cordova-SQLitePlugin-WP-2014.01" />
     
 	<!-- Other optional Core plugins, comment them out (ctrl+shit+c) if you want to reduce the package size and permissions -->
 <!--     <gap:plugin name="org.apache.cordova.battery-status" /> -->

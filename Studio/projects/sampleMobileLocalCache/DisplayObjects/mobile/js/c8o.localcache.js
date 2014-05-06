@@ -426,16 +426,16 @@ C8O.insertInCache = function(key, data) {
 												null,
 												function(fileToRemoveEntry) {
 													fileToRemoveEntry.remove(
-															function (fileToRemoveentry) {
-																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileToRemoveentry));
+															function (success) {
+																C8O.log.debug("c8o.cach: Insert in cache, file removed : " + JSON.stringify(fileToRemoveEntry));
 																C8O.db.transaction(function(tx){
-																	tx.executeSql('UPDATE cacheIndex SET data=? , expirydate=? WHERE key=?', [writer.localURL, expDate, key], function(tx, results) {
-																		C8O.log.debug("c8o.cach: Insert in cache, updated cache entry : " + tKey);
+																	tx.executeSql('UPDATE cacheIndex SET data=? , expirydate=? WHERE key = ?', [writer.localURL, expDate, tKey], function(tx, results) {
+																		C8O.log.debug("c8o.cach: Insert in cache, update cache entry : " + tKey + " For data: " + writer.localURL +" Affected rows : " + results.rowsAffected);
 																	});
 																}, function(error) {
 																	C8O.log.error("c8o.cach: Insert in cache, Error updating a cache entry for: " + tKey + " error is : " + JSON.stringify(error));
 																}, function() {
-																	C8O.log.trace("c8o.cach: Insert in cache, updated a cache entry for: " + tKey);
+																	C8O.log.debug("c8o.cach: Insert in cache, updated a cache entry for: " + tKey);
 																});
 															},
 															function (error) {
@@ -602,7 +602,7 @@ C8O.addHook("init_finished", function (params) {
 	var db = openDatabase("c8oLC", "1.0", "Convertigo Local Cache", 2 * 1024 * 1024);
 	C8O.log.debug("c8o.cach: SQL database Created/opened : " + JSON.stringify(db));
 	db.transaction(function (tx) {
-		  tx.executeSql('CREATE TABLE IF cacheIndex (key unique, data, expirydate)');
+		  tx.executeSql('CREATE TABLE IF NOT EXISTS cacheIndex (key unique, data, expirydate)');
 	},
 	function(error) { // error call back
 		C8O.log.error("c8o.cach: Error creating 'cacheIndex' table: " + error);
