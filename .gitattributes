@@ -3726,6 +3726,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SmartTypeEditor.java
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SmtpAttachmentEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SplitFieldsEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SplitStepTagsEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SqlCommitSelectionEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SqlOutputSelectionEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SqlQueryEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/SqlQueryEditorComposite.java -text
