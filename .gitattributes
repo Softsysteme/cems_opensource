@@ -438,6 +438,7 @@ Studio/lib/xerces-2_11_0/xml-apis.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
 Studio/projects/C8oPushManager/.project -text
 Studio/projects/C8oPushManager/C8oPushManager.xml -text
+Studio/projects/C8oPushManager/lib_PushManager.xml -text svneol=unset#text/plain
 Studio/projects/C8oPushManager/xsd/internal/PushManagerDataBase/ShowDevices.xsd -text
 Studio/projects/crawlingProject/crawlingProject.sql -text
 Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/plain
