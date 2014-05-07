@@ -976,7 +976,6 @@ Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/DefaultTransaction.x
 Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/GetBearerToken.xsd -text
 Studio/projects/lib_OAuth/xsd/lib_OAuth.xsd -text
 Studio/projects/lib_PushManager/.project -text
-Studio/projects/lib_PushManager/C8oPushManager.xml -text
 Studio/projects/lib_PushManager/lib_PushManager.xml -text svneol=unset#text/plain
 Studio/projects/lib_PushManager/xsd/internal/PushManagerDataBase/ShowDevices.xsd -text
 Studio/projects/lib_Twitter/.project -text
