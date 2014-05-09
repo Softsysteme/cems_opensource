@@ -2404,6 +2404,7 @@ Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/BlackBerry.java -text s
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/BlackBerry10.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/BlackBerry10BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/BlackBerryBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/BlackBerryKeyProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/IOs.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/IOsBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/Windows8.java -text svneol=unset#text/plain
@@ -2412,6 +2413,7 @@ Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone7.java -tex
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone7BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8BeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhoneKeyProvider.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/android_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/android_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/blackberry10_color_16x16.png -text
