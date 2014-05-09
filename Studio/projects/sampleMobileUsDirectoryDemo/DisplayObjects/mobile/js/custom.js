@@ -1,26 +1,27 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 6.3.0
+ * public C8O API for CEMS 7.1.0
  * for a jQuery Mobile application using the CTF
  * 
  * Dependences in HTML file:
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.jquerymobile.js
+ * * ~ c8o.cordova.js (for builded application)
  * * ctf.core.js
  * * ctf.jquerymobile.js
  * * custom.js (this file)
  * * jquery.mobile(.min).js
  * 
- * Please find documentation of CTF here:
- * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * You can find documentation about Convertigo Templating Framework here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
- * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * 
- * and the documenation of internationalization (i18n) here:
- * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
- * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * 
  *******************************************************
  *******************************************************/
@@ -55,6 +56,13 @@ $.extend(true, C8O, {
 	},
 	
 	/**
+	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.js
+	 */
+	cordova: {
+//		androidSenderID: ""
+	},
+	
+	/**
 	 * vars variables values can be set at any time.
 	 * by the code, or by passing arguments to C8O.call() by adding __ 
 	 * their values must be strings,
@@ -77,6 +85,104 @@ $.extend(true, C8O, {
 	},
 	
 	routingTable: [
+//		{
+//			/**
+//			* calledRequest parameter
+//			* indicates on which requestables result the actions occur
+//			* Can be one or more requestables, comma separated with the form :
+//			* [project].connector.transaction
+//			* or
+//			* [project].sequence
+//			* or
+//			* [project].connector.* or [project].* or *
+//			*/
+//			calledRequest: "<the called C8O requestables>",
+//
+//			/**
+//			* actions parameter
+//			* array of actions, all executed in order if the current result match the 'calledRequest'
+//			*/
+//			actions: [
+//				{
+//					/**
+//					 * afterRendering function
+//					 * called after the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					afterRendering: function ($doc, c8oData) {
+//					
+//					},
+//	
+//					/**
+//					 * beforeRendering function
+//					 * called before the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					beforeRendering: function ($doc, c8oData) {
+//						
+//					},
+//	
+//					/**
+//					 * condition function or selector
+//					 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
+//					 * Called before the page changes.
+//					 * The condition is considered as validated if the jQuery selector returns a non empty list,
+//					 * or if the JS function returns true
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					condition: "jQuery selector",
+//					condition: function ($doc, c8oData) {
+//						return true;
+//					},
+//	
+//					/**
+//					 * fromPage parameter
+//					 * list of HTML element ID defining the page we come from
+//					 * before calling the C8O request
+//				 	* (useful in order to route to different pages according to the origin page).
+//					 * Use the .is(selector) from JQuery.
+//					 * Sample: "#page1, #page2, #page3"
+//					 */
+//					fromPage: "",
+//	
+//					/**
+//					 * goToPage parameter
+//					 * an HTML page or an HTML element ID to display after the C8O call.
+//					 * If not present, it means a local rendering (i.e. in the same page).
+//					 */
+//					goToPage: "",
+//	
+//					/**
+//					 * options parameter
+//					 * an optional transition information
+//					 * (matching the jQueryMobile transition object format)
+//					 * used to display the page given in the goToPage parameter.
+//					 */
+//					options: {}
+//				}
+//			]
+//		},
+//		/** full template condensed, must be comma separated */
+//		{
+//			calledRequest: "<the called C8O requestables>",
+//			actions: [
+//				{
+//					condition: "<jQuery selector or function>",
+//					fromPage: "<page ID>",
+//					goToPage: "<page ID>",
+//					options: {
+//					},
+//					beforeRendering: function ($doc, c8oData) {
+//					},
+//					afterRendering: function ($doc, c8oData) {
+//					}
+//					
+//				}
+//			]
+//		}
 		{//Error management
 			calledRequest : "*",
 			actions : [
@@ -384,6 +490,9 @@ $.extend(true, C8O, {
  *  return: true > lets C8O perform the init
  *             false > break the processing of request
  */
+//C8O.addHook("document_ready", function () {
+//	return true;
+//});
 
 $( document ).on( "pageinit", function() {
 	$(document).one("click",".result",function() {
@@ -447,7 +556,7 @@ $( document ).on( "pageinit", function() {
  *  log hook
  *  used on each C8O.log.xxx call.
  *  Allow to:
- *   * handle log message (put in div, send request â€¦)
+ *   * handle log message (put in div, send request …)
  *   * prevent log writing (return false)
  *   * modify the message (return a new msg content).
  *  
@@ -463,6 +572,45 @@ $( document ).on( "pageinit", function() {
 //});
 
 /**
+ *  push_notification hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when a notification is received on the mobile device
+ *  
+ *  level: "string" sender of the notification : GCM (Google) or APN (Apple)
+ *  msg: "string" the message content of the notification
+ *  event: "object" the raw object from the notification, sender specific
+ *  return: true > lets c8o.cordova handle the response (Apple badge or sound)
+ *            false > do nothing
+ */
+//C8O.addHook("push_notification", function (sender, msg, event) {
+//	return true;
+//});
+
+/**
+ *  push_register_failed hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration failed on the mobile
+ *  
+ *  error: "string" cause of the error
+ */
+//C8O.addHook("push_register_failed", function (error) {
+//	
+//});
+
+/**
+ *  push_register_success hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration success on the mobile
+ *  
+ *  result: content from the notification system
+ *  return: true > lets c8o.cordova handle the response and notify C8O PushManager
+ *            false > do nothing
+ */
+//C8O.addHook("push_register_success", function (result) {
+//	return true;
+//});
+
+/**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
@@ -474,5 +622,3 @@ $( document ).on( "pageinit", function() {
 //C8O.addHook("xml_response", function (xml, data) {
 //	return true;
 //});
-
-

@@ -1,26 +1,27 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 6.3.0
+ * public C8O API for CEMS 7.1.0
  * for a jQuery Mobile application using the CTF
  * 
  * Dependences in HTML file:
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.jquerymobile.js
+ * * ~ c8o.cordova.js (for builded application)
  * * ctf.core.js
  * * ctf.jquerymobile.js
  * * custom.js (this file)
  * * jquery.mobile(.min).js
  * 
- * Please find documentation of CTF here:
- * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * You can find documentation about Convertigo Templating Framework here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
- * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * 
- * and the documenation of internationalization (i18n) here:
- * * http://help.convertigo.com/lastest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
- * * http://help.convertigo.com/6.3.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * 
  *******************************************************
  *******************************************************/
@@ -47,6 +48,13 @@ $.extend(true, C8O, {
 	 */
 	ro_vars: {
 //		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+	},
+	
+	/**
+	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.js
+	 */
+	cordova: {
+//		androidSenderID: ""
 	},
 	
 	/**
@@ -132,7 +140,7 @@ $.extend(true, C8O, {
 //					 * before calling the C8O request
 //				 	* (useful in order to route to different pages according to the origin page).
 //					 * Use the .is(selector) from JQuery.
-//					 * Sample: “#page1, #page2, #page3 ”
+//					 * Sample: "#page1, #page2, #page3"
 //					 */
 //					fromPage: "",
 //	
@@ -158,15 +166,16 @@ $.extend(true, C8O, {
 //			calledRequest: "<the called C8O requestables>",
 //			actions: [
 //				{
-//					afterRendering: function ($doc, c8oData) {
-//					},
-//					beforeRendering: function ($doc, c8oData) {
-//					},
 //					condition: "<jQuery selector or function>",
 //					fromPage: "<page ID>",
 //					goToPage: "<page ID>",
 //					options: {
+//					},
+//					beforeRendering: function ($doc, c8oData) {
+//					},
+//					afterRendering: function ($doc, c8oData) {
 //					}
+//					
 //				}
 //			]
 //		}
@@ -289,7 +298,6 @@ function detailsCondition_movie ($doc, c8oData) {
 		return true;
 	return false;
 }
-
 
 
 /**
@@ -590,6 +598,45 @@ C8O.addHook("init_finished", function (params) {
 //});
 
 /**
+ *  push_notification hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when a notification is received on the mobile device
+ *  
+ *  level: "string" sender of the notification : GCM (Google) or APN (Apple)
+ *  msg: "string" the message content of the notification
+ *  event: "object" the raw object from the notification, sender specific
+ *  return: true > lets c8o.cordova handle the response (Apple badge or sound)
+ *            false > do nothing
+ */
+//C8O.addHook("push_notification", function (sender, msg, event) {
+//	return true;
+//});
+
+/**
+ *  push_register_failed hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration failed on the mobile
+ *  
+ *  error: "string" cause of the error
+ */
+//C8O.addHook("push_register_failed", function (error) {
+//	
+//});
+
+/**
+ *  push_register_success hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration success on the mobile
+ *  
+ *  result: content from the notification system
+ *  return: true > lets c8o.cordova handle the response and notify C8O PushManager
+ *            false > do nothing
+ */
+//C8O.addHook("push_register_success", function (result) {
+//	return true;
+//});
+
+/**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
@@ -601,5 +648,3 @@ C8O.addHook("init_finished", function (params) {
 //C8O.addHook("xml_response", function (xml, data) {
 //	return true;
 //});
-
-

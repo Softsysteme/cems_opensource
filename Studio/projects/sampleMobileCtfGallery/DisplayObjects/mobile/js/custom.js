@@ -7,10 +7,22 @@
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.jquerymobile.js
+ * * ~ c8o.cordova.js (for builded application)
  * * ctf.core.js
  * * ctf.jquerymobile.js
  * * custom.js (this file)
  * * jquery.mobile(.min).js
+ * 
+ * You can find documentation about Convertigo Templating Framework here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * or
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * 
+ * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * or
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * 
  *******************************************************
  *******************************************************/
 
@@ -28,7 +40,7 @@ $.extend(true, C8O, {
 	 */
 	init_vars: {
 //		enc: "false", /** enables rsa encoding */
-//		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string while select the browser language */
+//		i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string will select the browser language */
 	},
 	
 	/**
@@ -36,6 +48,13 @@ $.extend(true, C8O, {
 	 */
 	ro_vars: {
 //		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+	},
+	
+	/**
+	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.js
+	 */
+	cordova: {
+//		androidSenderID: ""
 	},
 	
 	/**
@@ -60,7 +79,105 @@ $.extend(true, C8O, {
 //		loading: {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
 	},
 	
-	routingTable : [
+	routingTable: [
+//		{
+//			/**
+//			* calledRequest parameter
+//			* indicates on which requestables result the actions occur
+//			* Can be one or more requestables, comma separated with the form :
+//			* [project].connector.transaction
+//			* or
+//			* [project].sequence
+//			* or
+//			* [project].connector.* or [project].* or *
+//			*/
+//			calledRequest: "<the called C8O requestables>",
+//
+//			/**
+//			* actions parameter
+//			* array of actions, all executed in order if the current result match the 'calledRequest'
+//			*/
+//			actions: [
+//				{
+//					/**
+//					 * afterRendering function
+//					 * called after the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					afterRendering: function ($doc, c8oData) {
+//					
+//					},
+//	
+//					/**
+//					 * beforeRendering function
+//					 * called before the rendering process.
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					beforeRendering: function ($doc, c8oData) {
+//						
+//					},
+//	
+//					/**
+//					 * condition function or selector
+//					 * can be either a jQuery selector on the C8O XML response or a JavaScript function.
+//					 * Called before the page changes.
+//					 * The condition is considered as validated if the jQuery selector returns a non empty list,
+//					 * or if the JS function returns true
+//					 * $doc: JQuery object of the XML document response
+//					 * c8oData: key/value parameters of the request
+//					 */
+//					condition: "jQuery selector",
+//					condition: function ($doc, c8oData) {
+//						return true;
+//					},
+//	
+//					/**
+//					 * fromPage parameter
+//					 * list of HTML element ID defining the page we come from
+//					 * before calling the C8O request
+//				 	* (useful in order to route to different pages according to the origin page).
+//					 * Use the .is(selector) from JQuery.
+//					 * Sample: "#page1, #page2, #page3"
+//					 */
+//					fromPage: "",
+//	
+//					/**
+//					 * goToPage parameter
+//					 * an HTML page or an HTML element ID to display after the C8O call.
+//					 * If not present, it means a local rendering (i.e. in the same page).
+//					 */
+//					goToPage: "",
+//	
+//					/**
+//					 * options parameter
+//					 * an optional transition information
+//					 * (matching the jQueryMobile transition object format)
+//					 * used to display the page given in the goToPage parameter.
+//					 */
+//					options: {}
+//				}
+//			]
+//		},
+//		/** full template condensed, must be comma separated */
+//		{
+//			calledRequest: "<the called C8O requestables>",
+//			actions: [
+//				{
+//					condition: "<jQuery selector or function>",
+//					fromPage: "<page ID>",
+//					goToPage: "<page ID>",
+//					options: {
+//					},
+//					beforeRendering: function ($doc, c8oData) {
+//					},
+//					afterRendering: function ($doc, c8oData) {
+//					}
+//					
+//				}
+//			]
+//		}
 		{
 			calledRequest: ".getTopics",
 			actions: [
@@ -375,6 +492,45 @@ $.extend(true, C8O, {
  */
 //C8O.addHook("log", function (level, msg, e) {
 //	return false;
+//});
+
+/**
+ *  push_notification hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when a notification is received on the mobile device
+ *  
+ *  level: "string" sender of the notification : GCM (Google) or APN (Apple)
+ *  msg: "string" the message content of the notification
+ *  event: "object" the raw object from the notification, sender specific
+ *  return: true > lets c8o.cordova handle the response (Apple badge or sound)
+ *            false > do nothing
+ */
+//C8O.addHook("push_notification", function (sender, msg, event) {
+//	return true;
+//});
+
+/**
+ *  push_register_failed hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration failed on the mobile
+ *  
+ *  error: "string" cause of the error
+ */
+//C8O.addHook("push_register_failed", function (error) {
+//	
+//});
+
+/**
+ *  push_register_success hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when the registration success on the mobile
+ *  
+ *  result: content from the notification system
+ *  return: true > lets c8o.cordova handle the response and notify C8O PushManager
+ *            false > do nothing
+ */
+//C8O.addHook("push_register_success", function (result) {
+//	return true;
 //});
 
 /**
