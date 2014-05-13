@@ -4816,7 +4816,6 @@ Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery-treeview/todo -text
 Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery-ui.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery.contextMenu.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery.flot.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery.flot.pack.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/js/jquery/jquery.mousewheel.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/js/login.js -text svneol=unset#text/plain
@@ -4859,6 +4858,7 @@ Studio/tomcat/webapps/convertigo/admin/styles/jquery/images/treeview-red-line.gi
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/images/treeview-red.gif -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/jquery.contextMenu.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/jquery.treeview.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/animated-overlay.gif -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_flat_55_fbec88_40x100.png -text
 Studio/tomcat/webapps/convertigo/admin/styles/jquery/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png -text
@@ -5290,8 +5290,8 @@ Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.plugin.standalone.js -text sv
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/c8o.scriptlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/ctf.core.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/ctf.jquerymobile.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery-1.11.0.min.map -text
-Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery-2.1.0.min.map -text
+Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery-1.11.1.min.map -text
+Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery-2.1.1.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.1.0/jquery.mobile-1.4.2.min.map -text
