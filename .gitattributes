@@ -1281,9 +1281,7 @@ Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Def
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
-Studio/projects/sampleMobileVacation/sampleMobileVacation.wsdl -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/sampleMobileVacation.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileVacation/sampleMobileVacation.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/webservice/Calendar.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/webservice/Deconnection.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/webservice/Details.xml -text svneol=unset#text/plain
