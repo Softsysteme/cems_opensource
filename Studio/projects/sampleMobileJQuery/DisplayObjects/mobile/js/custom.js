@@ -474,7 +474,7 @@ C8O.addHook("document_ready", function () {
 	 * or removing from storage when checking or unchecking the "remember me" checkbox   
 	 */
 	if(C8O.isUndefined(localStorage)) {
-		$("#rememberme").attr("disabled", "disabled");
+		$("#rememberme").prop("disabled", true);
 	} else if (localStorage.getItem('userId') !== null) {
 		// sets back the values from the local storage to the form's fields
 		$("#rememberme").prop("checked", true);
