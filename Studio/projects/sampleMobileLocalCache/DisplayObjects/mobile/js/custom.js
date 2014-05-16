@@ -522,6 +522,7 @@ C8O.addHook("document_ready", function () {
 	 * and display the last accessed address stored in "Geoloc.address" variable
 	 */
 	$("#localize").click(function() {
+		$.mobile.changePage($("#map"));
 		Geoloc.geocoder.geocode({address: $("#address").text()}, 
 			function (results, status) {
 				if (C8O.isDefined(Geoloc.exMarker)) {
@@ -541,7 +542,6 @@ C8O.addHook("document_ready", function () {
 					map: Geoloc.map,
 					position: results[0].geometry.location
 				});
-				$.mobile.changePage($("#map"));
 			}
 		);
 	});
