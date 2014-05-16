@@ -523,27 +523,29 @@ C8O.addHook("document_ready", function () {
 	 */
 	$("#localize").click(function() {
 		$.mobile.changePage($("#map"));
-		Geoloc.geocoder.geocode({address: $("#address").text()}, 
-			function (results, status) {
-				if (C8O.isDefined(Geoloc.exMarker)) {
-					Geoloc.exMarker.setMap(null);
+		$(document).on("pageshow", "#map", function() {
+			Geoloc.geocoder.geocode({address: $("#address").text()}, 
+				function (results, status) {
+					if (C8O.isDefined(Geoloc.exMarker)) {
+						Geoloc.exMarker.setMap(null);
+					}
+					if (C8O.isUndefined(Geoloc.map)) {
+						Geoloc.map = new google.maps.Map(
+								document.getElementById("map-canvas"),
+								{
+									zoom: 14,
+									mapTypeId: google.maps.MapTypeId.ROADMAP
+								}
+						);
+					}
+					Geoloc.map.setCenter(results[0].geometry.location);
+					Geoloc.exMarker = new google.maps.Marker({
+						map: Geoloc.map,
+						position: results[0].geometry.location
+					});
 				}
-				if (C8O.isUndefined(Geoloc.map)) {
-					Geoloc.map = new google.maps.Map(
-							document.getElementById("map-canvas"),
-							{
-								zoom: 14,
-								mapTypeId: google.maps.MapTypeId.ROADMAP
-							}
-					);
-				}
-				Geoloc.map.setCenter(results[0].geometry.location);
-				Geoloc.exMarker = new google.maps.Marker({
-					map: Geoloc.map,
-					position: results[0].geometry.location
-				});
-			}
-		);
+			);
+		});
 	});
 
 	
