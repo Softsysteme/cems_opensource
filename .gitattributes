@@ -776,6 +776,7 @@ Studio/projects/lib_CouchDB/index.html -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/lib_CouchDB.xml -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentCreateOrUpdate.xsd -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentGet.xsd -text
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/ViewGet.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/lib_CouchDB.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
