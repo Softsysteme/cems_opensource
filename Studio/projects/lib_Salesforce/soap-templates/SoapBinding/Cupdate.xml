@@ -78,6 +78,7 @@
             <!--type: {urn:partner.soap.sforce.com}ID-->
             <urn1:Id>$(BODY_UPDATE_SOBJECTS_ID)</urn1:Id>
             <!--You may enter ANY elements at this point-->
+            $(BODY_UPDATE_FIELDS)
          </urn:sObjects>
       </urn:update>
    </soapenv:Body>
