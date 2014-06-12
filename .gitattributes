@@ -1040,6 +1040,7 @@ Studio/projects/lib_Twitter/css/custom.css -text
 Studio/projects/lib_Twitter/index.html -text
 Studio/projects/lib_Twitter/js/custom.js -text
 Studio/projects/lib_Twitter/lib_Twitter.xml -text
+Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetShowUser.xsd -text
 Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetStatusesUserTimeLine.xsd -text
 Studio/projects/lib_Twitter/xsd/lib_Twitter.xsd -text
 Studio/projects/lib_Yammer/.project -text svneol=unset#text/plain
