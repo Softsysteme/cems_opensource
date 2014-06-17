@@ -3344,7 +3344,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialog.ja
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionWSDLTypesDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceAuthenticatedComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/dialog_statistic.jpg -text
