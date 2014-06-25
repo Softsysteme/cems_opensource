@@ -366,6 +366,7 @@ Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/ejb.jar -text
 Studio/lib/engine-htmlparsers.jar -text
+Studio/lib/engine-sapjcoprovider.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/gcm/gcm-server.jar -text
 Studio/lib/gcm/json_simple-1.1.jar -text
@@ -401,6 +402,11 @@ Studio/lib/jacob.jar -text svneol=unset#unset
 Studio/lib/jakarta-regexp-1.2.jar -text svneol=unset#unset
 Studio/lib/javapns/JavaPNS_2.2.jar -text
 Studio/lib/javapns/bcprov-jdk15-146.jar -text
+Studio/lib/jco/Readme.txt -text svneol=unset#text/plain
+Studio/lib/jco/sapjco3.dll -text
+Studio/lib/jco/sapjco3.jar -text
+Studio/lib/jco/sapjco3.pdb -text
+Studio/lib/jco/sapjcomanifest.mf -text
 Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
