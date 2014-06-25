@@ -3363,6 +3363,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComp
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/XmlStructureDialog.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/XmlStructureDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/dialog_statistic.jpg -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/key.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/stats_html_connector_16x16.png -text
@@ -3664,6 +3666,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/RedoAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceEditWSDLTypeAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceExecuteSelectedAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceExecuteSelectedFromStubAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceImportFromXmlAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceImportFromXsdAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SequenceStepEditWSDLTypeAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/SetDefaultConnectorAction.java -text
