@@ -2066,6 +2066,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/JavelinConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/JavelinConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/ProxyHttpConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/ProxyHttpConnectorBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/SapJcoConnector.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/connectors/SapJcoConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/SiteClipperConnector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/SiteClipperConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/SqlConnector.java -text
@@ -2081,6 +2083,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_colo
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/javelinconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/proxyhttpconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/sapconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/sapconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipperconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipperconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.png -text
@@ -2091,6 +2095,7 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/res/HtmlConnector.properties
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HttpConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/JavelinConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/ProxyHttpConnector.properties -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/res/SapJcoConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/SiteClipperConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/SqlConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/Block.java -text
@@ -3189,6 +3194,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransaction.java -t
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransaction.java -text
@@ -3205,6 +3212,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/javelintransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/jsonhttptransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/saptransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/saptransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/siteclippertransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png -text
@@ -3220,6 +3229,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.proper
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HttpTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JavelinTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JsonHttpTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/SapTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/XmlHttpTransaction.properties -text
@@ -3413,6 +3423,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IRefreshable.java -
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IResetable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/IScreenClassAware.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/JavelinConnectorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SapJcoConnectorComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SapJcoConnectorDesignComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SiteClipperConnectorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SqlConnectorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/htmlconnector/DomTreeComposite.java -text

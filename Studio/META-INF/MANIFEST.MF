@@ -164,7 +164,9 @@ Bundle-ClassPath: bin/,
  lib/gcm/json_simple-1.1.jar,
  lib/gcm/mockito-all-1.8.5.jar,
  lib/db2jcc-licence.jar,
- lib/db2jcc.jar
+ lib/db2jcc.jar,
+ lib/jco/sapjco3.jar,
+ lib/engine-sapjcoprovider.jar
 Bundle-Activator: com.twinsoft.convertigo.eclipse.ConvertigoPlugin
 Bundle-Vendor: Convertigo
 Export-Package: org.mozilla.xpcom
