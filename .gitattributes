@@ -3323,6 +3323,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/EventDetailsDialogComposite.j
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GenerateJavaStubDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GenerateJavaStubDialogComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GlobalsSymbolsWarnDialog.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/IWsReferenceComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MultipleDeletionDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialogComposite.java -text
