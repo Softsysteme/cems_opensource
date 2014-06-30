@@ -85,9 +85,13 @@ public class Deploy extends UploadService {
 
 		String projectName = projectArchive.substring(0, projectArchive.indexOf(".car"));
 
+		/* 
+		 * Calling deployProject with bForce to true already deletes any previous project, so this is useless..
+		 * 
 		if (Engine.theApp.databaseObjectsManager.existsProject(projectName)) {
 			Engine.theApp.databaseObjectsManager.deleteProject(projectName);
 		}
+		*/
 
 		Engine.theApp.databaseObjectsManager.deployProject(getRepository() + projectArchive, true,
 				bAssembleXsl);
