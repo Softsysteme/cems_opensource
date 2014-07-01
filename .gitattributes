@@ -4315,6 +4315,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/util/DOMUtils.java -text svneol=
 Studio/src/com/twinsoft/convertigo/engine/admin/util/FileAndProperties.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/ServiceUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/BillingException.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/billing/GAnalyticsTicketManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/HibernateTicketManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/ITicketManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/billing/Ticket.java -text svneol=unset#text/plain
