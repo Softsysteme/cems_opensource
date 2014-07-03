@@ -4245,6 +4245,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/database_objects/GetIco
 Studio/src/com/twinsoft/convertigo/engine/admin/services/database_objects/Set.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/Authenticate.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/CheckAuthentication.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/GetEnvironmentVariablesList.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/GetJavaSystemProperties.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/GetStatus.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/engine/GetSystemInformation.java -text svneol=unset#text/plain
@@ -4890,6 +4891,8 @@ Studio/tomcat/webapps/convertigo/admin/widgets/engine_GetSystemInformation.html 
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_GetSystemInformation.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_Monitor.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/engine_Monitor.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/widgets/environmentVariables_List.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/widgets/environmentVariables_List.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/globalSymbols_List.html -text
 Studio/tomcat/webapps/convertigo/admin/widgets/globalSymbols_List.js -text
 Studio/tomcat/webapps/convertigo/admin/widgets/keys_List.html -text svneol=unset#text/plain
