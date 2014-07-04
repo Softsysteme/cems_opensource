@@ -778,6 +778,7 @@ Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableRights.xsd -text 
 Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableUsers.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/xsd/lib_Keyring.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/.project -text svneol=unset#text/plain
+Studio/projects/lib_CouchDB/SampleTestData/sampledata.xml -text
 Studio/projects/lib_CouchDB/css/custom.css -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/index.html -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/js/custom.js -text svneol=unset#text/plain
