@@ -3022,6 +3022,10 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_16x16
 Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/ifFileExists_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/ifFileExists_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/ifIsIn_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/ifIsIn_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/if_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/if_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/inputVariablesstep_16x16.png -text
