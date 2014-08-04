@@ -3200,6 +3200,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransaction.java -t
 Studio/src/com/twinsoft/convertigo/beans/transactions/JavelinTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/JsonHttpTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoLogonTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoLogonTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SapJcoTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/SiteClipperTransaction.java -text svneol=unset#text/plain
@@ -3235,6 +3237,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/HtmlTransaction.proper
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/HttpTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JavelinTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/JsonHttpTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/SapJcoLogonTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SapTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
