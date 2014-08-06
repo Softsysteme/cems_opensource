@@ -1299,7 +1299,6 @@ Studio/projects/sample_HelloWorld/images/logo-convertigo.png -text
 Studio/projects/sample_HelloWorld/images/puce.png -text
 Studio/projects/sample_HelloWorld/images/top-bg-blanc-contenu.png -text
 Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
-Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text
 Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain

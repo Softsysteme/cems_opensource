@@ -1,6 +1,25 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 6.1.10 *
+ * public C8O API for CEMS 7.1.0
+ * for a jQuery desktop application
+ * 
+ * Dependences in HTML file:
+ * * jquery(.min).js
+ * * c8o.core.js
+ * * c8o.desktop.js
+ * * [ctf.core.js] (include to use CTF instead of XSL)
+ * * custom.js (this file)
+ * 
+ * You can find documentation about Convertigo Templating Framework here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * or
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * 
+ * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
+ * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * or
+ * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * 
  *******************************************************
  *******************************************************/
 
@@ -46,7 +65,7 @@ $.extend(true, C8O, {
 //		target_append : "false", /** true/false : append content to target_id or to body element */
 //		target_id : "", /** element id : element id for result insertion or a selected jquery object */
 //		use_siteclipper_plugin : "true", /** true/false : use the iframe encapsulation for siteclipper request */
-//		xsl_side : "client" /** client/server : force the side of the xsl transformation */
+		xsl_side : "none" /** client/server : force the side of the xsl transformation */
 	}
 });
 
