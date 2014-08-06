@@ -124,7 +124,7 @@ $.extend(true, C8O, {
 //		resize_offset : "50", /** integer : number of pixel added to the automatic resize */
 //		target_append : "false", /** true/false : append content to target_id or to body element */
 //		target_id : "", /** element id : element id for result insertion */
-//		xsl_side : "client" /** client/server : force the side of the xsl transformation */
+		xsl_side: "none" /** client/server/none: force the side of the xsl transformation or pure XML */
 	}
 });
 

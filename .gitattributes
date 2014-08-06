@@ -779,9 +779,6 @@ Studio/projects/lib_Authentication/xsd/internal/DB/_CreateTableUsers.xsd -text s
 Studio/projects/lib_Authentication/xsd/lib_Keyring.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/.project -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/SampleTestData/sampledata.xml -text
-Studio/projects/lib_CouchDB/css/custom.css -text svneol=unset#text/plain
-Studio/projects/lib_CouchDB/index.html -text svneol=unset#text/plain
-Studio/projects/lib_CouchDB/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/lib_CouchDB.xml -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentCreateOrUpdate.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentGet.xsd -text
@@ -867,7 +864,6 @@ Studio/projects/lib_Keyring/css/start/images/ui-icons_fcd113_256x240.png -text
 Studio/projects/lib_Keyring/css/start/jquery-ui-1.8.18.custom.css -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/css/ui.jqgrid.css -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/errorCodesLabels.xml -text svneol=unset#text/plain
-Studio/projects/lib_Keyring/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-bg.js -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/js/i18n/grid.locale-bg1251.js -text svneol=unset#text/plain
@@ -978,9 +974,6 @@ Studio/projects/lib_LinkedIn/xsd/internal/LinkedIn/VerifyOAuthToken.xsd -text sv
 Studio/projects/lib_LinkedIn/xsd/internal/LinkedInHtml/Authenticate.xsd -text svneol=unset#text/plain
 Studio/projects/lib_LinkedIn/xsd/lib_LinkedIn.xsd -text svneol=unset#text/plain
 Studio/projects/lib_OAuth/.project -text
-Studio/projects/lib_OAuth/css/custom.css -text
-Studio/projects/lib_OAuth/index.html -text
-Studio/projects/lib_OAuth/js/custom.js -text
 Studio/projects/lib_OAuth/lib_OAuth.xml -text
 Studio/projects/lib_OAuth/xsd/internal/OobTokenConnector/GetVerifyCode.xsd -text
 Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV1Connector/RetreiveAccessToken.xsd -text
@@ -992,9 +985,6 @@ Studio/projects/lib_PushManager/.project -text
 Studio/projects/lib_PushManager/lib_PushManager.xml -text svneol=unset#text/plain
 Studio/projects/lib_PushManager/xsd/internal/PushManagerDataBase/ShowDevices.xsd -text
 Studio/projects/lib_Salesforce/.project -text svneol=unset#text/plain
-Studio/projects/lib_Salesforce/css/custom.css -text svneol=unset#text/plain
-Studio/projects/lib_Salesforce/index.html -text svneol=unset#text/plain
-Studio/projects/lib_Salesforce/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/lib_Salesforce.xml -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CconvertLead.xml -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Ccreate.xml -text svneol=unset#text/plain
@@ -1044,9 +1034,6 @@ Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cupsert.xml -text svne
 Studio/projects/lib_Salesforce/wsdl/salesforce_1.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Twitter/.project -text
-Studio/projects/lib_Twitter/css/custom.css -text
-Studio/projects/lib_Twitter/index.html -text
-Studio/projects/lib_Twitter/js/custom.js -text
 Studio/projects/lib_Twitter/lib_Twitter.xml -text
 Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetShowUser.xsd -text
 Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetStatusesUserTimeLine.xsd -text
@@ -1323,7 +1310,6 @@ Studio/projects/sample_HelloWorld/images/logo-convertigo.png -text
 Studio/projects/sample_HelloWorld/images/puce.png -text
 Studio/projects/sample_HelloWorld/images/top-bg-blanc-contenu.png -text
 Studio/projects/sample_HelloWorld/index.html -text svneol=unset#text/plain
-Studio/projects/sample_HelloWorld/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/js/custom_test.js -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/sample_HelloWorld.xml -text
 Studio/projects/sample_HelloWorld/test.html -text svneol=unset#text/plain
@@ -1597,8 +1583,6 @@ Studio/projects/template_SQL_jQueryWeb/html/js/custom.js -text svneol=unset#text
 Studio/projects/template_SQL_jQueryWeb/html/js/jquery-1.7.2.min.js -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/html/js/jquery-ui-1.8.18.custom.min.js -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/images/convertigo-small.gif -text
-Studio/projects/template_SQL_jQueryWeb/index.html -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/js/custom.js -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xml -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_SQL_jQueryWeb/xsd/template_SQL_jQueryWeb.xsd -text svneol=unset#text/plain
