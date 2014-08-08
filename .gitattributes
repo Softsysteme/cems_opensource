@@ -81,6 +81,8 @@ Studio/icons/studio/bean_checkedin.gif -text
 Studio/icons/studio/bean_checkedout.gif -text
 Studio/icons/studio/bean_linked.gif -text
 Studio/icons/studio/bean_nocvs.gif -text
+Studio/icons/studio/beans/variables/multivaluedvariable_color_16x16.png -text
+Studio/icons/studio/beans/variables/variable_color_16x16.png -text
 Studio/icons/studio/bound_property.d.gif -text
 Studio/icons/studio/bound_property.gif -text
 Studio/icons/studio/bound_property.s.gif -text
