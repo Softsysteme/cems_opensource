@@ -2575,6 +2575,8 @@ Studio/src/com/twinsoft/convertigo/beans/statements/AbstractComplexeEventStateme
 Studio/src/com/twinsoft/convertigo/beans/statements/AbstractComplexeEventStatementBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/AbstractEventStatement.java -text
 Studio/src/com/twinsoft/convertigo/beans/statements/AbstractEventStatementBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/statements/AbstractScHandlerStatement.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/statements/AbstractScHandlerStatementBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/AdoptClientCookies.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/AdoptClientCookiesBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/BlockStatement.java -text
@@ -2774,6 +2776,7 @@ Studio/src/com/twinsoft/convertigo/beans/statements/images/while_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/statements/images/while_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AbstractComplexeEventStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AbstractEventStatement.properties -text
+Studio/src/com/twinsoft/convertigo/beans/statements/res/AbstractScHandlerStatement.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/AdoptClientCookies.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/statements/res/BlockStatement.properties -text
 Studio/src/com/twinsoft/convertigo/beans/statements/res/BreakStatement.properties -text
