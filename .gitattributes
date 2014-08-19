@@ -613,8 +613,9 @@ Studio/projects/demo_legacyCRM/xsd/internal/legacyCRMConnector/refreshCRM.xsd -t
 Studio/projects/demo_mashup/css/custom.css -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo.html -text svneol=unset#text/plain
 Studio/projects/demo_mashup/demo_mashup.xml -text svneol=unset#text/plain
+Studio/projects/demo_mashup/hub/demo_hub.html -text svneol=unset#text/plain
+Studio/projects/demo_mashup/hub/demo_hub.xml -text svneol=unset#text/plain
 Studio/projects/demo_mashup/images/header-flex.jpg -text
-Studio/projects/demo_mashup/js/mapping.js -text svneol=unset#text/plain
 Studio/projects/demo_mashup/resources/bg_center.png -text
 Studio/projects/demo_mashup/resources/bg_footer_center.png -text
 Studio/projects/demo_mashup/resources/bg_footer_left.png -text

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hub>
+<!--
+Code your interactions in this XML.
+ -->
+
+	<origin name="SalesForceLogin">
+		<event name="LoginFinished">
+			<target name="SalesForceLogin" type="none">
+				<mapping><![CDATA[
+					$(top.document).find("#wgtcontent_SalesForceDemoInitialize").append("<iframe style=\"width: 100%; height: 163px; display: inline;\" name=\"SalesForceDemoInitialize_WebClipplet\"	id=\"SalesForceDemoInitialize_WebClipplet\" " +
+				"src=\"../demo_SalesForce/index.html#__container=standalone&__widget_name=SalesForceInitialize&__context=SalesForce&__transaction=InitializeDemo\" frameborder=\"0\" scrolling=\"no\"></iframe>");
+				]]></mapping>
+			</target>
+		</event>
+	</origin>
+	<origin name="SalesForceInitialize">
+		<event name="InitializationFinished">
+			<target name="SalesForceInitialize" type="none">
+				<mapping><![CDATA[
+			var $portal = $(window.frameElement.ownerDocument);
+			
+			$portal[0].C8O_mashup["LegacyCRM"] = function (message) {
+				var $iframe = $portal.find("#LegacyCRMCustomerList_WebClipplet");
+				var url = $iframe.attr("src");
+				url = url.substring(0, url.indexOf("?") + 1) + $.param(message.payload);
+				$iframe.attr("src", url);
+			};
+			
+			$portal.find("#Page1").slideUp("slow", function () {
+			$portal.find("#Page2").slideDown("slow", function () {
+				$portal.find("#wgtcontent_SalesForceDemoLeads").html("<iframe style=\"width: 100%; height: 476px; display: inline;\" name=\"SalesForceDemoLeads_WebClipplet\" id=\"SalesForceDemoLeads_WebClipplet\" " +
+						"src=\"../demo_SalesForce/index.html#__container=standalone&__widget_name=SalesForceLeads&__context=SalesForce&__transaction=GoLeads\" frameborder=\"0\" scrolling=\"no\"></iframe>"
+				);
+				$portal.find("#wgtcontainer_GoogleMaps").html("<iframe style=\"width: 100%; height: 100%; display: inline;\" " +
+						"src=\"../lib_GoogleMaps/index.html#__container=standalone&__widget_name=GoogleMaps&__connector=GoogleMapsConnector&__transaction=ShowMap&Location=San%20Francisco&Zoom=2&Height=360\" frameborder=\"0\" scrolling=\"no\"></iframe>"
+				);
+				$portal.find("#wgtcontent_USdirectorySearch").html("<iframe style=\"width: 100%; height: 61px; display: inline;\"	name=\"USdirectorySearch_WebClipplet\" id=\"USdirectorySearch_WebClipplet\" " +
+						"src=\"../demo_usDirectory/index.html#__container=standalone&__widget_name=usDirectory&__transaction=usdirectory\" frameborder=\"0\" scrolling=\"no\"></iframe>"
+				);
+				$portal.find("#wgtcontent_LegacyCRMCustomerList").html("<iframe	id=\"LegacyCRMCustomerList_WebClipplet\" frameborder=\"0\" height=\"500\" scrolling=\"auto\" width=\"100%\" src=\"../demo_legacyCRM/index.html?__transaction=loginCRM&__context=LegacyCRM\"></iframe>");
+			});	
+		});
+				]]></mapping>
+			</target>
+		</event>
+	</origin>
+	<origin name="SalesForceLeads">
+		<event name="ItemClicked">
+			<target name="usDirectory">
+				<mapping><![CDATA[
+				payload.__transaction = "usdSearchByName";
+				payload.business = payload.company;
+				]]></mapping>
+			</target>
+		</event>
+		<event name="ItemToTransfer">
+			<target name="LegacyCRM">
+				<mapping><![CDATA[
+				payload.__transaction = "editClientCRM";
+				payload.__context = "LegacyCRM";
+				]]></mapping>
+			</target>
+		</event>
+	</origin>
+	<origin name="usDirectory">
+		<event name="usd2salesforce">
+			<target name="SalesForceLeads">
+				<mapping><![CDATA[
+				return {
+					__transaction : "EditLead",
+					company : payload.res_name,
+					street : payload.res_address,
+					postcode : payload.res_zip,
+					city : payload.res_city,
+					state : payload.res_state,
+					country : payload.res_country,
+					rowindex : payload.rowindex
+				}
+				]]></mapping>
+			</target>
+		</event>
+		<event name="usdAddressClicked">
+			<target name="GoogleMaps">
+				<mapping><![CDATA[
+				return {
+					__transaction : "ShowMap",
+					Location : payload.address,
+					Zoom: 15
+				}
+				]]></mapping>
+			</target>
+		</event>
+	</origin>
+</hub>
