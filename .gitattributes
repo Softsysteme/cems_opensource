@@ -4082,6 +4082,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewInteractionHub
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleMapsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleSpreadsheetsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryKeyringWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryOAuthWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryPushManagerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryTwitterWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewMinitelConnectorWizard.java -text
