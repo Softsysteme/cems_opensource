@@ -6,13 +6,13 @@ _________________________
 General
 -------
 
-This archive contains JCo 3.0.10.
+This archive contains JCo placeholder 3.0.10.
 
 
 Installation
 ------------
 
-Uncompress the archive into an arbitrary directory <sapjco-install-path>.
+To use the real sapjco3 download it and uncompress the archive into an arbitrary directory <sapjco-install-path>.
 
 Load <sapjco-install-path>/javadoc/intro.html into your browser and follow
 the description under the link Installation.
