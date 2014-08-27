@@ -26,30 +26,6 @@ Studio/META-INF/MANIFEST.MF -text svneol=unset#text/plain
 Studio/ant-contrib-1.0b3.jar -text
 Studio/build-templates.xml -text svneol=unset#text/plain
 Studio/build.properties -text svneol=unset#text/plain
-Studio/cheats/CreateCompleteProject.xml -text svneol=unset#text/plain
-Studio/cheats/CreateCompleteProjectE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateCompleteProjectWhithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateCompleteProjectWhithExempleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateExtractionRule.xml -text svneol=unset#text/plain
-Studio/cheats/CreateExtractionRuleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateExtractionRuleWithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateExtractionRuleWithExempleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateNewProject.xml -text
-Studio/cheats/CreateNewProjectE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateNewProjectWithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateNewProjectWithExempleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateScreenClass.xml -text svneol=unset#text/plain
-Studio/cheats/CreateScreenClassE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateScreenClassWithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateScreenClassWithExempleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateSequences.xml -text svneol=unset#text/plain
-Studio/cheats/CreateSequencesE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateSequencesWithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateSequencesWithExempleE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateTransactions.xml -text svneol=unset#text/plain
-Studio/cheats/CreateTransactionsE.xml -text svneol=unset#text/plain
-Studio/cheats/CreateTransactionsWithExemple.xml -text svneol=unset#text/plain
-Studio/cheats/CreateTransactionsWithExempleE.xml -text svneol=unset#text/plain
 Studio/icons/administration_16x16.gif -text
 Studio/icons/boite-convertigo6.png -text
 Studio/icons/connector_color_16x16.gif -text
@@ -3313,7 +3289,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/SwtStatus.java -text svneol=unset#tex
 Studio/src/com/twinsoft/convertigo/eclipse/Version.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/AboutAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/AdministrationAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/actions/DreamfaceAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/MyAbstractAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenConvertigoWorkspaceFolderAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerFindAction.java -text
@@ -3387,12 +3362,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/TransactionWithVariablesEdito
 Studio/src/com/twinsoft/convertigo/eclipse/editors/XMLActionStepEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/XMLSplitStepEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/XMLTransformStepEditor.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/AdministrationEditor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/AdministrationEditorInput.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/BrowserEditor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/BrowserEditorInput.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/DreamfaceEditor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/editors/browser/DreamfaceEditorInput.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/CtfCompletionProposalsComputer.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/Entry.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/completion/c8oCompletionDict.xml -text
@@ -3605,7 +3574,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateReferenceAction.j
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateScreenClassFromSelectionZoneAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateSequenceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateSheetAction.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateSheetFromXMLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStubFromXMLAction.java -text svneol=unset#text/plain
