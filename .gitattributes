@@ -246,7 +246,6 @@ Studio/lib/apache/commons/commons-lang3-LICENSE.txt -text svneol=unset#text/plai
 Studio/lib/apache/commons/commons-pool-1.6.jar -text
 Studio/lib/apache/commons/commons-pool-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar -text
-Studio/lib/avalon.jar -text svneol=unset#unset
 Studio/lib/axis2-1.6.2/LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/XmlSchema-1.4.7.jar -text
 Studio/lib/axis2-1.6.2/lib/XmlSchema-LICENSE.txt -text svneol=unset#text/plain
@@ -368,7 +367,6 @@ Studio/lib/db2jcc-licence.jar -text
 Studio/lib/db2jcc.jar -text
 Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
-Studio/lib/ejb.jar -text
 Studio/lib/engine-htmlparsers.jar -text
 Studio/lib/engine-sapjcoprovider.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
@@ -412,7 +410,6 @@ Studio/lib/jettison-1.2.jar -text
 Studio/lib/jt400.jar -text
 Studio/lib/jtds-1.2.2.jar -text
 Studio/lib/mariadb-java-client-1.1.7.jar -text
-Studio/lib/msxml.jar -text svneol=unset#unset
 Studio/lib/mysql-connector.jar -text
 Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
