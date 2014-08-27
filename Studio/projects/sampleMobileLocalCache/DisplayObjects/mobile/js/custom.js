@@ -1,6 +1,6 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 7.1.0
+ * public C8O API for CEMS 7.2.0
  * for a jQuery Mobile application using the CTF
  * 
  * Dependences in HTML file:
@@ -16,12 +16,12 @@
  * You can find documentation about Convertigo Templating Framework here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * 
  * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * 
  *******************************************************
  *******************************************************/
@@ -32,7 +32,7 @@ var Geoloc = {
 	exMarker : undefined
 };
 
-$(document).bind('mobileinit',function() {
+$(document).on("mobileinit", function() {
    $.mobile.selectmenu.prototype.options.nativeMenu = false;
 });
 
@@ -88,7 +88,9 @@ $.extend(true, C8O, {
 		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
 		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
-//		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
+//		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
+		/** c8o.cordova.js vars */
+//		local_cache_parallel_downloads: 5, /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */
 		toaster : ""
 	},
 	
@@ -325,6 +327,14 @@ $.extend(true, C8O, {
 //C8O.convertHTML(input, output);
 
 /**
+ * deleteAllCacheEntries function
+ * remove all local cache entries
+ * success (optional): function, callback of the success for the DB cleaning
+ * error (optional): function (err), callback of the failure for the DB cleaning
+ */
+//C8O.deleteAllCacheEntries(success, error);
+
+/**
  * formToData function
  * copy all form's inputs into the data object or a new one.
  * Inputs names are the keys and inputs values are the values of the data object.
@@ -392,6 +402,14 @@ $.extend(true, C8O, {
 //C8O.removeRecallParameter(parameter_name);
 
 /**
+ * serializeXML function
+ * return a string representation of the xmlDom Document in a XML format
+ * xmlDom: Document to transform
+ * return: string of the xmlDom Document in a XML format 
+ */
+//C8O.serializeXML(xmlDom);
+
+/**
  * toJSON function
  * return a string representation of the data object (key/value) in a JSON format
  * data: object to transform
@@ -423,6 +441,24 @@ $.extend(true, C8O, {
  * by showing the #c8oloading element and start jquerymobile loading
  */
 //C8O.waitShow();
+
+/**
+ * walk function
+ * walk recursively a dom tree and apply a function on each text node and attributes
+ * node: starting node of the walk, children will be walked recursively
+ * data: contextual data passed to fn and fn_validate
+ * fn  : function that process each text ; fn(txt, data, fn_validate){}
+ * 	     this: current node
+ *       txt : text to transform
+ *       data: data passed to the walk function
+ *       fn_validate: fn_validate passed to the walk function
+ *       return: new value of txt, or null to do nothing
+ * fn_validate: function that process each node and can stop the walk for its node
+ *              node: current node to test
+ *              data: data passed to the walk function
+ *              return: true to continue the walk, false to stop
+ */
+//C8O.walk(node, data, fn, fn_validate);
 
 /*******************************************************
  * List of possible hooks *
@@ -488,19 +524,19 @@ C8O.addHook("document_ready", function () {
 	/* 
 	 * Init toaster
 	 */
-	C8O.vars.toaster = $.toaster({showTime:1500, centerX:true, centerY:true});
+	C8O.vars.toaster = $.toaster({showTime: 1500, centerX: true, centerY: true});
 	
 	/* 
 	 * handles username and password storing in local storage 
 	 * or removing from storage when checking or unchecking the "remember me" checkbox   
 	 */
-	if(C8O.isUndefined(localStorage)) {
+	if (C8O.isUndefined(localStorage)) {
 		$("#rememberme").prop("disabled", true);
-	} else if (localStorage.getItem('userId') !== null) {
+	} else if (localStorage.getItem("userId") !== null) {
 		// sets back the values from the local storage to the form's fields
 		$("#rememberme").prop("checked", true);
-		$("#userId").val(localStorage.getItem('userId'));
-		$("#password").val(localStorage.getItem('password'));
+		$("#userId").val(localStorage.getItem("userId"));
+		$("#password").val(localStorage.getItem("password"));
 	}
 	
 	$("#date").val(new Date().toJSON().slice(0,10));
@@ -585,6 +621,21 @@ C8O.addHook("document_ready", function () {
 C8O.addHook("init_finished", function (params) {
 	return true;
 });
+
+/**
+ *  local_cache_check_attachment hook
+ *  ** Needs cordova.js + c8o.cordova.js **
+ *  Hook called when a url will be downloaded for the local cache
+ *  
+ *  url: "string" the current url to download
+ *  element:    "string" the current element where the "url" is found
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets c8o.cordova download the url and substitute the xml
+ *            false > skip this url
+ */
+//C8O.addHook("local_cache_check_attachment", function (url, element, data) {
+//	return true;
+//});
 
 /**
  *  log hook
