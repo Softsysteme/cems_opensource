@@ -8,25 +8,13 @@
         <dependent-module archiveName="org.eclipse.swt.gtk.linux.x86_3.102.1.v20140206-1358.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/nicolasa/Développement/eclipses/eclipse-4.3-32/plugins/org.eclipse.swt.gtk.linux.x86_3.102.1.v20140206-1358.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="avalon.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/avalon.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="ejb.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/ejb.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
         <dependent-module archiveName="fop.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/fop.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="jacob.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/jacob.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="jakarta-regexp-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/jakarta-regexp-1.2.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="jCharts-0.7.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/jCharts-0.7.2.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="msxml.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/msxml.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="engine-htmlparsers.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/engine-htmlparsers.jar">
