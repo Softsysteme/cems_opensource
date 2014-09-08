@@ -97,7 +97,7 @@ public class GetTestPlatform extends XmlService {
 		}
 		
 		MobileApplication mobileApplication = project.getMobileApplication();
-		if (mobileApplication != null && (mobileApplication.getAccessibilityEnum() == Accessibility.Public || bAdminRole)) {
+		if (mobileApplication != null && (mobileApplication.getAccessibility() == Accessibility.Public || bAdminRole)) {
 			Element e_mobileApplication = createDatabaseObjectElement(document, mobileApplication);
 			
 			String applicationID = mobileApplication.getComputedApplicationId();

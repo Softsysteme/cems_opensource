@@ -1074,14 +1074,10 @@ Studio/projects/sampleMobileJQuery/xsd/internal/void/DefaultTransaction.xsd -tex
 Studio/projects/sampleMobileJQuery/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/icon.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/img/favicon.ico -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
@@ -4417,6 +4413,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/Crypto.java -text svneol=unset#te
 Studio/src/com/twinsoft/convertigo/engine/util/Crypto2.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/DateUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/EngineListenerHelper.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/util/EnumUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/EventHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/FileUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/GenericUtils.java -text svneol=unset#text/plain
