@@ -3297,7 +3297,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerRefreshAction.
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerSaveAllAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectPrintAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/SetupAction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/dialogs/BuildLocalSuccessfulDialog.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/BuildLocallyEndingDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ButtonSpec.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateExtractionRuleDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateHandlerDialog.java -text
