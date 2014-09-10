@@ -167,10 +167,10 @@
         <dependent-module archiveName="jboss-transaction-api_1.2_spec-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/hibernate/jboss-transaction-api_1.2_spec-1.0.0.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="tas-v25667.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/tas-v25667.jar">
+        <dependent-module archiveName="tas-v37919.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/tas-v37919.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="api-v25978.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/api-v25978.jar">
+        <dependent-module archiveName="api-v37919.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/api-v37919.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="signpost-core-1.2.1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/signpost-core-1.2.1.2.jar">
@@ -203,7 +203,7 @@
         <dependent-module archiveName="commons-pool-1.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/apache/commons/commons-pool-1.6.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="util-v28883.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/util-v28883.jar">
+        <dependent-module archiveName="util-v37919.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/internal/util-v37919.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="activation-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.2.x/lib/axis2-1.6.2/lib/activation-1.1.jar">
