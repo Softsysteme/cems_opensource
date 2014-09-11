@@ -1525,6 +1525,8 @@ Studio/projects/template_HTTP/xsd/internal/HTTPTemplateConnector/DefaultTransact
 Studio/projects/template_HTTP/xsd/template_HTTP.xsd -text svneol=unset#text/plain
 Studio/projects/template_SAP/.project -text svneol=unset#text/plain
 Studio/projects/template_SAP/template_SAP.xml -text svneol=unset#text/plain
+Studio/projects/template_SAP/xsd/internal/SAP_connector/Logon.xsd -text svneol=unset#text/plain
+Studio/projects/template_SAP/xsd/internal/SAP_connector/RFC_FUNCTION_SEARCH.xsd -text svneol=unset#text/plain
 Studio/projects/template_SQL/.project -text svneol=unset#text/plain
 Studio/projects/template_SQL/template_SQL.xml -text svneol=unset#text/plain
 Studio/projects/template_SQL/xsd/internal/SqlConnector/DefaultTransaction.xsd -text svneol=unset#text/plain
