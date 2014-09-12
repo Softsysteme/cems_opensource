@@ -1078,7 +1078,6 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/css/custom.css -tex
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
@@ -1092,7 +1091,6 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/re
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/icon/icon62tile.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
