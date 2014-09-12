@@ -1215,7 +1215,6 @@ Studio/projects/sampleMobileVacation/DisplayObjects/mobile/css/sampleMobileVacat
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
