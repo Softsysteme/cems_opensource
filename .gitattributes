@@ -1128,7 +1128,6 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/phoneStartup.png -te
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/tabletStartup.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/title.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
@@ -1141,7 +1140,6 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/md
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/mdpiLandscape.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/splash/xhdpiLandscape.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
