@@ -49,6 +49,7 @@ Studio/icons/setupwizard_16x16.gif -text
 Studio/icons/splash-wait.png -text
 Studio/icons/splash_ready_rss.jpg -text
 Studio/icons/splash_wait_rss.jpg -text
+Studio/icons/studio/.project -text svneol=unset#text/plain
 Studio/icons/studio/accumulate.d.gif -text
 Studio/icons/studio/accumulate.gif -text
 Studio/icons/studio/app.gif -text
@@ -62,6 +63,8 @@ Studio/icons/studio/beans/variables/variable_color_16x16.png -text
 Studio/icons/studio/bound_property.d.gif -text
 Studio/icons/studio/bound_property.gif -text
 Studio/icons/studio/bound_property.s.gif -text
+Studio/icons/studio/build_locally_debug_16x16.png -text
+Studio/icons/studio/build_locally_release_16x16.png -text
 Studio/icons/studio/carioca.gif -text
 Studio/icons/studio/carioca_32x32.gif -text
 Studio/icons/studio/cicsconnector_color_32x32.gif -text
@@ -78,6 +81,7 @@ Studio/icons/studio/collapse_all_nodes.gif -text
 Studio/icons/studio/connect.d.gif -text
 Studio/icons/studio/connect.gif -text
 Studio/icons/studio/console.gif -text
+Studio/icons/studio/cordova_build_local_menu_16x16.png.png -text
 Studio/icons/studio/cvs_add.gif -text
 Studio/icons/studio/cvs_cancel_checkout.gif -text
 Studio/icons/studio/cvs_checkin.gif -text
@@ -110,6 +114,7 @@ Studio/icons/studio/demo_usDirectory_color_32x32.png -text
 Studio/icons/studio/demo_vacations_color_32x32.png -text
 Studio/icons/studio/disconnect.d.gif -text
 Studio/icons/studio/disconnect.gif -text
+Studio/icons/studio/emulate_locally_16x16.png -text
 Studio/icons/studio/error.gif -text
 Studio/icons/studio/error_16x16.gif -text
 Studio/icons/studio/excel.gif -text
@@ -173,9 +178,12 @@ Studio/icons/studio/redo.d.gif -text
 Studio/icons/studio/redo.gif -text
 Studio/icons/studio/refresh.d.gif -text
 Studio/icons/studio/refresh.gif -text
+Studio/icons/studio/remove_cordova_dir_16x16.png -text
+Studio/icons/studio/remove_cordova_platform_16x16.png -text
 Studio/icons/studio/resize_connector.gif -text
 Studio/icons/studio/run.d.gif -text
 Studio/icons/studio/run.gif -text
+Studio/icons/studio/run_locally_16x16.png -text
 Studio/icons/studio/sapconnector_color_32x32.gif -text
 Studio/icons/studio/sequence.gif -text
 Studio/icons/studio/sequence_color_32x32.gif -text
