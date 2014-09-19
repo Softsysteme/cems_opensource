@@ -3199,6 +3199,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/SapTransaction.propert
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/XmlHttpTransaction.properties -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/saplogontransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/saplogontransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementMultiValuedVariable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementMultiValuedVariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementVariable.java -text svneol=unset#text/plain
