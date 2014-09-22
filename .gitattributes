@@ -1086,26 +1086,7 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/css/custom.css -tex
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/icon/icon62tile.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
 Studio/projects/sampleMobileLocalCache/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/sampleMobileLocalCache.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
