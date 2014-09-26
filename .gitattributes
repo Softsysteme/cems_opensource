@@ -1086,7 +1086,6 @@ Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/css/custom.css -tex
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/sampleMobileLocalCache.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileLocalCache/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
