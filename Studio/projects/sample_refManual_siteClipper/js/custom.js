@@ -1,6 +1,6 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 7.1.0
+ * public C8O API for CEMS 7.2.0
  * for a jQuery desktop application
  * 
  * Dependences in HTML file:
@@ -13,12 +13,12 @@
  * You can find documentation about Convertigo Templating Framework here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * 
  * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * 
  *******************************************************
  *******************************************************/
@@ -71,6 +71,7 @@ $.extend(true, C8O, {
 //		first_call: "true", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
 //		log_level: "warn", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
+//		log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */
 //		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
 //		resize_offset: "50", /** integer: number of pixel added to the automatic resize */
 //		send_portal_username: "true", /** true/false: (gatein only) automatically add a portal_username parameter with the name of the logger user */
@@ -146,7 +147,7 @@ $.extend(true, C8O, {
  * data: string (query form) or Object (key/value) or HTML Form element
  *          used as AJAX parameters
  */
-//C8O.call(data)
+//C8O.call(data);
 
 /**
  * canLog function
@@ -155,7 +156,7 @@ $.extend(true, C8O, {
  * return: true > can log
  *           false > cannot log
  */
-//C8O.canLog(level)
+//C8O.canLog(level);
 
 /**
  * convertHTML function
@@ -164,7 +165,15 @@ $.extend(true, C8O, {
  * output (optional): HTML element where the input copy is appended
  * return: HTML element, output element or a new <fragment> element with the imported input
  */
-//C8O.convertHTML(input, output)
+//C8O.convertHTML(input, output);
+
+/**
+ * deleteAllCacheEntries function
+ * remove all local cache entries
+ * success (optional): function, callback of the success for the DB cleaning
+ * error (optional): function (err), callback of the failure for the DB cleaning
+ */
+//C8O.deleteAllCacheEntries(success, error);
 
 /**
  * formToData function
@@ -175,13 +184,13 @@ $.extend(true, C8O, {
  * data (optional): object (key/value) where values are copied
  * return: the data object or a new one with copied form's inputs values
  */
-//C8O.formToData($form, data)
+//C8O.formToData($form, data);
 
 /**
  * getBrowserLanguage function
  * return: a string of the current detected language, in 2 characters
  */
-//C8O.getBrowserLanguage()
+//C8O.getBrowserLanguage();
 
 /**
  * doNavigationBarEvent function
@@ -259,6 +268,14 @@ $.extend(true, C8O, {
 //C8O.removeRecallParameter(parameter_name);
 
 /**
+ * serializeXML function
+ * return a string representation of the xmlDom Document in a XML format
+ * xmlDom: Document to transform
+ * return: string of the xmlDom Document in a XML format 
+ */
+//C8O.serializeXML(xmlDom);
+
+/**
  * toJSON function
  * return a string representation of the data object (key/value) in a JSON format
  * data: object to transform
@@ -291,7 +308,23 @@ $.extend(true, C8O, {
  */
 //C8O.waitShow();
 
-
+/**
+ * walk function
+ * walk recursively a dom tree and apply a function on each text node and attributes
+ * node: starting node of the walk, children will be walked recursively
+ * data: contextual data passed to fn and fn_validate
+ * fn  : function that process each text ; fn(txt, data, fn_validate){}
+ * 	     this: current node
+ *       txt : text to transform
+ *       data: data passed to the walk function
+ *       fn_validate: fn_validate passed to the walk function
+ *       return: new value of txt, or null to do nothing
+ * fn_validate: function that process each node and can stop the walk for its node
+ *              node: current node to test
+ *              data: data passed to the walk function
+ *              return: true to continue the walk, false to stop
+ */
+//C8O.walk(node, data, fn, fn_validate);
 
 /*******************************************************
  * List of possible hooks *
