@@ -1,13 +1,13 @@
 /*******************************************************
  *******************************************************
- * public C8O API for CEMS 7.1.0
+ * public C8O API for CEMS 7.2.0
  * for a jQuery Mobile application using the CTF
  * 
  * Dependences in HTML file:
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.jquerymobile.js
- * * ~ c8o.cordova.js (for builded application)
+ * * ~ c8o.cordova.device.js (for builded application)
  * * ctf.core.js
  * * ctf.jquerymobile.js
  * * custom.js (this file)
@@ -16,12 +16,12 @@
  * You can find documentation about Convertigo Templating Framework here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * 
  * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
- * http://help.convertigo.com/7.1.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
+ * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * 
  *******************************************************
  *******************************************************/
@@ -51,7 +51,7 @@ $.extend(true, C8O, {
 	},
 	
 	/**
-	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.js
+	 * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.device.js
 	 */
 	cordova: {
 //		androidSenderID: ""
@@ -69,10 +69,13 @@ $.extend(true, C8O, {
 	vars: {
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
-		first_call: "false" /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
-//		log_level: "debug", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
+//		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
+//		log_level: "warn", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
-//		requester_prefix: "" /** string prepend to the .xml or .cxml requester */
+//		log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */		
+//		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
+/** c8o.cordova.device.js vars */
+//		local_cache_parallel_downloads: 5 /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */		
 	},
 	
 	options: {
@@ -285,6 +288,14 @@ $.extend(true, C8O, {
 //C8O.convertHTML(input, output);
 
 /**
+ * deleteAllCacheEntries function
+ * remove all local cache entries
+ * success (optional): function, callback of the success for the DB cleaning
+ * error (optional): function (err), callback of the failure for the DB cleaning
+ */
+//C8O.deleteAllCacheEntries(success, error);
+
+/**
  * formToData function
  * copy all form's inputs into the data object or a new one.
  * Inputs names are the keys and inputs values are the values of the data object.
@@ -300,6 +311,21 @@ $.extend(true, C8O, {
  * return: a string of the current detected language, in 2 characters
  */
 //C8O.getBrowserLanguage();
+
+/**
+ *  getCordovaEnv function
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  return the specific value of the cordova environment or the whole environment (without parameter)
+ *  the following keys can be used:
+ *  	applicationAuthorName, applicationAuthorEmail, applicationAuthorWebsite, applicationDescription, applicationId, applicationName,
+ *  	builtRevision, builtVersion, currentRevision, currentVersion,
+ *  	endPoint, platform, platformName, projectName, uuid.
+ *  This method can only be used after the C8O library environment initialization (you can use it in the init_finished hook and after).
+ *  
+ *  key (optional): string of the environment key to return, or the whole key/value environment object if no parameter
+ *  return: specific value or whole the cordova environment
+ */
+//C8O.getCordovaEnv(key);
 
 /**
  * getLastCallParameter function
@@ -352,6 +378,28 @@ $.extend(true, C8O, {
 //C8O.removeRecallParameter(parameter_name);
 
 /**
+ * serializeXML function
+ * return a string representation of the xmlDom Document in a XML format
+ * xmlDom: Document to transform
+ * return: string of the xmlDom Document in a XML format 
+ */
+//C8O.serializeXML(xmlDom);
+
+/**
+ *  splashscreenHide function
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  Hide the cordova splashscreen if any
+ */
+//C8O.splashscreenHide();
+
+/**
+ *  splashscreenHide function
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  Hide the cordova splashscreen if any
+ */
+//C8O.splashscreenShow();
+
+/**
  * toJSON function
  * return a string representation of the data object (key/value) in a JSON format
  * data: object to transform
@@ -383,6 +431,24 @@ $.extend(true, C8O, {
  * by showing the #c8oloading element and start jquerymobile loading
  */
 //C8O.waitShow();
+
+/**
+ * walk function
+ * walk recursively a dom tree and apply a function on each text node and attributes
+ * node: starting node of the walk, children will be walked recursively
+ * data: contextual data passed to fn and fn_validate
+ * fn  : function that process each text ; fn(txt, data, fn_validate){}
+ * 	     this: current node
+ *       txt : text to transform
+ *       data: data passed to the walk function
+ *       fn_validate: fn_validate passed to the walk function
+ *       return: new value of txt, or null to do nothing
+ * fn_validate: function that process each node and can stop the walk for its node
+ *              node: current node to test
+ *              data: data passed to the walk function
+ *              return: true to continue the walk, false to stop
+ */
+//C8O.walk(node, data, fn, fn_validate);
 
 /*******************************************************
  * List of possible hooks *
@@ -433,6 +499,19 @@ $.extend(true, C8O, {
 //});
 
 /**
+ *  device_ready hook
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  used at device startup (doesn't work on browser) to initialize device things
+ *  or break the processing
+ *  
+ *  return: true > lets C8O perform the init
+ *             false > break the processing of request
+ */
+//C8O.addHook("device_ready", function () {
+//	return true;
+//});
+
+/**
  *  document_ready hook
  *  used at page loading
  *  can perform some DOM tweak
@@ -476,6 +555,21 @@ $.extend(true, C8O, {
 //});
 
 /**
+ *  local_cache_check_attachment hook
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  Hook called when a url will be downloaded for the local cache
+ *  
+ *  url: "string" the current url to download
+ *  element:    "string" the current element where the "url" is found
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets c8o.cordova download the url and substitute the xml
+ *            false > skip this url
+ */
+//C8O.addHook("local_cache_check_attachment", function (url, element, data) {
+//	return true;
+//});
+
+/**
  *  log hook
  *  used on each C8O.log.xxx call.
  *  Allow to:
@@ -496,14 +590,18 @@ $.extend(true, C8O, {
 
 /**
  *  push_notification hook
- *  ** Needs cordova.js + c8o.cordova.js **
+ *  ** Needs cordova.js + c8o.cordova.device.js **
  *  Hook called when a notification is received on the mobile device
  *  
- *  level: "string" sender of the notification : GCM (Google) or APN (Apple)
- *  msg: "string" the message content of the notification
- *  event: "object" the raw object from the notification, sender specific
+ *  sender: "string" sender of the notification : GCM (Google) or APN (Apple)
+ *  msg:    "string" the message content of the notification
+ *  event:  "object" the raw object from the notification, sender specific
  *  return: true > lets c8o.cordova handle the response (Apple badge or sound)
  *            false > do nothing
+ *            
+ *  note:  documentation of event object can be found here :
+ *  https://github.com/phonegap-build/PushPlugin
+ *            
  */
 //C8O.addHook("push_notification", function (sender, msg, event) {
 //	return true;
@@ -511,7 +609,7 @@ $.extend(true, C8O, {
 
 /**
  *  push_register_failed hook
- *  ** Needs cordova.js + c8o.cordova.js **
+ *  ** Needs cordova.js + c8o.cordova.device.js **
  *  Hook called when the registration failed on the mobile
  *  
  *  error: "string" cause of the error
@@ -522,7 +620,7 @@ $.extend(true, C8O, {
 
 /**
  *  push_register_success hook
- *  ** Needs cordova.js + c8o.cordova.js **
+ *  ** Needs cordova.js + c8o.cordova.device.js **
  *  Hook called when the registration success on the mobile
  *  
  *  result: content from the notification system
