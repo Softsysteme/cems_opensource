@@ -213,6 +213,7 @@ Studio/icons/studio/write_wait_zone.gif -text
 Studio/icons/studio/xml.gif -text
 Studio/icons/studio/xsl.gif -text
 Studio/icons/studio/xsl_32x32.gif -text
+Studio/icons/svn_add_connector.gif -text
 Studio/jslib/javelin.js -text svneol=unset#text/plain
 Studio/lib/MozillaGlue.jar -text
 Studio/lib/MozillaInterfaces.jar -text

@@ -179,6 +179,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.wst.jsdt.ui,
  org.eclipse.wst.jsdt.core,
  org.eclipse.swt,
- org.eclipse.team.svn.ui
+ org.eclipse.team.svn.ui;resolution:=optional
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
