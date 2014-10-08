@@ -145,8 +145,18 @@
 			<!-- content -->
 			<div data-role="content">	
 				<ul data-role="listview" data-theme="a">
-					<li><a href="#" data-c8o-call=".getProgTv" data-c8o-variables='{"part":"1"}'>Début de soirée</a></li>
-					<li><a href="#" data-c8o-call=".getProgTv" data-c8o-variables='{"part":"2"}'>Fin de soirée</a></li>
+					<li>
+						<a href="#" data-c8o-call=".getProgTv"
+						   data-c8o-variables='{"part":"1", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
+							Début de soirée
+						</a>
+					</li>
+					<li>
+						<a href="#" data-c8o-call=".getProgTv"
+						   data-c8o-variables='{"part":"2", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
+							Fin de soirée
+						</a>
+					</li>
 					<li><a href="#about">A propos...</a></li>
 				</ul>	
 			</div>
@@ -178,7 +188,8 @@
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 			    		<!-- Case with a link to click -->
-						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
+						<a class="progItem" href="#" data-c8o-call=".getProgDetails"
+						   data-c8o-variables='{"href":"__=sum_prog__", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
 							<h3>__=name_prog__</h3>
@@ -205,7 +216,8 @@
 			 	<ul data-role="listview" data-theme="a" data-c8o-each="TNT1" class="myMargin">
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
-						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
+						<a class="progItem" href="#" data-c8o-call=".getProgDetails"
+						   data-c8o-variables='{"href":"__=sum_prog__", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
 							<h3>__=name_prog__</h3>
@@ -252,7 +264,8 @@
 			 		<!-- great channels - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 						<!-- Case with a link to click -->
-						<a class="progItem" href="#" data-c8o-call=".getProgDetails" data-c8o-variables='{"href":"__=sum_prog__"}'>
+						<a class="progItem" href="#" data-c8o-call=".getProgDetails"
+						   data-c8o-variables='{"href":"__=sum_prog__", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
 							<h3>__=name_prog__</h3>
@@ -280,7 +293,8 @@
 			 		<!-- TNT - content of first part of night -->
 			    	<li data-theme="a" data-c8o-if="sum_prog">
 			    		<!-- Case with a link to click -->
-						<a class="progItem" href="#" data-c8o-call=".getProgDetails"  data-c8o-variables='{"href":"__=sum_prog__"}'>
+						<a class="progItem" href="#" data-c8o-call=".getProgDetails"
+						   data-c8o-variables='{"href":"__=sum_prog__", "__localCache": {"enabled":true, "policy": "priority-local", "ttl": 3600000}}'>
 							<!--  li content -->
 							<img style="margin-top: 25px" data-c8o-use="on" data-c8o-use-src="__=img_chaine__"/>
 							<h3>__=name_prog__</h3>
