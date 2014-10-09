@@ -145,15 +145,14 @@
 			</div>
 			<!-- content -->
 			<div data-role="content">
-				<form data-c8o-call=".Fake">
-					<input type="hidden" name="sequence" value="Requests"/>
+				<form data-c8o-call=".Login">
 					<label for="userId">User (john)</label>
 					<input type="text" id="userId" name="userId" value="john" placeholder="your username" autocorrect="off" autocapitalize="off"/>
 					<label for="password">Password (1234)</label>
 					<input type="password" id="password" name="password" value="1234" placeholder="your password" autocorrect="off" autocapitalize="off"/>
 					<button>Login</button>
 				</form>				
-				<button data-theme="a" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}'>Quit</button>
+				<button data-theme="a" data-c8o-call=".Deconnection">Quit</button>
 			</div>
 		</div>
 		
@@ -161,24 +160,25 @@
 		<div data-role="page" id="listing" data-title="Vacation Acceptation - List" data-theme="c">
 			
 			<!-- top bar -->
-			<div data-role="header">
- 				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="refresh" data-iconpos="notext">Refresh</a>
-				<h1 data-c8o-listen=""><span id="nbleave">XX</span> leaves to commit</h1>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+			<div data-role="header">			
+ 				<a href="#" data-c8o-call=".Requests" data-role="button" data-icon="refresh" data-iconpos="notext">Refresh</a> 				
+ 				<h1 data-c8o-listen=""><span id="nbleave">XX</span> leaves to commit</h1>
+				<a href="#" data-c8o-call=".Deconnection" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
-			<div data-role="content" data-c8o-listen=".Fake">
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-icon="arrow-r" data-iconpos="right">See the team calendar</a>
+			<div data-role="content">
+				<a href="#" data-c8o-call=".Calendar" data-role="button" data-icon="arrow-r" data-iconpos="right">See the team calendar</a>
 
-				<ul data-role="listview" data-inset="true" data-theme="a" data-c8o-each="requests>request">
+				<ul data-role="listview" data-inset="true" data-theme="a" data-c8o-listen=".Requests, .Login" data-c8o-each="requests>request">
 					<li>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Details","index":"__=index__"}'>
+						<a href="#" data-c8o-call=".Details" data-c8o-variables='{"index":"__=index__"}'>
 							<h3>__=name__<br/>__=date__</h3>
 							<p>__=when__</p>
 						</a>
 					</li>
 				</ul>
+				
 				<p id="info"></p>
 			</div>			
 		</div>
@@ -188,24 +188,24 @@
 			
 			<!-- top bar -->
 			<div data-role="header">
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Back</a>
+				<a href="#" data-c8o-call=".Requests" data-role="button" data-icon="back" data-iconpos="notext">Back</a>
 				<h1>Calendar</h1>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Deconnection" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
 			<div class="calendarbar" data-role="content" data-theme="a">
 				<div>
 					<div style="float:left;">
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousMonth"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">M</a>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousWeek"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">W</a>
+						<a href="#" data-c8o-call=".PreviousMonth" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">M</a>
+						<a href="#" data-c8o-call=".PreviousWeek" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">W</a>
 					</div>
 					<div style="float:right;">	
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextWeek"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">W</a>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextMonth"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">M</a>
+						<a href="#" data-c8o-call=".NextWeek" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">W</a>
+						<a href="#" data-c8o-call=".NextMonth" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">M</a>
 					</div>
 				</div>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-mini="true" data-inline="true" data-theme="c">Now</a>
+				<a href="#" data-c8o-call=".Calendar" data-role="button" data-mini="true" data-inline="true" data-theme="c">Now</a>
 			</div>
 			<div id="calendars" data-role="content" data-theme="c">
 				<!--table calendar one week -->
@@ -222,15 +222,15 @@
 			<div class="calendarbar" data-role="content" data-theme="a">
 				<div>
 					<div style="float:left;">
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousMonth"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">M</a>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"PreviousWeek"}' data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">W</a>
+						<a href="#" data-c8o-call=".PreviousMonth" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">M</a>
+						<a href="#" data-c8o-call=".PreviousWeek" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="c">W</a>
 					</div>
 					<div style="float:right;">
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextWeek"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">W</a>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"NextMonth"}' data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">M</a>
+						<a href="#" data-c8o-call=".NextWeek" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">W</a>
+						<a href="#" data-c8o-call=".NextMonth" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="c">M</a>
 					</div>
 				</div>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Calendar"}' data-role="button" data-mini="true" data-inline="true" data-theme="c">Now</a>
+				<a href="#" data-c8o-call=".Calendar" data-role="button" data-mini="true" data-inline="true" data-theme="c">Now</a>
 			</div>
 		</div>
 		
@@ -239,20 +239,20 @@
 			
 			<!-- top bar -->
 			<div data-role="header">
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Return</a>			
+				<a href="#" data-c8o-call=".Requests" data-role="button" data-icon="back" data-iconpos="notext">Return</a>			
 				<h1>Details</h1>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>	
+				<a href="#" data-c8o-call=".Deconnection" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>	
 			</div>
 			
 			<!-- content -->
 			<div>
 				<div data-role="content">
 					<fieldset class="ui-grid-a">
-						<div class="ui-block-a"><button id="validate" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Validate"}' data-icon="check" data-theme="c">Validate</button></div>
-						<div class="ui-block-b"><button id="refuse" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Refuse"}' data-icon="delete" data-theme="b">Refuse</button></div>
+						<div class="ui-block-a"><button id="validate" data-c8o-call=".Validate" data-icon="check" data-theme="c">Validate</button></div>
+						<div class="ui-block-b"><button id="refuse" data-c8o-call=".Refuse" data-icon="delete" data-theme="b">Refuse</button></div>
 					</fieldset>
 				</div> 
-				<div id="maindetails" data-theme="s" data-c8o-listen=".Fake">
+				<div id="maindetails" data-theme="s" data-c8o-listen=".Details">
 					<ul data-role="listview">
 						<li><strong>Name:</strong>  __=request>name__</li>
 						<li><strong>When:</strong>  __=request>when__</li>
@@ -271,17 +271,17 @@
 			
 			<!-- top bar -->
 			<div data-role="header">
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Requests"}' data-role="button" data-icon="back" data-iconpos="notext">Return</a>
+				<a href="#" data-c8o-call=".Requests" data-role="button" data-icon="back" data-iconpos="notext">Return</a>
 				<h1>Refuse reasons</h1>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Deconnection" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
-			<div data-role="content" data-c8o-listen=".Fake">
+			<div data-role="content" data-c8o-listen=".Refuse">
 				<h2>Select a reason</h2>
 				<ul data-role="listview" data-inset="true" data-theme="a" data-c8o-each="reasons>option">
 					<li>
-						<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Validate","index":"__=index__"}'>
+						<a href="#" data-c8o-call=".Validate" data-c8o-variables='{"index":"__=index__"}'>
 							<h3>__=label__</h3>
 						</a>
 					</li>
@@ -295,13 +295,13 @@
 			<!-- top bar -->
 			<div data-role="header">
 				<h1>Error message</h1>
-				<a href="#" data-c8o-call=".Fake" data-c8o-variables='{"sequence":"Deconnection"}' data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
+				<a href="#" data-c8o-call=".Deconnection" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a>
 			</div>
 			
 			<!-- content -->
 			<div data-role="content" data-theme="c" data-c8o-listen="*">
+				<p id="errorMessageTarget">__=error_message__</p>
 				<a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="c">Return</a>
-				<p id="errorMessageTarget">__=alertMessage__</p>
 			</div>
 		</div>
 		
@@ -314,14 +314,14 @@
 			</div>
 			
 			<!-- content -->
-			<div data-role="content" data-theme="c" data-c8o-listen=".Fake">
+			<div data-role="content" data-theme="c" data-c8o-listen=".Validate">
 				<p id="alertMessageTarget">__=alertMessage__</p>
 				<a href="#listing" data-role="button" data-icon="back" data-theme="c">Return</a>
 			</div>
 		</div>
 		
 		<!-- Terminate page - Message Alert  -->
-		<div data-role="page" id="fin" data-title="Vacation Acceptation - Terminated" data-theme="c">
+		<div data-role="page" id="end" data-title="Vacation Acceptation - Terminated" data-theme="c">
 			
 			<!-- top bar -->
 			<div data-role="header">

@@ -186,136 +186,120 @@ $.extend(true, C8O, {
 			actions : [{
 				condition: errorCondition,
 				goToPage: "#errorMessage",
-				options: {}
+				options: {transition : "pop", role : "dialog"}
 			}]
 		},
 		{
-			calledRequest: ".Fake",
+			calledRequest: ".Requests, .Login",
 			actions: [{
-				condition: login,
-				goToPage: "#listing",
-				afterRendering: function ($doc, c8oData) {
-					var $requests = $doc.find("requests>request");
-					$("#nbleave").text($requests.length);
-				},
-				options: {}
-			},
-			{
+			    	condition: login,
+					goToPage: "#listing",
+					afterRendering: function ($doc, c8oData) {
+						var $requests = $doc.find("requests>request");
+						$("#nbleave").text($requests.length);
+					},
+					options: {}
+		    }]
+		},
+		{
+			calledRequest: ".Deconnection",
+			actions: [{
 				condition: deconnection,
-				goToPage: "#fin",
+				goToPage: "#end",
 				options: {
 					transition : "pop"
 				}
-			},
-			{
+			}]
+		},
+		{
+			calledRequest: ".Calendar",
+			actions: [{
 				condition: calendar,
 				goToPage: "#calendar",
 				afterRendering: function ($doc, c8oData){
 					var dates = C8O.re.dates.exec($(this).text()); 
 				},
 				options: {}
-			},
-			{
+			}]
+		},
+		{
+			calledRequest: ".Details",
+			actions: [{
 				condition: details,
 				goToPage: "#details",
 				options: {}
-			},
-			{
+			}]
+		},
+		{
+			calledRequest: ".Refuse",
+			actions: [{
 				condition: refuse,
 				goToPage: "#refuse_options",
 				options: {}
-			},
-			{
+			}]
+		},
+		{
+			calledRequest: ".Validate",
+			actions: [{
 				condition: validate,
 				goToPage: "#alertMessage",
 				options: {transition : "pop", role : "dialog"}
 			}]
-		}]
-	});
+		}
+	]});
 		
 /*******************************************************
 * Functions *
 *******************************************************/
-		
+	
 	/**
 	* listen condition for standard error management
 	*/
 	function errorCondition ($doc, c8oData) {
-		if ($doc.find("status:contains('0')").length || $doc.find("error>exception").length || $doc.find(">error_message").length ) {
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('0')").length || $doc.find("error>exception").length || $doc.find(">error_message").length;
 	}
-	
 	
 	/**
 	* listen condition for login
 	*/
 	function login ($doc, c8oData) {
-		if ($doc.find("status:contains('1')").length && $doc.find("document>requests").length && !$doc.find("document>alertMessage").length ){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("document>requests").length;
 	}
 	
 	/**
 	* listen condition for deconnection
 	*/
 	function deconnection ($doc, c8oData) {
-		if ( $doc.find("status:contains('1')").length && $doc.find("document>messageInfo").length ){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("document>messageInfo").length;
 	}
-	
 	
 	/**
 	* listen condition calendar
 	*/
 	function calendar ($doc, c8oData) {
-		if ($doc.find("status:contains('1')").length && $doc.find("calendar").length){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("calendar").length;
 	}
 	
 	/**
 	* listen condition details
 	*/
 	function details ($doc, c8oData) {
-		if ($doc.find("status:contains('1')").length && $doc.find("document>request").length){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("document>request").length;
 	}
 	
 	/**
 	* listen condition validate
 	*/
 	function validate ($doc, c8oData) {
-		if ($doc.find("status:contains('1')").length && $doc.find("document>alertMessage").length ){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("document>alertMessage").length;
 	}
 	
 	/**
 	* listen condition refuse
 	*/
 	function refuse ($doc, c8oData) {
-		if ($doc.find("status:contains('1')").length && $doc.find("document>reasons").length){
-			return true;
-		}else{
-			return false;
-		}
+		return $doc.find("status:contains('1')").length && $doc.find("document>reasons").length;
 	}
-
 
 
 /**
@@ -745,7 +729,6 @@ C8O.addHook("document_ready", function () {
  *             false > break the processing of xml
  */
 C8O.addHook("xml_response", function (xml, data) {
-	var sequence = C8O.getLastCallParameter("sequence");
 	var $xml = $(xml);
 	var status = $(xml).find("document>status").text();
 	
