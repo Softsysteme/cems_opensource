@@ -1042,7 +1042,6 @@ Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n.html -text svn
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/en.json -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/fr.json -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/i18n/pt.json -text
-Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom_sample_i18n.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/js/custom_sample_routing_table.js -text svneol=unset#text/plain
@@ -1074,7 +1073,6 @@ Studio/projects/sampleMobileCtfGallery/topics/templating_simple_patterns.xml -te
 Studio/projects/sampleMobileJQuery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
@@ -1115,6 +1113,7 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/phoneStartup.png -te
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/tabletStartup.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/title.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/splash.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
@@ -1158,6 +1157,7 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/favicon.ic
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/img/picture.jpg -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/map/map.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/splash.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
@@ -1197,6 +1197,7 @@ Studio/projects/sampleMobileVacation/DisplayObjects/mobile/css/sampleMobileVacat
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleMobileVacation/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/DisplayObjects/mobile/splash.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
@@ -4410,6 +4411,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/GenericUtils.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/engine/util/HexUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/HttpServletRequestTwsWrapper.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/HttpUtils.java -text
+Studio/src/com/twinsoft/convertigo/engine/util/ImageUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ImportWsReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/IterableEnumeration.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/JAXBUtils.java -text svneol=unset#text/plain
@@ -5342,6 +5344,7 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/img/favico
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/splash.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
