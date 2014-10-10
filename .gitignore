@@ -65,9 +65,6 @@ Studio/projects/sampleDocumentationSiteClipper/_data
 Studio/projects/sampleDocumentationSiteClipper/_private
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/platforms
 Studio/projects/sampleMobileCtfGallery/_private
-Studio/projects/sampleMobileJQue/DisplayObjects/platforms
-Studio/projects/sampleMobileJQue/Traces
-Studio/projects/sampleMobileJQue/_private
 Studio/projects/sampleMobileLocalCache/_private
 Studio/projects/sampleMobileMobTV/Traces
 Studio/projects/sampleMobileMobTV/_private
@@ -81,6 +78,9 @@ Studio/projects/sampleMobileVacation/.settings
 Studio/projects/sampleMobileVacation/Traces
 Studio/projects/sampleMobileVacation/_data
 Studio/projects/sampleMobileVacation/_private
+Studio/projects/sampleSearchingConferenceRooms/DisplayObjects/platforms
+Studio/projects/sampleSearchingConferenceRooms/Traces
+Studio/projects/sampleSearchingConferenceRooms/_private
 Studio/projects/sample_HelloWorld/_private
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.wsdl
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.xsd
