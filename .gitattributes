@@ -1240,8 +1240,8 @@ Studio/projects/sampleSearchingConferenceRooms/DisplayObjects/mobile/js/custom.j
 Studio/projects/sampleSearchingConferenceRooms/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
 Studio/projects/sampleSearchingConferenceRooms/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleSearchingConferenceRooms/sampleMobileJQuery.xml -text svneol=unset#text/plain
+Studio/projects/sampleSearchingConferenceRooms/sampleSearchingConferenceRooms.xml -text svneol=unset#text/plain
 Studio/projects/sampleSearchingConferenceRooms/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
-Studio/projects/sampleSearchingConferenceRooms/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/.project -text svneol=unset#text/plain
 Studio/projects/sample_HelloWorld/Traces/legacy/demo.etr -text
 Studio/projects/sample_HelloWorld/css/custom.css -text svneol=unset#text/plain
