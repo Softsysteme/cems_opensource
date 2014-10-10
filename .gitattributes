@@ -1076,6 +1076,7 @@ Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/app.html -text svneol=u
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/icon.png -text
 Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMobileJQuery/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/data/list.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/sampleMobileJQuery.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileJQuery/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain

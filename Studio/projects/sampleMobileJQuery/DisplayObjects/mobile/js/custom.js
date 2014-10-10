@@ -32,7 +32,7 @@ var Geoloc = {
 	exMarker : undefined
 };
 
-$(document).bind('mobileinit',function() {
+$(document).on("mobileinit", function() {
    $.mobile.selectmenu.prototype.options.nativeMenu = false;
 });
 
@@ -90,8 +90,9 @@ $.extend(true, C8O, {
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */		
 //		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
-/** c8o.cordova.device.js vars */
-//		local_cache_parallel_downloads: 5 /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */		
+		/** c8o.cordova.device.js vars */
+//		local_cache_parallel_downloads: 5, /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */
+		toaster : ""
 	},
 	
 	options: {
@@ -243,6 +244,18 @@ $.extend(true, C8O, {
 /*******************************************************
  * Functions *
  *******************************************************/
+
+/**
+* Function to manage the information toaster
+*/
+	function toasterPositionFixe(message) {
+		var positionScroll = window.pageYOffset;
+		var viewPortHeight = $(window).height();
+		var contentHeight = Math.abs( viewPortHeight / 2 );
+		var position = positionScroll + contentHeight;
+		C8O.vars.toaster.toast(message);
+		$(".toast-container").css("top",position+"px");
+	}
 
 
 /**
@@ -521,9 +534,11 @@ $.extend(true, C8O, {
  *  return: true > log the error with C8O.log.error
  *             false > don't log the error
  */
-//C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
-//	return true;
-//});
+C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
+	//no network
+	toasterPositionFixe("No network");
+	return true;
+});
 
 /**
  *  device_ready hook
@@ -548,17 +563,23 @@ $.extend(true, C8O, {
  *             false > break the processing of request
  */
 C8O.addHook("document_ready", function () {
+	
+	/* 
+	 * Init toaster
+	 */
+	C8O.vars.toaster = $.toaster({showTime: 1500, centerX: true, centerY: true});
+	
 	/* 
 	 * handles username and password storing in local storage 
 	 * or removing from storage when checking or unchecking the "remember me" checkbox   
 	 */
-	if(C8O.isUndefined(localStorage)) {
+	if (C8O.isUndefined(localStorage)) {
 		$("#rememberme").prop("disabled", true);
-	} else if (localStorage.getItem('userId') !== null) {
+	} else if (localStorage.getItem("userId") !== null) {
 		// sets back the values from the local storage to the form's fields
 		$("#rememberme").prop("checked", true);
-		$("#userId").val(localStorage.getItem('userId'));
-		$("#password").val(localStorage.getItem('password'));
+		$("#userId").val(localStorage.getItem("userId"));
+		$("#password").val(localStorage.getItem("password"));
 	}
 	
 	$("#date").val(new Date().toJSON().slice(0,10));
@@ -605,6 +626,11 @@ C8O.addHook("document_ready", function () {
 			);
 		});
 	});
+
+	
+	$("#cleanDataBase").click(function() {
+		C8O.deleteAllCacheEntries();
+	});
 	
 	return true;
 });
@@ -635,9 +661,9 @@ C8O.addHook("document_ready", function () {
  *  return: true > lets CTF handle the document
  *             false > break the processing of request
  */
-//C8O.addHook("init_finished", function (params) {
-//	return true;
-//});
+C8O.addHook("init_finished", function (params) {
+	return true;
+});
 
 /**
  *  local_cache_check_attachment hook
@@ -725,6 +751,12 @@ C8O.addHook("document_ready", function () {
  *  return: true > lets the CTF perform the xml
  *             false > break the processing of xml
  */
-//C8O.addHook("xml_response", function (xml, data) {
-//	return true;
-//});
+C8O.addHook("xml_response", function (xml, data) {
+	// Check for the localcache attribute in the XML response.
+	// If we have it this leans that the data was retrieved from the cache
+	// Warn the user.
+	if ($("document", xml).attr("localcache") == "true") {
+		toasterPositionFixe("Data retreived from cache");
+	}
+	return true;
+});
