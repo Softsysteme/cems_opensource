@@ -67,7 +67,6 @@ $.extend(true, C8O, {
 	 * for example: C8O.vars.ajax_method="GET"
 	 */
 	vars: {
-		stub : false
 //		ajax_method: "POST", /** POST/GET: http method to request CEMS */
 //		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
 //		first_call: "false", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
@@ -539,7 +538,6 @@ function detailsCondition_movie ($doc, c8oData) {
  * List of possible hooks *
  *******************************************************/
 
-
 /**
  *  call hook
  *  used before AJAX request to CEMS server
@@ -656,6 +654,21 @@ C8O.addHook("init_finished", function (params) {
 	
 	return true;
 });
+
+/**
+ *  local_cache_check_attachment hook
+ *  ** Needs cordova.js + c8o.cordova.device.js **
+ *  Hook called when a url will be downloaded for the local cache
+ *  
+ *  url: "string" the current url to download
+ *  element:    "string" the current element where the "url" is found
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets c8o.cordova download the url and substitute the xml
+ *            false > skip this url
+ */
+//C8O.addHook("local_cache_check_attachment", function (url, element, data) {
+//	return true;
+//});
 
 /**
  *  log hook
