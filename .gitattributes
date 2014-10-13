@@ -1070,16 +1070,6 @@ Studio/projects/sampleMobileCtfGallery/topics/late_rendering.xml -text svneol=un
 Studio/projects/sampleMobileCtfGallery/topics/listening_convertigo.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/routing_table.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/topics/templating_simple_patterns.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/.project -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/icon.png -text
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/data/list.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/sampleMobileLocalCache.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
-Studio/projects/sampleMobileLocalCache/xsd/sampleMobileJQuery.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
