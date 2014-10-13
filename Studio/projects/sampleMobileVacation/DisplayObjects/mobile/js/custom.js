@@ -256,7 +256,7 @@ $.extend(true, C8O, {
 	* listen condition for standard error management
 	*/
 	function errorCondition ($doc, c8oData) {
-		return $doc.find("status:contains('0')").length || $doc.find("error>exception").length || $doc.find(">error_message").length;
+		return ($doc.find("status:contains('0')").length && $doc.find(">error_message").length) || $doc.find("error>exception").length;
 	}
 	
 	/**
