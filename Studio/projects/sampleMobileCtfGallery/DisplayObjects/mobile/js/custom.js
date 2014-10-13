@@ -454,7 +454,6 @@ $.extend(true, C8O, {
  * List of possible hooks *
  *******************************************************/
 
-
 /**
  *  call hook
  *  used before AJAX request to CEMS server

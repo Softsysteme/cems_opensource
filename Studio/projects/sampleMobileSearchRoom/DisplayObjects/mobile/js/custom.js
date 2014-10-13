@@ -90,7 +90,7 @@ $.extend(true, C8O, {
 //		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
 //		log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */		
 //		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
-		/** c8o.cordova.device.js vars */
+/** c8o.cordova.device.js vars */
 //		local_cache_parallel_downloads: 5, /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */
 		toaster : ""
 	},
@@ -256,7 +256,6 @@ $.extend(true, C8O, {
 		C8O.vars.toaster.toast(message);
 		$(".toast-container").css("top",position+"px");
 	}
-
 
 /**
  * addHook function
@@ -493,7 +492,6 @@ $.extend(true, C8O, {
 /*******************************************************
  * List of possible hooks *
  *******************************************************/
-
 
 /**
  *  call hook
