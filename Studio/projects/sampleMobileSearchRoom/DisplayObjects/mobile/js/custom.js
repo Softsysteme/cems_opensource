@@ -27,10 +27,16 @@
  *******************************************************/
 
 var Geoloc = {
-	geocoder : new google.maps.Geocoder(),
+	geocoder : {geocode : function () {}},
 	map : undefined,
 	exMarker : undefined
 };
+
+try {
+	Geoloc.geocoder = new google.maps.Geocoder();
+} catch (e) {
+	console.log("Cannot create Geocoder (" + e + ")");
+}
 
 $(document).on("mobileinit", function() {
    $.mobile.selectmenu.prototype.options.nativeMenu = false;
