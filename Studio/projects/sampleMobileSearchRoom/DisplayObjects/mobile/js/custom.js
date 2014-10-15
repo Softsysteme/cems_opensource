@@ -209,40 +209,40 @@ $.extend(true, C8O, {
 			actions: [
 			    {
 					condition: "error",
-			    	goToPage: "#errorMessage"
+			    	goToPage: "#errorMessage",
+					options: {transition : "pop"}
 	 			}
-			],
-			options: {transition : "pop"}
+			]
 		},
 		{
 			calledRequest: ".Login",
 			actions: [
 			    {
 					condition: "logon",
-			    	goToPage: "#search"
+			    	goToPage: "#search",
+					options: {transition : "slide"}
 	 			}
-			],
-			options: {transition : "pop"}
+			]
 		},
 		{
 			calledRequest: ".LoadList",
 			actions: [
 			    {
 					condition: "results",
-			    	goToPage: "#listing"
+			    	goToPage: "#listing",
+					options: {transition : "slide"}
 	 			}
-			],
-			options: {transition : "pop"}
+			]
 		},
 		{
 			calledRequest: ".GetDetails",
 			actions: [
 			    {
 					condition: "result",
-			    	goToPage: "#details"
+			    	goToPage: "#details",
+					options: {transition : "slide"}
 	 			}
-			],
-			options: {transition : "pop"}
+			]
 		}
 	]
 });
