@@ -659,7 +659,6 @@ Studio/projects/lib_Authentication/css/start/jquery-ui-1.8.18.custom.css -text s
 Studio/projects/lib_Authentication/css/ui.jqgrid.css -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/errorCodesLabels.xml -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/index.html -text svneol=unset#text/plain
-Studio/projects/lib_Authentication/js/custom.js -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/js/i18n/grid.locale-ar.js -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/js/i18n/grid.locale-bg.js -text svneol=unset#text/plain
 Studio/projects/lib_Authentication/js/i18n/grid.locale-bg1251.js -text svneol=unset#text/plain
