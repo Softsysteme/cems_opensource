@@ -605,8 +605,8 @@ C8O.addHook("document_ready", function () {
 	 * and display the last accessed address stored in "Geoloc.address" variable
 	 */
 	$("#localize").click(function() {
-		$.mobile.changePage($("#map"));
-		$(document).on("pageshow", "#map", function() {
+		$.mobile.changePage("#map");
+		$(document).one("pageshow", "#map", function() {
 			Geoloc.geocoder.geocode({address: $("#address").text()}, 
 				function (results, status) {
 					if (C8O.isDefined(Geoloc.exMarker)) {
@@ -621,11 +621,13 @@ C8O.addHook("document_ready", function () {
 								}
 						);
 					}
-					Geoloc.map.setCenter(results[0].geometry.location);
-					Geoloc.exMarker = new google.maps.Marker({
-						map: Geoloc.map,
-						position: results[0].geometry.location
-					});
+					if (results.length > 0) {
+						Geoloc.map.setCenter(results[0].geometry.location);
+						Geoloc.exMarker = new google.maps.Marker({
+							map: Geoloc.map,
+							position: results[0].geometry.location
+						});
+					}
 				}
 			);
 		});

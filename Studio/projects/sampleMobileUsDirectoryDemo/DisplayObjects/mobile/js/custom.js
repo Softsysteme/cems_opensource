@@ -597,11 +597,13 @@ $( document ).on( "pageinit", function() {
 								}
 						);
 					}
-					Geoloc.map.setCenter(results[0].geometry.location);
-					Geoloc.exMarker = new google.maps.Marker({
-						map: Geoloc.map,
-						position: results[0].geometry.location
-					});
+					if (results.length > 0) {
+						Geoloc.map.setCenter(results[0].geometry.location);
+						Geoloc.exMarker = new google.maps.Marker({
+							map: Geoloc.map,
+							position: results[0].geometry.location
+						});
+					}
 				}
 			);
 		});
