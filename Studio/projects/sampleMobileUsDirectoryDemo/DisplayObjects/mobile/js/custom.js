@@ -581,8 +581,8 @@ $.extend(true, C8O, {
 $( document ).on( "pageinit", function() {
 	$(document).on("click",".result",function() {
 		var addr = $(this).find(".address").text()
-		$.mobile.changePage($("#map"));
-		$(document).on("pageshow", "#map", function() {
+		$.mobile.changePage("#map");
+		$(document).one("pageshow", "#map", function() {
 			Geoloc.geocoder.geocode({address: addr}, 
 				function (results, status) {
 					if (C8O.isDefined(Geoloc.exMarker)) {
