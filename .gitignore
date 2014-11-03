@@ -257,5 +257,6 @@ Xulrunner_linux.gtk.x86/xulrunner/components/compreg.dat
 Xulrunner_linux.gtk.x86/xulrunner/components/xpti.dat
 Xulrunner_macosx.cocoa.x86/xulrunner/components/compreg.dat
 Xulrunner_macosx.cocoa.x86/xulrunner/components/xpti.dat
+Xulrunner_macosx.cocoa.x86/xulrunner/components/xpti.dat.tmp
 Xulrunner_win32.win32.x86/xulrunner/components/compreg.dat
 Xulrunner_win32.win32.x86/xulrunner/components/xpti.dat
