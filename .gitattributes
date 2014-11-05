@@ -3963,6 +3963,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_attribut
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/wildcard_element.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_field.gif -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/schema/images/xpath_selector.gif -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/sourcepicker/SourcePickerView.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/CustomAdditionsWizardPage.java -text svneol=unset#text/plain
