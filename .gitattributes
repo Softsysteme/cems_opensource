@@ -5341,10 +5341,6 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/landscape-hdpi.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/landscape-ldpi.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/landscape-mdpi.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/landscape-xhdpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
