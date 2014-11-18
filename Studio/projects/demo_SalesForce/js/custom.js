@@ -2,86 +2,84 @@
  *******************************************************
  * public C8O API for CEMS 7.2.0
  * for a jQuery desktop application
- * 
+ *
  * Dependences in HTML file:
  * * jquery(.min).js
  * * c8o.core.js
  * * c8o.desktop.js
  * * [ctf.core.js] (include to use CTF instead of XSL)
  * * custom.js (this file)
- * 
+ *
  * You can find documentation about Convertigo Templating Framework here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
  * or
  * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/convertigoTemplatingFramework.html
- * 
+ *
  * You can find documentation about Convertigo Internationalization Framework (CTF plugin) here:
  * http://help.convertigo.com/latest/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
  * or
  * http://help.convertigo.com/7.2.0/topic/com.twinsoft.convertigo.studio.help/help/helpRefManual/internationalization.html
- * 
+ *
  *******************************************************
  *******************************************************/
-
 
 /*******************************************************
  * Global variables *
  *******************************************************/
 
 $.extend(true, C8O, {
-	/**
-	 * init_vars variables values can only be set before the "init_finish" hook,
-	 * by the code or by the first query,
-	 * their values must be strings, 
-	 * their state cannot be modified later.
-	 * 
-	 * If set by query, variable name should be preceded by __
-	 * for example: ?__enc=true&... or #__enc=true&...
-	 */
-	init_vars: {
-//		enc: "false", /** enables rsa encoding */
-//		i18n: "", /** in case of multi-language application, force usage of the language selected. Empty string while select the browser language */
-//		testplatform: "auto" /** auto/true/false: automatically redirect to the testplatform if no parameter is set, force testplaform if true or just call C8O if false */
-	},
-	
-	/**
-	 * ro_vars variables values can only be set directly here, not dynamically
-	 */
-	ro_vars: {
-//		i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
-	},
-	
-	/**
-	 * vars variables values can be set at any time, 
-	 * by the code, by the query or by passing arguments to C8O.call(), 
-	 * their values must be strings,
-	 * their state can be modified later.
-	 * 
-	 * Value can be modified by code, 
-	 * for example: C8O.vars.ajax_method="GET"
-	 * 
-	 * If set by query, variable name should be preceded by __
-	 * for example: ?__ajax_method=GET&... or #__ajax_method=GET&...
-	 */
-	vars : {
-//		ajax_method: "POST", /** POST/GET: http method to request CEMS */
-		auto_refresh: "false" /** true/false: allow auto refresh feature for clipping */
-//		auto_resize: "true", /** true/false: allow C8O to perform resize after content filled */
-//		endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
-//		first_call: "true", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
-//		log_level: "warn", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
-//		log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
-//		log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */
-//		requester_prefix: "", /** string prepend to the .xml or .cxml requester */
-//		resize_offset: "50", /** integer: number of pixel added to the automatic resize */
-//		send_portal_username: "true", /** true/false: (gatein only) automatically add a portal_username parameter with the name of the logger user */
-//		target_append: "false", /** true/false: append content to target_id or to body element */
-//		target_id: "", /** element id: element id for result insertion or a selected jquery object */
-//		use_siteclipper_plugin: "true", /** true/false: use the iframe encapsulation for siteclipper request */
-//		xsl_side: "client" /** client/server/none: force the side of the xsl transformation or pure XML */
-	}
+    /**
+     * init_vars variables values can only be set before the "init_finish" hook,
+     * by the code or by the first query,
+     * their values must be strings,
+     * their state cannot be modified later.
+     *
+     * If set by query, variable name should be preceded by __
+     * for example: ?__enc=true&... or #__enc=true&...
+     */
+    init_vars: {
+//        enc: "false", /** enables rsa encoding */
+//        i18n: "", /** in case of multi-language application, force usage of the language selected. Empty string while select the browser language */
+//        testplatform: "auto" /** auto/true/false: automatically redirect to the testplatform if no parameter is set, force testplaform if true or just call C8O if false */
+    },
+    
+    /**
+     * ro_vars variables values can only be set directly here, not dynamically
+     */
+    ro_vars: {
+//        i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+    },
+    
+    /**
+     * vars variables values can be set at any time,
+     * by the code, by the query or by passing arguments to C8O.call(),
+     * their values must be strings,
+     * their state can be modified later.
+     *
+     * Value can be modified by code,
+     * for example: C8O.vars.ajax_method="GET"
+     *
+     * If set by query, variable name should be preceded by __
+     * for example: ?__ajax_method=GET&... or #__ajax_method=GET&...
+     */
+    vars : {
+//        ajax_method: "POST", /** POST/GET: http method to request CEMS */
+        auto_refresh: "false" /** true/false: allow auto refresh feature for clipping */
+//        auto_resize: "true", /** true/false: allow C8O to perform resize after content filled */
+//        endpoint_url: "", /** base of the URL CEMS calls. Should not be modified */
+//        first_call: "true", /** true/false: automatically call convertigo using the page query/hash parameters, after the init_finished hook */
+//        log_level: "warn", /** none/error/warn/info/debug/trace: filter logs that appear in the browser console */
+//        log_line: "false", /** true/false: add an extra line on Chrome console with a link to the log */
+//        log_remote: "true", /** true/false: send client log to the C8O "Devices" logger depending on its log level */
+//        requester_prefix: "", /** string prepend to the .xml or .cxml requester */
+//        resize_offset: "50", /** integer: number of pixel added to the automatic resize */
+//        send_portal_username: "true", /** true/false: (gatein only) automatically add a portal_username parameter with the name of the logger user */
+//        target_append: "false", /** true/false: append content to target_id or to body element */
+//        target_id: "", /** element id: element id for result insertion or a selected jquery object */
+//        use_siteclipper_plugin: "true", /** true/false: use the iframe encapsulation for siteclipper request */
+//        xsl_side: "client" /** client/server/none: force the side of the xsl transformation or pure XML */
+    }
 });
-
 
 /********************************************************
  * PROJECT SPECIFIC VARIABLES DEFINITION
@@ -93,37 +91,34 @@ $.extend(true, C8O, {
 var index = 0;
 var variablesNames = ["__transaction", "salutation", "name", "company", "city", "state", "email", "campaignName", "viewName"];
 var variablesValues = [
-	["ChangeLanguage", 	"",		"", 		"", 								"", 				"", 			"", 								"", 				""],
-	["CreateCampaign", 	"",		"", 		"", 								"", 				"", 			"", 								"ConvertigoDemo", 	"ConvertigoDemoView"],
-	["CreateLeadsView", 	"",		"", 		"", 								"", 				"", 			"", 								"ConvertigoDemo", 	""],
-	["EmptyLeadsView", 	"",		"", 		"", 								"", 				"", 			"", 								"", 				"ConvertigoDemoView"],
-	["InsertLead", 		"Mr.",	"Smith", 	"Holiday Inn Hotel", 				"New York", 		"New York", 	"smith@holiday-inn.com", 		"ConvertigoDemo", 	""],
-	["InsertLead", 		"Ms.",	"Jones", 	"Greenwich Inn", 					"San Francisco", 	"California", 	"jones@greenwich-inn.com", 			"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mr.",	"Bond", 	"Grand Hyatt Seattle",				"Seattle", 			"Washington", 	"bond@grandseattle.hyatt.com", 			"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mrs.",	"Grey", 	"Courtyard By Marriott", 			"Atlanta", 			"Georgia", 		"grey@atl-intl-hostel.com", 		"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mr.",	"Rogers", 	"Manilow Suites", 					"Chicago", 			"Illinois", 	"rogers@james-chicago.com", 		"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mr.",	"Young", 	"Hotel St Marie", 					"New Orleans", 		"Louisiana", 	"young@stmarie-hotel.com", 			"ConvertigoDemo", 	""],
-	["InsertLead", 		"Ms.",	"Davis", 	"Embassy Suites Hotel", 			"Philadelphia", 	"Pennsylvania", "davis@embassy-suites.com", 		"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mr.",	"Franklin", "Marriott Hotels & Resorts", 		"Washington", 		"D.C.", 		"franklin@marriott-resorts.com", 	"ConvertigoDemo", 	""],
-	["InsertLead", 		"Mr.",	"Garner", 	"Lafayette Hotel", 					"Los Angeles", 		"California", 	"garner@thelafayette.qpg.com", 			"ConvertigoDemo", 	""]
+    ["ChangeLanguage",     "",        "",         "",                                 "",                 "",             "",                                 "",                 ""],
+    ["CreateCampaign",     "",        "",         "",                                 "",                 "",             "",                                 "ConvertigoDemo",     "ConvertigoDemoView"],
+    ["CreateLeadsView",     "",        "",         "",                                 "",                 "",             "",                                 "ConvertigoDemo",     ""],
+    ["EmptyLeadsView",     "",        "",         "",                                 "",                 "",             "",                                 "",                 "ConvertigoDemoView"],
+    ["InsertLead",         "Mr.",    "Smith",     "Holiday Inn Hotel",                 "New York",         "New York",     "smith@holiday-inn.com",         "ConvertigoDemo",     ""],
+    ["InsertLead",         "Ms.",    "Jones",     "Greenwich Inn",                     "San Francisco",     "California",     "jones@greenwich-inn.com",             "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mr.",    "Bond",     "Grand Hyatt Seattle",                "Seattle",             "Washington",     "bond@grandseattle.hyatt.com",             "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mrs.",    "Grey",     "Courtyard By Marriott",             "Atlanta",             "Georgia",         "grey@atl-intl-hostel.com",         "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mr.",    "Rogers",     "Manilow Suites",                     "Chicago",             "Illinois",     "rogers@james-chicago.com",         "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mr.",    "Young",     "Hotel St Marie",                     "New Orleans",         "Louisiana",     "young@stmarie-hotel.com",             "ConvertigoDemo",     ""],
+    ["InsertLead",         "Ms.",    "Davis",     "Embassy Suites Hotel",             "Philadelphia",     "Pennsylvania", "davis@embassy-suites.com",         "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mr.",    "Franklin", "Marriott Hotels & Resorts",         "Washington",         "D.C.",         "franklin@marriott-resorts.com",     "ConvertigoDemo",     ""],
+    ["InsertLead",         "Mr.",    "Garner",     "Lafayette Hotel",                     "Los Angeles",         "California",     "garner@thelafayette.qpg.com",             "ConvertigoDemo",     ""]
 ];
 var initializingDemo = false;
 
-
 /**
  * ReadOnly variables are also available
- * C8.ro_vars variables values can be READ at any time by the code 
+ * C8.ro_vars variables values can be READ at any time by the code
  * and must not be modified.
- * 
+ *
  * C8O.ro_vars.portal_username: string containing the name of the current logged user (gatein only)
- * C8O.ro_vars.widget_name: string containing the name of the current widget, if any 
+ * C8O.ro_vars.widget_name: string containing the name of the current widget, if any
  */
-
 
 /*******************************************************
  * Functions *
  *******************************************************/
-
 
 /**
  * addHook function
@@ -135,7 +130,7 @@ var initializingDemo = false;
  */
 //C8O.addHook(name, fn);
 
-/** 
+/**
  *  addRecallParameter function
  *  force C8O.call() to send automatically parameters
  *  added by this function with its last value
@@ -158,7 +153,7 @@ var initializingDemo = false;
  */
 //C8O.appendValue(data, key, value);
 
-/** 
+/**
  *  doMashupEvent function
  *  dispatch a mashup event to the current container if any
  *  via the invocation of mashup_event hook
@@ -207,7 +202,7 @@ var initializingDemo = false;
  * formToData function
  * copy all form's inputs into the data object or a new one.
  * Inputs names are the keys and inputs values are the values of the data object.
- * In case of multivalued, value is turn into an array. 
+ * In case of multivalued, value is turn into an array.
  * form: raw or jQuery FORM element
  * data (optional): object (key/value) where values are copied
  * return: the data object or a new one with copied form's inputs values
@@ -299,7 +294,7 @@ var initializingDemo = false;
  * serializeXML function
  * return a string representation of the xmlDom Document in a XML format
  * xmlDom: Document to transform
- * return: string of the xmlDom Document in a XML format 
+ * return: string of the xmlDom Document in a XML format
  */
 //C8O.serializeXML(xmlDom);
 
@@ -307,7 +302,7 @@ var initializingDemo = false;
  * toJSON function
  * return a string representation of the data object (key/value) in a JSON format
  * data: object to transform
- * return: string of the data object in a JSON format 
+ * return: string of the data object in a JSON format
  */
 //C8O.toJSON(data);
 
@@ -318,7 +313,7 @@ var initializingDemo = false;
  * the __MSG_key__ marker, using the current dictionary.
  * It can also translate a key and return its value.
  * elt: element to translate or a string to translate
- * return: string translated or nothing in case of element parameter 
+ * return: string translated or nothing in case of element parameter
  */
 //C8O.translate(elt);
 
@@ -342,7 +337,7 @@ var initializingDemo = false;
  * node: starting node of the walk, children will be walked recursively
  * data: contextual data passed to fn and fn_validate
  * fn  : function that process each text ; fn(txt, data, fn_validate){}
- * 	     this: current node
+ *          this: current node
  *       txt : text to transform
  *       data: data passed to the walk function
  *       fn_validate: fn_validate passed to the walk function
@@ -354,30 +349,28 @@ var initializingDemo = false;
  */
 //C8O.walk(node, data, fn, fn_validate);
 
-
 /*******************************************************
  * List of possible hooks *
  *******************************************************/
-
 
 /**
  *  call hook
  *  used before AJAX request to CEMS server
  *  can tweak data before sending
  *  or perform request itself
- *  
+ *
  *  data: key/value map of parameters sent to CEMS
  *  return: true > lets C8O perform the call
  *             false > C8O doen't perform the call
  */
 //C8O.addHook("call", function (data) {
-//	return true;
+//    return true;
 //});
 
 /**
  *  call_complete hook
  *  called after the xml_response, text_response or call_error hook
- *  
+ *
  *  jqXHR: the jQuery object that enhance the XHR used by the call
  *  textStatus: text status of the Ajax response
  *  data: data used to generate the C8O.call
@@ -385,13 +378,13 @@ var initializingDemo = false;
  *             false > lets the wait div
  */
 //C8O.addHook("call_complete", function (jqXHR, textStatus, data) {
-//	return true;
+//    return true;
 //});
 
 /**
  *  call_error hook
  *  called call_complete hook, in case of an Ajax error (network error, unparsable response)
- *  
+ *
  *  jqXHR: the jQuery object that enhance the XHR used by the call
  *  textStatus: text status of the Ajax response
  *  errorThrown: caught cause of the error
@@ -400,7 +393,7 @@ var initializingDemo = false;
  *             false > don't log the error
  */
 //C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -408,12 +401,12 @@ var initializingDemo = false;
  *  used at page loading
  *  can perform some DOM tweak
  *  or break the processing of request
- *  
+ *
  *  return: true > lets C8O perform the init
  *             false > break the processing of request
  */
 //C8O.addHook("document_ready", function () {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -422,9 +415,9 @@ var initializingDemo = false;
  *  (no empty C8O.ro_vars.i18n_files)
  *  can modify data parameter of the first call
  *  or break the processing of request
- *  
+ *
  *  params: key/value object decoded from the current query or hash string
- *  
+ *
  *  return: string > the current language to use
  *            other cases > use the default language detection
  */
@@ -437,14 +430,14 @@ var initializingDemo = false;
  *  used at page loading after C8O initialization
  *  can modify data parameter of the first call
  *  or break the processing of request
- *  
+ *
  *  params: key/value object decoded from the current query or hash string
- *  
+ *
  *  return: true > lets C8O perform the first call
  *             false > break the processing of request
  */
 //C8O.addHook("init_finished", function (params) {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -454,7 +447,7 @@ var initializingDemo = false;
  *   * handle log message (put in div, send request …)
  *   * prevent log writing (return false)
  *   * modify the message (return a new msg content).
- *  
+ *
  *  level: "string" level of this log, between error/warn/info/debug/trace
  *  msg: "string" the log message
  *  e: can be anything or nothing, but linked with the error
@@ -463,7 +456,7 @@ var initializingDemo = false;
  *             nothing or true > logs in console
  */
 //C8O.addHook("log", function (level, msg, e) {
-//	return false;
+//    return false;
 //});
 
 /**
@@ -471,7 +464,7 @@ var initializingDemo = false;
  *  used for handle doMashupEvent call
  *  and used to implement how to forward event
  *  to the 'mashup' container
- *  
+ *
  *  eventName: name of the event
  *  payload: key/value map object
  */
@@ -483,18 +476,18 @@ var initializingDemo = false;
  *  receive_mashup_event hook
  *  used for handle Mashup event for this widget
  *  to the 'mashup' container
- *  
+ *
  *  event.origin: widget name of the event source
  *  event.name: name of the event
  *  event.payload: key/value map object
  *  event.target: widget name of the event target
  *  event.type: type of the event, the default is 'call'
- *  
+ *
  *  return: true > lets C8O consume the event
  *             false > event ignored by C8O
  */
 //C8O.addHook("receive_mashup_event", function (event) {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -502,22 +495,22 @@ var initializingDemo = false;
  *  used after the content is filled
  *  for calculate the height of the
  *  iframe element
- *  
- *  return: false > bypass C8O resize 
+ *
+ *  return: false > bypass C8O resize
  *             type of 'number' > height for the iframe
  *             other > do standard resize
  */
 C8O.addHook("resize_calculation", function () {
-	if (navigator.userAgent.match(/msie/i)) {
-		$("body").attr("scroll", "no");
-	} else {
-		window.frameElement.scrolling = "no";
-	}
-//	var lowest = 0;
-//	$("div, span, img, table").each(function() {
-//		lowest = Math.max(lowest, this.offsetTop+this.offsetHeight);
-//	});
-//	return lowest + 10;
+    if (navigator.userAgent.match(/msie/i)) {
+        $("body").attr("scroll", "no");
+    } else {
+        window.frameElement.scrolling = "no";
+    }
+//    var lowest = 0;
+//    $("div, span, img, table").each(function() {
+//        lowest = Math.max(lowest, this.offsetTop+this.offsetHeight);
+//    });
+//    return lowest + 10;
 });
 
 /**
@@ -525,54 +518,54 @@ C8O.addHook("resize_calculation", function () {
  *  used after the content is filled
  *  but before set event listener
  *  and iframe resize
- *  
+ *
  *  $container: jquery object where the content has been added
- *  
- *  return: true > lets C8O perform the init 
+ *
+ *  return: true > lets C8O perform the init
  *             false > bypass C8O resize
  */
 C8O.addHook("result_filled", function ($container) {
-	// auto-launches the event after the login is finished in the first widget
-	// this will launch an interaction that loads the second widget
-	if (C8O.getLastCallParameter("__transaction") === "Login") {
-		$("#bodyTable").css("max-width", "1000px");
-		window.setTimeout(function () {
-			C8O.doMashupEvent("LoginFinished");
-		}, 2000);
-	}
-	callNextTransaction();
-	return true;
+    // auto-launches the event after the login is finished in the first widget
+    // this will launch an interaction that loads the second widget
+    if (C8O.getLastCallParameter("__transaction") === "Login") {
+        $("#bodyTable").css("max-width", "1000px");
+        window.setTimeout(function () {
+            C8O.doMashupEvent("LoginFinished");
+        }, 2000);
+    }
+    callNextTransaction();
+    return true;
 });
 
 /**
  *  siteclipper_page_loaded hook
  *  used after a siteclipped page is loaded
  *  and automatically resized
- *  
+ *
  *  doc: document object of the current siteclipped page loaded
  */
 //C8O.addHook("siteclipper_page_loaded", function (doc) {
-//	
+//
 //});
 
 /**
  *  siteclipper_page_unloaded hook
  *  used when a siteclipped page is unloaded
- *  
+ *
  *  $iframe: jQuery object with the iframe container of the siteclipped page selected
- *  
- *  return: true > lets C8O perform recude the iframe 
+ *
+ *  return: true > lets C8O perform recude the iframe
  *             false > bypass C8O resize
  */
 //C8O.addHook("siteclipper_page_unloaded", function ($iframe) {
-//	return true;
+//    return true;
 //});
 
 /**
  *  text_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the text response from CEMS (after a server XSL transformation)
- *  
+ *
  *  aText: array with only one string, aText[0], of the text received
  *            and can be replaced by a new value
  *  return: true > lets C8O perform the inclusion in the DOM
@@ -580,7 +573,7 @@ C8O.addHook("result_filled", function ($container) {
  */
 //C8O.addHook("text_response", function (aText) {
 //  var text = aText[0];
-//	return true;
+//    return true;
 //});
 
 /**
@@ -588,12 +581,12 @@ C8O.addHook("result_filled", function ($container) {
  *  used after xml_response execution
  *  or on C8O.waitHide() call
  *  and hide the transparent mask
- *  
+ *
  *  return: true > lets C8O hide the loading mask
  *             false > doesn't hide anything
  */
 //C8O.addHook("wait_hide", function () {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -602,32 +595,31 @@ C8O.addHook("result_filled", function ($container) {
  *  or on C8O.waitShow() call
  *  and display a transparent mask
  *  that prevents the user to act
- *  
+ *
  *  return: true > lets C8O display the loading mask
  *             false > doesn't display anything
  */
 //C8O.addHook("wait_show", function () {
-//	return true;
+//    return true;
 //});
 
 /**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
- *  
+ *
  *  xml: pure DOM document
  *  return: true > lets C8O perform the xml
  *             false > break the processing of xml
  */
 C8O.addHook("xml_response", function (xml) {
-	if ($(xml.documentElement).attr("transaction") === "InitializeDemo") {
-		C8O.vars.resize_offset = "0";
-	} else {
-		C8O.vars.resize_offset = "30";
-	}
-	return true;
+    if ($(xml.documentElement).attr("transaction") === "InitializeDemo") {
+        C8O.vars.resize_offset = "0";
+    } else {
+        C8O.vars.resize_offset = "30";
+    }
+    return true;
 });
-
 
 /********************************************************
  * PROJECT SPECIFIC FUNCTIONS DEFINITION
@@ -636,50 +628,50 @@ C8O.addHook("xml_response", function (xml) {
 
 //method that starts the demo initalization
 function initializeDemo() {
-	// setting the parameter to true to know that the initialization is running
-	initializingDemo = true;
-	
-	// empties the body in order to append results of the several transactions that will run inside
-	$("body").empty();
-	
-	// setting append mode
-	C8O.vars.target_append = "true";
-	
-	// starts the initialization by calling the function callNextTransaction
-	callNextTransaction();
+    // setting the parameter to true to know that the initialization is running
+    initializingDemo = true;
+    
+    // empties the body in order to append results of the several transactions that will run inside
+    $("body").empty();
+    
+    // setting append mode
+    C8O.vars.target_append = "true";
+    
+    // starts the initialization by calling the function callNextTransaction
+    callNextTransaction();
 }
 
 //method that loops on each transaction to be launched in the "initialize" client sequence
 //transactions to launch are described with their parameters in a javascript array variable
 function callNextTransaction() {
-	if (initializingDemo) {
-		if (index < variablesValues.length) {
-			// there is still a transaction to call
-			var values = variablesValues[index],
-				dataScriptCall = {}, j;
-			
-			// loop on each variable to create data string
-			for (j = 0 ; j < variablesNames.length ; j++) {
-				if (values[j] !== "") {
-					dataScriptCall[variablesNames[j]] = values[j];
-				}
-			}
-			
-			// call transaction
-			C8O.call(dataScriptCall);
-			
-			// increase index
-			index ++;
-		} else {
-			// every transaction has been invoked
-			initializingDemo = false;
-			
-			// remove append mode
-			C8O.vars.target_append = "false";
-			
-			// sending event to say the initialization is over
-			// will launch an interaction thats moves to the second page of the application
-			C8O.doMashupEvent("InitializationFinished");
-		}
-	}
+    if (initializingDemo) {
+        if (index < variablesValues.length) {
+            // there is still a transaction to call
+            var values = variablesValues[index],
+                dataScriptCall = {}, j;
+            
+            // loop on each variable to create data string
+            for (j = 0 ; j < variablesNames.length ; j++) {
+                if (values[j] !== "") {
+                    dataScriptCall[variablesNames[j]] = values[j];
+                }
+            }
+            
+            // call transaction
+            C8O.call(dataScriptCall);
+            
+            // increase index
+            index ++;
+        } else {
+            // every transaction has been invoked
+            initializingDemo = false;
+            
+            // remove append mode
+            C8O.vars.target_append = "false";
+            
+            // sending event to say the initialization is over
+            // will launch an interaction thats moves to the second page of the application
+            C8O.doMashupEvent("InitializationFinished");
+        }
+    }
 }

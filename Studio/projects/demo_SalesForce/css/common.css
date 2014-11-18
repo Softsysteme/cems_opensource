@@ -5,10 +5,8 @@
 /* postfix:  */
 /* spritesEnabled: true */
 
-
 /* this is a great place for application-wide styles (comomon.html.* entities & so on) */
 /* It will import into every page of the app (popups, setup, 'regular pages' etc... */
-
 
 /* BEGIN General page styles */
 
@@ -259,8 +257,8 @@ input { /* added to make inputs on detail elements look ok */
 
 .forceappLogo {
   background-image: url(/img/forceapp_logo.gif);
-	background-position: 0px 0px;width:92px;
-	height:32px;;
+    background-position: 0px 0px;width:92px;
+    height:32px;;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -334,7 +332,7 @@ table.tab {
 .tab td {
     text-align:center;
     background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -156px;
+    background-position: left -156px;
     background-repeat: no-repeat;
     margin:0;
     padding:0 0 0 6px;
@@ -346,7 +344,7 @@ table.tab {
 }
 .tab div {
     background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -4776px;
+    background-position: right -4776px;
     background-repeat: no-repeat;
     padding:3px 9px 5px 3px;
 }
@@ -367,7 +365,7 @@ table.tab {
 }
 .tab .last div {
     background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -2px;
+    background-position: right -2px;
 }
 
 .tabNavigation,
@@ -378,12 +376,12 @@ table.tab {
 }
 
 .allTabsArrow { background-image: url(/img/tab/arrow.gif);
-	background-position: 0px 0px;width:6px;
-	height:9px; }
+    background-position: 0px 0px;width:6px;
+    height:9px; }
 
 .allTabTab .currentTab .allTabsArrow { background-image: url(/img/tab/arrowWhite.gif);
-	background-position: 0px 0px;width:6px;
-	height:9px; }
+    background-position: 0px 0px;width:6px;
+    height:9px; }
 
 /* END Tab Bar */
 /* ------------------------------------------- */
@@ -665,7 +663,6 @@ div.outerNoSidebar {
     margin-right:-0.5em;
 }
 
-
 .newFlag {
     margin-left:0.5em;
     color: #f00;
@@ -725,15 +722,12 @@ div.outerNoSidebar {
     cursor:pointer;
 }
 
-
-
 /* Text in headers of Get Info boxes in Setup should be bold white,
    but DON'T USE IT! */
 .bodyBoldWhite {
     color: #FFF;
     font-weight: bold;
 }
-
 
 /* END Setup */
 /* --------------------------------------------- */
@@ -763,7 +757,6 @@ div.outerNoSidebar {
     position: static;
     height: 20px;
 }
-
 
 #tagsMru .menuButtonButton {
     background: #fff url(/img/sidebar/tagsBG.gif) no-repeat right bottom;
@@ -923,7 +916,6 @@ div.outerNoSidebar {
     border-bottom: 1px solid #666;
 }
 
-
 /* end MenuButton element */
 /* MenuButton customizations */
 .searchCustomization .menuButton .menuButtonMenu {
@@ -977,7 +969,6 @@ div.outerNoSidebar {
 .selectMenuOuterDiv .selectMenuDiv {
     display: inline;
     position: relative;
-
 
     /* These are from btn class */
     background-image: none;
@@ -1081,7 +1072,6 @@ div.outerNoSidebar {
     font-weight: bold;
 }
 
-
 /* ColorInputElement */
 .colorInputElement .sample {
     border: 1px solid #A5ACB2;
@@ -1179,7 +1169,6 @@ div.outerNoSidebar {
     padding: 0.235em 0;
     margin: 0;
 }
-
 
 .miniTab .links {
     text-align: right;
@@ -1429,7 +1418,7 @@ div.outerNoSidebar {
 }
 .rolodex a:hover {
     text-decoration:none;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .rolodex a.listItem {
@@ -1700,7 +1689,6 @@ div.outerNoSidebar {
     display:inline;
     margin-left: 2em;
 }
-
 
 .btnActionOverride, .btnOverriddenAction {
     color: white;
@@ -2039,8 +2027,6 @@ a.tipsLink, a.tipsLink:hover {
   float: right;
 }
 
-
-
 .oRight .bPageTitle .ptBody a,
 .oRight .bPageTitle .ptSubheader a,
 .outerNoSidebar .bPageTitle a .helpLink {
@@ -2080,7 +2066,6 @@ a.tipsLink, a.tipsLink:hover {
      border-left-width: 1px;
 }
 /* END record types */
-
 
 /* working defaults, so you can at least read the text */
 .bPageTitle .ptHeader{
@@ -2205,8 +2190,8 @@ a.tipsLink, a.tipsLink:hover {
 /* BEGIN Basic DetailElement */
 .bPageBlock {
     border-top:1px solid #00a4c8;
-	border-left:1px solid #00a4c8;
-	border-bottom:1px solid #00a4c8;
+    border-left:1px solid #00a4c8;
+    border-bottom:1px solid #00a4c8;
     /*margin-bottom:9px;
     background-color:#222;
     background-image: url(/img/bgPageBlockLeft.gif);
@@ -2230,7 +2215,6 @@ a.tipsLink, a.tipsLink:hover {
    text-align: center;
    padding-bottom:10px;
 }
-
 
 .bPageBlock .pbHeader {
     margin:0px 2px 0px 0px;
@@ -2609,7 +2593,6 @@ label .labelDesc {
     bottom: 1px;
 }
 
-
 .bPageBlock .requiredInput .requiredBlock.noLabel {
     height: 1.7em;
 }
@@ -2661,7 +2644,6 @@ label .labelDesc {
     padding-right: 16px;
 }
 
-
 .detailList .inlineEditLockOn {
     background: url(/img/func_icons/util/lock12.gif) no-repeat 100% 2px;
 }
@@ -2687,8 +2669,8 @@ label .labelDesc {
 }
 
 .inlineEditUndo { background-image: url(/img/func_icons/util/ileUndo16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px;
+    background-position: 0px 0px;width:16px;
+    height:16px;
     vertical-align: middle;
 }
 
@@ -2943,7 +2925,6 @@ label .labelDesc {
     height: 25px;
 }
 
-
 .inlineSchedulerFooter .toggleCalFooterMiddle {
     background-image:url(/img/cal/footer/bg.gif);
     border-bottom:0px;
@@ -3001,7 +2982,7 @@ body.oldForecast .list .last td,
 body.oldForecast .list .last th {
     padding: 4px 2px 4px 5px;
     color: #0099cc;
-	border-right: 1px solid #00A4C8 ;
+    border-right: 1px solid #00A4C8 ;
     /*border-bottom: 1px solid #E3DEB8;*/
 }
 
@@ -3082,12 +3063,12 @@ body.oldForecast .list .totalRow th {
 /* Related List text formatting */
 
 .list .headerRow th {
-	/*border-bottom: 2px solid #CCC;*/
+    /*border-bottom: 2px solid #CCC;*/
     color: #FFF;
-	background-color:#00A4C8;
-	white-space: nowrap;
-	font-size:11px;
-	font-variant:small-caps;
+    background-color:#00A4C8;
+    white-space: nowrap;
+    font-size:11px;
+    font-variant:small-caps;
 }
 
 .list .noRows, .bRelatedList .list .noRowsHeader {
@@ -3108,30 +3089,30 @@ body.oldForecast .list .totalRow th {
 
 .list tr.even th{
     font-weight: normal;
-	color:#00a4c8 ;
+    color:#00a4c8 ;
     white-space: normal;
-	background-color:#f3f2f1;
+    background-color:#f3f2f1;
 }
 
 .list tr.odd th {
     font-weight: normal;
-	color:#00a4c8 ;
+    color:#00a4c8 ;
     white-space: normal;
-	background-color:#FFF;
+    background-color:#FFF;
 }
 
 .list tr.even th:hover{
     font-weight: normal;
-	color:#00a4c8 ;
+    color:#00a4c8 ;
     white-space: normal;
-	background-color:#CCC;
+    background-color:#CCC;
 }
 
 .list tr.odd th:hover {
     font-weight: normal;
-	color:#00a4c8 ;
+    color:#00a4c8 ;
     white-space: normal;
-	background-color:#DDD;
+    background-color:#DDD;
 }
 
 .list tr.even th,
@@ -3296,9 +3277,6 @@ If this causes problems, let me know there is another easy solution i can pursue
 
 /* END Related List */
 
-
-
-
 /* begin document styles */
 
 /* Center the New Document and New Email Template buttons and fix padding */
@@ -3308,10 +3286,7 @@ If this causes problems, let me know there is another easy solution i can pursue
     padding: 2px 0 2px 0;
 }*/
 
-
-
 /* End document Styles */
-
 
 /* BEGIN Intro Page elements */
 
@@ -3461,9 +3436,6 @@ If this causes problems, let me know there is another easy solution i can pursue
      vertical-align:bottom;
  }
 
-
-
-
 .accountTab .introBody .introDescription { background-image: url(/img/accountsSplashBg.gif); }
 .campaignTab .introBody .introDescription {  background-image: url(/img/campaignsSplashBg.gif); }
 .caseTab .introBody .introDescription {  background-image: url(/img/casesSplashBg.gif); }
@@ -3478,7 +3450,6 @@ If this causes problems, let me know there is another easy solution i can pursue
 .productTab .introBody .introDescription {background-image: url( /img/productsSplashBg.gif); }
 .reportTab .introBody .introDescription { background-image: url(/img/reportsSplashBg.gif); }
 .solutionTab .introBody .introDescription { background-image: url(/img/solutionsSplashBg.gif); }
-
 
 /* END Intro Page elements */
 /* --------------------------------------- */
@@ -3682,8 +3653,8 @@ If this causes problems, let me know there is another easy solution i can pursue
 
 .addNewEventIcon {
     background-image: url(/img/cal/addNew_off.gif);
-	background-position: 0px 0px;width:13px;
-	height:9px;;
+    background-position: 0px 0px;width:13px;
+    height:9px;;
     display:block;
     float: right;
     background-repeat: no-repeat;
@@ -3692,8 +3663,8 @@ If this causes problems, let me know there is another easy solution i can pursue
 
 a:hover img.addNewEventIcon {
     background-image: url(/img/cal/addNew_on.gif);
-	background-position: 0px 0px;width:13px;
-	height:9px;;
+    background-position: 0px 0px;width:13px;
+    height:9px;;
 }
 
 .inlineScheduler .bCalendar .bPageBlock .pbBody {
@@ -4085,7 +4056,6 @@ a:hover img.addNewEventIcon {
     overflow-x:hidden;
     position:relative;
 }
-
 
 /* END single user calendar */
 
@@ -4555,193 +4525,192 @@ a:hover img.addNewEventIcon {
 /* general skinnable utility icons */
 
 .helpIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -142px;width:16px;
-	height:16px; }
+    background-position: 0px -142px;width:16px;
+    height:16px; }
 
 .recycleIcon { background-image: url(/img/func_icons/util/recycle.gif);
-	background-position: 0px 0px;width:19px;
-	height:19px;
+    background-position: 0px 0px;width:19px;
+    height:19px;
     margin-right: 7px;
 }
 
 .printerIcon { background-image: url(/img/func_icons/util/printer20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 
 .printerIconOn { background-image: url(/img/func_icons/util/printer20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .removeIcon { background-image: url(/img/func_icons/remove12.gif);
-	background-position: 0px 0px;width:12px;
-	height:12px;
+    background-position: 0px 0px;width:12px;
+    height:12px;
     background-position: top left;
 }
 
 .removeIconOn { background-image: url(/img/func_icons/remove12_on.gif);
-	background-position: 0px 0px;width:12px;
-	height:12px;
+    background-position: 0px 0px;width:12px;
+    height:12px;
     background-position: top right;
 }
 
 .dialogCloseIcon { background-image: url(/img/func_icons/util/dialogClose16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px;
+    background-position: 0px 0px;width:16px;
+    height:16px;
     background-position: top left;
 }
 
-.dialogCloseIconOn { 
+.dialogCloseIconOn {
     background-position: top right;
 }
 
-
 .lookupIcon { background-image: url(/img/func_icons/util/lookup20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 
 .lookupIconOn { background-image: url(/img/func_icons/util/lookup20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .alertIcon { background-image: url(/img/func_icons/util/alert16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .checkmarkIcon { background-image: url(/img/func_icons/util/checkmark16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .blogIcon { background-image: url(/img/func_icons/util/blog20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .blogIconOn { background-image: url(/img/func_icons/util/blog20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .addBlogIcon { background-image: url(/img/func_icons/util/blogAdd20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .addBlogIcon { background-image: url(/img/func_icons/util/blogAdd20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .dependencyIcon { background-image: url(/img/func_icons/util/dependency20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .dependencyIconOn { background-image: url(/img/func_icons/util/dependency20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .exportIcon { background-image: url(/img/func_icons/util/export20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .exportIconOn { background-image: url(/img/func_icons/util/export20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .searchIcon { background-image: url(/img/func_icons/util/search20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .searchIconOn { background-image: url(/img/func_icons/util/search20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .trashIcon { background-image: url(/img/func_icons/util/trash20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 .trashIconOn { background-image: url(/img/func_icons/util/trash20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .groupEventIcon { background-image: url(/img/group_event.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 .doubleArrowUp { background-image: url(/img/double_arrow_up.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 .doubleArrowDwn { background-image: url(/img/double_arrow_dwn.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 
 .comboboxIcon { background-image: url(/img/func_icons/util/combobox20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 
 .comboboxIconOn { background-image: url(/img/func_icons/util/combobox20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 .colorPickerIcon { background-image: url(/img/func_icons/util/colorPicker16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 .downArrowIcon { background-image: url(/img/arrow_dwn.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 .leftArrowIcon { background-image: url(/img/arrow_lt.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 .rightArrowIcon { background-image: url(/img/arrow_rt.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 .upArrowIcon{ background-image: url(/img/arrow_up.gif);
-	background-position: 0px 0px;width:24px;
-	height:20px; }
+    background-position: 0px 0px;width:24px;
+    height:20px; }
 .datePickerIcon { background-image: url(/img/func_icons/util/datePicker16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 .escalatedLarge { background-image: url(/img/func_icons/util/escalation16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px;
+    background-position: 0px 0px;width:16px;
+    height:16px;
   vertical-align: middle;
   margin-left: 3px;
   margin-top: 3px;
 }
 .escalatedSmall {
   background-image: url(/img/func_icons/util/escalation12.gif);
-	background-position: 0px 0px;width:12px;
-	height:12px;
+    background-position: 0px 0px;width:12px;
+    height:12px;
   vertical-align: middle;
   margin-left: 3px;
   margin-top: -2px;
 }
 .infoIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -162px;width:16px;
-	height:16px; }
+    background-position: 0px -162px;width:16px;
+    height:16px; }
 
 .imgNewDataSmall, .imgNewData {
   vertical-align: top;
@@ -4749,51 +4718,50 @@ a:hover img.addNewEventIcon {
 }
 
 .mailCloseIcon { background-image: url(/img/func_icons/util/mailCloseEnv16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .mailOpenIcon { background-image: url(/img/func_icons/util/mailOpenEnv16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .mailFrontIcon { background-image: url(/img/func_icons/util/mailFrontEnv16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .customizePageIcon { background-image: url(/img/func_icons/util/customize20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 
 .customizePageIconOn { background-image: url(/img/func_icons/util/customize20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
 
 .editLayoutIcon { background-image: url(/img/func_icons/util/editLayout20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px; }
+    background-position: 0px 0px;width:20px;
+    height:20px; }
 
 .linkIcon { background-image: url(/img/func_icons/util/link20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top left;
 }
 
 .linkIconOn { background-image: url(/img/func_icons/util/link20.gif);
-	background-position: 0px 0px;width:20px;
-	height:20px;
+    background-position: 0px 0px;width:20px;
+    height:20px;
     background-position: top right;
 }
-
 
 /* multiforce bar */
 .tab .multiforce div {
 background-image: url(/img/tab/mf_picklist.gif);
-	background-position: 0px 0px;width:47px;
-	height:21px;
+    background-position: 0px 0px;width:47px;
+    height:21px;
 background-repeat: no-repeat;
  }
 
@@ -4830,19 +4798,18 @@ background-repeat: no-repeat;
 }
 
 .hideListButton { background-image: url(/img/twistySubhDown.gif);
-	background-position: 0px 0px;width:16px;
-	height:10px; }
+    background-position: 0px 0px;width:16px;
+    height:10px; }
 .showListButton { background-image: url(/img/twistySubhRight.gif);
-	background-position: 0px 0px;width:16px;
-	height:10px; }
+    background-position: 0px 0px;width:16px;
+    height:10px; }
 
 .twistyHeader .hideListButton { background-image: url(/img/arrowDown.gif);
-	background-position: 0px 0px;width:16px;
-	height:13px; }
+    background-position: 0px 0px;width:16px;
+    height:13px; }
 .twistyHeader .showListButton { background-image: url(/img/arrowRight.gif);
-	background-position: 0px 0px;width:16px;
-	height:13px; }
-
+    background-position: 0px 0px;width:16px;
+    height:13px; }
 
 /* END Icons */
 /* --------------------------------------------- */
@@ -4853,78 +4820,78 @@ background-repeat: no-repeat;
 
 .calendarIconBar .dayViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -36px;
+    background-position: -26px -36px;
     display:block;
 }
 
 .calendarIconBar .dayViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -36px;
+    background-position: 0px -36px;
     display:block;
 }
 
 .calendarIconBar .weekViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -146px;
+    background-position: -26px -146px;
     display:block;
 }
 
 .calendarIconBar .weekViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -146px;
+    background-position: 0px -146px;
     display:block;
 }
 
 .calendarIconBar .monthViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -80px;
+    background-position: -26px -80px;
     display:block;
     margin-right: 13px;
 }
 
 .calendarIconBar .monthViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -80px;
+    background-position: 0px -80px;
     display:block;
     margin-right: 13px;
 }
 
 .calendarIconBar .singleUserViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -124px;
+    background-position: -26px -124px;
     display:block;
 }
 
 .calendarIconBar .singleUserViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -124px;
+    background-position: 0px -124px;
     display:block;
 }
 
 .calendarIconBar .multiUserViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -102px;
+    background-position: -26px -102px;
     display:block;
     margin-right: 13px;
 }
 
 .calendarIconBar .multiUserViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -102px;
+    background-position: 0px -102px;
     display:block;
     margin-right: 13px;
 }
 
 .calendarIconBar .listViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -58px;
+    background-position: -26px -58px;
     display:block;
     margin-right: 0px;
 }
 
 .calendarIconBar .listViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -58px;
+    background-position: 0px -58px;
     display:block;
     margin-right: 0px;
 }
@@ -5048,73 +5015,73 @@ background-repeat: no-repeat;
 
 .calendarHeader .dayViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -36px;
+    background-position: -26px -36px;
     display:block;
 }
 
 .calendarHeader .dayViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -36px;
+    background-position: 0px -36px;
     display:block;
 }
 
 .calendarHeader .weekViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -146px;
+    background-position: -26px -146px;
     display:block;
 }
 
 .calendarHeader .weekViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -146px;
+    background-position: 0px -146px;
     display:block;
 }
 
 .calendarHeader .monthViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -80px;
+    background-position: -26px -80px;
     display:block;
 }
 
 .calendarHeader .monthViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -80px;
+    background-position: 0px -80px;
     display:block;
 }
 
 .calendarHeader .singleUserViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -124px;
+    background-position: -26px -124px;
     display:block;
 }
 
 .calendarHeader .singleUserViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -124px;
+    background-position: 0px -124px;
     display:block;
 }
 
 .calendarHeader .multiUserViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -102px;
+    background-position: -26px -102px;
     display:block;
 }
 
 .calendarHeader .multiUserViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -102px;
+    background-position: 0px -102px;
     display:block;
 }
 
 .calendarHeader .listViewIconOn {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: -26px -58px;
+    background-position: -26px -58px;
     display:block;
 }
 
 .calendarHeader .listViewIcon {
     background-image: url(/img/sprites/calendar.gif);
-	background-position: 0px -58px;
+    background-position: 0px -58px;
     display:block;
 }
 
@@ -5132,13 +5099,12 @@ background-repeat: no-repeat;
 
 /* END CALENDAR HEADER COMPONENT */
 .prevCalArrow { background-image: url(/img/func_icons/cal/leftArrow.gif);
-	background-position: 0px 0px;width:19px;
-	height:13px; }
+    background-position: 0px 0px;width:19px;
+    height:13px; }
 
 .nextCalArrow { background-image: url(/img/func_icons/cal/rightArrow.gif);
-	background-position: 0px 0px;width:19px;
-	height:13px; }
-
+    background-position: 0px 0px;width:19px;
+    height:13px; }
 
 /* END calendar Buttons */
 /* -------------------------------- */
@@ -6034,7 +6000,6 @@ body.subjectSelectionPopup div.choicesBox {
 /* ----------------------------------- */
 /* BEGIN Specifc Page colors */
 
-
 body .primaryPalette,
 body .primaryPalette a,
 body .bPageTitle .secondaryPalette,
@@ -6058,8 +6023,6 @@ body .pbSubheader a {
 .homeTab .bPageTitle .ptBody .greeting h2 {
     padding-left: 0px;
 }
-
-
 
 .bMyDashboard .bPageBlock {
     border-top-color: #7E1E14;
@@ -6093,7 +6056,6 @@ body .bDashboard .tertiaryPalette {
     border-bottom-color: #E39321;
 }
 
-
 body .bNote .primaryPalette,
 .note .primaryPalette {
     background-color: #44A12C;
@@ -6106,7 +6068,6 @@ body .bNote .secondaryPalette,
     background-color: #638658;
     border-color: #638658;
 }
-
 
 .bMyCalendar .primaryPalette,
 .bMyCalendar .secondaryPalette,
@@ -6248,7 +6209,6 @@ body .bNote .secondaryPalette,
     padding:5px 20px 0px 20px;
 }
 
-
 /* we want to hide the bPageBlock */
 .bGeneratedReport .bPageBlock,
 .bGeneratedReport .pbBody {
@@ -6266,8 +6226,6 @@ body .bNote .secondaryPalette,
 }
 
 /* END - we want to hide the bPageBlock */
-
-
 
 .reportTab .roleSelector {
     margin-bottom: 15px;
@@ -6448,7 +6406,6 @@ body .bNote .secondaryPalette,
     text-decoration: underline;
 }
 
-
 .crtLayoutPreview .pbHeader .pbTitle h3,
 .crtLayoutPreview .pbHeader .pbLinks {
     color: #FFFFFF;
@@ -6504,7 +6461,6 @@ body .bNote .secondaryPalette,
 
 /* END forecast */
 
-
 /* EMM TODO  Check if necessary */
 /* TODO: polcari - use 'dashboard' instead */
 /* i believe .bComponentBlock can be replaced with .dashboard */
@@ -6526,7 +6482,6 @@ body .bNote .secondaryPalette,
 .bComponentBlock .bPageBlock .pbBody {
     padding:5px 20px 0px 20px;
 }
-
 
 /* ---------- Multi-Select List ---------- */
 
@@ -6575,7 +6530,6 @@ body .bNote .secondaryPalette,
 .treeNode .actions a.roleAssign {
     color: #D22;
 }
-
 
 /* ---------- Multi-Select Tree ---------- */
 .treeMultiSelect div {
@@ -6629,62 +6583,62 @@ body .bNote .secondaryPalette,
 /* ----------- treeNode used for displaying org heirarchy ----------- */
 .treeNode .plusStart {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -182px;width:20px;
-	height:16px;
+    background-position: 0px -182px;width:20px;
+    height:16px;
 }
 
 .treeNode .minusStart {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -82px;width:20px;
-	height:16px;
+    background-position: 0px -82px;width:20px;
+    height:16px;
 }
 
 .treeNode .plus {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -142px;width:20px;
-	height:16px;
+    background-position: 0px -142px;width:20px;
+    height:16px;
 }
 
 .treeNode .minus {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -42px;width:20px;
-	height:16px;
+    background-position: 0px -42px;width:20px;
+    height:16px;
 }
 
 .treeNode .plusEnd {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -162px;width:20px;
-	height:16px;
+    background-position: 0px -162px;width:20px;
+    height:16px;
 }
 
 .treeNode .minusEnd {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -62px;width:20px;
-	height:16px;
+    background-position: 0px -62px;width:20px;
+    height:16px;
 }
 
 .treeNode .node {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -102px;width:20px;
-	height:16px;
+    background-position: 0px -102px;width:20px;
+    height:16px;
 }
 
 .treeNode .nodeEnd {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -122px;width:20px;
-	height:16px;
+    background-position: 0px -122px;width:20px;
+    height:16px;
 }
 
 .treeNode .empty {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -22px;width:20px;
-	height:16px;
+    background-position: 0px -22px;width:20px;
+    height:16px;
 }
 
 .treeNode .chain {
     background-image: url(/img/sprites/tree.gif);
-	background-position: 0px -2px;width:20px;
-	height:16px;
+    background-position: 0px -2px;width:20px;
+    height:16px;
 }
 
 /* ---------- Criteria Detail ---------- */
@@ -6809,9 +6763,7 @@ table.solutionBrowser .solutionFolder{
   display: none;
 }
 
-
 /* End Solution Browser Styles */
-
 
 /*used in import wizards*/
 
@@ -6852,7 +6804,6 @@ table.genericTable {
 }
 
 /*end genericTable*/
-
 
 /*start new Infobox */
 .infoBox {
@@ -6936,7 +6887,6 @@ table.genericTable {
 
 /* End Misc */
 
-
 /*start printable View*/
 
 .printableView table.twoCol .fullWidth{
@@ -6946,7 +6896,6 @@ table.genericTable {
 .printableView td {
     vertical-align: top;
 }
-
 
 /*end pritable view*/
 
@@ -6967,9 +6916,6 @@ table.genericTable {
 .massAddCampaignMemberWiz .detailList .labelCol {
     white-space: nowrap;
 }
-
-
-
 
 /* --------------------------------------------- */
 /*BEGIN Setup Splash*/
@@ -7021,89 +6967,87 @@ table.genericTable {
     margin-bottom:1em;
 }
 
-
 .setupTab .customAppSplash { background-image: url(/img/customApps.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .customAppSplash { background-image: url(/img/customApps.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .orgImportImage { background-image: url(/img/import_myorg.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .orgImportImage { background-image: url(/img/import_myorg.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .contactImportImage { background-image: url(/img/import_diagram.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .contactImportImage { background-image: url(/img/import_diagram.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .integrateSalesforce { background-image: url(/img/integrate_pic.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .integrateSalesforce { background-image: url(/img/integrate_pic.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .offlineBriefcase { background-image: url(/img/offline_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .offlineBriefcase { background-image: url(/img/offline_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .avantGoBriefcase { background-image: url(/img/offline_pda_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .avantGoBriefcase { background-image: url(/img/offline_pda_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .outlookSplash { background-image: url(/img/integration.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .outlookSplash { background-image: url(/img/integration.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .syncChartButton { background-image: url(/img/sync_chart_small.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .syncChartButton { background-image: url(/img/sync_chart_small.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .wirelessChart { background-image: url(/img/wireless_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .wirelessChart { background-image: url(/img/wireless_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .wsdlchart { background-image: url(/img/wsdl_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .wsdlchart { background-image: url(/img/wsdl_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .officeSplash { background-image: url(/img/office_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .officeSplash { background-image: url(/img/office_chart.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .leadImportImage { background-image: url(/img/import_leaddata.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .leadImportImage { background-image: url(/img/import_leaddata.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .setupTab .dataExport { background-image: url(/img/weekly_report.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .sysAdminTab .dataExport { background-image: url(/img/weekly_report.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 .homeTab .campaignImportImage { background-image: url(/img/import_campaigndata.gif);
-	background-position: 0px 0px;width:400px;
-	height:130px; background-repeat: no-repeat;}
-
+    background-position: 0px 0px;width:400px;
+    height:130px; background-repeat: no-repeat;}
 
 .setupTab .setupSplashBody .alertBox .content,
 .sysAdminTab .setupSplashBody .alertBox .content {
@@ -7210,7 +7154,6 @@ body.choosePriceBook .pbHeader .pbTitle {
     white-space: nowrap;
     width: 75%;
 }
-
 
 .skiplink {
     position: absolute;
@@ -7433,7 +7376,6 @@ body.choosePriceBook .pbHeader .pbTitle {
     width: 20%;
 }
 
-
 .bPageBlock .detailList .tdSectionRow td {
    padding-top: 3px;
    padding-bottom: 2px;
@@ -7450,7 +7392,6 @@ body.choosePriceBook .pbHeader .pbTitle {
   padding-right:.5em;
   padding-left:.5em;
 }
-
 
 .pSearchShowMore .pShowMore {
   padding:0em;
@@ -7519,7 +7460,6 @@ body.choosePriceBook .pbHeader .pbTitle {
   border-bottom: 1px solid #999;
   z-index:50;
 }
-
 
 .searchFilterFields td input{
     margin-right:.3em;
@@ -7776,7 +7716,6 @@ body.choosePriceBook .pbHeader .pbTitle {
     top:0px;
 }
 
-
 .dhtmlHistoryFrame {
     border: 0px;
     width: 1px;
@@ -7796,8 +7735,8 @@ body.choosePriceBook .pbHeader .pbTitle {
 
 .helpOrb {
     background-image: url(/img/help/helpOrbs.gif);
-	background-position: 0px 0px;width:20px;
-	height:15px;
+    background-position: 0px 0px;width:20px;
+    height:15px;
 }
 
 .detailList .helpOrb {
@@ -7814,7 +7753,6 @@ body.choosePriceBook .pbHeader .pbTitle {
 .helpButtonOn {
     position: relative;
 }
-
 
 .helpButton .helpOrb {
     background-position: top left;
@@ -7842,8 +7780,8 @@ body.choosePriceBook .pbHeader .pbTitle {
 
 .staleValue {
     background-image: url(/img/staleValue.gif);
-	background-position: 0px 0px;width:18px;
-	height:12px;
+    background-position: 0px 0px;width:18px;
+    height:12px;
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -7877,7 +7815,6 @@ body.choosePriceBook .pbHeader .pbTitle {
     list-style:none;
     padding:6px 0px;
 }
-
 
 /* preference selection summary info */
 .summaryOuter {
@@ -7989,8 +7926,8 @@ body.choosePriceBook .pbHeader .pbTitle {
 }
 
 .listViewport .topNav .controls .divisionLabel {
-	float: left;
-	margin: 0.4em 15px 0px 0px;
+    float: left;
+    margin: 0.4em 15px 0px 0px;
 
 }
 
@@ -8156,7 +8093,6 @@ body.choosePriceBook .pbHeader .pbTitle {
     line-height: normal;
     -moz-user-select: text;
 }
-
 
 .errorConsole .x-grid3-hd-row td,
 .errorConsole .x-grid3-row td {
@@ -8549,9 +8485,7 @@ body.choosePriceBook .pbHeader .pbTitle {
     color:#AAA;
 }
 
-
 /* BEGIN Custom Field Related List */
-
 
 .cdtTable .CfLabelCol {
     padding-left: 20px;
@@ -8582,7 +8516,6 @@ body.choosePriceBook .pbHeader .pbTitle {
    margin:0 auto;
 }
 
-
 .readonlybanner .bannerContentSubtitle {
    color:#000000;
    font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
@@ -8608,7 +8541,6 @@ A:link.newHelpTraining {
    color: #E26C0A;
    font-size:100%;
 }
-
 
 /* END Custom Field Related List */
 
@@ -8760,7 +8692,6 @@ A:link.newHelpTraining {
     overflow: auto;
 }
 
-
 .feedCommentDelete {
     background: url("/img/userprofile/userProfileCommentDelete_off.gif") no-repeat;
     display: block;
@@ -8870,4 +8801,3 @@ A:link.newHelpTraining {
     padding-left: 10px;
     padding-top: 5px;
 }
-

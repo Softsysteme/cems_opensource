@@ -1,21 +1,21 @@
 /* = Common
 ------------------------------------------------ */
 *, html {
-	white-space: normal !important;/* texte non sectionn� si trop long */
-	-webkit-font-smoothing: antialiased;
+    white-space: normal !important;/* texte non sectionn� si trop long */
+    -webkit-font-smoothing: antialiased;
 }
 .clear {
-	clear:both;
+    clear:both;
 }
 
 /* = Background: to make bg color in all screen
 ------------------------------------------------ */
 html {
-	background-color:#fdfddb;
+    background-color:#fdfddb;
 }
 body {
-	height:100%;
-	background-color:#fdfddb;
+    height:100%;
+    background-color:#fdfddb;
 }
 .ui-page {
     background: transparent;
@@ -26,23 +26,23 @@ body {
 
 /* = Screen
 ------------------------------------------------ */
-#map ,#map .ui-content,#map-canvas { 
-	width: 100%; 
-	height: 100%; 
-	padding: 0; 
+#map ,#map .ui-content,#map-canvas {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 .ui-header .ui-title, .ui-footer .ui-title {
-	margin: .6em 22% .8em;
+    margin: .6em 22% .8em;
 }
 #headbar {
-	position:relative;
+    position:relative;
 }
 .logo {
-	position:absolute;
-	right: 5px;
-	top:2px;
+    position:absolute;
+    right: 5px;
+    top:2px;
 }
 form .ui-body-f {
-	background-image: none;
-	background: #fff;
+    background-image: none;
+    background: #fff;
 }

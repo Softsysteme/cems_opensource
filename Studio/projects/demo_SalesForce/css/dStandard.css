@@ -19,22 +19,22 @@
 }
 
 .accountTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -772px; }
+    background-position: left -772px; }
 .accountTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5392px; }
+    background-position: right -5392px; }
 .accountTab .tabNavigation { background-image: url(/img/motif/bg236FBD.gif); }
 
 .accountMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -2px;width:16px;
-	height:16px; }
+    background-position: 0px -2px;width:16px;
+    height:16px; }
 
 .accountTab .pageTitleIcon, .individualPalette .accountBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -950px;width:32px;
-	height:32px; }
+    background-position: 0px -950px;width:32px;
+    height:32px; }
 
 .bRelatedList .accountBlock .relatedListIcon, .allTabTab .accountBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -362px;width:24px;
-	height:24px; }
+    background-position: 0px -362px;width:24px;
+    height:24px; }
 
 .bRelatedList .accountBlock .relatedListIcon {
     position: relative;
@@ -68,9 +68,9 @@
 }
 
 .allTabTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3082px; }
+    background-position: left -3082px; }
 .allTabTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7702px; }
+    background-position: right -7702px; }
 .allTabTab .tabNavigation { background-image: url(/img/motif/bg747E96.gif); }
 
 /* Asset */
@@ -93,18 +93,18 @@
 }
 
 .assetTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1080px; }
+    background-position: left -1080px; }
 .assetTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5700px; }
+    background-position: right -5700px; }
 .assetTab .tabNavigation { background-image: url(/img/motif/bg317992.gif); }
 
 .assetMru .mruIcon { background-image: url(/img/icon/products16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .assetTab .pageTitleIcon, .individualPalette .assetBlock .pageTitleIcon { background-image: url(/img/icon/products32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 /* Campaign */
 .campaignTab .primaryPalette,
@@ -126,22 +126,22 @@
 }
 
 .campaignTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4006px; }
+    background-position: left -4006px; }
 .campaignTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8626px; }
+    background-position: right -8626px; }
 .campaignTab .tabNavigation { background-image: url(/img/motif/bgCC9933.gif); }
 
 .campaignMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -42px;width:16px;
-	height:16px; }
+    background-position: 0px -42px;width:16px;
+    height:16px; }
 
 .campaignTab .pageTitleIcon, .individualPalette .campaignBlock .pageTitleIcon { background-image: url(/img/icon/campaigns32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .campaignBlock .relatedListIcon, .allTabTab .campaignBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -418px;width:24px;
-	height:24px; }
+    background-position: 0px -418px;width:24px;
+    height:24px; }
 
 .bRelatedList .campaignBlock .relatedListIcon {
     position: relative;
@@ -175,22 +175,22 @@
 }
 
 .campaignmemberTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4006px; }
+    background-position: left -4006px; }
 .campaignmemberTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8626px; }
+    background-position: right -8626px; }
 .campaignmemberTab .tabNavigation { background-image: url(/img/motif/bgCC9933.gif); }
 
 .campaignmemberMru .mruIcon { background-image: url(/img/icon/campaignmember16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .campaignmemberTab .pageTitleIcon, .individualPalette .campaignmemberBlock .pageTitleIcon { background-image: url(/img/icon/campaignmember32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .campaignmemberBlock .relatedListIcon, .allTabTab .campaignmemberBlock .relatedListIcon { background-image: url(/img/icon/campaignmember24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .campaignmemberBlock .relatedListIcon {
     position: relative;
@@ -224,22 +224,22 @@
 }
 
 .caseTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3852px; }
+    background-position: left -3852px; }
 .caseTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8472px; }
+    background-position: right -8472px; }
 .caseTab .tabNavigation { background-image: url(/img/motif/bgB7A752.gif); }
 
 .caseMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -62px;width:16px;
-	height:16px; }
+    background-position: 0px -62px;width:16px;
+    height:16px; }
 
 .caseTab .pageTitleIcon, .individualPalette .caseBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -986px;width:32px;
-	height:32px; }
+    background-position: 0px -986px;width:32px;
+    height:32px; }
 
 .bRelatedList .caseBlock .relatedListIcon, .allTabTab .caseBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -446px;width:24px;
-	height:24px; }
+    background-position: 0px -446px;width:24px;
+    height:24px; }
 
 .bRelatedList .caseBlock .relatedListIcon {
     position: relative;
@@ -273,22 +273,22 @@
 }
 
 .consoleTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1696px; }
+    background-position: left -1696px; }
 .consoleTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6316px; }
+    background-position: right -6316px; }
 .consoleTab .tabNavigation { background-image: url(/img/motif/bg555555.gif); }
 
 .consoleMru .mruIcon { background-image: url(/img/icon/console16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .consoleTab .pageTitleIcon, .individualPalette .consoleBlock .pageTitleIcon { background-image: url(/img/icon/console32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .consoleBlock .relatedListIcon, .allTabTab .consoleBlock .relatedListIcon { background-image: url(/img/icon/console24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .consoleBlock .relatedListIcon {
     position: relative;
@@ -322,22 +322,22 @@
 }
 
 .contactTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1850px; }
+    background-position: left -1850px; }
 .contactTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6470px; }
+    background-position: right -6470px; }
 .contactTab .tabNavigation { background-image: url(/img/motif/bg56458C.gif); }
 
 .contactMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -82px;width:16px;
-	height:16px; }
+    background-position: 0px -82px;width:16px;
+    height:16px; }
 
 .contactTab .pageTitleIcon, .individualPalette .contactBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1022px;width:32px;
-	height:32px; }
+    background-position: 0px -1022px;width:32px;
+    height:32px; }
 
 .bRelatedList .contactBlock .relatedListIcon, .allTabTab .contactBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -502px;width:24px;
-	height:24px; }
+    background-position: 0px -502px;width:24px;
+    height:24px; }
 
 .bRelatedList .contactBlock .relatedListIcon {
     position: relative;
@@ -371,22 +371,22 @@
 }
 
 .contractTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2466px; }
+    background-position: left -2466px; }
 .contractTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7086px; }
+    background-position: right -7086px; }
 .contractTab .tabNavigation { background-image: url(/img/motif/bg66895F.gif); }
 
 .contractMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -102px;width:16px;
-	height:16px; }
+    background-position: 0px -102px;width:16px;
+    height:16px; }
 
 .contractTab .pageTitleIcon, .individualPalette .contractBlock .pageTitleIcon { background-image: url(/img/icon/contracts32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contractBlock .relatedListIcon, .allTabTab .contractBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -530px;width:24px;
-	height:24px; }
+    background-position: 0px -530px;width:24px;
+    height:24px; }
 
 .bRelatedList .contractBlock .relatedListIcon {
     position: relative;
@@ -420,18 +420,18 @@
 }
 
 .customnotabTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3082px; }
+    background-position: left -3082px; }
 .customnotabTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7702px; }
+    background-position: right -7702px; }
 .customnotabTab .tabNavigation { background-image: url(/img/motif/bg747E96.gif); }
 
 .customnotabMru .mruIcon { background-image: url(/img/icon/custom16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .customnotabTab .pageTitleIcon, .individualPalette .customnotabBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1058px;width:32px;
-	height:32px; }
+    background-position: 0px -1058px;width:32px;
+    height:32px; }
 
 /* Dashboard */
 .dashboardTab .primaryPalette,
@@ -453,22 +453,22 @@
 }
 
 .dashboardTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3236px; }
+    background-position: left -3236px; }
 .dashboardTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7856px; }
+    background-position: right -7856px; }
 .dashboardTab .tabNavigation { background-image: url(/img/motif/bg861614.gif); }
 
 .dashboardMru .mruIcon { background-image: url(/img/icon/dashboards16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .dashboardTab .pageTitleIcon, .individualPalette .dashboardBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1094px;width:32px;
-	height:32px; }
+    background-position: 0px -1094px;width:32px;
+    height:32px; }
 
 .bRelatedList .dashboardBlock .relatedListIcon, .allTabTab .dashboardBlock .relatedListIcon { background-image: url(/img/icon/dashboards24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .dashboardBlock .relatedListIcon {
     position: relative;
@@ -502,22 +502,22 @@
 }
 
 .documentTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1234px; }
+    background-position: left -1234px; }
 .documentTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5854px; }
+    background-position: right -5854px; }
 .documentTab .tabNavigation { background-image: url(/img/motif/bg419BA6.gif); }
 
 .documentMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -122px;width:16px;
-	height:16px; }
+    background-position: 0px -122px;width:16px;
+    height:16px; }
 
 .documentTab .pageTitleIcon, .individualPalette .documentBlock .pageTitleIcon { background-image: url(/img/icon/documents32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .documentBlock .relatedListIcon, .allTabTab .documentBlock .relatedListIcon { background-image: url(/img/icon/documents24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .documentBlock .relatedListIcon {
     position: relative;
@@ -551,18 +551,18 @@
 }
 
 .eventTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1542px; }
+    background-position: left -1542px; }
 .eventTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6162px; }
+    background-position: right -6162px; }
 .eventTab .tabNavigation { background-image: url(/img/motif/bg4F9241.gif); }
 
 .eventMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -22px;width:16px;
-	height:16px; }
+    background-position: 0px -22px;width:16px;
+    height:16px; }
 
 .eventTab .pageTitleIcon, .individualPalette .eventBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1130px;width:32px;
-	height:32px; }
+    background-position: 0px -1130px;width:32px;
+    height:32px; }
 
 /* Forecast */
 .forecastTab .primaryPalette,
@@ -584,22 +584,22 @@
 }
 
 .forecastTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2004px; }
+    background-position: left -2004px; }
 .forecastTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6624px; }
+    background-position: right -6624px; }
 .forecastTab .tabNavigation { background-image: url(/img/motif/bg5889D6.gif); }
 
 .forecastMru .mruIcon { background-image: url(/img/icon/forecasts16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .forecastTab .pageTitleIcon, .individualPalette .forecastBlock .pageTitleIcon { background-image: url(/img/icon/forecasts32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .forecastBlock .relatedListIcon, .allTabTab .forecastBlock .relatedListIcon { background-image: url(/img/icon/forecasts24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .forecastBlock .relatedListIcon {
     position: relative;
@@ -633,22 +633,22 @@
 }
 
 .homeTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1542px; }
+    background-position: left -1542px; }
 .homeTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6162px; }
+    background-position: right -6162px; }
 .homeTab .tabNavigation { background-image: url(/img/motif/bg4F9241.gif); }
 
 .homeMru .mruIcon { background-image: url(/img/icon/home16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .homeTab .pageTitleIcon, .individualPalette .homeBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1130px;width:32px;
-	height:32px; }
+    background-position: 0px -1130px;width:32px;
+    height:32px; }
 
 .bRelatedList .homeBlock .relatedListIcon, .allTabTab .homeBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -642px;width:24px;
-	height:24px; }
+    background-position: 0px -642px;width:24px;
+    height:24px; }
 
 .bRelatedList .homeBlock .relatedListIcon {
     position: relative;
@@ -682,22 +682,22 @@
 }
 
 .invoiceTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2620px; }
+    background-position: left -2620px; }
 .invoiceTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7240px; }
+    background-position: right -7240px; }
 .invoiceTab .tabNavigation { background-image: url(/img/motif/bg66AA99.gif); }
 
 .invoiceMru .mruIcon { background-image: url(/img/icon/invoices16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .invoiceTab .pageTitleIcon, .individualPalette .invoiceBlock .pageTitleIcon { background-image: url(/img/icon/invoices32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .invoiceBlock .relatedListIcon, .allTabTab .invoiceBlock .relatedListIcon { background-image: url(/img/icon/invoices24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .invoiceBlock .relatedListIcon {
     position: relative;
@@ -731,22 +731,22 @@
 }
 
 .leadTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4160px; }
+    background-position: left -4160px; }
 .leadTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8780px; }
+    background-position: right -8780px; }
 .leadTab .tabNavigation { background-image: url(/img/motif/bgE39321.gif); }
 
 .leadMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -202px;width:16px;
-	height:16px; }
+    background-position: 0px -202px;width:16px;
+    height:16px; }
 
 .leadTab .pageTitleIcon, .individualPalette .leadBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1166px;width:32px;
-	height:32px; }
+    background-position: 0px -1166px;width:32px;
+    height:32px; }
 
 .bRelatedList .leadBlock .relatedListIcon, .allTabTab .leadBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -698px;width:24px;
-	height:24px; }
+    background-position: 0px -698px;width:24px;
+    height:24px; }
 
 .bRelatedList .leadBlock .relatedListIcon {
     position: relative;
@@ -780,22 +780,22 @@
 }
 
 .lookupTab .tab .currentTab { background-image: url(/img/motif/left737E96.gif);
-	background-position: left top; }
+    background-position: left top; }
 .lookupTab .tab .currentTab div { background-image: url(/img/motif/right737E96.gif);
-	background-position: right top; }
+    background-position: right top; }
 .lookupTab .tabNavigation { background-image: url(/img/motif/bg737E96.gif); }
 
 .lookupMru .mruIcon { background-image: url(/img/icon/custom16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .lookupTab .pageTitleIcon, .individualPalette .lookupBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1202px;width:32px;
-	height:32px; }
+    background-position: 0px -1202px;width:32px;
+    height:32px; }
 
 .bRelatedList .lookupBlock .relatedListIcon, .allTabTab .lookupBlock .relatedListIcon { background-image: url(/img/icon/custom24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .lookupBlock .relatedListIcon {
     position: relative;
@@ -829,22 +829,22 @@
 }
 
 .opportunityTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .opportunityTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .opportunityTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .opportunityMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -242px;width:16px;
-	height:16px; }
+    background-position: 0px -242px;width:16px;
+    height:16px; }
 
 .opportunityTab .pageTitleIcon, .individualPalette .opportunityBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1238px;width:32px;
-	height:32px; }
+    background-position: 0px -1238px;width:32px;
+    height:32px; }
 
 .bRelatedList .opportunityBlock .relatedListIcon, .allTabTab .opportunityBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -782px;width:24px;
-	height:24px; }
+    background-position: 0px -782px;width:24px;
+    height:24px; }
 
 .bRelatedList .opportunityBlock .relatedListIcon {
     position: relative;
@@ -878,22 +878,22 @@
 }
 
 .quoteTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .quoteTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .quoteTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .quoteMru .mruIcon { background-image: url(/img/icon/quotes16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .quoteTab .pageTitleIcon, .individualPalette .quoteBlock .pageTitleIcon { background-image: url(/img/icon/quotes32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .quoteBlock .relatedListIcon, .allTabTab .quoteBlock .relatedListIcon { background-image: url(/img/icon/quotes24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .quoteBlock .relatedListIcon {
     position: relative;
@@ -927,18 +927,18 @@
 }
 
 .quoteLineItemTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .quoteLineItemTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .quoteLineItemTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .quoteLineItemMru .mruIcon { background-image: url(/img/icon/quotes16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .quoteLineItemTab .pageTitleIcon, .individualPalette .quoteLineItemBlock .pageTitleIcon { background-image: url(/img/icon/quotes32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 /* QuoteDocument */
 .quoteDocumentTab .primaryPalette,
@@ -960,18 +960,18 @@
 }
 
 .quoteDocumentTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .quoteDocumentTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .quoteDocumentTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .quoteDocumentMru .mruIcon { background-image: url(/img/icon/quotes16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .quoteDocumentTab .pageTitleIcon, .individualPalette .quoteDocumentBlock .pageTitleIcon { background-image: url(/img/icon/quotes32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 /* Order */
 .orderTab .primaryPalette,
@@ -993,22 +993,22 @@
 }
 
 .orderTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -464px; }
+    background-position: left -464px; }
 .orderTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5084px; }
+    background-position: right -5084px; }
 .orderTab .tabNavigation { background-image: url(/img/motif/bg00655A.gif); }
 
 .orderMru .mruIcon { background-image: url(/img/icon/orderBell16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .orderTab .pageTitleIcon, .individualPalette .orderBlock .pageTitleIcon { background-image: url(/img/icon/orderBell32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .orderBlock .relatedListIcon, .allTabTab .orderBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -810px;width:24px;
-	height:24px; }
+    background-position: 0px -810px;width:24px;
+    height:24px; }
 
 .bRelatedList .orderBlock .relatedListIcon {
     position: relative;
@@ -1042,22 +1042,22 @@
 }
 
 .personaccountTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -772px; }
+    background-position: left -772px; }
 .personaccountTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5392px; }
+    background-position: right -5392px; }
 .personaccountTab .tabNavigation { background-image: url(/img/motif/bg236FBD.gif); }
 
 .personaccountMru .mruIcon { background-image: url(/img/icon/perAccounts16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .personaccountTab .pageTitleIcon, .individualPalette .personaccountBlock .pageTitleIcon { background-image: url(/img/icon/perAccounts32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .personaccountBlock .relatedListIcon, .allTabTab .personaccountBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -362px;width:24px;
-	height:24px; }
+    background-position: 0px -362px;width:24px;
+    height:24px; }
 
 .bRelatedList .personaccountBlock .relatedListIcon {
     position: relative;
@@ -1091,22 +1091,22 @@
 }
 
 .portalTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3544px; }
+    background-position: left -3544px; }
 .portalTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8164px; }
+    background-position: right -8164px; }
 .portalTab .tabNavigation { background-image: url(/img/motif/bg999933.gif); }
 
 .portalMru .mruIcon { background-image: url(/img/icon/portals16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .portalTab .pageTitleIcon, .individualPalette .portalBlock .pageTitleIcon { background-image: url(/img/icon/portals32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .portalBlock .relatedListIcon, .allTabTab .portalBlock .relatedListIcon { background-image: url(/img/icon/portals24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .portalBlock .relatedListIcon {
     position: relative;
@@ -1140,18 +1140,18 @@
 }
 
 .pricebookTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1080px; }
+    background-position: left -1080px; }
 .pricebookTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5700px; }
+    background-position: right -5700px; }
 .pricebookTab .tabNavigation { background-image: url(/img/motif/bg317992.gif); }
 
 .pricebookMru .mruIcon { background-image: url(/img/icon/products16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .pricebookTab .pageTitleIcon, .individualPalette .pricebookBlock .pageTitleIcon { background-image: url(/img/icon/products32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 /* PricebookEntry */
 .pricebookentryTab .primaryPalette,
@@ -1173,18 +1173,18 @@
 }
 
 .pricebookentryTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1080px; }
+    background-position: left -1080px; }
 .pricebookentryTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5700px; }
+    background-position: right -5700px; }
 .pricebookentryTab .tabNavigation { background-image: url(/img/motif/bg317992.gif); }
 
 .pricebookentryMru .mruIcon { background-image: url(/img/icon/products16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .pricebookentryTab .pageTitleIcon, .individualPalette .pricebookentryBlock .pageTitleIcon { background-image: url(/img/icon/products32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 /* Product2 */
 .productTab .primaryPalette,
@@ -1206,22 +1206,22 @@
 }
 
 .productTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1080px; }
+    background-position: left -1080px; }
 .productTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5700px; }
+    background-position: right -5700px; }
 .productTab .tabNavigation { background-image: url(/img/motif/bg317992.gif); }
 
 .productMru .mruIcon { background-image: url(/img/icon/products16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .productTab .pageTitleIcon, .individualPalette .productBlock .pageTitleIcon { background-image: url(/img/icon/products32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .productBlock .relatedListIcon, .allTabTab .productBlock .relatedListIcon { background-image: url(/img/icon/products24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .productBlock .relatedListIcon {
     position: relative;
@@ -1255,22 +1255,22 @@
 }
 
 .reportTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3698px; }
+    background-position: left -3698px; }
 .reportTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8318px; }
+    background-position: right -8318px; }
 .reportTab .tabNavigation { background-image: url(/img/motif/bgA55647.gif); }
 
 .reportMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -282px;width:16px;
-	height:16px; }
+    background-position: 0px -282px;width:16px;
+    height:16px; }
 
 .reportTab .pageTitleIcon, .individualPalette .reportBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1274px;width:32px;
-	height:32px; }
+    background-position: 0px -1274px;width:32px;
+    height:32px; }
 
 .bRelatedList .reportBlock .relatedListIcon, .allTabTab .reportBlock .relatedListIcon { background-image: url(/img/icon/reports24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .reportBlock .relatedListIcon {
     position: relative;
@@ -1304,18 +1304,18 @@
 }
 
 .setupTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3082px; }
+    background-position: left -3082px; }
 .setupTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7702px; }
+    background-position: right -7702px; }
 .setupTab .tabNavigation { background-image: url(/img/motif/bg747E96.gif); }
 
 .setupMru .mruIcon { background-image: url(/img/icon/custom16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .setupTab .pageTitleIcon, .individualPalette .setupBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1058px;width:32px;
-	height:32px; }
+    background-position: 0px -1058px;width:32px;
+    height:32px; }
 
 /* Solution */
 .solutionTab .primaryPalette,
@@ -1337,22 +1337,22 @@
 }
 
 .solutionTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2158px; }
+    background-position: left -2158px; }
 .solutionTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6778px; }
+    background-position: right -6778px; }
 .solutionTab .tabNavigation { background-image: url(/img/motif/bg608B06.gif); }
 
 .solutionMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -302px;width:16px;
-	height:16px; }
+    background-position: 0px -302px;width:16px;
+    height:16px; }
 
 .solutionTab .pageTitleIcon, .individualPalette .solutionBlock .pageTitleIcon { background-image: url(/img/icon/solutions32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .solutionBlock .relatedListIcon, .allTabTab .solutionBlock .relatedListIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -894px;width:24px;
-	height:24px; }
+    background-position: 0px -894px;width:24px;
+    height:24px; }
 
 .bRelatedList .solutionBlock .relatedListIcon {
     position: relative;
@@ -1386,9 +1386,9 @@
 }
 
 .sysAdminTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -310px; }
+    background-position: left -310px; }
 .sysAdminTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -4930px; }
+    background-position: right -4930px; }
 .sysAdminTab .tabNavigation { background-image: url(/img/motif/bg000000.gif); }
 
 /* Task */
@@ -1411,18 +1411,18 @@
 }
 
 .taskTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -1542px; }
+    background-position: left -1542px; }
 .taskTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6162px; }
+    background-position: right -6162px; }
 .taskTab .tabNavigation { background-image: url(/img/motif/bg4F9241.gif); }
 
 .taskMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -342px;width:16px;
-	height:16px; }
+    background-position: 0px -342px;width:16px;
+    height:16px; }
 
 .taskTab .pageTitleIcon, .individualPalette .taskBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1130px;width:32px;
-	height:32px; }
+    background-position: 0px -1130px;width:32px;
+    height:32px; }
 
 /* OpportunityCompetitor */
 .opportunityCompetitorTab .primaryPalette,
@@ -1444,18 +1444,18 @@
 }
 
 .opportunityCompetitorTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .opportunityCompetitorTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .opportunityCompetitorTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .opportunityCompetitorMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -242px;width:16px;
-	height:16px; }
+    background-position: 0px -242px;width:16px;
+    height:16px; }
 
 .opportunityCompetitorTab .pageTitleIcon, .individualPalette .opportunityCompetitorBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1238px;width:32px;
-	height:32px; }
+    background-position: 0px -1238px;width:32px;
+    height:32px; }
 
 /* OpportunityLineItem */
 .opportunityLineItemTab .primaryPalette,
@@ -1477,18 +1477,18 @@
 }
 
 .opportunityLineItemTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4314px; }
+    background-position: left -4314px; }
 .opportunityLineItemTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8934px; }
+    background-position: right -8934px; }
 .opportunityLineItemTab .tabNavigation { background-image: url(/img/motif/bgE5C130.gif); }
 
 .opportunityLineItemMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -242px;width:16px;
-	height:16px; }
+    background-position: 0px -242px;width:16px;
+    height:16px; }
 
 .opportunityLineItemTab .pageTitleIcon, .individualPalette .opportunityLineItemBlock .pageTitleIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -1238px;width:32px;
-	height:32px; }
+    background-position: 0px -1238px;width:32px;
+    height:32px; }
 
 /* PartnerNetworkConnection */
 .partnerNetworkConnectionTab .primaryPalette,
@@ -1510,22 +1510,22 @@
 }
 
 .partnerNetworkConnectionTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2312px; }
+    background-position: left -2312px; }
 .partnerNetworkConnectionTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -6932px; }
+    background-position: right -6932px; }
 .partnerNetworkConnectionTab .tabNavigation { background-image: url(/img/motif/bg64B49D.gif); }
 
 .partnerNetworkConnectionMru .mruIcon { background-image: url(/img/icon/pnet_connection16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .partnerNetworkConnectionTab .pageTitleIcon, .individualPalette .partnerNetworkConnectionBlock .pageTitleIcon { background-image: url(/img/icon/pnet_connection32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .partnerNetworkConnectionBlock .relatedListIcon, .allTabTab .partnerNetworkConnectionBlock .relatedListIcon { background-image: url(/img/icon/pnet_connection24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .partnerNetworkConnectionBlock .relatedListIcon {
     position: relative;
@@ -1559,22 +1559,22 @@
 }
 
 .tagTab .tab .currentTab { background-image: url(/img/motif/left6cd146.gif);
-	background-position: left top; }
+    background-position: left top; }
 .tagTab .tab .currentTab div { background-image: url(/img/motif/right6cd146.gif);
-	background-position: right top; }
+    background-position: right top; }
 .tagTab .tabNavigation { background-image: url(/img/motif/bg6cd146.gif); }
 
 .tagMru .mruIcon { background-image: url(/img/icon/tag16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .tagTab .pageTitleIcon, .individualPalette .tagBlock .pageTitleIcon { background-image: url(/img/icon/tags32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .tagBlock .relatedListIcon, .allTabTab .tagBlock .relatedListIcon { background-image: url(/img/icon/tag16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .bRelatedList .tagBlock .relatedListIcon {
     position: relative;
@@ -1608,22 +1608,22 @@
 }
 
 .workspaceTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2928px; }
+    background-position: left -2928px; }
 .workspaceTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7548px; }
+    background-position: right -7548px; }
 .workspaceTab .tabNavigation { background-image: url(/img/motif/bg72afba.gif); }
 
 .workspaceMru .mruIcon { background-image: url(/img/content/workspace16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .workspaceTab .pageTitleIcon, .individualPalette .workspaceBlock .pageTitleIcon { background-image: url(/img/content/workspace32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .workspaceBlock .relatedListIcon, .allTabTab .workspaceBlock .relatedListIcon { background-image: url(/img/content/workspace24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .workspaceBlock .relatedListIcon {
     position: relative;
@@ -1657,22 +1657,22 @@
 }
 
 .contentSearchTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3390px; }
+    background-position: left -3390px; }
 .contentSearchTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8010px; }
+    background-position: right -8010px; }
 .contentSearchTab .tabNavigation { background-image: url(/img/motif/bg993333.gif); }
 
 .contentSearchMru .mruIcon { background-image: url(/img/content/content16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .contentSearchTab .pageTitleIcon, .individualPalette .contentSearchBlock .pageTitleIcon { background-image: url(/img/content/content32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contentSearchBlock .relatedListIcon, .allTabTab .contentSearchBlock .relatedListIcon { background-image: url(/img/content/content24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .contentSearchBlock .relatedListIcon {
     position: relative;
@@ -1706,22 +1706,22 @@
 }
 
 .contentSubscriptionsTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -926px; }
+    background-position: left -926px; }
 .contentSubscriptionsTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5546px; }
+    background-position: right -5546px; }
 .contentSubscriptionsTab .tabNavigation { background-image: url(/img/motif/bg26547C.gif); }
 
 .contentSubscriptionsMru .mruIcon { background-image: url(/img/content/subscriptions16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .contentSubscriptionsTab .pageTitleIcon, .individualPalette .contentSubscriptionsBlock .pageTitleIcon { background-image: url(/img/content/subscriptions32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contentSubscriptionsBlock .relatedListIcon, .allTabTab .contentSubscriptionsBlock .relatedListIcon { background-image: url(/img/content/subscriptions24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .contentSubscriptionsBlock .relatedListIcon {
     position: relative;
@@ -1755,22 +1755,22 @@
 }
 
 .contentContributeTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4622px; }
+    background-position: left -4622px; }
 .contentContributeTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -9242px; }
+    background-position: right -9242px; }
 .contentContributeTab .tabNavigation { background-image: url(/img/motif/bgcc6600.gif); }
 
 .contentContributeMru .mruIcon { background-image: url(/img/content/contribute16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .contentContributeTab .pageTitleIcon, .individualPalette .contentContributeBlock .pageTitleIcon { background-image: url(/img/content/contribute32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contentContributeBlock .relatedListIcon, .allTabTab .contentContributeBlock .relatedListIcon { background-image: url(/img/content/contribute24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .contentContributeBlock .relatedListIcon {
     position: relative;
@@ -1804,22 +1804,22 @@
 }
 
 .contentFavoritesTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4006px; }
+    background-position: left -4006px; }
 .contentFavoritesTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8626px; }
+    background-position: right -8626px; }
 .contentFavoritesTab .tabNavigation { background-image: url(/img/motif/bgCC9933.gif); }
 
 .contentFavoritesMru .mruIcon { background-image: url(/img/sprites/master.png);
-	background-position: 0px -122px;width:16px;
-	height:16px; }
+    background-position: 0px -122px;width:16px;
+    height:16px; }
 
 .contentFavoritesTab .pageTitleIcon, .individualPalette .contentFavoritesBlock .pageTitleIcon { background-image: url(/img/icon/documents32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contentFavoritesBlock .relatedListIcon, .allTabTab .contentFavoritesBlock .relatedListIcon { background-image: url(/img/icon/documents24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .contentFavoritesBlock .relatedListIcon {
     position: relative;
@@ -1853,22 +1853,22 @@
 }
 
 .contentDistributionTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -3390px; }
+    background-position: left -3390px; }
 .contentDistributionTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -8010px; }
+    background-position: right -8010px; }
 .contentDistributionTab .tabNavigation { background-image: url(/img/motif/bg993333.gif); }
 
 .contentDistributionMru .mruIcon { background-image: url(/img/content/deliver16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .contentDistributionTab .pageTitleIcon, .individualPalette .contentDistributionBlock .pageTitleIcon { background-image: url(/img/content/deliver32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .contentDistributionBlock .relatedListIcon, .allTabTab .contentDistributionBlock .relatedListIcon { background-image: url(/img/content/deliver24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .contentDistributionBlock .relatedListIcon {
     position: relative;
@@ -1902,22 +1902,22 @@
 }
 
 .ideaTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -618px; }
+    background-position: left -618px; }
 .ideaTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -5238px; }
+    background-position: right -5238px; }
 .ideaTab .tabNavigation { background-image: url(/img/motif/bg178AFF.gif); }
 
 .ideaMru .mruIcon { background-image: url(/img/icon/ideabubble16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .ideaTab .pageTitleIcon, .individualPalette .ideaBlock .pageTitleIcon { background-image: url(/img/icon/ideabubble32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .ideaBlock .relatedListIcon, .allTabTab .ideaBlock .relatedListIcon { background-image: url(/img/icon/ideabubble24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .ideaBlock .relatedListIcon {
     position: relative;
@@ -1951,22 +1951,22 @@
 }
 
 .answersTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -4468px; }
+    background-position: left -4468px; }
 .answersTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -9088px; }
+    background-position: right -9088px; }
 .answersTab .tabNavigation { background-image: url(/img/motif/bgE67110.gif); }
 
 .answersMru .mruIcon { background-image: url(/img/icon/questions16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .answersTab .pageTitleIcon, .individualPalette .answersBlock .pageTitleIcon { background-image: url(/img/icon/questions32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .answersBlock .relatedListIcon, .allTabTab .answersBlock .relatedListIcon { background-image: url(/img/icon/questions24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .answersBlock .relatedListIcon {
     position: relative;
@@ -2000,22 +2000,22 @@
 }
 
 .googleDocsTab .tab .currentTab { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: left -2774px; }
+    background-position: left -2774px; }
 .googleDocsTab .tab .currentTab div { background-image: url(/img/sprites/motiftab3.gif);
-	background-position: right -7394px; }
+    background-position: right -7394px; }
 .googleDocsTab .tabNavigation { background-image: url(/img/motif/bg67A7E3.gif); }
 
 .googleDocsMru .mruIcon { background-image: url(/s.gif);
-	background-position: 0px 0px;width:0px;
-	height:0px; }
+    background-position: 0px 0px;width:0px;
+    height:0px; }
 
 .googleDocsTab .pageTitleIcon, .individualPalette .googleDocsBlock .pageTitleIcon { background-image: url(/img/google/google_docs_icon_24x24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .googleDocsBlock .relatedListIcon, .allTabTab .googleDocsBlock .relatedListIcon { background-image: url(/img/google/google_docs_icon_24x24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .googleDocsBlock .relatedListIcon {
     position: relative;
@@ -2049,22 +2049,22 @@
 }
 
 .userTab .tab .currentTab { background-image: url(/img/motif/left2F527E.gif);
-	background-position: left top; }
+    background-position: left top; }
 .userTab .tab .currentTab div { background-image: url(/img/motif/right2F527E.gif);
-	background-position: right top; }
+    background-position: right top; }
 .userTab .tabNavigation { background-image: url(/img/motif/bg2F527E.gif); }
 
 .userMru .mruIcon { background-image: url(/img/icon/profile16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .userTab .pageTitleIcon, .individualPalette .userBlock .pageTitleIcon { background-image: url(/img/icon/profile32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .userBlock .relatedListIcon, .allTabTab .userBlock .relatedListIcon { background-image: url(/img/icon/profile24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .userBlock .relatedListIcon {
     position: relative;
@@ -2098,22 +2098,22 @@
 }
 
 .knowledgeTab .tab .currentTab { background-image: url(/img/motif/left3F44A4.gif);
-	background-position: left top; }
+    background-position: left top; }
 .knowledgeTab .tab .currentTab div { background-image: url(/img/motif/right3F44A4.gif);
-	background-position: right top; }
+    background-position: right top; }
 .knowledgeTab .tabNavigation { background-image: url(/img/motif/bg3F44A4.gif); }
 
 .knowledgeMru .mruIcon { background-image: url(/img/knowledge/knowledge16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .knowledgeTab .pageTitleIcon, .individualPalette .knowledgeBlock .pageTitleIcon { background-image: url(/img/knowledge/knowledge32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .knowledgeBlock .relatedListIcon, .allTabTab .knowledgeBlock .relatedListIcon { background-image: url(/img/knowledge/knowledge24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .knowledgeBlock .relatedListIcon {
     position: relative;
@@ -2147,22 +2147,22 @@
 }
 
 .knowledgePublishingTab .tab .currentTab { background-image: url(/img/motif/left3F44A4.gif);
-	background-position: left top; }
+    background-position: left top; }
 .knowledgePublishingTab .tab .currentTab div { background-image: url(/img/motif/right3F44A4.gif);
-	background-position: right top; }
+    background-position: right top; }
 .knowledgePublishingTab .tabNavigation { background-image: url(/img/motif/bg3F44A4.gif); }
 
 .knowledgePublishingMru .mruIcon { background-image: url(/img/knowledge/publishing/knowledgemanagement16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .knowledgePublishingTab .pageTitleIcon, .individualPalette .knowledgePublishingBlock .pageTitleIcon { background-image: url(/img/knowledge/publishing/knowledgemanagement32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .knowledgePublishingBlock .relatedListIcon, .allTabTab .knowledgePublishingBlock .relatedListIcon { background-image: url(/img/knowledge/publishing/knowledgemanagement24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .knowledgePublishingBlock .relatedListIcon {
     position: relative;
@@ -2196,22 +2196,22 @@
 }
 
 .entitlementTab .tab .currentTab { background-image: url(/img/motif/left549647.gif);
-	background-position: left top; }
+    background-position: left top; }
 .entitlementTab .tab .currentTab div { background-image: url(/img/motif/right549647.gif);
-	background-position: right top; }
+    background-position: right top; }
 .entitlementTab .tabNavigation { background-image: url(/img/motif/bg549647.gif); }
 
 .entitlementMru .mruIcon { background-image: url(/img/icon/entitlements16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .entitlementTab .pageTitleIcon, .individualPalette .entitlementBlock .pageTitleIcon { background-image: url(/img/icon/entitlements32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .entitlementBlock .relatedListIcon, .allTabTab .entitlementBlock .relatedListIcon { background-image: url(/img/icon/entitlements24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .entitlementBlock .relatedListIcon {
     position: relative;
@@ -2245,22 +2245,22 @@
 }
 
 .serviceContractTab .tab .currentTab { background-image: url(/img/motif/left3F7134.gif);
-	background-position: left top; }
+    background-position: left top; }
 .serviceContractTab .tab .currentTab div { background-image: url(/img/motif/right3F7134.gif);
-	background-position: right top; }
+    background-position: right top; }
 .serviceContractTab .tabNavigation { background-image: url(/img/motif/bg3F7134.gif); }
 
 .serviceContractMru .mruIcon { background-image: url(/img/icon/service_contracts16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .serviceContractTab .pageTitleIcon, .individualPalette .serviceContractBlock .pageTitleIcon { background-image: url(/img/icon/service_contracts32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .bRelatedList .serviceContractBlock .relatedListIcon, .allTabTab .serviceContractBlock .relatedListIcon { background-image: url(/img/icon/service_contracts24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .bRelatedList .serviceContractBlock .relatedListIcon {
     position: relative;

@@ -5,7 +5,6 @@
 /* postfix:  */
 /* spritesEnabled: true */
 
-
 /*
 the premise here is to provide a sheet for the formatting of complex widgets ( motifElements,  dueling list boxes etc)
 This should contain rules that would otherwise be in common.css, but are skin independant
@@ -166,14 +165,11 @@ a.motifElement:hover {
     white-space: nowrap;
 }
 
-
 /* Mouseover info element */
 .mouseOverInfoOuter {
     position: relative;
     display: inline;
 }
-
-
 
 .mouseOverInfo{
     position: absolute;
@@ -191,7 +187,6 @@ a.motifElement:hover {
     font-weight: normal;
     color: #000;
 }
-
 
 .whatIsThisElement {
   margin-left: 0.5em;
@@ -256,7 +251,7 @@ padding:8px 8px 6px;
 }
 
 .manageableMoreInfo ul {
-	list-style-type: disc;
+    list-style-type: disc;
 }
 
 .manageableInfo img {
@@ -383,7 +378,6 @@ img.numberLabel {
     background-color: #f2f3f7
 }
 
-
 .datePicker .calDays .weekday {
     background-color: #fff;
 }
@@ -439,26 +433,26 @@ img.numberLabel {
 }
 
 .datePicker .dateBar .calLeft { background-image: url(/img/func_icons/cal/dp_left.gif);
-	background-position: 0px 0px;width:13px;
-	height:21px;
+    background-position: 0px 0px;width:13px;
+    height:21px;
     background-position: top left;
 }
 
 .datePicker .dateBar .calLeftOn { background-image: url(/img/func_icons/cal/dp_left.gif);
-	background-position: 0px 0px;width:13px;
-	height:21px;
+    background-position: 0px 0px;width:13px;
+    height:21px;
     background-position: top right;
 }
 
 .datePicker .dateBar .calRight { background-image: url(/img/func_icons/cal/dp_right.gif);
-	background-position: 0px 0px;width:13px;
-	height:21px;
+    background-position: 0px 0px;width:13px;
+    height:21px;
     background-position: top left;
 }
 
 .datePicker .dateBar .calRightOn { background-image: url(/img/func_icons/cal/dp_right.gif);
-	background-position: 0px 0px;width:13px;
-	height:21px;
+    background-position: 0px 0px;width:13px;
+    height:21px;
     background-position: top right;
 }
 /* end Date Picker */
@@ -623,7 +617,6 @@ td.highlight .colorPickerPaletteChoice {
 }
 /* end Color Input */
 
-
 #browserSettingsWarning {
     width: 400px;
     float: left;
@@ -671,7 +664,6 @@ td.highlight .colorPickerPaletteChoice {
     margin-bottom: 10px;
 }
 
-
 /* style to use for a name within a 'hightlighted' header message (see detailHeaderHighlightMsg above).  This will be, for instance, a company name or other name you would like to draw attention to */
 .detailHeaderHighlightMsgName{
     font-weight: bold;
@@ -703,27 +695,26 @@ td.highlight .colorPickerPaletteChoice {
 }
 
 .gmailIcon { background-image: url(/img/google/gmail_M_icon.gif);
-	background-position: 0px 0px;width:16px;
-	height:12px;
+    background-position: 0px 0px;width:16px;
+    height:12px;
     vertical-align: middle;
     margin-right: 0.25em;
 }
 /* End MailToElement */
 
-
 /* OverlayDialog */
 
 .dialogClose { background-image: url(/img/func_icons/util/dialogClose16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px;
+    background-position: 0px 0px;width:16px;
+    height:16px;
     float: right;
     cursor: pointer;
     background-position: top left;
 }
 
 .dialogCloseOn { background-image: url(/img/func_icons/util/dialogClose16.gif);
-	background-position: 0px 0px;width:16px;
-	height:16px;
+    background-position: 0px 0px;width:16px;
+    height:16px;
     float: right;
     cursor: pointer;
     background-position: top right;
@@ -953,22 +944,22 @@ td.highlight .colorPickerPaletteChoice {
 
 .confirmM4 .msgIcon,
 .confirmSmall { background-image: url(/img/msg_icons/confirm16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .confirmM3 .msgIcon,
 .confirmMedium { background-image: url(/img/msg_icons/confirm24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .confirmM2 .msgIcon,
 .confirmLarge { background-image: url(/img/msg_icons/confirm32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .confirmS1 .msgIcon { background-image: url(/img/msg_icons/securityconfirm48.gif);
-	background-position: 0px 0px;width:48px;
-	height:48px; }
+    background-position: 0px 0px;width:48px;
+    height:48px; }
 
 .errorM4,
 .errorM3,
@@ -979,22 +970,22 @@ td.highlight .colorPickerPaletteChoice {
 
 .errorM4 .msgIcon,
 .errorSmall { background-image: url(/img/msg_icons/error16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .errorM3 .msgIcon,
 .errorMedium { background-image: url(/img/msg_icons/error24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .errorM2 .msgIcon,
 .errorLarge { background-image: url(/img/msg_icons/error32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .errorS1 .msgIcon { background-image: url(/img/msg_icons/securityerror48.gif);
-	background-position: 0px 0px;width:48px;
-	height:48px; }
+    background-position: 0px 0px;width:48px;
+    height:48px; }
 
 .infoM4,
 .infoM3,
@@ -1005,22 +996,22 @@ td.highlight .colorPickerPaletteChoice {
 
 .infoM4 .msgIcon,
 .infoSmall { background-image: url(/img/sprites/master.png);
-	background-position: 0px -222px;width:16px;
-	height:16px; }
+    background-position: 0px -222px;width:16px;
+    height:16px; }
 
 .infoM3 .msgIcon,
 .infoMedium { background-image: url(/img/msg_icons/info24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .infoM2 .msgIcon,
 .infoLarge { background-image: url(/img/msg_icons/info32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .infoS1 .msgIcon { background-image: url(/img/msg_icons/securityinfo48.gif);
-	background-position: 0px 0px;width:48px;
-	height:48px; }
+    background-position: 0px 0px;width:48px;
+    height:48px; }
 
 .warningM4,
 .warningM3,
@@ -1031,22 +1022,22 @@ td.highlight .colorPickerPaletteChoice {
 
 .warningM4 .msgIcon,
 .warningSmall { background-image: url(/img/msg_icons/warning16.png);
-	background-position: 0px 0px;width:16px;
-	height:16px; }
+    background-position: 0px 0px;width:16px;
+    height:16px; }
 
 .warningM3 .msgIcon,
 .warningMedium { background-image: url(/img/msg_icons/warning24.png);
-	background-position: 0px 0px;width:24px;
-	height:24px; }
+    background-position: 0px 0px;width:24px;
+    height:24px; }
 
 .warningM2 .msgIcon,
 .warningLarge { background-image: url(/img/msg_icons/warning32.png);
-	background-position: 0px 0px;width:32px;
-	height:32px; }
+    background-position: 0px 0px;width:32px;
+    height:32px; }
 
 .warningS1 .msgIcon { background-image: url(/img/msg_icons/securitywarning48.gif);
-	background-position: 0px 0px;width:48px;
-	height:48px; }
+    background-position: 0px 0px;width:48px;
+    height:48px; }
 
 .bPageBlock .message {
     margin: 0 0 4px 0;
@@ -1136,8 +1127,8 @@ td.highlight .colorPickerPaletteChoice {
 
 .spanIcon {
         background-image: url(/img/func_icons/ispan12.gif);
-	background-position: 0px 0px;width:12px;
-	height:12px;
+    background-position: 0px 0px;width:12px;
+    height:12px;
         margin-left: 4px;
 }
 
@@ -1145,10 +1136,9 @@ td.highlight .colorPickerPaletteChoice {
         text-decoration: underline;
 }
 
-
 .scheduledIcon { background-image: url(/img/func_icons/schedReport34.gif);
-	background-position: 0px 0px;width:17px;
-	height:16px;
+    background-position: 0px 0px;width:17px;
+    height:16px;
     vertical-align: middle;
     margin-right: 0.25em;
     background-position: left top;
@@ -1159,8 +1149,7 @@ a.scheduleLink{
 }
 
 a.scheduleLink:hover img { background-image: url(/img/func_icons/schedReport34.gif);
-	background-position: 0px 0px;width:17px;
-	height:16px;
+    background-position: 0px 0px;width:17px;
+    height:16px;
         background-position: -17px top;
 }
-
