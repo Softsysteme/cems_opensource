@@ -10,16 +10,16 @@
  *******************************************************/
 
 $.extend(true, C8O, {
-	/**
-	 * vars variables values can be set at any time.
-	 * 
-	 * Value can be modified by code, 
-	 * for example: C8O.vars.ajax_method="GET"
-	 */
-	vars : {
-//		ajax_method : "POST", /** POST/GET : http method to request CEMS */
-//		requester_prefix : "" /** string prepend to the .xml or .cxml requester */
-	}
+    /**
+     * vars variables values can be set at any time.
+     *
+     * Value can be modified by code,
+     * for example: C8O.vars.ajax_method="GET"
+     */
+    vars : {
+//        ajax_method : "POST", /** POST/GET : http method to request CEMS */
+//        requester_prefix : "" /** string prepend to the .xml or .cxml requester */
+    }
 });
 
 /*******************************************************
@@ -37,7 +37,7 @@ $.extend(true, C8O, {
  */
 //C8O.addHook(name, fn);
 
-/** 
+/**
  *  addRecallParameter function
  *  force C8O.call() to send automatically parameters
  *  added by this function with its last value
@@ -105,13 +105,13 @@ $.extend(true, C8O, {
  *  used before AJAX request to CEMS server
  *  can tweak data before sending
  *  or perform request itself
- *  
+ *
  *  data : key/value map of parameters sent to CEMS
  *  return : true > lets weblib perform the call
  *             false > weblib doen't perform the call
  */
 //C8O.addHook("call", function (data) {
-//	return true;
+//    return true;
 //});
 
 /**
@@ -119,46 +119,46 @@ $.extend(true, C8O, {
  *  used at page loading
  *  can perform some DOM tweak
  *  or break the processing of request
- *  
+ *
  *  return : true > lets weblib perform the init
  *             false > break the processing of request
  */
 //C8O.addHook("document_ready", function () {
-//	return true;
+//    return true;
 //});
 
 /**
  *  xml_response hook
  *  used for tweak, retrieve value or do transformation
  *  using the XML response from CEMS
- *  
+ *
  *  xml : pure DOM document
  *  return : true > lets weblib perform the xml
  *             false > break the processing of xml
  */
 //C8O.addHook("xml_response", function (xml) {
-//	return true;
+//    return true;
 //});
 
 /**
  *  loading_start hook
  *  used at C8O.call calling and display a transparent mask
  *  that prevents the user to act
- *  
+ *
  *  return : true > lets weblib display the loading mask
  *             false > doesn't display anything
  */
 //C8O.addHook("loading_start", function () {
-//	return true;
+//    return true;
 //});
 
 /**
  *  loading_stop hook
  *  used after xml_response execution
- *  
+ *
  *  return : true > lets weblib hide the loading mask
  *             false > doesn't hide anything
  */
 //C8O.addHook("loading_stop", function () {
-//	return true;
+//    return true;
 //});
