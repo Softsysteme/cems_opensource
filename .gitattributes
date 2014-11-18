@@ -213,7 +213,12 @@ Studio/lib/apache/bcel/README.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/bcel-5.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-1.2.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
+Studio/lib/apache/commons/commons-io-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-lang-2.5.jar -text
+Studio/lib/apache/commons/commons-lang3-3.1.jar -text
+Studio/lib/apache/commons/commons-lang3-LICENSE.txt -text svneol=unset#text/plain
+Studio/lib/apache/commons/commons-pool-1.6.jar -text
+Studio/lib/apache/commons/commons-pool-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar -text
 Studio/lib/avalon.jar -text svneol=unset#unset
 Studio/lib/axis2-1.6.2/LICENSE.txt -text svneol=unset#text/plain
@@ -263,7 +268,7 @@ Studio/lib/axis2-1.6.2/lib/commons-fileupload-1.2.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-3.1.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/axis2-1.6.2/lib/commons-io-1.4.jar -text
+Studio/lib/axis2-1.6.2/lib/commons-io-2.2.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-io-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-logging-1.1.1.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-logging-LICENSE.txt -text svneol=unset#text/plain
