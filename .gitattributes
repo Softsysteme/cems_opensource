@@ -3622,6 +3622,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UndoAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UnloadedProjectDeleteAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesFromXMLAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/VariableGenerateFromXmlAndLinkAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/preferences/ComboFieldEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/preferences/ConvertigoPreferencePage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/preferences/EnginePreferencePage.java -text
