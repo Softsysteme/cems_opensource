@@ -3770,6 +3770,7 @@ Studio/src/com/twinsoft/convertigo/engine/MaxCvsExceededException.java -text
 Studio/src/com/twinsoft/convertigo/engine/MigrationJob.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MigrationListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MigrationManager.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/MinificationManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/MySSLSocketFactory.java -text
 Studio/src/com/twinsoft/convertigo/engine/MyX509KeyManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/NoSuchSecurityTokenException.java -text svneol=unset#text/plain
@@ -3782,7 +3783,6 @@ Studio/src/com/twinsoft/convertigo/engine/ProjectInMigrationProcessException.jav
 Studio/src/com/twinsoft/convertigo/engine/ProxyManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/PseudoCertificate.java -text
 Studio/src/com/twinsoft/convertigo/engine/RemoteAdministration.java -text
-Studio/src/com/twinsoft/convertigo/engine/ResourceCompressorManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/RsaManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityToken.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityTokenException.java -text svneol=unset#text/plain
