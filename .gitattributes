@@ -4276,6 +4276,7 @@ Studio/src/com/twinsoft/convertigo/engine/events/BaseEventListener.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/events/PropertyChangeEvent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/events/PropertyChangeEventListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/DomainsFilterHelper.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/helpers/HibernateHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/ScreenClassHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/WalkHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration001.java -text svneol=unset#text/plain
