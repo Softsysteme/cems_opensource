@@ -4434,6 +4434,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/Tuple.java -text svneol=unset#tex
 Studio/src/com/twinsoft/convertigo/engine/util/TwsCachedXPathAPI.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/URLUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/URLrewriter.java -text
+Studio/src/com/twinsoft/convertigo/engine/util/UuidUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/VersionUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/WSDLUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/WsReference.java -text svneol=unset#text/plain
