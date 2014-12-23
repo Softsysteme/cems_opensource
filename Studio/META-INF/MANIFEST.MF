@@ -32,6 +32,7 @@ Bundle-ClassPath: bin/,
  lib/apache/commons/commons-lang-2.5.jar,
  lib/apache/commons/commons-fileupload-1.2.2.jar,
  lib/apache/commons/commons-io-2.2.jar,
+ lib/apache/commons/commons-codec-1.6.jar,
  lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar,
  lib/xerces-2_11_0/xercesImpl.jar,
  lib/xerces-2_11_0/xml-apis.jar,
@@ -117,8 +118,6 @@ Bundle-ClassPath: bin/,
  lib/axis2-1.6.2/lib/axis2-xmlbeans-1.6.2.jar,
  lib/axis2-1.6.2/lib/bcel-5.1.jar,
  lib/axis2-1.6.2/lib/commons-cli-1.2.jar,
- lib/axis2-1.6.2/lib/commons-codec-1.3.jar,
- lib/axis2-1.6.2/lib/commons-fileupload-1.2.jar,
  lib/axis2-1.6.2/lib/commons-httpclient-3.1.jar,
  lib/axis2-1.6.2/lib/commons-logging-1.1.1.jar,
  lib/axis2-1.6.2/lib/geronimo-annotation_1.0_spec-1.1.jar,
@@ -164,7 +163,8 @@ Bundle-ClassPath: bin/,
  lib/jco/sapjco3.jar,
  lib/engine-sapjcoprovider.jar,
  lib/slf4j-api-1.7.7.jar,
- lib/slf4j-simple-1.7.7.jar
+ lib/slf4j-simple-1.7.7.jar,
+ lib/httpclientAuthHelper.jar
 Bundle-Activator: com.twinsoft.convertigo.eclipse.ConvertigoPlugin
 Bundle-Vendor: Convertigo
 Export-Package: org.mozilla.xpcom

@@ -222,6 +222,8 @@ Studio/lib/apache/bcel/LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/NOTICE.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/README.txt -text svneol=unset#text/plain
 Studio/lib/apache/bcel/bcel-5.2.jar -text
+Studio/lib/apache/commons/commons-codec-1.6.jar -text
+Studio/lib/apache/commons/commons-codec-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-fileupload-1.2.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-io-2.2.jar -text
@@ -273,10 +275,6 @@ Studio/lib/axis2-1.6.2/lib/bcel-5.1.jar -text
 Studio/lib/axis2-1.6.2/lib/bcel-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-cli-1.2.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-cli-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/axis2-1.6.2/lib/commons-codec-1.3.jar -text
-Studio/lib/axis2-1.6.2/lib/commons-codec-LICENSE.txt -text svneol=unset#text/plain
-Studio/lib/axis2-1.6.2/lib/commons-fileupload-1.2.jar -text
-Studio/lib/axis2-1.6.2/lib/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-3.1.jar -text
 Studio/lib/axis2-1.6.2/lib/commons-httpclient-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/axis2-1.6.2/lib/commons-logging-1.1.1.jar -text
@@ -369,6 +367,7 @@ Studio/lib/hibernate/jboss-logging-3.1.3.GA.jar -text
 Studio/lib/hibernate/jboss-logging-annotations-1.2.0.Beta1.jar -text
 Studio/lib/hibernate/jboss-transaction-api_1.2_spec-1.0.0.Final.jar -text
 Studio/lib/hsqldb.jar -text
+Studio/lib/httpclientAuthHelper.jar -text
 Studio/lib/internal/api-v37919.jar -text
 Studio/lib/internal/aviva-111114.jar -text
 Studio/lib/internal/bull-v24323.jar -text
@@ -4918,6 +4917,43 @@ Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=u
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/cosinus.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/css/images/ajax-loader.gif -text
+Studio/tomcat/webapps/convertigo/cosinus/css/jquery.mobile-1.4.4.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/images/bg-blanc-contenu.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-contenu.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-rubrique.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-rubrique2.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/cems.jpg -text
+Studio/tomcat/webapps/convertigo/cosinus/images/code_swarm.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/convertigo.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/dreamface.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/header.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/logo-convertigo.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/logo-dreamface.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/logo-pobi.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/logo-twinsoft.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/nav.jpg -text
+Studio/tomcat/webapps/convertigo/cosinus/images/oldconvertigo.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/picto-data.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/picto-load.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/picto-memory.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/picto-root.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/picto-video.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/pobi.jpg -text
+Studio/tomcat/webapps/convertigo/cosinus/images/puce.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/reload.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/stop.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/top-bg-blanc-contenu.png -text
+Studio/tomcat/webapps/convertigo/cosinus/images/twinsoft.jpg -text
+Studio/tomcat/webapps/convertigo/cosinus/index.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/index.jsp -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.min.map -text
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.min.map -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/c8o.desktop.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons18black.png -text
@@ -4980,6 +5016,9 @@ Studio/tomcat/webapps/convertigo/dtd/xhtml-special.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml-symbol.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml1-strict.dtd -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml1-transitional.dtd -text
+Studio/tomcat/webapps/convertigo/exec.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/exec.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/exec.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/favicon.ico -text
 Studio/tomcat/webapps/convertigo/images/BtnUp_Aide.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_Annul.gif -text svneol=unset#unset
