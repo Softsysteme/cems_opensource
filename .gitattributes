@@ -4917,43 +4917,6 @@ Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=u
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/cosinus.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/css/images/ajax-loader.gif -text
-Studio/tomcat/webapps/convertigo/cosinus/css/jquery.mobile-1.4.4.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/images/bg-blanc-contenu.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-contenu.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-rubrique.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/bg-gris-rubrique2.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/cems.jpg -text
-Studio/tomcat/webapps/convertigo/cosinus/images/code_swarm.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/convertigo.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/dreamface.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/header.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/logo-convertigo.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/logo-dreamface.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/logo-pobi.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/logo-twinsoft.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/nav.jpg -text
-Studio/tomcat/webapps/convertigo/cosinus/images/oldconvertigo.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/picto-data.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/picto-load.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/picto-memory.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/picto-root.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/picto-video.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/pobi.jpg -text
-Studio/tomcat/webapps/convertigo/cosinus/images/puce.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/reload.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/stop.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/top-bg-blanc-contenu.png -text
-Studio/tomcat/webapps/convertigo/cosinus/images/twinsoft.jpg -text
-Studio/tomcat/webapps/convertigo/cosinus/index.html -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/index.jsp -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.min.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery-2.1.1.min.map -text
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.min.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/cosinus/scripts/jquery.mobile-1.4.4.min.map -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/c8o.desktop.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/ajaxloader.gif -text
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/icons18black.png -text
