@@ -1988,6 +1988,8 @@ Studio/src/com/twinsoft/convertigo/beans/common/res/XPath.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/CicsConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/CicsConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/ConnectionException.java -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/CouchDbConnector.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/connectors/CouchDbConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/HtmlConnector.java -text
@@ -2007,6 +2009,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/SqlConnectorBeanInfo.java -t
 Studio/src/com/twinsoft/convertigo/beans/connectors/SqlData.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/couchdbconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/couchdbconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_16x16.png -text
@@ -2022,6 +2026,7 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/images/siteclipperconnector_
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/CicsConnector.properties -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/res/CouchDbConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/ExternalBrowserConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HtmlConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HttpConnector.properties -text
@@ -3143,8 +3148,83 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/SqlTransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/XmlHttpTransaction.java -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/XmlHttpTransactionBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractCouchDbTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractCouchDbTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDatabaseTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractServerTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractServerTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AddDocumentAttachmentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AddDocumentAttachmentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/BulkDocumentsTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/BulkDocumentsTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CouchDbParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDatabaseTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDesignDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDesignDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDatabaseTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ExistDatabaseTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ExistDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ExistDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ExistDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDatabaseInfoTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDatabaseInfoTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDocumentAttachmentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDocumentAttachmentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerConfigTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerConfigTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerDatabasesTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerDatabasesTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerInfoTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerInfoTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerLogTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerLogTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerStatsTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerStatsTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerTasksTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerTasksTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerUpdatesTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerUpdatesTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerUuidsTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetServerUuidsTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetUserInfoTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/GetUserInfoTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/LogonUserTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/LogonUserTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/LogoutUserTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/LogoutUserTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/QueryViewTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/QueryViewTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RemoveDocumentAttachmentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RemoveDocumentAttachmentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RemoveServerConfigTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RemoveServerConfigTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ReplicateDatabaseTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/ReplicateDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RestartServerTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/RestartServerTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/SetServerConfigTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/SetServerConfigTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/UpdateDocumentTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/UpdateDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/cicstransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/cicstransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/customtransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/customtransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/databasetransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/databasetransaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/servertransaction_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/images/couchdb/servertransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/htmltransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/htmltransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/images/httptransaction_color_16x16.png -text
@@ -3177,6 +3257,40 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/SapTransaction.propert
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SiteClipperTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/SqlTransaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/XmlHttpTransaction.properties -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/AbstractCouchDbTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/AbstractDatabaseTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/AbstractDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/AbstractServerTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/AddDocumentAttachmentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/BulkDocumentsTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDatabaseTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDesignDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/DeleteDatabaseTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/DeleteDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/ExistDatabaseTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/ExistDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetDatabaseInfoTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetDocumentAttachmentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerConfigTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerDatabasesTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerInfoTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerLogTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerStatsTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerTasksTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerUpdatesTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetServerUuidsTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/GetUserInfoTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/LogonUserTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/LogoutUserTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/QueryViewTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/RemoveDocumentAttachmentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/RemoveServerConfigTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/ReplicateDatabaseTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/RestartServerTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/SetServerConfigTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/UpdateDocumentTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementMultiValuedVariable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementMultiValuedVariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/variables/HttpStatementVariable.java -text svneol=unset#text/plain
@@ -3347,6 +3461,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/CicsConnectorCompos
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ConnectorEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ConnectorEditorInput.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ConnectorEditorPart.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/CouchDbConnectorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/EventStatementGenerator.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/ExternalBrowserConnectorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/HtmlConnectorDesignComposite.java -text

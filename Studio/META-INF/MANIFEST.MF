@@ -164,6 +164,8 @@ Bundle-ClassPath: bin/,
  lib/engine-sapjcoprovider.jar,
  lib/slf4j-api-1.7.7.jar,
  lib/slf4j-simple-1.7.7.jar,
+ lib/engine-couchdbprovider.jar,
+ lib/gson-2.2.4.jar,
  lib/httpclientAuthHelper.jar
 Bundle-Activator: com.twinsoft.convertigo.eclipse.ConvertigoPlugin
 Bundle-Vendor: Convertigo
