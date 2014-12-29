@@ -5551,6 +5551,7 @@ Studio/tomcat/webapps/convertigo/templates/xsl/GenerateForm.xsl -text svneol=uns
 Studio/tomcat/webapps/convertigo/templates/xsl/html40.xsl -text
 Studio/tomcat/webapps/convertigo/templates/xsl/html40_pda.xsl -text
 Studio/tomcat/webapps/convertigo/templates/xsl/wml11.xsl -text
+Studio/tomcat/webapps/convertigo/xsd/couchdb/CouchDb.xsd -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/xsl/choice.xsl -text
 Studio/tomcat/webapps/convertigo/xsl/convertigo.dtd -text
 Studio/tomcat/webapps/convertigo/xsl/customsheet.xsl -text svneol=unset#text/plain
