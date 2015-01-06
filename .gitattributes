@@ -3167,6 +3167,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDesignDocume
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDesignDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDocumentTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CreateDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CustomTransaction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CustomTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDatabaseTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDocumentTransaction.java -text svneol=unset#text/plain
@@ -3266,6 +3268,7 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/BulkDocumentsT
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDatabaseTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDesignDocumentTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CreateDocumentTransaction.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/CustomTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/DeleteDatabaseTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/DeleteDocumentTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/res/couchdb/ExistDatabaseTransaction.properties -text svneol=unset#text/plain
