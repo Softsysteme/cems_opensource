@@ -358,7 +358,7 @@ Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/gcm/gcm-server.jar -text
 Studio/lib/gcm/json_simple-1.1.jar -text
 Studio/lib/gcm/mockito-all-1.8.5.jar -text
-Studio/lib/gson-2.2.4.jar -text
+Studio/lib/gson-2.3.1.jar -text
 Studio/lib/hibernate/antlr-2.7.7.jar -text
 Studio/lib/hibernate/hibernate-commons-annotations-4.0.4.Final.jar -text
 Studio/lib/hibernate/hibernate-core-4.3.1.Final.jar -text
