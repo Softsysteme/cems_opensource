@@ -1,0 +1,1 @@
+vulcanize --inline --config vulcanize.json -o app.html main.html

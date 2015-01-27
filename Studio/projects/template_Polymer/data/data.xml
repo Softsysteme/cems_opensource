@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <element>
+      <avatar>img/avatar-01.svg</avatar>
+      <favorite>false</favorite>
+      <text>Have you heard about the Web Components revolution?</text>
+      <uid>1</uid>
+      <username>Eric</username>
+   </element>
+   <element>
+      <avatar>img/avatar-02.svg</avatar>
+      <favorite>false</favorite>
+      <text>Loving this Polymer thing.</text>
+      <uid>2</uid>
+      <username>Rob</username>
+   </element>
+   <element>
+      <avatar>img/avatar-03.svg</avatar>
+      <favorite>false</favorite>
+      <text>So last year...</text>
+      <uid>3</uid>
+      <username>Dimitri</username>
+   </element>
+   <element>
+      <avatar>img/avatar-07.svg</avatar>
+      <favorite>false</favorite>
+      <text>Pretty sure I came up with that first.</text>
+      <uid>4</uid>
+      <username>Ada</username>
+   </element>
+   <element>
+      <avatar>img/avatar-08.svg</avatar>
+      <favorite>false</favorite>
+      <text>Yo, I heard you like components, so I put a component in your component.</text>
+      <uid>5</uid>
+      <username>Grace</username>
+   </element>
+   <element>
+      <avatar>img/avatar-04.svg</avatar>
+      <favorite>false</favorite>
+      <text>Centralize, centrailize.</text>
+      <uid>6</uid>
+      <username>John</username>
+   </element>
+   <element>
+      <avatar>img/avatar-06.svg</avatar>
+      <favorite>false</favorite>
+      <text>Has anyone seen my cat?</text>
+      <uid>7</uid>
+      <username>Zelda</username>
+   </element>
+   <element>
+      <avatar>img/avatar-05.svg</avatar>
+      <favorite>false</favorite>
+      <text>Decentralize!</text>
+      <uid>8</uid>
+      <username>Norbert</username>
+   </element>
+</root>

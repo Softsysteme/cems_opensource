@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+	<title>MyApp</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<!-- Scripts inclusions -->
+        <!--
+        	PhoneGap JS library
+        	===================
+        	To use some phonegap/cordova APIs (GPS, Sensors, Camera, Etc..)
+        -->
+        <script src="cordova.js" type="text/javascript"></script>
+        <!--
+        	jQuery library (2.x)
+        	==============
+        	Convertigo mobile apps are based on JQuery. the following links will reference the current jQuery
+        	library.
+        -->
+		<script src="../../../../scripts/jquery2.min.js" type="text/javascript"></script>
+        <!--
+        	Convertigo JS library
+        	===================
+        	To use Convertigo Server services
+        -->
+		<script src="../../../../scripts/c8o.core.js"    type="text/javascript"></script> 
+		<script src="../../../../scripts/c8o.cordova.device.js"  type="text/javascript"></script>
+		<script src="js/custom.js" type="text/javascript"></script>        
+        
+		<script src="../../../lib_Polymer/bower_components/webcomponentsjs/webcomponents.js"></script>
+		<link rel="import" href="../../../lib_Polymer/bower_components/font-roboto/roboto.html">
+		<link rel="import" href="../../../lib_Polymer/bower_components/core-header-panel/core-header-panel.html">
+		<link rel="import" href="../../../lib_Polymer/bower_components/core-toolbar/core-toolbar.html">
+		<link rel="import" href="../../../lib_Polymer/bower_components/paper-tabs/paper-tabs.html">
+		<link rel="import" href="post-list.html">
+		
+		<link href="css/custom.css" rel="stylesheet">		
+	</head>
+	
+	<body unresolved>
+		<core-header-panel>
+		  	<core-toolbar>
+		  		<paper-tabs id="tabs" selected="all" self-end>
+	  		   		<paper-tab name="all">All</paper-tab>
+	    			<paper-tab name="favorites">Favorites</paper-tab>
+  				</paper-tabs>
+		  	</core-toolbar>
+		
+		  	<!-- main page content will go here -->
+			<div class="container" layout vertical center>
+				<h2>This is sample demo</h2>
+
+  				<post-list show="all">
+  				</post-list>
+  	
+  			</div>
+  		
+		</core-header-panel>
+		
+		<script>
+			var tabs = document.querySelector('paper-tabs');
+			tabs.addEventListener('core-select', function() {
+				console.log("Selected: " + tabs.selected);
+			});
+		</script>
+	</body>
+	
+</html>

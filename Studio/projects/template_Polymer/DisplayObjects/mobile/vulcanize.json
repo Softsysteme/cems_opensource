@@ -1,0 +1,5 @@
+{
+  "excludes": {
+    "scripts": [ "cordova.js", "jquery2.min.js", "c8o.core.js", "c8o.cordova.device.js"]
+  }
+}

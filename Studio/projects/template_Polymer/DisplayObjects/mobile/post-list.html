@@ -1,0 +1,38 @@
+<link rel="import" href="../../../lib_Polymer/bower_components/polymer/polymer.html">
+<link rel="import" href="../../../lib_Polymer/c8o_components/c8o-service.html">
+<link rel="import" href="post-card.html">
+
+<polymer-element name="post-list" attributes="show">
+  <template>
+    <style>
+    :host {
+      display: block;
+      width: 100%;
+    }
+    post-card {
+      margin-bottom: 30px;
+    }
+    </style>
+
+    <c8o-service id="service" rdata="{{mydata}}"></c8o-service>
+    
+    <div layout vertical center>
+      <template repeat="{{element in mydata.document.element}}">
+        <post-card>
+          <img src="{{element.avatar}}" width="70" height="70">
+          <h2>{{element.username}}</h2>
+          <p>{{element.text}}</p>
+        </post-card>
+      </template>
+      
+    </div>
+  </template>
+  <script>
+	  Polymer('post-list', {
+		ready: function() {
+			C8O.log.debug("post-list ready");
+			this.$.service.call(".listPosts");
+		}
+	  });
+  </script>
+</polymer-element>
