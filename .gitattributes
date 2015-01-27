@@ -965,6 +965,1235 @@ Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV1Connector/RetreiveRequestToken
 Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/DefaultTransaction.xsd -text
 Studio/projects/lib_OAuth/xsd/internal/lib_OAuthV2Connector/GetBearerToken.xsd -text
 Studio/projects/lib_OAuth/xsd/lib_OAuth.xsd -text
+Studio/projects/lib_Polymer/.project -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower.json -text
+Studio/projects/lib_Polymer/bower_components/context-free-parser/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/context-free-parser/README.md -text
+Studio/projects/lib_Polymer/bower_components/context-free-parser/bower.json -text
+Studio/projects/lib_Polymer/bower_components/context-free-parser/context-free-parser.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/context-free-parser/context-free-parser.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/context-free-parser/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/context-free-parser/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/context-free-parser/package.json -text
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/core-a11y-keys.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-a11y-keys/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-ajax/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-ajax/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-ajax/core-ajax.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/core-xhr.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/demo-progress.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/test/core-ajax-progress.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/test/core-ajax-race.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/test/core-ajax.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-ajax/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/core-animated-pages.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/core-animated-pages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/grid.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/music.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/nested-animated-pages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/nested.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/news.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/quiz1-intro.png -text
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/quiz1.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/shadow.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/demos/simple.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/cascade-transition.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/core-transition-pages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/cross-fade.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/hero-transition.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/hero-transition.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/list-cascade.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/scale-up.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/slide-down.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/slide-from-bottom.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/slide-from-right.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/slide-up.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animated-pages/transitions/tile-cascade.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-animation/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-animation/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-animation/core-animation-group.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/core-animation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-animation/web-animations.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-collapse/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-collapse/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-collapse/core-collapse.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/core-collapse.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-collapse/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-component-page/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-component-page/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-component-page/bowager-logo.png -text
+Studio/projects/lib_Polymer/bower_components/core-component-page/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-component-page/core-component-page.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-component-page/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-component-page/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/core-doc-viewer.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/elements/core-doc-page.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/elements/core-doc-page.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/elements/core-doc-toc.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/elements/core-doc-toc.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-doc-viewer/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-docs/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-docs/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-docs/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-docs/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drag-drop/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-drag-drop/core-drag-drop.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drag-drop/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drag-drop/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/core-drawer-panel.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/core-drawer-panel.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-drawer-panel/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/core-dropdown-menu.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/test/a11y.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown-menu/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-dropdown/core-dropdown-base.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/core-dropdown.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-dropdown/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-elements/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-elements/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-elements/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-elements/core-elements.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-elements/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-elements/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-elements/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-field/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-field/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-field/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-field/core-field.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-field/core-field.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-field/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-field/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-field/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-focusable/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-focusable/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-focusable/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-focusable/core-focusable.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-focusable/core-focusable.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-focusable/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-focusable/polymer-mixin.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-header-panel/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-header-panel/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-header-panel/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-header-panel/core-header-panel.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-header-panel/core-header-panel.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-header-panel/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-header-panel/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-header-panel/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icon-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-icon-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icon-button/core-icon-button.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon-button/core-icon-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icon/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-icon/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icon/core-icon.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon/core-icon.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icon/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icons/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-icons/av-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-icons/communication-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/core-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/device-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/editor-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/hardware-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/image-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/maps-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/notification-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-icons/social-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/core-iconset-svg.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset-svg/svg-sample-icons.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-iconset/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-iconset/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-iconset/core-iconset.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-iconset/my-icons-big.png -text
+Studio/projects/lib_Polymer/bower_components/core-iconset/my-icons.png -text
+Studio/projects/lib_Polymer/bower_components/core-image/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-image/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-image/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-image/core-image.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-image/core-image.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-image/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-image/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-image/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-input/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-input/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-input/core-input.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/core-input.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/test/a11y.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-input/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-item/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-item/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-item/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-item/core-item.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-item/core-item.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-item/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-item/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-item/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-label/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-label/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-label/core-label.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-label/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-label/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/core-layout-grid.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-grid/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/core-layout-trbl.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/core-slide.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-layout-trbl/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/.bowerrc -text
+Studio/projects/lib_Polymer/bower_components/core-list/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-list/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/core-list.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/core-list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data-500.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data-grouped-flat-short.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data-grouped-short.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data-groups-short.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data-short.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-data.json -text
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-debug-grid.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-debug.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-flickr-grid-grouped.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-flickr-grid.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-flickr-responsive.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-flickr.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-grid-grouped.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-grid.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-messages-shp.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-messages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-pages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-resize.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-splitter.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/demos/demo-variable.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/images/0.png -text
+Studio/projects/lib_Polymer/bower_components/core-list/images/1.png -text
+Studio/projects/lib_Polymer/bower_components/core-list/images/2.png -text
+Studio/projects/lib_Polymer/bower_components/core-list/images/3.png -text
+Studio/projects/lib_Polymer/bower_components/core-list/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/test/core-list-basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/test/core-list-data.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/test/core-list-selection.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-list/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-localstorage/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-localstorage/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-localstorage/core-localstorage.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/test/raw.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-localstorage/test/value-binding.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-media-query/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-media-query/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-media-query/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-media-query/core-media-query.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-media-query/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-media-query/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-menu-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-menu-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-menu-button/core-menu-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu-button/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-menu/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-menu/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-menu/core-menu.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/core-menu.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/core-submenu.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/core-submenu.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-menu/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-meta/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-meta/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-meta/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-meta/core-meta.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-meta/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-meta/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-overlay/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-overlay/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-overlay/core-key-helper.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/core-overlay-layer.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/core-overlay.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/gulpfile.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/html/core-overlay-basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/html/core-overlay-positioning-margin.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/html/core-overlay-positioning.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/html/core-overlay-quick-close.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/html/core-overlay-scroll.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/js/htmltests.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/runner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-overlay/tests/tests.json -text
+Studio/projects/lib_Polymer/bower_components/core-pages/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-pages/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-pages/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-pages/core-pages.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-pages/core-pages.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-pages/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-pages/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-pages/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-range/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-range/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-range/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-range/core-range.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-range/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-range/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-range/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-range/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-resizable/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-resizable/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-resizable/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-resizable/core-resizable.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-resizable/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-resizable/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-resizable/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-resizable/test/test-elements.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scaffold/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scaffold/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-scaffold/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scaffold/core-scaffold.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scaffold/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scaffold/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scaffold/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/core-scroll-header-panel.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/core-scroll-header-panel.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo1.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo2.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo3.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo4.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo5.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo6.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo7.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo8.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/demo9.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/images/bg2.jpg -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/images/bg3.jpg -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/images/bg5.jpg -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/images/bg6.jpg -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/images/bg9.jpg -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/lorem-ipsum.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/demos/sample-content.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-header-panel/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/core-scroll-threshold.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-scroll-threshold/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-selection/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-selection/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-selection/core-selection.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selection/test/multi.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-selector/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-selector/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-selector/core-selector.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/activate-event.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/content.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/multi.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/next-previous.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/selected-attr-prop.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-selector/test/template-repeat.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/core-shared-lib.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/tests/html/core-shared-lib.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/tests/js/htmltests.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/tests/runner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-shared-lib/tests/tests.json -text
+Studio/projects/lib_Polymer/bower_components/core-signals/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-signals/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-signals/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-signals/core-signals.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-signals/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-signals/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-splitter/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-splitter/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-splitter/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-splitter/core-splitter.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-splitter/core-splitter.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-splitter/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-splitter/handle-h.svg -text
+Studio/projects/lib_Polymer/bower_components/core-splitter/handle.svg -text
+Studio/projects/lib_Polymer/bower_components/core-splitter/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-style/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-style/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-style/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-style/core-style.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-style/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-style/elements.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-style/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-style/my-theme.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-tests/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-tests/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-tests/runner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-ajax.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-collapse.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-localstorage.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-selection-multi.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-selection.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-selector-activate-event.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-selector-basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-selector-multi.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/core-shared-lib.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tests/tests/tests.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-toolbar/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-toolbar/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-toolbar/core-toolbar.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/core-toolbar.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-toolbar/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tooltip/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-tooltip/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-tooltip/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-tooltip/core-tooltip.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tooltip/core-tooltip.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tooltip/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tooltip/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-tooltip/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-transition/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-transition/README.md -text
+Studio/projects/lib_Polymer/bower_components/core-transition/bower.json -text
+Studio/projects/lib_Polymer/bower_components/core-transition/core-transition-css.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-transition/core-transition-overlay.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-transition/core-transition.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-transition/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/core-transition/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/font-roboto/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/font-roboto/roboto.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/CHANGES.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/COPYING -text
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/README-zh-Hans.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/README.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/README.md -text
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/bin/prettify.min.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/bin/prettify.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/bin/run_prettify.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/bower.json -text
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/examples/quine.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-apollo.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-basic.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-clj.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-css.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-dart.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-erlang.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-go.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-hs.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-lisp.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-llvm.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-lua.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-matlab.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-ml.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-mumps.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-n.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-pascal.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-proto.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-r.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-rd.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-scala.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-sql.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-tcl.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-tex.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-vb.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-vhdl.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-wiki.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-xq.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/lang-yaml.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/prettify.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/prettify.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/src/run_prettify.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/desert.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/doxy.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/sons-of-obsidian.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/google-code-prettify/styles/sunburst.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked-element/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/marked-element/README.md -text
+Studio/projects/lib_Polymer/bower_components/marked-element/bower.json -text
+Studio/projects/lib_Polymer/bower_components/marked-element/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked-element/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked-element/marked-element.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked-element/marked-import.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/marked/.npmignore -text
+Studio/projects/lib_Polymer/bower_components/marked/.travis.yml -text
+Studio/projects/lib_Polymer/bower_components/marked/LICENSE -text
+Studio/projects/lib_Polymer/bower_components/marked/Makefile -text
+Studio/projects/lib_Polymer/bower_components/marked/README.md -text
+Studio/projects/lib_Polymer/bower_components/marked/bin/marked -text
+Studio/projects/lib_Polymer/bower_components/marked/component.json -text
+Studio/projects/lib_Polymer/bower_components/marked/doc/broken.md -text
+Studio/projects/lib_Polymer/bower_components/marked/doc/todo.md -text
+Studio/projects/lib_Polymer/bower_components/marked/index.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/lib/marked.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/man/marked.1 -text
+Studio/projects/lib_Polymer/bower_components/marked/package.json -text
+Studio/projects/lib_Polymer/bower_components/marked/test/README -text
+Studio/projects/lib_Polymer/bower_components/marked/test/browser/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/browser/index.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/browser/test.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/index.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/autolink_lines.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/autolink_lines.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/blockquote_list_item.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/blockquote_list_item.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/case_insensitive_refs.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/case_insensitive_refs.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/def_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/def_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/double_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/double_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/escaped_angles.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/escaped_angles.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_break.breaks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_break.breaks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_code.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_code.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_code_hr_list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_code_hr_list.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_del.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_del.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_em.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_em.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_links.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_links.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_tables.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/gfm_tables.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/hr_list_break.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/hr_list_break.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/lazy_blockquotes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/lazy_blockquotes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/list_item_text.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/list_item_text.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/loose_lists.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/loose_lists.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/main.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/main.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_code.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_code.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_em.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_em.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_square_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/nested_square_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/not_a_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/not_a_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/ref_paren.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/ref_paren.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/same_bullet.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/same_bullet.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/text.smartypants.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/text.smartypants.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/toplevel_paragraphs.gfm.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/toplevel_paragraphs.gfm.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/new/tricky_list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/new/tricky_list.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/amps_and_angles_encoding.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/amps_and_angles_encoding.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/auto_links.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/auto_links.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/backslash_escapes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/backslash_escapes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/blockquotes_with_code_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/blockquotes_with_code_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/code_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/code_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/code_spans.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/code_spans.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/hard_wrapped_paragraphs_with_list_like_lines.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/hard_wrapped_paragraphs_with_list_like_lines.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/horizontal_rules.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/horizontal_rules.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_advanced.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_advanced.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_comments.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_comments.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_simple.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/inline_html_simple.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_inline_style.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_inline_style.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_reference_style.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_reference_style.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_shortcut_references.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/links_shortcut_references.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/literal_quotes_in_titles.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/literal_quotes_in_titles.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/markdown_documentation_basics.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/markdown_documentation_basics.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/markdown_documentation_syntax.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/markdown_documentation_syntax.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/nested_blockquotes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/nested_blockquotes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/ordered_and_unordered_lists.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/ordered_and_unordered_lists.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/strong_and_em_together.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/strong_and_em_together.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/tabs.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/tabs.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/original/tidyness.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/original/tidyness.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/amps_and_angles_encoding.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/amps_and_angles_encoding.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/auto_links.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/auto_links.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/autolink_lines.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/autolink_lines.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/backslash_escapes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/backslash_escapes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/blockquote_list_item.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/blockquote_list_item.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/blockquotes_with_code_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/blockquotes_with_code_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/case_insensitive_refs.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/case_insensitive_refs.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/code_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/code_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/code_spans.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/code_spans.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/def_blocks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/def_blocks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/double_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/double_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/escaped_angles.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/escaped_angles.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_break.breaks.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_break.breaks.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_code.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_code.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_code_hr_list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_code_hr_list.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_del.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_del.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_em.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_em.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_links.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_links.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_tables.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/gfm_tables.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/hard_wrapped_paragraphs_with_list_like_lines.nogfm.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/hard_wrapped_paragraphs_with_list_like_lines.nogfm.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/horizontal_rules.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/horizontal_rules.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/hr_list_break.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/hr_list_break.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_advanced.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_advanced.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_comments.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_comments.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_simple.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/inline_html_simple.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/lazy_blockquotes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/lazy_blockquotes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_inline_style.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_inline_style.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_reference_style.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_reference_style.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_shortcut_references.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/links_shortcut_references.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/list_item_text.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/list_item_text.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/literal_quotes_in_titles.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/literal_quotes_in_titles.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/loose_lists.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/loose_lists.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/main.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/main.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/markdown_documentation_basics.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/markdown_documentation_basics.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/markdown_documentation_syntax.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/markdown_documentation_syntax.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_blockquotes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_blockquotes.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_code.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_code.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_em.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_em.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_square_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/nested_square_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/not_a_link.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/not_a_link.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/ordered_and_unordered_lists.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/ordered_and_unordered_lists.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/ref_paren.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/ref_paren.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/same_bullet.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/same_bullet.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/strong_and_em_together.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/strong_and_em_together.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tabs.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tabs.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/text.smartypants.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/text.smartypants.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tidyness.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tidyness.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/toplevel_paragraphs.gfm.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/toplevel_paragraphs.gfm.text -text
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tricky_list.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/marked/test/tests/tricky_list.text -text
+Studio/projects/lib_Polymer/bower_components/paper-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/paper-button-base.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/paper-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-button/test/paper-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/paper-checkbox.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-checkbox/paper-checkbox.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dialog/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-dialog/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dialog/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/paper-action-dialog.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/paper-dialog-base.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/paper-dialog-transition.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/paper-dialog-transition.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/paper-dialog.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dialog/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/paper-dropdown-menu.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/paper-dropdown-menu.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown-menu/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/paper-dropdown-transition.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/paper-dropdown-transition.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-dropdown/paper-dropdown.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-elements/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-elements/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-elements/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-elements/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-elements/demos/core-toolbar.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-elements/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-elements/paper-elements.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-fab/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-fab/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-fab/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/paper-fab.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/test/a11y.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-fab/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/paper-icon-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/test/a11y.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-icon-button/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-input/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-input/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-input/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/paper-autogrow-textarea.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/paper-input-decorator.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/paper-input-decorator.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/paper-input.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/test/paper-autogrow-textarea.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/test/paper-input-decorator.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/test/paper-input.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-input/test/util.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-item/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-item/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-item/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-item/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-item/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-item/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-item/paper-item.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/paper-menu-button.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-menu-button/paper-menu-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-progress/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-progress/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-progress/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-progress/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-progress/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-progress/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-progress/paper-progress.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-progress/paper-progress.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/paper-radio-button.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-button/paper-radio-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-radio-group/paper-radio-group.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-ripple/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-ripple/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-ripple/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/paper-ripple.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-ripple/test/position.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-shadow/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-shadow/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-shadow/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/paper-shadow.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/paper-shadow.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/test/basic.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-shadow/test/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-slider/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-slider/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-slider/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-slider/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-slider/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-slider/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-slider/paper-slider.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-slider/paper-slider.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-spinner/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-spinner/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-spinner/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-spinner/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-spinner/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-spinner/paper-spinner.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-spinner/paper-spinner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-tabs/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-tabs/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-tabs/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/paper-tab.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/paper-tab.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/paper-tabs.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-tabs/paper-tabs.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toast/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-toast/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-toast/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-toast/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toast/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toast/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toast/paper-toast.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toast/paper-toast.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/README.md -text
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/bower.json -text
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/metadata.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/paper-toggle-button.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/paper-toggle-button/paper-toggle-button.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/README.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/CONTRIBUTING.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/History.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/README.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/ReleaseNotes.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/chai.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/component.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/karma.conf.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/karma.sauce.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/package.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/chai/sauce.browsers.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/ci-support.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/htmltest.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/karma-common.conf.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha-htmltest.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/History.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/LICENSE -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/Readme.md -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/media/logo.svg -text
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/mocha.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/mocha/mocha.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer-test-tools/tools.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer/README.md -text
+Studio/projects/lib_Polymer/bower_components/polymer/bower.json -text
+Studio/projects/lib_Polymer/bower_components/polymer/layout.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer/polymer.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer/polymer.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/polymer/polymer.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/prettify-element/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/prettify-element/README.md -text
+Studio/projects/lib_Polymer/bower_components/prettify-element/bower.json -text
+Studio/projects/lib_Polymer/bower_components/prettify-element/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/prettify-element/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/prettify-element/prettify-element.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/prettify-element/prettify-import.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/README.md -text
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/bower.json -text
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demo.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demos/checkbox.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demos/color.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demos/radio.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demos/range.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/demos/string.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/sampler-scaffold.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/sampler-scaffold/sampler-scaffold.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/.travis-setup.sh -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/.travis.yml -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/COPYING -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/Gruntfile.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/History.md -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/README.md -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/node_modules/chai/chai.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/node_modules/mocha/LICENSE -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/node_modules/mocha/mocha.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/node_modules/mocha/mocha.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/package.json -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/animation-constructor.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/animation-node.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/animation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/apply-preserving-inline-style.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/apply.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/box-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/color-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/deprecation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/dev.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/dimension-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/effect-callback.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/effect.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/element-animatable.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/font-weight-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/group-constructors.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/handler-utils.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/matrix-decomposition.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/matrix-interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/normalize-keyframes.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/number-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/player.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/position-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/property-interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/property-names.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/scope.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/shadow-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/shape-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/tick.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/timeline.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/timing-utilities.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/transform-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/visibility-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/src/web-animations-next-player.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/target-config.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/target-loader.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/templates/boilerplate -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/templates/runner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/templates/web-animations.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/templates/web-animations.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/2-keyframes-with-offsets.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/3-keyframes-with-offsets.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/add-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/eased-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/get-animation-players.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/get-css-players.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/insufficient-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/background-color-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/background-image-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/background-position-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/background-position-origin-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/background-size-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-color-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-image-outset-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-image-slice-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-image-source-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-image-width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-radius-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-spacing-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/border-width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/bottom-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/box-shadow-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/calc-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/clip-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/color-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/filter-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/flex-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/font-size-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/font-weight-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/height-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/left-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/letter-spacing-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/line-height-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/list-style-image-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/margin-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/max-height-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/max-width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/min-height-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/min-width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/object-position-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/opacity-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/orphans-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/outline-color-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/outline-offset-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/outline-width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/padding-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/perspective-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/perspective-origin-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/resources/interpolation-test.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/right-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/shape-image-threshold.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/shape-margin.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/shape-outside.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/text-decoration-color-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/text-indent-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/text-shadow-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/top-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-matrix-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-none-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-origin-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-perspective-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-rotate-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-scale-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-skew-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/transform-translate-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/vertical-align-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/viewport-unit-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/visibility-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/widows-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/width-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/word-spacing-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/z-index-interpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/interpolation/zoom-iterpolation.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/keyframe-properties.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/keyframes-with-null-offsets.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/out-of-order-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/blue-100.png -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/green-100.png -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/green-20.png -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/keyframes-test.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/stripes-100.png -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/resources/stripes-20.png -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/same-offset-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/simple-keyframes.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/testharness/testharness.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/testharness/testharness.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/blink/testharness/testharnessreport.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/animation-constructor.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/animation-node.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/apply-preserving-inline-style.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/box-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/color-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/dimension-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/effect-callback.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/effect.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/group-constructors.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/group-player-finish-event.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/group-player.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/matrix-interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/number-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/player-finish-event.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/player.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/property-interpolation.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/tick.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/timeline.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/timing.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/js/transform-handler.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/karma-config-ci.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/karma-config.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher100.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher200.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher300.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher400.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher500.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher600.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher700.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher800.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/resources/WebKitWeightWatcher900.ttf -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/runner-web-animations-next-lite.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/runner-web-animations-next.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/runner-web-animations.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/runner.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/testharness-runner.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/testharness-runner.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/test/testharness-tests.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next-lite.dev.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next-lite.dev.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next-lite.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next-lite.min.js.map -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next.dev.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next.dev.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations-next.min.js.map -text
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations.dev.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations.dev.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/web-animations-js/web-animations.min.js.map -text
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/.bower.json -text
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/CustomElements.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/CustomElements.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/HTMLImports.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/HTMLImports.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/README.md -text
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/ShadowDOM.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/ShadowDOM.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/bower.json -text
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/package.json -text
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/webcomponents-lite.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/webcomponents-lite.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/webcomponents.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/bower_components/webcomponentsjs/webcomponents.min.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/c8o_components/c8o-service.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/c8o_components/xml2json.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/css/custom.css -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/index.html -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/js/custom.js -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/lib_Polymer.xml -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Polymer/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/lib_PushManager/.project -text
 Studio/projects/lib_PushManager/lib_PushManager.xml -text svneol=unset#text/plain
 Studio/projects/lib_PushManager/xsd/internal/PushManagerDataBase/ShowDevices.xsd -text
