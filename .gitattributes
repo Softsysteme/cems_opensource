@@ -5900,7 +5900,6 @@ Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/da
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/directkit.properties -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/engine.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/file_ticket_manager.properties -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/frontal.properties -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/global_symbols.properties -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/plugins.properties -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/sync.properties -text svneol=unset#text/plain
