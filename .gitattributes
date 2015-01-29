@@ -400,6 +400,7 @@ Studio/lib/ojdbc5.jar -text
 Studio/lib/qrcode.jar -text
 Studio/lib/quartz-1.7.1.jar -text
 Studio/lib/rhino-1.7-R4.jar -text
+Studio/lib/rhino-1.7-R5pre.jar -text
 Studio/lib/signpost-core-1.2.1.2.jar -text
 Studio/lib/slf4j-api-1.7.7.jar -text
 Studio/lib/slf4j-simple-1.7.7.jar -text
