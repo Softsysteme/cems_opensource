@@ -126,7 +126,6 @@ Bundle-ClassPath: bin/,
  lib/axis2-1.6.2/lib/geronimo-saaj_1.3_spec-1.0.1.jar,
  lib/axis2-1.6.2/lib/geronimo-stax-api_1.0_spec-1.0.1.jar,
  lib/axis2-1.6.2/lib/geronimo-ws-metadata_2.0_spec-1.1.2.jar,
- lib/axis2-1.6.2/lib/httpcore-4.0.jar,
  lib/axis2-1.6.2/lib/jalopy-1.5rc3.jar,
  lib/axis2-1.6.2/lib/jaxb-api-2.1.jar,
  lib/axis2-1.6.2/lib/jaxb-impl-2.1.7.jar,
@@ -166,7 +165,9 @@ Bundle-ClassPath: bin/,
  lib/slf4j-simple-1.7.7.jar,
  lib/engine-couchdbprovider.jar,
  lib/gson-2.3.1.jar,
- lib/httpclientAuthHelper.jar
+ lib/httpclientAuthHelper.jar,
+ lib/apache/httpclient-4.3.6.jar,
+ lib/apache/httpcore-4.4.jar
 Bundle-Activator: com.twinsoft.convertigo.eclipse.ConvertigoPlugin
 Bundle-Vendor: Convertigo
 Export-Package: org.mozilla.xpcom
