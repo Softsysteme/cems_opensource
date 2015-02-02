@@ -197,7 +197,7 @@
         <dependent-module archiveName="wro4j-extensions-1.6.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/wro4j-extensions-1.6.3.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="rhino-1.7-R4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/rhino-1.7-R4.jar">
+        <dependent-module archiveName="rhino-1.7-R5pre.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/rhino-1.7-R5pre.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="commons-lang3-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/apache/commons/commons-lang3-3.1.jar">
@@ -320,9 +320,6 @@
         <dependent-module archiveName="geronimo-ws-metadata_2.0_spec-1.1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/axis2-1.6.2/lib/geronimo-ws-metadata_2.0_spec-1.1.2.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="httpcore-4.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/axis2-1.6.2/lib/httpcore-4.0.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
         <dependent-module archiveName="jalopy-1.5rc3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/axis2-1.6.2/lib/jalopy-1.5rc3.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
@@ -432,6 +429,21 @@
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="slf4j-simple-1.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/slf4j-simple-1.7.7.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="engine-couchdbprovider.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/engine-couchdbprovider.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="gson-2.3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/gson-2.3.1.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclientAuthHelper.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/httpclientAuthHelper.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient-4.3.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/apache/httpclient-4.3.6.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/apache/httpcore-4.4.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
     </wb-module>
