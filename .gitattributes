@@ -4882,6 +4882,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptStepEditor.jav
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptStepEditorInput.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptTransactionEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptTransactionEditorInput.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptTreeFunctionEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/JscriptTreeFunctionEditorInput.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/MyJSEditorSourceViewerConfiguration.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/MyJScriptCompletionProcessor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/jscript/MyJScriptEditor.java -text
@@ -5285,6 +5287,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/Extractio
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FolderTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/HandlersDeclarationTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IEditableTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IFunctionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IOrderableTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IPropertyTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobileApplicationTreeObject.java -text svneol=unset#text/plain
