@@ -5021,6 +5021,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableExtractionRuleAct
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/GetOptionsAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ImportDesignDocumentsFromDatabaseAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileApplicationFullScreenProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileApplicationProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/MyAbstractAction.java -text
