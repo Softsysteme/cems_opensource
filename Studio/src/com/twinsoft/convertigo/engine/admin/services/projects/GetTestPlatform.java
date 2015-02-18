@@ -24,11 +24,9 @@ package com.twinsoft.convertigo.engine.admin.services.projects;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.codehaus.jettison.json.JSONArray;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.twinsoft.convertigo.beans.common.XMLVector;
 import com.twinsoft.convertigo.beans.core.Connector;
 import com.twinsoft.convertigo.beans.core.DatabaseObject;
 import com.twinsoft.convertigo.beans.core.ITestCaseContainer;
@@ -50,7 +48,7 @@ import com.twinsoft.convertigo.engine.admin.services.mobiles.MobileResourceHelpe
 import com.twinsoft.convertigo.engine.enums.Accessibility;
 import com.twinsoft.convertigo.engine.enums.Visibility;
 import com.twinsoft.convertigo.engine.util.CachedIntrospector;
-import com.twinsoft.convertigo.engine.util.GenericUtils;
+import com.twinsoft.convertigo.engine.util.Json;
 
 @ServiceDefinition(
 		name = "GetTestPlatform",
@@ -164,9 +162,10 @@ public class GetTestPlatform extends XmlService {
 		for (Variable variable : vars.getVariables()) {
 			Element e_variable = createDatabaseObjectElement(document, variable);
 			Object val = variable.getValueOrNull();
-			String strval = val == null ? null:variable.isMultiValued() ? new JSONArray(GenericUtils.<XMLVector<String>>cast(val)).toString():val.toString();
+			
+			String strval = val == null ? null : variable.isMultiValued() ? Json.toJson(val) : val.toString();
 			e_variable.setAttribute("value", strval);
-			e_variable.setAttribute("isMasked", Visibility.Platform.isMasked(variable.getVisibility()) ? "true":"false");
+			e_variable.setAttribute("isMasked", Visibility.Platform.isMasked(variable.getVisibility()) ? "true" : "false");
 			e_variable.setAttribute("isMultivalued", "" + variable.isMultiValued());
 			e_variable.setAttribute("isFileUpload", "" + variable.getIsFileUpload());
 			e_variable.setAttribute("description", variable.getDescription());
