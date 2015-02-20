@@ -5545,12 +5545,14 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/WorkspaceCreationPage.j
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/WorkspaceMigrationPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/countries.txt -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/util/FileFieldEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/AbstractBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractContext.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/AbstractRunnableManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/AttachmentManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/AuthenticatedSessionManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/AuthenticationException.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/Biller.java -text
 Studio/src/com/twinsoft/convertigo/engine/BillingManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/CertificateManager.java -text
 Studio/src/com/twinsoft/convertigo/engine/ConnectorsMonitor.java -text
@@ -5596,6 +5598,8 @@ Studio/src/com/twinsoft/convertigo/engine/ObjectWithSameNameException.java -text
 Studio/src/com/twinsoft/convertigo/engine/ObjectsProvider.java -text
 Studio/src/com/twinsoft/convertigo/engine/PacManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/PacScriptMethods.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/Plugin.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/PluginsManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ProductVersion.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ProjectInMigrationProcessException.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/ProxyManager.java -text svneol=unset#text/plain
@@ -5739,10 +5743,8 @@ Studio/src/com/twinsoft/convertigo/engine/migration/Migration7_0_0.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/migration/MigrationUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpMethodAdapter.java -text
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpOAuthConsumer.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/AbstractBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/Altares.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/AltaresBiller.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/Biller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/BnppPlugin.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/EnvoiSMSBiller.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalBiller.java -text
@@ -5752,8 +5754,6 @@ Studio/src/com/twinsoft/convertigo/engine/plugins/Infogreffe.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/InfogreffeBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/InseeBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/LCABiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/Plugin.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/PluginsManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/plugins/Pobi.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/PobiBiller.java -text
 Studio/src/com/twinsoft/convertigo/engine/plugins/PobiProxyBiller.java -text
