@@ -5743,25 +5743,6 @@ Studio/src/com/twinsoft/convertigo/engine/migration/Migration7_0_0.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/migration/MigrationUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpMethodAdapter.java -text
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpOAuthConsumer.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/Altares.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/AltaresBiller.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/BnppPlugin.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/EnvoiSMSBiller.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalInfogreffeBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/FrontalUtils.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/Infogreffe.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/InfogreffeBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/InseeBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/LCABiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/Pobi.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/PobiBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/PobiProxyBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/PobiXmlBiller.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/PobiXmlUtils.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/PobiXslUtils.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/VicApi.java -text
-Studio/src/com/twinsoft/convertigo/engine/plugins/XslUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/print/ConvertigoPrint.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/print/PrintHTML.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/print/PrintPDF.java -text svneol=unset#text/plain
