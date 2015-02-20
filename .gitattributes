@@ -351,6 +351,7 @@ Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/engine-couchdbprovider.jar -text
 Studio/lib/engine-htmlparsers.jar -text
+Studio/lib/engine-plugins.jar -text
 Studio/lib/engine-sapjcoprovider.jar -text
 Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/gcm/gcm-server.jar -text
