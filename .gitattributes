@@ -3292,6 +3292,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/CouchDbConnector.java -text 
 Studio/src/com/twinsoft/convertigo/beans/connectors/CouchDbConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/ExternalBrowserConnectorBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/connectors/FullSyncConnector.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/connectors/FullSyncConnectorBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/HtmlConnector.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/HtmlConnectorBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/HttpConnector.java -text
@@ -3311,6 +3313,8 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_1
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/cicsconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/couchdbconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/couchdbconnector_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/fullsyncconnector_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/connectors/images/fullsyncconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/htmlconnector_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/images/httpconnector_color_16x16.png -text
@@ -3328,6 +3332,7 @@ Studio/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_32
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/CicsConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/CouchDbConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/ExternalBrowserConnector.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/connectors/res/FullSyncConnector.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HtmlConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/HttpConnector.properties -text
 Studio/src/com/twinsoft/convertigo/beans/connectors/res/JavelinConnector.properties -text
@@ -5789,6 +5794,7 @@ Studio/src/com/twinsoft/convertigo/engine/servlets/BinaryServlet.java -text svne
 Studio/src/com/twinsoft/convertigo/engine/servlets/ClientXsltServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/ConvertigoXsltServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/EngineServlet.java -text
+Studio/src/com/twinsoft/convertigo/engine/servlets/FullSyncServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/GenericServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/JavelinServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/JsonPServlet.java -text svneol=unset#text/plain
