@@ -6391,6 +6391,7 @@ Studio/tomcat/webapps/convertigo/c8o/store/store.html -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/c8o/store/store.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/c8o/store/store_convertigo_gray.png -text
 Studio/tomcat/webapps/convertigo/c8o/store/styles.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/theme.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/c8o/store/web.png -text
 Studio/tomcat/webapps/convertigo/c8o/store/wheel.png -text
 Studio/tomcat/webapps/convertigo/c8o/store/windows.png -text
