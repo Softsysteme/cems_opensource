@@ -5021,6 +5021,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeletePropertyTableRowA
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DownloadLastReferenceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStepAction.java -text svneol=unset#text/plain
