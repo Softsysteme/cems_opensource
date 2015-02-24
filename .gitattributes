@@ -347,7 +347,6 @@ Studio/lib/commons-collections-3.1.jar -text
 Studio/lib/ctgclient.jar -text
 Studio/lib/db2jcc-licence.jar -text
 Studio/lib/db2jcc.jar -text
-Studio/lib/directkit.jar -text
 Studio/lib/dom4j-1.6.1/dom4j-1.6.1.jar -text
 Studio/lib/engine-couchdbprovider.jar -text
 Studio/lib/engine-htmlparsers.jar -text
@@ -6450,9 +6449,6 @@ Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/sna.css -text
-Studio/tomcat/webapps/convertigo/directKitAccess.jsp -text
-Studio/tomcat/webapps/convertigo/directKitAccessWait.jsp -text
-Studio/tomcat/webapps/convertigo/directKitError.jsp -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml-lat1.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml-special.ent -text
 Studio/tomcat/webapps/convertigo/dtd/xhtml-symbol.ent -text
