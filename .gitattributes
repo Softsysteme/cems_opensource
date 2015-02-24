@@ -6361,6 +6361,40 @@ Studio/tomcat/webapps/convertigo/axis2-web/upload.jsp -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/android.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/apple.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/blank.gif -text
+Studio/tomcat/webapps/convertigo/c8o/store/cplayer_white.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/dl.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/fancybox_loading.gif -text
+Studio/tomcat/webapps/convertigo/c8o/store/fancybox_loading@2x.gif -text
+Studio/tomcat/webapps/convertigo/c8o/store/fancybox_overlay.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/fancybox_sprite.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/fancybox_sprite@2x.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/html5.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/i18n/en.json -text
+Studio/tomcat/webapps/convertigo/c8o/store/i18n/fr.json -text
+Studio/tomcat/webapps/convertigo/c8o/store/infos.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/jquery.fancybox.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/jquery.fancybox.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/jquery.m_custom_scrollbar.concat.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/jquery.m_custom_scrollbar.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/knacss.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/logo_store.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/play.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/player_android.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/player_apple.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/player_wp.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/roboto.woff -text
+Studio/tomcat/webapps/convertigo/c8o/store/roboto.woff2 -text
+Studio/tomcat/webapps/convertigo/c8o/store/robotoFont.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/store.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/store.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/store_convertigo_gray.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/styles.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/c8o/store/web.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/wheel.png -text
+Studio/tomcat/webapps/convertigo/c8o/store/windows.png -text
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/c8o.desktop.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/ajaxloader.gif -text
@@ -6412,17 +6446,10 @@ Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/Roboto-Regular-webfont.wo
 Studio/tomcat/webapps/convertigo/css/flashupdate_fonts/fontfaceROBOTO.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/flashupdate_images/bg_ios.jpg -text
 Studio/tomcat/webapps/convertigo/css/flashupdate_ios.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/fonts/roboto.woff -text
-Studio/tomcat/webapps/convertigo/css/fonts/roboto.woff2 -text
 Studio/tomcat/webapps/convertigo/css/greenscreen.css -text
-Studio/tomcat/webapps/convertigo/css/jquery.fancybox.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/jquery.m_custom_scrollbar.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/knacss.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/mobile.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/new_style.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/css/robotoFont.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/sna.css -text
-Studio/tomcat/webapps/convertigo/css/styles.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/directKitAccess.jsp -text
 Studio/tomcat/webapps/convertigo/directKitAccessWait.jsp -text
 Studio/tomcat/webapps/convertigo/directKitError.jsp -text
@@ -6435,8 +6462,6 @@ Studio/tomcat/webapps/convertigo/exec.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/exec.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/exec.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/favicon.ico -text
-Studio/tomcat/webapps/convertigo/i18n/en.json -text
-Studio/tomcat/webapps/convertigo/i18n/fr.json -text
 Studio/tomcat/webapps/convertigo/images/BtnUp_Aide.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_Annul.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_Capt.gif -text svneol=unset#unset
@@ -6453,15 +6478,12 @@ Studio/tomcat/webapps/convertigo/images/BtnUp_Suite.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_appr.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/BtnUp_script.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/add_button.gif -text
-Studio/tomcat/webapps/convertigo/images/android.png -text
-Studio/tomcat/webapps/convertigo/images/apple.png -text
 Studio/tomcat/webapps/convertigo/images/arrow-right-triple.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/back.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/back.jpg -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/background-yellow-fade.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/barre.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/bl.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/blank.gif -text
 Studio/tomcat/webapps/convertigo/images/border_bottom.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/border_left.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/border_right.gif -text svneol=unset#unset
@@ -6494,7 +6516,6 @@ Studio/tomcat/webapps/convertigo/images/convertigo-small.gif -text svneol=unset#
 Studio/tomcat/webapps/convertigo/images/convertigo.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/convertigo.jpg -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/copy.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/cplayer_white.png -text
 Studio/tomcat/webapps/convertigo/images/croix.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/d_back.gif -text
 Studio/tomcat/webapps/convertigo/images/d_refresh.gif -text
@@ -6502,7 +6523,6 @@ Studio/tomcat/webapps/convertigo/images/decrease.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/delete.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/deploy.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/display.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/dl.png -text
 Studio/tomcat/webapps/convertigo/images/down.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/down_selected.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/e_back.gif -text
@@ -6511,22 +6531,15 @@ Studio/tomcat/webapps/convertigo/images/e_refresh.gif -text
 Studio/tomcat/webapps/convertigo/images/edit_properties.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/error.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/excel.gif -text
-Studio/tomcat/webapps/convertigo/images/fancybox_loading.gif -text
-Studio/tomcat/webapps/convertigo/images/fancybox_loading@2x.gif -text
-Studio/tomcat/webapps/convertigo/images/fancybox_overlay.png -text
-Studio/tomcat/webapps/convertigo/images/fancybox_sprite.png -text
-Studio/tomcat/webapps/convertigo/images/fancybox_sprite@2x.png -text
 Studio/tomcat/webapps/convertigo/images/goRight.gif -text
 Studio/tomcat/webapps/convertigo/images/hide.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/increase.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/information.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/infos.png -text
 Studio/tomcat/webapps/convertigo/images/lbot.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/lbot_keyboard.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/loading.gif -text
 Studio/tomcat/webapps/convertigo/images/log.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/logo-ems-datasheet-300pix.png -text
-Studio/tomcat/webapps/convertigo/images/logo_store.png -text
 Studio/tomcat/webapps/convertigo/images/ltop.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/ltop_keyboard.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/marbre.gif -text svneol=unset#unset
@@ -6617,10 +6630,6 @@ Studio/tomcat/webapps/convertigo/images/new/window_top_left.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_top_left2.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_top_right.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_top_right2.png -text
-Studio/tomcat/webapps/convertigo/images/play.png -text
-Studio/tomcat/webapps/convertigo/images/player_android.png -text
-Studio/tomcat/webapps/convertigo/images/player_apple.png -text
-Studio/tomcat/webapps/convertigo/images/player_wp.png -text
 Studio/tomcat/webapps/convertigo/images/print.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/project.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/puce.gif -text svneol=unset#unset
@@ -6636,7 +6645,6 @@ Studio/tomcat/webapps/convertigo/images/rtop_keyboard_minimize.gif -text svneol=
 Studio/tomcat/webapps/convertigo/images/separator.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/show.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/spacer.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/store_convertigo_gray.png -text
 Studio/tomcat/webapps/convertigo/images/table_background.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/title.png -text
 Studio/tomcat/webapps/convertigo/images/tl.gif -text svneol=unset#unset
@@ -6648,9 +6656,6 @@ Studio/tomcat/webapps/convertigo/images/up_selected.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/upgrade.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/wait.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/warning.gif -text svneol=unset#unset
-Studio/tomcat/webapps/convertigo/images/web.png -text
-Studio/tomcat/webapps/convertigo/images/wheel.png -text
-Studio/tomcat/webapps/convertigo/images/windows.png -text
 Studio/tomcat/webapps/convertigo/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/javadoc/allclasses-frame.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/javadoc/allclasses-noframe.html -text svneol=unset#text/plain
@@ -6788,10 +6793,7 @@ Studio/tomcat/webapps/convertigo/scripts/common.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/contextMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/cookies.js -text
 Studio/tomcat/webapps/convertigo/scripts/flashupdate.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/html5.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/index.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.fancybox.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/jquery.m_custom_scrollbar.concat.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/keyboard.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapdku.js -text
 Studio/tomcat/webapps/convertigo/scripts/keymapsna.js -text
@@ -6802,7 +6804,6 @@ Studio/tomcat/webapps/convertigo/scripts/project.js -text svneol=unset#text/plai
 Studio/tomcat/webapps/convertigo/scripts/scriptlib.js -text
 Studio/tomcat/webapps/convertigo/scripts/selectMenu.js -text
 Studio/tomcat/webapps/convertigo/scripts/siteclipper.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/store.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/df.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/gatein.js -text svneol=unset#text/plain
@@ -6813,7 +6814,6 @@ Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/sharepoint.js -text svne
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/siteclipper.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/standalone.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_wrapper.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/store.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
