@@ -4715,6 +4715,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerRefreshAction.
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerSaveAllAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectPrintAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/SetupAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/AuthenticationDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/BuildLocallyEndingDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ButtonSpec.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateExtractionRuleDialog.java -text
@@ -5021,7 +5022,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeletePropertyTableRowA
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableStepAction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DownloadLastReferenceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStatementAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/EnableStepAction.java -text svneol=unset#text/plain
@@ -5071,6 +5071,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TransactionWriteVariabl
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/TreeObjectRenameAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UndoAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UnloadedProjectDeleteAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateReferenceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesFromXMLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/VariableGenerateFromXmlAndLinkAction.java -text svneol=unset#text/plain
