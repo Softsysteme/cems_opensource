@@ -6790,6 +6790,7 @@ Studio/tomcat/webapps/convertigo/store/fancybox_sprite@2x.png -text
 Studio/tomcat/webapps/convertigo/store/html5.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/store/i18n/en.json -text
 Studio/tomcat/webapps/convertigo/store/i18n/fr.json -text
+Studio/tomcat/webapps/convertigo/store/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/store/infos.png -text
 Studio/tomcat/webapps/convertigo/store/jquery.fancybox.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/store/jquery.fancybox.js -text svneol=unset#text/plain
@@ -6804,7 +6805,6 @@ Studio/tomcat/webapps/convertigo/store/player_wp.png -text
 Studio/tomcat/webapps/convertigo/store/roboto.woff -text
 Studio/tomcat/webapps/convertigo/store/roboto.woff2 -text
 Studio/tomcat/webapps/convertigo/store/robotoFont.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/store/store.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/store/store.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/store/store_convertigo_gray.png -text
 Studio/tomcat/webapps/convertigo/store/styles.css -text svneol=unset#text/plain
