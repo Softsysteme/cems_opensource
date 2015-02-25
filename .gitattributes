@@ -6361,41 +6361,6 @@ Studio/tomcat/webapps/convertigo/axis2-web/upload.jsp -text svneol=unset#text/pl
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewServiceGroupContext.jsp -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/viewphases.jsp -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/android.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/apple.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/blank.gif -text
-Studio/tomcat/webapps/convertigo/c8o/store/cplayer_white.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/dl.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/fancybox_loading.gif -text
-Studio/tomcat/webapps/convertigo/c8o/store/fancybox_loading@2x.gif -text
-Studio/tomcat/webapps/convertigo/c8o/store/fancybox_overlay.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/fancybox_sprite.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/fancybox_sprite@2x.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/html5.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/i18n/en.json -text
-Studio/tomcat/webapps/convertigo/c8o/store/i18n/fr.json -text
-Studio/tomcat/webapps/convertigo/c8o/store/infos.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/jquery.fancybox.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/jquery.fancybox.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/jquery.m_custom_scrollbar.concat.min.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/jquery.m_custom_scrollbar.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/knacss.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/logo_store.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/play.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/player_android.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/player_apple.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/player_wp.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/roboto.woff -text
-Studio/tomcat/webapps/convertigo/c8o/store/roboto.woff2 -text
-Studio/tomcat/webapps/convertigo/c8o/store/robotoFont.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/store.html -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/store.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/store_convertigo_gray.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/styles.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/theme.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/c8o/store/web.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/wheel.png -text
-Studio/tomcat/webapps/convertigo/c8o/store/windows.png -text
 Studio/tomcat/webapps/convertigo/containers/standalone/hub.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/c8o.desktop.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/css/6.3.0/images/ajaxloader.gif -text
@@ -6812,6 +6777,41 @@ Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/sharepoint.js -text svne
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/siteclipper.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_plugins/standalone.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/weblib_wrapper.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/android.png -text
+Studio/tomcat/webapps/convertigo/store/apple.png -text
+Studio/tomcat/webapps/convertigo/store/blank.gif -text
+Studio/tomcat/webapps/convertigo/store/cplayer_white.png -text
+Studio/tomcat/webapps/convertigo/store/dl.png -text
+Studio/tomcat/webapps/convertigo/store/fancybox_loading.gif -text
+Studio/tomcat/webapps/convertigo/store/fancybox_loading@2x.gif -text
+Studio/tomcat/webapps/convertigo/store/fancybox_overlay.png -text
+Studio/tomcat/webapps/convertigo/store/fancybox_sprite.png -text
+Studio/tomcat/webapps/convertigo/store/fancybox_sprite@2x.png -text
+Studio/tomcat/webapps/convertigo/store/html5.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/i18n/en.json -text
+Studio/tomcat/webapps/convertigo/store/i18n/fr.json -text
+Studio/tomcat/webapps/convertigo/store/infos.png -text
+Studio/tomcat/webapps/convertigo/store/jquery.fancybox.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/jquery.fancybox.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/jquery.m_custom_scrollbar.concat.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/jquery.m_custom_scrollbar.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/knacss.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/logo_store.png -text
+Studio/tomcat/webapps/convertigo/store/play.png -text
+Studio/tomcat/webapps/convertigo/store/player_android.png -text
+Studio/tomcat/webapps/convertigo/store/player_apple.png -text
+Studio/tomcat/webapps/convertigo/store/player_wp.png -text
+Studio/tomcat/webapps/convertigo/store/roboto.woff -text
+Studio/tomcat/webapps/convertigo/store/roboto.woff2 -text
+Studio/tomcat/webapps/convertigo/store/robotoFont.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/store.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/store.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/store_convertigo_gray.png -text
+Studio/tomcat/webapps/convertigo/store/styles.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/theme.css -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/store/web.png -text
+Studio/tomcat/webapps/convertigo/store/wheel.png -text
+Studio/tomcat/webapps/convertigo/store/windows.png -text
 Studio/tomcat/webapps/convertigo/templates/base/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
