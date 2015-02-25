@@ -6158,6 +6158,7 @@ Studio/tomcat/webapps/convertigo/admin/images/menu/11.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/12.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/13.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/14.png -text
+Studio/tomcat/webapps/convertigo/admin/images/menu/15.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_site.png -text
@@ -6233,6 +6234,7 @@ Studio/tomcat/webapps/convertigo/admin/layouts/Keys.html -text svneol=unset#text
 Studio/tomcat/webapps/convertigo/admin/layouts/Logs.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Projects.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/Scheduler.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/layouts/Store.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/layouts/TracePlayer.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/login.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/main.html -text svneol=unset#text/plain
@@ -6308,6 +6310,8 @@ Studio/tomcat/webapps/convertigo/admin/widgets/projects_List.html -text svneol=u
 Studio/tomcat/webapps/convertigo/admin/widgets/projects_List.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/scheduler_ListTasks.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/scheduler_ListTasks.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/widgets/store.html -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/admin/widgets/store.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/trace_List.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/admin/widgets/trace_List.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/axis2-web/ActivateService.jsp -text svneol=unset#text/plain
