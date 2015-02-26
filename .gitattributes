@@ -357,7 +357,6 @@ Studio/lib/fop.jar -text svneol=unset#unset
 Studio/lib/gcm/gcm-server.jar -text
 Studio/lib/gcm/json_simple-1.1.jar -text
 Studio/lib/gcm/mockito-all-1.8.5.jar -text
-Studio/lib/gson-2.3.1.jar -text
 Studio/lib/hibernate/antlr-2.7.7.jar -text
 Studio/lib/hibernate/hibernate-commons-annotations-4.0.4.Final.jar -text
 Studio/lib/hibernate/hibernate-core-4.3.1.Final.jar -text
@@ -5857,7 +5856,6 @@ Studio/src/com/twinsoft/convertigo/engine/util/ImportWsReference.java -text svne
 Studio/src/com/twinsoft/convertigo/engine/util/IterableEnumeration.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/JAXBUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/JavelinUtils.java -text
-Studio/src/com/twinsoft/convertigo/engine/util/Json.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/Log4jHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/LogWrapper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/Pair.java -text svneol=unset#text/plain
