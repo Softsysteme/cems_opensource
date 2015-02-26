@@ -5699,6 +5699,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/cleanDOM.xsl -
 Studio/src/com/twinsoft/convertigo/engine/admin/services/scheduler/CreateScheduledElements.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/scheduler/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/security_token/Get.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/store/DeleteCustomStore.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/store/DownloadStoreFolder.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/store/GetStoreContent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/store/UploadCustomStore.java -text svneol=unset#text/plain
