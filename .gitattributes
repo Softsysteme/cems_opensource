@@ -5808,6 +5808,7 @@ Studio/src/com/twinsoft/convertigo/engine/servlets/ProjectsDataFilter.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/ProxyServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/ReverseProxyServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/RsaPublicKeyServlet.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/servlets/StoreDataFilter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/WebClippingServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/WebServiceServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/WidgetsServlet.java -text svneol=unset#text/plain
