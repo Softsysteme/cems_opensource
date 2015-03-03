@@ -3385,6 +3385,8 @@ Studio/src/com/twinsoft/convertigo/beans/core/IWsdlReader.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/beans/core/IXPathable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/JsonDocument.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/JsonDocumentBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/Listener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/ListenerBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/MobileApplication.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/MobileApplicationBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/MobilePlatform.java -text svneol=unset#text/plain
@@ -3477,6 +3479,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/DatabaseObject.properties -tex
 Studio/src/com/twinsoft/convertigo/beans/core/res/Document.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/ExtractionRule.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/JsonDocument.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/res/Listener.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/MobileApplication.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/MobilePlatform.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/MultiValuedVariable.properties -text svneol=unset#text/plain
@@ -3498,13 +3501,18 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/TransactionWithVariables.prope
 Studio/src/com/twinsoft/convertigo/beans/core/res/Variable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocument.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocumentBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncListenerBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/designdocument_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/designdocument_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/couchdb/images/fullsynclistener_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/couchdb/images/fullsynclistener_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/function_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/function_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/view_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/view_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/res/DesignDocument.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/FullSyncListener.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/BaseCriteria.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/BaseCriteriaBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/CriteriaWithRegex.java -text svneol=unset#text/plain
@@ -4981,6 +4989,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateEmptyStubAction.j
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateExtractionRuleAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateFormFromTransactionAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateInheritedScreenClassAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateListenerAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateMobileApplicationAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateMobilePlatformAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreatePoolAction.java -text
@@ -5284,11 +5293,13 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/DesignDoc
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/DocumentTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ExtractionRuleTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FolderTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FullSyncListenerTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/HandlersDeclarationTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IEditableTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IFunctionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IOrderableTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IPropertyTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ListenerTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobileApplicationTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobilePlatformTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ObjectsFolderTreeObject.java -text
