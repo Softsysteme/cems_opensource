@@ -5702,6 +5702,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/List.java -tex
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/Reload.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/projects/cleanDOM.xsl -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/scheduler/CreateScheduledElements.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/scheduler/CronCalculator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/scheduler/List.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/security_token/Get.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/store/DeleteCustomStore.java -text svneol=unset#text/plain
