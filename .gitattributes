@@ -6037,6 +6037,16 @@ Studio/tomcat/webapps/convertigo/WEB-INF/xvnc/fonts/encodings.dir -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xvnc/fonts/fonts.alias -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xvnc/fonts/fonts.dir -text
 Studio/tomcat/webapps/convertigo/WEB-INF/xvnc/matchbox-window-manager -text
+Studio/tomcat/webapps/convertigo/admin/bg_cadre.png -text
+Studio/tomcat/webapps/convertigo/admin/convertigo-administration-logo.jpg -text
+Studio/tomcat/webapps/convertigo/admin/convertigo-administration-logo.png -text
+Studio/tomcat/webapps/convertigo/admin/images/01.png -text
+Studio/tomcat/webapps/convertigo/admin/images/03.png -text
+Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_doc.png -text
+Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_itcenter.png -text
+Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_site.png -text
+Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_test.png -text
+Studio/tomcat/webapps/convertigo/admin/images/55x55_picto_test.png -text
 Studio/tomcat/webapps/convertigo/admin/images/activity.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/bg-gris-tab.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg-gris-tab2.png -text
@@ -6044,6 +6054,7 @@ Studio/tomcat/webapps/convertigo/admin/images/bg-gris-tablarge.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg-gris-tablarge_color.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg-gris-tablarge_vert.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg.jpg -text
+Studio/tomcat/webapps/convertigo/admin/images/bg_cadre.jpg -text
 Studio/tomcat/webapps/convertigo/admin/images/bg_cadre.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg_nav.png -text
 Studio/tomcat/webapps/convertigo/admin/images/bg_nav140.png -text
@@ -6189,6 +6200,7 @@ Studio/tomcat/webapps/convertigo/admin/images/log_ctx_menu_set_startdate.png -te
 Studio/tomcat/webapps/convertigo/admin/images/login_bg_cadre.png -text
 Studio/tomcat/webapps/convertigo/admin/images/login_dfs_bg_login_logo.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/logo-convertigo-184x75.jpg -text
+Studio/tomcat/webapps/convertigo/admin/images/logo-convertigo.png -text
 Studio/tomcat/webapps/convertigo/admin/images/logo-ems-datasheet-300pix.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/logo-ems-datasheet-300pix.png -text
 Studio/tomcat/webapps/convertigo/admin/images/logo_convertigo_enterprise_mashup_290x100.jpg -text
@@ -6208,14 +6220,27 @@ Studio/tomcat/webapps/convertigo/admin/images/menu/12.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/13.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/14.png -text
 Studio/tomcat/webapps/convertigo/admin/images/menu/15.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/02.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/03.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/04.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/05.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/06.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/07.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/08.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/09.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/10.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_site.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_test.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/11.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/14.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/15.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_site.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/55x55_picto_test.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/btn_signin.png -text
 Studio/tomcat/webapps/convertigo/admin/images/ok.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/project.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/properties.gif -text
@@ -6248,6 +6273,7 @@ Studio/tomcat/webapps/convertigo/admin/images/stop.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/sync.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/traceplayer.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/transaction.gif -text
+Studio/tomcat/webapps/convertigo/admin/images/ui-icons_6da8d5_256x240.png -text
 Studio/tomcat/webapps/convertigo/admin/images/upgrade.gif -text
 Studio/tomcat/webapps/convertigo/admin/images/wait_convertigo.gif -text
 Studio/tomcat/webapps/convertigo/admin/index.html -text svneol=unset#text/plain
@@ -6532,6 +6558,9 @@ Studio/tomcat/webapps/convertigo/images/close_window.gif -text
 Studio/tomcat/webapps/convertigo/images/close_window.png -text
 Studio/tomcat/webapps/convertigo/images/connection.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/convertigo-admin.gif -text svneol=unset#unset
+Studio/tomcat/webapps/convertigo/images/convertigo-administration-picto-reload.png -text
+Studio/tomcat/webapps/convertigo/images/convertigo-administration-picto-save.png -text
+Studio/tomcat/webapps/convertigo/images/convertigo-administration-picto-test-platform.png -text
 Studio/tomcat/webapps/convertigo/images/convertigo-small.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/convertigo.gif -text svneol=unset#unset
 Studio/tomcat/webapps/convertigo/images/convertigo.jpg -text svneol=unset#unset
@@ -6570,11 +6599,33 @@ Studio/tomcat/webapps/convertigo/images/mobile/iPad1_mask_768x1024.png -text
 Studio/tomcat/webapps/convertigo/images/mobile/iPhone3_mask_320x480.png -text
 Studio/tomcat/webapps/convertigo/images/mobile/iPhone4_mask_320x480.png -text
 Studio/tomcat/webapps/convertigo/images/modify.gif -text svneol=unset#unset
+Studio/tomcat/webapps/convertigo/images/new/01.png -text
+Studio/tomcat/webapps/convertigo/images/new/02.png -text
+Studio/tomcat/webapps/convertigo/images/new/03.png -text
+Studio/tomcat/webapps/convertigo/images/new/04.png -text
+Studio/tomcat/webapps/convertigo/images/new/05.png -text
+Studio/tomcat/webapps/convertigo/images/new/06.png -text
+Studio/tomcat/webapps/convertigo/images/new/07.png -text
+Studio/tomcat/webapps/convertigo/images/new/08.png -text
+Studio/tomcat/webapps/convertigo/images/new/09.png -text
+Studio/tomcat/webapps/convertigo/images/new/10.png -text
+Studio/tomcat/webapps/convertigo/images/new/100x100_picto_doc.png -text
+Studio/tomcat/webapps/convertigo/images/new/100x100_picto_itcenter.png -text
+Studio/tomcat/webapps/convertigo/images/new/100x100_picto_site.png -text
+Studio/tomcat/webapps/convertigo/images/new/100x100_picto_test.png -text
+Studio/tomcat/webapps/convertigo/images/new/11.png -text
+Studio/tomcat/webapps/convertigo/images/new/14.png -text
+Studio/tomcat/webapps/convertigo/images/new/15.png -text
+Studio/tomcat/webapps/convertigo/images/new/55x55_picto_test.png -text
+Studio/tomcat/webapps/convertigo/images/new/Sans-titre-1[!!-~]-[!!-~]Copie.png -text
+Studio/tomcat/webapps/convertigo/images/new/Sans-titre-1.png -text
 Studio/tomcat/webapps/convertigo/images/new/accordeon_top_center.png -text
 Studio/tomcat/webapps/convertigo/images/new/accordeon_top_left.png -text
 Studio/tomcat/webapps/convertigo/images/new/accordeon_top_right.png -text
 Studio/tomcat/webapps/convertigo/images/new/arrow_right.gif -text
 Studio/tomcat/webapps/convertigo/images/new/bg-gris.png -text
+Studio/tomcat/webapps/convertigo/images/new/bg_cadre.jpg -text
+Studio/tomcat/webapps/convertigo/images/new/bg_cadre.png -text
 Studio/tomcat/webapps/convertigo/images/new/bg_menu.png -text
 Studio/tomcat/webapps/convertigo/images/new/btn_build.png -text
 Studio/tomcat/webapps/convertigo/images/new/btn_build_over.png -text
@@ -6595,9 +6646,31 @@ Studio/tomcat/webapps/convertigo/images/new/btn_pinned_window.png -text
 Studio/tomcat/webapps/convertigo/images/new/btn_qrcode.png -text
 Studio/tomcat/webapps/convertigo/images/new/btn_qrcode_over.png -text
 Studio/tomcat/webapps/convertigo/images/new/btn_reduce_window.png -text
+Studio/tomcat/webapps/convertigo/images/new/btn_signin.png -text
 Studio/tomcat/webapps/convertigo/images/new/build_complete.png -text
 Studio/tomcat/webapps/convertigo/images/new/build_none.png -text
 Studio/tomcat/webapps/convertigo/images/new/build_pending.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-header-deco.jpg -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-logo.jpg -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-logo.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-activity.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-bullet-gray.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-bullet-green.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-bullet-red.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-close.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-creation-date.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-delete.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-edit.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-help.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-help2.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-last-date.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-reload.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-save.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-test-platform.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-picto-validate.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-widget-center.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-widget-left.png -text
+Studio/tomcat/webapps/convertigo/images/new/convertigo-administration-widget-right.png -text
 Studio/tomcat/webapps/convertigo/images/new/convertigo-ems-bg-blanc-center.png -text
 Studio/tomcat/webapps/convertigo/images/new/convertigo-ems-bg-blanc-left.png -text
 Studio/tomcat/webapps/convertigo/images/new/convertigo-ems-bg-blanc-right.png -text
@@ -6608,6 +6681,7 @@ Studio/tomcat/webapps/convertigo/images/new/header-center.png -text
 Studio/tomcat/webapps/convertigo/images/new/header-left.png -text
 Studio/tomcat/webapps/convertigo/images/new/header-right.png -text
 Studio/tomcat/webapps/convertigo/images/new/header.png -text
+Studio/tomcat/webapps/convertigo/images/new/logo-convertigo-184x75.jpg -text
 Studio/tomcat/webapps/convertigo/images/new/logo-convertigo.png -text
 Studio/tomcat/webapps/convertigo/images/new/logo_c8o_bgQRcode.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_admin.png -text
@@ -6627,9 +6701,11 @@ Studio/tomcat/webapps/convertigo/images/new/picto_doc.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_info.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_mashup.png -text
+Studio/tomcat/webapps/convertigo/images/new/picto_project[!!-~]-[!!-~]Copie.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_project.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_project_menu.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_site.png -text
+Studio/tomcat/webapps/convertigo/images/new/picto_test[!!-~]-[!!-~]Copie.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_test.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_version_classe.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_version_convertigo.png -text
@@ -6637,6 +6713,7 @@ Studio/tomcat/webapps/convertigo/images/new/picto_version_engine.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_version_java.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_version_object.png -text
 Studio/tomcat/webapps/convertigo/images/new/picto_wsdl.png -text
+Studio/tomcat/webapps/convertigo/images/new/ui-icons_6da8d5_256x240.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_bottom_center.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_bottom_left.png -text
 Studio/tomcat/webapps/convertigo/images/new/window_bottom_right.png -text
