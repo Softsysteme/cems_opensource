@@ -4984,6 +4984,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardPasteAction.ja
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateConnectorAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateCriteriaAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateDesignDocumentViewAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateDesignDocumentViewReduceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateDocumentAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateEmptyStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateExtractionRuleAction.java -text
@@ -5018,6 +5019,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DatabaseObjectIncreaseP
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DatabaseObjectRenameAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeclareGlobalSymbolsFromThisProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeleteDesignDocumentViewAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeleteDesignDocumentViewReduceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeletePropertyTableColumnAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DeletePropertyTableRowAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/DisableExtractionRuleAction.java -text
