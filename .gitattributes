@@ -5267,6 +5267,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/search.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/loggers/images/select_columns.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ClipboardManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/InfoPropertyDescriptor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/JsonData.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectExplorerView.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectLoadingJob.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/ProjectManager.java -text
@@ -5299,6 +5300,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/Extractio
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FolderTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/FullSyncListenerTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/HandlersDeclarationTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IDesignTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IEditableTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IFunctionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IOrderableTreeObject.java -text svneol=unset#text/plain
