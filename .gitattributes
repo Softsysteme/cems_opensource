@@ -5141,7 +5141,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerNoWaitEdi
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerScreenClassEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerWaitTimeEditorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpTriggerXpathEditorComposite.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/property_editors/HttpVerbEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/IArrayListViewer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/INullEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/INullPropertyDescriptor.java -text svneol=unset#text/plain
