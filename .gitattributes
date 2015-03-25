@@ -4084,6 +4084,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/AlreadyPscKeyPage.java 
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/ConfigureProxyPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/LicensePage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/PscKeyPage.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/PscKeyValidationPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/RegistrationPage.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SetupWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/setup/SummaryPage.java -text svneol=unset#text/plain
