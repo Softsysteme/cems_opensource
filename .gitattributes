@@ -5090,6 +5090,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateReferenceAction.j
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/UpdateXSDTypesFromXMLAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/VariableGenerateFromXmlAndLinkAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ViewExecuteNoReduceAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ViewExecuteSelectedAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ViewRenameAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/preferences/ComboFieldEditor.java -text
