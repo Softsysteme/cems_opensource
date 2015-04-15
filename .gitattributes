@@ -4560,12 +4560,16 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/databasetra
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/databasetransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedatabase_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedatabase_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedocument_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedocument_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedocumentattachment_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedocumentattachment_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deleteserverconfig_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deleteserverconfig_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletesession_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletesession_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getdatabaseinfo_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getdatabaseinfo_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getdocument_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getdocument_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getdocumentattachment_color_16x16.png -text
@@ -4576,6 +4580,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverda
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverdatabases_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverinfo_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverinfo_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverlog_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverlog_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverstats_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getserverstats_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/getservertasks_color_16x16.png -text
@@ -4604,6 +4610,10 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/postsession
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/postsession_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/postupdate_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/postupdate_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putdatabase_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putdatabase_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putdocumentattachment_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putdocumentattachment_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putserverconfig_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putserverconfig_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putupdate_color_16x16.png -text
