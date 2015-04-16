@@ -46,9 +46,8 @@ Studio/icons/sample.gif -text
 Studio/icons/schema_16x16.gif -text
 Studio/icons/setup_16x16.gif -text
 Studio/icons/setupwizard_16x16.gif -text
-Studio/icons/splash-wait.png -text
-Studio/icons/splash_ready_rss.jpg -text
-Studio/icons/splash_wait_rss.jpg -text
+Studio/icons/splash_ready_rss.png -text
+Studio/icons/splash_wait_rss.png -text
 Studio/icons/studio/.project -text svneol=unset#text/plain
 Studio/icons/studio/accumulate.d.gif -text
 Studio/icons/studio/accumulate.gif -text
