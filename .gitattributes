@@ -4788,6 +4788,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectPrintAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/SetupAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/BuildLocallyEndingDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/ButtonSpec.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CouchVariablesComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CouchVariablesDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateExtractionRuleDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateHandlerDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/CreateHandlerDialogComposite.java -text
@@ -5053,6 +5055,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardAction.java -t
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardCopyAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardCutAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ClipboardPasteAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CouchAddVariables.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateConnectorAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateCriteriaAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateDesignDocumentFilterAction.java -text svneol=unset#text/plain
