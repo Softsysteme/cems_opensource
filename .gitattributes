@@ -4484,11 +4484,8 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDatabaseTr
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDatabaseTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDocumentTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractServerTransaction.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/AbstractServerTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CopyDocumentTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CopyDocumentTransactionBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CouchDbParameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CustomTransaction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/CustomTransactionBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/DeleteDatabaseTransaction.java -text svneol=unset#text/plain
@@ -4555,8 +4552,6 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/copydocumen
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/copydocument_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/customtransaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/customtransaction_color_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/databasetransaction_color_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/databasetransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedatabase_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedatabase_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/deletedocument_color_16x16.png -text
@@ -4617,12 +4612,9 @@ Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putserverco
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putserverconfig_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putupdate_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/putupdate_color_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/servertransaction_color_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/images/servertransaction_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/AbstractCouchDbTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/AbstractDatabaseTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/AbstractDocumentTransaction.properties -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/AbstractServerTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/CopyDocumentTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/CustomTransaction.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/transactions/couchdb/res/DeleteDatabaseTransaction.properties -text svneol=unset#text/plain
