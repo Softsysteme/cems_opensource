@@ -39,6 +39,7 @@ Studio/icons/consoles/tomcat.gif -text
 Studio/icons/consoles/trace.gif -text
 Studio/icons/convertigo.gif -text
 Studio/icons/convertigo_16x16.gif -text
+Studio/icons/convertigo_doc_16x16.gif -text
 Studio/icons/picker_16x16.gif -text
 Studio/icons/picker_32x32.gif -text
 Studio/icons/references_16x16.gif -text
@@ -4772,6 +4773,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/Version.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/AboutAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/AdministrationAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/MyAbstractAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenConvertigoDocumentationAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenConvertigoWorkspaceFolderAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenDiscoveryConnectorsAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerFindAction.java -text
