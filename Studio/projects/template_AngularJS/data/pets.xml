@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<pets>
+		<id>0</id>
+		<title>Cats</title>
+		<description>Furry little creatures. Obsessed with plotting
+			assassination, but never following through on it.</description>
+	</pets>
+	<pets>
+		<id>1</id>
+		<title>Dogs</title>
+		<description>Lovable. Loyal almost to a fault. Smarter than
+			they let on.</description>
+	</pets>
+	<pets>
+		<id>2</id>
+		<title>Turtles</title>
+		<description>Everyone likes turtles</description>
+	</pets>
+	<pets>
+		<id>3</id>
+		<title>Sharks</title>
+		<description>An advanced pet. Needs millions of gallons of salt
+			water. Will happily eat you.</description>
+	</pets>
+</data>
+	

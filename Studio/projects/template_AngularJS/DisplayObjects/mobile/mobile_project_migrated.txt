@@ -1,0 +1,4 @@
+Your mobile project has been migrated.
+Now, we make per platform configuration and resources.
+You may customize your config.xml (the existing one will never used) and dispatch your existing specific resources per platform (see the 'platforms' folder).
+You can delete this file after reading it.
