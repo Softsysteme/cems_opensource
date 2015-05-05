@@ -146,7 +146,6 @@ Studio/icons/studio/library_googleMaps_color_32x32.png -text
 Studio/icons/studio/library_googleSpreadsheets_color_32x32.png -text
 Studio/icons/studio/library_keyring_color_32x32.png -text
 Studio/icons/studio/library_oauth_color_32x32.png -text
-Studio/icons/studio/library_polymer_color_32x32.png -text
 Studio/icons/studio/library_pushManager_color_32x32.png -text
 Studio/icons/studio/library_twitter_color_32x32.png -text
 Studio/icons/studio/mobile_HighEnd_color_32x32.png -text
@@ -162,6 +161,7 @@ Studio/icons/studio/panel_color_32x32.gif -text
 Studio/icons/studio/pause.d.gif -text
 Studio/icons/studio/pause.gif -text
 Studio/icons/studio/pda.gif -text
+Studio/icons/studio/polymer_color_32x32.png -text
 Studio/icons/studio/pretty_print.gif -text
 Studio/icons/studio/project_create.gif -text
 Studio/icons/studio/project_delete.d.gif -text
@@ -5577,6 +5577,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryPolymer
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryPushManagerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryTwitterWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewMinitelConnectorWizard.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewPolymerProjectWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite1.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizardComposite10.java -text svneol=unset#text/plain
