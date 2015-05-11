@@ -7085,8 +7085,8 @@ Studio/tomcat/webapps/convertigo/scripts/7.3.0/c8o.plugin.standalone.js -text sv
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/c8o.scriptlib.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/ctf.core.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/ctf.jquerymobile.js -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery-1.11.2.min.map -text
-Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery-2.1.3.min.map -text
+Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery-1.11.3.min.map -text
+Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery-2.1.4.min.map -text
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/scripts/7.3.0/jquery.mobile-1.4.5.min.map -text
