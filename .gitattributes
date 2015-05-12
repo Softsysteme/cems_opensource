@@ -2791,36 +2791,10 @@ Studio/projects/template_AngularJS/DisplayObjects/platforms/Android/res/splash/l
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry/config.xml -text svneol=unset#text/plain
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry/res/icon/icon80.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry/res/splash/splash225.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/config.xml -text svneol=unset#text/plain
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/icon/icon150.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/icon/icon86.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/icon/icon86over.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash1280x720.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash1280x768.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash720x1280.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash720x720.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash768x1280.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/config.xml -text svneol=unset#text/plain
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/icon/logo.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/icon/smalllogo.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/icon/storelogo.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/splash/splashscreen.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_7/config.xml -text svneol=unset#text/plain
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_7/res/icon/icon173tile.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_7/res/icon/icon48.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_7/res/icon/icon62tile.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_7/res/splash/splash.jpg -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_8/config.xml -text svneol=unset#text/plain
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_8/res/icon/icon173tile.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_8/res/icon/icon48.png -text
-Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_Phone_8/res/splash/splash.jpg -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/template_AngularJS/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
