@@ -148,8 +148,6 @@ Studio/projects/sample_refManual_webClipper/_private
 Studio/projects/sample_sequencer/*.temp.*
 Studio/projects/sample_sequencer/Traces
 Studio/projects/sample_sequencer/_private
-Studio/projects/template_AngularJS/Traces
-Studio/projects/template_AngularJS/_private
 Studio/projects/template_CICS/.project
 Studio/projects/template_CICS/Traces
 Studio/projects/template_CICS/_data
@@ -162,7 +160,6 @@ Studio/projects/template_HTTP/_data
 Studio/projects/template_HTTP/_private
 Studio/projects/template_HTTP/template_HTTP.temp.wsdl
 Studio/projects/template_HTTP/template_HTTP.temp.xsd
-Studio/projects/template_Polymer/_private
 Studio/projects/template_SAP/*.temp.*
 Studio/projects/template_SAP/Traces
 Studio/projects/template_SAP/_data

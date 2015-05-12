@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:template_Polymer_ns="http://www.convertigo.com/convertigo/projects/template_Polymer" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/template_Polymer">
-    <xsd:element name="void__DefaultTransaction" type="template_Polymer_ns:void__DefaultTransactionRequestData">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:samplePolymer_ns="http://www.convertigo.com/convertigo/projects/samplePolymer" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/samplePolymer">
+    <xsd:element name="void__DefaultTransaction" type="samplePolymer_ns:void__DefaultTransactionRequestData">
         <xsd:annotation/>
     </xsd:element>
     <xsd:element name="void__DefaultTransactionResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="template_Polymer_ns:void__DefaultTransactionResponseData"/>
+                <xsd:element name="response" type="samplePolymer_ns:void__DefaultTransactionResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
     <xsd:complexType name="void__DefaultTransactionResponseType">
         <xsd:sequence>
-            <xsd:element name="document" type="template_Polymer_ns:void__DefaultTransactionResponseData"/>
+            <xsd:element name="document" type="samplePolymer_ns:void__DefaultTransactionResponseData"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="void__DefaultTransactionRequestData">
@@ -25,14 +25,14 @@
     </xsd:complexType>
     <xsd:complexType name="ConvertigoErrorContext">
         <xsd:sequence>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="template_Polymer_ns:ConvertigoErrorContextVariable"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="samplePolymer_ns:ConvertigoErrorContextVariable"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="ConvertigoError">
         <xsd:sequence>
             <xsd:element name="code" type="xsd:integer"/>
             <xsd:element name="message" type="xsd:string"/>
-            <xsd:element name="context" type="template_Polymer_ns:ConvertigoErrorContext"/>
+            <xsd:element name="context" type="samplePolymer_ns:ConvertigoErrorContext"/>
             <xsd:element name="exception" type="xsd:string"/>
             <xsd:element name="stacktrace" type="xsd:string"/>
         </xsd:sequence>
@@ -47,7 +47,7 @@
     </xsd:complexType>
     <xsd:complexType name="void__DefaultTransactionResponseData">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="error" type="template_Polymer_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="error" type="samplePolymer_ns:ConvertigoError"/>
         </xsd:sequence>
         <xsd:attribute name="connector" type="xsd:string"/>
         <xsd:attribute name="context" type="xsd:string"/>
