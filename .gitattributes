@@ -4899,6 +4899,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/EventDetailsDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/EventDetailsDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/GlobalsSymbolsWarnDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/IWsReferenceComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/LimitCharsLogsPreferenceDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MultipleDeletionDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialog.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/MyAbstractDialogComposite.java -text
