@@ -2803,6 +2803,10 @@ Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/sp
 Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash720x1280.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash720x720.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/BlackBerry_10/res/splash/splash768x1280.png -text
+Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
+Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
+Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
+Studio/projects/template_AngularJS/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/config.xml -text svneol=unset#text/plain
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/icon/logo.png -text
 Studio/projects/template_AngularJS/DisplayObjects/platforms/Windows_8/res/icon/smalllogo.png -text
