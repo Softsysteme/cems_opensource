@@ -5922,6 +5922,7 @@ Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboGroup.java -text svneo
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboParent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/dbo_explorer/DboUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Accessibility.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/AuthenticationMode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchExtraVariable.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchKey.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchParam.java -text svneol=unset#text/plain
