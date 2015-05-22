@@ -370,7 +370,7 @@ Studio/lib/hibernate/jboss-logging-annotations-1.2.0.Beta1.jar -text
 Studio/lib/hibernate/jboss-transaction-api_1.2_spec-1.0.0.Final.jar -text
 Studio/lib/hsqldb.jar -text
 Studio/lib/httpclientAuthHelper.jar -text
-Studio/lib/internal/api-v37919.jar -text
+Studio/lib/internal/api-v39827.jar -text
 Studio/lib/internal/aviva-111114.jar -text
 Studio/lib/internal/bull-v24323.jar -text
 Studio/lib/internal/comm.jar -text
@@ -380,10 +380,10 @@ Studio/lib/internal/ibm-v35876.jar -text
 Studio/lib/internal/ms.jar -text
 Studio/lib/internal/netscape.jar -text
 Studio/lib/internal/phaos.jar -text
-Studio/lib/internal/tas-v37919.jar -text
+Studio/lib/internal/tas-v39827.jar -text
 Studio/lib/internal/twinj-v28353.jar -text
 Studio/lib/internal/ui-090918.jar -text
-Studio/lib/internal/util-v37919.jar -text
+Studio/lib/internal/util-v39827.jar -text
 Studio/lib/internal/vdx-090918.jar -text
 Studio/lib/internal/vt220-v34405.jar -text
 Studio/lib/jCharts-0.7.2.jar -text
