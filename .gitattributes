@@ -5334,6 +5334,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JavelinZoneSupport.j
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/JsonArrayTranslationPolicyEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/KeywordEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/LetterCasePolicyEditor.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/NamedSourceSelectorEditor.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/property_editors/NamedSourceSelectorEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyModifySupport.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicInfoEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/PropertyWithDynamicTagsEditor.java -text svneol=unset#text/plain
@@ -5482,6 +5484,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/HandlersD
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IDesignTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IEditableTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IFunctionTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/INamedSourceSelectorTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IOrderableTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IPropertyTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ListenerTreeObject.java -text svneol=unset#text/plain
