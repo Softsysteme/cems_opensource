@@ -28,10 +28,13 @@
  *  This service may be use in a standard AngularJS controller in this form :
  *
  *  myApp.controller('MyController', function ($scope, c8oService) {
- *		$scope.c8oCall = function(requestable) {
- *			c8oService.call($scope, requestable, $scope.data);
- * 			$scope.orderProp = 'age';
- *		} 
+ *		  c8oService.call(
+ *			  requestable,
+ *			  payload,
+ *			  additionalQueryString
+ *		  ).then(function (data) {
+ *			  $scope.data = data.returnedData;
+ * 		  });
  *	});
  *
  *  Where requestable is a String representing Convertigo Sequence or Transaction in the form :
@@ -41,11 +44,29 @@
  *    
  *    Project can be left empty (.<sequence> or .<connector>.<transaction>)
  *    In this case, the default Convertigo project will be used.
+ *    
+ *  Where payload is a Object sent in the http body as payload.
+ *    Payloads can be retreived in a sequence using a Sequence_JS step of this form :
+ *    
+ *    	var Payload = JSON.parse(
+ *			org.apache.commons.io.IOUtils.toString(context.httpServletRequest.getInputStream(),
+ *			"UTF-8")
+ * 		);
+ *
+ *  Where additionalQueryString is an jSON object of this form :
+ *  	{
+ *  		"key1":"value1",
+ *  		"key2":"value2",
+ *  		"key3":"value3",
+ *  		....
+ *  	}
+ *    These key values will be used in the QueryString to COnvertigo server and will automatically be
+ *    mapped to sequence variables.  
  */
 
 angular.module('c8o.services', []).
 	service('c8oService', function($http, $q) {
-		this.call  = function(requestable, calldata) {
+		this.call  = function(requestable, body, calldata) {
 			// Compute Convertigo Server's reserved parameters
 			var c8oCallParams = {};
 			var matches = requestable.match(C8O.re_requestable);
@@ -72,6 +93,7 @@ angular.module('c8o.services', []).
 			$deferred = $q.defer();
 			c8oCallParams["$http"] = $http;
 			c8oCallParams["$deferred"] = $deferred;
+			c8oCallParams["$body"] = body;
 			
 			// Now execute the call.
 			C8O.call(c8oCallParams);
@@ -95,6 +117,13 @@ $.extend(true, C8O, {
 	_getCallUrl: function () {
 		return C8O.vars.endpoint_url + C8O.vars.requester_prefix + ".json";
 	},
+
+	_buildQueryString: function(obj) {
+        var str = [];				  // So we convert the netData object to this format here.
+        for(var p in obj)
+        	str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+        return str.join("&");
+	},
 	
 	/**
 	 * Override the standard c8o.core _call as we use the AngularJS $http object instead of the standard jQuery's Ajax 
@@ -107,9 +136,11 @@ $.extend(true, C8O, {
 		// get the real data.
 		var $http = data.$http;
 		var $deferred = data.$deferred;
+		var $body = data.$body;
 		
 		delete data['$http'];
 		delete data['$deferred'];
+		delete data['$body'];
 				
 		// Do normal C8O call process.
 		if (C8O._hook("call", data)) {
@@ -119,21 +150,15 @@ $.extend(true, C8O, {
 			}
 			var url = C8O._getCallUrl();
 			if (C8O.canLog("trace")) {
-				C8O.log.trace("c8o.core: call " + C8O.toJSON(netData) + " " + C8O.vars.ajax_method + " " + url);
+				C8O.log.trace("c8o.angular.js: call " + C8O.toJSON(netData) + " " + C8O.toJSON($body) + " " + C8O.vars.ajax_method + " " + url);
 			}
 			
 			// Use the AngularJS's $http Object to interact with Convertigo Server.
 			$http({
 			    method: 'POST',
-			    url: url, 
-			    data: netData,
-			    transformRequest: function(obj) { // Convertigo suppports URL form Encoded requests
-			        var str = [];				  // So we convert the netData object to this format here.
-			        for(var p in obj)
-			        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-			        return str.join("&");
-			    },
-			    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			    url: url + "?" + C8O._buildQueryString(netData), 
+			    data: $body,
+			    headers: {'Content-Type': 'application/json'}
 			}).success(function(data, status, headers, config) {
 				C8O._define.pendingXhrCpt--;
 				$deferred.resolve(data.document);
