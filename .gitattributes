@@ -5288,8 +5288,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/property_editors/CommandSNALabelLocat
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/ConnectionsParameterEditor.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataOrNullPropertyDescriptor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DataTypeDetectionPolicyEditor.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DesignDocumentViewSelectorEditor.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DesignDocumentViewSelectorEditorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DomainsListingEditor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DynamicComboBoxPropertyDescriptor.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/property_editors/DynamicInfoPropertyDescriptor.java -text svneol=unset#text/plain
