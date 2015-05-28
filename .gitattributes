@@ -3480,6 +3480,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/IStepSourceContainer.java -text sv
 Studio/src/com/twinsoft/convertigo/beans/core/ITablesProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ITagsProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ITestCaseContainer.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/ITokenPath.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IVariableContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IWsdlReader.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IXPathable.java -text svneol=unset#text/plain
@@ -5490,6 +5491,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/IProperty
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ListenerTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobileApplicationTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/MobilePlatformTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/NamedSourceSelector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ObjectsFolderTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/ProjectTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/PropertyTableColumnTreeObject.java -text svneol=unset#text/plain
