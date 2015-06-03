@@ -5900,6 +5900,7 @@ Studio/src/com/twinsoft/convertigo/engine/admin/services/store/GetStoreContent.j
 Studio/src/com/twinsoft/convertigo/engine/admin/services/store/UploadCustomStore.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/Create.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/services/trace/List.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/admin/services/utils/EchoHttp.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/DOMUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/FileAndProperties.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/admin/util/ServiceUtils.java -text svneol=unset#text/plain
@@ -5937,6 +5938,7 @@ Studio/src/com/twinsoft/convertigo/engine/enums/JsonOutput.java -text svneol=uns
 Studio/src/com/twinsoft/convertigo/engine/enums/MimeType.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Parameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/SchemaMeta.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/SessionAttribute.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/StoreFiles.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Visibility.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/events/BaseEvent.java -text svneol=unset#text/plain
