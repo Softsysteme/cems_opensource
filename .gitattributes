@@ -2336,10 +2336,14 @@ Studio/projects/sampleAngularJS/DisplayObjects/platforms/WindowsPhone8/res/splas
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
 Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
@@ -2441,10 +2445,14 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/ico
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
@@ -2498,10 +2506,14 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhon
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
@@ -2537,10 +2549,14 @@ Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows_Phone_8/re
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows_Phone_8/res/splash/splash.jpg -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
@@ -2619,10 +2635,14 @@ Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/res/splash/
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
 Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
@@ -7166,10 +7186,14 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/BlackBe
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon57.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon572x.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon602x.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon603x.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon72.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/icon/icon722x.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default2xiphone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default568h2xiphone.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default667hiphone.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Default736hiphone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultLandscape2xipad.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultLandscapeipad.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortrait2xipad.png -text
