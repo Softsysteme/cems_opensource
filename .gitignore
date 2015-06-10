@@ -6,6 +6,9 @@ Studio/icons/consoles/Thumbs.db
 Studio/icons/studio/Thumbs.db
 Studio/lib/jco/examples
 Studio/lib/jco/javadoc
+Studio/projects/demo_OffChat/Traces
+Studio/projects/demo_OffChat/_private
+Studio/projects/demo_OffChat/wsdl
 Studio/projects/demo_SalesForce/.project
 Studio/projects/demo_SalesForce/_data
 Studio/projects/demo_SalesForce/_private

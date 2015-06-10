@@ -435,6 +435,29 @@ Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/pla
 Studio/projects/crawlingProject/crawlingProject.xml -text svneol=unset#text/plain
 Studio/projects/crawlingProject/crawlingProject.xsd -text svneol=unset#text/plain
 Studio/projects/crawlingProject/index.jsp -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/.project -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/chat.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/error.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/icon.png -text
+Studio/projects/demo_OffChat/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/demo_OffChat/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/mobile/splash.png -text
+Studio/projects/demo_OffChat/DisplayObjects/mobile/userList.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/OffChat.xml -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/css/custom.css -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/index.html -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/js/custom.js -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/xsd/internal/offchat_fullsync/UserExists.xsd -text svneol=unset#text/plain
+Studio/projects/demo_OffChat/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/accountDetails.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/common.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/contacts.xsl -text svneol=unset#text/plain

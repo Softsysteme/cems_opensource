@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body style="display:none">
+		<!-- Error dialog page - Error message popup  -->
+		<div data-role="page" id="userList" data-title="User List">
+		    
+		    <!-- header bar -->
+		    <div data-role="header">
+		        <h1>User List</h1>
+		    </div>
+		    
+		    <!-- content -->
+		    <div data-role="content">
+		    	<ul data-role="listview" data-inset="true" data-c8o-listen="fs://.get#userList" data-c8o-each="item">
+		    		<li data-c8o-if="OffChat.notMe">
+		    			<a class="user"
+		    				data-c8o-call="fs://.view#chat"
+		    				data-c8o-variables='__{"formatter":"OffChat.calcVariables"}__'
+		    			>__=.__</a>
+		    		</li>
+		    	</ul>
+		    </div>
+		</div>
+		<!-- END Error dialog page - Error message popup  -->
+	</body>
+</html>

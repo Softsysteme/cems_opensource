@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<body style="display:none">
+		<!-- Error dialog page - Error message popup  -->
+		<div data-role="page" id="chat" data-title="User List">
+		    
+		    <!-- header bar -->
+		    <div data-role="header">
+		        <h1>Chat with <span class="user"></span></h1>
+		    </div>
+		    
+		    <!-- content -->
+		    <div data-role="content">
+		    	<div style="display: none">
+			    	<video></video>
+			    	<canvas></canvas>
+		    	</div>
+				<button id="makePhoto">Make photo</button>
+				<form id="messageForm" data-c8o-call="fs://.post">
+					<div data-c8o-listen="fs://.post">
+						<img></img>
+						<input type="text" id="message" name="message" value=""></input>
+					</div>
+					<div data-c8o-listen="fs://.view#chat">
+						<input type="hidden" name="num" value='__{"find": "num:first", "formatter": "OffChat.incNum"}__'></input>						
+					</div>
+					<input type="hidden" name="type" value="message"></input>
+					<input type="hidden" name="dir" value="to"></input>
+					<input type="hidden" name="user" class="user"></input>
+					<button>Go</button>
+				</form>
+		    	<ul data-role="listview" data-inset="true" data-c8o-listen="fs://.view#chat" data-c8o-each=">rows>item">
+		    		<li>
+		    			<div data-c8o-if="dir:contains('from')"><strong>__=>value>user__:</strong> __=>value>message__</div>
+		    			<div data-c8o-if="dir:contains('to')"><strong>me :</strong> __=>value>message__</div>
+		    			<div data-c8o-if=">doc>_attachments"><img data-c8o-use="true" data-c8o-use-src="data:__=>doc>attachments content_type:first__;base64,__=>doc>_attachments data:first__"></img></div>
+		    		</li>
+		    	</ul>
+		    </div>
+		</div>
+		<!-- END Error dialog page - Error message popup  -->
+	</body>
+</html>
