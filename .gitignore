@@ -61,6 +61,9 @@ Studio/projects/lib_Twitter/_private
 Studio/projects/lib_Yammer/*.temp.*
 Studio/projects/lib_Yammer/_data
 Studio/projects/lib_Yammer/_private
+Studio/projects/sampleAngularJS/Traces
+Studio/projects/sampleAngularJS/_private
+Studio/projects/sampleAngularJS/wsdl
 Studio/projects/sampleDocumentationSiteClipper/Traces
 Studio/projects/sampleDocumentationSiteClipper/_data
 Studio/projects/sampleDocumentationSiteClipper/_private
@@ -84,6 +87,9 @@ Studio/projects/sampleMobileVacation/.settings
 Studio/projects/sampleMobileVacation/Traces
 Studio/projects/sampleMobileVacation/_data
 Studio/projects/sampleMobileVacation/_private
+Studio/projects/samplePolymer/Traces
+Studio/projects/samplePolymer/_private
+Studio/projects/samplePolymer/wsdl
 Studio/projects/sample_HelloWorld/_private
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.wsdl
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.xsd

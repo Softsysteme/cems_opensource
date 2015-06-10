@@ -2259,18 +2259,12 @@ Studio/projects/lib_Yammer/xsd/internal/Yammer/VerifyOAuthToken.xsd -text svneol
 Studio/projects/lib_Yammer/xsd/internal/YammerHtml/Authenticate.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Yammer/xsd/lib_Yammer.xsd -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/.project -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleAngularJS/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/css/app.css -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/icon.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/img/favicon.ico -text
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/img/ionic.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/indexflashUpdate.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/js/app.js -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/js/c8o.angular.js -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/js/controllers.js -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/css/ionic.css -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/css/ionic.min.css -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/fonts/ionicons.eot -text
@@ -2279,84 +2273,16 @@ Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/fonts/ionicons.ttf -te
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/fonts/ionicons.woff -text
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/js/ionic.bundle.js -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/lib/version.json -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/mobile_project_migrated.txt -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/android/icon36ldpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/android/icon48mdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/android/icon72hdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/android/icon96xhdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/bb/icon80.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/ios/icon57.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/ios/icon572x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/ios/icon72.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/ios/icon722x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/winphone/icon173tile.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/winphone/icon48.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/icon/winphone/icon62tile.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/hdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/hdpiLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/ldpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/ldpiLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/mdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/mdpiLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/xhdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/android/xhdpiLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/bb/splash225.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPad.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPad2x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPadLandscape2x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPhone.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPhone2x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPhone320x460.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/ios/splashiPhoneLandscape2x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/mobile/res/splash/winphone/splash.jpg -text
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/templates/about.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/templates/adopt.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/templates/petdetail.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/templates/petindex.html -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/DisplayObjects/mobile/templates/tabs.html -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/landscape-hdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/landscape-ldpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/landscape-mdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/landscape-xhdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
-Studio/projects/sampleAngularJS/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
-Studio/projects/sampleAngularJS/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/data/pet0.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/data/pet1.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/data/pet2.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/data/pet3.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/data/pets.xml -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/index.html -text svneol=unset#text/plain
-Studio/projects/sampleAngularJS/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/sampleAngularJS.xml -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/xsd/Template_Angular.xsd -text svneol=unset#text/plain
 Studio/projects/sampleAngularJS/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
@@ -2593,13 +2519,10 @@ Studio/projects/sampleMobileVacation/webservice/Validate.xml -text svneol=unset#
 Studio/projects/sampleMobileVacation/xsd/internal/Fake/Default_transaction.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/xsd/sampleMobileVacation.xsd -text svneol=unset#text/plain
 Studio/projects/samplePolymer/.project -text svneol=unset#text/plain
-Studio/projects/samplePolymer/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/api/posts.jsondata -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/dovulcanise.cmd -text
-Studio/projects/samplePolymer/DisplayObjects/mobile/icon.png -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-01.svg -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-02.svg -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-03.svg -text
@@ -2616,55 +2539,13 @@ Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-13.svg -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-14.svg -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-15.svg -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/img/avatar-16.svg -text
-Studio/projects/samplePolymer/DisplayObjects/mobile/img/favicon.ico -text
-Studio/projects/samplePolymer/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/js/xml2json.js -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/main.html -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/post-card.html -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/post-list.html -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/post-service.html -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/mobile/splash.png -text
 Studio/projects/samplePolymer/DisplayObjects/mobile/vulcanize.json -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/landscape-hdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/landscape-ldpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/landscape-mdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/landscape-xhdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/.project -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
-Studio/projects/samplePolymer/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
-Studio/projects/samplePolymer/css/custom.css -text svneol=unset#text/plain
 Studio/projects/samplePolymer/data/data.xml -text svneol=unset#text/plain
-Studio/projects/samplePolymer/index.html -text svneol=unset#text/plain
-Studio/projects/samplePolymer/js/custom.js -text svneol=unset#text/plain
 Studio/projects/samplePolymer/samplePolymer.xml -text svneol=unset#text/plain
 Studio/projects/samplePolymer/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/samplePolymer/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
