@@ -31,19 +31,18 @@
  *******************************************************/
 
 OffChat = {
-	username: "",
 	incNum: function (num) {
 		return "" + ((num * 1) + 1);
 	},
 	notMe: function ($doc, refs) {
-		return $doc.text() != OffChat.username;
+		return $doc.text() != $("#username").val();
 	},
 	calcVariables: function (user) {
 		return C8O.toJSON({
 			view: "getChat",
 			endkey: [user], startkey: [user, {}],
 			descending: true, include_docs: true, attachments: true,
-			limit: 5,
+			limit: 10,
 			__live: true,
 			__user: user
 		});
@@ -221,18 +220,28 @@ $.extend(true, C8O, {
             actions: [
                 {
                     condition: ">ok:contains('true')",
-                    goToPage: "userList.html",
-    				options : {
-    					transition : "flip"
-    				},
     				beforeRendering: function ($doc, c8oData) {
-    				    OffChat.username = c8oData.username;
-    					C8O.call("fs://.sync", {live: true});
-    					C8O.call("fs://.get#userList", {docid: "userList", __live: true});
+    				    C8O.fs_sync({live: true}).on("complete", function () {
+    	    				C8O.call("fs://.get#userList", {docid: "userList", __live: true});
+    				    }).on("error", function (err) {
+    				    	C8O.call($.extend({__nowait: true}, c8oData));
+    				    });
     				},
                 }
             ]
         }, {
+          calledRequest: "fs://.get#userList",
+          actions: [
+              {
+	              condition: ">_id:contains('userList')",
+	              goToPage: "userList.html",
+	              fromPage: "#login",
+				  options : {
+					transition : "flip"
+				  }
+              }
+          ]
+      }, {
             calledRequest: "fs://.view#chat",
             actions: [
                 {
@@ -542,9 +551,21 @@ C8O.addHook("call", function (data) {
  *  return: true > log the error with C8O.log.error
  *             false > don't log the error
  */
-//C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
-//    return true;
-//});
+C8O.addHook("call_error", function (jqXHR, textStatus, errorThrown, data) {
+	if (data.__sequence == "Login") {
+		if ($.mobile.activePage.is("#login")) {
+			if (!data.__nowait) {
+				C8O.call("fs://.get#userList", {docid: "userList", __live: true});
+			}
+		} else {
+	    	window.setTimeout(function () {
+	    		C8O.call($.extend({__nowait: true}, data));
+	    	}, 5000);
+		}
+		return false;
+	}
+    return true;
+});
 
 /**
  *  device_ready hook
@@ -667,7 +688,8 @@ C8O.addHook("init_finished", function (params) {
 				console.log("An error occured! " + err);
 			});
 		}
-		
+	}).on("click", "#reset", function () {
+		C8O.fs_getDB().destroy();
 	});
     return true;
 });
@@ -748,6 +770,35 @@ C8O.addHook("init_finished", function (params) {
 //C8O.addHook("push_register_success", function (result) {
 //    return true;
 //});
+
+/**
+ *  wait_hide hook
+ *  used after xml_response execution
+ *  or on C8O.waitHide() call
+ *  and hide the transparent mask
+ *  
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets C8O hide the loading mask
+ *             false > doesn't hide anything
+ */
+C8O.addHook("wait_hide", function (data) {
+    return data.__nowait != true;
+});
+
+/**
+ *  wait_show hook
+ *  used at C8O.call calling
+ *  or on C8O.waitShow() call
+ *  and display a transparent mask
+ *  that prevents the user to act
+ *  
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets C8O display the loading mask
+ *             false > doesn't display anything
+ */
+C8O.addHook("wait_show", function (data) {
+	return data.__nowait != true;
+});
 
 /**
  *  xml_response hook

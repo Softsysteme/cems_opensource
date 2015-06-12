@@ -6,6 +6,7 @@
 		    
 		    <!-- header bar -->
 		    <div data-role="header">
+		    	<a data-rel="back" data-icon="back" data-iconpos="notext"></a>
 		        <h1>Chat with <span class="user"></span></h1>
 		    </div>
 		    
@@ -16,7 +17,7 @@
 			    	<canvas></canvas>
 		    	</div>
 				<button id="makePhoto">Make photo</button>
-				<form id="messageForm" data-c8o-call="fs://.post">
+				<form id="messageForm" data-c8o-call="fs://.post" data-c8o-variables='{"type": "message", "dir": "to"}'>
 					<div data-c8o-listen="fs://.post">
 						<img></img>
 						<input type="text" id="message" name="message" value=""></input>
@@ -24,8 +25,6 @@
 					<div data-c8o-listen="fs://.view#chat">
 						<input type="hidden" name="num" value='__{"find": "num:first", "formatter": "OffChat.incNum"}__'></input>						
 					</div>
-					<input type="hidden" name="type" value="message"></input>
-					<input type="hidden" name="dir" value="to"></input>
 					<input type="hidden" name="user" class="user"></input>
 					<button>Go</button>
 				</form>
@@ -37,6 +36,11 @@
 		    		</li>
 		    	</ul>
 		    </div>
+			
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+				<h1>© Convertigo</h1>			
+			</div>
 		</div>
 		<!-- END Error dialog page - Error message popup  -->
 	</body>

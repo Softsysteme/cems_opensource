@@ -153,7 +153,21 @@
 			
 			<!-- footer -->
 			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+				<a id="resetButton" href="#resetDialog" data-rel="dialog" data-transition="pop" data-icon="delete">Reset local database</a>
 				<h1>© Convertigo</h1>			
+			</div>
+		</div>
+		
+		<div data-role="dialog" id="resetDialog">
+			<div data-role="content">
+				<h1>Reset your local database ?</h1>
+				<ul>
+					<li>Clear your local database.</li>
+					<li>Don't remove document on remote database.</li>
+					<li>Your documents will be sync the next time you login.</li>
+				</ul>
+				<a id="reset" data-role="button" data-rel="back" data-theme="b">Reset local database</a>
+				<a data-role="button" data-rel="back" data-theme="a">Cancel</a>
 			</div>
 		</div>
 	</body>

@@ -2,10 +2,11 @@
 <html>
 	<body style="display:none">
 		<!-- Error dialog page - Error message popup  -->
-		<div data-role="page" id="userList" data-title="User List">
+		<div data-role="page" id="userList" data-title="User List" data-dom-cache="true">
 		    
 		    <!-- header bar -->
 		    <div data-role="header">
+		    	<a data-rel="back" data-icon="back" data-iconpos="notext"></a>
 		        <h1>User List</h1>
 		    </div>
 		    
@@ -13,13 +14,15 @@
 		    <div data-role="content">
 		    	<ul data-role="listview" data-inset="true" data-c8o-listen="fs://.get#userList" data-c8o-each="item">
 		    		<li data-c8o-if="OffChat.notMe">
-		    			<a class="user"
-		    				data-c8o-call="fs://.view#chat"
-		    				data-c8o-variables='__{"formatter":"OffChat.calcVariables"}__'
-		    			>__=.__</a>
+		    			<a data-c8o-call="fs://.view#chat" data-c8o-variables='__{"formatter":"OffChat.calcVariables"}__'>__=.__</a>
 		    		</li>
 		    	</ul>
 		    </div>
+			
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+				<h1>© Convertigo</h1>			
+			</div>
 		</div>
 		<!-- END Error dialog page - Error message popup  -->
 	</body>
