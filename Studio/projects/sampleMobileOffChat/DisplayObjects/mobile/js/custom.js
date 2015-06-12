@@ -59,7 +59,7 @@ $.extend(true, C8O, {
     init_vars: {
 //        enc: "false", /** enables rsa encoding */
 //		  fs_server: "http://admin:admin@127.0.0.1:5984", /** force a couchdb server for fullsync. 'null' use pouchdb or the cblite plugin. Else expects 'http://user:pass@server:port' */
-        fs_force_pouch: true, /** force to use pouch, even if fs_server isn't null or cblite plugin is available */
+//        fs_force_pouch: true, /** force to use pouch, even if fs_server isn't null or cblite plugin is available */
 //        i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string will select the browser language */
     },
     
@@ -689,7 +689,7 @@ C8O.addHook("init_finished", function (params) {
 			});
 		}
 	}).on("click", "#reset", function () {
-		C8O.fs_getDB().destroy();
+		C8O.call("fs://.reset");
 	});
     return true;
 });

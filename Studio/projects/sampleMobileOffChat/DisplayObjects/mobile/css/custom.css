@@ -9,3 +9,7 @@
 #resetButton {
 	width: 100%;
 }
+
+#login, #userList {
+  background: url(../icon.png) 50% 66% / 80% no-repeat fixed;
+}

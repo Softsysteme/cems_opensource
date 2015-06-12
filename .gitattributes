@@ -2392,6 +2392,7 @@ Studio/projects/sampleMobileMobTV/xsd/sampleMobileMobTV.xsd -text svneol=unset#t
 Studio/projects/sampleMobileOffChat/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/chat.html -text svneol=unset#text/plain
+Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/css/OffChat.min.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/error.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/icon.png -text
@@ -2402,6 +2403,9 @@ Studio/projects/sampleMobileOffChat/DisplayObjects/mobile/userList.html -text sv
 Studio/projects/sampleMobileOffChat/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileOffChat/_data/icon.svg -text
+Studio/projects/sampleMobileOffChat/_data/jquery-mobile-theme.zip -text
+Studio/projects/sampleMobileOffChat/_data/splash.svg -text
 Studio/projects/sampleMobileOffChat/sampleMobileOffChat.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/xsd/internal/offchat_fullsync/UserExists.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileOffChat/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
