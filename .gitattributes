@@ -6094,7 +6094,7 @@ Studio/tomcat/conf/.keystore -text
 Studio/tomcat/conf/context.xml -text
 Studio/tomcat/conf/tomcat-users.xml -text
 Studio/tomcat/conf/web.xml -text
-Studio/tomcat/lib/ecj-P20140317-1600.jar -text
+Studio/tomcat/lib/ecj-4.4.2.jar -text
 Studio/tomcat/lib/tomcat-dbcp.jar -text
 Studio/tomcat/lib/tomcat-embed-core.jar -text
 Studio/tomcat/lib/tomcat-embed-el.jar -text
