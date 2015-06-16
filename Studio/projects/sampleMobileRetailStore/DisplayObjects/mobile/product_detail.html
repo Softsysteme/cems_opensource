@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page" id="product_detail" data-title="Detail du produit">
+			<!-- top bar -->
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="headContainer">
+					<a data-transition="slide" href="#" data-rel="back">
+						<img class="valign" id="back" src="./img/back.png">
+						<img class="valign" id="logo" src="./img/retail_logo.png">
+					</a>
+					<span class="titleSection valign">Detail</span>
+				</div>	
+				<div id="blueHead"></div>
+			</div>
+			
+			<!-- content -->
+			<div style="padding: 10px;" data-role="content" data-c8o-listen="fs://.get" data-c8o-listen-condition="ProjectData.checkDepthLevelProductDetail">
+	
+				<div class="imgBigContainer">
+					<img class="imgBig" data-c8o-use="on" data-c8o-use-src='__=>imageUrl__'>
+				</div>
+				<hr/>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<h2 class="titreProduitDetail">__=>name__</h2>
+						<p class="prixDetail1">__=>priceOfUnit__ &euro;</p>
+						<p class="prixDetail2">__=>unitPrice__ &euro;</p>
+						<p class="prixDetail3">__=>packaging__</p>
+					</div>
+					<div style="position: relative" class="ui-block-b">
+						<a href="#">
+							<img class="panierDetail" src="./img/icones.png">
+						</a>
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- footer -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page" id="products_list" data-title="Liste des produits">
+			<!-- top bar -->
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="headContainer">
+					<a data-transition="slide" href="#" data-rel="back">
+						<img class="valign" id="back" src="./img/back.png">
+						<img class="valign" id="logo" src="./img/retail_logo.png">
+					</a>
+					<span class="titleSection valign">Produits</span>
+				</div>	
+				<div id="blueHead"></div>
+			</div>
+			
+			<!-- content -->
+			<div style="padding: 5px;" data-role="content">
+
+				<ul data-enhanced="false" data-role="listview" class="ui-listview ulContainer" data-c8o-listen="fs://.view" data-c8o-each=">rows>item" data-c8o-listen-condition="ProjectData.checkDepthLevelProductsList">
+					<li class="ficheProduit" data-icon="false">
+				    	<a style="border-bottom: 1px #e2e2e2 solid;" href="#" data-c8o-call="fs://.get" data-c8o-variables='{"docid":"__=>id__"}'>
+							<img class="imgProduit" data-c8o-use="on" data-c8o-use-src='__=>value>imageUrl__'>
+							<div class="descrProduit"> 
+								<h2 class="titreProduit">__=>value>name__</h2>
+								<p><span class="prix1">__=>value>packaging__ </span><span class="prix2">__=>value>priceOfUnit__ &euro;</span></p>
+							</div>
+							<div class="unit_price">
+								<p class="price">__=>value>unitPrice__ &euro;</p>
+							</div>
+							<div class="buy">
+								<img class="panier" src="./img/icones.png" width="25px">
+							</div>
+						</a>
+				    </li>
+				</ul>
+
+			</div>
+			
+			<!-- footer -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page" id="categories_list_level4" data-title="Rayons">
+			<!-- top bar -->
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="headContainer">
+					<a data-transition="slide" href="#" data-rel="back">
+						<img class="valign" id="back" src="./img/back.png">
+						<img class="valign" id="logo" src="./img/retail_logo.png">
+					</a>
+					<span class="titleSection valign">Rayons</span>
+				</div>	
+				<div id="blueHead"></div>
+			</div>
+			
+			<!-- content -->
+			<div style="padding: 10px;" data-role="content">
+				<ul data-role="listview" data-c8o-listen="fs://.view" data-c8o-each=">rows>item" data-c8o-listen-condition="ProjectData.checkDepthLevel4">
+					<li><a href="#" data-transition="slide" data-c8o-call="fs://.view" data-c8o-variables='{"depthLevel":5, "view":"children_byFather", "startkey":["42", "__=levelId__"], "endkey":["42", "__=levelId__", {}]}'>__=>value>name__</a></li>
+				</ul>
+			</div>
+			
+			<!-- footer -->
+		</div>
+	</body>
+</html>
