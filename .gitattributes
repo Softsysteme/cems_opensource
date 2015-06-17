@@ -154,6 +154,7 @@ Studio/icons/studio/new_line.d.gif -text
 Studio/icons/studio/new_line.gif -text
 Studio/icons/studio/new_screenclass.d.gif -text
 Studio/icons/studio/new_screenclass.gif -text
+Studio/icons/studio/offchat_color_32x32.png -text
 Studio/icons/studio/open_test_platform_16x16.png -text
 Studio/icons/studio/options.gif -text
 Studio/icons/studio/panel_color_32x32.gif -text
@@ -183,6 +184,7 @@ Studio/icons/studio/refresh.gif -text
 Studio/icons/studio/remove_cordova_dir_16x16.png -text
 Studio/icons/studio/remove_cordova_platform_16x16.png -text
 Studio/icons/studio/resize_connector.gif -text
+Studio/icons/studio/retail_store_color_32x32.png -text
 Studio/icons/studio/run.d.gif -text
 Studio/icons/studio/run.gif -text
 Studio/icons/studio/run_locally_16x16.png -text
@@ -5707,7 +5709,9 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilize
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerSearchRoomWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerUsDirectoryWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleMobilizerVacationWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleOffChatWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSamplePolymerWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSampleRetailStoreWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencer1SampleWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSiteClipperProjectWizard.java -text svneol=unset#text/plain
