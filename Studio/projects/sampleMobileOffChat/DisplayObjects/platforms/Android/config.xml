@@ -24,7 +24,7 @@
 	
 	<!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
     <preference name="SplashScreen"    			  value="splash" />         <!-- all: the splash screen resource if built without phonegap build -->
@@ -75,7 +75,6 @@
 <!--     <gap:plugin name="com.phonegap.plugins.barcodescanner" /> -->
 	
 	<!-- Other plugins and documentation can be find here : https://build.phonegap.com/plugins -->
-	<gap:plugin name="com.couchbase.lite.phonegap" source="plugins.cordova.io" git="https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git"/>
 	
 	<!-- Expose access to all URIs, including the file and http protocols -->
 	<access origin="*" subdomains="true"/>

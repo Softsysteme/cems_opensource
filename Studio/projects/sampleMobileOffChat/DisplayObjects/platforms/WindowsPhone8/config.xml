@@ -24,7 +24,7 @@
 	
 	<!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="SplashScreen"    			  value="splash" />         <!-- all: the splash screen resource if built without phonegap build -->
@@ -32,14 +32,7 @@
     
 	<icon src="icon.png"/>
 	
-	<!-- Windows Phone 8 icons -->
-    <icon src="res/icon/icon48.png"      	gap:platform="winphone" />
-    <icon src="res/icon/icon173tile.png" 	gap:platform="winphone"   gap:role="background" />
-	
 	<gap:splash src="splash.png" />
-	
-	<!-- Windows Phone 8 splash -->
-    <gap:splash src="res/splash/splash.jpg" 		     gap:platform="winphone" />
 	
 	<!-- If you do not want any permissions to be added to your app, add the
     following tag to your config.xml; you will still have the INTERNET
