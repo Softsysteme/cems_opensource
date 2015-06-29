@@ -6150,6 +6150,7 @@ Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/keys_studio.txt -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/minime/Java/login.txt -text
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/studio/context.xml -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/WEB-INF/jboss-deployment-structure.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/modules/addressing-1.6.1.mar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/modules/axis2-jaxws-mar-1.6.1.mar -text
 Studio/tomcat/webapps/convertigo/WEB-INF/modules/mex-1.6.1.mar -text
