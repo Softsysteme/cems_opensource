@@ -344,12 +344,9 @@ $.extend(true, C8O, {
  * Functions *
  *******************************************************/
 
-$(document).on("click", ".ficheProduit", function(){
-	$.mobile.pageContainer.pagecontainer("change", "#detail", {transition: 'slide'})
-});
-
 $(document).bind("mobileinit", function(){   
     $.mobile.page.prototype.options.domCache = true;
+    $.mobile.defaultPageTransition = 'slide';
 });
 
 /**
@@ -560,11 +557,20 @@ $(document).bind("mobileinit", function(){
 //C8O.waitHide();
 
 /**
- * waitShow function
- * show the wait screen
- * by showing the #c8oloading element and start jquerymobile loading
+ *  wait_show hook
+ *  used at C8O.call calling
+ *  or on C8O.waitShow() call
+ *  and display a transparent mask
+ *  that prevents the user to act
+ *  
+ *  data:  "object" data used to generate the C8O.call
+ *  return: true > lets C8O display the loading mask
+ *             false > doesn't display anything
  */
-//C8O.waitShow();
+C8O.addHook("wait_show", function (data) {
+    return false;
+});
+
 
 /**
  * walk function
