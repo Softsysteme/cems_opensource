@@ -86,7 +86,6 @@
 <!--     <gap:plugin name="cordova-plugin-media" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-network-information" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-vibration" source="npm" /> -->
-<!--     <gap:plugin name="cordova-plugin-statusbar" source="npm" /> -->
 
     <!-- Other optional plugins -->
 <!--     <gap:plugin name="com.phonegap.plugins.pushplugin" /> -->
@@ -95,6 +94,6 @@
 	<!-- Other plugins and documentation can be find here : https://build.phonegap.com/plugins -->
 	
 	<!-- Expose access to all URIs, including the file and http protocols -->
-	<access origin="https://*" subdomains="true"/>
-	<access origin="*" subdomains="true"/>
+	<allow-navigation href="*" />
+	<allow-intent href="*" />
 </widget>
