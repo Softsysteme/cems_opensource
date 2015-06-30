@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+	
+	<!-- You must configure to reduce XSS risks by declaring what dynamic resources are allowed. See http://content-security-policy.com/ -->
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'" />
+	
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Ionic Seed App for Convertigo</title>
 
