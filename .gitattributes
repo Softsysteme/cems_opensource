@@ -432,11 +432,6 @@ Studio/lib/xerces-2_11_0/xercesImpl.jar -text
 Studio/lib/xerces-2_11_0/xercesSamples.jar -text
 Studio/lib/xerces-2_11_0/xml-apis.jar -text
 Studio/plugin.xml -text svneol=unset#text/plain
-Studio/projects/crawlingProject/crawlingProject.sql -text
-Studio/projects/crawlingProject/crawlingProject.wsdl -text svneol=unset#text/plain
-Studio/projects/crawlingProject/crawlingProject.xml -text svneol=unset#text/plain
-Studio/projects/crawlingProject/crawlingProject.xsd -text svneol=unset#text/plain
-Studio/projects/crawlingProject/index.jsp -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/accountDetails.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/common.xsl -text svneol=unset#text/plain
 Studio/projects/demo_SalesForce/contacts.xsl -text svneol=unset#text/plain
