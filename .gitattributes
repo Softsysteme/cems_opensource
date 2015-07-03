@@ -2415,7 +2415,6 @@ Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/categories_list_le
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/categories_list_level6.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/categories_tile_level1.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/categories_tile_level2.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/css/images/ajax-loader.gif -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/default_page.html -text svneol=unset#text/plain
@@ -2431,14 +2430,12 @@ Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/img/product.png -t
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/img/promo.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/img/retail_logo.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/img/sync.gif -text
-Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/init.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/optimize.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/product_detail.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/products_list.html -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/res/init.html -text svneol=unset#text/plain
-Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/res/readme.txt -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/mobile/splash.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
