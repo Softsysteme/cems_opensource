@@ -3708,6 +3708,8 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLoca
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/RewriteLocationHeaderBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjector.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/ScriptInjectorBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/SetHttpPoolPolicy.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/SetHttpPoolPolicyBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/requestjavascript_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/responsejavascript_color_16x16.png -text
@@ -3756,6 +3758,8 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_removeheader_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_script_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_sethttppoolpolicy_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_sethttppoolpolicy_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_string_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/images/rule_url_color_16x16.png -text
@@ -3788,6 +3792,7 @@ Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/Respons
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RewriteAbsoluteUrl.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/RewriteLocationHeader.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/ScriptInjector.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/extractionrules/siteclipper/res/SetHttpPoolPolicy.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/XMLAddButton.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/XMLAddButtonBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/html/XMLAddImage.java -text svneol=unset#text/plain
@@ -5920,6 +5925,7 @@ Studio/src/com/twinsoft/convertigo/engine/enums/ErrorType.java -text svneol=unse
 Studio/src/com/twinsoft/convertigo/engine/enums/HeaderName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HtmlLocation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HttpMethodType.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/HttpPool.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/ImageFormat.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/JsonOutput.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/MimeType.java -text svneol=unset#text/plain
