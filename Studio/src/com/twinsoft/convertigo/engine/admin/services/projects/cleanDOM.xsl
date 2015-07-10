@@ -4,10 +4,17 @@
 	<xsl:template match="*">			
 		<xsl:copy>				
 			<xsl:copy-of select="@qname"/>	
-			<xsl:copy-of select="@classname"/>		
+			<xsl:copy-of select="@classname"/>
+			<xsl:if test="./property[@name='accessibility']/java.lang.String">
+				<xsl:attribute name="accessibility">		
+					<xsl:value-of select="./property[@name='accessibility']/java.lang.String/@value"/>	
+				</xsl:attribute>
+			</xsl:if>
 			<!--get the name from its property-->
 			<xsl:for-each select="./property[@name='name']">
-				<xsl:attribute name="name"><xsl:value-of select="./java.lang.String/@value"/></xsl:attribute>
+				<xsl:attribute name="name">
+					<xsl:value-of select="./java.lang.String/@value"/>
+				</xsl:attribute>
 			</xsl:for-each>
 			<xsl:apply-templates/>
 		</xsl:copy>

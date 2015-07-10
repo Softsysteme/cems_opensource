@@ -142,6 +142,11 @@ public class GetTestPlatform extends XmlService {
 		elt.setAttribute("name", dbo.getName());
 		elt.setAttribute("comment", dbo.getComment());
 		elt.setAttribute("version", dbo.getVersion());
+		
+		if (dbo instanceof RequestableObject) {
+			elt.setAttribute("accessibility", ((RequestableObject)dbo).getAccessibility() + "" );
+		}
+		
 		return elt;
 	}
 	
