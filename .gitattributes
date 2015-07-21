@@ -5970,6 +5970,7 @@ Studio/src/com/twinsoft/convertigo/engine/helpers/DomainsFilterHelper.java -text
 Studio/src/com/twinsoft/convertigo/engine/helpers/HibernateHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/ScreenClassHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/helpers/WalkHelper.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/localbuild/BuildLocally.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration001.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration3_0_0.java -text
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_0.java -text svneol=unset#text/plain
