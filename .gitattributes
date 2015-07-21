@@ -3892,6 +3892,10 @@ Studio/src/com/twinsoft/convertigo/beans/references/ProjectSchemaReference.java 
 Studio/src/com/twinsoft/convertigo/beans/references/ProjectSchemaReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/RemoteFileReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/RemoteFileReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RestModelReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RestModelReferenceBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RestServiceReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/RestServiceReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/WebServiceReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/WebServiceReferenceBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/WsdlSchemaReference.java -text svneol=unset#text/plain
@@ -3916,6 +3920,8 @@ Studio/src/com/twinsoft/convertigo/beans/references/res/IncludeXsdSchemaReferenc
 Studio/src/com/twinsoft/convertigo/beans/references/res/LocalFileReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/ProjectSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/RemoteFileReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/RestModelReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/references/res/RestServiceReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/WebServiceReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/WsdlSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/XsdSchemaReference.properties -text svneol=unset#text/plain
