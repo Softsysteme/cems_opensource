@@ -431,6 +431,15 @@ Studio/lib/soapui/commons-cli-1.0.jar -text
 Studio/lib/soapui/not-yet-commons-ssl-0.3.11.jar -text
 Studio/lib/soapui/soapui-3.5.1.jar -text
 Studio/lib/soapui/soapui-xmlbeans-3.5.1.jar -text
+Studio/lib/swagger/jackson-annotations-2.6.0.jar -text
+Studio/lib/swagger/jackson-core-2.6.0.jar -text
+Studio/lib/swagger/jackson-databind-2.6.0.jar -text
+Studio/lib/swagger/jackson-dataformat-yaml-2.6.0.jar -text
+Studio/lib/swagger/swagger-annotations-1.5.0.jar -text
+Studio/lib/swagger/swagger-core-1.5.0.jar -text
+Studio/lib/swagger/swagger-models-1.5.0.jar -text
+Studio/lib/swagger/swagger-parser-1.0.8.jar -text
+Studio/lib/swagger/validation-api-1.1.0.Final.jar -text
 Studio/lib/tomcat-dbcp.jar -text
 Studio/lib/tools.jar -text svneol=unset#unset
 Studio/lib/wro4j-core-1.6.3.jar -text
