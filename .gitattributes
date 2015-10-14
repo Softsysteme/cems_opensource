@@ -4308,7 +4308,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/ParallelStepBeanInfo.java -text s
 Studio/src/com/twinsoft/convertigo/beans/steps/ProcessExecStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ProcessExecStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/PushNotificationStep.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/steps/PushNotificationStepBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/steps/PushNotificationStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadCSVStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadCSVStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReadFileStep.java -text svneol=unset#text/plain
