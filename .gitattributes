@@ -429,6 +429,7 @@ Studio/lib/soapui/bcprov-jdk15-141.jar -text
 Studio/lib/soapui/commons-beanutils-1.7.0.jar -text
 Studio/lib/soapui/commons-cli-1.0.jar -text
 Studio/lib/soapui/not-yet-commons-ssl-0.3.11.jar -text
+Studio/lib/soapui/policy-xmlbeans-1.5.jar -text
 Studio/lib/soapui/soapui-3.5.1.jar -text
 Studio/lib/soapui/soapui-xmlbeans-3.5.1.jar -text
 Studio/lib/tomcat-dbcp.jar -text
