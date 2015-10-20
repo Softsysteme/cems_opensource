@@ -5942,6 +5942,7 @@ Studio/src/com/twinsoft/convertigo/engine/enums/CouchExtraVariable.java -text sv
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchKey.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchParam.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/CouchPostDocumentPolicy.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/DoFileUploadMode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/ErrorType.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HeaderName.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/HtmlLocation.java -text svneol=unset#text/plain
