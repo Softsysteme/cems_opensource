@@ -3550,6 +3550,14 @@ Studio/src/com/twinsoft/convertigo/beans/core/TransactionBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/TransactionTimeoutException.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/TransactionWithVariables.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/TransactionWithVariablesBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMapper.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMapperBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMapping.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/Variable.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/VariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/images/bean_property_16x16.png -text
@@ -3591,6 +3599,14 @@ Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_16x16.png -t
 Studio/src/com/twinsoft/convertigo/beans/core/images/testcase_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/transaction_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmapper_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmapper_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmapping_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmapping_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Connector.properties -text
@@ -3618,6 +3634,10 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/StepWithExpressions.properties
 Studio/src/com/twinsoft/convertigo/beans/core/res/TestCase.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/Transaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/TransactionWithVariables.properties -text
+Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMapper.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMapping.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMappingOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMappingParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/Variable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocument.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocumentBeanInfo.java -text svneol=unset#text/plain
@@ -3939,6 +3959,47 @@ Studio/src/com/twinsoft/convertigo/beans/references/res/RestServiceReference.pro
 Studio/src/com/twinsoft/convertigo/beans/references/res/WebServiceReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/WsdlSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/res/XsdSchemaReference.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/DeleteOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/DeleteOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/GetOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/GetOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/IRestOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PathMapping.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PathMappingBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PathParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PathParameterBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PostOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PostOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PutOperation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/PutOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameterBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/images/deleteoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/deleteoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/getoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/getoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/pathmapping_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/pathmapping_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/pathparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/pathparameter_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/postoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/postoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/putoperation_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/putoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/res/DeleteOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/GetOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/HeadOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/PathMapping.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/PathParameter.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/PostOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/PutOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/QueryParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractBase.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractConvertigoJob.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/scheduler/AbstractJob.java -text svneol=unset#text/plain
