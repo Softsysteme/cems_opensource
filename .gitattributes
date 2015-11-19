@@ -166,6 +166,10 @@ Studio/icons/studio/menu/step_color_16x16.png -text
 Studio/icons/studio/menu/testcase_color_16x16.png -text
 Studio/icons/studio/menu/testcasevariable_color_16x16.png -text
 Studio/icons/studio/menu/transaction_color_16x16.png -text
+Studio/icons/studio/menu/urlmapper_color_16x16.png -text
+Studio/icons/studio/menu/urlmapping_color_16x16.png -text
+Studio/icons/studio/menu/urlmappingoperation_color_16x16.png -text
+Studio/icons/studio/menu/urlmappingparameter_color_16x16.png -text
 Studio/icons/studio/menu/variable_color_16x16.png -text
 Studio/icons/studio/mobile_HighEnd_color_32x32.png -text
 Studio/icons/studio/new.gif -text
@@ -5212,6 +5216,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateStubFromXMLAction
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTagNameFromSelectionZoneAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTestCaseAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateTransactionAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMapperAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingOperationAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingParameterAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateVariableAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomAdditionsAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomStatisticsAction.java -text svneol=unset#text/plain
@@ -5539,6 +5547,10 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TraceTree
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TransactionTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/TreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UnloadedProjectTreeObject.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMapperTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingOperationTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingParameterTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject2.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLRecordDescriptionRowTreeObject.java -text svneol=unset#text/plain
