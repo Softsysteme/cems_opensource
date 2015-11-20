@@ -5831,6 +5831,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebClippingCon
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebServiceReferenceWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/SQLQueriesWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ServiceCodeWizardPage.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/UrlMappingWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_statement/StatementGeneratorWizardPage.java -text
