@@ -3482,7 +3482,9 @@ Studio/src/com/twinsoft/convertigo/beans/core/ISchemaReference.java -text svneol
 Studio/src/com/twinsoft/convertigo/beans/core/IScreenClassContainer.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/ISheetContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISimpleTypeAffectation.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/IStepSmartTypeContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IStepSourceContainer.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/IStepSourcesContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ITablesProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ITagsProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ITestCaseContainer.java -text svneol=unset#text/plain
