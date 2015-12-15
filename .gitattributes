@@ -6201,6 +6201,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/SqlRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Statistics.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/StepUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/StringUtils.java -text
+Studio/src/com/twinsoft/convertigo/engine/util/SwaggerUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ThreadUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/Tuple.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/TwsCachedXPathAPI.java -text
