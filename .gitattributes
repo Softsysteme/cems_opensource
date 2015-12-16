@@ -6130,6 +6130,7 @@ Studio/src/com/twinsoft/convertigo/engine/servlets/JsonServlet.java -text svneol
 Studio/src/com/twinsoft/convertigo/engine/servlets/PdfServlet.java -text
 Studio/src/com/twinsoft/convertigo/engine/servlets/ProjectsDataFilter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/ProxyServlet.java -text
+Studio/src/com/twinsoft/convertigo/engine/servlets/RestApiServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/ReverseProxyServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/RsaPublicKeyServlet.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/servlets/StoreDataFilter.java -text svneol=unset#text/plain
