@@ -68,6 +68,12 @@
         <dependent-module archiveName="xmlgraphics-commons-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
+        <dependent-module archiveName="resolver.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/xerces-2_11_0/resolver.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="serializer.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/xerces-2_11_0/serializer.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
         <dependent-module archiveName="xercesImpl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/xerces-2_11_0/xercesImpl.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
@@ -84,6 +90,9 @@
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="not-yet-commons-ssl-0.3.11.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/soapui/not-yet-commons-ssl-0.3.11.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="policy-xmlbeans-1.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/soapui/policy-xmlbeans-1.5.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="soapui-3.5.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/soapui/soapui-3.5.1.jar">
@@ -438,6 +447,9 @@
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="httpcore-4.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/apache/httpcore-4.4.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-dbcp.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.3.x/lib/tomcat-dbcp.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
     </wb-module>
