@@ -5922,6 +5922,7 @@ Studio/src/com/twinsoft/convertigo/engine/ProxyManager.java -text svneol=unset#t
 Studio/src/com/twinsoft/convertigo/engine/PseudoCertificate.java -text
 Studio/src/com/twinsoft/convertigo/engine/RemoteAdministration.java -text
 Studio/src/com/twinsoft/convertigo/engine/RequestableEngineEvent.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/RestApiManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/RsaManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SchemaManager.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/SecurityToken.java -text svneol=unset#text/plain
