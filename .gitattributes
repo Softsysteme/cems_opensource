@@ -4391,6 +4391,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/RemoveAuthenticatedUserStep.java 
 Studio/src/com/twinsoft/convertigo/beans/steps/RemoveAuthenticatedUserStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/RemoveContextStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/RemoveContextStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/RemoveSessionStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/RemoveSessionStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/RenameStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/RenameStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/ReturnStep.java -text svneol=unset#text/plain
@@ -4547,6 +4549,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/removeAuthenticatedUser_16
 Studio/src/com/twinsoft/convertigo/beans/steps/images/removeAuthenticatedUser_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_context_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_session_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/remove_session_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/rename_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/return_16x16.png -text
@@ -4620,6 +4624,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadFileStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReadXMLStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/RemoveAuthenticatedUserStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/RemoveContextStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/RemoveSessionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/RenameStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/ReturnStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SequenceStep.properties -text svneol=unset#text/plain
