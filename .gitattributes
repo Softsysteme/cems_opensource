@@ -3483,6 +3483,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/IContextMaintainer.java -text svne
 Studio/src/com/twinsoft/convertigo/beans/core/IDomainsFilterContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IElementRefAffectation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IInfoProperty.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/IMappingRefModel.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/IMultiValued.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/INillableProperty.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/ISchemaAttributeGenerator.java -text svneol=unset#text/plain
@@ -3963,12 +3964,18 @@ Studio/src/com/twinsoft/convertigo/beans/references/res/WsdlSchemaReference.prop
 Studio/src/com/twinsoft/convertigo/beans/references/res/XsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestOperation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/BodyParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/BodyParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/DeleteOperation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/DeleteOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/FormParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/FormParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/GetOperation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/GetOperationBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/HeaderParameter.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/HeaderParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathMapping.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathMappingBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathParameter.java -text svneol=unset#text/plain
@@ -3981,10 +3988,16 @@ Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameter.java -text svneol=u
 Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/bodyparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/bodyparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/deleteoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/deleteoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/formparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/formparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/getoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/getoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/headerparameter_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/headerparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/pathmapping_color_16x16.png -text
@@ -3998,9 +4011,12 @@ Studio/src/com/twinsoft/convertigo/beans/rest/images/putoperation_color_32x32.pn
 Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/res/AbstractRestOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/BodyParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/DeleteOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/FormParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/GetOperation.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/HeadOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/HeaderParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PathMapping.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PathParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PostOperation.properties -text svneol=unset#text/plain
