@@ -170,6 +170,7 @@ Studio/icons/studio/menu/urlmapper_color_16x16.png -text
 Studio/icons/studio/menu/urlmapping_color_16x16.png -text
 Studio/icons/studio/menu/urlmappingoperation_color_16x16.png -text
 Studio/icons/studio/menu/urlmappingparameter_color_16x16.png -text
+Studio/icons/studio/menu/urlmappingresponse_color_16x16.png -text
 Studio/icons/studio/menu/variable_color_16x16.png -text
 Studio/icons/studio/mobile_HighEnd_color_32x32.png -text
 Studio/icons/studio/new.gif -text
@@ -3561,6 +3562,8 @@ Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingOperation.java -text svn
 Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingOperationBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingParameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingParameterBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingResponse.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/UrlMappingResponseBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/Variable.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/VariableBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/images/bean_property_16x16.png -text
@@ -3610,6 +3613,8 @@ Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingoperation_color_1
 Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingoperation_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingparameter_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingparameter_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingresponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/core/images/urlmappingresponse_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/images/variable_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Connector.properties -text
@@ -3641,6 +3646,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMapper.properties -text svn
 Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMapping.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMappingOperation.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMappingParameter.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/core/res/UrlMappingResponse.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/res/Variable.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocument.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocumentBeanInfo.java -text svneol=unset#text/plain
@@ -3964,6 +3970,8 @@ Studio/src/com/twinsoft/convertigo/beans/references/res/WsdlSchemaReference.prop
 Studio/src/com/twinsoft/convertigo/beans/references/res/XsdSchemaReference.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestOperation.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestOperationBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestResponse.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/AbstractRestResponseBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/BodyParameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/BodyParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/DeleteOperation.java -text svneol=unset#text/plain
@@ -3976,6 +3984,8 @@ Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperation.java -text svneol=un
 Studio/src/com/twinsoft/convertigo/beans/rest/HeadOperationBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/HeaderParameter.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/HeaderParameterBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/OperationResponse.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/OperationResponseBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathMapping.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathMappingBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/PathParameter.java -text svneol=unset#text/plain
@@ -3988,6 +3998,8 @@ Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameter.java -text svneol=u
 Studio/src/com/twinsoft/convertigo/beans/rest/QueryParameterBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestresponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/abstractrestresponse_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/bodyparameter_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/bodyparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/deleteoperation_color_16x16.png -text
@@ -4000,6 +4012,8 @@ Studio/src/com/twinsoft/convertigo/beans/rest/images/headerparameter_color_16x16
 Studio/src/com/twinsoft/convertigo/beans/rest/images/headerparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/headoperation_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/operationresponse_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/rest/images/operationresponse_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/pathmapping_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/pathmapping_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/pathparameter_color_16x16.png -text
@@ -4011,12 +4025,14 @@ Studio/src/com/twinsoft/convertigo/beans/rest/images/putoperation_color_32x32.pn
 Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/images/queryparameter_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/rest/res/AbstractRestOperation.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/AbstractRestResponse.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/BodyParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/DeleteOperation.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/FormParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/GetOperation.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/HeadOperation.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/HeaderParameter.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/rest/res/OperationResponse.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PathMapping.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PathParameter.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/rest/res/PostOperation.properties -text svneol=unset#text/plain
@@ -5308,6 +5324,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMapperAction.j
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingOperationAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingParameterAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateUrlMappingResponseAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CreateVariableAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomAdditionsAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/CustomStatisticsAction.java -text svneol=unset#text/plain
@@ -5638,6 +5655,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UnloadedP
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMapperTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingOperationTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingParameterTreeObject.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingResponseTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/UrlMappingTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/VariableTreeObject2.java -text
