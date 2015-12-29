@@ -407,10 +407,10 @@ Studio/lib/internal/ibm-v35876.jar -text
 Studio/lib/internal/ms.jar -text
 Studio/lib/internal/netscape.jar -text
 Studio/lib/internal/phaos.jar -text
-Studio/lib/internal/tas-v39827.jar -text
+Studio/lib/internal/tas-v41019.jar -text
 Studio/lib/internal/twinj-v28353.jar -text
 Studio/lib/internal/ui-090918.jar -text
-Studio/lib/internal/util-v39827.jar -text
+Studio/lib/internal/util-v41019.jar -text
 Studio/lib/internal/vdx-090918.jar -text
 Studio/lib/internal/vt220-v34405.jar -text
 Studio/lib/jCharts-0.7.2.jar -text
