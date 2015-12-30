@@ -801,6 +801,11 @@ Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/DocumentGet.xsd -t
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/ServerGetAllDbs.xsd -text
 Studio/projects/lib_CouchDB/xsd/internal/lib_CouchDBConnector/ViewGet.xsd -text svneol=unset#text/plain
 Studio/projects/lib_CouchDB/xsd/lib_CouchDB.xsd -text svneol=unset#text/plain
+Studio/projects/lib_FileTransfer/.project -text svneol=unset#text/plain
+Studio/projects/lib_FileTransfer/lib_FileTransfer.xml -text svneol=unset#text/plain
+Studio/projects/lib_FileTransfer/xsd/internal/c8ofiletransfer/AllChunks.xsd -text svneol=unset#text/plain
+Studio/projects/lib_FileTransfer/xsd/internal/c8ofiletransfer/GetDocument.xsd -text svneol=unset#text/plain
+Studio/projects/lib_FileTransfer/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/.project -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/lib_GoogleDocs.xml -text svneol=unset#text/plain
 Studio/projects/lib_GoogleDocs/template/newRecord.xsl -text svneol=unset#text/plain
