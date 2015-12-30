@@ -31,6 +31,9 @@ Studio/projects/lib_Authentication/Traces
 Studio/projects/lib_Authentication/_private
 Studio/projects/lib_CouchDB/Traces
 Studio/projects/lib_CouchDB/_private
+Studio/projects/lib_FileTransfer/Traces
+Studio/projects/lib_FileTransfer/_data
+Studio/projects/lib_FileTransfer/_private
 Studio/projects/lib_GoogleDocs/*.temp.*
 Studio/projects/lib_GoogleDocs/Traces
 Studio/projects/lib_GoogleDocs/_data
