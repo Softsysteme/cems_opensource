@@ -141,6 +141,7 @@ Studio/icons/studio/launch_fullscreen_16x16.gif -text
 Studio/icons/studio/launch_fullscreen_16x16.png -text
 Studio/icons/studio/launch_test_platform_16x16.png -text
 Studio/icons/studio/learn_transaction.gif -text
+Studio/icons/studio/library_filetransfer_color_32x32.png -text
 Studio/icons/studio/library_googleMaps_color_32x32.png -text
 Studio/icons/studio/library_googleSpreadsheets_color_32x32.png -text
 Studio/icons/studio/library_keyring_color_32x32.png -text
@@ -5822,6 +5823,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewEmptyJQueryMob
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHtmlConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHttpConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewInteractionHubWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryFileTransferWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleMapsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleSpreadsheetsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryKeyringWizard.java -text svneol=unset#text/plain
