@@ -2221,6 +2221,55 @@ Studio/projects/lib_Polymer/xsd/template_sequence.xsd -text svneol=unset#text/pl
 Studio/projects/lib_PushManager/.project -text
 Studio/projects/lib_PushManager/lib_PushManager.xml -text svneol=unset#text/plain
 Studio/projects/lib_PushManager/xsd/internal/PushManagerDataBase/ShowDevices.xsd -text
+Studio/projects/lib_Salesforce/.project -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/lib_Salesforce.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CconvertLead.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Ccreate.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cdelete.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeAppMenu.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeApprovalLayout.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeAvailableQuickActions.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeCompactLayouts.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeDataCategoryGroupStructures.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeDataCategoryGroups.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeFlexiPages.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeGlobal.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeGlobalTheme.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeLayout.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeQuickActions.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeSObject.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeSObjects.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeSearchLayouts.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeSearchScopeOrder.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeSoftphoneLayout.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeTabs.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CdescribeTheme.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CemptyRecycleBin.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CgetDeleted.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CgetServerTimestamp.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CgetUpdated.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CgetUserInfo.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CinvalidateSessions.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Clogin.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Clogout.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cmerge.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CperformQuickActions.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cprocess.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cquery.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CqueryAll.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CqueryMore.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CresetPassword.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cretrieve.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CretrieveQuickActionTemplates.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Csearch.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CsendEmail.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CsendEmailMessage.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/CsetPassword.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cundelete.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cupdate.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cupsert.xml -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/wsdl/salesforce_1.wsdl -text svneol=unset#text/plain
+Studio/projects/lib_Salesforce/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Twitter/.project -text
 Studio/projects/lib_Twitter/lib_Twitter.xml -text
 Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetShowUser.xsd -text
