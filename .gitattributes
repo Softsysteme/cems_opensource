@@ -4445,6 +4445,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/SessionSetStep.java -text svneol=
 Studio/src/com/twinsoft/convertigo/beans/steps/SessionSetStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SetAuthenticatedUserStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SetAuthenticatedUserStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/SetResponseHeaderStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/SetResponseHeaderStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleIteratorStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleIteratorStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/SimpleSourceStep.java -text svneol=unset#text/plain
@@ -4603,6 +4605,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/sessionSet_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sessionSet_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/setAuthenticatedUser_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/setAuthenticatedUser_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/setResponseHeader_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/setResponseHeader_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/smtpstep_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/sortstep_16x16.png -text
@@ -4670,6 +4674,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/SerialStep.properties -text s
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SessionGetStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SessionSetStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SetAuthenticatedUserStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/SetResponseHeaderStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleIteratorStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleSourceStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/SimpleStep.properties -text svneol=unset#text/plain
