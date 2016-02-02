@@ -147,6 +147,7 @@ Studio/icons/studio/library_googleSpreadsheets_color_32x32.png -text
 Studio/icons/studio/library_keyring_color_32x32.png -text
 Studio/icons/studio/library_oauth_color_32x32.png -text
 Studio/icons/studio/library_pushManager_color_32x32.png -text
+Studio/icons/studio/library_sigfox_color_32x32.png -text
 Studio/icons/studio/library_twitter_color_32x32.png -text
 Studio/icons/studio/menu/call_variable_color_16x16.png -text
 Studio/icons/studio/menu/connector_color_16x16.png -text
@@ -5703,6 +5704,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryKeyring
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryOAuthWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryPolymerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryPushManagerWizard.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibrarySigfoxWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryTwitterWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewMinitelConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewProjectWizard.java -text

@@ -59,6 +59,9 @@ Studio/projects/lib_Polymer/_private
 Studio/projects/lib_PushManager/AppleCertificateTool
 Studio/projects/lib_PushManager/_private
 Studio/projects/lib_Salesforce/_private
+Studio/projects/lib_Sigfox/Traces
+Studio/projects/lib_Sigfox/_data
+Studio/projects/lib_Sigfox/_private
 Studio/projects/lib_Twitter/Traces
 Studio/projects/lib_Twitter/_private
 Studio/projects/lib_Yammer/*.temp.*
