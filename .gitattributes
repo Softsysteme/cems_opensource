@@ -2284,6 +2284,10 @@ Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cupdate.xml -text svne
 Studio/projects/lib_Salesforce/soap-templates/SoapBinding/Cupsert.xml -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/wsdl/salesforce_1.wsdl -text svneol=unset#text/plain
 Studio/projects/lib_Salesforce/xsd/template_sequence.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Sigfox/.project -text svneol=unset#text/plain
+Studio/projects/lib_Sigfox/lib_Sigfox.xml -text svneol=unset#text/plain
+Studio/projects/lib_Sigfox/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/lib_Sigfox/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Twitter/.project -text
 Studio/projects/lib_Twitter/lib_Twitter.xml -text
 Studio/projects/lib_Twitter/xsd/internal/lib_TwitterConnector/GetShowUser.xsd -text
