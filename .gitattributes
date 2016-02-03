@@ -5037,6 +5037,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/actions/MyAbstractAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenConvertigoDocumentationAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenConvertigoWorkspaceFolderAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenDiscoveryConnectorsAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/actions/OpenSwaggerConsoleAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerFindAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerImportAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/actions/ProjectExplorerRefreshAction.java -text
