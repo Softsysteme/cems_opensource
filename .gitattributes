@@ -229,6 +229,8 @@ Studio/icons/studio/step_by_step.d.gif -text
 Studio/icons/studio/step_by_step.gif -text
 Studio/icons/studio/stop_transaction.d.gif -text
 Studio/icons/studio/stop_transaction.gif -text
+Studio/icons/studio/swagger_16x16.png -text
+Studio/icons/studio/swagger_32x32.png -text
 Studio/icons/studio/transaction_execute_default.gif -text
 Studio/icons/studio/transaction_execute_selected.d.gif -text
 Studio/icons/studio/transaction_execute_selected.gif -text
@@ -5374,6 +5376,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ImportDesignDocumentsFr
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileApplicationFullScreenProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileApplicationProjectAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/MyAbstractAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OpenProjectSwaggerConsoleAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OpenProjectTestPlatformAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputRecursiveStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputStepAction.java -text svneol=unset#text/plain
