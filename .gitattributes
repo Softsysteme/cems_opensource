@@ -6429,6 +6429,7 @@ Studio/tomcat/webapps/convertigo/admin/images/03.png -text
 Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_site.png -text
+Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_swagger.png -text
 Studio/tomcat/webapps/convertigo/admin/images/100x100_picto_test.png -text
 Studio/tomcat/webapps/convertigo/admin/images/55x55_picto_test.png -text
 Studio/tomcat/webapps/convertigo/admin/images/activity.gif -text
@@ -6616,6 +6617,7 @@ Studio/tomcat/webapps/convertigo/admin/images/navigationImages/10.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_doc.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_itcenter.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_site.png -text
+Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_swagger.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/100x100_picto_test.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/11.png -text
 Studio/tomcat/webapps/convertigo/admin/images/navigationImages/14.png -text
