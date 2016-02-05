@@ -30,6 +30,7 @@
 var isIE = navigator.userAgent.indexOf('Gecko') == -1 ? true: false;
 
 // perform initilizations
+var currentObject = null;
 var focusOnField = null;
 var currentFieldOnFocus = '';
 var oldSpan = null;
@@ -433,7 +434,8 @@ function focusOnLastField() {
 
 function handleKeypress(e) {
    if(!e) e = window.event;
-	e.returnValue = false;
+   e.returnValue = false;
+   currentObject = e.target;
    var shiftKeyDown = e.shiftKey;
 	var match = false;
    //alert("keycode='" + e.keyCode + "'");
@@ -593,10 +595,11 @@ function no_auto_checkInputChars(event, size, bAutoEnter, Object) {
 			{
 				if (doAutoTab(event.keyCode)) {
 					var elt= document.getElementsByTagName("INPUT");
-					next=getNextInput(Object, elt);
+					next=getNextInput((currentObject == null) ? Object:currentObject, elt);
 					next.focus();
 					next.select();
 					focusOnField=next;
+					currentObject = null;
 				}
 			}	
 		}
@@ -769,7 +772,7 @@ function addCalendars() {
          }
          pattern = myPatternElements.join(separator);
          Calendar.setup({
-            inputField  : thisCal[0],   // id of the input field
+            inputField  : thisCal[0] + "_n1",   // id of the input field
 	       	ifFormat    : pattern,   // format of the input field
 	       	daFormat  : pattern
 	    	});
@@ -835,24 +838,42 @@ function checkDirty(pr, cn, tim) {
 // Implements the XML  Ajax ready state listener
 // ********************************************************************************************
 function XSLT_transformation(){
-	var resultDiv = document.getElementById("resultDiv");
-	if(window.XSLTProcessor){
-		var xsltProcessor = new XSLTProcessor();
-		xsltProcessor.importStylesheet(xslDom);
-		fragment = xsltProcessor.transformToFragment(xmlDocument, document);
-		
-		var mydiv = document.createElement("div");
-		var myattb = document.createAttribute("id");
-		myattb.value = "resultDiv";
-		mydiv.setAttributeNode( myattb );
-		
-		mydiv.appendChild(fragment);				
-		resultDiv.parentNode.replaceChild(mydiv,resultDiv);
-	}else{
-		oldTrBgcolor = null;
-		strResult = xmlDocument.transformNode(xslDom);
-		resultDiv.innerHTML = strResult;
-	}
+    var resultDiv = document.getElementById("resultDiv");
+    if(window.XSLTProcessor){
+          var xsltProcessor = new XSLTProcessor();
+          xsltProcessor.importStylesheet(xslDom);
+          fragment = xsltProcessor.transformToFragment(xmlDocument, document);
+         
+          var mydiv = document.createElement("div");
+          var myattb = document.createAttribute("id");
+          myattb.value = "resultDiv";
+          mydiv.setAttributeNode( myattb );
+         
+          mydiv.appendChild(fragment);                   
+          resultDiv.parentNode.replaceChild(mydiv,resultDiv);
+    }else{
+          oldTrBgcolor = null;
+          if (typeof (xmlDocument.transformNode) != "undefined")
+        {
+                strResult = xmlDocument.transformNode(xslDom);
+        } else {
+          try {
+              var xslt = new ActiveXObject("Msxml2.XSLTemplate");
+              var xslDoc = new ActiveXObject("Msxml2.FreeThreadedDOMDocument");
+              xslDoc.load(xslDom);
+              xslt.stylesheet = xslDoc;
+              var xslProc = xslt.createProcessor();
+              xslProc.input = xmlDocument;
+              xslProc.transform();
+              strResult =  xslProc.output;
+            }
+            catch (e) {
+                alert("The type [XSLTProcessor] and the function [XmlDocument.transformNode] are not supported by this browser, can't transform XML document to HTML string!");
+                return null;
+            }
+        }
+          resultDiv.innerHTML = strResult;
+    }
 }
 
 function ajaxReadyStateListener()
@@ -922,7 +943,8 @@ function ajaxReadyStateListener()
 				if(enableBuffering)consome();
 				
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
 				var rEl = xmlDom.documentElement;
 				if (bCheckDomDirty) {
@@ -936,7 +958,8 @@ function ajaxReadyStateListener()
 			else {
 				alert("no XSL stylesheet found");
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
 				if(benchTime)chrono.stop(true);
 				if(benchTime)t_tot.stop(true);
@@ -971,7 +994,8 @@ function ajaxXmlPost(xmlRequester, form) {
    	}
    	
    	// turn on the wait DIV
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
    	clearTimeout(checkDomDirty);
    	if(benchTime)requestTime.start();
    	
@@ -1005,7 +1029,8 @@ function ajaxXmlPostData(xmlRequester, data) {
    	
    	// turn on the wait DIV
    	isWaiting = true;
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
    	if(benchTime)requestTime.start();
    	
    	// set the ajax receive handler

@@ -30,6 +30,7 @@
 var isIE = navigator.userAgent.indexOf('Gecko') == -1 ? true: false;
 
 // perform initilizations
+var currentObject = null;
 var focusOnField = null;
 var currentFieldOnFocus = '';
 var oldSpan = null;
@@ -58,6 +59,8 @@ var requestTime = null;
 var totalTime = null;
 
 var xslDom = null;
+var checkDomDirty; // window timer object for domDirty check
+var bCheckDomDirty = false; // boolean for domDirty check
 
 function initVar(){
 	if(benchTime){
@@ -431,7 +434,8 @@ function focusOnLastField() {
 
 function handleKeypress(e) {
    if(!e) e = window.event;
-	e.returnValue = false;
+   e.returnValue = false;
+   currentObject = e.target;
    var shiftKeyDown = e.shiftKey;
 	var match = false;
    //alert("keycode='" + e.keyCode + "'");
@@ -591,10 +595,11 @@ function no_auto_checkInputChars(event, size, bAutoEnter, Object) {
 			{
 				if (doAutoTab(event.keyCode)) {
 					var elt= document.getElementsByTagName("INPUT");
-					next=getNextInput(Object, elt);
+					next=getNextInput((currentObject == null) ? Object:currentObject, elt);
 					next.focus();
 					next.select();
 					focusOnField=next;
+					currentObject = null;
 				}
 			}	
 		}
@@ -790,6 +795,45 @@ function showErrorDetails() {
 	}
 }
 
+/************************************************\
+| Begin : Dom dirty (unsollicited changes) check |
+\************************************************/
+function ddTimer(iter) {
+	var timerValues = new Array(250, 330, 420, 500, 1000, 2000, 2000, 3000, 5000, 10000, 15000);
+	var res = (iter<timerValues.length)?timerValues[iter]:25000;
+	
+	return res;
+}
+
+function checkDirty(pr, cn, tim) {
+	clearTimeout(checkDomDirty);
+	//alert("tim='" + tim + "'");
+	if (pr && cn && tim < 15) {
+		if (tim > 0) {
+			var poller = getXmlHttpRequest();
+		  	if (isIE) {
+		  		poller.onreadystatechange = function () {}
+		  		poller.abort();
+		   	}
+		  	poller.onreadystatechange = function(){
+		  		if (poller.readyState == 4) {
+		  			if (poller.responseText=="true") {
+		  				//alert("true");
+		  				refresh();
+		  			}
+		  			else {
+		  				//alert("false");
+		  			}
+		  		}
+		  	};
+		  	poller.open("GET", "../../webclipper/" + pr + "/" + cn + "/d", true);
+		  	poller.send();
+		}
+		var newTim = tim + 1;
+		checkDomDirty = window.setTimeout("checkDirty('" + pr + "', '" + cn + "', " + newTim + ")", ddTimer(tim));
+	}
+}
+
 // ********************************************************************************************
 // Implements the XML  Ajax ready state listener
 // ********************************************************************************************
@@ -899,8 +943,14 @@ function ajaxReadyStateListener()
 				if(enableBuffering)consome();
 				
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
+				var rEl = xmlDom.documentElement;
+				if (bCheckDomDirty) {
+					checkDirty(rEl.getAttribute("project"), rEl.getAttribute("connector"), 0);
+				}
+
 				if(benchTime)chrono.stop(true);
 				if(benchTime)t_tot.stop(true);
 				if(benchTime)totalTime.stop(true);
@@ -908,7 +958,8 @@ function ajaxReadyStateListener()
 			else {
 				alert("no XSL stylesheet found");
 				// turn off the wait sign ..
-				document.getElementById("waitDiv").style.visibility = 'hidden';
+				//document.getElementById("waitDiv").style.visibility = 'hidden';
+				document.getElementById("waitDiv").style.display = 'none';
 				
 				if(benchTime)chrono.stop(true);
 				if(benchTime)t_tot.stop(true);
@@ -943,7 +994,9 @@ function ajaxXmlPost(xmlRequester, form) {
    	}
    	
    	// turn on the wait DIV
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
+   	clearTimeout(checkDomDirty);
    	if(benchTime)requestTime.start();
    	
    	// set the ajax receive handler
@@ -976,7 +1029,8 @@ function ajaxXmlPostData(xmlRequester, data) {
    	
    	// turn on the wait DIV
    	isWaiting = true;
-   	document.getElementById("waitDiv").style.visibility = 'visible';
+   	//document.getElementById("waitDiv").style.visibility = 'visible';
+   	document.getElementById("waitDiv").style.display = 'block';
    	if(benchTime)requestTime.start();
    	
    	// set the ajax receive handler

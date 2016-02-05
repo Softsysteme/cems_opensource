@@ -31,6 +31,7 @@ var isIE = navigator.userAgent.indexOf('Gecko') == -1 ? true: false;
 var isGC = navigator.userAgent.indexOf('Chrome') == -1 ? true: false;
 
 // perform initilizations
+var currentObject = null;
 var focusOnField = null;
 var currentFieldOnFocus = '';
 var oldSpan = null;
@@ -423,6 +424,7 @@ function focusOnLastField() {
 function handleKeypress(e) {
    if(!e) e = window.event;
 	e.returnValue = false;
+	currentObject = e.target;
 	var shiftKeyDown = e.shiftKey;
 	var sAuthKeys = "13;9;38;40";
 	var match = false;
@@ -584,10 +586,11 @@ function no_auto_checkInputChars(event, size, bAutoEnter, Object) {
 			{
 				if (doAutoTab(event.keyCode)) {
 					var elt= document.getElementsByTagName("INPUT");
-					next=getNextInput(Object, elt);
+					next=getNextInput((currentObject == null) ? Object:currentObject, elt);
 					next.focus();
 					next.select();
 					focusOnField=next;
+					currentObject = null;
 				}
 			}	
 		}
