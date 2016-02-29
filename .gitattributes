@@ -3528,7 +3528,7 @@ Studio/src/com/twinsoft/convertigo/beans/core/MobileApplication.java -text svneo
 Studio/src/com/twinsoft/convertigo/beans/core/MobileApplicationBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/MobilePlatform.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/MobilePlatformBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/core/MySimpleBeanInfo.java -text
+Studio/src/com/twinsoft/convertigo/beans/core/MySimpleBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/core/Pool.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/PoolBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/core/Project.java -text
@@ -5690,9 +5690,9 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableD
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableDescriptionRowTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/projectexplorer/model/XMLTableDescriptionTreeObject.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/propertysheet/PropertySheetView.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/references/ReferencesView.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/ReferencesView.java -text svneol=unset#plain/text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefContentProvider.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefLabelProvider.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/ViewRefLabelProvider.java -text svneol=unset#plain/text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/information_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/isusedby_16x16.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/images/requires_16x16.png -text
