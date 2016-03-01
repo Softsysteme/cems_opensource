@@ -3619,8 +3619,21 @@ Studio/src/com/twinsoft/convertigo/beans/core/res/TestCase.properties -text svne
 Studio/src/com/twinsoft/convertigo/beans/core/res/Transaction.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/TransactionWithVariables.properties -text
 Studio/src/com/twinsoft/convertigo/beans/core/res/Variable.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncFilterListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncFilterListenerBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncListenerBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncViewListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/AbstractFullSyncViewListenerBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocument.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/DesignDocumentBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncDeleteFilterListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncDeleteFilterListenerBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncDeleteListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncDeleteViewListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncDeleteViewListenerBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncFilterListener.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncFilterListenerBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/FullSyncListenerBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/designdocument_color_16x16.png -text
@@ -3631,7 +3644,13 @@ Studio/src/com/twinsoft/convertigo/beans/couchdb/images/function_color_16x16.png
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/function_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/view_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/couchdb/images/view_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/AbstractFullSyncFilterListener.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/AbstractFullSyncListener.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/AbstractFullSyncViewListener.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/res/DesignDocument.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/FullSyncDeleteFilterListener.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/FullSyncDeleteViewListener.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/couchdb/res/FullSyncFilterListener.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/couchdb/res/FullSyncListener.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/BaseCriteria.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/criteria/siteclipper/BaseCriteriaBeanInfo.java -text svneol=unset#text/plain
