@@ -38,7 +38,7 @@ import com.twinsoft.convertigo.engine.admin.services.at.ServiceParameterDefiniti
 
 @ServiceDefinition(
 		name = "GetUndefinedSymbols",
-		roles = { Role.TEST_PLATFORM },
+		roles = { Role.TEST_PLATFORM, Role.PROJECTS_CONFIG, Role.PROJECTS_VIEW },
 		parameters = {
 				@ServiceParameterDefinition(
 						name = "projectName",

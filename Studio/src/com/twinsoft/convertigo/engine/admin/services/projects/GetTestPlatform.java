@@ -54,7 +54,7 @@ import com.twinsoft.convertigo.engine.util.GenericUtils;
 
 @ServiceDefinition(
 		name = "GetTestPlatform",
-		roles = { Role.TEST_PLATFORM },
+		roles = { Role.TEST_PLATFORM, Role.PROJECTS_CONFIG, Role.PROJECTS_VIEW },
 		parameters = {
 				@ServiceParameterDefinition(
 						name = "projectName",

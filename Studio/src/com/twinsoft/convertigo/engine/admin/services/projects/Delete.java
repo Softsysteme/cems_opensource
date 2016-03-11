@@ -33,7 +33,7 @@ import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 
 @ServiceDefinition(
 		name = "Delete",
-		roles = { Role.WEB_ADMIN },
+		roles = { Role.WEB_ADMIN, Role.PROJECTS_CONFIG },
 		parameters = {},
 		returnValue = ""
 	)

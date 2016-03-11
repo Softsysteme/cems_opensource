@@ -38,7 +38,7 @@ import com.twinsoft.convertigo.engine.util.ProjectUtils;
 
 @ServiceDefinition(
 		name = "GetStatistic",
-		roles = { Role.TEST_PLATFORM },
+		roles = { Role.TEST_PLATFORM, Role.PROJECTS_CONFIG, Role.PROJECTS_VIEW },
 		parameters = {},
 		returnValue = "return the statistic for a specific project"
 	)
