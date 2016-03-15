@@ -40,7 +40,11 @@ import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
 
 @ServiceDefinition(
 		name = "GetProjects",
-		roles = { Role.TEST_PLATFORM, Role.PROJECTS_CONFIG, Role.PROJECTS_VIEW },
+		roles = {
+			Role.TEST_PLATFORM,
+			Role.PROJECTS_CONFIG, Role.PROJECTS_VIEW,
+			Role.CERTIFICATE_CONFIG, Role.CERTIFICATE_VIEW
+		},
 		parameters = {},
 		returnValue = "the projects list"
 	)
