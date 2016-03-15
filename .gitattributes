@@ -4406,6 +4406,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStep.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/GenerateHashCodeStepBeanInfo.java -text
 Studio/src/com/twinsoft/convertigo/beans/steps/GetAuthenticatedUserStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/GetAuthenticatedUserStepBeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/GetRequestHeaderStep.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/GetRequestHeaderStepBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IThenElseContainer.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStep.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/IfExistStepBeanInfo.java -text svneol=unset#text/plain
@@ -4575,6 +4577,8 @@ Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_16x16.png
 Studio/src/com/twinsoft/convertigo/beans/steps/images/generatehashcode_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/getAuthenticatedUser_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/getRequestHeader_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/steps/images/getRequestHeader_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/hourglassgo_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/steps/images/ifFileExists_16x16.png -text
@@ -4672,6 +4676,7 @@ Studio/src/com/twinsoft/convertigo/beans/steps/res/ExceptionStep.properties -tex
 Studio/src/com/twinsoft/convertigo/beans/steps/res/FunctionStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/GenerateHashCodeStep.properties -text
 Studio/src/com/twinsoft/convertigo/beans/steps/res/GetAuthenticatedUserStep.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/steps/res/GetRequestHeaderStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfExistThenElseStep.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/steps/res/IfFileExistStep.properties -text svneol=unset#text/plain
