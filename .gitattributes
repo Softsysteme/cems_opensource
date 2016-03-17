@@ -7389,16 +7389,10 @@ Studio/tomcat/webapps/convertigo/swagger/ui/css/reset.css -text svneol=unset#tex
 Studio/tomcat/webapps/convertigo/swagger/ui/css/screen.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/css/style.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/css/typography.css -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-700.eot -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-700.svg -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-700.ttf -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-700.woff -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-700.woff2 -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-regular.eot -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-regular.svg -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-regular.ttf -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-regular.woff -text
-Studio/tomcat/webapps/convertigo/swagger/ui/fonts/droid-sans-v6-latin-regular.woff2 -text
+Studio/tomcat/webapps/convertigo/swagger/ui/fonts/DroidSans-Bold.ttf -text
+Studio/tomcat/webapps/convertigo/swagger/ui/fonts/DroidSans.ttf -text
+Studio/tomcat/webapps/convertigo/swagger/ui/images/collapse.gif -text
+Studio/tomcat/webapps/convertigo/swagger/ui/images/expand.gif -text
 Studio/tomcat/webapps/convertigo/swagger/ui/images/explorer_icons.png -text
 Studio/tomcat/webapps/convertigo/swagger/ui/images/favicon-16x16.png -text
 Studio/tomcat/webapps/convertigo/swagger/ui/images/favicon-32x32.png -text
@@ -7410,9 +7404,15 @@ Studio/tomcat/webapps/convertigo/swagger/ui/images/wordnik_api.png -text
 Studio/tomcat/webapps/convertigo/swagger/ui/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lang/en.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lang/es.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/fr.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/it.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/ja.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/pl.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lang/pt.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lang/ru.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/tr.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lang/translator.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lang/zh-cn.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/backbone-min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/handlebars-2.0.0.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/highlight.7.3.pack.js -text svneol=unset#text/plain
@@ -7420,6 +7420,7 @@ Studio/tomcat/webapps/convertigo/swagger/ui/lib/jquery-1.8.0.min.js -text svneol
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/jquery.ba-bbq.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/jquery.slideto.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/jquery.wiggle.min.js -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/swagger/ui/lib/jsoneditor.min.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/marked.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/swagger-oauth.js -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/swagger/ui/lib/underscore-min.js -text svneol=unset#text/plain
