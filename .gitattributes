@@ -59,6 +59,10 @@ Studio/icons/studio/bean_checkedin.gif -text
 Studio/icons/studio/bean_checkedout.gif -text
 Studio/icons/studio/bean_linked.gif -text
 Studio/icons/studio/bean_nocvs.gif -text
+Studio/icons/studio/beans/mappings/bodyparameter_16x16.png -text
+Studio/icons/studio/beans/mappings/formparameter_16x16.png -text
+Studio/icons/studio/beans/mappings/headerparameter_16x16.png -text
+Studio/icons/studio/beans/mappings/queryparameter_16x16.png -text
 Studio/icons/studio/beans/variables/multivaluedvariable_color_16x16.png -text
 Studio/icons/studio/beans/variables/variable_color_16x16.png -text
 Studio/icons/studio/bound_property.d.gif -text
