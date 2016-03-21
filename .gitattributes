@@ -5328,6 +5328,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfXpathExistsTh
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIsInThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToMultiValuedVariableAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToQueryParameterAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToScEntryHandlerStatementAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToScExitHandlerStatementAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToSimpleSourceStepAction.java -text svneol=unset#text/plain
