@@ -5313,6 +5313,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/moz/images/e_stop.png -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/AbstractStubAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/BuildLocallyAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToAttributeStepAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToBodyParameterAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToElementStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToFormParameterAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToHeaderParameterAction.java -text svneol=unset#text/plain
