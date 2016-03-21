@@ -5411,6 +5411,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/LaunchMobileApplication
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/MyAbstractAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OpenProjectSwaggerConsoleAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OpenProjectTestPlatformAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OperationImportParametersFromVariablesAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputRecursiveStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/OutputStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectCloseAction.java -text
