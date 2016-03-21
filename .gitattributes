@@ -5315,6 +5315,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/BuildLocallyAction.java
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToAttributeStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToElementStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToFormParameterAction.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToHeaderParameterAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfExistThenElseStepAction.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ChangeToIfFileExistStepAction.java -text svneol=unset#text/plain
