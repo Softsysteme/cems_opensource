@@ -6333,6 +6333,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/XSDExtractor.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/XmlSchemaUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/XmlSchemaWalker.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ZipUtils.java -text
+Studio/src/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java -text svneol=unset#text/plain
 Studio/tomcat/LICENSE -text
 Studio/tomcat/NOTICE -text
 Studio/tomcat/RELEASE-NOTES -text
@@ -6356,6 +6357,7 @@ Studio/tomcat/webapps/convertigo/WEB-INF/classes/log4j.properties -text svneol=u
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/transport/http/AxisAdminServlet.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/webapp/AdminAgent.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/axis2/webapp/AxisAdminServlet.class -text
+Studio/tomcat/webapps/convertigo/WEB-INF/classes/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.class -text
 Studio/tomcat/webapps/convertigo/WEB-INF/classes/visualproxy.properties -text
 Studio/tomcat/webapps/convertigo/WEB-INF/conf/axis2.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/certificates/Batch_certif.bat -text
