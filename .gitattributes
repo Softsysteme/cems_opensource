@@ -266,6 +266,8 @@ Studio/lib/apache/commons/commons-fileupload-1.2.2.jar -text
 Studio/lib/apache/commons/commons-fileupload-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-io-2.2.jar -text
 Studio/lib/apache/commons/commons-io-LICENSE.txt -text svneol=unset#text/plain
+Studio/lib/apache/commons/commons-jxpath-1.3.jar -text
+Studio/lib/apache/commons/commons-jxpath-LICENSE.txt -text svneol=unset#text/plain
 Studio/lib/apache/commons/commons-lang-2.5.jar -text
 Studio/lib/apache/commons/commons-lang3-3.1.jar -text
 Studio/lib/apache/commons/commons-lang3-LICENSE.txt -text svneol=unset#text/plain
@@ -6170,6 +6172,7 @@ Studio/src/com/twinsoft/convertigo/engine/enums/SchemaMeta.java -text svneol=uns
 Studio/src/com/twinsoft/convertigo/engine/enums/SessionAttribute.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/StoreFiles.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/enums/Visibility.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/enums/XPathEngine.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/events/BaseEvent.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/events/BaseEventListener.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/events/PropertyChangeEvent.java -text svneol=unset#text/plain
