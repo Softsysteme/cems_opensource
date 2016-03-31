@@ -175,6 +175,7 @@ public class GetTestPlatform extends XmlService {
 			e_variable.setAttribute("isMultivalued", "" + variable.isMultiValued());
 			e_variable.setAttribute("isFileUpload", "" + variable.getIsFileUpload());
 			e_variable.setAttribute("description", variable.getDescription());
+			e_variable.setAttribute("required", "" + variable.isRequired());
 			e_vars.appendChild(e_variable);
 		}
 	}
