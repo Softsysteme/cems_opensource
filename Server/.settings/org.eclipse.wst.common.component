@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="ConvertigoServer">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="java-output-path" value="build/classes"/>
         <property name="context-root" value="convertigo"/>
-        <dependent-module archiveName="org.eclipse.swt.gtk.linux.x86_3.102.1.v20140206-1358.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/nicolasa/Développement/eclipses/eclipse-4.3-32/plugins/org.eclipse.swt.gtk.linux.x86_3.102.1.v20140206-1358.jar">
+        <dependent-module archiveName="org.eclipse.swt.win32.win32.x86_3.103.2.v20150203-1351.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Standalone/Dev/Eclipses/eclipse-4.4.2/plugins/org.eclipse.swt.win32.win32.x86_3.103.2.v20150203-1351.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="fop.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/fop.jar">
@@ -65,13 +64,10 @@
         <dependent-module archiveName="commons-codec-1.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/apache/commons/commons-codec-1.6.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
+        <dependent-module archiveName="commons-jxpath-1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/apache/commons/commons-jxpath-1.3.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
         <dependent-module archiveName="xmlgraphics-commons-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/apache/xmlgraphics/xmlgraphics-commons-1.4.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="resolver.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/xerces-2_11_0/resolver.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="serializer.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/xerces-2_11_0/serializer.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="xercesImpl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/xerces-2_11_0/xercesImpl.jar">
@@ -92,16 +88,16 @@
         <dependent-module archiveName="not-yet-commons-ssl-0.3.11.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/soapui/not-yet-commons-ssl-0.3.11.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="policy-xmlbeans-1.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/soapui/policy-xmlbeans-1.5.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
         <dependent-module archiveName="soapui-3.5.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/soapui/soapui-3.5.1.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="soapui-xmlbeans-3.5.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/soapui/soapui-xmlbeans-3.5.1.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="aviva-111114.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/aviva-111114.jar">
+        <dependent-module archiveName="policy-xmlbeans-1.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/soapui/policy-xmlbeans-1.5.jar">
+            <dependent-type>uses</dependent-type>
+        </dependent-module>
+        <dependent-module archiveName="aviva-111119.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/aviva-111119.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="bull-v24323.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/bull-v24323.jar">
@@ -176,7 +172,7 @@
         <dependent-module archiveName="jboss-transaction-api_1.2_spec-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/hibernate/jboss-transaction-api_1.2_spec-1.0.0.Final.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="tas-v39827.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/tas-v39827.jar">
+        <dependent-module archiveName="tas-v41019.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/tas-v41019.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="api-v39827.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/api-v39827.jar">
@@ -212,7 +208,7 @@
         <dependent-module archiveName="commons-pool-1.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/apache/commons/commons-pool-1.6.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
-        <dependent-module archiveName="util-v39827.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/util-v39827.jar">
+        <dependent-module archiveName="util-v41019.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/internal/util-v41019.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="activation-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/axis2-1.6.2/lib/activation-1.1.jar">
@@ -447,9 +443,6 @@
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="httpcore-4.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/apache/httpcore-4.4.jar">
-            <dependent-type>uses</dependent-type>
-        </dependent-module>
-        <dependent-module archiveName="tomcat-dbcp.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/tomcat-dbcp.jar">
             <dependent-type>uses</dependent-type>
         </dependent-module>
         <dependent-module archiveName="jackson-annotations-2.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/CemsStudio_7.4.x/lib/swagger/jackson-annotations-2.6.0.jar">
