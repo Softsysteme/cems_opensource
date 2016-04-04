@@ -6216,6 +6216,7 @@ Studio/src/com/twinsoft/convertigo/engine/requesters/ConvertigoXsltServletReques
 Studio/src/com/twinsoft/convertigo/engine/requesters/DefaultRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/GenericRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/HttpSessionListener.java -text
+Studio/src/com/twinsoft/convertigo/engine/requesters/InternalHttpServletRequest.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/requesters/InternalRequester.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/requesters/JavelinServletRequester.java -text
 Studio/src/com/twinsoft/convertigo/engine/requesters/JsonPServletRequester.java -text svneol=unset#text/plain
@@ -6293,7 +6294,6 @@ Studio/src/com/twinsoft/convertigo/engine/util/HttpServletRequestTwsWrapper.java
 Studio/src/com/twinsoft/convertigo/engine/util/HttpUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/ImageUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ImportWsReference.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/util/InternalHttpServletRequest.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/IterableEnumeration.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/JAXBUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/JavelinUtils.java -text
