@@ -6187,6 +6187,7 @@ Studio/src/com/twinsoft/convertigo/engine/migration/Migration3_0_0.java -text
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_0.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration5_0_4.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/Migration7_0_0.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/migration/Migration7_4_0.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/migration/MigrationUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpMethodAdapter.java -text
 Studio/src/com/twinsoft/convertigo/engine/oauth/HttpOAuthConsumer.java -text
