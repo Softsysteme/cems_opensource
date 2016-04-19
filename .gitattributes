@@ -3923,8 +3923,8 @@ Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/Android.java -text svne
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/AndroidBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/IOs.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/IOsBeanInfo.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/Windows8.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/Windows8BeanInfo.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/Windows.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsBeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhone8BeanInfo.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/WindowsPhoneKeyProvider.java -text svneol=unset#text/plain
@@ -3934,13 +3934,13 @@ Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/ios_color_16x16.
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/ios_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/web_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/web_color_32x32.png -text
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows8_color_16x16.png -text
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows8_color_32x32.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows_color_16x16.png -text
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windows_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone8_color_16x16.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/images/windowsphone8_color_32x32.png -text
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/Android.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/IOs.properties -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/Windows8.properties -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/Windows.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/mobileplatforms/res/WindowsPhone8.properties -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/FileReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/beans/references/FileReferenceBeanInfo.java -text svneol=unset#text/plain
@@ -7457,11 +7457,11 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortrait2xipad.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortraitipad.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Defaultiphone.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/config.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/res/icon/logo.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/res/icon/smalllogo.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/res/icon/storelogo.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows8/res/splash/splashscreen.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/config.xml -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/splashscreen.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
