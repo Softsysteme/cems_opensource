@@ -7458,10 +7458,15 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/DefaultPortraitipad.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/IOs/res/splash/Defaultiphone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/config.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Square150x150Logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Square310x310Logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Square44x44Logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Square70x70Logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Square71x71Logo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Wide310x150Logo.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/splashscreen.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
