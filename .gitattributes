@@ -7466,6 +7466,7 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/Wide310x150Logo.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
