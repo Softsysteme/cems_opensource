@@ -34,6 +34,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.twinsoft.convertigo.engine.Engine;
 import com.twinsoft.convertigo.engine.admin.services.DownloadService;
 import com.twinsoft.convertigo.engine.admin.services.at.ServiceDefinition;
+import com.twinsoft.convertigo.engine.enums.HeaderName;
+import com.twinsoft.convertigo.engine.enums.MimeType;
 import com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role;
 
 @ServiceDefinition(
@@ -49,8 +51,8 @@ public class Export extends DownloadService {
 	
 		String projectName = request.getParameter("projectName");
 					
-		response.setHeader("Content-Disposition", "attachment; filename=\"" + projectName + ".car\"");
-		response.setContentType("application/zip");	   
+		HeaderName.ContentDisposition.setHeader(response, "attachment; filename=\"" + projectName + ".car\"");
+		response.setContentType(MimeType.Zip.value());	   
 		
 		// if any, backup existing CAR file
 		File f = new File(Engine.PROJECTS_PATH + "/" + projectName + ".car");
@@ -67,7 +69,7 @@ public class Export extends DownloadService {
 	
 		// upload CAR file to admin
 		f = new File(Engine.PROJECTS_PATH + "/" + projectName + ".car");
-		response.setHeader("Content-Length", "" + f.length());
+		HeaderName.ContentLength.setHeader(response, "" + f.length());
 		if (f.exists()) {
 			BufferedInputStream bis = new BufferedInputStream(new FileInputStream(f));
 			OutputStream outStream = response.getOutputStream();
