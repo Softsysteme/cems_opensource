@@ -32,7 +32,7 @@
 		- x86
 		- ARM
 	-->
-	<engine name="$(CordovaPlatform)$" spec="~4.3.2" appx="uap" archs="x64" />
+	<engine name="$(CordovaPlatform)$" spec="~4.3.2" appx="8.1-phone" archs="x64" />
 	
 	<!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           	value="cli-6.1.1" />      <!-- all: current version of PhoneGap -->
@@ -45,18 +45,18 @@
 	<!-- Windows icons -->
     <platform name="windows">
         <icon src="res/icon/storelogo.png" target="StoreLogo" />
-        <icon src="res/icon/smalllogo.png" target="Square30x30Logo" />
-        <icon src="res/icon/Square44x44Logo.png" target="Square44x44Logo" />
-        <icon src="res/icon/Square70x70Logo.png" target="Square70x70Logo" />
-        <icon src="res/icon/Square71x71Logo.png" target="Square71x71Logo" />
-        <icon src="res/icon/Square150x150Logo.png" target="Square150x150Logo" />
-        <icon src="res/icon/Square310x310Logo.png" target="Square310x310Logo" />
-        <icon src="res/icon/Wide310x150Logo.png" target="Wide310x150Logo" />
+<!--         <icon src="res/icon/smalllogo.png" target="Square30x30Logo" /> -->
+<!--         <icon src="res/icon/Square44x44Logo.png" target="Square44x44Logo" /> -->
+<!--         <icon src="res/icon/Square70x70Logo.png" target="Square70x70Logo" /> -->
+<!--         <icon src="res/icon/Square71x71Logo.png" target="Square71x71Logo" /> -->
+<!--         <icon src="res/icon/Square150x150Logo.png" target="Square150x150Logo" /> -->
+<!--         <icon src="res/icon/Square310x310Logo.png" target="Square310x310Logo" /> -->
+<!--         <icon src="res/icon/Wide310x150Logo.png" target="Wide310x150Logo" /> -->
     </platform>
 	
 	<!-- Windows splash -->
     <platform name="windows">
-	    <splash src="res/splash/SplashScreen.png" target="SplashScreen"/>
+<!-- 	    <splash src="res/splash/SplashScreen.png" target="SplashScreen"/> -->
 	    <splash src="res/splash/SplashScreenPhone.png" target="SplashScreenPhone"/>
 	</platform>
 	
