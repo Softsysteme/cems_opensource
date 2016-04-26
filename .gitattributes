@@ -3139,12 +3139,12 @@ Studio/projects/template_javelinDKU/xsd/template_javelinDKU.xsd -text svneol=uns
 Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/xsd/internal/javelinIntegrationTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/xsd/template_javelinIntegration.xsd -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows8_1/config.xml -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows8_1/res/icon/storelogo.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows8_1/res/splash/SplashScreen.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone8_1/config.xml -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone8_1/res/icon/storelogo.png -text
-Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone8_1/res/splash/SplashScreenPhone.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/config.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/res/icon/storelogo.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/res/splash/SplashScreen.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/config.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/res/icon/storelogo.png -text
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/res/splash/SplashScreenPhone.png -text
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
