@@ -231,12 +231,6 @@ Studio/projects/template_siteClipper/.project
 Studio/projects/template_siteClipper/Traces
 Studio/projects/template_siteClipper/_data
 Studio/projects/template_siteClipper/_private
-Studio/projects/template_webClipping/.project
-Studio/projects/template_webClipping/Traces
-Studio/projects/template_webClipping/_data
-Studio/projects/template_webClipping/_private
-Studio/projects/template_webClipping/template_webClipping.temp.wsdl
-Studio/projects/template_webClipping/template_webClipping.temp.xsd
 Studio/projects/template_webIntegration/.project
 Studio/projects/template_webIntegration/Traces
 Studio/projects/template_webIntegration/_data
