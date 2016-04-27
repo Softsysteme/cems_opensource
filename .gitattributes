@@ -2936,8 +2936,8 @@ Studio/projects/template_HTTP/xsd/internal/HTTPTemplateConnector/DefaultTransact
 Studio/projects/template_HTTP/xsd/template_HTTP.xsd -text svneol=unset#text/plain
 Studio/projects/template_SAP/.project -text svneol=unset#text/plain
 Studio/projects/template_SAP/template_SAP.xml -text svneol=unset#text/plain
-Studio/projects/template_SAP/xsd/internal/SAP_connector/Logon.xsd -text svneol=unset#text/plain
-Studio/projects/template_SAP/xsd/internal/SAP_connector/RFC_FUNCTION_SEARCH.xsd -text svneol=unset#text/plain
+Studio/projects/template_SAP/xsd/internal/SAP_Connector/Logon.xsd -text svneol=unset#text/plain
+Studio/projects/template_SAP/xsd/internal/SAP_Connector/RFC_FUNCTION_SEARCH.xsd -text svneol=unset#text/plain
 Studio/projects/template_SQL/.project -text svneol=unset#text/plain
 Studio/projects/template_SQL/template_SQL.xml -text svneol=unset#text/plain
 Studio/projects/template_SQL/xsd/internal/SqlConnector/DefaultTransaction.xsd -text svneol=unset#text/plain
@@ -3114,10 +3114,10 @@ Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhon
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/res/icon/storelogo.png -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/res/splash/SplashScreenPhone.png -text
 Studio/projects/template_mobileJQueryMobile/template_mobileJQueryMobile.xml -text svneol=unset#text/plain
-Studio/projects/template_mobileJQueryMobile/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/xsd/internal/void/void.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/template_sequence/template_sequence.xml -text svneol=unset#text/plain
-Studio/projects/template_sequence/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
+Studio/projects/template_sequence/xsd/internal/void/void.xsd -text svneol=unset#text/plain
 Studio/projects/template_sequence/xsd/template_sequence.xsd -text svneol=unset#text/plain
 Studio/projects/template_siteClipper/template_siteClipper.xml -text svneol=unset#text/plain
 Studio/projects/template_siteClipper/xsd/internal/template_siteClipperConnector/DefaultTransaction.xsd -text svneol=unset#text/plain
