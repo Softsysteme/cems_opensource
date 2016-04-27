@@ -183,9 +183,6 @@ Studio/projects/template_SQL/*.temp.*
 Studio/projects/template_SQL/Traces
 Studio/projects/template_SQL/_data
 Studio/projects/template_SQL/_private
-Studio/projects/template_SQL_jQueryWeb/*.temp.*
-Studio/projects/template_SQL_jQueryWeb/Traces
-Studio/projects/template_SQL_jQueryWeb/_private
 Studio/projects/template_crawling/.project
 Studio/projects/template_crawling/Traces
 Studio/projects/template_crawling/_data

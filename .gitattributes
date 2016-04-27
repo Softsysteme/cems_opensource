@@ -2942,33 +2942,6 @@ Studio/projects/template_SQL/.project -text svneol=unset#text/plain
 Studio/projects/template_SQL/template_SQL.xml -text svneol=unset#text/plain
 Studio/projects/template_SQL/xsd/internal/SqlConnector/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_SQL/xsd/template_SQL.xsd -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/.project -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/css/custom.css -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/css/jquery-ui-1.8.23.custom.css -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_flat_0_aaaaaa_40x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_flat_15_cd0a0a_40x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_100_e4f1fb_1x400.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_50_3baae3_1x400.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_glass_80_d7ebf9_1x400.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-hard_70_000000_1x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-soft_100_deedf7_1x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-bg_highlight-soft_25_ffef8f_1x100.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_2694e8_256x240.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_2e83ff_256x240.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_3d80b3_256x240.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_72a7cf_256x240.png -text
-Studio/projects/template_SQL_jQueryWeb/html/images/ui-icons_ffffff_256x240.png -text
-Studio/projects/template_SQL_jQueryWeb/html/index.html -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/js/custom.js -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/js/jquery-1.7.2.min.js -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/html/js/jquery-ui-1.8.18.custom.min.js -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/images/convertigo-small.gif -text
-Studio/projects/template_SQL_jQueryWeb/template_SQL_jQueryWeb.xml -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
-Studio/projects/template_SQL_jQueryWeb/xsd/template_SQL_jQueryWeb.xsd -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.wsdl -text
 Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text
