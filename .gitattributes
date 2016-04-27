@@ -5836,7 +5836,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationS
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCMSWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCWCWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleCWIWizard.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationSampleSiteClipperWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewEmptyJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHtmlConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHttpConnectorWizard.java -text
@@ -5879,7 +5878,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampl
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleStatementsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleStepsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleVariablesWizard.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewRefManualSampleWebClipperWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSAPProjectWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLProjectWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSQLSampleHSQLDBWizard.java -text svneol=unset#text/plain
@@ -5898,7 +5896,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencer1Samp
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSequencerWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewSiteClipperProjectWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewVT220ConnectorWizard.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebClippingConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewWebServiceReferenceWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/SQLQueriesWizardPage.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/ServiceCodeWizardPage.java -text svneol=unset#text/plain
