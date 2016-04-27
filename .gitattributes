@@ -2945,11 +2945,6 @@ Studio/projects/template_SQL/xsd/template_SQL.xsd -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.wsdl -text
 Studio/projects/template_crawling/crawlingProjectTemplate.xml -text svneol=unset#text/plain
 Studio/projects/template_crawling/crawlingProjectTemplate.xsd -text
-Studio/projects/template_interactionHub/hub/default_hub.html -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/hub/default_hub.xml -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/template_interactionHub.xml -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
-Studio/projects/template_interactionHub/xsd/template_interactionHub.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelin/css/calendar-system.css -text
 Studio/projects/template_javelin/css/exception.css -text
 Studio/projects/template_javelin/css/mashupUtils.css -text
@@ -5839,7 +5834,6 @@ Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewDocumentationS
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewEmptyJQueryMobileWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHtmlConnectorWizard.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewHttpConnectorWizard.java -text
-Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewInteractionHubWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryFileTransferWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleMapsWizard.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/wizards/new_project/NewLibraryGoogleSpreadsheetsWizard.java -text svneol=unset#text/plain

@@ -187,12 +187,6 @@ Studio/projects/template_crawling/.project
 Studio/projects/template_crawling/Traces
 Studio/projects/template_crawling/_data
 Studio/projects/template_crawling/_private
-Studio/projects/template_interactionHub/*.temp.wsdl
-Studio/projects/template_interactionHub/*.temp.xsd
-Studio/projects/template_interactionHub/.project
-Studio/projects/template_interactionHub/Traces
-Studio/projects/template_interactionHub/_data
-Studio/projects/template_interactionHub/_private
 Studio/projects/template_javelin/.project
 Studio/projects/template_javelin/Traces
 Studio/projects/template_javelin/_data
