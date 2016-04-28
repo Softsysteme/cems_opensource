@@ -18,26 +18,26 @@
 
 	<description>$(ApplicationDescription)$</description>
 
-	<author href="$(ApplicationAuthorWebsite)$" email="$(ApplicationAuthorEmail)$">$(ApplicationAuthorName)$</author>
+	<author email="$(ApplicationAuthorEmail)$" href="$(ApplicationAuthorWebsite)$">$(ApplicationAuthorName)$</author>
 	 
-	<gap:platform name="android"/>
+	<engine name="$(CordovaPlatform)$" spec="~4.1.1"/>
 	
 	<!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-5.1.1" />      <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
-    <preference name="SplashScreen"    			  value="splash" />         <!-- all: the splash screen resource if built without phonegap build -->
-    <preference name="SplashScreenDelay"          value="60000" />          <!-- android: sets the default delay of how long the splashscreen appears in milliseconds, this should be the maximum expected start time -->
-    <preference name="android-minSdkVersion"      value="10" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <preference name="phonegap-version" value="cli-5.4.1"/>      <!-- all: current version of PhoneGap -->
+    <preference name="orientation" value="portrait"/>       <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device" value="universal"/>      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen" value="false"/>          <!-- all: hides the status bar at the top of the screen -->
+    <preference name="SplashScreen" value="screen"/>         <!-- all: the splash screen resource if built without phonegap build -->
+    <preference name="SplashScreenDelay" value="60000"/>          <!-- android: sets the default delay of how long the splashscreen appears in milliseconds, this should be the maximum expected start time -->
+    <preference name="android-minSdkVersion" value="14"/>             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation" value="auto"/>           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     
 	<!-- Mandatory preferences for FlashUpdate service -->
-	<preference name="AndroidPersistentFileLocation" value="Internal" />
+	<preference name="AndroidPersistentFileLocation" value="Internal"/>
 	
 	<icon src="icon.png"/>
 	
-	<gap:splash src="splash.png" />
+	<gap:splash src="splash.png"/>
     
 	
 	<!-- If you do not want any permissions to be added to your app, add the
@@ -46,21 +46,21 @@
 	<preference name="permissions" value="none"/>
 	
     <!-- Core plugins mandatory for FlashUpdate service -->
-    <gap:plugin name="cordova-plugin-device" source="npm" />
-    <gap:plugin name="cordova-plugin-file" source="npm" />
-    <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-device" spec="~1.1.1"/>
+    <plugin name="cordova-plugin-file" spec="~4.1.1"/>
+    <plugin name="cordova-plugin-file-transfer" spec="~1.5.0"/>
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.1"/>
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.1"/>
     
 	<!-- Useful for debugging -->
-	<gap:plugin name="cordova-plugin-console" source="npm" />
+	<plugin name="cordova-plugin-console" spec="~1.0.2"/>
 
 	<!-- Native plugin for fullsync project that speedup indexing of documents -->
-	<gap:plugin name="couchbase-lite-phonegap-plugin" source="npm" version="1.1.1" />
+	<plugin name="couchbase-lite-phonegap-plugin" spec="~1.2.0"  />
     
 	<!-- Other optional Core plugins, comment them out (ctrl+shit+c) if you want to reduce the package size and permissions -->
 <!--     <gap:plugin name="cordova-plugin-battery-status" source="npm" /> -->
-    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <plugin name="cordova-plugin-camera" spec="~2.1.1" />
 <!--     <gap:plugin name="cordova-plugin-media-capture" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-contacts" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-device-motion" source="npm" /> -->
@@ -81,6 +81,7 @@
 	<!-- Other plugins and documentation can be find here : https://build.phonegap.com/plugins -->
 	
 	<!-- Expose access to all URIs, including the file and http protocols -->
-	<allow-navigation href="*" />
-	<allow-intent href="*" />
+	<allow-navigation href="*"/>
+	<allow-intent href="*"/>
+<preference name="android-build-tool" value="gradle"/>
 </widget>

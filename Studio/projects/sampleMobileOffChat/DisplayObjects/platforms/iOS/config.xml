@@ -19,25 +19,25 @@
 	<description>$(ApplicationDescription)$</description>
 
 	<!-- This parameter defines the application's version number in app store -->
-	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+	<gap:config-file parent="CFBundleShortVersionString" platform="ios">
     	<string>$(ApplicationVersion)$</string>
 	</gap:config-file>
 	
-	<author href="$(ApplicationAuthorWebsite)$" email="$(ApplicationAuthorEmail)$">$(ApplicationAuthorName)$</author>
+	<author email="$(ApplicationAuthorEmail)$" href="$(ApplicationAuthorWebsite)$">$(ApplicationAuthorName)$</author>
 	 
-	<gap:platform name="ios"/>
+	<engine name="$(CordovaPlatform)$" spec="~3.9.2"/>
 	
 	<!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-5.1.1" />      <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
-    <preference name="SplashScreen"    			  value="splash" />         <!-- all: the splash screen resource if built without phonegap build -->
-    <preference name="AutoHideSplashScreen"       value="false" />          <!-- ios: set to false, the splash screen must be hidden using a JavaScript API (navigator.splashscreen API)  -->
-    <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
-    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-    <preference name="webviewbounce"			  value="false" />			<!-- ios: Prevent WebView to Bounce  -->
+    <preference name="phonegap-version" value="cli-5.4.1"/>      <!-- all: current version of PhoneGap -->
+    <preference name="orientation" value="portrait"/>       <!-- all: default means both landscape and portrait are enabled -->
+          <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen" value="false"/>          <!-- all: hides the status bar at the top of the screen -->
+    <preference name="SplashScreen" value="screen"/>         <!-- all: the splash screen resource if built without phonegap build -->
+    <preference name="AutoHideSplashScreen" value="false"/>          <!-- ios: set to false, the splash screen must be hidden using a JavaScript API (navigator.splashscreen API)  -->
+    <preference name="prerendered-icon" value="true"/>           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="detect-data-types" value="true"/>           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend" value="false"/>          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="webviewbounce" value="false"/>			<!-- ios: Prevent WebView to Bounce  -->
     
     
     <!-- To avoid app scrolling -->
@@ -45,11 +45,11 @@
 <!-- 	<preference name="webviewbounce" value="false" /> -->
 
 	<!-- Mandatory preferences for FlashUpdate service -->
-	<preference name="iosPersistentFileLocation" value="Library" />
+	<preference name="iosPersistentFileLocation" value="Library"/>
 
 	<icon src="icon.png"/>
    
-	<gap:splash src="splash.png" />
+	<splash src="splash.png"/>
 	
 	<!-- If you do not want any permissions to be added to your app, add the
     following tag to your config.xml; you will still have the INTERNET
@@ -57,24 +57,24 @@
 	<preference name="permissions" value="none"/>
 	
     <!-- Core plugins mandatory for FlashUpdate service -->
-    <gap:plugin name="cordova-plugin-device" source="npm" />
-    <gap:plugin name="cordova-plugin-file" source="npm" />
-    <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-device" spec="~1.1.1"/>
+    <plugin name="cordova-plugin-file" spec="~4.1.1"/>
+    <plugin name="cordova-plugin-file-transfer" spec="~1.5.0"/>
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.1"/>
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.1"/>
     
 	<!-- Useful for debugging -->
-	<gap:plugin name="cordova-plugin-console" source="npm" />
+	<plugin name="cordova-plugin-console" spec="~1.0.2"/>
 	
 	<!-- Native plugin for fullsync project that speedup indexing of documents -->
-	<gap:plugin name="couchbase-lite-phonegap-plugin" source="npm" />
+	<plugin name="couchbase-lite-phonegap-plugin" spec="~1.2.0" />
 	
 	<!-- Status bar plugin for iOS 7+ -->
-	<gap:plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-plugin-statusbar" spec="2.1.2"/>
     
 	<!-- Other optional Core plugins, comment them out (ctrl+shit+c) if you want to reduce the package size and permissions -->
 <!--     <gap:plugin name="cordova-plugin-battery-status" source="npm" /> -->
-    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <plugin name="cordova-plugin-camera" spec="~2.1.1" />
 <!--     <gap:plugin name="cordova-plugin-media-capture" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-contacts" source="npm" /> -->
 <!--     <gap:plugin name="cordova-plugin-device-motion" source="npm" /> -->
@@ -94,6 +94,7 @@
 	<!-- Other plugins and documentation can be find here : https://build.phonegap.com/plugins -->
 	
 	<!-- Expose access to all URIs, including the file and http protocols -->
-	<allow-navigation href="*" />
-	<allow-intent href="*" />
+	<allow-navigation href="*"/>
+	<allow-intent href="*"/>
+	<access origin="*"/>
 </widget>
