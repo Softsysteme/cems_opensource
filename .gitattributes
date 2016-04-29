@@ -689,7 +689,6 @@ Studio/projects/lib_GoogleMaps/lib_GoogleMaps.xml -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/xsd/internal/GoogleMapsApiConnector/GeoCodeByAddress.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/xsd/internal/GoogleMapsApiConnector/GeoCodeByLatLng.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/xsd/internal/GoogleMapsConnector/MarkLocation.xsd -text svneol=unset#text/plain
-Studio/projects/lib_GoogleMaps/xsd/internal/GoogleMapsConnector/MarkLocations.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/xsd/internal/GoogleMapsConnector/ShowMap.xsd -text svneol=unset#text/plain
 Studio/projects/lib_GoogleMaps/xsd/lib_GoogleMaps.xsd -text svneol=unset#text/plain
 Studio/projects/lib_Keyring/.project -text svneol=unset#text/plain
