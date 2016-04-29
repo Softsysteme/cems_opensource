@@ -2503,6 +2503,17 @@ Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/res/spl
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Square150x150Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Square310x310Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Square44x44Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Square70x70Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Square71x71Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/Wide310x150Logo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
+Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
