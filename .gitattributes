@@ -2514,10 +2514,6 @@ Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/ico
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
-Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
-Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileRetailStore/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
