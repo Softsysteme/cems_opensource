@@ -49,7 +49,6 @@ Studio/icons/setup_16x16.gif -text
 Studio/icons/setupwizard_16x16.gif -text
 Studio/icons/splash_ready_rss.png -text
 Studio/icons/splash_wait_rss.png -text
-Studio/icons/studio/.project -text svneol=unset#text/plain
 Studio/icons/studio/accumulate.d.gif -text
 Studio/icons/studio/accumulate.gif -text
 Studio/icons/studio/angularjs_color_32x32.png -text
@@ -147,10 +146,10 @@ Studio/icons/studio/launch_test_platform_16x16.png -text
 Studio/icons/studio/learn_transaction.gif -text
 Studio/icons/studio/library_filetransfer_color_32x32.png -text
 Studio/icons/studio/library_googleMaps_color_32x32.png -text
-Studio/icons/studio/library_googleSpreadsheets_color_32x32.png -text
 Studio/icons/studio/library_keyring_color_32x32.png -text
 Studio/icons/studio/library_oauth_color_32x32.png -text
 Studio/icons/studio/library_pushManager_color_32x32.png -text
+Studio/icons/studio/library_salesForce_color_32x32.png -text
 Studio/icons/studio/library_sigfox_color_32x32.png -text
 Studio/icons/studio/library_twitter_color_32x32.png -text
 Studio/icons/studio/menu/call_variable_color_16x16.png -text
