@@ -1,6 +1,0 @@
-<entry xmlns="http://www.w3.org/2005/Atom"
-    xmlns:gs="http://schemas.google.com/spreadsheets/2006">
-  <title>$(TITLE)</title>
-  <gs:rowCount>50</gs:rowCount>
-  <gs:colCount>10</gs:colCount>
-</entry>
