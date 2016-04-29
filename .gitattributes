@@ -2539,9 +2539,7 @@ Studio/projects/sampleMobileSearchRoom/DisplayObjects/mobile/css/custom.css -tex
 Studio/projects/sampleMobileSearchRoom/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileSearchRoom/DisplayObjects/mobile/js/jquery.toaster.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileSearchRoom/data/list.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileSearchRoom/sampleMobileJQuery.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileSearchRoom/sampleMobileSearchRoom.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileSearchRoom/sampleSearchingConferenceRooms.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileSearchRoom/xsd/internal/void/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
