@@ -161,10 +161,10 @@ $.extend(true, C8O, {
 			    headers: {'Content-Type': 'application/json'}
 			}).success(function(data, status, headers, config) {
 				C8O._define.pendingXhrCpt--;
-				$deferred.resolve(data.document);
+				$deferred.resolve(data);
 			}).error(function(data, status, headers, config) {
 				C8O._define.pendingXhrCpt--;
-				$deferred.reject(data.document);
+				$deferred.reject(data);
 			});
 			
 			C8O._define.pendingXhrCpt++;
