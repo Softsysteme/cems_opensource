@@ -171,10 +171,6 @@ Studio/projects/template_SQL/*.temp.*
 Studio/projects/template_SQL/Traces
 Studio/projects/template_SQL/_data
 Studio/projects/template_SQL/_private
-Studio/projects/template_crawling/.project
-Studio/projects/template_crawling/Traces
-Studio/projects/template_crawling/_data
-Studio/projects/template_crawling/_private
 Studio/projects/template_javelin/.project
 Studio/projects/template_javelin/Traces
 Studio/projects/template_javelin/_data
