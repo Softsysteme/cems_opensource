@@ -35,10 +35,6 @@ Studio/projects/lib_GoogleMaps/*.temp.xsd
 Studio/projects/lib_GoogleMaps/.project
 Studio/projects/lib_GoogleMaps/_data
 Studio/projects/lib_GoogleMaps/_private
-Studio/projects/lib_Keyring/_data
-Studio/projects/lib_Keyring/_private
-Studio/projects/lib_Keyring/lib_Keyring.temp.wsdl
-Studio/projects/lib_Keyring/lib_Keyring.temp.xsd
 Studio/projects/lib_OAuth/Traces
 Studio/projects/lib_OAuth/_private
 Studio/projects/lib_Polymer/_private
