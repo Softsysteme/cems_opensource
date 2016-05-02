@@ -6034,7 +6034,6 @@ Studio/src/com/twinsoft/convertigo/engine/translators/Translator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/WebServiceTranslator.java -text
 Studio/src/com/twinsoft/convertigo/engine/translators/XmlServletTranslator.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/Base64.java -text
-Studio/src/com/twinsoft/convertigo/engine/util/Base64v21.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/BigMimeMultipart.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/COBOLUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/CachedIntrospector.java -text svneol=unset#text/plain
@@ -6061,7 +6060,6 @@ Studio/src/com/twinsoft/convertigo/engine/util/JAXBUtils.java -text svneol=unset
 Studio/src/com/twinsoft/convertigo/engine/util/JavelinUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/Log4jHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/LogWrapper.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/util/Pair.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ParameterUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/PartInputStream.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ProjectUtils.java -text svneol=unset#text/plain
@@ -6081,7 +6079,6 @@ Studio/src/com/twinsoft/convertigo/engine/util/StepUtils.java -text svneol=unset
 Studio/src/com/twinsoft/convertigo/engine/util/StringUtils.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/SwaggerUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/ThreadUtils.java -text svneol=unset#text/plain
-Studio/src/com/twinsoft/convertigo/engine/util/Tuple.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/TwsCachedXPathAPI.java -text
 Studio/src/com/twinsoft/convertigo/engine/util/URLUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/URLrewriter.java -text
