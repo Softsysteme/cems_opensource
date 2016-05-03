@@ -53,6 +53,8 @@ Studio/projects/sampleDocumentationSiteClipper/Traces
 Studio/projects/sampleDocumentationSiteClipper/_data
 Studio/projects/sampleDocumentationSiteClipper/_private
 Studio/projects/sampleMapperShop/_private
+Studio/projects/sampleMapperShop/shop_db.lck
+Studio/projects/sampleMapperShop/shop_db.log
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/platforms
 Studio/projects/sampleMobileCtfGallery/_private
 Studio/projects/sampleMobileMobTV/Traces
