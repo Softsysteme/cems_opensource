@@ -2793,6 +2793,9 @@ Studio/projects/template_javelinIntegration/template_javelinIntegration.xml -tex
 Studio/projects/template_javelinIntegration/xsd/internal/javelinIntegrationTemplateConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/template_javelinIntegration/xsd/template_javelinIntegration.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/config.xml -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/index.html -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/js/jquery2.js -text svneol=unset#text/plain
+Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/readme.txt -text svneol=unset#text/plain
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/res/icon/storelogo.png -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/Windows81/res/splash/SplashScreen.png -text
 Studio/projects/template_mobileJQueryMobile/DisplayObjects/platforms/WindowsPhone81/config.xml -text svneol=unset#text/plain
