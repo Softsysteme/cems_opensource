@@ -2085,9 +2085,6 @@ Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/tabletStartup.png -t
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/img/title.png -text
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/DisplayObjects/mobile/splash.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
-Studio/projects/sampleMobileMobTV/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/projects/sampleMobileMobTV/sampleMobileMobTV.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/XMLize.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileMobTV/xsd/internal/mobtvConnector/getProgTv.xsd -text svneol=unset#text/plain
@@ -2223,6 +2220,17 @@ Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/config.xml -text svneol=unset#text/plain
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Square150x150Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Square310x310Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Square44x44Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Square70x70Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Square71x71Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/Wide310x150Logo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
+Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
 Studio/projects/sampleMobileUsDirectoryDemo/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
