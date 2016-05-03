@@ -2029,8 +2029,6 @@ Studio/projects/sampleMapperShop/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/js/custom.js -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/sampleMapperShop.xml -text svneol=unset#text/plain
-Studio/projects/sampleMapperShop/shop_db.lck -text
-Studio/projects/sampleMapperShop/shop_db.log -text
 Studio/projects/sampleMapperShop/shop_db.properties -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/shop_db.script -text
 Studio/projects/sampleMapperShop/xml/shopCategories.xml -text svneol=unset#text/plain
