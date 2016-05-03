@@ -2288,9 +2288,16 @@ Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/splash
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
-Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows_Phone_8/res/icon/icon173tile.png -text
-Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows_Phone_8/res/icon/icon48.png -text
-Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows_Phone_8/res/splash/splash.jpg -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Square150x150Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Square310x310Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Square44x44Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Square70x70Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Square71x71Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/Wide310x150Logo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/smalllogo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
+Studio/projects/sampleMobileVacation/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
 Studio/projects/sampleMobileVacation/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
@@ -2321,7 +2328,7 @@ Studio/projects/sampleMobileVacation/webservice/Refuse.xml -text svneol=unset#te
 Studio/projects/sampleMobileVacation/webservice/Requests.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/webservice/Start.xml -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/webservice/Validate.xml -text svneol=unset#text/plain
-Studio/projects/sampleMobileVacation/xsd/internal/Fake/Default_transaction.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMobileVacation/xsd/internal/void/void.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileVacation/xsd/sampleMobileVacation.xsd -text svneol=unset#text/plain
 Studio/projects/samplePolymer/.project -text svneol=unset#text/plain
 Studio/projects/samplePolymer/DisplayObjects/mobile/api/posts.jsondata -text
