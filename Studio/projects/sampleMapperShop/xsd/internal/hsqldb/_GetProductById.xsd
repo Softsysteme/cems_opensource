@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sampleMapperShop_ns="http://www.convertigo.com/convertigo/projects/sampleMapperShop" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sampleMapperShop">
-    <xsd:element name="hsqldb___GetProduct" type="sampleMapperShop_ns:hsqldb___GetProductRequestData">
+    <xsd:element name="hsqldb___GetProductById" type="sampleMapperShop_ns:hsqldb___GetProductByIdRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="hsqldb___GetProductResponse">
+    <xsd:element name="hsqldb___GetProductByIdResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="sampleMapperShop_ns:hsqldb___GetProductResponseData"/>
+                <xsd:element name="response" type="sampleMapperShop_ns:hsqldb___GetProductByIdResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="hsqldb___GetProductResponseType">
+    <xsd:complexType name="hsqldb___GetProductByIdResponseType">
         <xsd:sequence>
-            <xsd:element name="document" type="sampleMapperShop_ns:hsqldb___GetProductResponseData"/>
+            <xsd:element name="document" type="sampleMapperShop_ns:hsqldb___GetProductByIdResponseData"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="hsqldb___GetProductRequestData">
+    <xsd:complexType name="hsqldb___GetProductByIdRequestData">
         <xsd:sequence>
             <xsd:element name="art_id" type="xsd:string">
                 <xsd:annotation>
@@ -24,7 +24,7 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="hsqldb___GetProductResponseData">
+    <xsd:complexType name="hsqldb___GetProductByIdResponseData">
         <xsd:all>
             <xsd:element minOccurs="0" name="error" type="sampleMapperShop_ns:ConvertigoError"/>
             <xsd:element minOccurs="0" name="sql_output">
