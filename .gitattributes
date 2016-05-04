@@ -2035,6 +2035,7 @@ Studio/projects/sampleMapperShop/xml/shopCategories.xml -text svneol=unset#text/
 Studio/projects/sampleMapperShop/xml/shopProducts.xml -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/All_Categories.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/All_Products.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_DeleteProduct.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_GetProductByCode.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_GetProductById.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/sample_database_HSQLDB.xsd -text svneol=unset#text/plain
