@@ -2038,6 +2038,7 @@ Studio/projects/sampleMapperShop/xsd/internal/hsqldb/All_Products.xsd -text svne
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_DeleteProduct.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_GetProductByCode.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_GetProductById.xsd -text svneol=unset#text/plain
+Studio/projects/sampleMapperShop/xsd/internal/hsqldb/_UpdateProduct.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/xsd/sample_database_HSQLDB.xsd -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/.project -text svneol=unset#text/plain
 Studio/projects/sampleMobileCtfGallery/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
