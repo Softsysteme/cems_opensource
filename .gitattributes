@@ -2028,6 +2028,7 @@ Studio/projects/sampleMapperShop/.settings/org.eclipse.core.resources.prefs -tex
 Studio/projects/sampleMapperShop/css/custom.css -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/index.html -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/js/custom.js -text svneol=unset#text/plain
+Studio/projects/sampleMapperShop/readme.xml -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/sampleMapperShop.xml -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/shop_db.properties -text svneol=unset#text/plain
 Studio/projects/sampleMapperShop/shop_db.script -text
