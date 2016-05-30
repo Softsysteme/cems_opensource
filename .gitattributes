@@ -5388,6 +5388,9 @@ Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/HttpConnectorN
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/InformationNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/IsUsedByNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/JavelinConnectorNode.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/MapperNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/MappingOperationNode.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/MappingPathNode.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProjectNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/ProxyHttpConnectorNode.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/views/references/model/RequiresNode.java -text
