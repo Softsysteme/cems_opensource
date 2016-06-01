@@ -4756,6 +4756,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/dialogs/TransactionXSDTypesDialogComp
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsReferenceImportDialogComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsRestReferenceImportDialogComposite.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/dialogs/WsSoapReferenceImportDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/XmlStructureDialog.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/XmlStructureDialogComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/dialogs/images/dialog_statistic.jpg -text
@@ -5063,6 +5065,8 @@ Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectCloseAction.java
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectDeleteAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectDeployAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectExportAction.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectImportRestWsReference.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectImportSoapWsReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectImportWsReference.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectOpenAction.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/popup/actions/ProjectSaveAction.java -text
