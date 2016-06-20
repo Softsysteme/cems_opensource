@@ -4819,6 +4819,7 @@ Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SapJcoConnectorComp
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SapJcoConnectorDesignComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SiteClipperConnectorComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SqlConnectorComposite.java -text
+Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/SqlConnectorDesignComposite.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/htmlconnector/DomTreeComposite.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/htmlconnector/DomTreeUtils.java -text
 Studio/src/com/twinsoft/convertigo/eclipse/editors/connector/htmlconnector/HtmlXpathEvaluatorComposite.java -text svneol=unset#text/plain
