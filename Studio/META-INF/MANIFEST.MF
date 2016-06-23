@@ -177,7 +177,8 @@ Bundle-ClassPath: bin/,
  lib/swagger/swagger-core-1.5.0.jar,
  lib/swagger/swagger-models-1.5.0.jar,
  lib/swagger/swagger-parser-1.0.8.jar,
- lib/swagger/validation-api-1.1.0.Final.jar
+ lib/swagger/validation-api-1.1.0.Final.jar,
+ lib/postgresql-9.4.1208.jar
 Bundle-Activator: com.twinsoft.convertigo.eclipse.ConvertigoPlugin
 Bundle-Vendor: Convertigo
 Export-Package: org.mozilla.xpcom

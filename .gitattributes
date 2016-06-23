@@ -431,6 +431,7 @@ Studio/lib/jtds-1.2.2.jar -text
 Studio/lib/mariadb-java-client-1.1.7.jar -text
 Studio/lib/mysql-connector.jar -text
 Studio/lib/ojdbc5.jar -text
+Studio/lib/postgresql-9.4.1208.jar -text
 Studio/lib/qrcode.jar -text
 Studio/lib/quartz-1.7.1.jar -text
 Studio/lib/rhino-1.7-R5pre.jar -text
