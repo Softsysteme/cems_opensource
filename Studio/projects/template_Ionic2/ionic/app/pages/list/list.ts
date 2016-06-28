@@ -19,11 +19,11 @@ export class ListPage {
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
 
-		
+      
 	c8o.call(".getData", {
 		"data1":"val1",
 		"data2":"val2",
-		"data3":"val3",
+		"data3":"val3"
 	}).then(data => {
 		console.log(data);	
 	    this.items = [];
