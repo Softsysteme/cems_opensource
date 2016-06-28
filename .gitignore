@@ -163,7 +163,10 @@ Studio/projects/template_HTTP/_data
 Studio/projects/template_HTTP/_private
 Studio/projects/template_HTTP/template_HTTP.temp.wsdl
 Studio/projects/template_HTTP/template_HTTP.temp.xsd
+Studio/projects/template_Ionic2/Traces
 Studio/projects/template_Ionic2/_private
+Studio/projects/template_Ionic2/ionic/node_modules
+Studio/projects/template_Ionic2/wsdl
 Studio/projects/template_SAP/*.temp.*
 Studio/projects/template_SAP/Traces
 Studio/projects/template_SAP/_data
