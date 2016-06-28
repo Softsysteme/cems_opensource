@@ -2623,6 +2623,372 @@ Studio/projects/template_CICS/xsd/template_CICS.xsd -text svneol=unset#text/plai
 Studio/projects/template_HTTP/template_HTTP.xml -text svneol=unset#text/plain
 Studio/projects/template_HTTP/xsd/internal/HTTPTemplateConnector/DefaultTransaction.xsd -text svneol=unset#text/plain
 Studio/projects/template_HTTP/xsd/template_HTTP.xsd -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/.project -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/.settings/org.eclipse.core.resources.prefs -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/mobile/app.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/mobile/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/mobile/icon.png -text
+Studio/projects/template_Ionic2/DisplayObjects/mobile/img/favicon.ico -text
+Studio/projects/template_Ionic2/DisplayObjects/mobile/index.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/mobile/splash.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/icon/icon36ldpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/icon/icon48mdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/icon/icon72hdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/icon/icon96xhdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/hdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/landscape-hdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/landscape-ldpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/landscape-mdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/landscape-xhdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/ldpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/mdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Android/res/splash/xhdpi.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/index.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/js/jquery2.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/js/jquery2.min.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/readme.txt -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/res/icon/storelogo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/Windows81/res/splash/SplashScreen.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsPhone81/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsPhone81/res/icon/storelogo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsPhone81/res/splash/SplashScreenPhone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Square150x150Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Square310x310Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Square44x44Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Square70x70Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Square71x71Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/Wide310x150Logo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/smalllogo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/icon/storelogo.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/splash/SplashScreen.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/WindowsUWP/res/splash/SplashScreenPhone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon57.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon572x.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon602x.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon603x.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon72.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/icon/icon722x.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Default2xiphone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Default568h2xiphone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Default667hiphone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Default736hiphone.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/DefaultLandscape2xipad.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/DefaultLandscapeipad.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/DefaultPortrait2xipad.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/DefaultPortraitipad.png -text
+Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Defaultiphone.png -text
+Studio/projects/template_Ionic2/index.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/app.ts -text
+Studio/projects/template_Ionic2/ionic/app/ionicapp.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/list/list.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/list/list.ts -text
+Studio/projects/template_Ionic2/ionic/app/providers/convertigo-service/convertigo-service.ts -text
+Studio/projects/template_Ionic2/ionic/app/theme/app.core.scss -text
+Studio/projects/template_Ionic2/ionic/app/theme/app.ios.scss -text
+Studio/projects/template_Ionic2/ionic/app/theme/app.md.scss -text
+Studio/projects/template_Ionic2/ionic/app/theme/app.variables.scss -text
+Studio/projects/template_Ionic2/ionic/app/theme/app.wp.scss -text
+Studio/projects/template_Ionic2/ionic/config.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/gulpfile.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/hooks/README.md -text
+Studio/projects/template_Ionic2/ionic/hooks/after_prepare/010_add_platform_class.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/ionic.config.json -text
+Studio/projects/template_Ionic2/ionic/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/CONTRIBUTING.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/NOTICE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/RELEASENOTES.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/de/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/es/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/fr/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/it/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/ja/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/ko/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/pl/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/ru/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/doc/zh/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/src/ios/CDVLogger.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/src/ios/CDVLogger.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/src/ubuntu/console.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/src/ubuntu/console.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/src/wp/DebugConsole.cs -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/tests/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/tests/tests.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/www/console-via-logger.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-console/www/logger.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/CONTRIBUTING.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/NOTICE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/RELEASENOTES.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/de/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/es/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/fr/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/it/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/ja/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/ko/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/pl/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/ru/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/doc/zh/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/android/Device.java -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/blackberry10/index.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/browser/DeviceProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/ios/CDVDevice.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/ios/CDVDevice.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/osx/CDVDevice.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/osx/CDVDevice.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/ubuntu/device.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/ubuntu/device.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/ubuntu/device.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/windows/DeviceProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/src/wp/Device.cs -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/tests/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/tests/tests.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-device/www/device.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/CONTRIBUTING.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/NOTICE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/RELEASENOTES.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/de/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/es/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/fr/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/it/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/ja/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/ko/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/pl/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/ru/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/doc/zh/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/android/SplashScreen.java -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/blackberry10/index.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ios/CDVSplashScreen.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ios/CDVViewController+SplashScreen.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ios/CDVViewController+SplashScreen.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/tizen/SplashScreenProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ubuntu/splashscreen.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/ubuntu/splashscreen.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/wp/ResolutionHelper.cs -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/src/wp/SplashScreen.cs -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest.xcworkspace/contents.xcworkspacedata -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/.npmignore -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTest.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/ImageNameTestDelegates.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenLibTests/Info.plist -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.pbxproj -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/project.xcworkspace/xcshareddata/CDVSplashScreenTest.xccheckout -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLib.xcscheme -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/CDVSplashScreenTest/CDVSplashScreenTest.xcodeproj/xcshareddata/xcschemes/CDVSplashScreenLibTests.xcscheme -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/ios/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/tests/tests.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/www/splashscreen.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/CONTRIBUTING.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/NOTICE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/RELEASENOTES.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/de/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/es/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/fr/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/it/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/ja/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/ko/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/pl/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/ru/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/doc/zh/index.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/android/StatusBar.java -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/browser/statusbar.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/ios/CDVStatusBar.h -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/ios/CDVStatusBar.m -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/src/wp/StatusBar.cs -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/tests/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/tests/tests.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-statusbar/www/statusbar.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/CONTRIBUTING.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/NOTICE -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/RELEASENOTES.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/de/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/es/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/fr/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/it/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/ja/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/ko/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/pl/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/doc/zh/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/cordova-plugin-whitelist/src/android/WhitelistPlugin.java -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/fetch.json -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/LICENSE -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/README.md -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/package.json -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/plugin.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/android/IonicKeyboard.java -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/index.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/.cproject -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/.project -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/device/libKeyboard.so -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/autolink.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/config.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/features.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/forwards.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/json.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/reader.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/value.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json/writer.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_batchallocator.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_internalarray.inl -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_internalmap.inl -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_reader.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_value.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_valueiterator.inl -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/json_writer.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/plugin.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/plugin.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/tokenizer.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/public/tokenizer.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/simulator/libKeyboard.so -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/Logger.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/Logger.hpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/keyboard_js.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/keyboard_js.hpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/keyboard_ndk.cpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/blackberry10/native/src/keyboard_ndk.hpp -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/ios/IonicKeyboard.h -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/ios/IonicKeyboard.m -text
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/src/windows/KeyboardProxy.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/www/android/keyboard.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/www/browser/keyboard.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/plugins/ionic-plugin-keyboard/www/ios/keyboard.js -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-hdpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-ldpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-mdpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-xhdpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-xxhdpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/icon/drawable-xxxhdpi-icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-hdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-ldpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-mdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-xhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-xxhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-land-xxxhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-hdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-ldpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-mdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-xhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-xxhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/android/splash/drawable-port-xxxhdpi-screen.png -text
+Studio/projects/template_Ionic2/ionic/resources/icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-40.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-40@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-50.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-50@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-60.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-60@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-60@3x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-72.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-72@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-76.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-76@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-small.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-small@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon-small@3x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/icon/icon@2x.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-568h@2x~iphone.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-667h.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-736h.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-Landscape-736h.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-Landscape@2x~ipad.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-Landscape~ipad.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-Portrait@2x~ipad.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default-Portrait~ipad.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default@2x~iphone.png -text
+Studio/projects/template_Ionic2/ionic/resources/ios/splash/Default~iphone.png -text
+Studio/projects/template_Ionic2/ionic/resources/splash.png -text
+Studio/projects/template_Ionic2/ionic/tsconfig.json -text
+Studio/projects/template_Ionic2/ionic/typings.json -text
+Studio/projects/template_Ionic2/ionic/typings/browser.d.ts -text
+Studio/projects/template_Ionic2/ionic/typings/browser/ambient/es6-shim/index.d.ts -text
+Studio/projects/template_Ionic2/ionic/typings/main.d.ts -text
+Studio/projects/template_Ionic2/ionic/typings/main/ambient/es6-shim/index.d.ts -text
+Studio/projects/template_Ionic2/ionic/www/img/appicon.png -text
+Studio/projects/template_Ionic2/ionic/www/index.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/template_Ionic2.xml -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/xsd/internal/void/void.xsd -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
 Studio/projects/template_SAP/.project -text svneol=unset#text/plain
 Studio/projects/template_SAP/template_SAP.xml -text svneol=unset#text/plain
 Studio/projects/template_SAP/xsd/internal/SAP_Connector/Logon.xsd -text svneol=unset#text/plain
