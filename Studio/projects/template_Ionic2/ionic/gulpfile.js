@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     del = require('del'),
     runSequence = require('run-sequence'),
     fs = require('fs-extra'),
+    livereload = require('gulp-livereload'),
     argv = process.argv;
 
 
@@ -40,17 +41,30 @@ var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
 var isRelease = argv.indexOf('--release') > -1;
+var outputPath = "../DisplayObjects/mobile/build";
 
 gulp.task('watch', ['clean'], function(done){
   runSequence(
     ['sass', 'html', 'fonts', 'scripts'],
     function(){
-      gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
-      gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
+      livereload.listen();
+      gulpWatch('app/**/*.scss', function(){
+    	  gulp.start('sass');
+    	  livereload.reload();
+      });
+      gulpWatch('app/**/*.html', function(){
+    	  gulp.start('html'); 
+    	  livereload.reload();
+      });
       buildBrowserify({
-    	  outputPath: '../DisplayObjects/mobile/build/js/',
+    	  outputPath: outputPath + '/js/',
+    	  onLog: function(data) {
+    		  console.log("browserify done :" +  data);
+    		  livereload.reload();
+    	  },
     	  watch: true
-      }).on('end', done);
+      })
+      .on('end', done);
     }
   );
 });
@@ -60,7 +74,7 @@ gulp.task('build', ['clean'], function(done){
     ['sass', 'html', 'fonts', 'scripts'],
     function(){
       buildBrowserify({
-     	outputPath: '../DisplayObjects/mobile/build/js/',
+     	outputPath: outputPath + '/js/',
         minify: isRelease,
         browserifyOptions: {
           debug: !isRelease
@@ -77,21 +91,21 @@ gulp.task('build', ['clean'], function(done){
 
 gulp.task('sass', function() {
 	var options = {
-		dest: '../DisplayObjects/mobile/build/css'
+		dest: outputPath + '/css'
 	};
 	buildSass(options);
 });
 
 gulp.task('html',  function() {
 	var options = {
-		dest: '../DisplayObjects/mobile/build'
+		dest: outputPath
 	}; 
 	copyHTML(options);
 });
 
 gulp.task('fonts', function() {
 	var options = {
-		dest: '../DisplayObjects/mobile/build/fonts'
+		dest: outputPath + '/fonts'
 	}; 
 	copyFonts(options);
 });
@@ -99,14 +113,14 @@ gulp.task('fonts', function() {
 
 gulp.task('scripts', function() {
 	var options = {
-		dest: '../DisplayObjects/mobile/build/js'
+		dest: outputPath + '/js'
 	}; 
 	copyScripts(options);
 }); 
 
 
 gulp.task('clean', function(){
-  return del('../DisplayObjects/mobile/build', {
+  return del(outputPath , {
 	  force: true
   });
 });
