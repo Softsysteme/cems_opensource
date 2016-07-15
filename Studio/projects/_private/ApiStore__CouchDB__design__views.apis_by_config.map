@@ -1,0 +1,13 @@
+function (doc) {
+	if (doc.type !== "api")
+		return;
+
+	try {
+		emit(doc.config_id, {
+			_id: doc._id,
+			name: doc.name
+		});
+	} catch (err) {
+		log(err.message);
+	}
+}

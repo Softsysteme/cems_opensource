@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_ApiStore_ns="http://www.convertigo.com/convertigo/projects/lib_ApiStore" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_ApiStore">
+    <xsd:element name="CouchDB__PostDocument" type="lib_ApiStore_ns:CouchDB__PostDocumentRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="CouchDB__PostDocumentResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_ApiStore_ns:CouchDB__PostDocumentResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="CouchDB__PostDocumentResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="lib_ApiStore_ns:CouchDB__PostDocumentResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB__PostDocumentRequestData">
+        <xsd:sequence>
+            <xsd:element name="_id" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Document id</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="_rev" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Document revision</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="data" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>Document content</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Cache_ControlType">
+        <xsd:attribute name="originalKeyName" type="xsd:string"/>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Content_LengthType">
+        <xsd:attribute name="originalKeyName" type="xsd:string"/>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Content_TypeType">
+        <xsd:attribute name="originalKeyName" type="xsd:string"/>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_DateType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_ETagType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_LocationType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_ServerType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_headersType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Cache_Control" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Cache_ControlType"/>
+            <xsd:element minOccurs="0" name="Content_Length" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Content_LengthType"/>
+            <xsd:element minOccurs="0" name="Content_Type" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_Content_TypeType"/>
+            <xsd:element minOccurs="0" name="Date" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_DateType"/>
+            <xsd:element minOccurs="0" name="ETag" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_ETagType"/>
+            <xsd:element minOccurs="0" name="Location" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_LocationType"/>
+            <xsd:element minOccurs="0" name="Server" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headers_ServerType"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_reasonPhraseType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_statusType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMeta_statusCodeType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output__c8oMetaType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="headers" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_headersType"/>
+            <xsd:element minOccurs="0" name="reasonPhrase" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_reasonPhraseType"/>
+            <xsd:element minOccurs="0" name="status" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_statusType"/>
+            <xsd:element minOccurs="0" name="statusCode" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMeta_statusCodeType"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output_idType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output_okType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_output_revType">
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB_PostDocument_document_couchdb_outputType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="_c8oMeta" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output__c8oMetaType"/>
+            <xsd:element minOccurs="0" name="id" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output_idType"/>
+            <xsd:element minOccurs="0" name="ok" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output_okType"/>
+            <xsd:element minOccurs="0" name="rev" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_output_revType"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="CouchDB__PostDocumentResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="couchdb_output" type="lib_ApiStore_ns:CouchDB_PostDocument_document_couchdb_outputType"/>
+            <xsd:element minOccurs="0" name="error" type="lib_ApiStore_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="userReference" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="lib_ApiStore_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="lib_ApiStore_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>
