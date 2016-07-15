@@ -678,7 +678,6 @@ Studio/projects/demo_usDirectory/xsd/internal/usdirectoryConnector/usdirectory.x
 Studio/projects/demo_usDirectory/xsl/businessSearchResults.xsl -text svneol=unset#text/plain
 Studio/projects/demo_usDirectory/xsl/displaylogo.xsl -text svneol=unset#text/plain
 Studio/projects/lib_ApiStore/.project -text
-Studio/projects/lib_ApiStore/.settings/org.eclipse.core.resources.prefs -text
 Studio/projects/lib_ApiStore/DisplayObjects/_old/newAPI.html -text
 Studio/projects/lib_ApiStore/DisplayObjects/_old/newConfig.html -text
 Studio/projects/lib_ApiStore/DisplayObjects/_old/newEndPoint.html -text
