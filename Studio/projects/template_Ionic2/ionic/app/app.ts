@@ -3,11 +3,11 @@ import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
-import {C8O} from './providers/convertigo-service/convertigo-service';
+import {C8o} from './providers/convertigo-service/convertigo-service';
 
 @Component({
   templateUrl: 'build/ionicapp.html',
-  viewProviders: [C8O]
+  viewProviders: [C8o]
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
