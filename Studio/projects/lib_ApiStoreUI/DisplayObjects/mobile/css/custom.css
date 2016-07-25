@@ -1,0 +1,163 @@
+/**
+ * fragments/footer.html
+**/
+.ui-footer > p {
+	text-align: center;
+}
+
+/**
+ * fragments/header.html
+**/
+.ui-header {
+	margin-left: 0;
+}
+
+.ui-header.row > div {
+	padding: .25em;
+}
+
+.ui-header.row > div:first-child {
+	max-width: 60px;
+}
+
+/* Copied from .ui-header > .ui-btn in nativedroid2.css */
+.ui-header .ui-btn {
+	background-color: transparent !important;
+	color: #ffffff !important;
+
+	font-size: 20px;
+	line-height: 1.8em;
+	padding: 0.5em;
+	display: inline-block;
+	width: 1.6em;
+	height: 1.6em;
+
+	border-radius: 50% !important;
+	overflow: hidden !important;
+}
+
+/**
+ * fragments/panel.left.html
+**/
+.ui-panel-position-left ul li > a > i {
+	margin-right: 5px;
+}
+
+/**
+ * app.html
+**/
+.home-naviguation-card {
+	max-width: 250px;
+}
+
+.home-naviguation-card .card-media > i {
+	font-size: 8em;
+}
+
+.home-naviguation-card .card-action {
+	text-transform: none;
+}
+
+/**
+ * putAPI.html
+**/
+.input-drop-zone {
+	border: 1px solid black;
+	cursor: pointer;
+	height: 250px;
+	width: 250px;
+	margin: 0 auto 1em;
+	line-height: 250px;
+	text-align: center;
+}
+
+.input-drop-zone > i {
+	display: block;
+	font-size: 150px;
+	line-height: inherit;
+}
+
+.input-drop-zone > input {
+	opacity: 0;
+}
+
+/* Aligns the name field with the project one */
+@media only screen and (min-width: 62em) {
+	.name-col {
+		margin-bottom: 1em;
+	}
+}
+
+/**
+ * All pages
+**/
+@media only screen and (max-width: 47.99em) {
+	.show-sm {
+		display: none !important;
+	}
+}
+
+/* Make sure the page takes up all the available space. */
+div[data-role=page],
+div[data-role=content] {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+/* Floating action button */
+div[data-role=content] .ui-btn-fab {
+	height: 60px;
+	width: 60px;
+	z-index: 1500; /* Between footer and bottom panel */
+}
+
+iframe#swagger-ui {
+	/* Height is handled by a script in the iframe */
+	width: 100%;
+}
+
+/* Make inputs take-up all the space they have when using the flexgrid */
+.box label {
+	width: 100%;
+}
+
+/**
+ * JQuery Mobile Overrides
+**/
+.ui-listview > li p {
+	white-space: normal; /* Prevents API descriptions from being truncated */
+}
+
+/* Make shadows a bit more opaque */
+.ui-shadow,
+.ui-collapsible {
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+/**
+ * ND2 Fixes
+**/
+/* Selected item in select doesn't have hover effect */
+.ui-selectmenu-list > li > .ui-btn-active:hover {
+	background-color: #ededed;
+ }
+
+/* The line under text inputs is way too long when in a flexgrid box */
+.box .ui-input-text,
+.box .ui-input-search {
+	border: 1px solid #cccccc;
+	padding-bottom: 1px;
+}
+
+.box .ui-input-text.ui-focus,
+.box .ui-input-search.ui-focus {
+	border-bottom: 2px solid #03A9F4;
+	padding-bottom: 0;
+}
+
+.box .ui-input-text:after,
+.box .ui-input-search:after,
+.box .ui-input-text.ui-focus:after,
+.box .ui-input-search.ui-focus:after {
+	display: none;
+}

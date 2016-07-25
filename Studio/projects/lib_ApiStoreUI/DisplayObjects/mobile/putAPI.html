@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.bottom.html"></nd2-include>
+
+			<div data-role="content">
+				<form data-c8o-call="lib_ApiStore.putAPI" data-c8o-listen="lib_ApiStore.getAPI">
+					<input	data-c8o-if="is_edit"
+							type="hidden" name="_id" value="__=api > _id__">
+
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-lg-9">
+							<div class="row" style="flex-direction: column;">
+								<div class="col-xs" style="flex-grow: 0;">
+									<div class="row bottom-xs" style="flex-direction: row;">
+										<div class="col-xs-12 col-md-6 name-col">
+											<div class="box">
+												<label>
+													Name:
+													<input type="text" name="name" value="__=api > name__">
+												</label>
+											</div>
+										</div>
+										<div class="col-xs">
+											<div class="box">
+												<div class="ui-field-contain">
+													<label>
+														Convertigo Project:
+														<!-- Options added via JS -->
+														<select name="c8o_project" data-native-menu="false"></select>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs">
+									<div class="box">
+										<label>
+											Description:
+											<textarea	name="description"
+														data-autogrow="false"
+														style="min-height: 20em">__=api > description__</textarea>
+										</label>
+									</div>
+								</div>
+								<div class="col-xs">
+									<div class="box">
+										<label>
+											Tags:
+											<input type="text" name="tags" value="__=api > tags__"/>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs">
+							<div class="box">
+								<div class="input-drop-zone">
+									<i class="zmdi zmdi-image"></i>
+									<input type="file" name="icon" accept="image/*" data-role="none">
+								</div>
+							</div>
+							<div class="box">
+								<div class="ui-field-contain">
+									<label data-c8o-listen="lib_ApiStore.getBothConfigsAndEndPoints">
+										Configuration:
+										<select name="config_id" data-c8o-each="config" data-native-menu="false">
+											<option value="__=_id__">__=name__</option>
+										</select>
+									</label>
+								</div>
+							</div>
+							<div class="box">
+								<div class="ui-field-contain">
+									<label data-c8o-listen="lib_ApiStore.getBothConfigsAndEndPoints">
+										EndPoint:
+										<select name="endpoint_id" data-c8o-each="endpoint" data-native-menu="false">
+											<option value="__=_id__">__=url__</option>
+										</select>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row center-xs start-sm">
+						<div class="col-xs">
+							<div	class="box" style="max-width: 960px"
+									data-role="collapsible"
+									data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+								<h2>Swagger UI</h2>
+								<iframe id="swagger-ui" frameBorder="0" seamless></iframe>
+							</div>
+						</div>
+					</div>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-check zmd-2x"></i>
+					</button>
+				</form>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>
