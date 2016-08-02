@@ -25,7 +25,7 @@ export class ListPage {
     checklogs(event, item){
         this.c8o.logLevelLocal = C8oLogLevel.TRACE;
         this.c8o.logRemote = true;
-        this.c8o.log.fatal("Ce log est Fatal");
+        this.c8o.log.fatal("Ce log est Fatal (é[^^){!:#");
         this.c8o.log.error("Ce log est Error");
         this.c8o.log.warn("Ce log est Warn");
         this.c8o.log.info("Ce log est Info");

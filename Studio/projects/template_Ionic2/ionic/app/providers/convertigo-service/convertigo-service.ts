@@ -487,7 +487,7 @@ export class C8oLogger {
         var obj = {};
         obj["uid"] = this.uidRemoteLogs.toUpperCase();
         obj["uuid"] = C8o.deviceUUID.toUpperCase();
-        obj["project"] = c8o.endpointProject;
+        obj["project"] = encodeURIComponent(c8o.endpointProject.toString());
         this.env = JSON.stringify(obj);
     }
 
@@ -536,7 +536,7 @@ export class C8oLogger {
                 var obj = {};
                 obj[(C8oLogger.JSON_KEY_TIME.valueOf())] =  time;
                 obj[(C8oLogger.JSON_KEY_LEVEL.valueOf())] =  logLevel.name;
-                obj[(C8oLogger.JSON_KEY_MESSAGE.valueOf())] =  message;
+                obj[(C8oLogger.JSON_KEY_MESSAGE.valueOf())] =  encodeURIComponent(message.toString());
                 let objJson: JSON = <JSON>obj;
                 this.remoteLogs.push(objJson);
                 this.logRemote();
@@ -631,8 +631,6 @@ export class C8oLogger {
 
             let body = C8oLogger.JSON_KEY_LOGS.valueOf() +'=['+ JSON.stringify(logsArray[0]) + ']&'+ C8o.ENGINE_PARAMETER_DEVICE_UUID.valueOf() +'="' + this.c8o.deviceUUID +'"&'+ C8oLogger.JSON_KEY_ENV.valueOf() +'='+ this.env;
             let options = new RequestOptions({ headers: headers });
-            //console.log($.param({"salut" : "cava"}));
-            //console.log(encodeURIComponent(body.toString()));
             var jsonResponse: JSON;
             new Promise(resolve => {
                 this.c8o.httpPublic.post(this.remoteLogUrl.toString(), body.toString(), options)
