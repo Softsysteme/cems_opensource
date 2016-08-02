@@ -26,7 +26,7 @@ export class ListPage {
         this.c8o.logLevelLocal = C8oLogLevel.TRACE;
         this.c8o.logRemote = true;
         this.c8o.log.fatal("Ce log est Fatal (é[^^){!:#");
-        this.c8o.log.error("Ce log est Error");
+        this.c8o.log.error("Ce log est Error 汉语/漢語 or 中文");
         this.c8o.log.warn("Ce log est Warn");
         this.c8o.log.info("Ce log est Info");
         this.c8o.log.debug("Ce log est Debug");

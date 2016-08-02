@@ -625,7 +625,7 @@ export class C8oLogger {
             }
             let headers = new Headers({
                 "x-convertigo-sdk": C8o.getSdkVersion(),
-                "Content-Type": "application/x-www-form-urlencoded"
+                "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
                 //"User-Agent": "Convertigo Client SDK " + C8o.getSdkVersion()
             });
 
