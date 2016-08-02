@@ -25,7 +25,7 @@ class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic/Convertigo', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Tests', component: ListPage }
     ];
   }
 
