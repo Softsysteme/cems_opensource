@@ -6564,6 +6564,7 @@ Studio/src/com/twinsoft/convertigo/engine/util/EngineListenerHelper.java -text s
 Studio/src/com/twinsoft/convertigo/engine/util/EnumUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/EventHelper.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/FileUtils.java -text svneol=unset#text/plain
+Studio/src/com/twinsoft/convertigo/engine/util/FileWalker.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/GenericUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/HexUtils.java -text svneol=unset#text/plain
 Studio/src/com/twinsoft/convertigo/engine/util/HttpServletRequestTwsWrapper.java -text
