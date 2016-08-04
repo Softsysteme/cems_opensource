@@ -7756,10 +7756,10 @@ Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/icon/storelogo.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/SplashScreen.png -text
 Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/Windows/res/splash/SplashScreenPhone.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/WindowsPhone8/config.xml -text svneol=unset#text/plain
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/WindowsPhone8/res/icon/icon173tile.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/WindowsPhone8/res/icon/icon48.png -text
-Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/WindowsPhone8/res/splash/splash.jpg -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/config.xml -text svneol=unset#text/plain
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon173tile.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/icon/icon48.png -text
+Studio/tomcat/webapps/convertigo/templates/base/DisplayObjects/platforms/WindowsPhone8/res/splash/splash.jpg -text
 Studio/tomcat/webapps/convertigo/templates/base/css/custom.css -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/index.html -text svneol=unset#text/plain
 Studio/tomcat/webapps/convertigo/templates/base/index_javelin.html -text
