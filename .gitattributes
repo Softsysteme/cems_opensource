@@ -2945,9 +2945,21 @@ Studio/projects/template_Ionic2/DisplayObjects/platforms/iOS/res/splash/Defaulti
 Studio/projects/template_Ionic2/index.html -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/ionic/app/app.ts -text
 Studio/projects/template_Ionic2/ionic/app/ionicapp.html -text svneol=unset#text/plain
-Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.html -text svneol=unset#text/plain
-Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.scss -text
-Studio/projects/template_Ionic2/ionic/app/pages/hello-ionic/hello-ionic.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/DetailsForm/DetailsForm.html -text
+Studio/projects/template_Ionic2/ionic/app/pages/DetailsForm/DetailsForm.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/DetailsForm/DetailsForm.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/ListForm/ListForm.html -text
+Studio/projects/template_Ionic2/ionic/app/pages/ListForm/ListForm.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/ListForm/ListForm.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/LoginForm/LoginForm.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/LoginForm/LoginForm.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/LoginForm/LoginForm.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/MapView/MapView.html -text
+Studio/projects/template_Ionic2/ionic/app/pages/MapView/MapView.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/MapView/MapView.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.html -text
+Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.ts -text
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.html -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.scss -text
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.ts -text

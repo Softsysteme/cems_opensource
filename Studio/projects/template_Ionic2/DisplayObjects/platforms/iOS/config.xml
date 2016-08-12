@@ -90,6 +90,7 @@
 	<!-- Useful for debugging -->
 	<plugin name="cordova-plugin-console" spec="~1.0.2" />
 	
+	
 	<!-- Native plugin for fullsync project that speedup indexing of documents -->
 <!-- 	<plugin name="couchbase-lite-phonegap-plugin" spec="~1.1.1" /> -->
 	

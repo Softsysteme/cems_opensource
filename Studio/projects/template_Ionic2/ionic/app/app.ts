@@ -1,9 +1,17 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, provide} from '@angular/core';
 import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
+import {LoginForm} from './pages/LoginForm/LoginForm';
+import {MapView} from './pages/MapView/MapView';
+import {SearchForm} from './pages/SearchForm/SearchForm';
+import {ListForm} from './pages/ListForm/ListForm';
+import {DetailsForm} from './pages/DetailsForm/DetailsForm';
 import {ListPage} from './pages/list/list';
 import {C8o} from './providers/convertigo-service/convertigo-service';
+import {HTTP_PROVIDERS, HTTP_BINDINGS} from "angular2/http";
+import {ROUTER_PROVIDERS} from "@angular/router";
+import {GOOGLE_MAPS_PROVIDERS, LazyMapsAPILoaderConfig} from 'angular2-google-maps/core';
+import { enableProdMode } from '@angular/core';
 
 @Component({
   templateUrl: 'build/ionicapp.html',
@@ -13,7 +21,7 @@ class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  rootPage: any = LoginForm;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -24,8 +32,15 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic/Convertigo', component: HelloIonicPage },
-      { title: 'Tests', component: ListPage }
+        { title: 'Login', component: LoginForm },
+        {title: 'MapView', component: MapView},
+        {title: 'Details', component: DetailsForm},
+        { title: 'List', component: ListForm },
+        { title: 'Search', component: SearchForm },
+        {title:'List', component: ListPage},
+        { title: 'Tests', component: ListPage }
+
+
     ];
   }
 
@@ -45,4 +60,13 @@ class MyApp {
   }
 }
 
+
 ionicBootstrap(MyApp);
+/*, [GOOGLE_MAPS_PROVIDERS, provide(LazyMapsAPILoaderConfig, {useFactory: () => {
+    let config = new LazyMapsAPILoaderConfig();
+    config.apiKey = 'AIzaSyBJTTDksnVFxrzQI2rDI1__ooOFE_GVtvI';
+    return config;
+}})
+]);*/
+
+

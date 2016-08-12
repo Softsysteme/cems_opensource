@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions} from '@angular/http';
 import 'rxjs/add/operator/map';
+import {isUndefined} from "ionic-angular/util/util";
+import {Observable} from "rxjs";
 
 /*
   Generated class for the ConvertigoService provider.
@@ -111,16 +113,16 @@ export class C8oBase {
 
         /* Log */
 
-        this.logRemote = c8oBase.logRemote;
-        this.logLevelLocal = c8oBase.logLevelLocal;
-        this.logC8o = c8oBase.logC8o;
+        this._logRemote = c8oBase.logRemote;
+        this._logLevelLocal = c8oBase.logLevelLocal;
+        this._logC8o = c8oBase.logC8o;
         //this.logOnFail = c8oBase.logOnFail;
 
         /* FullSync */
 
-        this.defaultDatabaseName = c8oBase.defaultDatabaseName;
-        this.authenticationCookieValue = c8oBase.authenticationCookieValue;
-        this.fullSyncLocalSuffix = c8oBase.fullSyncLocalSuffix;
+        this._defaultDatabaseName = c8oBase.defaultDatabaseName;
+        this._authenticationCookieValue = c8oBase.authenticationCookieValue;
+        this._fullSyncLocalSuffix = c8oBase.fullSyncLocalSuffix;
     }
 }
 /********************C8outils********************/
@@ -149,10 +151,10 @@ export class C8outils {
 @Injectable()
 export class C8o extends C8oBase {
 
-    private static RE_REQUESTABLE = new RegExp('^([^.]*)\\.(?:([^.]+)|(?:([^.]+)\\.([^.]+)))$');
+    private static RE_REQUESTABLE = /^([^.]*)\.(?:([^.]+)|(?:([^.]+)\.([^.]+)))$/;
     /*The regex used to get the part of the endpoint before '/projects/...'*/
-    regex: RegExp = /^[1-9]\d{0,2}$/g;
-    private static RE_ENDPOINT = /^(https?:\/\/([^:]+)(:[0-9]+)?\/?.*?)\/projects\/([^\/]+)$/gi
+    regex: RegExp = /^[1-9]\d{0,2}$/;
+    private static RE_ENDPOINT = /^(https?:\/\/([^:]+)(:[0-9]+)?\/?.*?)\/projects\/([^\/]+)$/;
 
 
     /* Engine reserved parameters */
@@ -333,19 +335,18 @@ export class C8o extends C8oBase {
         super();
         this._http = http;
         this.data = null;
-        this.sequencePrefix = "/.json?__sequence=";
+        this.sequencePrefix = "/.json?";
 
-        //new Promise(resolve => {
+        new Promise(resolve => {
             //if project is running into web browser
             //get the url from window.location
             if (window.location.href.startsWith('http')) {
                 let n = window.location.href.indexOf("/Display");
                 this.endpoint = window.location.href.substring(0, n);
-                //resolve(this.data);
+                resolve(this.data);
             }
             //if project is running on device
             //get the uri from env.json
-			
             else if (window.location.href.startsWith('file')) {
                 var uri = window.location.href.replace('app.html', 'env.json');
                 this.http.get(uri)
@@ -355,14 +356,14 @@ export class C8o extends C8oBase {
                         let remoteBase = data.remoteBase.toString();
                         let n = remoteBase.indexOf("/_private");
                         this.endpoint = remoteBase.substring(0, n);
-                        //resolve(this.data);
+                        resolve(this.data);
                     });
             }
             //this.endpoint = "http://localhost:18080/convertigo/projects/template_Ionic2";
             //resolve();
 
-        //}).then(() => {
-            if (!C8outils.isValidUrl(this.endpoint.toString())) {
+        }).then(() => {
+            if (!C8outils.isValidUrl(this.endpoint)) {
                 //return new TypeError(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
             }
             var matches = C8o.RE_ENDPOINT.exec(this.endpoint.toString());
@@ -380,60 +381,101 @@ export class C8o extends C8oBase {
             console.log('endpointProject :' + this.endpointProject.toString());*/
             this.c8oLogger = new C8oLogger(this);
             this.c8oLogger.logMethodCall("C8o Constructor");
-        //});
+        });
 
     }
 
-    public callJsonDictionary(requestable: String, callData: { [id: string]: any; }) {
-        this.c8oLogger.logMethodCall("Call", callData);
-        var _this2 = this;
-        if (this.data) {
-            // already loaded data
-            return Promise.resolve(this.data);
+    public call(requestable: string, parameters: { [id: string]: any; }){
+        try{
+            if(requestable == null || isUndefined(requestable)){
+                throw new Error("requestable must be not null");
+            }
+            if(parameters == null || isUndefined(parameters)){
+
+            }
+            else {
+
+            }
+            let regex = C8o.RE_REQUESTABLE.exec(requestable);
+            if(regex[0] == null || isUndefined(regex)){
+                throw new Error(this._endpoint + "is not a valid Convertigo endpoint");
+            }
+            if(regex[1] != ""){
+                parameters[C8o.ENGINE_PARAMETER_PROJECT.toString()] = regex[1];
+            }
+            if(regex[2] != null){
+                parameters[C8o.ENGINE_PARAMETER_SEQUENCE.toString()] = regex[2];
+            }
+            else{
+                parameters[C8o.ENGINE_PARAMETER_CONNECTOR.toString()] = regex[3];
+                parameters[C8o.ENGINE_PARAMETER_TRANSACTION.toString()] = regex[4];
+            }
+            return this._callJson(parameters);
+        }
+        catch(error) {
 
         }
-        let params: URLSearchParams = new URLSearchParams();
-        if (callData != undefined) {
-            for (var item in callData) {
-                params.set(item, callData[item].valueOf());
+    }
+
+    private _callJson(parameters: { [id: string]: any; }) {
+        this.c8oLogger.logMethodCall("CallJSON", parameters);
+        this.data = null;
+        if (this.data != null) {
+         // already loaded data
+            console.log("la");
+         return Promise.resolve(this.data);
+        }
+        let params:URLSearchParams = new URLSearchParams();
+        if (parameters != undefined && JSON.stringify(parameters) != "{}") {
+            for (var item in parameters) {
+                params.set(item, parameters[item].valueOf());
             }
         }
+
         return new Promise(resolve => {
-            // We're using Angular Http provider to request the data,
-            // then on the response it'll map the JSON data to a parsed JS object.
-            // Next we process the data and resolve the promise with the new data.
-            var get = this.endpoint.toString() + this.sequencePrefix.toString() + requestable.toString();
+            var get = this.endpoint.toString() + this.sequencePrefix.toString();
             this.http.get(get, {
                 search: params
-            })
-                .map(res => res.json())
+            }).map(res => res.json())
                 .subscribe(data => {
-                    // we've got back the raw data, now generate the core schedule data
-                    // and save the data for later reference
                     this.data = data;
-                    resolve(this.data);
+                    return resolve(this.data);
                 });
         });
+
     }
 
-    public callJsonAny(requestable: String, ...parameters: any[]) {
-        return this.callJsonDictionary(requestable, C8o.toParameters(parameters));
+    public callJson(requestable: string, ...parameters: any[]) {
+        return this.call(requestable.toString(), C8o.toParameters(parameters));
     }
+
 
 
     public static toParameters(parameters: any): { [id: string]: any; } {
         var newParameters: { [id: string]: any; } = {};
+        var alreadyDone = false;
         if (parameters != undefined) {
-            if (parameters.lenght % 2 != 0) {
-                throw new Error("Invalid parameter Exception");
+            if (0 != parameters.length % 2) {
+                if (parameters.length == 1 && parameters.constructor === Array) {
+                    alreadyDone = true;
+                    for(var item in parameters[0]){
+                        newParameters[item] = parameters[0][item];
+                    }
+                }
+                else{
+                    throw new Error("Invalid parameter Exception");
+                }
             }
-            for (var i = 0; i < parameters.lenght; i += 2) {
-                newParameters[parameters[i]] = parameters[i + 1];
+            if(!alreadyDone){
+                for (var i = 0; i < parameters.length; i += 2) {
+                    newParameters[parameters[i]] = parameters[i + 1];
+                }
             }
         }
         return newParameters;
 
     }
+
 }
 /********************C8oExceptionMessage********************/
 export class C8oExceptionMessage {
@@ -684,7 +726,7 @@ export class C8oLogger {
         if (this.c8o.logC8o && this.isDebug) {
             var c8oCallLogMessage: String = "C8o call : " + url;
 
-            if (parameters.lenght > 0) {
+            if (parameters.length > 0) {
                 c8oCallLogMessage += "\n" + String(parameters);
             }
 

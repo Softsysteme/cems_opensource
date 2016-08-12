@@ -9,6 +9,10 @@
   <div>
     <button (click)="checklogs()">Test logs</button>
     <button (click)="callJsonGetData()">Test CallJSON</button>
+    <button (click)="testC8oDefaultPing()">testC8oDefaultPing</button>
+    <button (click)="testC8oDefaultPingOneSingleValue()">testC8oDefaultPingOneSingleValue</button>
+    <button (click)="testC8oDefaultPingTwoSingleValues()">testC8oDefaultPingTwoSingleValues</button>
+    <button (click)="testC8oDefaultPingTwoSingleValuesOneMulti()">testC8oDefaultPingTwoSingleValuesOneMulti</button>
   </div>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
