@@ -8,12 +8,11 @@
 <ion-content padding class="getting-started">
 
     <h2 primary>Search a Room</h2>
-
     <ion-list>
         <ion-item>
             <ion-label>Country</ion-label>
-            <ion-select [(ngModel)]="a">
-                <ion-option value="FR">France</ion-option>
+            <ion-select>
+                <ion-option value="FR" ng-selected="true">France</ion-option>
                 <ion-option value="US">USA</ion-option>
                 <ion-option value="B">Belgium</ion-option>
                 <ion-option value="IT">Italy</ion-option>
@@ -22,21 +21,21 @@
         </ion-item>
         <ion-item>
             <ion-label primary>Postal Code</ion-label>
-            <ion-input #CP></ion-input>
+            <ion-input type="text" value="{{PostalCode}}" ></ion-input>
         </ion-item>
         <ion-item>
             <ion-label primary>Some Date</ion-label>
-            <ion-input type="date"></ion-input>
+            <ion-input type="date" value="{{date}}"></ion-input>
         </ion-item>
     </ion-list>
     <ion-item>
         <ion-label>Options</ion-label>
         <ion-select [(ngModel)]="a">
-            <ion-option value="T">Theater</ion-option>
+            <ion-option value="T" selected>Theater</ion-option>
             <ion-option value="MR">Meeting Room</ion-option>
             <ion-option value="C">Class-Room</ion-option>
         </ion-select>
     </ion-item>
-    <button block (click)="search(CP.value)">Search</button>
+    <button block (click)="search()">Search</button>
     <p royal>Fill in meeting info and hit the search buton</p>
 </ion-content>
