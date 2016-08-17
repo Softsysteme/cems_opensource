@@ -3,13 +3,12 @@ import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular
 import 'rxjs/add/operator/map';
 import {isUndefined} from "ionic-angular/util/util";
 import {Observable} from "rxjs";
+import * as PouchDB from 'pouchdb';
 
 /*
   Generated class for the ConvertigoService provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
 */
+
 @Injectable()
 /********************C8oBase********************/
 export class C8oBase {
@@ -17,8 +16,7 @@ export class C8oBase {
 
     protected _timeout: number = -1;
     protected _trustAllCertificates: boolean = false;
-    protected _cookies: { [key: string]: String } = {};
-
+    protected _cookies: { [key: string]: string } = {};
 
     /*Log*/
 
@@ -29,21 +27,21 @@ export class C8oBase {
 
     /* FullSync */
 
-    protected _defaultDatabaseName: String = null;
-    protected _authenticationCookieValue: String = null;
-    protected _fullSyncLocalSuffix: String = null;
-    protected _fullSyncServerUrl: String = "http://localhost:5984";
-    protected _fullSyncUsername: String;
-    protected _fullSyncPassword: String;
+    protected _defaultDatabaseName: string = null;
+    protected _authenticationCookieValue: string = null;
+    protected _fullSyncLocalSuffix: string = null;
+    protected _fullSyncServerUrl: string = "http://localhost:5984";
+    protected _fullSyncUsername: string;
+    protected _fullSyncPassword: string;
 
     /* Encryption */
 
     protected _useEncryption: boolean = false;
     protected _disableSSL: boolean = false;
     //protected keyStoreInputStream :InputStream ;
-    protected _keyStorePassword: String;
+    protected _keyStorePassword: string;
     //protected trustStoreInputStream :InputStream;
-    protected _trustStorePassword: String;
+    protected _trustStorePassword: string;
 
     public get timeout(): number {
         return this._timeout;
@@ -53,7 +51,7 @@ export class C8oBase {
         return this._trustAllCertificates;
     }
 
-    public get cookies(): { [key: string]: String } {
+    public get cookies(): { [key: string]: string } {
         return this._cookies;
     }
 
@@ -74,38 +72,38 @@ export class C8oBase {
      return this._
      }*/
 
-    public get defaultDatabaseName(): String {
+    public get defaultDatabaseName(): string {
         return this._defaultDatabaseName;
     }
 
-    public get authenticationCookieValue(): String {
+    public get authenticationCookieValue(): string {
         return this._authenticationCookieValue;
     }
 
-    public get fullSyncLocalSuffix(): String {
+    public get fullSyncLocalSuffix(): string {
         return this._fullSyncLocalSuffix;
     }
 
-    public get fullSyncServerUrl(): String {
+    public get fullSyncServerUrl(): string {
         return this._fullSyncServerUrl;
     }
 
-    public get fullSyncUsername(): String {
+    public get fullSyncUsername(): string {
         return this._fullSyncUsername;
     }
 
-    public get fullSyncPassword(): String {
+    public get fullSyncPassword(): string {
         return this._fullSyncPassword;
     }
 
     protected copy(c8oBase: C8oBase) {
 
         /*HTTP*/
-
+        let db = new PouchDB('cloudo');
         this._timeout = c8oBase._timeout;
         this._trustAllCertificates = c8oBase._trustAllCertificates;
         /*if (this.cookies == null) {
-         //cookies = [String : String]();
+         //cookies = [string : string]();
          }
          if (c8oBase.cookies != null) {
          cookies.putAll(c8oBase.cookies);
@@ -128,6 +126,7 @@ export class C8oBase {
 /********************C8outils********************/
 @Injectable()
 export class C8outils {
+    private static USE_PARAMETER_IDENTIFIER : string = "_use_";
 
     data : JSON;
     public constructor(private http : Http){
@@ -152,7 +151,7 @@ export class C8outils {
         console.log(JSON.stringify(body));
         return body;
     }
-    public static isValidUrl(url: String): boolean {
+    public static isValidUrl(url: string): boolean {
         var valid = /^(http|https):\/\/[^ "]+$/.test(url.toString());
         return valid;
     }
@@ -171,6 +170,38 @@ export class C8outils {
         });
     }
 
+    public static getParameter(parameters: { [id: string]: any; }, name : string, useName : boolean) : any{
+        for(var p in parameters){
+            let parameterName = p[0];
+            if(name == parameterName || useName && name == this.USE_PARAMETER_IDENTIFIER + parameterName){
+                return p;
+            }
+        }
+        return null;
+    }
+    public static getParameterStringValue(parameters: { [id: string]: any; }, name : string, useName : boolean) : string{
+        let parameter : { [id: string]: any; } = C8outils.getParameter(parameters, name, useName);
+        if(parameter != null){
+            return "" + parameter.toString();
+        }
+        return null;
+    }
+
+    public static peekParameterStringValue(parameters: { [id: string]: any; }, name : string, exceptionIfMissing : boolean) : string{
+        let value : string = this.getParameterStringValue(parameters, name, false);
+
+        if(value == null){
+            if(exceptionIfMissing)
+            {
+                throw new Error("The parameter '" + name + "' is missing");
+            }
+        }
+        else{
+            parameters[name].pop();
+        }
+        return value;
+    }
+
 }
 /********************C8o********************/
 @Injectable()
@@ -183,79 +214,79 @@ export class C8o extends C8oBase {
 
 
     /* Engine reserved parameters */
-    static ENGINE_PARAMETER_PROJECT: String = "__project";
-    static ENGINE_PARAMETER_SEQUENCE: String = "__sequence";
-    static ENGINE_PARAMETER_CONNECTOR: String = "__connector";
-    static ENGINE_PARAMETER_TRANSACTION: String = "__transaction";
-    static ENGINE_PARAMETER_ENCODED: String = "__encoded";
-    static ENGINE_PARAMETER_DEVICE_UUID: String = "__uuid";
-    static ENGINE_PARAMETER_PROGRESS: String = "__progress";
+    static ENGINE_PARAMETER_PROJECT: string = "__project";
+    static ENGINE_PARAMETER_SEQUENCE: string = "__sequence";
+    static ENGINE_PARAMETER_CONNECTOR: string = "__connector";
+    static ENGINE_PARAMETER_TRANSACTION: string = "__transaction";
+    static ENGINE_PARAMETER_ENCODED: string = "__encoded";
+    static ENGINE_PARAMETER_DEVICE_UUID: string = "__uuid";
+    static ENGINE_PARAMETER_PROGRESS: string = "__progress";
 
-    static FS_POLICY: String = "_use_policy";
+    static FS_POLICY: string = "_use_policy";
     /**
      Use it with "fs://.post" and C8o.FS_POLICY.
 
      This is the default post policy that don't alter the document before the CouchbaseLite's insertion.
      */
-    static FS_POLICY_NONE: String = "none";
+    static FS_POLICY_NONE: string = "none";
     /**
      Use it with "fs://.post" and C8o.FS_POLICY.
 
      This post policy remove the "_id" and "_rev" of the document before the CouchbaseLite's insertion.
      */
-    static FS_POLICY_CREATE: String = "create";
+    static FS_POLICY_CREATE: string = "create";
     /**
      Use it with "fs://.post" and C8o.FS_POLICY.
 
      This post policy inserts the document in CouchbaseLite even if a document with the same "_id" already exists.
      */
-    static FS_POLICY_OVERRIDE: String = "override";
+    static FS_POLICY_OVERRIDE: string = "override";
     /**
      Use it with "fs://.post" and C8o.FS_POLICY.
 
      This post policy merge the document with an existing document with the same "_id" before the CouchbaseLite's insertion.
      */
-    static FS_POLICY_MERGE: String = "merge";
+    static FS_POLICY_MERGE: string = "merge";
     /**
      Use it with "fs://.post". Default value is ".".
 
      This key allow to override the sub key separator in case of document depth modification.
      */
-    static FS_SUBKEY_SEPARATOR: String = "_use_subkey_separator";
+    static FS_SUBKEY_SEPARATOR: string = "_use_subkey_separator";
 
     /* Local cache keys */
 
-    static LOCAL_CACHE_DOCUMENT_KEY_RESPONSE: String = "response";
-    static LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE: String = "responseType";
-    static LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE: String = "expirationDate";
+    static LOCAL_CACHE_DOCUMENT_KEY_RESPONSE: string = "response";
+    static LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE: string = "responseType";
+    static LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE: string = "expirationDate";
 
-    static LOCAL_CACHE_DATABASE_NAME: String = "c8olocalcache";
+    static LOCAL_CACHE_DATABASE_NAME: string = "c8olocalcache";
 
     /* Response type */
 
-    static RESPONSE_TYPE_XML: String = "pxml";
-    static RESPONSE_TYPE_JSON: String = "json";
+    static RESPONSE_TYPE_XML: string = "pxml";
+    static RESPONSE_TYPE_JSON: string = "json";
 
     /* Static configuration */
     static defaultUiDispatcher: Object;// ACTION<ACTION>?
-    static deviceUUID: String = C8outils.getNewGUIDString();
+    static deviceUUID: string = C8outils.getNewGUIDString();
 
     /**
      Returns the current version of the SDK as "x.y.z".
      - returns: Current version of the SDK as "x.y.z".
      */
-    static getSdkVersion(): String {
+    static getSdkVersion(): string {
         return "2.0.4";
     }
 
     /* Attributes */
 
-    private _endpoint: String;
-    private _endpointConvertigo: String;
+    private _endpoint: string;
+    private _endpointConvertigo: string;
     private _endpointIsSecure: boolean;
-    private _endpointHost: String;
-    private _endpointPort: String;
-    private _endpointProject: String;
+    private _endpointHost: string;
+    private _endpointPort: string;
+    private _endpointProject: string;
 
     /* Used to run HTTP requests.*/
     //internal httpInterface: C8oHttpInterface;
@@ -267,10 +298,10 @@ export class C8o extends C8oBase {
     //c8oFullSync: C8oFullSync;
 
     private data: any;
-    private sequencePrefix: String;
+    private sequencePrefix: string;
     private _http : Http;
 
-    public addCookie(name: String, value: String) {
+    public addCookie(name: string, value: string) {
 
     }
 
@@ -302,21 +333,21 @@ export class C8o extends C8oBase {
         return this.c8oLogger;
     }
 
-    public toString(): String {
+    public toString(): string {
         return "C8o[" + this._endpoint + "]";
     }
 
-    public get endpoint(): String {
+    public get endpoint(): string {
         return this._endpoint;
     }
-    public set endpoint(value: String) {
+    public set endpoint(value: string) {
         this._endpoint = value;
     }
 
-    public get endpointConvertigo(): String {
+    public get endpointConvertigo(): string {
         return this._endpointConvertigo;
     }
-    public set endpointConvertigo(value: String) {
+    public set endpointConvertigo(value: string) {
         this._endpointConvertigo = value;
     }
 
@@ -327,32 +358,32 @@ export class C8o extends C8oBase {
         this._endpointIsSecure = value;
     }
     //
-    public get endpointHost(): String {
+    public get endpointHost(): string {
         return this._endpointHost;
     }
-    public set endpointHost(value: String) {
+    public set endpointHost(value: string) {
         this._endpointHost = value;
     }
-    public get endpointPort(): String {
+    public get endpointPort(): string {
         return this._endpointPort;
     }
-    public set endpointPort(value: String) {
+    public set endpointPort(value: string) {
         this._endpointPort = value;
     }
-    public get endpointProject(): String {
+    public get endpointProject(): string {
         return this._endpointProject;
     }
-    public set endpointProject(value: String) {
+    public set endpointProject(value: string) {
         this._endpointProject = value;
     }
-    public get deviceUUID(): String {
+    public get deviceUUID(): string {
         return C8o.deviceUUID;
     }
 
     public get httpPublic() : Http {
         return this._http;
     }
-    /*public get cookieStore():String{
+    /*public get cookieStore():string{
         return this._endpointIsSecure;
     }*/
 
@@ -498,9 +529,64 @@ export class C8o extends C8oBase {
     }
 
 }
+/********************C8oFullSync********************/
+export class C8oFullSync {
+    private static FULL_SYNC_URL_PATH : string = "/fullsync/";
+    /**
+     * The project requestable value to execute a fullSync request.
+     */
+    public static FULL_SYNC_PROJECT  : string= "fs://";
+    public static FULL_SYNC__ID  : string = "_id";
+    public static FULL_SYNC__REV  : string = "_rev";
+    public static FULL_SYNC__ATTACHMENTS : string = "_attachments";
+
+    protected c8o : C8o;
+    protected fullSyncDatabaseUrlBase : string;
+    protected localSuffix : string;
+
+    public Init(c8o : C8o) : void{
+        this.c8o = c8o;
+        this.fullSyncDatabaseUrlBase = c8o.endpointConvertigo + C8oFullSync.FULL_SYNC_URL_PATH;
+        this.localSuffix = (c8o.fullSyncLocalSuffix != null) ? c8o.fullSyncLocalSuffix : "_device";
+    }
+
+    public handleFullSyncRequest(parameters : { [id: string]: any; }) : any{
+        let projectParameterValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
+
+        if(!projectParameterValue.startsWith(C8oFullSync.FULL_SYNC_PROJECT)){
+            throw new Error("TODO");
+        }
+
+        let fullSyncRequestableValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
+        let fullSyncRequestable : FullSyncRequestable
+
+    }
+
+}
+
+ enum FullSyncRequestable {
+    GET,
+    DELETE,
+    POST,
+    PUT_ATTACHMENT,
+    DELETE_ATTACHMENT,
+    ALL,
+    VIEW,
+    SYNC,
+    REPLICATE_PULL,
+    REPLICATE_PUSH,
+    RESET,
+    CREATE,
+    DESTROY
+
+
+
+}
+
+
 /********************C8oExceptionMessage********************/
 export class C8oExceptionMessage {
-    public static illegalArgumentInvalidURL(urlStr: String): String {
+    public static illegalArgumentInvalidURL(urlStr: string): string {
         return "'" + urlStr + "' is not a valid URL";
     }
 }
@@ -510,30 +596,30 @@ export class C8oExceptionMessage {
 export class C8oLogger {
 
     // *** Constants ***//
-    private static LOG_TAG: String = "c8o";
-    private static LOG_INTERNAL_PREFIX: String = "[c8o] ";
+    private static LOG_TAG: string = "c8o";
+    private static LOG_INTERNAL_PREFIX: string = "[c8o] ";
 
     static REMOTE_LOG_LIMIT: number = 100;
 
-    private static JSON_KEY_REMOTE_LOG_LEVEL: String = "remoteLogLevel";
-    private static JSON_KEY_TIME: String = "time";
-    private static JSON_KEY_LEVEL: String = "level";
-    private static JSON_KEY_MESSAGE: String = "msg";
-    private static JSON_KEY_LOGS: String = "logs";
-    private static JSON_KEY_ENV: String = "env";
+    private static JSON_KEY_REMOTE_LOG_LEVEL: string = "remoteLogLevel";
+    private static JSON_KEY_TIME: string = "time";
+    private static JSON_KEY_LEVEL: string = "level";
+    private static JSON_KEY_MESSAGE: string = "msg";
+    private static JSON_KEY_LOGS: string = "logs";
+    private static JSON_KEY_ENV: string = "env";
 	
     /** Attributes */
 
-    private remoteLogUrl: String;
+    private remoteLogUrl: string;
     private remoteLogs: Queue<JSON>;
     private alreadyRemoteLogging: boolean[];
     private remoteLogLevel: C8oLogLevel;
-    private uidRemoteLogs: String;
+    private uidRemoteLogs: string;
     private startTimeRemoteLog: Date;
 
     private c8o: C8o
 
-    private env: String
+    private env: string
     private http: Http;
     constructor(c8o: C8o) {
         this.c8o = c8o;
@@ -585,7 +671,7 @@ export class C8oLogger {
         return this.canLog(C8oLogLevel.TRACE);
     }
 
-    private log(logLevel: C8oLogLevel, message: String, exception: Error) {
+    private log(logLevel: C8oLogLevel, message: string, exception: Error) {
         let isLogConsole: boolean = this.isLoggableConsole(logLevel);
         let isLogRemote: boolean = this.isLoggableRemote(logLevel);
 
@@ -594,7 +680,7 @@ export class C8oLogger {
                 message += "\n" + exception.toString();
             }
 
-            let time: String = ((new Date().getTime()) - (this.startTimeRemoteLog.getTime())).toString();
+            let time: string = ((new Date().getTime()) - (this.startTimeRemoteLog.getTime())).toString();
             if (isLogRemote) {
                 var obj = {};
                 obj[(C8oLogger.JSON_KEY_TIME.valueOf())] =  time;
@@ -611,57 +697,57 @@ export class C8oLogger {
         }
     }
 
-    public fatal(message: String, exceptions: Error = null) {
+    public fatal(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.FATAL, message, exceptions);
     }
 
-    public error(message: String, exceptions: Error = null) {
+    public error(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.ERROR, message, exceptions);
     }
 
-    public warn(message: String, exceptions: Error = null) {
+    public warn(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.WARN, message, exceptions);
     }
 
-    public info(message: String, exceptions: Error = null) {
+    public info(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.INFO, message, exceptions);
     }
 
-    public debug(message: String, exceptions: Error = null) {
+    public debug(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.DEBUG, message, exceptions);
     }
 
-    public trace(message: String, exceptions: Error = null) {
+    public trace(message: string, exceptions: Error = null) {
         this.log(C8oLogLevel.TRACE, message, exceptions);
     }
 
-    private _log(logLevel: C8oLogLevel, messages: String, exceptions: Error = null) {
+    private _log(logLevel: C8oLogLevel, messages: string, exceptions: Error = null) {
         if (this.c8o.logC8o) {
             this.log(logLevel, C8oLogger.LOG_INTERNAL_PREFIX.toString() + messages.toString(), exceptions);
         }
     }
 
-    private _fatal(message: String, exceptions: Error = null) {
+    private _fatal(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.FATAL, message, exceptions);
     }
 
-    private _error(message: String, exceptions: Error = null) {
+    private _error(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.ERROR, message, exceptions);
     }
 
-    private _warn(message: String, exceptions: Error = null) {
+    private _warn(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.WARN, message, exceptions);
     }
 
-    private _info(message: String, exceptions: Error = null) {
+    private _info(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.INFO, message, exceptions);
     }
 
-    private _debug(message: String, exceptions: Error = null) {
+    private _debug(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.DEBUG, message, exceptions);
     }
 
-    private _trace(message: String, exceptions: Error = null) {
+    private _trace(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.TRACE, message, exceptions);
     }
 
@@ -708,7 +794,7 @@ export class C8oLogger {
             }).then(() => {
                 var logLevelResponse = jsonResponse[C8oLogger.JSON_KEY_REMOTE_LOG_LEVEL.toString()];
                 if (logLevelResponse != null) {
-                    let logLevelResponseStr: String = logLevelResponse.toString();
+                    let logLevelResponseStr: string = logLevelResponse.toString();
                     let c8oLogLevel = C8oLogLevel.getC8oLogLevel(logLevelResponseStr);
 
                     if (c8oLogLevel != null) {
@@ -724,9 +810,9 @@ export class C8oLogger {
     }
 
 
-    logMethodCall(methodName: String, parameters: any = null) {
+    logMethodCall(methodName: string, parameters: any = null) {
         if (this.c8o.logC8o && this.isDebug) {
-            var methodCallLogMessage: String = "Method call : " + methodName
+            var methodCallLogMessage: string = "Method call : " + methodName
             if(parameters == null){
                 this._debug(methodCallLogMessage);
             }
@@ -743,9 +829,9 @@ export class C8oLogger {
         }
     }
 
-    logC8oCall(url: String, parameters: any) {
+    logC8oCall(url: string, parameters: any) {
         if (this.c8o.logC8o && this.isDebug) {
-            var c8oCallLogMessage: String = "C8o call : " + url;
+            var c8oCallLogMessage: string = "C8o call : " + url;
 
             if (parameters.length > 0) {
                 c8oCallLogMessage += "\n" + String(parameters);
@@ -756,13 +842,13 @@ export class C8oLogger {
     }
 
 
-    logC8oCallJSONResponse(response: JSON, url: String, parameters: any) {
+    logC8oCallJSONResponse(response: JSON, url: string, parameters: any) {
         this.logC8oCallResponse(JSON.stringify(response), "JSON", url, parameters);
     }
 
-    logC8oCallResponse(responseStr: String, responseType: String, url: String, parameters: any) {
+    logC8oCallResponse(responseStr: string, responseType: string, url: string, parameters: any) {
         if (this.c8o.logC8o && this.isTrace) {
-            var c8oCallResponseLogMessage: String;
+            var c8oCallResponseLogMessage: string;
             if (url == null) {
                 c8oCallResponseLogMessage = "C8o call " + responseType + " response : ";
             } else {
@@ -783,7 +869,7 @@ export class C8oLogger {
 /********************C8oLogger********************/
 
 export class C8oLogLevel {
-    private static JSON_KEY_REMOTE_LOG_LEVEL: String = "remoteLogLevel";
+    private static JSON_KEY_REMOTE_LOG_LEVEL: string = "remoteLogLevel";
 
     public static NULL: C8oLogLevel = new C8oLogLevel("", 0);
     public static NONE: C8oLogLevel = new C8oLogLevel("none", 1);
@@ -796,15 +882,15 @@ export class C8oLogLevel {
 
     static C8O_LOG_LEVELS = [C8oLogLevel.NULL, C8oLogLevel.NONE, C8oLogLevel.TRACE, C8oLogLevel.DEBUG, C8oLogLevel.INFO, C8oLogLevel.WARN, C8oLogLevel.ERROR, C8oLogLevel.FATAL];
 
-    public name: String;
+    public name: string;
     public priority: number;
 
-    constructor(name: String, priority: number) {
+    constructor(name: string, priority: number) {
         this.name = name;
         this.priority = priority;
     }
 
-    static getC8oLogLevel(name: String): C8oLogLevel {
+    static getC8oLogLevel(name: string): C8oLogLevel {
         for (var i = 0; i <= C8oLogLevel.C8O_LOG_LEVELS.length; i++) {
             if (C8oLogLevel.C8O_LOG_LEVELS[i].name == name) {
                 return C8oLogLevel.C8O_LOG_LEVELS[i];
