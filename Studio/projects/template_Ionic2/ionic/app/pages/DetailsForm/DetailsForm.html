@@ -9,11 +9,14 @@
     <h2 primary>Room details</h2>
     <ion-card>
         <ion-list>
-            <ion-item dark> Montparnasse</ion-item>
-            <ion-item dark> Montparnasse</ion-item>
+            <ion-item dark>{{item.title}}</ion-item>
+            <ion-item dark>{{item.address}}</ion-item>
+            <ion-item dark>{{item.price}}</ion-item>
+            <ion-item dark>{{item.total}}</ion-item>
         </ion-list>
      </ion-card>
     <h2 primary>Description</h2>
-    <button block>Localize</button>
+    <p>{{item.description}}</p>
+    <button block (click)="local(item.address)">Localize</button>
 
 </ion-content>

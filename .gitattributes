@@ -2965,6 +2965,7 @@ Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.scss -
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.ts -text
 Studio/projects/template_Ionic2/ionic/app/pages/list/list.html -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/ionic/app/pages/list/list.ts -text
+Studio/projects/template_Ionic2/ionic/app/providers/convertigo-service/convertigo-service.spec.ts -text
 Studio/projects/template_Ionic2/ionic/app/providers/convertigo-service/convertigo-service.ts -text
 Studio/projects/template_Ionic2/ionic/app/theme/app.core.scss -text
 Studio/projects/template_Ionic2/ionic/app/theme/app.ios.scss -text

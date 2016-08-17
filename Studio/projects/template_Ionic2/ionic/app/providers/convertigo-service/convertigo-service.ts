@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Http, URLSearchParams, Headers, RequestOptions} from '@angular/http';
+import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {isUndefined} from "ionic-angular/util/util";
 import {Observable} from "rxjs";
@@ -126,12 +126,37 @@ export class C8oBase {
     }
 }
 /********************C8outils********************/
+@Injectable()
 export class C8outils {
 
+    data : JSON;
+    public constructor(private http : Http){
+        this.http = http;
+    }
+
+    public geocode(address : string, apiKey : string){
+        let params:URLSearchParams = new URLSearchParams();
+        params.set("address", address);
+        params.set("key", apiKey);
+        let url : string = "https://maps.googleapis.com/maps/api/geocode/json";
+        return this.http.get(url, {
+            search: params
+        }).toPromise()
+            .then(this.extractData);
+
+    }
+
+    private extractData(res: Response) {
+        let body = res.json();
+        console.log("body ::::::");
+        console.log(JSON.stringify(body));
+        return body;
+    }
     public static isValidUrl(url: String): boolean {
         var valid = /^(http|https):\/\/[^ "]+$/.test(url.toString());
         return valid;
     }
+
 
     public static getNewGUIDString() : string {
 
@@ -353,15 +378,13 @@ export class C8o extends C8oBase {
                     .map(res => res.json())
                     .subscribe(data => {
                         this.data = data;
+                        //noinspection TypeScriptUnresolvedVariable
                         let remoteBase = data.remoteBase.toString();
                         let n = remoteBase.indexOf("/_private");
                         this.endpoint = remoteBase.substring(0, n);
                         resolve(this.data);
                     });
             }
-            //this.endpoint = "http://localhost:18080/convertigo/projects/template_Ionic2";
-            //resolve();
-
         }).then(() => {
             if (!C8outils.isValidUrl(this.endpoint)) {
                 //return new TypeError(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
@@ -448,8 +471,6 @@ export class C8o extends C8oBase {
     public callJson(requestable: string, ...parameters: any[]) {
         return this.call(requestable.toString(), C8o.toParameters(parameters));
     }
-
-
 
     public static toParameters(parameters: any): { [id: string]: any; } {
         var newParameters: { [id: string]: any; } = {};

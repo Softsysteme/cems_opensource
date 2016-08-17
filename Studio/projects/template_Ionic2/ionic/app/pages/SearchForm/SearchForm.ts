@@ -16,19 +16,14 @@ export class SearchForm {
     private date : string;
     constructor(private c8o : C8o, private nav: NavController) {
         this.PostalCode = "Paris";
-        this.date = "16/08/2016";
-    }
+        this.date = new Date().toISOString().slice(0,10);
+        console.log(this.date.toString());
 
+    }
     search(){//, password: string){
         this.c8o.callJson("sampleMobileSearchRoom.LoadList").then(data => {
             console.log(data);
             this.nav.push(ListForm, data);
-            /*if(data.logon == "true"){
-                //this.nav.push(SearchForm);
-            }
-            else{
-
-            }*/
 
 
         });

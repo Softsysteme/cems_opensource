@@ -5,18 +5,14 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding class="getting-started">
-
-    <ion-card>
-        <img src="img/nin-live.png"/>
-        <ion-card-content>
-            <ion-card-title>
-                Nine Inch Nails Live
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let item of items">
+        <ion-item (click)="detail(item.id)">
+            <img class="img-class"src="{{item.img}}"/>
+            <ion-card-title class="title-card">
+                {{item.title}}
             </ion-card-title>
-            <p>
-                The most popular industrial group ever, and largely
-                responsible for bringing the music to a mass audience.
-            </p>
-        </ion-card-content>
+            </ion-item>
     </ion-card>
+
 </ion-content>

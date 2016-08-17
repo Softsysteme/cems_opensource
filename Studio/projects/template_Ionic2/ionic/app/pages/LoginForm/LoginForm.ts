@@ -11,8 +11,12 @@ import {SearchForm}  from './../SearchForm/SearchForm';
 })
 export class LoginForm {
   constructor(private c8o: C8o, private nav: NavController){//}, private toastController : ToastController) {
+
   }
 
+  ionViewLoaded(){
+
+  }
   login(username:string, password:string){
     this.c8o.callJson("sampleMobileSearchRoom.Login", "user", username, "password", password).then(data => {
         console.log(data);
@@ -25,6 +29,5 @@ export class LoginForm {
 
 
     });
-    //this.c8o.call("ahhahha.bbabab", {});
   }
 }

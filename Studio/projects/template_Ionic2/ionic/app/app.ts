@@ -7,7 +7,7 @@ import {SearchForm} from './pages/SearchForm/SearchForm';
 import {ListForm} from './pages/ListForm/ListForm';
 import {DetailsForm} from './pages/DetailsForm/DetailsForm';
 import {ListPage} from './pages/list/list';
-import {C8o} from './providers/convertigo-service/convertigo-service';
+import {C8o, C8outils} from './providers/convertigo-service/convertigo-service';
 import {HTTP_PROVIDERS, HTTP_BINDINGS} from "angular2/http";
 import {ROUTER_PROVIDERS} from "@angular/router";
 import {GOOGLE_MAPS_PROVIDERS, LazyMapsAPILoaderConfig} from 'angular2-google-maps/core';

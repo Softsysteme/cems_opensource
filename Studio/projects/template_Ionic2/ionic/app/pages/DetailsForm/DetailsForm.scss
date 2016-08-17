@@ -6,4 +6,10 @@
     font-size: 16px;
   }
 
+
+
+ion-tab:not(.show-tab) ion-content {
+  display: none;
+}
+
 }
