@@ -544,7 +544,7 @@ export class C8oFullSync {
     protected fullSyncDatabaseUrlBase : string;
     protected localSuffix : string;
 
-    public Init(c8o : C8o) : void{
+    public constructor(c8o : C8o){
         this.c8o = c8o;
         this.fullSyncDatabaseUrlBase = c8o.endpointConvertigo + C8oFullSync.FULL_SYNC_URL_PATH;
         this.localSuffix = (c8o.fullSyncLocalSuffix != null) ? c8o.fullSyncLocalSuffix : "_device";
@@ -564,7 +564,251 @@ export class C8oFullSync {
 
 }
 
- enum FullSyncRequestable {
+export class FullSyncRequestable{
+    protected static GET : FullSyncRequestable = new FullSyncRequestable("get", function (c8oFullSync : C8oFullSyncCbl, databaseName : string, parameters :{ [id: string]: any; }, c8oResponseListener: C8oResponseListener) : HanfleFullSyncrequestOp {
+        return {
+            doClosure : function () {
+                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
+                //return c8oFullSync.han
+            }
+        }
+        
+    } );
+
+    private value : string;
+    private  hanfleFullSncrequestOp: HanfleFullSyncrequestOp;
+    constructor(value: string, hanfleFullSncrequestOp: any){
+        this.value = value;
+        this.hanfleFullSncrequestOp = hanfleFullSncrequestOp;
+    }
+
+    //(c8oFullSync: C8oFullSyncCbl, databaseNameName: string, parameters: { [id: string]: any; }, c8oResponseListner: C8oResponseListener)
+}
+interface HanfleFullSyncrequestOp{
+    doClosure(c8oFullSyncCbl: C8oFullSyncCbl, string: string, dictionnary: { [id: string]: any; }, c8oResponseListener: C8oResponseListener) : any;
+}
+
+
+export class C8oFullSyncCbl extends C8oFullSync{
+    private static ATTACHMENT_PROPERTY_KEY_CONTENT_URL : string = "content_url"
+    //private  manager : PouchDB
+    private fullSyncDatabases: { [id: string]: any; };
+
+    constructor(c8o : C8o){
+        super(c8o);
+
+    }
+
+    /*private getOrCreateFullSyncDatabase(databaseName : string) : C8oFullSyncDatabase{
+
+    }*/
+}
+
+export class C8oFullSyncDatabase{
+    private static AUTHENTICATION_COOKIE_NAME: String = "SyncGatewaySession"
+    private c8o: C8o;
+    private databaseName: string;
+    private c8oFullSyncDatabaseUrl: string;
+    private Database: PouchDB = null;
+    private localDatabase: PouchDB = null
+    //private pullFullSyncReplication : FullSyncReplication
+
+    constructor(c8o : C8o, databaseName: string, fullSyncDatabases : string, localSuffix:string ){
+        this.c8o = c8o;
+        this.c8oFullSyncDatabaseUrl = fullSyncDatabases + databaseName;
+        this.databaseName = databaseName + localSuffix;
+        try{
+            this.Database = new PouchDB(databaseName);
+            //this.localDatabase = new PouchDB('localDB')
+        }
+        catch(error){
+            throw error;
+        }
+    }
+
+    //private getReplication(fsReplication : FullSyncReplication) :
+
+    //TODO function startAllReplications => implement and add c8oResponseListener parameter
+    public startAllReplications(parameters : { [id: string]: any; }){
+
+    }
+
+    //TODO function startPullReplication => implement and add c8oResponseListener parameter
+    public startPullReplication(parameters : { [id: string]: any; }){
+
+    }
+
+    //TODO function startPushReplication => implement and add c8oResponseListener parameter
+    public startPushReplication(parameters : { [id: string]: any; }){
+
+    }
+
+    //TODO function startReplication => add c8oResponseListener parameter
+    private startReplication(fullSyncReplication: FullSyncReplication, parameters : { [id: string]: any; }){
+        var continuous : boolean = false;
+        var cancel : boolean = false;
+        if(parameters["continuous"] != null || parameters["continuous"] != undefined){
+            if(parameters["continuous"] as boolean == true){
+                continuous = true;
+            }
+            else{
+                continuous = false;
+            }
+        }
+
+        if(parameters["cancel"] != null || parameters["cancel"] != undefined){
+            if(parameters["cancel"] as boolean == true){
+                cancel = true;
+            }
+            else{
+                cancel = false;
+            }
+        }
+
+        //TODO think about adding CBLReplication...
+
+        //DOING implementing C8oFullSyncDatabase.startReplication
+        //let progress = C8oP
+
+
+    }
+}
+//TODO class implement class FullSyncReplication
+export class FullSyncReplication{
+
+}
+
+//TODO class implement class C8oResponseListener
+export class C8oResponseListener{
+
+}
+//DOING implementing class C8oFrogress
+export class C8oProgress{
+    private  _changed: boolean = false
+    private  _continuous: boolean = false
+    private  _finished: boolean = false
+    private  _pull: boolean = true
+    private  _current: number = -1
+    private  _total: number = -1
+    private  _status: string = ""
+    private  _taskInfo: string = ""
+    private  _raw: any;
+
+    constructor(){
+        this._raw = null;
+    }
+    constructor(progress: C8oProgress){
+        this._continuous = progress._continuous
+        this._finished = progress._finished
+        this._pull = progress._pull
+        this._current = progress._current
+        this._total = progress._total
+        this._status = progress._status
+        this._taskInfo = progress._taskInfo
+        this._raw = progress._raw
+    }
+    public get changed(): boolean {
+        return this._changed;
+    }
+
+    public set changed(value: boolean) {
+        this._changed = value;
+    }
+
+    public get continuous(): boolean {
+        return this._continuous;
+    }
+
+    public set continuous(value: boolean) {
+        this._continuous = value;
+        this._changed = true
+    }
+
+    public get finished(): boolean {
+        return this._finished;
+    }
+
+    public set finished(value: boolean) {
+        this._finished = value;
+        this._changed = true
+    }
+
+    public get pull(): boolean {
+        return this._pull;
+    }
+
+    public set pull(value: boolean) {
+        this._pull = value;
+        this._changed = true
+    }
+
+    public get push(): boolean {
+        return !this._pull;
+    }
+
+    public get current(): number {
+        return this._current;
+    }
+
+    public set current(value: number) {
+        this._current = value;
+        this._changed = true
+    }
+
+    public get total(): number {
+        return this._total;
+    }
+
+    public set total(value: number) {
+        this._total = value;
+        this._changed = true
+    }
+
+    public toString() :string{
+        return "";
+    }
+}
+//DONE class FullSyncDefaultResponse
+export class FullSyncDefaultResponse extends FullSyncAbstractResponse{
+    constructor(operationStatus: boolean){
+        super(operationStatus);
+    }
+}
+
+//DONE class FullSyncResponse
+export class FullSyncResponse{
+    private static fullSyncResponsesInstance: FullSyncResponse = new FullSyncResponse();
+
+    static RESPONSE_KEY_OK: string = "ok";
+
+    static RESPONSE_KEY_DOCUMENT_ID: String = "id";
+
+    static RESPONSE_KEY_DOCUMENT_REVISION: String = "rev";
+}
+
+//DONE class FullSyncAbstractResponse
+export class FullSyncAbstractResponse{
+    private operationStatus: boolean;
+    constructor(operationStatus: boolean){
+        this.operationStatus = operationStatus;
+    }
+
+    getProperties() :any{
+        var properties : { [id: string]: any; };
+        properties[FullSyncResponse.RESPONSE_KEY_OK] = this.operationStatus;
+        return properties;
+    }
+}
+//DONE class FullSyncGetDocumentParameter
+export class FullSyncGetDocumentParameter{
+    public static DOCID : FullSyncGetDocumentParameter = new FullSyncGetDocumentParameter("docid");
+    public name : string;
+
+    constructor(name:string){
+        this.name = name;
+    }
+}
+ /*enum FullSyncRequestable {
     GET,
     DELETE,
     POST,
@@ -581,7 +825,7 @@ export class C8oFullSync {
 
 
 
-}
+}*/
 
 
 /********************C8oExceptionMessage********************/
