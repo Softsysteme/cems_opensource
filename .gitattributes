@@ -3256,6 +3256,8 @@ Studio/projects/template_Ionic2/ionic/tsconfig.json -text
 Studio/projects/template_Ionic2/ionic/typings.json -text
 Studio/projects/template_Ionic2/ionic/typings/browser.d.ts -text
 Studio/projects/template_Ionic2/ionic/typings/browser/ambient/es6-shim/index.d.ts -text
+Studio/projects/template_Ionic2/ionic/typings/globals/require/index.d.ts -text
+Studio/projects/template_Ionic2/ionic/typings/globals/require/typings.json -text
 Studio/projects/template_Ionic2/ionic/typings/main.d.ts -text
 Studio/projects/template_Ionic2/ionic/typings/main/ambient/es6-shim/index.d.ts -text
 Studio/projects/template_Ionic2/ionic/www/img/appicon.png -text

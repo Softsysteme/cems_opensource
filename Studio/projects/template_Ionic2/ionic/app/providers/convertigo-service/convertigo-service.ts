@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {isUndefined} from "ionic-angular/util/util";
-import {Observable} from "rxjs";
-import * as PouchDB from 'pouchdb';
+//DONE import PouchDB works... however by adding manually a typings lib ... cmd line not works
+let PouchDB = require('pouchdb');
 
 /*
-  Generated class for the ConvertigoService provider.
-*/
+ Generated class for the ConvertigoService provider.
+ */
 
 @Injectable()
 /********************C8oBase********************/
@@ -17,7 +17,6 @@ export class C8oBase {
     protected _timeout: number = -1;
     protected _trustAllCertificates: boolean = false;
     protected _cookies: { [key: string]: string } = {};
-
     /*Log*/
 
     protected _logRemote: boolean = true;
@@ -98,8 +97,7 @@ export class C8oBase {
 
     protected copy(c8oBase: C8oBase) {
 
-        /*HTTP*/
-        let db = new PouchDB('cloudo');
+        /*HTTP*/;
         this._timeout = c8oBase._timeout;
         this._trustAllCertificates = c8oBase._trustAllCertificates;
         /*if (this.cookies == null) {
@@ -384,8 +382,8 @@ export class C8o extends C8oBase {
         return this._http;
     }
     /*public get cookieStore():string{
-        return this._endpointIsSecure;
-    }*/
+     return this._endpointIsSecure;
+     }*/
 
     constructor(private http: Http) {
         super();
@@ -429,10 +427,10 @@ export class C8o extends C8oBase {
             this.endpointProject = matches[4];
 
             /*console.log('endpointConvertigo :' + this.endpointConvertigo.toString());
-            console.log('endpointIsSecure :' + this.endpointIsSecure.toString());
-            console.log('endpointHost :' + this.endpointHost.toString());
-            console.log('endpointPort :' + this.endpointPort.toString());
-            console.log('endpointProject :' + this.endpointProject.toString());*/
+             console.log('endpointIsSecure :' + this.endpointIsSecure.toString());
+             console.log('endpointHost :' + this.endpointHost.toString());
+             console.log('endpointPort :' + this.endpointPort.toString());
+             console.log('endpointProject :' + this.endpointProject.toString());*/
             this.c8oLogger = new C8oLogger(this);
             this.c8oLogger.logMethodCall("C8o Constructor");
         });
@@ -475,9 +473,9 @@ export class C8o extends C8oBase {
         this.c8oLogger.logMethodCall("CallJSON", parameters);
         this.data = null;
         if (this.data != null) {
-         // already loaded data
+            // already loaded data
             console.log("la");
-         return Promise.resolve(this.data);
+            return Promise.resolve(this.data);
         }
         let params:URLSearchParams = new URLSearchParams();
         if (parameters != undefined && JSON.stringify(parameters) != "{}") {
@@ -529,6 +527,8 @@ export class C8o extends C8oBase {
     }
 
 }
+
+
 /********************C8oFullSync********************/
 export class C8oFullSync {
     private static FULL_SYNC_URL_PATH : string = "/fullsync/";
@@ -564,6 +564,21 @@ export class C8oFullSync {
 
 }
 
+/********************C8oFullSyncCbl********************/
+export class C8oFullSyncCbl extends C8oFullSync{
+    private static ATTACHMENT_PROPERTY_KEY_CONTENT_URL : string = "content_url"
+    //private  manager : PouchDB
+    private fullSyncDatabases: { [id: string]: any; };
+
+    constructor(c8o : C8o){
+        super(c8o);
+    }
+
+    /*private getOrCreateFullSyncDatabase(databaseName : string) : C8oFullSyncDatabase{
+
+     }*/
+}
+
 export class FullSyncRequestable{
     protected static GET : FullSyncRequestable = new FullSyncRequestable("get", function (c8oFullSync : C8oFullSyncCbl, databaseName : string, parameters :{ [id: string]: any; }, c8oResponseListener: C8oResponseListener) : HanfleFullSyncrequestOp {
         return {
@@ -572,7 +587,7 @@ export class FullSyncRequestable{
                 //return c8oFullSync.han
             }
         }
-        
+
     } );
 
     private value : string;
@@ -589,37 +604,22 @@ interface HanfleFullSyncrequestOp{
 }
 
 
-export class C8oFullSyncCbl extends C8oFullSync{
-    private static ATTACHMENT_PROPERTY_KEY_CONTENT_URL : string = "content_url"
-    //private  manager : PouchDB
-    private fullSyncDatabases: { [id: string]: any; };
-
-    constructor(c8o : C8o){
-        super(c8o);
-
-    }
-
-    /*private getOrCreateFullSyncDatabase(databaseName : string) : C8oFullSyncDatabase{
-
-    }*/
-}
-
 export class C8oFullSyncDatabase{
     private static AUTHENTICATION_COOKIE_NAME: String = "SyncGatewaySession"
     private c8o: C8o;
     private databaseName: string;
     private c8oFullSyncDatabaseUrl: string;
-    private Database: PouchDB = null;
-    private localDatabase: PouchDB = null
-    //private pullFullSyncReplication : FullSyncReplication
+    private database = null;
+    private localDatabase = null
+    private pullFullSyncReplication : FullSyncReplication
 
     constructor(c8o : C8o, databaseName: string, fullSyncDatabases : string, localSuffix:string ){
         this.c8o = c8o;
         this.c8oFullSyncDatabaseUrl = fullSyncDatabases + databaseName;
         this.databaseName = databaseName + localSuffix;
         try{
-            this.Database = new PouchDB(databaseName);
-            //this.localDatabase = new PouchDB('localDB')
+            this.database = new PouchDB(databaseName);
+            this.localDatabase = new PouchDB('localDB')
         }
         catch(error){
             throw error;
@@ -668,7 +668,17 @@ export class C8oFullSyncDatabase{
         //TODO think about adding CBLReplication...
 
         //DOING implementing C8oFullSyncDatabase.startReplication
-        //let progress = C8oP
+        let progress = new C8oProgress();
+        var _progress : Array<C8oProgress> = new Array<C8oProgress>();
+        /*progress.raw = rep;
+         progress.pull = rep.p*/
+
+
+        //DOING Searching to maps listeners....
+        this.database.on('change', function (change) {
+
+            //C8o.addeventlistener ....
+        });
 
 
     }
@@ -682,30 +692,43 @@ export class FullSyncReplication{
 export class C8oResponseListener{
 
 }
-//DOING implementing class C8oFrogress
+//DONE class C8oProgress
 export class C8oProgress{
-    private  _changed: boolean = false
-    private  _continuous: boolean = false
-    private  _finished: boolean = false
-    private  _pull: boolean = true
-    private  _current: number = -1
-    private  _total: number = -1
-    private  _status: string = ""
-    private  _taskInfo: string = ""
+    private  _changed: boolean = false;
+    private  _continuous: boolean = false;
+    private  _finished: boolean = false;
+    private  _pull: boolean = true;
+    private  _current: number = -1;
+    private  _total: number = -1;
+    private  _status: string = "";
+    private  _taskInfo: string = "";
     private  _raw: any;
 
-    constructor(){
-        this._raw = null;
-    }
-    constructor(progress: C8oProgress){
-        this._continuous = progress._continuous
-        this._finished = progress._finished
-        this._pull = progress._pull
-        this._current = progress._current
-        this._total = progress._total
-        this._status = progress._status
-        this._taskInfo = progress._taskInfo
-        this._raw = progress._raw
+    //Constructor overload in typescript...
+    constructor();
+    constructor(progress: C8oProgress);
+    constructor(progress?: any){
+        if(progress instanceof C8oProgress){
+            this._changed = false;
+            this._continuous = progress._continuous
+            this._finished = progress._finished
+            this._pull = progress._pull
+            this._current = progress._current
+            this._total = progress._total
+            this._status = progress._status
+            this._taskInfo = progress._taskInfo
+            this._raw = progress._raw
+        }
+        else{
+            if(progress === undefined){
+                this._raw == null;
+            }
+            else{
+                throw new Error(`Expected C8oProgress or empty constructor, got '${progress}'.`);
+            }
+
+        }
+
     }
     public get changed(): boolean {
         return this._changed;
@@ -764,15 +787,57 @@ export class C8oProgress{
         this._changed = true
     }
 
+    public get direction(): string {
+        return this._pull ? C8oFullSyncTranslator.FULL_SYNC_RESPONSE_VALUE_DIRECTION_PULL : C8oFullSyncTranslator.FULL_SYNC_RESPONSE_VALUE_DIRECTION_PUSH;
+    }
+
+    public get status(): string {
+        return this._status;
+    }
+
+    public set status(value: string) {
+        this._changed = true;
+        this._status = value;
+    }
+
+    public get taskInfo(): string {
+        return this._taskInfo;
+    }
+
+    public set taskInfo(value: string) {
+        this._changed = true;
+        this._taskInfo = value;
+    }
+
+    public get raw(): any {
+        return this._raw;
+    }
+
+    public set raw(value: any) {
+        this._changed = true;
+        this._raw = value;
+    }
+
     public toString() :string{
-        return "";
+        return this.direction + ": " + this.current + "/" +this.total + " (" + (this.finished ?(this.continuous ? "live" : "done") : "running") +")";
     }
 }
-//DONE class FullSyncDefaultResponse
-export class FullSyncDefaultResponse extends FullSyncAbstractResponse{
-    constructor(operationStatus: boolean){
-        super(operationStatus);
-    }
+
+//TODO implement class C8oFullSyncTranslator
+export class C8oFullSyncTranslator{
+    static  FULL_SYNC_RESPONSE_KEY_COUNT: string = "count";
+    static  FULL_SYNC_RESPONSE_KEY_ROWS: string = "rows";
+    static  FULL_SYNC_RESPONSE_KEY_CURRENT: string = "current";
+    static  FULL_SYNC_RESPONSE_KEY_DIRECTION: string = "direction";
+    static  FULL_SYNC_RESPONSE_KEY_TOTAL: string = "total";
+    static  FULL_SYNC_RESPONSE_KEY_OK: string = "ok";
+    static  FULL_SYNC_RESPONSE_KEY_STATUS: string = "status";
+
+    static  FULL_SYNC_RESPONSE_VALUE_DIRECTION_PUSH: string = "push";
+    static  FULL_SYNC_RESPONSE_VALUE_DIRECTION_PULL: string = "pull";
+
+    static  XML_KEY_DOCUMENT: string = "document";
+    static  XML_KEY_COUCHDB_OUTPUT: string = "couchdb_output";
 }
 
 //DONE class FullSyncResponse
@@ -799,6 +864,14 @@ export class FullSyncAbstractResponse{
         return properties;
     }
 }
+
+//DONE class FullSyncDefaultResponse
+export class FullSyncDefaultRespons extends FullSyncAbstractResponse{
+    constructor(operationStatus: boolean){
+        super(operationStatus);
+    }
+}
+
 //DONE class FullSyncGetDocumentParameter
 export class FullSyncGetDocumentParameter{
     public static DOCID : FullSyncGetDocumentParameter = new FullSyncGetDocumentParameter("docid");
@@ -808,24 +881,24 @@ export class FullSyncGetDocumentParameter{
         this.name = name;
     }
 }
- /*enum FullSyncRequestable {
-    GET,
-    DELETE,
-    POST,
-    PUT_ATTACHMENT,
-    DELETE_ATTACHMENT,
-    ALL,
-    VIEW,
-    SYNC,
-    REPLICATE_PULL,
-    REPLICATE_PUSH,
-    RESET,
-    CREATE,
-    DESTROY
+/*enum FullSyncRequestable {
+ GET,
+ DELETE,
+ POST,
+ PUT_ATTACHMENT,
+ DELETE_ATTACHMENT,
+ ALL,
+ VIEW,
+ SYNC,
+ REPLICATE_PULL,
+ REPLICATE_PUSH,
+ RESET,
+ CREATE,
+ DESTROY
 
 
 
-}*/
+ }*/
 
 
 /********************C8oExceptionMessage********************/
@@ -851,7 +924,7 @@ export class C8oLogger {
     private static JSON_KEY_MESSAGE: string = "msg";
     private static JSON_KEY_LOGS: string = "logs";
     private static JSON_KEY_ENV: string = "env";
-	
+
     /** Attributes */
 
     private remoteLogUrl: string;
@@ -934,7 +1007,7 @@ export class C8oLogger {
                 this.remoteLogs.push(objJson);
                 this.logRemote();
 
-        }
+            }
             if (isLogConsole) {
                 console.log("(" + time + ") [" + logLevel.name + "] " + message);
             }
