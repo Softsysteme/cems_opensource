@@ -484,10 +484,13 @@ export class C8o extends C8oBase {
             }
         }
 
+		var headers = new Headers();
+      	headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
         return new Promise(resolve => {
-            var get = this.endpoint.toString() + this.sequencePrefix.toString();
-            this.http.get(get, {
-                search: params
+            var eurl = this.endpoint.toString() + this.sequencePrefix.toString();
+            this.http.post(eurl, params.toString(), {
+            	headers: headers
             }).map(res => res.json())
                 .subscribe(data => {
                     this.data = data;
