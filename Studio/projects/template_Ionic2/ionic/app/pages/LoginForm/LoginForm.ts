@@ -15,16 +15,32 @@ export class LoginForm {
   }
 
   ionViewLoaded(){
-    let db = new PouchDB('db1');
-      db.put({
-          _id: 'id1',
-          name: 'charles',
-          age: 22
+      /*console.log((new Date).getTime().toString());
+      let array = ['db', 'db2', 'db3', 'maNouvelleBase', 'retaildb_device'];
+      for(var i=0; i <5; i++){
+          let db = new PouchDB(array[i]);
+          console.log(array[i])
+          db.destroy().then(function (response) {
+
+          });
+      }
+      /*let db = new PouchDB('db');
+      db.destroy().then(function (response) {
+
       });
 
-      db.changes().on('change', function() {
+      db.changes().on('change', function(change) {
           console.log("my database has changed");
-      });
+
+          for(var a in change.changes[0].rev){
+
+                  console.log(a);
+
+
+          }
+      });*/
+
+
 
   }
   login(username:string, password:string){
