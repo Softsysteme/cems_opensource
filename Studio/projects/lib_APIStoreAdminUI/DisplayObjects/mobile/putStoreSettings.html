@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content">
+				<h2>Store Settings</h2>
+
+				<form data-c8o-call="lib_APIStore.Admin_putStoreSettings">
+					<span data-c8o-listen="lib_APIStore.Admin_getDataForPutStoreSettings">
+						<label for="enable_registration">Enable User Registration</label>
+						<input	data-c8o-if="settings > enable_registration:contains(true)"
+								type="checkbox" id="enable_registration" name="enable_registration" checked>
+						<input	data-c8o-if-not="settings > enable_registration:contains(true)"
+								type="checkbox" id="enable_registration" name="enable_registration">
+					</span>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-check zmdi-hc-2x"></i>
+					</button>
+				</form>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

@@ -2,30 +2,69 @@
 <html>
 	<body>
 		<div data-role="page">
-
 			<nd2-include data-src="fragments/header.html"></nd2-include>
 			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
-			<nd2-include data-src="fragments/panel.bottom.html"></nd2-include>
 
 			<div data-role="content">
-				<form data-c8o-call="lib_ApiStore.putEndPoint" data-c8o-listen="lib_ApiStore.getEndPoint">
-					<label>
-						URL:
-						<input type="text" name="url" value="__=endpoint > url__">
-					</label>
+				<form data-c8o-call="lib_APIStore.Admin_putEndPoint">
+					<span data-c8o-listen="lib_APIStore.Admin_getDataForPutEndPoint">
+						<input	data-c8o-if="is_edit"
+								type="hidden" name="_id" value="__=endpoint > _id__">
 
-					<label>
-						<input  data-c8o-if="endpoint > secure:empty"
-								type="checkbox" name="secure">
-						<input  data-c8o-if-not="endpoint > secure:empty"
-								type="checkbox" name="secure" checked>
-						Secure
-					</label>
+						<label class="ui-hidden-accessible" for="name">Name:</label>
+						<input type="text" id="name" name="name" placeholder="Name" value="__=endpoint > name__" required>
+	
+						<label class="ui-hidden-accessible" for="url">URL:</label>
+						<input type="url" id="url" name="url" placeholder="URL" value="__=endpoint > url__" required>
+					</span>
 
-					<input	data-c8o-if="is_edit"
-							type="submit" class="ui-btn ui-btn-inline" value="Save">
-					<input	data-c8o-if-not="is_edit"
-							type="submit" class="ui-btn ui-btn-inline" value="Create EndPoint">
+					<div class="ui-field-contain" data-custom-tooltip="endpoint-type"> <!-- Tooltip defined in app.html -->
+						<label class="ui-hidden-accessible" for="endpoint_type">EndPoint Type:</label>
+						<select id="endpoint_type" name="endpoint_type" required>
+							<option value="" data-placeholder="true">Choose a type</option>
+							<option value="standard">Standard</option>
+							<option value="backup">Backup</option>
+						</select>
+					</div>
+
+					<span data-c8o-listen="lib_APIStore.Admin_getDataForPutEndPoint">
+						<label for="secure">Secure</label>
+						<span data-c8o-if="is_edit">
+							<input	data-c8o-if="endpoint > secure:contains(true)"
+									type="checkbox" id="secure" name="secure" checked>
+							<input	data-c8o-if-not="endpoint > secure:contains(true)"
+									type="checkbox" id="secure" name="secure">
+						</span>
+						<input	data-c8o-if-not="is_edit"
+								type="checkbox" id="secure" name="secure">
+
+						<div data-show-when="[name=secure]">
+							<label class="ui-hidden-accessible" for="auth_username">Username:</label>
+							<input type="text" id="auth_username" name="auth_username" placeholder="Username" value="__=endpoint > auth_username__">
+	
+							<label class="ui-hidden-accessible" for="auth_password">Password:</label>
+							<input type="password" id="auth_password" name="auth_password" placeholder="Password" value="__=endpoint > auth_password__">
+						</div>
+					</span>
+
+					<br>
+
+					<div class="row end-sm">
+						<div class="col-xs-12 col-sm-6" data-c8o-listen="lib_APIStore.Admin_getDataForPutEndPoint">
+							<div class="box" data-c8o-if="is_edit">
+								<!-- Use onclick to prevent the form from submitting -->
+								<a	onclick='C8O.call("lib_APIStore.Admin_deleteEndPoint", {_id: "__=endpoint > _id__"})'
+									class="ui-btn">Delete EndPoint</a>
+							</div>
+						</div>
+					</div>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-check zmdi-hc-2x"></i>
+					</button>
 				</form>
 			</div>
 

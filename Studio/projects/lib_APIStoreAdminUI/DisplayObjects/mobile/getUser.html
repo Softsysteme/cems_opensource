@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content" class="obj-overview">
+				<h2>User Details</h2>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 last-sm">
+						<div class="box image-display" data-c8o-listen="lib_APIStore.Admin_getUser, lib_APIStore.Admin_putUser">
+							<img data-c8o-use="on" data-c8o-use-src="__=user > avatar__">
+						</div>
+					</div>
+					<div class="col-xs">
+						<div class="box">
+							<table	data-c8o-listen="lib_APIStore.Admin_getUser, lib_APIStore.Admin_putUser"
+									data-role="table"
+									class="ui-responsive table-stroke no-heading">
+								<thead><tr><!-- JQM requires at least one row in the head --></tr></thead>
+								<tbody>
+									<tr>
+										<th>Name</th>
+										<td>__=user > name__</td>
+									</tr>
+									<tr>
+										<th>Email</th>
+										<td><a href="mailto:__=user > email__">__=user > email__</a></td>
+									</tr>
+									<tr>
+										<th>Origin</th>
+										<td>__=user > origin__</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div data-c8o-listen="lib_APIStore.Admin_getUser">
+					<div data-c8o-if="subscriptions > item" class="nd2-title">Subscriptions</div>
+					<div data-c8o-if-not="subscriptions > item" class="nd2-title">No Subscriptions Found</div>
+					<div class="row" data-c8o-each="subscriptions > item">
+						<div class="col-xs-12 col-sm-6">
+							<div class="box nd2-card card-media-right card-media-small" style="margin-left: 0; margin-right: 0; max-width: none;">
+								<div class="card-media">
+									<img data-c8o-use="on" data-c8o-use-src="__=api > icon__">
+								</div>
+			
+								<div class="card-title has-supporting-text">
+									<h3 class="card-primary-title">__=api > name__</h3>
+									<h5 class="card-subtitle">Subscribed since __=date__</h5>
+								</div>
+			
+								<div class="card-action">
+									<div class="row between-xs">
+										<div class="col-xs">
+											<div class="box">
+												<a	class="ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button"
+													data-c8o-call="lib_APIStore.User_deleteSubscription"
+													data-c8o-variables='{"api_id": "__=api > _id__"}'>Remove</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div data-c8o-listen="lib_APIStore.Admin_getUser, lib_APIStore.Common_deleteComment" data-c8o-ref="root">
+					<div data-c8o-if="comments > item" class="nd2-title">Comments</div>
+					<div data-c8o-if-not="comments > item" class="nd2-title">No Comments Found</div>
+					<div data-c8o-each="comments > item">
+						<div class="nd2-card comment-card">
+							<a	data-c8o-call="lib_APIStore.Common_deleteComment"
+								data-c8o-variables='{"_id": "__= > _id__", "user_id": "__{"ref":"root", "find":"user > _id"}__"}'
+								class="ui-btn ui-btn-inline"><i class="zmdi zmdi-hc-lg zmdi-delete"></i></a>
+	
+							<div class="card-title has-avatar">
+								<!-- data-c8o-use to prevent the browser from requesting a non existing image -->
+								<img class="card-avatar" data-c8o-use="on" data-c8o-use-src="__=api > icon__">
+								<h3 class="card-primary-title">__=api > name__</h3>
+								<h5 class="card-subtitle">__=date__ v__=api_version__</h5>
+							</div>
+	
+							<div class="card-supporting-text">__=value__</div>
+						</div>
+					</div>
+				</div>
+
+				<span data-c8o-listen="lib_APIStore.Admin_getUser, lib_APIStore.Admin_putUser">
+					<button	class="	clr-primary
+ 									ui-btn ui-btn-raised
+ 									ui-btn-fab ui-btn-fab-bottom
+ 									waves-effect waves-button"
+							data-c8o-call="lib_APIStore.Admin_getDataForPutUser"
+							data-c8o-variables='{"_id": "__=user > _id__"}'>
+						<i class="zmdi zmdi-edit zmdi-hc-2x"></i>
+					</button>
+				</span>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

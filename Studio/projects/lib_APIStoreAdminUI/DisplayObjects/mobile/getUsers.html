@@ -6,18 +6,18 @@
 			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
 
 			<div data-role="content">
-				<h2>APIs</h2>
+				<h2>Users</h2>
 
-				<ul	data-c8o-listen="lib_APIStore.Admin_getAPIs"
-					data-c8o-each="apis > item"
+				<ul	data-c8o-listen="lib_APIStore.Admin_getUsers"
+					data-c8o-each="users > item"
 					data-role="listview">
-					<li><a data-c8o-call="lib_APIStore.Admin_getAPI" data-c8o-variables='{"_id": "__=_id__"}'>
-						__=name__
-						<p>__=description__</p>
-					</a></li>
+					<li>
+						<a	data-c8o-call="lib_APIStore.Admin_getUser"
+							data-c8o-variables='{"_id": "__=_id__"}'>__=name__</a>
+					</li>
 				</ul>
 
-				<button	data-c8o-call="lib_APIStore.Admin_getDataForPutAPI"
+				<button	data-c8o-call="lib_APIStore.Admin_getDataForPutUser"
 						class="	clr-primary
 								ui-btn ui-btn-raised
 								ui-btn-fab ui-btn-fab-bottom

@@ -2,98 +2,112 @@
 <html>
 	<body>
 		<div data-role="page">
-
 			<nd2-include data-src="fragments/header.html"></nd2-include>
 			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
-			<nd2-include data-src="fragments/panel.bottom.html"></nd2-include>
 
-			<div data-role="content">
-				<form data-c8o-call="lib_ApiStore.putAPI" data-c8o-listen="lib_ApiStore.getAPI">
-					<input	data-c8o-if="is_edit"
-							type="hidden" name="_id" value="__=api > _id__">
+			<div data-role="content" class="full-width">
+				<form>
+					<input type="hidden" name="__project" value="lib_APIStore">
+					<input type="hidden" name="__sequence" value="Admin_putAPI">
+
+					<div data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+						<input	data-c8o-if="is_edit"
+								type="hidden" name="_id" value="__=api > _id__">
+						<input type="hidden" name="is_published" value="__=api > is_published__">
+					</div>
 
 					<div class="row">
-						<div class="col-xs-12 col-md-8 col-lg-9">
+						<div class="col-xs">
 							<div class="row" style="flex-direction: column;">
 								<div class="col-xs" style="flex-grow: 0;">
 									<div class="row bottom-xs" style="flex-direction: row;">
-										<div class="col-xs-12 col-md-6 name-col">
+										<div class="col-xs-12 col-md-6">
 											<div class="box">
-												<label>
-													Name:
-													<input type="text" name="name" value="__=api > name__">
-												</label>
-											</div>
-										</div>
-										<div class="col-xs">
-											<div class="box">
-												<div class="ui-field-contain">
-													<label>
-														Convertigo Project:
-														<!-- Options added via JS -->
-														<select name="c8o_project" data-native-menu="false"></select>
-													</label>
+												<div class="ui-field-contain" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+													<label class="ui-hidden-accessible" for="project">Convertigo Project:</label>
+													<select id="project" name="project" data-c8o-each="projects > item" required>
+														<option	value="__=name__"
+																data-version="__=version__"
+																data-comment="__=comment__">__=name__</option>
+													</select>
 												</div>
 											</div>
 										</div>
+										<div class="col-xs-12 col-md">
+											<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+												<label	class="ui-hidden-accessible"
+														for="name">API Name:</label>
+												<input type="text" id="name" name="name" placeholder="API Name" value="__=api > name__" required>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-2">
+											<div class="box readonly" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+												<label class="ui-hidden-accessible" for="version">Version:</label>
+												<input	type="text"
+														id="version" name="version"
+														placeholder="Version"
+														title="Configured in the Convertigo Project"
+														value="__=api > version__"
+														tabindex="-1" readonly>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs" data-logged="in">
+									<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+										<label	class="ui-hidden-accessible"
+												for="description" >Store Description:</label>
+										<textarea	id="description"
+													name="description"
+													data-autogrow="false"
+													style="min-height: 20em"
+													placeholder="Store Description"
+													required>__=api > description__</textarea>
 									</div>
 								</div>
 								<div class="col-xs">
-									<div class="box">
-										<label>
-											Description:
-											<textarea	name="description"
-														data-autogrow="false"
-														style="min-height: 20em">__=api > description__</textarea>
-										</label>
-									</div>
-								</div>
-								<div class="col-xs">
-									<div class="box">
-										<label>
-											Tags:
-											<input type="text" name="tags" value="__=api > tags__"/>
-										</label>
+									<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
+										<label	class="ui-hidden-accessible"
+												for="tags">Tags:</label>
+										<input	type="text"
+												id="tags" name="tags"
+												placeholder="Tags"
+												title="Tags should be comma seperated. e.g. Tag 1, Tag 2"
+												value="__=api > tags__"/>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs">
+						<!-- Give the column sizes here, otherwise the EndPoint select might -->
+						<!-- grow too large, and cause the column to move to the next row -->
+						<div class="col-xs col-md-4 col-lg-3" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
 							<div class="box">
-								<div class="input-drop-zone">
-									<i class="zmdi zmdi-image"></i>
-									<input type="file" name="icon" accept="image/*" data-role="none">
+								<label class="image-display">
+									<i data-placeholder-for="icon" class="zmdi zmdi-image-o"></i>
+									<img data-preview-for="icon" data-c8o-use="on" data-c8o-use-src="__=api > icon__">
+									<input type="file" name="icon" data-role="none" data-image-input>
+								</label>
+							</div>
+							<div class="box">
+								<div class="ui-field-contain">
+									<label class="ui-hidden-accessible" for="config_id">Configuration:</label>
+									<select id="config_id" name="config_id" data-c8o-each="configs > item">
+										<option value="__=_id__">__=name__</option>
+									</select>
 								</div>
 							</div>
 							<div class="box">
 								<div class="ui-field-contain">
-									<label data-c8o-listen="lib_ApiStore.getBothConfigsAndEndPoints">
-										Configuration:
-										<select name="config_id" data-c8o-each="config" data-native-menu="false">
-											<option value="__=_id__">__=name__</option>
-										</select>
-									</label>
+									<label class="ui-hidden-accessible" for="endpoint_ids">EndPoint:</label>
+									<select id="endpoint_ids" name="endpoint_ids" data-c8o-each="endpoints > item" multiple>
+										<option value="__=_id__">__=name__</option>
+									</select>
 								</div>
 							</div>
-							<div class="box">
-								<div class="ui-field-contain">
-									<label data-c8o-listen="lib_ApiStore.getBothConfigsAndEndPoints">
-										EndPoint:
-										<select name="endpoint_id" data-c8o-each="endpoint" data-native-menu="false">
-											<option value="__=_id__">__=url__</option>
-										</select>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row center-xs start-sm">
-						<div class="col-xs">
-							<div	class="box" style="max-width: 960px"
-									data-role="collapsible"
-									data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
-								<h2>Swagger UI</h2>
-								<iframe id="swagger-ui" frameBorder="0" seamless></iframe>
+							<div class="box" data-c8o-if="is_edit">
+								<!-- Use onclick to prevent the form from submitting -->
+								<a	onclick='C8O.call("lib_APIStore.Admin_deleteAPI", {_id: "__=api > _id__"})'
+									class="ui-btn">Delete API</a>
 							</div>
 						</div>
 					</div>
@@ -102,9 +116,20 @@
 									ui-btn ui-btn-raised
 									ui-btn-fab ui-btn-fab-bottom
 									waves-effect waves-button">
-						<i class="zmdi zmdi-check zmd-2x"></i>
+						<i class="zmdi zmdi-check zmdi-hc-2x"></i>
 					</button>
 				</form>
+
+				<div class="row center-xs start-sm">
+					<div class="col-xs">
+						<div	class="box swagger-ui ui-disabled"
+								data-role="collapsible"
+								data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+							<h2>Swagger UI</h2>
+							<iframe frameBorder="0" seamless></iframe>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<nd2-include data-src="fragments/footer.html"></nd2-include>

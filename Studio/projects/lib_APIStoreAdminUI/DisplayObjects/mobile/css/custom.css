@@ -1,4 +1,84 @@
 /**
+ * All pages
+**/
+/* Make sure the page takes up all the available space. */
+div[data-role=page],
+div[data-role=content],
+.nd2Tabs-content-tab {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+@media only screen and (min-width: 48em) { /* 48em is flexgrid's md */
+	/* Limit the width and center content */
+	div[data-role=content]:not(.full-width) > *,
+	div[data-role=content]:not(.full-width) > span > *,
+	div[data-role=content]:not(.full-width) > ul[data-role=listview], /* get*s.html */
+	div[data-role=content]:not(.full-width).obj-overview > div[data-role=nd2tab] > *,
+	div[data-role=content]:not(.full-width).obj-overview > div[data-role=nd2tab] > span > * { /* getAPI.html */
+		max-width: 1000px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+}
+
+div[data-role=content].ui-content > h2:first-child,
+div[data-role=content].ui-content > div[data-role=nd2tab] > h2:first-child {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+/* Floating action button */
+div[data-role=content] .ui-btn-fab {
+	height: 60px;
+	width: 60px;
+	z-index: 1001; /* Between .ui-footer-fixed and .ui-panel-dismiss */
+}
+
+.ui-select {
+	max-width: 400px;
+}
+
+.swagger-ui {
+	max-width: 960px;
+}
+
+.swagger-ui iframe {
+	/* Height is handled by a script in the iframe */
+	width: 100%;
+}
+
+/* Make inputs take-up all the space they have when using the flexgrid */
+.box > .ui-field-contain,
+.box > .ui-field-contain > .ui-select {
+	width: 100%;
+}
+
+.ui-tooltip {
+	max-width: 300px;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	text-align: center;
+	z-index: 3;
+}
+
+.image-display {
+	margin: 0 auto 1em;
+	height: 200px;
+	width: 200px;
+}
+
+.image-display img {
+	display: inline;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+/**
  * fragments/footer.html
 **/
 .ui-footer > p {
@@ -12,11 +92,11 @@
 	margin-left: 0;
 }
 
-.ui-header.row > div {
+.ui-header div.col-xs:first-child {
 	padding: .25em;
 }
 
-.ui-header.row > div:first-child {
+.ui-header div.col-xs:first-child {
 	max-width: 60px;
 }
 
@@ -40,7 +120,8 @@
  * fragments/panel.left.html
 **/
 .ui-panel-position-left ul li > a > i {
-	margin-right: 5px;
+	min-width: 16px; /* Make sure text is aligned */
+	margin-right: 5px; /* Add space between icons and text */
 }
 
 /**
@@ -59,66 +140,70 @@
 }
 
 /**
- * putAPI.html
+ * get*.html
 **/
-.input-drop-zone {
-	border: 1px solid black;
-	cursor: pointer;
-	height: 250px;
-	width: 250px;
-	margin: 0 auto 1em;
-	line-height: 250px;
-	text-align: center;
+/* Hide repeating table heading on small screens (reflow) */
+.ui-table-reflow.no-heading > tbody > tr .ui-table-cell-label {
+	display: none;
 }
 
-.input-drop-zone > i {
+/* Don't add margin to the first row of empty tables, on small screens (reflow) */
+.ui-table-reflow.no-heading > tbody > tr:first-child > th {
+    margin-top: 0;
+}
+
+div[data-role=content].obj-overview > :not(:last-child), /* get*.html */
+div[data-role=content].obj-overview > div[data-role=nd2tab] > :not(:last-child) { /* getAPI.html */
+	margin-bottom: 2em;
+}
+
+/**
+ * getAPI.html
+**/
+div[data-tab=overview] > * {
+	max-width: 960px; /* Same as .swagger-ui */
+}
+
+/**
+ * getUser.html
+**/
+.comment-card {
+	max-width: none;
+	position: relative;
+}
+
+.comment-card > a {
+    position: absolute;
+    top: 1em;
+	right: 1em;
+}
+
+.comment-card .card-title {
+	padding-bottom: 0;
+}
+
+/**
+ * putAPI.html + putUser.html
+**/
+label.image-display {
+	border: 1px solid #cccccc;
+	margin: 0 auto 1em;
+	line-height: 200px;
+	text-align: center;
+	overflow: hidden;
+}
+
+label.image-display > i {
+	color: rgba(0, 0, 0, 0.87); /* From nd2's .ui-page-theme-a */
 	display: block;
 	font-size: 150px;
 	line-height: inherit;
 }
 
-.input-drop-zone > input {
+label.image-display > input {
 	opacity: 0;
-}
-
-/* Aligns the name field with the project one */
-@media only screen and (min-width: 62em) {
-	.name-col {
-		margin-bottom: 1em;
-	}
-}
-
-/**
- * All pages
-**/
-@media only screen and (max-width: 47.99em) {
-	.show-sm {
-		display: none !important;
-	}
-}
-
-/* Make sure the page takes up all the available space. */
-div[data-role=page],
-div[data-role=content] {
-	box-sizing: border-box;
-	height: 100%;
-}
-
-/* Floating action button */
-div[data-role=content] .ui-btn-fab {
-	height: 60px;
-	width: 60px;
-	z-index: 1500; /* Between footer and bottom panel */
-}
-
-iframe#swagger-ui {
-	/* Height is handled by a script in the iframe */
-	width: 100%;
-}
-
-/* Make inputs take-up all the space they have when using the flexgrid */
-.box label {
-	width: 100%;
+	position: absolute;
+	top: 0;
 }
 
 /**
@@ -134,30 +219,72 @@ iframe#swagger-ui {
 	box-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 
+.ui-field-contain {
+	border-bottom: 0;
+}
+
+/* JQM keeps a log of the tooltips shown, and it is not hidden by default... */
+div[role=log].ui-helper-hidden-accessible {
+    display: none;
+}
+
 /**
  * ND2 Fixes
 **/
+/* Don't add extra space at the bottom of a collapsible */
+.ui-collapsible-content > .ui-listview {
+	margin-bottom: 0;
+}
+
 /* Selected item in select doesn't have hover effect */
 .ui-selectmenu-list > li > .ui-btn-active:hover {
 	background-color: #ededed;
  }
 
-/* The line under text inputs is way too long when in a flexgrid box */
-.box .ui-input-text,
-.box .ui-input-search {
-	border: 1px solid #cccccc;
-	padding-bottom: 1px;
+/* The line under text inputs is way too long without this */
+.ui-input-text,
+.ui-input-search {
+	position: relative;
 }
 
-.box .ui-input-text.ui-focus,
-.box .ui-input-search.ui-focus {
-	border-bottom: 2px solid #03A9F4;
-	padding-bottom: 0;
+/* Show bottom border even for non autogrow textareas */
+.ui-page-theme-a textarea.ui-input-text { /* from nd2: .ui-page-theme-a textarea.ui-input-text */
+    border-bottom: 2px solid #cccccc;
 }
 
-.box .ui-input-text:after,
-.box .ui-input-search:after,
-.box .ui-input-text.ui-focus:after,
-.box .ui-input-search.ui-focus:after {
+.ui-page-theme-a textarea.ui-input-text.ui-focus { /* from nd2: .ui-page-theme-a textarea.ui-input-text.ui-focus */
+    border-bottom: 2px solid #03A9F4;
+}
+
+.nd2Tabs-content-tab.nd2Tab-active {
+	display: initial;
+}
+
+/* During tab change animation, more than one can be active.
+ * Hide the bottom one when it is being animated out, after
+ * the incoming tab has finished its animation (from-left).
+ * Otherwise, you can see the old tab below the new tab. */
+.nd2Tab-active:not(.from-left) + .nd2Tab-active.to-right {
 	display: none;
+}
+
+/* Don't make the text in selects upper case */
+.ui-select > a {
+	text-transform: initial;
+}
+
+/* Links in tables don't always make the cursor a pointer */
+a {
+	cursor: pointer;
+}
+
+/* Don't round corners in list views */
+.ui-listview > li > a.ui-btn {
+	border-radius: 0 !important;
+}
+
+/* Make room for checkmarks in selects allowing multiple choices */
+.ui-selectmenu-list > li > a {
+	padding-left: 2em;
+	padding-right: 1em;
 }

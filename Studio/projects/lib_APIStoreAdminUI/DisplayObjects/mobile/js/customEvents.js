@@ -1,13 +1,19 @@
-/* Could be rewritten using widget extension. See:
+/*
+ * Provides nd2singleincludeready, and nd2includesready events.
+ */
+
+/* If we have to avoid using MutationObservers, this could be
+ * rewritten using widget extension. See:
  *   http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/
  * 
  * We would have to replace this.element.load with a wrapper that adds
  * it's own callback, in which it can trigger the nd2includesready event.
  */
-(function($, C8O) {
+(function() {
 	var onPageChange = function($page) {
 		// Find all the includes in the new page
-		var $includes = $page.find("nd2-include").include();
+		// Includes are cached, so we only want to get the empty ones
+		var $includes = $page.find("nd2-include:not(:has(*))").include();
 		var totalIncludes = $includes.length;
 
 		if (totalIncludes == 0) {
@@ -23,23 +29,11 @@
 				if (mutationRecord.addedNodes.length == 0)
 					return;
 
-//					// Replace the nd2-include element with it's children
-//					var include = mutationRecord.target;
-//					var parent = include.parentNode;
-//					var children = include.children;
-//
-//					// First insert the children above the nd2-include
-//					for (child in children) {
-//						include.removeChild(child); // !Throws in Edge! 
-//						parent.insertBefore(child, include);
-//					}
-//
-//					// Remove the now empty nd2-include
-//					parent.removeChild(include);
-
 				// Check if this was the last include left
-				if (++includesDone < totalIncludes)
+				if (++includesDone < totalIncludes) {
+					$(mutationRecord.target).trigger("nd2singleincludeready");
 					return;
+				}
 
 				// Remove the MutationObserver
 				this.disconnect();
@@ -70,15 +64,15 @@
 		return true;
 	});
 
+	$(document).on("nd2singleincludeready", function(e) {
+		// AdminUI doesn't use translation
+//		C8O.translate(e.target);
+	});
+
 	$(document).on("nd2includesready", function(e) {
 		var $page = $(e.target);
 
-		$page.find("button[data-href]").each(function(_, button) {
-			$(button).on("click", function() {
-				C8O._changePage(button.getAttribute("data-href"));
-			});
-		});
-
+		// Allow <a> to toggle panels
 		$page.find("a[data-panel-toggle]").each(function(_, a) {
 			var panelPos = a.getAttribute("data-panel-toggle");
 
@@ -87,7 +81,7 @@
 
 				if ($panel.length == 0) {
 					C8O.log.error("No such panel: '" + panelPos + "' (referenced by a data-show-panel attribute)");
-					$(this).unbind("click", arguments.callee);
+					$(this).off("click", arguments.callee);
 					return;
 				}
 
@@ -95,4 +89,4 @@
 			});
 		});
 	});
-})($, C8O);
+})();

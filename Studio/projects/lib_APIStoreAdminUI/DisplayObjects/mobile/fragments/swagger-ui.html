@@ -26,19 +26,20 @@
 
 	<script type="text/javascript">
 	function setHeightInParent() {
-		var iframe = window.parent.document.getElementById("swagger-ui"); 
-
-		var scrollTop = window.parent.document.body.scrollTop;
+		var $content = $(window.parent.document).find(".ui-page-active div[data-role=content]");
+		var $iframe = $content.find(".swagger-ui iframe");
+		
+		var scrollTop = $content.scrollTop();
 
 		// Once the height has been set to a px value:
 		// document.body.scrollHeight == max(realScrollHeight, style.height)
 		// So when the document's height gets smaller, we don't get the corret value.
 		// Fix: set the height to auto before getting the scrollHeight
-		iframe.style.height = "auto";
-		iframe.style.height = document.body.scrollHeight + "px";
+		$iframe.height("auto");
+		$iframe.height(document.body.scrollHeight + "px");
 
 		// Scroll back to where the user was
-		window.parent.document.body.scrollTop = scrollTop;
+		$content.scrollTop(scrollTop);
 	}
 
 	$(function() {

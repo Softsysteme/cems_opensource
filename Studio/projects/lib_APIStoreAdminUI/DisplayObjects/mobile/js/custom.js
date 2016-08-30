@@ -43,21 +43,20 @@ $.extend(true, C8O, {
 //        fs_force_pouch_replication: false, /** force to use pouch for sync and replicate commands, even if the fs_server isn't null or cblite used */
 //        i18n: "" /** in case of multi-language application, force usage of the language selected. Empty string will select the browser language */
     },
-    
     /**
      * ro_vars read-only variables values can only be set directly here, not dynamically
      */
     ro_vars: {
-//        i18n_files: [] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
+        i18n_files: ["en"] /** list of language available for the application. The first is the default language. The application must have an i18n folder with 1 file per language like: i18n/en.json */
     },
-    
+
     /**
      * cordova read-only variables values can only be set directly here, not dynamically. Used by c8o.cordova.device.js
      */
     cordova: {
 //        androidSenderID: ""
     },
-    
+
     /**
      * vars variables values can be set at any time.
      * by the code, or by passing arguments to C8O.call() by adding __
@@ -81,11 +80,11 @@ $.extend(true, C8O, {
 /** c8o.cordova.device.js vars */
 //        local_cache_parallel_downloads: 5 /** for local cache response to store, set the maximum number of parallel downloads for attachments. 0 will disable download */
     },
-    
+
     options: {
 //        loading: {} /** loading option object argument for the $.mobile.loading("show") called by C8O.waitShow() */
     },
-    
+
     routingTable: [
 //        {
 //            /**
@@ -185,95 +184,229 @@ $.extend(true, C8O, {
 //                }
 //            ]
 //        }
-        {
-            calledRequest: "lib_ApiStore.*",
-            actions: [{
-                condition: "document > error",
-                goToPage: "error.html",
-                options: {
-                	transition: "pop"
-                }
-            }],
-        },
-        {
-            calledRequest: "lib_ApiStore.getAPI",
-            actions: [
-                {
-                	condition: function(_, c8oData) {
-                		return !!c8oData.is_edit;
-                	},
-                    goToPage: "putAPI.html",
-                    afterRendering: afterRendering.putAPI
-                },
-                {
-                	goToPage: "getAPI.html"
-                }
-            ]
-        },
-        {
-        	calledRequest: "lib_ApiStore.getBothConfigsAndEndPoints",
-        	actions: [{
-        		goToPage: "putAPI.html",
-        		afterRendering: afterRendering.putAPI
-        	}]
-        },
-        {
-            calledRequest: "lib_ApiStore.getConfig",
-            actions: [
-                {
-                	condition: function(_, c8oData) {
-                		return !!c8oData.is_edit;
-                	},
-                    goToPage: "putConfig.html",
-                    afterRendering: afterRendering.putConfig
-                },
-                {
-                	goToPage: "getConfig.html"
-                }
-            ]
-        },
-        {
-            calledRequest: "lib_ApiStore.getEndPoint",
-            actions: [
-                {
-                	condition: function(_, c8oData) {
-                		return !!c8oData.is_edit;
-                	},
-                    goToPage: "putEndPoint.html"
-                },
-                {
-                	goToPage: "getEndPoint.html"
-                }
-            ]
-        },
-        {
-            calledRequest: "lib_ApiStore.putAPI",
-            actions: [{
-            	condition: function(_, c8oData) {
-            		return !c8oData._id;
-            	},
-                goToPage: "getAPI.html"
-            }]
-        },
-        {
-            calledRequest: "lib_ApiStore.putConfig",
-            actions: [{
-            	condition: function(_, c8oData) {
-            		return !c8oData._id;
-            	},
-                goToPage: "getConfig.html"
-            }]
-        },
-        {
-            calledRequest: "lib_ApiStore.putEndPoint",
-            actions: [{
-            	condition: function(_, c8oData) {
-            		return !c8oData._id;
-            	},
-                goToPage: "getEndPoint.html"
-            }]
-        }
-    ]
+		{
+			calledRequest: "lib_APIStore.*",
+			actions: [
+			    {
+					// The user tried to do something that requires being logged in
+					condition: "document > login_required",
+					beforeRendering: login.onRequired,
+					goToPage: "app.html#login",
+					options: {
+						transition: "pop"
+					}
+				},
+				{
+					// An error occurred
+					condition: "document > error",
+					beforeRendering: beforeRendering.error
+				},
+				{
+					// An error occurred
+					condition: "document > toast",
+					beforeRendering: beforeRendering.toast
+				}
+			]
+		},
+
+		{
+			// We are checking if the user is logged in, and getting data for the
+			// left panel
+			calledRequest: "lib_APIStore.Admin_getSession",
+			actions: [{
+				// The user is logged in as an admin
+				condition: "document > session",
+				beforeRendering: login.setSession,
+				goToPage: "app.html#home"
+			}]
+		},
+
+		{
+			calledRequest: "lib_APIStore.Admin_login",
+			actions: [{
+				// The user successfully logged in
+				condition: "document > session",
+				beforeRendering: login.onSuccess
+			}]
+		},
+		{
+			// The user logged out
+			calledRequest: "lib_APIStore.Admin_logout",
+			actions: [{
+				beforeRendering: login.setSession,
+				goToPage: "app.html#login"
+			}]
+		},
+
+		{
+			calledRequest: "lib_APIStore.Admin_deleteAPI",
+			actions: [
+			    {
+					condition: "document > confirm",
+					goToPage: "app.html#deleteAPIConfirmation",
+			    },
+			    {
+					goToPage: "app.html#home",
+			    }
+			]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_deleteConfig",
+			actions: [
+			    {
+					condition: "document > confirm",
+					goToPage: "app.html#deleteConfigConfirmation",
+			    },
+			    {
+					goToPage: "app.html#home",
+			    }
+			]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_deleteEndPoint",
+			actions: [
+			    {
+					condition: "document > confirm",
+					goToPage: "app.html#deleteEndPointConfirmation",
+			    },
+			    {
+					goToPage: "app.html#home",
+			    }
+			]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_deleteUser",
+			actions: [
+			    {
+					condition: "document > confirm",
+					goToPage: "app.html#deleteUserConfirmation",
+			    },
+			    {
+					goToPage: "app.html#home",
+			    }
+			]
+		},
+
+		/* The user is accessing a list of objects */
+		{
+			calledRequest: "lib_APIStore.Admin_getAPIs",
+			actions: [{
+				goToPage: "getAPIs.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getConfigs",
+			actions: [{
+				goToPage: "getConfigs.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getEndPoints",
+			actions: [{
+				goToPage: "getEndPoints.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getUsers",
+			actions: [{
+				goToPage: "getUsers.html"
+			}]
+		},
+
+		/* The user is accessing an object's details */
+		{
+			calledRequest: "lib_APIStore.Admin_getAPI",
+			actions: [{
+				goToPage: "getAPI.html",
+				afterRendering: afterRendering.getAPI
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getConfig",
+			actions: [{
+				goToPage: "getConfig.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getEndPoint",
+			actions: [{
+				// The user is viewing an EndPoint's details
+				goToPage: "getEndPoint.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getUser",
+			actions: [{
+				// The user is viewing a User's details
+				goToPage: "getUser.html"
+			}]
+		},
+
+		/* The user is creating/editing an object */
+		{
+			calledRequest: "lib_APIStore.Admin_getDataForPutAPI",
+			actions: [{
+				beforeRendering: beforeRendering.putAPI,
+				goToPage: "putAPI.html",
+				afterRendering: afterRendering.putAPI
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getDataForPutConfig",
+			actions: [{
+				goToPage: "putConfig.html",
+				afterRendering: afterRendering.putConfig
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getDataForPutEndPoint",
+			actions: [{
+				goToPage: "putEndPoint.html",
+				afterRendering: afterRendering.putEndPoint
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getDataForPutStoreSettings",
+			actions: [{
+				goToPage: "putStoreSettings.html"
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_getDataForPutUser",
+			actions: [{
+				goToPage: "putUser.html"
+			}]
+		},
+
+		/* The user is submitting an object. Take them to where they can view it. */
+		{
+			calledRequest: "lib_APIStore.Admin_putAPI",
+			actions: [{
+				goToPage: "getAPI.html",
+				afterRendering: afterRendering.getAPI
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_putConfig",
+			actions: [{
+				goToPage: "getConfig.html",
+				afterRendering: afterRendering.getConfig
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_putEndPoint",
+			actions: [{
+				goToPage: "getEndPoint.html",
+				afterRendering: afterRendering.getEndPoint
+			}]
+		},
+		{
+			calledRequest: "lib_APIStore.Admin_putUser",
+			actions: [{
+				goToPage: "getUser.html"
+			}]
+		}
+	]
 });
 
 /*******************************************************
@@ -678,11 +811,6 @@ $.extend(true, C8O, {
 C8O.addHook("init_finished", function (params) {
 	$.mobile.page.prototype.options.domCache = true;
 
-//	$(document).on("submit", "#fileupload", function() {
-//		C8O.call(this);
-//		return false;
-//	});
-
     return true;
 });
 
@@ -762,7 +890,6 @@ C8O.addHook("init_finished", function (params) {
 //C8O.addHook("push_register_success", function (result) {
 //    return true;
 //});
-
 
 /**
  *  wait_hide hook

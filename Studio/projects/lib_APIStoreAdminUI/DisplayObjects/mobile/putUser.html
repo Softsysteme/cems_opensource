@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content">
+				<form>
+					<input type="hidden" name="__project" value="lib_APIStore">
+					<input type="hidden" name="__sequence" value="Admin_putUser">
+					<input type="hidden" name="origin" value="internal">
+
+					<span data-c8o-listen="lib_APIStore.Admin_getDataForPutUser">
+						<input	data-c8o-if="is_edit"
+								type="hidden" name="_id" value="__=user > _id__">
+					</span>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 last-sm">
+							<div class="box">
+								<label class="image-display" data-c8o-listen="lib_APIStore.Admin_getDataForPutUser">
+									<i data-placeholder-for="avatar" class="zmdi zmdi-account-box-o"></i>
+									<img data-preview-for="avatar" data-c8o-use="on" data-c8o-use-src="__=user > avatar__">
+									<input type="file" name="avatar" data-role="none" data-image-input>
+								</label>
+							</div>
+						</div>
+						<div class="col-xs">
+							<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutUser">
+								<label class="ui-hidden-accessible" for="name">Name:</label>
+								<input	type="text"
+										id="name" name="name"
+										value="__=user > name__"
+										placeholder="Name"
+										required>
+
+								<label class="ui-hidden-accessible" for="email">Email:</label>
+								<!-- data-c8o-use to prevent warnings about the value being invalid -->
+								<input	type="email"
+										id="email" name="email"
+										data-c8o-use="on" data-c8o-use-value="__=user > email__"
+										placeholder="Email"
+										required>
+
+								<span data-c8o-if="is_edit">
+									<label class="ui-hidden-accessible" for="password">New Password:</label>
+									<input	type="password"
+											id="password" name="password"
+											placeholder="Password"
+											title="If left blank, the user's password will remain unchanged."
+											minlength="8">
+
+									<label class="ui-hidden-accessible" for="password_confirmation">New Password Confirmation:</label>
+									<input	type="password"
+											id="password_confirmation" name="password_confirmation"
+											placeholder="New Password Confirmation"
+											minlength="8">
+								</span>
+								<span data-c8o-if-not="is_edit">
+									<label class="ui-hidden-accessible" for="password">Password:</label>
+									<input	type="password"
+											id="password" name="password"
+											placeholder="Password"
+											title="The password should be at least 8 characters long"
+											minlength="8" required>
+
+									<label class="ui-hidden-accessible" for="password_confirmation">Password Confirmation:</label>
+									<input	type="password"
+											id="password_confirmation" name="password_confirmation"
+											placeholder="Password Confirmation"
+											minlength="8" required>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="row end-sm">
+						<div class="col-xs-12 col-sm-3">
+							<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutUser">
+								<span data-c8o-if="is_edit" data-c8o-if-not="user > is_admin:contains(true)">
+									<!-- Use onclick to prevent the form from submitting -->
+									<a	onclick='C8O.call("lib_APIStore.Admin_deleteUser", {_id: "__=user > _id__"})'
+										class="ui-btn">Delete User</a>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-check zmdi-hc-2x"></i>
+					</button>
+				</form>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>
