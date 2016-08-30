@@ -52,11 +52,11 @@
 		},
 
 		set: function($doc) {
-			session._storeSessionData($doc); // Save the data to render new pages
+			session._storeData($doc); // Save the data to render new pages
 			session.renderDataIn(document); // Render all existing pages
 		},
 
-		_storeSessionData: function($doc) {
+		_storeData: function($doc) {
 			var $session = $doc.find("> session");
 
 			if ($session.length == 0) { // Not logged in

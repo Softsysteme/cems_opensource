@@ -190,7 +190,6 @@ $.extend(true, C8O, {
 			    {
 					// The user tried to do something that requires being logged in
 					condition: "document > login_required",
-					beforeRendering: login.onRequired,
 					goToPage: "app.html#login",
 					options: {
 						transition: "pop"
@@ -216,7 +215,7 @@ $.extend(true, C8O, {
 			actions: [{
 				// The user is logged in as an admin
 				condition: "document > session",
-				beforeRendering: login.setSession,
+				beforeRendering: session.set,
 				goToPage: "app.html#home"
 			}]
 		},
@@ -226,14 +225,14 @@ $.extend(true, C8O, {
 			actions: [{
 				// The user successfully logged in
 				condition: "document > session",
-				beforeRendering: login.onSuccess
+				beforeRendering: session.onLogin
 			}]
 		},
 		{
 			// The user logged out
 			calledRequest: "lib_APIStore.Admin_logout",
 			actions: [{
-				beforeRendering: login.setSession,
+				beforeRendering: session.set,
 				goToPage: "app.html#login"
 			}]
 		},

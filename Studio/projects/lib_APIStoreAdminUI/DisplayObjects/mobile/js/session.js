@@ -3,10 +3,10 @@
 	// Stores the current session's data, if any.
 	var sessionData;
 
-	window.login = {
+	window.session = {
 		// Called when the login succeeded.
 		// Used in custom.js as a beforeRendering function
-		onSuccess: function($doc) {
+		onLogin: function($doc) {
 			new $.nd2Toast({
 				message: "You are now logged in"
 			});
@@ -43,11 +43,11 @@
 		},
 
 		set: function($doc) {
-			session._storeSessionData($doc); // Save the data to render new pages
+			session._storeData($doc); // Save the data to render new pages
 			session.renderDataIn(document); // Render all existing pages
 		},
 
-		storeSessionData: function($doc) {
+		_storeData: function($doc) {
 			var $session = $doc.find("> session");
 
 			if ($session.length == 0) { // Not logged in

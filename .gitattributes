@@ -695,7 +695,6 @@ Studio/projects/lib_APIStore/xsd/internal/CouchDB/PostDocumentOverride.xsd -text
 Studio/projects/lib_APIStore/xsd/internal/CouchDB/PutUpdate_Admin_Toggle.xsd -text
 Studio/projects/lib_APIStore/xsd/template_mobileJQueryMobile.xsd -text
 Studio/projects/lib_APIStoreAdminUI/.project -text
-Studio/projects/lib_APIStoreAdminUI/.settings/org.eclipse.core.resources.prefs -text
 Studio/projects/lib_APIStoreAdminUI/DisplayObjects/mobile/app.html -text
 Studio/projects/lib_APIStoreAdminUI/DisplayObjects/mobile/config.xml -text
 Studio/projects/lib_APIStoreAdminUI/DisplayObjects/mobile/css/custom.css -text

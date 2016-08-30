@@ -27,6 +27,9 @@ Studio/projects/demo_usDirectory/_data
 Studio/projects/demo_usDirectory/_private
 Studio/projects/demo_usDirectory/demo_usDirectory.temp.wsdl
 Studio/projects/demo_usDirectory/demo_usDirectory.temp.xsd
+Studio/projects/lib_APIStore/.settings
+Studio/projects/lib_APIStore/_private
+Studio/projects/lib_APIStoreUserUI/_private
 Studio/projects/lib_FileTransfer/Traces
 Studio/projects/lib_FileTransfer/_data
 Studio/projects/lib_FileTransfer/_private

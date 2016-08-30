@@ -18,7 +18,8 @@
 
 		if (totalIncludes == 0) {
 			// No includes, page is ready
-			$page.trigger("nd2includesready");
+			var fromCache = $page.find("nd2-include:has(*)").length != 0
+			$page.trigger("nd2includesready", fromCache);
 			return;
 		}
 
@@ -38,7 +39,8 @@
 				// Remove the MutationObserver
 				this.disconnect();
 
-				$page.trigger("nd2includesready");
+				var fromCache = false;
+				$page.trigger("nd2includesready", fromCache);
 			}
 		});
 
@@ -68,8 +70,12 @@
 		C8O.translate(e.target);
 	});
 
-	$(document).on("nd2includesready", function(e) {
+	$(document).on("nd2includesready", function(e, fromCache) {
 		var $page = $(e.target);
+
+		// Don't add a second handler
+		if (fromCache)
+			return;
 
 		// Allow <a> to toggle panels
 		$page.find("a[data-panel-toggle]").each(function(_, a) {
