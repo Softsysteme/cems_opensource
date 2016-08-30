@@ -1,0 +1,35 @@
+<div	data-role="panel"
+		data-position="left"
+		data-display="overlay"
+		data-position-fixed="true">
+	<div data-logged="in" class="nd2-sidepanel-profile wow fadeInDown">
+		<img class="profile-background" src="img/examples/card_bg_1.jpg"/>
+		<div class="row middle-xs">
+			<div class="col-xs-4 center-xs">
+				<div class="box">
+					<img class="profile-thumbnail" data-user-info="avatar"/>
+				</div>
+			</div>
+			<div class="col-xs-8">
+				<div class="box profile-text">
+					<strong data-user-info="name"></strong>
+					<span class="subline" data-user-info="title"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul data-role="listview">
+		<li><a data-icon="false" href="app.html"><i class="zmdi zmdi-home"></i>__MSG_home__</a></li>
+		<li data-logged="out"><a data-icon="false" href="#login"><i class="zmdi zmdi-sign-in"></i>__MSG_login__</a></li>
+		<li data-can-register><a data-icon="false" href="putUser.html"><i class="zmdi zmdi-account-add"></i>__MSG_register__</a></li>
+
+		<li data-role="list-divider">__MSG_store__</li>
+		<li><a data-icon="false" data-c8o-call="lib_APIStore.User_getAPIs"><i class="zmdi zmdi-swap"></i>__MSG_apis__</a></li>
+
+		<li data-logged="in" data-role="list-divider">__MSG_userContent__</li>
+		<li data-logged="in"><a data-icon="false" data-c8o-call="lib_APIStore.User_getSubscriptions"><i class="zmdi zmdi-input-antenna"></i>__MSG_subscriptions__</a></li>
+		<li data-logged="in"><a data-icon="false" data-c8o-call=lib_APIStore.User_getSelf><i class="zmdi zmdi-settings"></i>__MSG_settings__</a></li>
+		<li data-logged="in"><a data-icon="false" data-c8o-call="lib_APIStore.User_logout"><i class="zmdi zmdi-sign-in zmdi-hc-flip-horizontal"></i>__MSG_logout__</a></li>
+	</ul>
+</div>

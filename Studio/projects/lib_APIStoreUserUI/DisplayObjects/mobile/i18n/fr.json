@@ -1,0 +1,81 @@
+{
+	":": " :",
+
+	"home": "Accueil",
+	"login": "Se connecter",
+	"register": "Créer un compte",
+
+	"store": "Boutique",
+	"apis": "APIs",
+
+	"userContent": "Contenue pour vous",
+	"subscriptions": "Abonnements",
+	"settings": "Préférences",
+	"logout": "Se déconnecter",
+
+	"optional": "Optionnel",
+
+	"email": "Email",
+	"name": "Nom",
+	"password": "Mot de passe",
+	"passwordConf": "Confirmation du mot de passe",
+	"passwordReqs": "Doit faire au moins 8 caractères",
+
+	"passwordCur": "Veuillez tapper votre mot de passe",
+	"passwordNew": "Nouveau mot de passe",
+	"passwordNewConf": "Confirmation du nouveau mot de passe",
+	"passwordNewEmptyTip": "Si vous ne remplissez pas ce champ, votre mot de passe ne changera pas",
+
+	"continue": "Continuer",
+	"details": "Détails",
+	"submit": "Soumettre",
+
+	"no": "Non",
+	"yes": "Oui",
+
+	"delSelfTitle": "Supprimer votre compte",
+	"loginConfirm": "Veuillez vous re-connecter afin de confirmer",
+	"warnDelSelf": "Supprimer son compte ne peut être annulé",
+	"delSelf": "Supprimer son compte",
+
+	"tags": "Catégories",
+	"comment": "Commentaire",
+
+	"subCreatedTitle": "Abbonnement créé",
+	"subTo": "Vous vous êtes abonné à",
+	"subDetailsPrompt": "Souhaitez vous accéder aux détails de votre abonnement?",
+
+	"subSince": "Abonné depuis",
+	"subKey": "Votre clé",
+	"subSecret": "Votre secret",
+	"subCancel": "Se désabonner",
+
+
+	"db": "One opération de base de donnée a échouée",
+	"unauthorized": "Vous n'êtes pas authorisé à faire cela",
+	"unknown": "Une erreur inconnue c'est produite",
+
+	"invalidCredentials": "Informations de connexion incorrectes",
+	"selfNotFound": "Votre compte est introuvable",
+
+	"apiRequired": "L'API est requis",
+	"apiNotFound": "L'API est introuvable",
+	"avatarNotFound": "Le fichier d'avatar est introuvable",
+	"commentRequired": "Le commentaire est requis",
+	"emailRequired": "L'email est requis",
+	"nameRequired": "Le nom est requis",
+	"originLDAP": "Le LDAP n'est pas supporté",
+	"originLDAPLinkRequired": "Le lien LDAP est requis",
+	"originUnknown": "Origine de l'utilisateur inconnue",
+	"passwordRequired": "Le mot de passe est requis",
+	"passwordShort": "Le mot de passe est trop court",
+	"passwordNotEqualConf": "Le mot de passe et sa confirmation son différents",
+	"ratingInvalid": "Note invalide",
+	"userRequired": "L'utilisateur est requis",
+	"userNotFound": "L'utilisateur est introuvable",
+
+	"subExists": "Cet abonnement existe déjà",
+
+	"regLoggedIn": "Vous ne pouvez créer un compte en étant connecté",
+	"regOff": "La création de compte est désactivée"
+}

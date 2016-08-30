@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content">
+				<div class="nd2-card image-card">
+					<div class="row center-xs">
+						<div class="col-xs center-xs last-sm image-col">
+							<div class="box" data-c8o-listen="lib_APIStore.User_getAPI">
+								<img data-c8o-use="on" data-c8o-use-src="__=api > icon__">
+							</div>
+							<div class="box">
+								<form data-c8o-call="lib_APIStore.User_putRating" data-c8o-listen="lib_APIStore.User_getAPI">
+									<input type="hidden" name="api_id" value="__=api > _id__">
+
+									<fieldset data-logged="in" class="rating" data-value="__=api > rating__" data-editable="true">
+									    <label class="star"><input type="radio" name="rating" value="1" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="2" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="3" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="4" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="5" data-role="none"/></label>
+									</fieldset>
+									<fieldset data-logged="out" class="rating" data-value="__=api > rating__">
+									    <label class="star"><input type="radio" name="rating" value="1" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="2" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="3" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="4" data-role="none"/></label>
+									    <label class="star"><input type="radio" name="rating" value="5" data-role="none"/></label>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm start-xs" data-c8o-listen="lib_APIStore.User_getAPI">
+							<div class="row">
+								<div class="col-xs">
+									<div class="box nd2-headline">__=api > name__</div>
+									<div class="box nd2-subhead">__=api > version__</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs">
+									<p class="box">__=api > description__</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div style="padding-left: .5rem;">__MSG_tags__</div>
+						<div	class="col-xs"
+								data-c8o-listen="lib_APIStore.User_getAPI"
+								data-c8o-each="api > tags > item">
+							<div class="box" style="display: inline-block; margin-right: 1em;">__=.__</div>
+						</div>
+					</div>
+				</div>
+
+				<div	class="box swagger-ui"
+						data-role="collapsible"
+						data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+					<h2>Swagger UI</h2>
+					<iframe frameBorder="0" seamless></iframe>
+				</div>
+
+				<form	data-c8o-call="lib_APIStore.User_putComment"
+						data-c8o-listen="lib_APIStore.User_getAPI"
+						data-logged="in">
+					<input type="hidden" name="api_id" value="__=api > _id__">
+					<div class="row bottom-xs">
+						<div class="col-xs-12 col-sm-10">
+							<div	class="box"
+									data-c8o-listen="lib_APIStore.User_putComment"
+									data-c8o-listen-condition="> :not(error)"> <!-- listen to clear text when the comment was posted -->
+								<textarea	name="value"
+											placeholder="__MSG_comment__"
+											data-autogrow="false"></textarea>
+							</div>
+						</div>
+						<div class="col-xs">
+							<div class="box">
+								<input type="submit" value="__MSG_submit__">
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<span	data-c8o-listen="lib_APIStore.User_getAPI, lib_APIStore.Common_deleteComment, lib_APIStore.User_putComment"
+						data-c8o-listen-condition="> :not(error)"
+						data-c8o-ref="root">
+					<div data-c8o-each="comments > item">
+						<div class="nd2-card comment-card">
+							<span class="top-right">
+								<fieldset	data-c8o-if="rating"
+											data-c8o-if-not="can_delete"
+											class="rating" data-value="__=rating__">
+								    <label class="star"><input type="radio" name="rating" value="1" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" value="2" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" value="3" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" value="4" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" value="5" data-role="none"/></label>
+								</fieldset>
+
+								<a	data-c8o-if="can_delete"
+									data-c8o-call="lib_APIStore.Common_deleteComment"
+									data-c8o-variables='{"_id": "__=_id__", "api_id": "__{"ref": "root", "find": "api > _id"}__"}'
+									class="ui-btn ui-btn-inline"><i class="zmdi zmdi-hc-lg zmdi-delete"></i></a>
+							</span>
+
+							<div class="card-title has-avatar">
+								<!-- data-c8o-use to prevent the browser from requesting a non existing image -->
+								<img class="card-avatar" data-c8o-use="on" data-c8o-use-src="__=user > avatar__">
+								<h3 class="card-primary-title">__=user > name__</h3>
+								<h5 class="card-subtitle">__=date__ v__=api_version__</h5>
+							</div>
+
+							<div class="card-supporting-text">__=value__</div>
+						</div>
+					</div>
+				</span>
+
+				<span data-logged="in" data-c8o-listen="lib_APIStore.User_getAPI, lib_APIStore.User_deleteSubscription, lib_APIStore.User_putSubscription">
+					<button data-c8o-if="is_subscribed"
+							class="	clr-primary
+ 									ui-btn ui-btn-raised
+ 									ui-btn-fab ui-btn-fab-bottom
+ 									waves-effect waves-button"
+							data-c8o-call="lib_APIStore.User_deleteSubscription"
+							data-c8o-variables='{"api_id": "__=api > _id__"}'
+							style="padding: 0;">
+						<span class="zmdi-hc-stack zmdi-hc-lg" style="width: 100%; height: 100%; line-height: 60px;">
+							<i class="zmdi zmdi-hc-stack-1x zmdi-rss" style="font-size: 35px; transform: rotate(-45deg);"></i>
+							<i class="zmdi zmdi-hc-stack-2x zmdi-block" style="font-size: 61px;"></i>
+						</span>
+					</button>
+					<button data-c8o-if-not="is_subscribed"
+							class="	clr-primary
+ 									ui-btn ui-btn-raised
+ 									ui-btn-fab ui-btn-fab-bottom
+ 									waves-effect waves-button"
+							data-c8o-call="lib_APIStore.User_putSubscription"
+							data-c8o-variables='{"api_id": "__=api > _id__"}'>
+						<i class="zmdi zmdi-hc-2x zmdi-rss" style="transform: rotate(-45deg);"></i>
+					</button>
+				</span>
+			</div>
+
+	         <div data-role="popup">
+				<div data-role="header">
+					<h1 class="nd-title">__MSG_subCreatedTitle__</h1>
+				</div>
+
+				<div data-role="content">
+					<p data-c8o-listen="lib_APIStore.User_getAPI">__MSG_subTo__ "__=api > name__".</p>
+					<p>__MSG_subDetailsPrompt__</p>
+
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="box">
+								<a	data-rel="back"
+									class="ui-btn">__MSG_no__</a>
+							</div>
+						</div>
+						<div class="col-xs">
+							<div class="box" data-c8o-listen="lib_APIStore.User_getAPI">
+								<a	data-c8o-call="lib_APIStore.User_getSubscription"
+									data-c8o-variables='{"api_id": "__=api > _id__"}'
+									class="ui-btn">__MSG_yes__</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

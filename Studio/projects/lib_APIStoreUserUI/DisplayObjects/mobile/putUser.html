@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content">
+				<form data-c8o-call="lib_APIStore.User_putUser">
+					<input type="hidden" name="origin" value="internal">
+
+					<div data-c8o-listen="lib_APIStore.User_getSelf">
+						<label class="ui-hidden-accessible" for="name">__MSG_name__</label>
+						<input type="text" id="name" name="name" placeholder="__MSG_name__" required>
+
+						<label class="ui-hidden-accessible" for="email">__MSG_email__</label>
+						<input type="email" id="email" name="email" placeholder="__MSG_email__" required>
+
+						<label class="ui-hidden-accessible" for="password">__MSG_password__</label>
+						<input	type="password"
+								id="password" name="password"
+								placeholder="__MSG_password__"
+								title="__MSG_passwordReqs__"
+								minlength="8" required>
+
+						<label class="ui-hidden-accessible" for="password_confirmation">__MSG_passwordConf__</label>
+						<input	type="password"
+								id="password_confirmation" name="password_confirmation"
+								placeholder="__MSG_passwordConf__"
+								minlength="8" required>
+					</div>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-hc-2x zmdi-check"></i>
+					</button>
+				</form>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

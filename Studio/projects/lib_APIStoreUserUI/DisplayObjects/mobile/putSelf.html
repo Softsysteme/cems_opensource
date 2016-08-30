@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div data-role="content">
+				<form>
+					<input type="hidden" name="__project" value="lib_APIStore">
+					<input type="hidden" name="__sequence" value="User_putSelf">
+
+					<span data-c8o-listen="lib_APIStore.User_getSelf">
+						<input type="hidden" name="_id" value="__=user > _id__">
+						<input type="hidden" name="origin" value="__=user > origin__">
+					</span>
+
+					<div class="row middle-xs">
+						<div class="col-xs-12 col-sm-3 last-sm">
+							<div class="box">
+								<label class="image-display" data-c8o-listen="lib_APIStore.User_getSelf">
+									<i data-placeholder-for="avatar" class="zmdi zmdi-account-box-o"></i>
+									<img data-preview-for="avatar" data-c8o-use="on" data-c8o-use-src="__=user > avatar__">
+									<input type="file" name="avatar" data-role="none" data-image-input>
+								</label>
+								<br>
+								<a href="#deleteAccountConfirmation" class="ui-btn">__MSG_delSelf__</a>
+							</div>
+						</div>
+						<div class="col-xs" style="margin-top: 1em;">
+							<div class="box" data-c8o-listen="lib_APIStore.User_getSelf">
+								<label class="ui-hidden-accessible" for="password">__MSG_password__</label>
+								<input	type="password"
+										id="password" name="password"
+										placeholder="__MSG_password__"
+										title="__MSG_passwordCur__"
+										minlength="8" required>
+								<br>
+
+								<label class="ui-hidden-accessible" for="name">__MSG_name__</label>
+								<input	type="text"
+										id="name" name="name"
+										value="__=user > name__"
+										placeholder="__MSG_name__"
+										required>
+
+								<label class="ui-hidden-accessible" for="email">__MSG_email__</label>
+								<!-- data-c8o-use to prevent warnings about the value being invalid -->
+								<input	type="email"
+										id="email" name="email"
+										data-c8o-use="on" data-c8o-use-value="__=user > email__"
+										placeholder="__MSG_email__"
+										required>
+
+								<label class="ui-hidden-accessible" for="new_password">__MSG_passwordNew__</label>
+								<input	type="password"
+										id="new_password" name="new_password"
+										placeholder="__MSG_passwordNew__ (__MSG_optional__)"
+										title="__MSG_passwordNewEmptyTip__"
+										minlength="8">
+
+								<label class="ui-hidden-accessible" for="new_password_confirmation">__MSG_passwordNewConf__</label>
+								<input	type="password"
+										id="new_password_confirmation" name="new_password_confirmation"
+										placeholder="__MSG_passwordNewConf__"
+										minlength="8">
+							</div>
+						</div>
+					</div>
+
+					<button class="	clr-primary
+									ui-btn ui-btn-raised
+									ui-btn-fab ui-btn-fab-bottom
+									waves-effect waves-button">
+						<i class="zmdi zmdi-hc-2x zmdi-check"></i>
+					</button>
+				</form>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

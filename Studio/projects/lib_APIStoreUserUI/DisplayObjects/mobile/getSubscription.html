@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div	data-role="content"
+					data-c8o-listen="lib_APIStore.User_getSubscription">
+				<div class="nd2-card image-card">
+					<div class="row center-xs">
+						<div class="col-xs center-xs last-sm image-col">
+							<div class="box"><img data-c8o-use="on" data-c8o-use-src="__=api > icon__"></div>
+						</div>
+
+						<div class="col-xs-12 col-sm start-xs">
+							<div class="box">
+								<div class="row">
+									<div class="col-xs">
+										<div class="box nd2-headline">__=api > name__</div>
+										<div class="box nd2-subhead">__MSG_subSince__ __=subscription > date__</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs">
+										<p class="box nd2-title">
+											__MSG_subKey____MSG_:__
+											<pre>__=subscription > api_access > key__</pre>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs">
+										<p class="box nd2-title">
+											__MSG_subSecret____MSG_:__
+											<pre>__=subscription > api_access > secret__</pre>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs">
+							<div class="box">
+								<div class="col-xs">
+									<div class="box">
+										<a	class="ui-btn ui-btn-inline waves-effect waves-button"
+											data-c8o-call="lib_APIStore.User_deleteSubscription"
+											data-c8o-variables='{"api_id": "__=api > _id__", "goHome": true}'>__MSG_subCancel__</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

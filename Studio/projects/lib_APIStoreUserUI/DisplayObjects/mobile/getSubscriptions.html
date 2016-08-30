@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div	data-role="content"
+					data-c8o-listen="lib_APIStore.User_getSubscriptions"
+					data-c8o-each="subscriptions > item">
+				<div class="nd2-card image-card">
+					<div class="row center-xs">
+						<div class="col-xs center-xs last-sm image-col">
+							<div class="box"><img data-c8o-use="on" data-c8o-use-src="__=api > icon__"></div>
+						</div>
+
+						<div class="col-xs-12 col-sm start-xs">
+							<div class="box nd2-headline">__=api > name__</div>
+							<div class="box nd2-subhead">__MSG_subSince__ __=date__</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs">
+							<div class="box">
+								<a	data-c8o-call="lib_APIStore.User_getSubscription"
+									data-c8o-variables='{"api_id": "__=api > _id__"}'
+									class="ui-btn ui-btn-inline">__MSG_details__</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>

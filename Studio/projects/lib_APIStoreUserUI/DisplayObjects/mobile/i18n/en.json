@@ -1,0 +1,80 @@
+{
+	":": ":",
+
+	"home": "Home",
+	"login": "Login",
+	"register": "Register",
+
+	"store": "Store",
+	"apis": "APIs",
+
+	"userContent": "Your Content",
+	"subscriptions": "Subscriptions",
+	"settings": "Settings",
+	"logout": "Logout",
+
+	"optional": "Optional",
+
+	"email": "Email",
+	"name": "Name",
+	"password": "Password",
+	"passwordConf": "Password Confirmation",
+	"passwordReqs": "Must be at least 8 characters long",
+
+	"passwordCur": "Please provide your current password",
+	"passwordNew": "New Password",
+	"passwordNewConf": "New Password Confirmation",
+	"passwordNewEmptyTip": "If left blank, your password will remain unchanged",
+
+	"continue": "Continue",
+	"details": "Details",
+	"submit": "Submit",
+
+	"no": "No",
+	"yes": "Yes",
+
+	"delSelfTitle": "Delete your account",
+	"loginConfirm": "Please re-login to confirm",
+	"warnDelSelf": "Deleting your account cannot be undone.",
+	"delSelf": "Delete Account",
+
+	"tags": "Tags",
+	"comment": "Comment",
+
+	"subCreatedTitle": "Subscription Created",
+	"subTo": "You have successfully subscribed to",
+	"subDetailsPrompt": "Would you like to see the details of your subscription?",
+
+	"subSince": "Subscribed since",
+	"subKey": "Your key",
+	"subSecret": "Your secret",
+	"subCancel": "Cancel Subscription",
+
+	"errorUnknown": "An unknown error occurred",
+	"db": "A database operation failed",
+	"unauthorized": "You are not authorized to do that",
+
+	"invalidCredentials": "Invalid credentials",
+	"selfNotFound": "It looks like your account doesn't exist anymore",
+
+	"apiRequired": "API is required",
+	"apiNotFound": "API not found",
+	"avatarNotFound": "Avatar file not found",
+	"commentRequired": "The comment is required",
+	"emailRequired": "Email is required",
+	"nameRequired": "Name is required",
+	"originLDAP": "LDAP is not implemented",
+	"originLDAPLinkRequired": "LDAP link is required",
+	"originUnknown": "Unknown user origin",
+	"passwordRequired": "Password is required",
+	"passwordShort": "Password should be at least 8 characters long",
+	"passwordNotEqualConf": "The password and confirmation do not match",
+	"ratingInvalid": "Invalid Rating",
+	"userRequired": "User is required",
+	"userNotFound": "User not found",
+
+	"subExists": "Subscription already exists",
+
+	"regLoggedIn": "You can't register while logged-in",
+	"regOff": "Registration is disabled"
+}

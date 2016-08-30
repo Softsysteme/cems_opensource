@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div data-role="page">
+			<nd2-include data-src="fragments/header.html"></nd2-include>
+			<nd2-include data-src="fragments/panel.left.html"></nd2-include>
+
+			<div	data-role="content"
+					data-c8o-listen="lib_APIStore.User_getAPIs"
+					data-c8o-each="apis > item">
+				<div class="nd2-card image-card">
+					<div class="row center-xs">
+						<div class="col-xs center-xs last-sm image-col">
+							<div class="box"><img data-c8o-use="on" data-c8o-use-src="__=icon__"></div>
+							<div class="box">
+								<fieldset class="rating" data-value="__=rating__">
+								    <label class="star"><input type="radio" name="rating" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" data-role="none"/></label>
+								    <label class="star"><input type="radio" name="rating" data-role="none"/></label>
+								</fieldset>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm start-xs">
+							<div class="row">
+								<div class="col-xs">
+									<div class="box nd2-headline">__=name__</div>
+									<div class="box nd2-subhead">__=version__</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs">
+									<p class="box">__=description__</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs">
+							<div class="box">
+								<a	data-c8o-call="lib_APIStore.User_getAPI"
+									data-c8o-variables='{"_id": "__=_id__"}'
+									class="ui-btn ui-btn-inline">__MSG_details__</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nd2-include data-src="fragments/footer.html"></nd2-include>
+		</div>
+	</body>
+</html>
