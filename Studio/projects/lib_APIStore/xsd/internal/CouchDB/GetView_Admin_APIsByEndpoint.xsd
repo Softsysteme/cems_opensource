@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_ApiStore_ns="http://www.convertigo.com/convertigo/projects/lib_ApiStore" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_ApiStore">
-    <xsd:element name="CouchDB__GetView_APIsByEndpoint" type="lib_ApiStore_ns:CouchDB__GetView_APIsByEndpointRequestData">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_APIStore_ns="http://www.convertigo.com/convertigo/projects/lib_APIStore" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_APIStore">
+    <xsd:element name="CouchDB__GetView_Admin_APIsByEndpoint" type="lib_APIStore_ns:CouchDB__GetView_Admin_APIsByEndpointRequestData">
         <xsd:annotation/>
     </xsd:element>
-    <xsd:element name="CouchDB__GetView_APIsByEndpointResponse">
+    <xsd:element name="CouchDB__GetView_Admin_APIsByEndpointResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="response" type="lib_ApiStore_ns:CouchDB__GetView_APIsByEndpointResponseData"/>
+                <xsd:element name="response" type="lib_APIStore_ns:CouchDB__GetView_Admin_APIsByEndpointResponseData"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:complexType name="CouchDB__GetView_APIsByEndpointResponseType">
+    <xsd:complexType name="CouchDB__GetView_Admin_APIsByEndpointResponseType">
         <xsd:sequence>
-            <xsd:element name="document" type="lib_ApiStore_ns:CouchDB__GetView_APIsByEndpointResponseData"/>
+            <xsd:element name="document" type="lib_APIStore_ns:CouchDB__GetView_Admin_APIsByEndpointResponseData"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:complexType name="CouchDB__GetView_APIsByEndpointRequestData">
+    <xsd:complexType name="CouchDB__GetView_Admin_APIsByEndpointRequestData">
         <xsd:sequence>
             <xsd:element name="_use_key" type="xsd:string">
                 <xsd:annotation>
@@ -47,12 +47,12 @@
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headersType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="Cache_Control" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Cache_ControlType"/>
-            <xsd:element minOccurs="0" name="Content_Type" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Content_TypeType"/>
-            <xsd:element minOccurs="0" name="Date" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_DateType"/>
-            <xsd:element minOccurs="0" name="ETag" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_ETagType"/>
-            <xsd:element minOccurs="0" name="Server" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_ServerType"/>
-            <xsd:element minOccurs="0" name="Transfer_Encoding" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Transfer_EncodingType"/>
+            <xsd:element minOccurs="0" name="Cache_Control" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Cache_ControlType"/>
+            <xsd:element minOccurs="0" name="Content_Type" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Content_TypeType"/>
+            <xsd:element minOccurs="0" name="Date" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_DateType"/>
+            <xsd:element minOccurs="0" name="ETag" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_ETagType"/>
+            <xsd:element minOccurs="0" name="Server" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_ServerType"/>
+            <xsd:element minOccurs="0" name="Transfer_Encoding" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headers_Transfer_EncodingType"/>
         </xsd:sequence>
         <xsd:attribute name="type" type="xsd:string"/>
     </xsd:complexType>
@@ -67,10 +67,10 @@
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMetaType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="headers" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headersType"/>
-            <xsd:element minOccurs="0" name="reasonPhrase" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_reasonPhraseType"/>
-            <xsd:element minOccurs="0" name="status" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_statusType"/>
-            <xsd:element minOccurs="0" name="statusCode" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_statusCodeType"/>
+            <xsd:element minOccurs="0" name="headers" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_headersType"/>
+            <xsd:element minOccurs="0" name="reasonPhrase" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_reasonPhraseType"/>
+            <xsd:element minOccurs="0" name="status" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_statusType"/>
+            <xsd:element minOccurs="0" name="statusCode" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMeta_statusCodeType"/>
         </xsd:sequence>
         <xsd:attribute name="type" type="xsd:string"/>
     </xsd:complexType>
@@ -91,22 +91,22 @@
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_valueType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="_id" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_value__idType"/>
-            <xsd:element minOccurs="0" name="name" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_value_nameType"/>
+            <xsd:element minOccurs="0" name="_id" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_value__idType"/>
+            <xsd:element minOccurs="0" name="name" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_value_nameType"/>
         </xsd:sequence>
         <xsd:attribute name="type" type="xsd:string"/>
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_itemType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="id" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_idType"/>
-            <xsd:element minOccurs="0" name="key" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_keyType"/>
-            <xsd:element minOccurs="0" name="value" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_valueType"/>
+            <xsd:element minOccurs="0" name="id" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_idType"/>
+            <xsd:element minOccurs="0" name="key" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_keyType"/>
+            <xsd:element minOccurs="0" name="value" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_item_valueType"/>
         </xsd:sequence>
         <xsd:attribute name="type" type="xsd:string"/>
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rowsType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="item" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_itemType"/>
+            <xsd:element minOccurs="0" name="item" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rows_itemType"/>
         </xsd:sequence>
         <xsd:attribute name="length" type="xsd:byte"/>
         <xsd:attribute name="type" type="xsd:string"/>
@@ -116,17 +116,17 @@
     </xsd:complexType>
     <xsd:complexType name="CouchDB_GetViewAPIsByEndpoint_document_couchdb_outputType">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="_c8oMeta" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMetaType"/>
-            <xsd:element minOccurs="0" name="offset" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_offsetType"/>
-            <xsd:element minOccurs="0" name="rows" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rowsType"/>
-            <xsd:element minOccurs="0" name="total_rows" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_total_rowsType"/>
+            <xsd:element minOccurs="0" name="_c8oMeta" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output__c8oMetaType"/>
+            <xsd:element minOccurs="0" name="offset" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_offsetType"/>
+            <xsd:element minOccurs="0" name="rows" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_rowsType"/>
+            <xsd:element minOccurs="0" name="total_rows" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_output_total_rowsType"/>
         </xsd:sequence>
         <xsd:attribute name="type" type="xsd:string"/>
     </xsd:complexType>
-    <xsd:complexType name="CouchDB__GetView_APIsByEndpointResponseData">
+    <xsd:complexType name="CouchDB__GetView_Admin_APIsByEndpointResponseData">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="couchdb_output" type="lib_ApiStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_outputType"/>
-            <xsd:element minOccurs="0" name="error" type="lib_ApiStore_ns:ConvertigoError"/>
+            <xsd:element minOccurs="0" name="couchdb_output" type="lib_APIStore_ns:CouchDB_GetViewAPIsByEndpoint_document_couchdb_outputType"/>
+            <xsd:element minOccurs="0" name="error" type="lib_APIStore_ns:ConvertigoError"/>
         </xsd:sequence>
         <xsd:attribute name="connector" type="xsd:string"/>
         <xsd:attribute name="context" type="xsd:string"/>
@@ -148,7 +148,7 @@
     </xsd:complexType>
     <xsd:complexType name="ConvertigoErrorContext">
         <xsd:sequence>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="lib_ApiStore_ns:ConvertigoErrorContextVariable"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="lib_APIStore_ns:ConvertigoErrorContextVariable"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="ConvertigoError">
@@ -156,7 +156,7 @@
             <xsd:element name="code" type="xsd:integer"/>
             <xsd:element name="message" type="xsd:string"/>
             <xsd:element name="details" type="xsd:string"/>
-            <xsd:element name="context" type="lib_ApiStore_ns:ConvertigoErrorContext"/>
+            <xsd:element name="context" type="lib_APIStore_ns:ConvertigoErrorContext"/>
             <xsd:element name="exception" type="xsd:string"/>
             <xsd:element name="stacktrace" type="xsd:string"/>
         </xsd:sequence>
