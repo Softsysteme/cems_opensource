@@ -3,6 +3,8 @@
 	// Stores the current session's data, if any.
 	var sessionData;
 
+	var registrationEnabled;
+
 	window.session = {
 		// Called when the login succeeded.
 		// Used in custom.js as a beforeRendering function
@@ -20,8 +22,15 @@
 
 			if (!sessionData) { // User not logged in
 				// Swap which elements are shown
+				$page.find("[data-is-admin]").hide();
 				$page.find("[data-logged=in]").hide();
 				$page.find("[data-logged=out]").show();
+
+				if (registrationEnabled)
+					$page.find("[data-can-register]").show();
+				else
+					$page.find("[data-can-register]").hide();
+
 				return;
 			}
 
@@ -32,13 +41,18 @@
 			$page.find("[data-user-info=name]").text(sessionData.name);
 
 			// Add title if applicable
-			if (sessionData.is_admin)
+			if (sessionData.is_admin) {
+				$page.find("[data-is-admin]").show();
 				$page.find("[data-user-info=title]").text("Administrator");
-			else
+			}
+			else {
+				$page.find("[data-is-admin]").hide();
 				$page.find("[data-user-info=title]").text("");
+			}
 
 			// Swap which elements are shown
 			$page.find("[data-logged=out]").hide();
+			$page.find("[data-can-register]").hide();
 			$page.find("[data-logged=in]").show();
 		},
 
@@ -53,6 +67,9 @@
 			if ($session.length == 0) { // Not logged in
 				// Clear the sessionData (useful when logging out)
 				sessionData = undefined;
+
+				registrationEnabled = $doc.find("> can_register").length == 1;
+
 				return;
 			}
 

@@ -22,6 +22,7 @@
 
 			if (!sessionData) { // User not logged in
 				// Swap which elements are shown
+				$page.find("[data-is-admin]").hide();
 				$page.find("[data-logged=in]").hide();
 				$page.find("[data-logged=out]").show();
 
@@ -40,10 +41,14 @@
 			$page.find("[data-user-info=name]").text(sessionData.name);
 
 			// Add title if applicable
-			if (sessionData.is_admin)
+			if (sessionData.is_admin) {
+				$page.find("[data-is-admin]").show();
 				$page.find("[data-user-info=title]").text("Administrator");
-			else
+			}
+			else {
+				$page.find("[data-is-admin]").hide();
 				$page.find("[data-user-info=title]").text("");
+			}
 
 			// Swap which elements are shown
 			$page.find("[data-logged=out]").hide();
