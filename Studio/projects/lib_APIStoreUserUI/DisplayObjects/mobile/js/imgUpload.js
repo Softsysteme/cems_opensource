@@ -20,6 +20,7 @@
 			clearButton.on("click", function(e) {
 				placeholder.show();
 				previewImg.hide();
+				clearButton.hide();
 				imgInput.value = "";
 
 				clearInput.val("true");
@@ -32,6 +33,7 @@
 			if (previewImg.attr("src")) {
 				placeholder.hide();
 				previewImg.show();
+				clearButton.show();
 			}
 
 			var reader = new FileReader();
@@ -39,11 +41,10 @@
 			$(imgInput).on("change", function() {
 				placeholder.show();
 				previewImg.hide();
+				clearButton.hide();
 
-				if (imgInput.files.length == 1) {
+				if (imgInput.files.length == 1)
 					reader.readAsDataURL(imgInput.files[0]);
-					clearInput.val("false");
-				}
 			});
 
 			reader.onload = function() {
@@ -56,6 +57,8 @@
 				// The preview is ready
 				placeholder.hide();
 				previewImg.show();
+				clearButton.show();
+				clearInput.val("false");
 			});
 		});
 	});
