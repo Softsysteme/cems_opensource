@@ -225,7 +225,8 @@ $.extend(true, C8O, {
 			actions: [{
 				// The user successfully logged in
 				condition: "document > session",
-				beforeRendering: session.onLogin
+				beforeRendering: session.onLogin,
+				goToPage: "app.html#home"
 			}]
 		},
 		{
