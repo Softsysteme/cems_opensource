@@ -13,7 +13,18 @@
 			});
 
 			var placeholder = $page.find('[data-placeholder-for="' + imgInput.name + '"]');
+			var clearButton = $page.find('[data-remove-for="' + imgInput.name + '"]');
+			var clearInput = $page.find('input[name="' + clearButton.attr("data-input") + '"]');
 			var previewImg = $page.find('img[data-preview-for="' + imgInput.name + '"]');
+
+			clearButton.on("click", function(e) {
+				placeholder.show();
+				previewImg.hide();
+				imgInput.value = "";
+
+				clearInput.val("true");
+				return false;
+			});
 
 			if (previewImg.length == 0)
 				return;
@@ -29,8 +40,10 @@
 				placeholder.show();
 				previewImg.hide();
 
-				if (imgInput.files.length == 1)
+				if (imgInput.files.length == 1) {
 					reader.readAsDataURL(imgInput.files[0]);
+					clearInput.val("false");
+				}
 			});
 
 			reader.onload = function() {

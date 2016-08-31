@@ -21,8 +21,10 @@
 					<div class="row middle-xs">
 						<div class="col-xs-12 col-sm-3 last-sm">
 							<div class="box">
+								<input type="hidden" name="remove_avatar" data-role="none">
 								<label class="image-display" data-c8o-listen="lib_APIStore.User_getSelf">
 									<i data-placeholder-for="avatar" class="zmdi zmdi-account-box-o"></i>
+									<i data-remove-for="avatar" data-input="remove_avatar" class="zmdi zmdi-hc-fw zmdi-close"></i>
 									<img data-preview-for="avatar" data-c8o-use="on" data-c8o-use-src="__=user > avatar__">
 									<input type="file" name="avatar" data-role="none" data-image-input>
 								</label>

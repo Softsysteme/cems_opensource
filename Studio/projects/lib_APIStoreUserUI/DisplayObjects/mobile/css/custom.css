@@ -194,19 +194,28 @@ label.image-display {
 	line-height: 200px;
 	text-align: center;
 	overflow: hidden;
+	position: relative;
 }
 
-label.image-display > i {
+label.image-display > i[data-placeholder-for] {
 	color: rgba(0, 0, 0, 0.87); /* From nd2's .ui-page-theme-a */
 	display: block;
 	font-size: 150px;
 	line-height: inherit;
 }
 
+label.image-display > i[data-remove-for] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    cursor: pointer;
+    padding-top: 4px;
+    font-size: 2em;
+}
+
 label.image-display > input {
-	opacity: 0;
-	position: absolute;
-	top: 0;
+	visibility: hidden;
 }
 
 /**

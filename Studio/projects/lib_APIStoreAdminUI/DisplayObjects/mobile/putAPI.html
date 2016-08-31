@@ -85,8 +85,10 @@
 						<!-- grow too large, and cause the column to move to the next row -->
 						<div class="col-xs col-md-4 col-lg-3" data-c8o-listen="lib_APIStore.Admin_getDataForPutAPI">
 							<div class="box">
+								<input type="hidden" name="remove_icon" data-role="none">
 								<label class="image-display">
 									<i data-placeholder-for="icon" class="zmdi zmdi-image-o"></i>
+									<i data-remove-for="icon" data-input="remove_icon" class="zmdi zmdi-hc-fw zmdi-close"></i>
 									<img data-preview-for="icon" data-c8o-use="on" data-c8o-use-src="__=api > icon__">
 									<input type="file" name="icon" data-role="none" data-image-input>
 								</label>

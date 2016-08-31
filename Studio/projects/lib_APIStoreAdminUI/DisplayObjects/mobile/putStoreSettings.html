@@ -18,8 +18,10 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-3 last-sm">
 							<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutStoreSettings">
+								<input type="hidden" name="remove_default_image" data-role="none">
 								<label class="image-display" title="Default API icon and user avatar">
 									<i data-placeholder-for="default_image" class="zmdi zmdi-image-o"></i>
+									<i data-remove-for="default_image" data-input="remove_default_image" class="zmdi zmdi-hc-fw zmdi-close"></i>
 									<img data-preview-for="default_image" data-c8o-use="on" data-c8o-use-src="__=settings > default_image__">
 									<input type="file" name="default_image" data-role="none" data-image-input>
 								</label>
