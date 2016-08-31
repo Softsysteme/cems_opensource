@@ -8,14 +8,30 @@
 			<div data-role="content">
 				<h2>Store Settings</h2>
 
-				<form data-c8o-call="lib_APIStore.Admin_putStoreSettings">
-					<span data-c8o-listen="lib_APIStore.Admin_getDataForPutStoreSettings">
-						<label for="enable_registration">Enable User Registration</label>
-						<input	data-c8o-if="settings > enable_registration:contains(true)"
-								type="checkbox" id="enable_registration" name="enable_registration" checked>
-						<input	data-c8o-if-not="settings > enable_registration:contains(true)"
-								type="checkbox" id="enable_registration" name="enable_registration">
-					</span>
+				<form>
+					<input type="hidden" name="__project" value="lib_APIStore">
+					<input type="hidden" name="__sequence" value="Admin_putStoreSettings">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 last-sm">
+							<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutStoreSettings">
+								<label class="image-display" title="Default API icon and user avatar">
+									<i data-placeholder-for="default_image" class="zmdi zmdi-image-o"></i>
+									<img data-preview-for="default_image" data-c8o-use="on" data-c8o-use-src="__=settings > default_image__">
+									<input type="file" name="default_image" data-role="none" data-image-input>
+								</label>
+							</div>
+						</div>
+						<div class="col-xs">
+							<div class="box" data-c8o-listen="lib_APIStore.Admin_getDataForPutStoreSettings">
+								<label for="enable_registration">Enable User Registration</label>
+								<input	data-c8o-if="settings > enable_registration:contains(true)"
+										type="checkbox" id="enable_registration" name="enable_registration" checked>
+								<input	data-c8o-if-not="settings > enable_registration:contains(true)"
+										type="checkbox" id="enable_registration" name="enable_registration">
+							</div>
+						</div>
+					</div>
 
 					<button class="	clr-primary
 									ui-btn ui-btn-raised
