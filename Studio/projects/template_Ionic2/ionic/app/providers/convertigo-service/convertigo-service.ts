@@ -203,6 +203,12 @@ export class C8outils {
         return value;
     }
 
+    /*public static getParameterJsonValue(parameter: Dictionary) : Array<any>{
+        for(var i=0; i < parameter.keys().length; i++){
+
+        }
+    }*/
+
 }
 
 //DONE class C8o
@@ -561,6 +567,7 @@ export class C8oFullSync {
         let projectParameterValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
 
         if(!projectParameterValue.startsWith(C8oFullSync.FULL_SYNC_PROJECT)){
+            //TODO ERROR
             throw new Error("TODO");
         }
 
@@ -602,67 +609,66 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleGetDocumentRequest
-    handleGetDocumentRequest(fullSyncDatabaseName: string, docid: string, paramaeters: Dictionary) : Dictionary{
+    handleGetDocumentRequest(fullSyncDatabaseName: string, docid: string, paramaeters: Dictionary) : any{
         var fullSyncDatabase : C8oFullSyncDatabase = null
-        var document : any
         var dictDoc : Dictionary = new Dictionary();
 
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(fullSyncDatabaseName);
-        document = fullSyncDatabase.getdatabase().get(docid);
-        if(document != null){
-            var attachments : Dictionary = document[C8oFullSync.FULL_SYNC__ATTACHMENTS] as Dictionary;
-            if(attachments != null){
-                //TODO check that it's the good revision
+        return new Promise(function (resolve) {
+            fullSyncDatabase.getdatabase().get(docid,{
+                _attachment : true
+            }).then(function (document) {
+                if(document != null){
 
-                for(var attachmentName in attachments.keys()){
-                    //TODO check that properties are well named
-                    let attachement = attachments[attachmentName]
-                    let url = attachments['url']
-                    var attachementDesc: Dictionary = attachments[attachmentName]
-                    //TODO Remove by percent encoding
-                    attachementDesc[C8oFullSyncCbl.ATTACHMENT_PROPERTY_KEY_CONTENT_URL] = url.toString()
-                    var dictAny : Dictionary = new Dictionary();
-                    dictAny[attachmentName] = attachementDesc
-                    dictDoc[C8oFullSyncCbl.FULL_SYNC__ATTACHMENTS] = dictAny
+                    var attachments : Dictionary = document[C8oFullSync.FULL_SYNC__ATTACHMENTS] as Dictionary;
+                    if(attachments != null){
+                        //TOTEST check that it's the good revision
+
+                        for(var attachmentName in attachments.keys()){
+                            //TOTEST check that properties are well named
+                            let attachement = attachments[attachmentName]
+                            let url = attachments['url']
+                            var attachementDesc: Dictionary = attachments[attachmentName]
+                            //TOTEST Remove by percent encoding
+                            attachementDesc[C8oFullSyncCbl.ATTACHMENT_PROPERTY_KEY_CONTENT_URL] = url.toString()
+                            var dictAny : Dictionary = new Dictionary();
+                            dictAny[attachmentName] = attachementDesc
+                            dictDoc[C8oFullSyncCbl.FULL_SYNC__ATTACHMENTS] = dictAny
+                        }
+                    }
                 }
-            }
-        }
-        else{
-            throw new C8oRessourceNotFoundException((C8oExceptionMessage.ressourceNotFound("requested document \"" + docid + "\"")));
-        }
-        if(dictDoc == null){
-            dictDoc = new Dictionary()
-        }
+                else{
+                    throw new C8oRessourceNotFoundException((C8oExceptionMessage.ressourceNotFound("requested document \"" + docid + "\"")));
+                }
+                if(dictDoc == null){
+                    dictDoc = new Dictionary()
+                }
 
-        return dictDoc
+                resolve(dictDoc)
+            })
 
+        })
     }
     //DONE class C8oFullSyncCbl: function handleDeleteDocumentRequest
-    handleDeleteDocumentRequest(DatabaseName : string, docid : string, parameters : Dictionary) : FullSyncDocumentOperationResponse{
+    handleDeleteDocumentRequest(DatabaseName : string, docid : string, parameters : Dictionary) : any{
         var fullSyncDatabase : C8oFullSyncDatabase = null;
         var document : any
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(DatabaseName);
         let revParameterValue : string = C8outils.getParameterStringValue(parameters, FullSyncDeleteDocumentParameter.REV.name, false)
-
-        document = fullSyncDatabase.getdatabase().get('docid');
-        if(document == null){
-            throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo());
-        }
-        let documentRevision : string = document.get('_rev');
-
-        if(revParameterValue != null && revParameterValue != documentRevision){
-            throw new C8oRessourceNotFoundException(C8oExceptionMessage.couchRequestInvalidRevision());
-        }
-        var deleted : boolean = true
-        try{
-
-        }
-        catch(error){
-            throw new C8oException(C8oExceptionMessage.couchRequestDeleteDocument(), error);
-        }
-        document._deleted = true;
-
-        return new FullSyncDocumentOperationResponse(docid, documentRevision, deleted);
+        let documentRevision : string
+        return new Promise(function (resolve) {
+            fullSyncDatabase.getdatabase().get(docid).then(function(doc) {
+                if(doc == null){
+                    throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo());
+                }
+                documentRevision = document._rev
+                return fullSyncDatabase.getdatabase().remove(doc);
+            }).then(function (result) {
+                resolve(new FullSyncDocumentOperationResponse(docid, documentRevision, result.ok));
+            }).catch(function (err) {
+                throw new C8oException(C8oExceptionMessage.couchRequestDeleteDocument(), err);
+            });
+        })
     }
 
     //DONE class C8oFullSyncCbl: function handlePostDocumentRequest
@@ -718,20 +724,150 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
     }
 
-    //DOING class handlePutAttachmentRequest
+    //DONE class C8oFullSyncCbl: function handlePutAttachmentRequest
     handlePutAttachmentRequest(databaseName : string, docid : string, attachmentName : string, attachmentType : string, attachmentContent : MSStream) : any {
         var document : any = null
         var newRev : any = null
-        try{
-            let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
-            document = fullSyncDatabase.getdatabase().get(docid)
-            if(document == null){
-                newRev = document.rev
-            }
-        }
-        catch(error){
+        let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
 
+        return new Promise(function (resolve) {
+            fullSyncDatabase.getdatabase().get(docid).then(function (result) {
+                document = result;
+
+                if(document != null){
+                    fullSyncDatabase.getdatabase().putAttachment(docid, attachmentName, attachmentContent, attachmentType)
+                        .then(function (result) {
+                            // handle result
+                        }).catch(function (err) {
+                        throw new C8oCouchBaseLiteException("Unable to put the attachment " + attachmentName + " to the document " + docid + ".", err)
+                    });
+
+                }else{
+                    throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo())
+                }
+                resolve(new FullSyncDocumentOperationResponse(document._id,document._rev, true));
+            })
+        })
+
+
+    }
+
+    //DONE class C8oFullSyncCbl: function handleDeleteAttachmentRequest
+    handleDeleteAttachmentRequest(databaseName: string, docid: string, attachmentName: string) : any{
+        var document : any = null
+        var newRev : any = null
+        let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        
+        return new Promise(function (resolve) {
+            fullSyncDatabase.getdatabase().get(docid).then(function (result) {
+                document = result
+            }).then(function () {
+                if(document != null){
+                    fullSyncDatabase.getdatabase().removeAttachment(docid, attachmentName, document._rev).catch(function (err) {
+                        throw new C8oCouchBaseLiteException("Unable to delete the attachment " + attachmentName + " to the document " + docid + ".", err)
+                    })
+                }
+                else{
+                    throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo())
+                }
+                resolve(new FullSyncDocumentOperationResponse(document._id, document._rev, true));
+            })
+        })
+    }
+
+    //DONE class C8oFullSyncCbl: function handleAllDocumentsRequest
+    public handleAllDocumentsRequest(databaseName: string, parameters: Dictionary) : any{
+        var fullSyncDatabase = null
+        var query = null
+        var result = null
+
+        fullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        fullSyncDatabase.getDatabase()
+            .allDocs(parameters.toArray()
+            ).then(function (res) {
+                result = res;
+        })
+        return result;
+    }
+
+    //DONE class C8oFullSyncCbl: function handleGetViewRequest
+    handleGetViewRequest(databaseName : string, ddocName : string, viewName: string, parameters: Dictionary){
+        var fullSyncDatabase = null
+        let view = null
+        fullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        console.log("la")
+
+        return new Promise(function (resolve) {
+            fullSyncDatabase.query(ddocName + "/"  + viewName, parameters.toArray())
+                .then(function (result) {
+                    resolve(result)
+                }).catch(function (err) {
+                throw new C8oException(C8oExceptionMessage.couchRequestGetView())
+            })
+        })
+
+    }
+    //TODO add C8oResponseListener
+    //DONE class C8oFullSyncCbl: function handleSyncRequest
+    handleSyncRequest(databaseName: string, parameters : Dictionary) : void {
+        let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        fullSyncDatabase.startAllReplications(parameters)
+    }
+        //TODO add C8oResponseListener
+    //DONE class C8oFullSyncCbl: function handleReplicatePullRequest
+    handleReplicatePullRequest(databaseName: string, parameters: Dictionary) : void{
+        let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        fullSyncDatabase.startPullReplication(parameters)
+    }
+
+    //TODO add C8oResponseListener
+    //DONE class C8oFullSyncCbl: function handleReplicatePushRequest
+    handleReplicatePushRequest(databaseName: string, parameters: Dictionary) : void {
+        let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        fullSyncDatabase.startPushReplication(parameters)
+    }
+
+    //DONE class C8oFullSyncCbl: function handleResetDatabaseRequest
+    handleResetDatabaseRequest(databaseName : string) : FullSyncDefaultResponse{
+        this.getOrCreateFullSyncDatabase(databaseName)
+        return this.handleCreateDatabaseRequest(databaseName)
+    }
+
+    //DONE class C8oFullSyncCbl: function handleCreateDatabaseRequest
+    handleCreateDatabaseRequest(databaseName : string): FullSyncDefaultResponse{
+        this.getOrCreateFullSyncDatabase(databaseName)
+        return new FullSyncDefaultResponse(true)
+    }
+
+    //DONE class C8oFullSyncCbl: function handleCreateDatabaseRequest
+    handleDestroyDatabaseRequest(databaseName: string): FullSyncDefaultResponse{
+        let localDatabaseName = databaseName + this.localSuffix
+        if(this.fullSyncDatabases[localDatabaseName] !=  null){
+            this.fullSyncDatabases.remove(localDatabaseName)
         }
+        try{
+            let db = new PouchDB(localDatabaseName)
+            db.destroy()
+        }
+        catch(err){
+            throw new C8oException("TODO", err)
+        }
+        return new FullSyncDefaultResponse(true)
+    }
+
+    //LATER class C8oFullSyncCbl: function compileView
+    private compileView(db: any, viewName: string, viewProps: Dictionary): any{
+        throw new Error("TODO: class C8oFullSyncCbl: function compileView")
+    }
+
+    //LATER class C8oFullSyncCbl: function checkAndCreateJavaScriptView
+    private checkAndCreateJavaScriptView(database: any, ddocName: string, viewName: string): any{
+        throw new Error("TODO: C8oFullSyncCbl: function checkAndCreateJavaScriptView")
+    }
+
+    //LATER class C8oFullSyncCBL: function addParametersToQuery
+    private static addParametersToQuery(query: any, parameters : Dictionary){
+        throw new Error("TODO: C8oFullSyncCbl: function addParametersToQuery")
     }
 
     //DONE class C8oFullSyncCBL-> mergeProperties
@@ -781,8 +917,152 @@ export class C8oFullSyncCbl extends C8oFullSync{
             }
         }
     }
-}
 
+    //DONE class C8oFullSyncCBL->getDocucmentFromDatabase
+    getDocucmentFromDatabase(c8o: C8o, databaseName: string, documentId: string) : any{
+        var c8oFullSyncDatabase: C8oFullSyncDatabase
+        try {
+                c8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        }
+        catch(err){
+            throw new C8oException(C8oExceptionMessage.fullSyncGetOrCreateDatabase(databaseName))
+        }
+
+        return new Promise(function (resolve) {
+            c8oFullSyncDatabase.getdatabase().get(documentId).then(function (result) {
+                resolve(result);
+            })
+        })
+    }
+
+    //DONE class C8oFullSyncCBL->overrideDocument but change sign cause need databaseName
+    overrideDocument(document: any, properties: Dictionary, databaseName){
+        //TOTEST verify the content of properties and if we have not to add _id from document etc...
+        properties.add(C8oFullSync.FULL_SYNC__REV, document._rev)
+        var c8oFullSyncDatabase: C8oFullSyncDatabase
+        try {
+            c8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
+        }
+        catch(err){
+            throw new C8oException(C8oExceptionMessage.fullSyncGetOrCreateDatabase(databaseName))
+        }
+
+
+        c8oFullSyncDatabase.getdatabase().put(properties.toArray()).catch(function (err) {
+            throw new C8oException("TODO");
+        })
+
+    }
+
+    //DONE class C8oFullSyncCBL->getResponseFromLocalCache
+    getResponseFromLocalCache(c8oCallRequestIdentifier: string): any {
+
+        let fullSyncDatabase = this.getOrCreateFullSyncDatabase(C8o.LOCAL_CACHE_DATABASE_NAME)
+        var localCacheDocument = null
+        return new Promise(function (resolve) {
+            fullSyncDatabase.getdatabase().get(c8oCallRequestIdentifier).then(function (result) {
+                localCacheDocument = result
+                if (localCacheDocument == null) {
+                    throw new C8oUnavailableLocalCacheException(C8oExceptionMessage.localCacheDocumentJustCreated())
+                }
+
+                let response = localCacheDocument.get(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE)
+                let responseType = localCacheDocument.get(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE)
+                let expirationDate = localCacheDocument.get(C8o.LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE)
+
+                var responseString: string = null
+                var responseTypeString: string = null
+                var expirationDateNumber: number = -1
+
+                if (response != null) {
+                    if (typeof response == 'string') {
+                        responseString = response
+                    }
+                    else {
+                        throw new C8oException(C8oExceptionMessage.InvalidLocalCacheResponseInformation())
+                    }
+                }
+                if (responseType != null) {
+                    if (typeof responseType == 'string') {
+                        responseTypeString = responseType
+                    }
+                    else {
+                        throw new C8oException(C8oExceptionMessage.InvalidLocalCacheResponseInformation())
+                    }
+                }
+                if (expirationDate != null) {
+                    if (typeof expirationDate == 'number') {
+                        expirationDateNumber = expirationDate
+                        let currentTime = new Date().getTime()
+                        if (expirationDateNumber < currentTime) {
+                            throw new C8oUnavailableLocalCacheException(C8oExceptionMessage.timeToLiveExpired())
+                        }
+                    }
+                    else {
+                        throw new C8oException(C8oExceptionMessage.InvalidLocalCacheResponseInformation())
+                    }
+                }
+                resolve(new C8oLocalCacheResponse(responseString, responseTypeString, expirationDateNumber))
+            })
+        })
+
+
+    }
+
+    //DONE class C8oFullSyncCBL->saveResponseToLocalCache
+    saveResponseToLocalCache(c8oCallRequestIdentifier: string, localCacheResponse: C8oLocalCacheResponse){
+        let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(C8o.LOCAL_CACHE_DATABASE_NAME)
+        fullSyncDatabase.getdatabase().get(c8oCallRequestIdentifier).then(function (localCacheDocument) {
+            var properties = new Dictionary();
+            properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE, localCacheResponse.getResponse())
+            properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE, localCacheResponse.getResponseType())
+            if(localCacheResponse.getExpirationDate() > 0){
+                properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE, localCacheResponse.getExpirationDate())
+            }
+            let currentRevision = localCacheDocument._rev
+            if(currentRevision != null){
+                properties.add(C8oFullSyncCbl.FULL_SYNC__REV, currentRevision)
+            }
+            //TOTEST this
+            fullSyncDatabase.getdatabase().put(properties.toArray())
+
+        })
+    }
+}
+//DONE class C8oLocalCacheResponse
+class C8oLocalCacheResponse{
+    private response : string
+    private responseType: string
+    private expirationDate : number
+
+    constructor(response: string, responseType: string, expirationDate: number){
+        this.response = response
+        this.responseType = responseType
+        this.expirationDate = expirationDate
+    }
+
+    isExpired() : boolean{
+        if(this.expirationDate <= 0){
+            return false
+        }
+        else{
+            let currentDate = new Date().getTime()
+            return this.expirationDate < currentDate
+        }
+    }
+
+    getResponse() : string{
+        return this.response
+    }
+
+    getResponseType() : string{
+        return this.responseType
+    }
+
+    getExpirationDate() : number{
+        return this.expirationDate
+    }
+}
 
 //DONE class FullSyncGetViewParameter
 export class FullSyncGetViewParameter {
@@ -926,7 +1206,7 @@ export class FullSyncPolicy{
     });
     public static OVERRIDE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, function (database : any, newProperties : Dictionary) : IAction{
         return{
-            doClosure : async function () {
+            doClosure : function () {
                 var createdDocument : any;
                 try{
                     let documentId : string = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
@@ -938,7 +1218,9 @@ export class FullSyncPolicy{
                         createdDocument = database.put()
                     }
                     else {
-                        createdDocument = await database.get(documentId)
+                        database.get(documentId).then(function (doc) {
+                            createdDocument = doc;
+                        })
                         var currentRevision = createdDocument.rev;
                         if(currentRevision == null){
                             //TODO test...
@@ -958,7 +1240,7 @@ export class FullSyncPolicy{
 
     public static MERGE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, function (database : any, newProperties : Dictionary) : IAction {
         return {
-            doClosure: async function () {
+            doClosure: function () {
                 var createdDocument : any;
                 try {
                     let documentId: string = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
@@ -968,7 +1250,9 @@ export class FullSyncPolicy{
                         //FIXME this maight produce error
                         createdDocument = database.put()
                     } else {
-                        createdDocument = await database.get(documentId)
+                        database.get(documentId).then(function (doc) {
+                            createdDocument = doc;
+                        })
                     }
                     //TODO to test...
                     var oldProperties = createdDocument.properties
@@ -1311,7 +1595,7 @@ export class FullSyncAbstractResponse{
 }
 
 //DONE class FullSyncDefaultResponse
-export class FullSyncDefaultRespons extends FullSyncAbstractResponse{
+export class FullSyncDefaultResponse extends FullSyncAbstractResponse{
     constructor(operationStatus: boolean){
         super(operationStatus);
     }
@@ -2282,6 +2566,13 @@ export class Dictionary {
 
     }
 
+    toArray(): Object{
+        let value = {}
+        for(var j=0;j<this._keys.length; j++){
+            value[this._keys[j]] = this._values[j];
+        }
+        return value;
+    }
     add(key: string, value: any) {
         this[key] = value;
         this._keys.push(key);

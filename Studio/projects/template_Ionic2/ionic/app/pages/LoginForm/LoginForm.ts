@@ -1,6 +1,9 @@
 import {Component} from '@angular/core';
 import {GoogleMap, GoogleMapsEvent} from 'ionic-native';
-import {C8o} from "../../providers/convertigo-service/convertigo-service";
+import {
+    C8o, FullSyncPolicy, Dictionary, IAction,
+    C8oFullSyncCbl
+} from "../../providers/convertigo-service/convertigo-service";
 import {NavController} from 'ionic-angular';
 import {SearchForm}  from './../SearchForm/SearchForm';
 let PouchDB = require('pouchdb');
@@ -15,6 +18,72 @@ export class LoginForm {
   }
 
   ionViewLoaded(){
+
+      let dict = new Dictionary();
+      dict.add("include_docs", true);
+      dict.add("attachments", true);
+      dict.add("limit", 4);
+
+      let db = new PouchDB('http://localhost:5984/retaildb');
+      console.log("dd")
+      var fsCBL = new C8oFullSyncCbl(this.c8o);
+      console.log("dd")
+      fsCBL.handleGetViewRequest("db", "", "", new Dictionary()).then(function (resultat) {
+          console.log(resultat)
+      })
+
+      /*db.get().then(function (result) {
+          console.log(result)
+      }).catch(function (err) {
+          if (err.name !== 'conflict') {
+              throw err;
+          }
+      })*/
+      /*db.query('design/children_byFather',{
+      }).then(function (result) {
+          console.log(result)
+      }).catch(function (err) {
+          if (err.name !== 'conflict') {
+              throw err;
+          }
+      })
+      /*db.query('design_doc_name/children_byFather').then(function (result) {
+          console.log(result)
+      }).catch(function (err) {
+          if (err.name !== 'conflict') {
+              throw err;
+          }
+      })
+
+/*
+      db.put({
+          _id: 'mydoc' + (new Date).getTime().toString(),
+          title: 'Heroes'
+      }).then(function () {
+          return db.put({
+              _id: 'mydoc' + (new Date).getTime().toString(),
+              title: 'Heroes'
+          })
+      }).then(function () {
+          return db.allDocs(
+              dict.toArray()
+              //limit: 4
+              /*include_docs: true,
+              attachments: true*/
+             /*)
+      }).then(function (result) {
+          console.log(result);
+      }).catch(function (err) {
+          console.log(err);
+      })
+
+
+
+      /*let fp = new FullSyncPolicy(C8o.FS_POLICY_NONE, function (database : any, newProperties : Dictionary){
+            database = db;
+            newProperties = new Dictionary();
+            newProperties.add("_id", "monIDCG");
+      } )*/
       /*console.log((new Date).getTime().toString());
       let array = ['db', 'db2', 'db3', 'maNouvelleBase', 'retaildb_device'];
       for(var i=0; i <5; i++){
@@ -45,7 +114,6 @@ export class LoginForm {
   }
   login(username:string, password:string){
     this.c8o.callJson("sampleMobileSearchRoom.Login", "user", username, "password", password).then(data => {
-        console.log(data);
         if(data.logon == "true"){
             this.nav.push(SearchForm);
         }
