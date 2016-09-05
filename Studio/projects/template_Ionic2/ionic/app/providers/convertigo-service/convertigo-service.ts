@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {isUndefined} from "ionic-angular/util/util";
+import {Json} from "@angular/core/src/facade/lang";
 //DONE import PouchDB works... however by adding manually a typings lib ... cmd line not works
 var PouchDB = require('pouchdb');
 //import * as PouchDB from 'pouchdb';
@@ -186,6 +187,13 @@ export class C8outils {
             return "" + parameter.toString();
         }
         return null;
+    }
+
+    public static getParameterObjectValue(parameters: Dictionary, name:string, useName: boolean = false) : any{
+        let parameter = this.getParameter(parameters, name, useName)
+        if(parameter.keys() != null){
+            return parameter.value
+        }
     }
 
     public static peekParameterStringValue(parameters: Dictionary, name : string, exceptionIfMissing : boolean) : string{
@@ -404,26 +412,29 @@ export class C8o extends C8oBase {
         new Promise(resolve => {
             //if project is running into web browser
             //get the url from window.location
-            if (window.location.href.startsWith('http')) {
-                let n = window.location.href.indexOf("/Display");
-                this.endpoint = window.location.href.substring(0, n);
-                resolve(this.data);
-            }
-            //if project is running on device
-            //get the uri from env.json
-            else if (window.location.href.startsWith('file')) {
-                var uri = window.location.href.replace('app.html', 'env.json');
-                this.http.get(uri)
-                    .map(res => res.json())
-                    .subscribe(data => {
-                        this.data = data;
-                        //noinspection TypeScriptUnresolvedVariable
-                        let remoteBase = data.remoteBase.toString();
-                        let n = remoteBase.indexOf("/_private");
-                        this.endpoint = remoteBase.substring(0, n);
-                        resolve(this.data);
-                    });
-            }
+
+                if (window.location.href.startsWith('http')) {
+                    let n = window.location.href.indexOf("/Display");
+                    this.endpoint = window.location.href.substring(0, n);
+                    resolve(this.data);
+                }
+                //if project is running on device
+                //get the uri from env.json
+                else if (window.location.href.startsWith('file')) {
+                    var uri = window.location.href.replace('app.html', 'env.json');
+                    this.http.get(uri)
+                        .map(res => res.json())
+                        .subscribe(data => {
+                            this.data = data;
+                            //noinspection TypeScriptUnresolvedVariable
+                            let remoteBase = data.remoteBase.toString();
+                            let n = remoteBase.indexOf("/_private");
+                            this.endpoint = remoteBase.substring(0, n);
+                            resolve(this.data);
+                        });
+                }
+
+
         }).then(() => {
             if (!C8outils.isValidUrl(this.endpoint)) {
                 //return new TypeError(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
@@ -541,7 +552,7 @@ export class C8o extends C8oBase {
 
 }
 
-//DOING class C8oFullSync
+//DONE class C8oFullSync
 export class C8oFullSync {
     private static FULL_SYNC_URL_PATH : string = "/fullsync/";
     /**
@@ -562,23 +573,71 @@ export class C8oFullSync {
         this.localSuffix = (c8o.fullSyncLocalSuffix != null) ? c8o.fullSyncLocalSuffix : "_device";
     }
 
-    //TODO class C8oFullSync: function handleFullSyncRequest
-    public handleFullSyncRequest(parameters : Dictionary) : any{
+    //DONE class C8oFullSync: function handleFullSyncRequest
+    public handleFullSyncRequest(parameters : Dictionary, listener : C8oResponseListener) : any{
         let projectParameterValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
 
         if(!projectParameterValue.startsWith(C8oFullSync.FULL_SYNC_PROJECT)){
-            //TODO ERROR
-            throw new Error("TODO");
+            throw new C8oException(C8oExceptionMessage.invalidParameterValue(projectParameterValue, "its don't start with" + C8oFullSync.FULL_SYNC_PROJECT))
         }
 
         let fullSyncRequestableValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
-        let fullSyncRequestable : FullSyncRequestable
+        let fullSyncRequestable : FullSyncRequestable = FullSyncRequestable.getFullSyncRequestable(fullSyncRequestableValue)
+        if(fullSyncRequestable == null){
+            throw new C8oException(C8oExceptionMessage.invalidParameterValue(C8o.ENGINE_PARAMETER_PROJECT, C8oExceptionMessage.unknownValue("fullSync requestable", fullSyncRequestableValue)))
+        }
 
+        let databaseName : string = projectParameterValue.substring(C8oFullSync.FULL_SYNC_PROJECT.length)
+        if(databaseName.length < 1){
+            databaseName = this.c8o.defaultDatabaseName
+            if(databaseName == null){
+                throw new C8oException(C8oExceptionMessage.invalidParameterValue(C8o.ENGINE_PARAMETER_PROJECT, C8oExceptionMessage.missingValue("fullSync database name")))
+            }
+        }
+
+        var response : any
+        try{
+            response = fullSyncRequestable.handleFullSyncRequest(this, databaseName, parameters, listener)
+        }
+        catch(error){
+            if(typeof error == 'C8oException'){
+                throw error
+            }
+            else{
+                throw new C8oException(C8oExceptionMessage.FullSyncRequestFail(), error)
+            }
+        }
+
+        if(response == null){
+            throw new C8oException(C8oExceptionMessage.couchNullResult())
+        }
+
+        response = this.handleFullSyncResponse(response, listener)
+        return response
+    }
+
+    //DONE class C8oFullSync: function handleFullSyncResponse
+    handleFullSyncResponse(response: any, listener: C8oResponseListener) : any{
+        if(typeof response == 'JSON'){
+            if(typeof listener === 'C8oResponseXmlListener'){
+                //TODO finish implement C8oFullSynctranslator
+                //response = C8oFullSyncTranslator.fullSyncJsonToXml(response as JSON)
+            }
+        }
+        return response
+
+    }
+    //DONE class C8oFullSync: function isFullSyncRequest
+    static isFullSyncRequest(requestParameter : Dictionary) : boolean{
+        if(C8outils.getParameterStringValue(requestParameter, C8o.ENGINE_PARAMETER_PROJECT, false) != null){
+            return C8outils.getParameterStringValue(requestParameter, C8o.ENGINE_PARAMETER_PROJECT, false).startsWith(C8oFullSync.FULL_SYNC_PROJECT)
+        }
+        return false
     }
 
 }
 
-//DOING class C8oFullSyncCbl
+//DONE class C8oFullSyncCbl
 export class C8oFullSyncCbl extends C8oFullSync{
     private static ATTACHMENT_PROPERTY_KEY_CONTENT_URL : string = "content_url"
     //private  manager : PouchDB
@@ -598,7 +657,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
         return this.fullSyncDatabases[localDatabaseName];
      }
 
-     //DOING class C8oFullSyncCbl: function handleFullSyncResponse
+     //LATER class C8oFullSyncCbl: function handleFullSyncResponse
     handleFullSyncResponse(response: any, listener: C8oResponseListener) : any{
         //response = super.handleFullSync
 
@@ -674,12 +733,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     //DONE class C8oFullSyncCbl: function handlePostDocumentRequest
     handlePostDocumentRequest(databaseName: string, fullSyncPolicy: FullSyncPolicy, parameters: Dictionary) : any {
         var fullSyncDatabase : C8oFullSyncDatabase = null
-        try{
-            fullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName);
-        }
-        catch(error){
-
-        }
+        fullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName);
 
         var subkeySeparatorParameterValue: string = C8outils.getParameterStringValue(parameters, C8o.FS_SUBKEY_SEPARATOR, false)
         if (subkeySeparatorParameterValue == null) {
@@ -691,9 +745,10 @@ export class C8oFullSyncCbl extends C8oFullSync{
             var parameterName: string = parameter[0];
 
             if(!parameterName.startsWith("__") && !parameterName.startsWith("_use_")){
-                //TODO maybe have to translate to Object type for objectparameterValue
-                var objectparameterValue : any = parameter[1]
-                //TODO test split and find an equivalent to pattern.quote if necessary
+                //TOTEST maybe have to translate to Object type for objectparameterValue
+                var objectparameterValue : any = parameter.valueOf()
+
+                //TOTEST test split and find an equivalent to pattern.quote if necessary
                 let paths : Array<string> = parameterName.split(subkeySeparatorParameterValue);
                 if(paths.length > 1){
                     parameterName = paths[0]
@@ -716,7 +771,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
             }
         }
         var db = fullSyncDatabase.getdatabase()
-        var createdDocument = fullSyncPolicy.action.doClosure(db,  newProperties)
+        var createdDocument = fullSyncPolicy.action(db,  newProperties)
         var documentId =  createdDocument.documentId
         var currentRevision = createdDocument.rev
 
@@ -809,22 +864,22 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
     //TODO add C8oResponseListener
     //DONE class C8oFullSyncCbl: function handleSyncRequest
-    handleSyncRequest(databaseName: string, parameters : Dictionary) : void {
+    handleSyncRequest(databaseName: string, parameters : Dictionary, c8oResponseListener : C8oResponseListener) : void {
         let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
-        fullSyncDatabase.startAllReplications(parameters)
+        fullSyncDatabase.startAllReplications(parameters, c8oResponseListener)
     }
         //TODO add C8oResponseListener
     //DONE class C8oFullSyncCbl: function handleReplicatePullRequest
-    handleReplicatePullRequest(databaseName: string, parameters: Dictionary) : void{
+    handleReplicatePullRequest(databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : void{
         let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
-        fullSyncDatabase.startPullReplication(parameters)
+        fullSyncDatabase.startPullReplication(parameters, c8oResponseListener)
     }
 
     //TODO add C8oResponseListener
     //DONE class C8oFullSyncCbl: function handleReplicatePushRequest
-    handleReplicatePushRequest(databaseName: string, parameters: Dictionary) : void {
+    handleReplicatePushRequest(databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : void {
         let fullSyncDatabase :  C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
-        fullSyncDatabase.startPushReplication(parameters)
+        fullSyncDatabase.startPushReplication(parameters, c8oResponseListener)
     }
 
     //DONE class C8oFullSyncCbl: function handleResetDatabaseRequest
@@ -1028,6 +1083,16 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
         })
     }
+
+    //DONE class C8oFullSyncCBL->isPlainObject
+    private static isPlainObject(object : Object) : boolean{
+        if(object == null || object instanceof Number || object instanceof Boolean || object instanceof String){
+            return false
+        }
+        else{
+            return true
+        }
+    }
 }
 //DONE class C8oLocalCacheResponse
 class C8oLocalCacheResponse{
@@ -1133,37 +1198,129 @@ export class FullSyncPostDocumentParameter {
 
 //DOING class FullSyncRequestable
 export class FullSyncRequestable{
-    /*protected static GET : FullSyncRequestable = new FullSyncRequestable("get", function (c8oFullSync : C8oFullSyncCbl, databaseName : string, parameters :Dictionary, c8oResponseListener: C8oResponseListener) : HanfleFullSyncrequestOp {
-        return {
-            doClosure : function() {
+    static GET : FullSyncRequestable = new FullSyncRequestable("get", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
+        return c8oFullSync.handleGetDocumentRequest(databaseName, docid, parameters)
+    });
+    
+    static DELETE : FullSyncRequestable = new FullSyncRequestable("delete", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
                 let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
-                return c8oFullSync.han
-            }
-        }
+                return c8oFullSync.handleDeleteDocumentRequest(databaseName, docid, parameters)
+    });
 
-    } );*/
+    static POST : FullSyncRequestable = new FullSyncRequestable("post", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                let fullSyncPolicyParameter : string = C8outils.peekParameterStringValue(parameters, FullSyncPostDocumentParameter.POLICY.name, true)
+
+                let fullSyncPolicy : FullSyncPolicy = FullSyncPolicy.getFullSyncPolicy(fullSyncPolicyParameter)
+
+                return c8oFullSync.handlePostDocumentRequest(databaseName, fullSyncPolicy, parameters)
+    });
+
+    static PUT_ATTACHMENT : FullSyncRequestable = new FullSyncRequestable("put_attachment", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
+
+                let name : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.NAME.name, false)
+
+                let contentType : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.CONTENT_TYPE.name, false)
+
+                let content = C8outils.getParameterObjectValue(parameters, FullSyncAttachmentParameter.CONTENT.name, false)
+
+                return c8oFullSync.handlePutAttachmentRequest(databaseName, docid, name, contentType, content)
+    });
+
+    static DELETE_ATTACHMENT : FullSyncRequestable = new FullSyncRequestable("delete_attachment", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
+
+                let name : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.DOCID.name, false)
+
+                return c8oFullSync.handleDeleteAttachmentRequest(databaseName, docid, name)
+    });
+
+    static ALL : FullSyncRequestable = new FullSyncRequestable("all", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                return c8oFullSync.handleAllDocumentsRequest(databaseName, parameters)
+    });
+
+    static VIEW : FullSyncRequestable = new FullSyncRequestable("view", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                let ddoc : string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.DDOC.name, false)
+                let view : string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.VIEW.name, false)
+
+                return c8oFullSync.handleGetViewRequest(databaseName, ddoc, view, parameters)
+    });
+
+
+    //TODO SYNC
+    static SYNC : FullSyncRequestable = new FullSyncRequestable("sync", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+                c8oFullSync.handleSyncRequest(databaseName, parameters, new C8oResponseProgressListener((progress, param)=>{
+
+                }));
+    });
+
+    //TODO REPLICATE_PULL
+    static REPLICATE_PULL : FullSyncRequestable = new FullSyncRequestable("replicate_pull", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        c8oFullSync.handleReplicatePullRequest(databaseName, parameters, new C8oResponseProgressListener((progress, param)=>{
+
+        }));
+    });
+
+    //TODO REPLICATE_PUSH
+    static REPLICATE_PUSH : FullSyncRequestable = new FullSyncRequestable("replicate_push", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        c8oFullSync.handleReplicatePushRequest(databaseName, parameters, new C8oResponseProgressListener((progress, param)=>{
+
+        }));
+    });
+
+    static RESET : FullSyncRequestable = new FullSyncRequestable("reset", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        c8oFullSync.handleResetDatabaseRequest(databaseName)
+    });
+
+    static CREATE : FullSyncRequestable = new FullSyncRequestable("create", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        c8oFullSync.handleCreateDatabaseRequest(databaseName)
+    });
+
+    static DESTROY : FullSyncRequestable = new FullSyncRequestable("destroy", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        c8oFullSync.handleDestroyDatabaseRequest(databaseName)
+    });
+
+
+
+
 
     private value : string;
-    private  hanfleFullSncrequestOp: HanfleFullSyncrequestOp;
-    constructor(value: string, hanfleFullSncrequestOp: any){
+    private  hanfleFullSncrequestOp: (c8oFullSyncCbl: C8oFullSync, string: string, dictionnary: Dictionary, c8oResponseListener: C8oResponseListener)=>any;
+    constructor(value: string, hanfleFullSncrequestOp: (c8oFullSyncCbl: C8oFullSyncCbl, string: string, dictionnary: Dictionary, c8oResponseListener: C8oResponseListener)=>any){
         this.value = value;
         this.hanfleFullSncrequestOp = hanfleFullSncrequestOp;
     }
 
-    //(c8oFullSync: C8oFullSyncCbl, databaseNameName: string, parameters: Dictionary, c8oResponseListner: C8oResponseListener)
+    handleFullSyncRequest(c8oFullSync : C8oFullSync, databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : any{
+        try{
+            this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener)
+        }
+        catch(error){
+            throw error
+        }
+    }
+
+    static getFullSyncRequestable(value : string) : FullSyncRequestable{
+        let fullSyncRequestableValues : FullSyncRequestable[] = FullSyncRequestable.values()
+        for(var fullSyncRequestable of fullSyncRequestableValues){
+            if(fullSyncRequestable.value == value){
+                return fullSyncRequestable
+            }
+        }
+    }
+
+    static values() : FullSyncRequestable[]{
+        let array: [FullSyncRequestable] = [this.GET, this.DELETE, this.POST, this.ALL, this.VIEW, this.SYNC, this.REPLICATE_PULL, this.REPLICATE_PUSH, this.RESET, this.CREATE, this.DESTROY, this.PUT_ATTACHMENT, this.DELETE_ATTACHMENT]
+        return array
+
+    }
 }
 
-//DOING interface HanfleFullSyncrequestOp
-interface HanfleFullSyncrequestOp{
-    doClosure(c8oFullSyncCbl: C8oFullSyncCbl, string: string, dictionnary: Dictionary, c8oResponseListener: C8oResponseListener) : any;
-}
 
-//DOING class FullSyncPolicy
+//DONE class FullSyncPolicy
 export class FullSyncPolicy{
-    public static NONE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_NONE, function (database : any, newProperties : Dictionary) : IAction{
-        return{
-            doClosure : function () {
-                var createdDocument : any
+    public static NONE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_NONE, (database : any, newProperties : Dictionary)=>{
                 var documentId = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
                 try{
                     newProperties.remove(C8oFullSync.FULL_SYNC__ID)
@@ -1171,113 +1328,134 @@ export class FullSyncPolicy{
                         documentId = null
                     }
                     if(documentId == null){
-                        //FIXME this maight produce error
-                        createdDocument = database.put();
+                        return new Promise(function (resolve) {
+                            database.put(newProperties.toArray()).then(function (createdDocument) {
+                                resolve(createdDocument)
+                            })
+                        })
                     }
                     else{
-                        createdDocument = database.get(documentId)
+                        return new Promise(function (resolve) {
+                            database.get(documentId).then(function (doc) {
+                                newProperties.add("_id", documentId)
+                                newProperties.add('_rev', doc._rev)
+                                return database.put(newProperties.toArray());
+                            }).then(function (createdDocument) {
+                                resolve(createdDocument)
+                            })
+                        })
+
                     }
-                    createdDocument.put(newProperties);
                 }
                 catch(error){
                     throw new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error);
                 }
-                return createdDocument;
-            }
-        }
     });
-    public static CREATE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_CREATE, function (database : any, newProperties : Dictionary) : IAction{
-        return{
-            doClosure : function () {
-                var createdDocument : any;
+
+
+    public static CREATE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_CREATE, (database : any, newProperties : Dictionary)=>{
                 try{
                     newProperties.remove(C8oFullSync.FULL_SYNC__ID)
                     newProperties.remove(C8oFullSync.FULL_SYNC__REV)
-                    //FIXME this maight produce error
-                    createdDocument = database.put()
-                    createdDocument.put(newProperties)
+                    return new Promise(function (resolve) {
+                        database.put(newProperties.toArray()).then(function (createdDocument) {
+                            resolve(createdDocument)
+                        })
+                    })
                 }
                 catch (error){
                     throw new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error)
                 }
-                return createdDocument;
-            }
-        }
     });
-    public static OVERRIDE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, function (database : any, newProperties : Dictionary) : IAction{
-        return{
-            doClosure : function () {
-                var createdDocument : any;
+
+    public static OVERRIDE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, (database : any, newProperties : Dictionary)=>{
                 try{
                     let documentId : string = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
                     newProperties.remove(C8oFullSync.FULL_SYNC__ID)
                     newProperties.remove(C8oFullSync.FULL_SYNC__REV)
 
                     if(documentId == null){
-                        //FIXME this maight produce error
-                        createdDocument = database.put()
+                        return new Promise(function (resolve) {
+                            database.put(newProperties.toArray()).then(function (createdDocument) {
+                                resolve (createdDocument)
+                            })
+                        })
                     }
                     else {
-                        database.get(documentId).then(function (doc) {
-                            createdDocument = doc;
+                        return new Promise(function (resolve) {
+                            database.get(documentId).then(function (doc) {
+                                if(doc._rev == null){
+                                    //TOTEST this...
+                                    newProperties.add(C8oFullSync.FULL_SYNC__REV, doc._rev)
+                                }
+                                newProperties.add("_id", documentId)
+                                return database.put(newProperties.toArray());
+                            }).then(function (createdDocument) {
+                                resolve(createdDocument)
+                            })
                         })
-                        var currentRevision = createdDocument.rev;
-                        if(currentRevision == null){
-                            //TODO test...
-                            newProperties[C8oFullSync.FULL_SYNC__REV] = currentRevision.rev.id;
-                        }
                     }
-                    createdDocument.put(newProperties);
-
                 }
-                catch(error){
+                catch(error) {
                     throw new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error)
                 }
-                return createdDocument;
-            }
-        }
     });
 
-    public static MERGE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, function (database : any, newProperties : Dictionary) : IAction {
-        return {
-            doClosure: function () {
+    public static MERGE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, (database : any, newProperties : Dictionary)=>{
                 var createdDocument : any;
                 try {
                     let documentId: string = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
                     newProperties.remove(C8oFullSync.FULL_SYNC__ID)
                     newProperties.remove(C8oFullSync.FULL_SYNC__REV)
+
                     if (documentId == null) {
-                        //FIXME this maight produce error
-                        createdDocument = database.put()
-                    } else {
-                        database.get(documentId).then(function (doc) {
-                            createdDocument = doc;
+                        return new Promise(function (resolve) {
+                            database.put(newProperties.toArray()).then(function (createdDocument) {
+                                resolve(createdDocument)
+                            })
                         })
-                    }
-                    //TODO to test...
-                    var oldProperties = createdDocument.properties
-                    if(oldProperties!= null){
-                        //C8oFullSyncCbl
+                    } else {
+                        return new Promise(function (resolve) {
+                            database.get(documentId).then(function (doc) {
+                                let oldProperties = doc.properties
+                                if(oldProperties != null){
+                                    //TOTEST test that inout properties works
+                                    C8oFullSyncCbl.mergeProperties(newProperties, oldProperties)
+                                    database.put(newProperties.toArray()).then(function (createdDocument) {
+                                        resolve(createdDocument)
+                                    })
+                                }
+                            })
+                        })
                     }
                 }
                 catch(error){
-
+                    throw new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error);
                 }
-            }
-        }
     });
 
-    value: string
-    action : IAction
-    constructor(value: string, action : any){
+    public value: string
+    public action : (PouchDB, Dictionary) => any;
+    constructor(value: string, action : (any, Dictionary) => any){
         this.value = value
         this.action = action
     }
-}
 
-//DOING interface action
-export interface IAction{
-    doClosure(PouchDb, Dictionary) : any
+    public static values() : FullSyncPolicy[]{
+        let array : FullSyncPolicy[] = [this.NONE, this.CREATE, this.OVERRIDE, this.MERGE]
+        return array
+    }
+
+    public static getFullSyncPolicy(value:string) : FullSyncPolicy{
+        if(value != null){
+            let fullSyncPolicyValues : FullSyncPolicy[] = FullSyncPolicy.values()
+            for(var fullSyncPolicy of fullSyncPolicyValues){
+                if(fullSyncPolicy.value == value){
+                    return fullSyncPolicy as FullSyncPolicy
+                }
+            }
+        }
+    }
 }
 
 //DOING class C8oFullSyncDatabase
@@ -1311,24 +1489,24 @@ export class C8oFullSyncDatabase{
 
     }
 
-    //DOING class C8oFullSyncDatabase: function startAllReplications => implement and add c8oResponseListener parameter
-    public startAllReplications(parameters : Dictionary){
-        this.startReplication(this.pullFullSyncReplication, parameters);
-        this.startReplication(this.pushFullSyncReplication, parameters);
+    //DONE class C8oFullSyncDatabase: function startAllReplications => implement and add c8oResponseListener parameter
+    public startAllReplications(parameters : Dictionary, c8oResponseListener : C8oResponseListener){
+        this.startPullReplication(parameters, c8oResponseListener);
+        this.startPushReplication(parameters, c8oResponseListener);
     }
 
-    //DOING class C8oFullSyncDatabase: function startPullReplication => implement and add c8oResponseListener parameter
-    public startPullReplication(parameters : Dictionary){
-        this.startReplication(this.pullFullSyncReplication, parameters);
+    //DONE class C8oFullSyncDatabase: function startPullReplication => implement and add c8oResponseListener parameter
+    public startPullReplication(parameters : Dictionary, c8oResponseListener : C8oResponseListener){
+        this.startReplication(this.pullFullSyncReplication, parameters, c8oResponseListener);
     }
 
-    //DOING class C8oFullSyncDatabase: function startPushReplication => implement and add c8oResponseListener parameter
-    public startPushReplication(parameters : Dictionary){
-        this.startReplication(this.pushFullSyncReplication, parameters);
+    //DONE class C8oFullSyncDatabase: function startPushReplication => implement and add c8oResponseListener parameter
+    public startPushReplication(parameters : Dictionary, c8oResponseListener : C8oResponseListener){
+        this.startReplication(this.pushFullSyncReplication, parameters, c8oResponseListener);
     }
 
-    //TODO class C8oFullSyncDatabase: function startReplication => add c8oResponseListener parameter
-    private startReplication(fullSyncReplication: FullSyncReplication, parameters : Dictionary){
+    //DONE class C8oFullSyncDatabase: function startReplication => add c8oResponseListener parameter
+    private startReplication(fullSyncReplication: FullSyncReplication, parameters : Dictionary, c8oResponseListener : C8oResponseListener){
         var continuous : boolean = false;
         var cancel : boolean = false;
         if(parameters["continuous"] != null || parameters["continuous"] != undefined){
@@ -1351,15 +1529,17 @@ export class C8oFullSyncDatabase{
 
         //TODO class C8oFullSyncDatabase: function startReplication =>  think about adding CBLReplication...
 
-        //DOING class C8oFullSyncDatabase: implementing C8oFullSyncDatabase.startReplication
+        //TODO class C8oFullSyncDatabase: implementing C8oFullSyncDatabase.startReplication
         let progress = new C8oProgress();
         var _progress : Array<C8oProgress> = new Array<C8oProgress>();
+
+        //fullSyncReplication.changeListener = this.database.getdatabase().
         /*progress.raw = rep;
          progress.pull = rep.p*/
 
 
         //DONE class C8oFullSyncDatabase: Searching to maps listeners....
-        this.database
+        /*this.database
             .changes({
                 since:'now'
             })
@@ -1371,9 +1551,8 @@ export class C8oFullSyncDatabase{
                 console.log('complete');
             }).on('error', function (err) {
                 console.log('err');
-        });
+        });*/
 
-        //
 
 
         //DOING class C8oFullSyncDatabase: function startReplication =>  implement start & concat getReplication function
@@ -1407,10 +1586,11 @@ export class C8oFullSyncDatabase{
     }*/
 }
 
-//DOING class FullSyncReplication
+//DONE class FullSyncReplication
 export class FullSyncReplication{
-     pull : boolean
-     replication : any
+    pull : boolean
+    replication : any
+    public changeListener : Event;
 //FIXME class FullSyncReplication => can't hold CBLreplication in pouchdb
     constructor(pull: boolean){
          this.pull = pull;
@@ -1419,6 +1599,15 @@ export class FullSyncReplication{
 
 //DONE class implement class C8oResponseListener
 export interface C8oResponseListener{
+}
+
+//DONE  class C8oResponseListener
+export class C8oResponseProgressListener {//extends C8oResponseListener{
+
+    onProgressResponse : (C8oProgress, Dictionary) => void;
+    constructor(onProgressResponse: (C8oProgress, Dictionary) => void){
+        this.onProgressResponse = onProgressResponse;
+    }
 }
 
 //DONE class C8oProgress
@@ -1552,7 +1741,7 @@ export class C8oProgress{
     }
 }
 
-//DOING class C8oFullSyncTranslator
+//LATER class C8oFullSyncTranslator
 export class C8oFullSyncTranslator{
     static  FULL_SYNC_RESPONSE_KEY_COUNT: string = "count";
     static  FULL_SYNC_RESPONSE_KEY_ROWS: string = "rows";
