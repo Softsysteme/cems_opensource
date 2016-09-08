@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
-import {isUndefined} from "ionic-angular/util/util";
-import {Json} from "@angular/core/src/facade/lang";
+import {isUndefined} from "ionic-angular/util/util";;
 //DONE import PouchDB works... however by adding manually a typings lib ... cmd line not works
 var PouchDB = require('pouchdb');
-//import * as PouchDB from 'pouchdb';
 
 
 //DONE class C8oBase
@@ -149,7 +147,6 @@ export class C8outils {
 
     private extractData(res: Response) {
         let body = res.json();
-        console.log("body ::::::");
         console.log(JSON.stringify(body));
         return body;
     }
@@ -174,8 +171,9 @@ export class C8outils {
 
     public static getParameter(parameters: Dictionary, name : string, useName : boolean) : any{
         for(var p in parameters){
-            let parameterName = p[0];
+            let parameterName = p[0]
             if(name == parameterName || useName && name == this.USE_PARAMETER_IDENTIFIER + parameterName){
+                console.log(p[0].toString())
                 return p;
             }
         }
@@ -191,9 +189,12 @@ export class C8outils {
 
     public static getParameterObjectValue(parameters: Dictionary, name:string, useName: boolean = false) : any{
         let parameter = this.getParameter(parameters, name, useName)
-        if(parameter.keys() != null){
+        if(parameter != null){
+            console.log('non null')
             return parameter.value
         }
+        console.log('null')
+        return null
     }
 
     public static peekParameterStringValue(parameters: Dictionary, name : string, exceptionIfMissing : boolean) : string{
@@ -216,6 +217,11 @@ export class C8outils {
 
         }
     }*/
+    static identifyC8oCallRequest(parameters: Dictionary, responseType: string): string {
+    let JSONarrayString = JSON.stringify(parameters.toArray())
+    return responseType + JSONarrayString
+}
+
 
 }
 
@@ -305,13 +311,13 @@ export class C8o extends C8oBase {
     private _endpointProject: string;
 
     /* Used to run HTTP requests.*/
-    //internal httpInterface: C8oHttpInterface;
+     httpInterface: C8oHttpInterface;
 
     /* Allows to log locally and remotely to the Convertigo server.*/
     c8oLogger: C8oLogger;
 
     /* Allows to make fullSync calls. */
-    //c8oFullSync: C8oFullSync;
+    c8oFullSync: C8oFullSync;
 
     private data: any;
     private sequencePrefix: string;
@@ -437,7 +443,7 @@ export class C8o extends C8oBase {
 
         }).then(() => {
             if (!C8outils.isValidUrl(this.endpoint)) {
-                //return new TypeError(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
+                return new C8oException(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
             }
             var matches = C8o.RE_ENDPOINT.exec(this.endpoint.toString());
             let n = matches[0].indexOf("/projects");
@@ -452,50 +458,117 @@ export class C8o extends C8oBase {
              console.log('endpointHost :' + this.endpointHost.toString());
              console.log('endpointPort :' + this.endpointPort.toString());
              console.log('endpointProject :' + this.endpointProject.toString());*/
+            //TODO C8oSettings
+            this.httpInterface = new C8oHttpInterface(this);
             this.c8oLogger = new C8oLogger(this);
             this.c8oLogger.logMethodCall("C8o Constructor");
+            this.c8oFullSync = new C8oFullSyncCbl(this)
         });
 
     }
 
-    public call(requestable: string, parameters: Dictionary){
+    public call(requestable: string, parameters: Dictionary = null, c8oResponseListener : C8oResponseListener = null, c8oExceptionListener: C8oExceptionListener = null){
         try{
             if(requestable == null || isUndefined(requestable)){
                 throw new Error("requestable must be not null");
             }
             if(parameters == null || isUndefined(parameters)){
-
+                console.log("parameters null")
+                parameters = new Dictionary()
             }
-            else {
 
-            }
             let regex = C8o.RE_REQUESTABLE.exec(requestable);
             if(regex[0] == null || isUndefined(regex)){
-                throw new Error(this._endpoint + "is not a valid Convertigo endpoint");
+                console.log("aa")
+                throw new C8oException(C8oExceptionMessage.InvalidArgumentInvalidEndpoint(this._endpoint))
             }
             if(regex[1] != ""){
-                parameters[C8o.ENGINE_PARAMETER_PROJECT.toString()] = regex[1];
+                console.log("regex1"+ regex[1].toString())
+                console.log("regex0"+ regex[0].toString())
+
+
+                parameters.add(C8o.ENGINE_PARAMETER_PROJECT.toString(), regex[1])
+                console.log(parameters[C8o.ENGINE_PARAMETER_PROJECT])
+                console.log(parameters.length)
             }
             if(regex[2] != null){
-                parameters[C8o.ENGINE_PARAMETER_SEQUENCE.toString()] = regex[2];
+                console.log("regex2"+ regex[2].toString())
+                parameters.add(C8o.ENGINE_PARAMETER_SEQUENCE.toString(), regex[2])
             }
             else{
-                parameters[C8o.ENGINE_PARAMETER_CONNECTOR.toString()] = regex[3];
-                parameters[C8o.ENGINE_PARAMETER_TRANSACTION.toString()] = regex[4];
+                console.log("regex3"+ regex[3].toString())
+                console.log("regex4"+ regex[4].toString())
+                parameters.add(C8o.ENGINE_PARAMETER_CONNECTOR.toString(), regex[3])
+                parameters.add(C8o.ENGINE_PARAMETER_TRANSACTION.toString(), regex[4])
             }
-            return this._callJson(parameters);
+            console.log("call" + parameters.length)
+            return this._call(parameters, c8oResponseListener, c8oExceptionListener);
         }
         catch(error) {
-
+            this.handleCallException(c8oExceptionListener, parameters, error)
         }
     }
 
-    private _callJson(parameters: Dictionary) {
+    public _call(parameters: Dictionary = null, c8oResponseListener : C8oResponseListener = null, c8oExceptionListener: C8oExceptionListener = null){
+        // IMPORTANT : all c8o calls have to end here !
+        try{
+            this.c8oLogger.logMethodCall("call", parameters, c8oResponseListener, c8oExceptionListener)
+
+            if(parameters == null){
+                parameters = new Dictionary()
+            }
+
+            let task : C8oCallTask= new C8oCallTask(this, parameters, c8oResponseListener, c8oExceptionListener)
+            task.run()
+        }
+        catch(error){
+            this.handleCallException(c8oExceptionListener, parameters, error)
+        }
+    }
+
+    public callJsonDict(requestable: string, parameters: Dictionary) : C8oPromise<JSON>{
+        var promise : C8oPromise<JSON> = new C8oPromise<JSON>(this)
+        this.call(requestable, parameters, new C8oResponseJsonListener((response :JSON,  requestParameters: Dictionary)=>{
+            if(response == null && requestParameters[C8o.ENGINE_PARAMETER_PROGRESS]){
+                promise.onProgress(requestParameters[C8o.ENGINE_PARAMETER_PROGRESS])
+            }
+            else{
+                promise.onResponse(response, requestParameters)
+            }
+        }),
+        new C8oExceptionListener((exception :C8oException, data: Dictionary)=>{
+            promise.onFailure(exception, data)
+        }))
+        return promise
+
+
+        /*
+         var promise : C8oPromise<JSON> = new C8oPromise<JSON>(this)
+         this.call(requestable, parameters, new C8oResponseJsonListener((response :JSON,  requestParameters: Dictionary)=>{
+         if(response == null && requestParameters[C8o.ENGINE_PARAMETER_PROGRESS]){
+         promise.onProgress(requestParameters[C8o.ENGINE_PARAMETER_PROGRESS])
+         }
+         else{
+         promise.onResponse(response, requestParameters)
+         }
+         }),
+         new C8oExceptionListener((exception :C8oException, data: Dictionary)=>{
+         promise.onFailure(exception, data)
+         }))
+         return promise
+
+         */
+    }
+
+    public callJson(requestable: string, ...parameters: any[]) : C8oPromise<JSON>{
+        return this.callJsonDict(requestable, C8o.toParameters(parameters))
+    }
+
+    private AcallJson(parameters: Dictionary) {
         this.c8oLogger.logMethodCall("CallJSON", parameters);
         this.data = null;
         if (this.data != null) {
             // already loaded data
-            console.log("la");
             return Promise.resolve(this.data);
         }
         let params:URLSearchParams = new URLSearchParams();
@@ -521,35 +594,496 @@ export class C8o extends C8oBase {
 
     }
 
-    public callJson(requestable: string, ...parameters: any[]) {
-        return this.call(requestable.toString(), C8o.toParameters(parameters));
+    public _callJson(requestable: string, ...parameters: any[]) {
+        //return this.call(requestable.toString(), C8o.toParameters(parameters));
     }
 
-    public static toParameters(parameters: any): Dictionary {
+    /*public static toParameters2(parameters: any): Dictionary {
+        console.log("toParameters=>parameters" + parameters.length)
         var newParameters: Dictionary = new Dictionary();
         var alreadyDone = false;
         if (parameters != undefined) {
             if (0 != parameters.length % 2) {
-                if (parameters.length == 1 && parameters.constructor === Array) {
-                    alreadyDone = true;
-                    for(var item in parameters[0]){
-                        newParameters[item] = parameters[0][item];
-                    }
-                }
-                else{
-                    throw new Error("Invalid parameter Exception");
+                throw new C8oException("TODO")
+            }
+            if (parameters.length == 1 && parameters.constructor === Array) {
+                alreadyDone = true;
+                for(var item in parameters[0]){
+                    newParameters[item] = parameters[0][item];
                 }
             }
+            else{
+                throw new Error("Invalid parameter Exception");
+            }
+
             if(!alreadyDone){
                 for (var i = 0; i < parameters.length; i += 2) {
                     newParameters[parameters[i]] = parameters[i + 1];
                 }
             }
         }
+        console.log("toParameters" + newParameters.length)
         return newParameters;
+
+    }*/
+
+    public static toParameters(parameters: any) : Dictionary{
+        if (0 != parameters.length % 2) {
+            throw new C8oException("TODO")
+        }
+        var newParameters : Dictionary = new Dictionary()
+
+        for(var i = 0; i<parameters.length; i+=2) {
+            newParameters.add(parameters[i], parameters[i + 1])
+        }
+        return newParameters
+    }
+
+    handleCallException(c8oExceptionListener : C8oExceptionListener, requestParameters : Dictionary, exception : C8oException){
+        this.c8oLogger.warn("Handle a call exception", exception)
+    }
+
+}
+//DOING C8oOnProgress
+export interface C8oOnProgress{
+    run(c8oProgress : C8oProgress)
+}
+
+//DOING C8oOnResponse
+export interface C8oOnResponse<T>{
+    run(response : T, parameters: Dictionary) : C8oPromise<T>
+}
+
+//DOING c8oOnFail
+export interface C8oOnFail{
+    run(error: Error, parameters: Dictionary)
+}
+
+//DOING C8oPromiseSync
+export interface C8oPromiseSync<T>{
+    sync() : T
+}
+
+//DOING interface C8oPromiseFailSync<T>
+export interface C8oPromiseFailSync<T> extends C8oPromiseSync<T>{
+    fail(c8oOnFail: C8oOnFail)
+}
+
+
+//DOING class C8oPromise
+export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSync{
+    private c8o : C8o
+    private c8oResponse : (response: T, parameters: Dictionary)=>void//C8oOnResponse<T>
+    private c8oProgress : C8oOnProgress
+    private c8oFail : C8oOnFail
+    private nextPromise : C8oPromise<T>
+
+    private lastResponse : T
+    private lastFailure : Error
+    private lastParameters : Dictionary
+
+    constructor(c8o:C8o){
+        // , closure:()=>void super(closure)
+        this.c8o = c8o
+    }
+
+    then(c8oOnResponse : (response: T, parameters: Dictionary)=>void){
+        if(this.nextPromise != null){
+            return this.nextPromise.then(c8oOnResponse)
+        }
+        else{
+            this.c8oResponse = c8oOnResponse
+            this.nextPromise = new C8oPromise<T>(this.c8o)
+            if(this.lastFailure != null){
+                this.nextPromise.lastFailure = this.lastFailure
+                this.nextPromise.lastParameters = this.lastParameters
+            }
+            if(this.lastResponse != null){
+                //TODO
+            }
+            return this.nextPromise
+        }
+    }
+
+
+
+    /*
+     then(c8oOnResponse : C8oOnResponse<T>){
+     if(this.nextPromise != null){
+     return this.nextPromise.then(c8oOnResponse)
+     }
+     else{
+     this.c8oResponse = c8oOnResponse
+     this.nextPromise = new C8oPromise<T>(this.c8o)
+     if(this.lastFailure != null){
+     this.nextPromise.lastFailure = this.lastFailure
+     this.nextPromise.lastParameters = this.lastParameters
+     }
+     if(this.lastResponse != null){
+     //TODO
+     }
+     return this.nextPromise
+     }
+     }
+     */
+
+    private _onResponse(){
+        try{
+            if(this.c8oResponse != null){
+                var promise : C8oPromise<T>[] = new C8oPromise[1]
+                promise.push(this.c8oResponse[0](this.lastResponse, this.lastParameters))// = this.c8oResponse.run(this.lastResponse, this.lastParameters)
+                if(promise[0] != null){
+                    if(this.nextPromise != null){
+                        var lastPromise : C8oPromise<T> = promise[0]
+
+                        while(lastPromise.nextPromise != null){
+                            lastPromise = lastPromise.nextPromise
+                        }
+                        lastPromise.nextPromise = this.nextPromise
+                    }
+                    this.nextPromise = promise[0]
+                }
+                else if(this.nextPromise != null){
+                    this.nextPromise.onResponse(this.lastResponse, this.lastParameters)
+                }
+            }
+            else{
+                //Response received and no handler
+            }
+        }
+        catch(error){
+            this.onFailure(error, this.lastParameters)
+        }
+    }
+    onResponse(response : T, parameters : Dictionary){
+        if(this.lastResponse != null){
+            if(this.nextPromise != null){
+                this.nextPromise.onResponse(response, parameters)
+            }
+        }
+        else {
+            this.lastResponse = response
+            this.lastParameters = parameters
+            this._onResponse()
+        }
+    }
+
+    onProgress(progress : C8oProgress){
+        if(this.c8oProgress != null){
+            this.c8oProgress.run(progress)
+        }
+        else if(this.nextPromise != null){
+            this.nextPromise.onProgress(progress)
+        }
+    }
+
+    onFailure(error: Error, parameters: Dictionary){
+        this.lastFailure = error
+        this.lastParameters = parameters
+
+        if(this.c8oFail != null){
+            this.c8oFail.run(this.lastFailure, parameters)
+        }
+        if(this.nextPromise != null){
+            this.nextPromise.onFailure(this.lastFailure, parameters)
+        }
+    }
+
+
+
+}
+
+//DONE implenting C8oHttpInterface
+export class C8oHttpInterface{
+    c8o : C8o
+    //cookieContainer: C8oCookieStorage
+    timeout: number
+    firstCall : boolean = true
+    fisrtCall2 : boolean = false
+    queue : Queue<Dictionary> = new Queue<Dictionary>()
+    p1 : Promise<Object>
+
+    constructor(c8o: C8o){
+        this.c8o = c8o
+        this.timeout = this.c8o.timeout
+        //TODO Cookie Storage
 
     }
 
+    handleRequest(url: string, parameters : Dictionary) : Promise<any>{
+         let params:URLSearchParams = new URLSearchParams();
+         if (parameters != undefined && JSON.stringify(parameters) != "{}") {
+             for (var item in parameters) {
+                 params.set(item, parameters[item].valueOf());
+             }
+         }
+         var headers = new Headers();
+         headers.append('Content-Type', 'application/x-www-form-urlencoded');
+         if(this.firstCall) {
+             return this.p1 = new Promise((resolve, reject)=> {
+                 this.firstCall = false
+                 this.c8o.httpPublic.post(url, params.toString(),{
+                     headers : headers
+                 }).toPromise().then((result)=> {
+                     resolve(this.extractData(result))
+                 }).catch(function (error) {
+                     console.log("handleRequest 1")
+                     reject(error)
+                 })
+             })
+         }
+         else {
+             return Promise.all([this.p1]).then(()=> {
+                 return this.c8o.httpPublic.post(url, params.toString(),{
+                     headers : headers
+                 }).toPromise().then((result)=> {
+                     Promise.resolve(this.extractData(result))
+                 }).catch(function (error) {
+                     console.log("handleRequest 2")
+                     Promise.reject(error)
+                 })
+             })
+         }
+    }
+
+    private extractData(res: Response) {
+        let body = res.json();
+        return body.data || { };
+    }
+
+    handleC8oCallRequest(url: string, parameters: Dictionary) : Promise<any>{
+        this.c8o.c8oLogger.logC8oCall(url, parameters)
+        return this.handleRequest(url, parameters)
+    }
+
+
+
+}
+
+//DONE class C8oCalltask
+class C8oCallTask{
+    private c8o : C8o
+    private parameters : Dictionary
+    private c8oResponseListener : C8oResponseListener
+    private c8oExceptionListener : C8oExceptionListener
+    private c8oCallUrl : string
+
+    constructor(c8o : C8o, parameters : Dictionary, c8oResponseListener : C8oResponseListener, c8oExceptionListener : C8oExceptionListener){
+        this.c8o = c8o;
+        this.parameters = parameters;
+        console.log("here" + this.parameters.length)
+        this.c8oResponseListener = c8oResponseListener;
+        this.c8oExceptionListener = c8oExceptionListener;
+
+        c8o.log.logMethodCall("C8oCallTask", parameters, c8oResponseListener, c8oExceptionListener)
+    }
+
+    public run(){
+        try{
+            this.handleRequest().then((response)=>{
+                this.handleResponse(response)
+            })
+        }
+        catch(error){
+            console.log(error)
+            this.c8oExceptionListener.onException(error, this.parameters)
+        }
+    }
+
+    handleRequest() : Promise<any>{
+        return new Promise((resolve, reject)=>{
+            try{
+                let isFullSyncRequest : boolean = C8oFullSync.isFullSyncRequest(this.parameters)
+                if(isFullSyncRequest){
+                    this.c8o.log._debug("Is FullSync request");
+                    this.c8o.c8oFullSync.handleFullSyncRequest(this.parameters, this.c8oResponseListener
+                    ).then(
+                        (result)=>{
+                            resolve(result)
+                        }).catch(
+                        (error)=>{
+                            if(error instanceof  C8oException){
+                                console.log("handleRequest 3")
+                                reject(error);
+                            }
+                            else{
+                                console.log("handleRequest 4")
+                                reject(new C8oException(C8oExceptionMessage.handleFullSyncRequest(), error));
+                            }
+                        });
+                }
+                else {
+                    let responseType: string = ""
+                    if (this.c8oResponseListener == null || this.c8oResponseListener instanceof C8oResponseXmlListener) {
+                        responseType = C8o.RESPONSE_TYPE_XML;
+                    }
+                    else if (this.c8oResponseListener instanceof C8oResponseJsonListener) {
+                        responseType = C8o.RESPONSE_TYPE_JSON;
+                    } else {
+                        // Return an Exception because the C8oListener used is unknown
+                        console.log("handleRequest 5")
+                        reject(new C8oException(C8oExceptionMessage.wrongListener(this.c8oResponseListener)));
+                    }
+                    var c8oCallRequestIdentifier : string = null
+                    let a = C8outils.getParameterObjectValue(this.parameters, C8oLocalCache.param, false)
+                    console.log(a)
+                    let localCache : C8oLocalCache = (C8outils.getParameterObjectValue(this.parameters, C8oLocalCache.param, false) as C8oLocalCache)
+                    var localCacheEnabled: boolean = false
+
+                    if(localCacheEnabled != null) {
+                        if(localCacheEnabled != undefined) {
+                            this.parameters.remove(C8oLocalCache.param)
+                            localCacheEnabled = localCache.enabled
+                            if (localCacheEnabled) {
+                                try {
+                                    c8oCallRequestIdentifier = C8outils.identifyC8oCallRequest(this.parameters, responseType)
+                                }
+                                catch (error) {
+                                    console.log("handleRequest 6")
+                                    reject(new C8oException(C8oExceptionMessage.serializeC8oCallRequest(), error))
+                                }
+                                if (localCache.priority.isAviable(this.c8o)) {
+                                    (this.c8o.c8oFullSync as C8oFullSyncCbl).getResponseFromLocalCache(c8oCallRequestIdentifier
+                                    ).then(
+                                        (result)=> {
+                                            let localCacheResponse: C8oLocalCacheResponse = result
+                                            if (!localCacheResponse.isExpired()) {
+                                                if (responseType == C8o.RESPONSE_TYPE_XML) {
+                                                    resolve(C8oTranslator.stringToXml(localCacheResponse.getResponse()))
+                                                }
+                                                else if (responseType == C8o.RESPONSE_TYPE_JSON) {
+                                                    resolve(C8oTranslator.stringToJSON(localCacheResponse.getResponse()))
+                                                }
+
+                                            }
+                                        }).catch(
+                                        (error)=> {
+
+                                        })
+                                }
+                            }
+                        }
+                    }
+
+                    // Get Response
+                    this.parameters[C8o.ENGINE_PARAMETER_DEVICE_UUID] = this.c8o.deviceUUID
+                    this.c8oCallUrl = this.c8o.endpoint +"/." + responseType
+                    this.c8o.httpInterface.handleRequest(this.c8oCallUrl, this.parameters
+                    ).catch(
+                        (error)=>{
+                            if(localCacheEnabled){
+                                (this.c8o.c8oFullSync as C8oFullSyncCbl).getResponseFromLocalCache(c8oCallRequestIdentifier
+                                ).then(
+                                    (localCacheResponse)=>{
+                                        try{
+                                            if (!localCacheResponse.isExpired()) {
+                                                if (responseType == C8o.RESPONSE_TYPE_XML) {
+                                                    resolve(C8oTranslator.stringToXml(localCacheResponse.getResponse()))
+                                                } else if (responseType == C8o.RESPONSE_TYPE_JSON) {
+                                                    resolve(C8oTranslator.stringToJSON(localCacheResponse.getResponse()))
+                                                }
+                                            }
+                                        }
+                                        catch(error){}
+                                    })
+                            }
+                        }).then(
+                        (result)=>{
+                            var response : any
+                            var responseString: string
+                            if(this.c8oResponseListener instanceof C8oResponseXmlListener){
+                                try{
+                                    response = C8oTranslator.jsonToxml(result, "")
+                                    if(localCacheEnabled){
+                                        responseString = response.toString()
+                                    }
+                                }
+                                catch(error){
+                                    console.log("handleRequest 7")
+                                    reject(new C8oException(C8oExceptionMessage.inputStreamToXML(), error))
+                                }
+                            }
+                            else if(this.c8oResponseListener instanceof C8oResponseJsonListener){
+                                try{
+                                    try{
+                                        responseString = response.toString()
+                                    }
+                                    catch(error){
+                                        console.log("handleRequest 8")
+                                        reject(new C8oException(C8oExceptionMessage.parseInputStreamToString(), error))
+                                    }
+
+                                    response = result
+                                }
+                                catch(error){
+                                    console.log("handleRequest 9")
+                                    reject(error)
+                                }
+                            }
+                            else{
+                                console.log("handleRequest 10")
+                                reject(new C8oException(C8oExceptionMessage.wrongListener(this.c8oResponseListener)))
+                            }
+
+                            if(localCacheEnabled){
+                                try{
+                                    let expirationDate : number = -1
+                                    if(localCache.ttl > 0){
+                                        expirationDate = localCache.ttl + (new Date).getTime()
+                                    }
+                                    let localCacheResponse : C8oLocalCacheResponse = new C8oLocalCacheResponse(responseString, responseType, expirationDate);
+                                    let p1 = (this.c8o.c8oFullSync as C8oFullSyncCbl).saveResponseToLocalCache(c8oCallRequestIdentifier, localCacheResponse)
+                                    Promise.all([p1]).then(()=>{
+                                        resolve(response)
+                                    })
+                                }
+                                catch(error){
+                                    console.log("handleRequest 11")
+                                    reject(new C8oException(C8oExceptionMessage.saveResponseToLocalCache()))
+                                }
+                            }
+                            resolve(response)
+                        })
+                }
+            }
+            catch(error){
+                console.log("mannualy" + error.toString())
+            }
+
+        })
+
+    }
+
+    private handleResponse(result: any){
+        try{
+            if (typeof result == 'void') {
+                return;
+            }
+            if (this.c8oResponseListener == null) {
+                return;
+            }
+
+            if (result instanceof Document){
+                this.c8o.log.logC8oCallXMLResponse(result, this.c8oCallUrl, this.parameters);
+                (this.c8oResponseListener as C8oResponseXmlListener).onXmlResponseresponse(result, this.parameters)
+            }
+            else if (typeof result == 'JSON') {
+                this.c8o.log.logC8oCallJSONResponse(result, this.c8oCallUrl, this.parameters);
+            }
+            else if(result instanceof PouchDB){
+                //TODO
+            }
+            else if(result instanceof Error){
+                this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, result)
+            }
+            else{
+                this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, new C8oException(C8oExceptionMessage.wrongResult(result)))
+            }
+        }
+        catch(error){
+            this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, error)
+        }
+    }
 }
 
 //DONE class C8oFullSync
@@ -574,7 +1108,7 @@ export class C8oFullSync {
     }
 
     //DONE class C8oFullSync: function handleFullSyncRequest
-    public handleFullSyncRequest(parameters : Dictionary, listener : C8oResponseListener) : any{
+    public handleFullSyncRequest(parameters : Dictionary, listener : C8oResponseListener) : Promise<any>{
         let projectParameterValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
 
         if(!projectParameterValue.startsWith(C8oFullSync.FULL_SYNC_PROJECT)){
@@ -596,24 +1130,24 @@ export class C8oFullSync {
         }
 
         var response : any
-        try{
-            response = fullSyncRequestable.handleFullSyncRequest(this, databaseName, parameters, listener)
-        }
-        catch(error){
-            if(typeof error == 'C8oException'){
-                throw error
-            }
-            else{
-                throw new C8oException(C8oExceptionMessage.FullSyncRequestFail(), error)
-            }
-        }
-
-        if(response == null){
-            throw new C8oException(C8oExceptionMessage.couchNullResult())
-        }
-
-        response = this.handleFullSyncResponse(response, listener)
-        return response
+        return new Promise((resolve, reject)=>{
+            fullSyncRequestable.handleFullSyncRequest(this, databaseName, parameters, listener).then((result)=>{
+                if(response == null){
+                    console.log("handleRequest 12")
+                    reject(new C8oException(C8oExceptionMessage.couchNullResult()))
+                }
+                resolve(this.handleFullSyncResponse(response, listener))
+            }).catch((error)=>{
+                if(typeof error == 'C8oException'){
+                    console.log("handleRequest 13")
+                    reject(error)
+                }
+                else{
+                    console.log("handleRequest 14")
+                    reject(new C8oException(C8oExceptionMessage.FullSyncRequestFail(), error))
+                }
+            })
+        })
     }
 
     //DONE class C8oFullSync: function handleFullSyncResponse
@@ -668,7 +1202,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleGetDocumentRequest
-    handleGetDocumentRequest(fullSyncDatabaseName: string, docid: string, paramaeters: Dictionary) : any{
+    handleGetDocumentRequest(fullSyncDatabaseName: string, docid: string, paramaeters: Dictionary) : Promise<any>{
         var fullSyncDatabase : C8oFullSyncDatabase = null
         var dictDoc : Dictionary = new Dictionary();
 
@@ -709,7 +1243,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
         })
     }
     //DONE class C8oFullSyncCbl: function handleDeleteDocumentRequest
-    handleDeleteDocumentRequest(DatabaseName : string, docid : string, parameters : Dictionary) : any{
+    handleDeleteDocumentRequest(DatabaseName : string, docid : string, parameters : Dictionary) : Promise<any>{
         var fullSyncDatabase : C8oFullSyncDatabase = null;
         var document : any
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(DatabaseName);
@@ -780,7 +1314,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handlePutAttachmentRequest
-    handlePutAttachmentRequest(databaseName : string, docid : string, attachmentName : string, attachmentType : string, attachmentContent : MSStream) : any {
+    handlePutAttachmentRequest(databaseName : string, docid : string, attachmentName : string, attachmentType : string, attachmentContent : MSStream) : Promise<any> {
         var document : any = null
         var newRev : any = null
         let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
@@ -808,7 +1342,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleDeleteAttachmentRequest
-    handleDeleteAttachmentRequest(databaseName: string, docid: string, attachmentName: string) : any{
+    handleDeleteAttachmentRequest(databaseName: string, docid: string, attachmentName: string) : Promise<any>{
         var document : any = null
         var newRev : any = null
         let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
@@ -846,11 +1380,10 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleGetViewRequest
-    handleGetViewRequest(databaseName : string, ddocName : string, viewName: string, parameters: Dictionary){
+    handleGetViewRequest(databaseName : string, ddocName : string, viewName: string, parameters: Dictionary):Promise<any>{
         var fullSyncDatabase = null
         let view = null
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
-        console.log("la")
 
         return new Promise(function (resolve) {
             fullSyncDatabase.query(ddocName + "/"  + viewName, parameters.toArray())
@@ -974,7 +1507,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCBL->getDocucmentFromDatabase
-    getDocucmentFromDatabase(c8o: C8o, databaseName: string, documentId: string) : any{
+    getDocucmentFromDatabase(c8o: C8o, databaseName: string, documentId: string) : Promise<any>{
         var c8oFullSyncDatabase: C8oFullSyncDatabase
         try {
                 c8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(databaseName)
@@ -1010,7 +1543,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCBL->getResponseFromLocalCache
-    getResponseFromLocalCache(c8oCallRequestIdentifier: string): any {
+    getResponseFromLocalCache(c8oCallRequestIdentifier: string): Promise<any> {
 
         let fullSyncDatabase = this.getOrCreateFullSyncDatabase(C8o.LOCAL_CACHE_DATABASE_NAME)
         var localCacheDocument = null
@@ -1065,23 +1598,28 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCBL->saveResponseToLocalCache
-    saveResponseToLocalCache(c8oCallRequestIdentifier: string, localCacheResponse: C8oLocalCacheResponse){
+    saveResponseToLocalCache(c8oCallRequestIdentifier: string, localCacheResponse: C8oLocalCacheResponse) : Promise<any>{
         let fullSyncDatabase : C8oFullSyncDatabase = this.getOrCreateFullSyncDatabase(C8o.LOCAL_CACHE_DATABASE_NAME)
-        fullSyncDatabase.getdatabase().get(c8oCallRequestIdentifier).then(function (localCacheDocument) {
-            var properties = new Dictionary();
-            properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE, localCacheResponse.getResponse())
-            properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE, localCacheResponse.getResponseType())
-            if(localCacheResponse.getExpirationDate() > 0){
-                properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE, localCacheResponse.getExpirationDate())
-            }
-            let currentRevision = localCacheDocument._rev
-            if(currentRevision != null){
-                properties.add(C8oFullSyncCbl.FULL_SYNC__REV, currentRevision)
-            }
-            //TOTEST this
-            fullSyncDatabase.getdatabase().put(properties.toArray())
+        return new Promise((resolve, reject)=>{
+            fullSyncDatabase.getdatabase().get(c8oCallRequestIdentifier).then(function (localCacheDocument) {
+                var properties = new Dictionary();
+                properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE, localCacheResponse.getResponse())
+                properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_RESPONSE_TYPE, localCacheResponse.getResponseType())
+                if(localCacheResponse.getExpirationDate() > 0){
+                    properties.add(C8o.LOCAL_CACHE_DOCUMENT_KEY_EXPIRATION_DATE, localCacheResponse.getExpirationDate())
+                }
+                let currentRevision = localCacheDocument._rev
+                if(currentRevision != null){
+                    properties.add(C8oFullSyncCbl.FULL_SYNC__REV, currentRevision)
+                }
+                //TOTEST this
+                fullSyncDatabase.getdatabase().put(properties.toArray()).then((result)=>{
+                    resolve(result)
+                })
 
+            })
         })
+
     }
 
     //DONE class C8oFullSyncCBL->isPlainObject
@@ -1094,6 +1632,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
         }
     }
 }
+
 //DONE class C8oLocalCacheResponse
 class C8oLocalCacheResponse{
     private response : string
@@ -1164,6 +1703,7 @@ export class FullSyncDeleteDocumentParameter {
         this.name = name
     }
 }
+
 //DONE class FullSyncAttachmentParameter
 export class FullSyncAttachmentParameter{
     public static DOCID : FullSyncAttachmentParameter = new FullSyncAttachmentParameter("docid")
@@ -1292,9 +1832,9 @@ export class FullSyncRequestable{
         this.hanfleFullSncrequestOp = hanfleFullSncrequestOp;
     }
 
-    handleFullSyncRequest(c8oFullSync : C8oFullSync, databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : any{
+    handleFullSyncRequest(c8oFullSync : C8oFullSync, databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : Promise<any>{
         try{
-            this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener)
+            return this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener)
         }
         catch(error){
             throw error
@@ -1316,7 +1856,6 @@ export class FullSyncRequestable{
 
     }
 }
-
 
 //DONE class FullSyncPolicy
 export class FullSyncPolicy{
@@ -1597,16 +2136,44 @@ export class FullSyncReplication{
     }
 }
 
+
 //DONE class implement class C8oResponseListener
 export interface C8oResponseListener{
 }
 
+
+//DONE class C8oResponseJsonListener
+class C8oResponseJsonListener implements C8oResponseListener{
+    public onJsonResponse: (JSON, Dictionary)=>void
+    constructor(onJsonResponse:(JSON, Dictionary)=>void){
+        this.onJsonResponse = onJsonResponse
+    }
+}
+
+//DONE interface implement C8oResponseXmlListener
+class C8oResponseXmlListener implements C8oResponseListener {
+    onXmlResponseresponse: (any, parameters: Dictionary) => void
+
+    constructor(onXmlResponseresponse: (any, parameters: Dictionary) => void) {
+        this.onXmlResponseresponse = onXmlResponseresponse
+    }
+}
+
 //DONE  class C8oResponseListener
-export class C8oResponseProgressListener {//extends C8oResponseListener{
+export class C8oResponseProgressListener implements C8oResponseListener{
 
     onProgressResponse : (C8oProgress, Dictionary) => void;
     constructor(onProgressResponse: (C8oProgress, Dictionary) => void){
         this.onProgressResponse = onProgressResponse;
+    }
+}
+
+//DONE class C8oExceptionListener
+export class C8oExceptionListener{
+    public onException : (C8oException, Dictionary)=> void
+
+    constructor(onException : (C8oException, Dictionary)=>void){
+        this.onException = onException
     }
 }
 
@@ -1758,6 +2325,63 @@ export class C8oFullSyncTranslator{
     static  XML_KEY_COUCHDB_OUTPUT: string = "couchdb_output";
 }
 
+//DOING class C8oTranslator
+export class C8oTranslator{
+    private static XML_KEY_ITEM: string = "item";
+    private static XML_KEY_OBJECT: string = "object";
+    private static XML_KEY__ATTACHMENTS: string = "_attachments";
+    private static XML_KEY_ATTACHMENT: string = "attachment";
+    private static XML_KEY_NAME: string = "name";
+
+    static stringToXml(xmlString: string) : XMLDocument{
+        let parser = new DOMParser()
+        return parser.parseFromString(xmlString, "text/xml")
+    }
+
+    static stringToJSON(jsonValueString) : JSON{
+        return JSON.parse(jsonValueString)
+    }
+
+    static jsonToxml(o, tab) {
+    var toXml = function(v, name, ind) {
+        var xml = "";
+        if (v instanceof Array) {
+            for (var i=0, n=v.length; i<n; i++)
+                xml += ind + toXml(v[i], name, ind+"\t") + "\n";
+        }
+        else if (typeof(v) == "object") {
+            var hasChild = false;
+            xml += ind + "<" + name;
+            for (var m in v) {
+                if (m.charAt(0) == "@")
+                    xml += " " + m.substr(1) + "=\"" + v[m].toString() + "\"";
+                else
+                    hasChild = true;
+            }
+            xml += hasChild ? ">" : "/>";
+            if (hasChild) {
+                for (var m in v) {
+                    if (m == "#text")
+                        xml += v[m];
+                    else if (m == "#cdata")
+                        xml += "<![CDATA[" + v[m] + "]]>";
+                    else if (m.charAt(0) != "@")
+                        xml += toXml(v[m], m, ind+"\t");
+                }
+                xml += (xml.charAt(xml.length-1)=="\n"?ind:"") + "</" + name + ">";
+            }
+        }
+        else {
+            xml += ind + "<" + name + ">" + v.toString() +  "</" + name + ">";
+        }
+        return xml;
+    }, xml="";
+    for (var m in o)
+        xml += toXml(o[m], m, "");
+    return tab ? xml.replace(/\t/g, tab) : xml.replace(/\t|\n/g, "");
+}
+}
+
 //DONE class FullSyncResponse
 export class FullSyncResponse{
     private static fullSyncResponsesInstance: FullSyncResponse = new FullSyncResponse();
@@ -1823,6 +2447,10 @@ export class C8oExceptionMessage {
             errorMessage += ", " + details
         }
         return errorMessage
+    }
+
+    static wrongListener(c8oListener : C8oResponseListener) : string{
+        return "The C8oListener class " + C8outils.getObjectClassName(c8oListener) + " is not handled";
     }
 
     static  missingValue(valueName: string) : string {
@@ -2405,6 +3033,41 @@ export class C8oUnavailableLocalCacheException extends Error{
     }
 }
 
+//DONE class C8oLocalCache
+export class C8oLocalCache{
+    static  param : string = "__localCache"
+    priority : Priority
+    ttl: number
+    enabled : boolean
+
+    constructor(priority: Priority, ttl: number = -1, enabled: boolean = true){
+        if(priority == null){
+            throw new C8oException("Local Cache priority cannot be null")
+        }
+        this.priority = priority
+        this.ttl = ttl
+        this.enabled = enabled
+        console.log("cet enable est = a " + this.enabled.toString())
+    }
+
+}
+
+//DONE class Priority
+export class  Priority{
+    isAviable : (c8o:C8o)=>boolean
+    public static  SERVER : Priority = new Priority((c8o)=>{
+            return true
+        })
+
+    public static  LOCAL : Priority = new Priority((c8o)=>{
+        return true
+    })
+
+    constructor(isAviable : (c8o: C8o)=>boolean){
+        this.isAviable = isAviable
+    }
+}
+
 //DONE class C8oLogger
 @Injectable()
 export class C8oLogger {
@@ -2557,7 +3220,7 @@ export class C8oLogger {
         this._log(C8oLogLevel.INFO, message, exceptions);
     }
 
-    private _debug(message: string, exceptions: Error = null) {
+    _debug(message: string, exceptions: Error = null) {
         this._log(C8oLogLevel.DEBUG, message, exceptions);
     }
 
@@ -2624,22 +3287,31 @@ export class C8oLogger {
     }
 
 
-    logMethodCall(methodName: string, parameters: any = null) {
+    logMethodCall(methodName: string, ...parameters: any[]) {
         if (this.c8o.logC8o && this.isDebug) {
             var methodCallLogMessage: string = "Method call : " + methodName
             if(parameters == null){
                 this._debug(methodCallLogMessage);
             }
-            else{
-                if (this.isTrace && parameters.length > 0) {
-                    methodCallLogMessage += "\n" + String(parameters)
-                    this._trace(methodCallLogMessage);
 
-                } else {
-                    this._debug(methodCallLogMessage);
+            if(this.isTrace){
+                methodCallLogMessage += ", Parameters : ["
+                for(var param of parameters){
+                    let paramStr = "null"
+                    if(parameters != null){
+                        paramStr = param.toString()
+                    }
+                    methodCallLogMessage += "\n" + paramStr + ", "
                 }
-            }
 
+                //Remove the last character
+                methodCallLogMessage = methodCallLogMessage.substring(0, methodCallLogMessage.length -2) + "]"
+
+                this._trace(methodCallLogMessage)
+            }
+            else{
+                this._debug(methodCallLogMessage)
+            }
         }
     }
 
@@ -2659,6 +3331,10 @@ export class C8oLogger {
     logC8oCallJSONResponse(response: JSON, url: string, parameters: any) {
         this.logC8oCallResponse(JSON.stringify(response), "JSON", url, parameters);
     }
+
+    logC8oCallXMLResponse(response: Document, url: string, parameters : Dictionary) {
+        this.logC8oCallResponse(response.toString(), "XML", url, parameters);
+}
 
     logC8oCallResponse(responseStr: string, responseType: string, url: string, parameters: any) {
         if (this.c8o.logC8o && this.isTrace) {
@@ -2712,8 +3388,6 @@ export class C8oLogLevel {
     }
 }
 
-
-
 //DONE class Queue
 class Queue<T> {
     _store: T[] = [];
@@ -2742,19 +3416,24 @@ export class Dictionary {
 
     _keys: string[] = new Array<string>();
     _values: any[] = new Array<any>();
+    //length : number = this._keys.length
 
-    /*constructor(init: { key: string; value: any; }[]) {
-        for (var x = 0; x < init.length; x++) {
-            this[init[x].key] = init[x].value;
-            this._keys.push(init[x].key);
-            this._values.push(init[x].value);
+
+    constructor(init: { key: string; value: any; }[] = null) {
+        if(init == null){}
+        else{
+            for (var x = 0; x < init.length; x++) {
+                this[init[x].key] = init[x].value;
+                this._keys.push(init[x].key);
+                this._values.push(init[x].value);
+            }
         }
-    }*/
-
-    constructor(){
 
     }
 
+    get length(): number{
+        return this._keys.length
+    }
     toArray(): Object{
         let value = {}
         for(var j=0;j<this._keys.length; j++){
