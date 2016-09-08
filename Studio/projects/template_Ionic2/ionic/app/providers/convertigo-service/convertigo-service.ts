@@ -147,7 +147,6 @@ export class C8outils {
 
     private extractData(res: Response) {
         let body = res.json();
-        console.log(JSON.stringify(body));
         return body;
     }
     public static isValidUrl(url: string): boolean {
@@ -170,31 +169,31 @@ export class C8outils {
     }
 
     public static getParameter(parameters: Dictionary, name : string, useName : boolean) : any{
-        for(var p in parameters){
-            let parameterName = p[0]
-            if(name == parameterName || useName && name == this.USE_PARAMETER_IDENTIFIER + parameterName){
-                console.log(p[0].toString())
-                return p;
+        for(var _i=0; _i < parameters.length; _i++){
+            let parameterName = parameters["_keys"][_i]
+            if((name == parameterName) || (useName && name == this.USE_PARAMETER_IDENTIFIER + parameterName)){
+                return [parameters["_keys"][_i],  parameters["_values"][_i]]
             }
         }
         return null;
     }
     public static getParameterStringValue(parameters: Dictionary, name : string, useName : boolean) : string{
-        let parameter : Dictionary = C8outils.getParameter(parameters, name, useName);
+        let parameter = C8outils.getParameter(parameters, name, useName);
         if(parameter != null){
-            return "" + parameter.toString();
+            return "" + parameter[1]
         }
-        return null;
+        return null
     }
 
     public static getParameterObjectValue(parameters: Dictionary, name:string, useName: boolean = false) : any{
         let parameter = this.getParameter(parameters, name, useName)
         if(parameter != null){
-            console.log('non null')
-            return parameter.value
+            return parameter[1]
         }
-        console.log('null')
-        return null
+        else{
+            return null
+        }
+
     }
 
     public static peekParameterStringValue(parameters: Dictionary, name : string, exceptionIfMissing : boolean) : string{
@@ -470,38 +469,27 @@ export class C8o extends C8oBase {
     public call(requestable: string, parameters: Dictionary = null, c8oResponseListener : C8oResponseListener = null, c8oExceptionListener: C8oExceptionListener = null){
         try{
             if(requestable == null || isUndefined(requestable)){
+                //TODO
                 throw new Error("requestable must be not null");
             }
             if(parameters == null || isUndefined(parameters)){
-                console.log("parameters null")
                 parameters = new Dictionary()
             }
 
             let regex = C8o.RE_REQUESTABLE.exec(requestable);
             if(regex[0] == null || isUndefined(regex)){
-                console.log("aa")
                 throw new C8oException(C8oExceptionMessage.InvalidArgumentInvalidEndpoint(this._endpoint))
             }
             if(regex[1] != ""){
-                console.log("regex1"+ regex[1].toString())
-                console.log("regex0"+ regex[0].toString())
-
-
                 parameters.add(C8o.ENGINE_PARAMETER_PROJECT.toString(), regex[1])
-                console.log(parameters[C8o.ENGINE_PARAMETER_PROJECT])
-                console.log(parameters.length)
             }
             if(regex[2] != null){
-                console.log("regex2"+ regex[2].toString())
                 parameters.add(C8o.ENGINE_PARAMETER_SEQUENCE.toString(), regex[2])
             }
             else{
-                console.log("regex3"+ regex[3].toString())
-                console.log("regex4"+ regex[4].toString())
                 parameters.add(C8o.ENGINE_PARAMETER_CONNECTOR.toString(), regex[3])
                 parameters.add(C8o.ENGINE_PARAMETER_TRANSACTION.toString(), regex[4])
             }
-            console.log("call" + parameters.length)
             return this._call(parameters, c8oResponseListener, c8oExceptionListener);
         }
         catch(error) {
@@ -871,7 +859,6 @@ class C8oCallTask{
     constructor(c8o : C8o, parameters : Dictionary, c8oResponseListener : C8oResponseListener, c8oExceptionListener : C8oExceptionListener){
         this.c8o = c8o;
         this.parameters = parameters;
-        console.log("here" + this.parameters.length)
         this.c8oResponseListener = c8oResponseListener;
         this.c8oExceptionListener = c8oExceptionListener;
 
@@ -879,12 +866,15 @@ class C8oCallTask{
     }
 
     public run(){
-        try{
-            this.handleRequest().then((response)=>{
+        try {
+            this.handleRequest().then((response)=> {
                 this.handleResponse(response)
+            }).catch((error)=> {
+                this.c8oExceptionListener.onException(error, this.parameters)
             })
         }
         catch(error){
+            console.log("here22")
             console.log(error)
             this.c8oExceptionListener.onException(error, this.parameters)
         }
@@ -925,12 +915,10 @@ class C8oCallTask{
                         reject(new C8oException(C8oExceptionMessage.wrongListener(this.c8oResponseListener)));
                     }
                     var c8oCallRequestIdentifier : string = null
-                    let a = C8outils.getParameterObjectValue(this.parameters, C8oLocalCache.param, false)
-                    console.log(a)
                     let localCache : C8oLocalCache = (C8outils.getParameterObjectValue(this.parameters, C8oLocalCache.param, false) as C8oLocalCache)
                     var localCacheEnabled: boolean = false
 
-                    if(localCacheEnabled != null) {
+                    if(localCache != null) {
                         if(localCacheEnabled != undefined) {
                             this.parameters.remove(C8oLocalCache.param)
                             localCacheEnabled = localCache.enabled
@@ -3047,7 +3035,6 @@ export class C8oLocalCache{
         this.priority = priority
         this.ttl = ttl
         this.enabled = enabled
-        console.log("cet enable est = a " + this.enabled.toString())
     }
 
 }

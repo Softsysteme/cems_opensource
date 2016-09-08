@@ -21,11 +21,11 @@ export class SearchForm {
 
     }
     search(){//, password: string){
-        this.c8o.callJson("sampleMobileSearchRoom.LoadList").then(data => {
+        /*this.c8o.callJson("sampleMobileSearchRoom.LoadList").then(data => {
             console.log(data);
             this.nav.push(ListForm, data);
 
 
-        });
+        });*/
     }
 }
