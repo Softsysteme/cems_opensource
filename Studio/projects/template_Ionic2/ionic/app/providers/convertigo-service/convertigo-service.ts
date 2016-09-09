@@ -525,6 +525,7 @@ export class C8o extends C8oBase {
             }
         }),
         new C8oExceptionListener((exception :C8oException, data: Dictionary)=>{
+            console.log("err")
             promise.onFailure(exception, data)
         }))
         return promise
@@ -661,9 +662,9 @@ export interface C8oPromiseFailSync<T> extends C8oPromiseSync<T>{
 //DOING class C8oPromise
 export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSync{
     private c8o : C8o
-    private c8oResponse : (response: T, parameters: Dictionary)=>void//C8oOnResponse<T>
+    private c8oResponse : (response: T, parameters: Dictionary)=>C8oPromise<T>//C8oOnResponse<T>
     private c8oProgress : C8oOnProgress
-    private c8oFail : C8oOnFail
+    private c8oFail : (error: Error, parameters: Dictionary)=>C8oPromise<T>
     private nextPromise : C8oPromise<T>
 
     private lastResponse : T
@@ -675,7 +676,7 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
         this.c8o = c8o
     }
 
-    then(c8oOnResponse : (response: T, parameters: Dictionary)=>void){
+    then(c8oOnResponse : (response: T, parameters: Dictionary)=>C8oPromise<T>){
         if(this.nextPromise != null){
             return this.nextPromise.then(c8oOnResponse)
         }
@@ -688,6 +689,21 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
             }
             if(this.lastResponse != null){
                 //TODO
+                this._onResponse()
+            }
+            return this.nextPromise
+        }
+    }
+
+    fail(c8oOnFail:(error: Error, parameters: Dictionary)=>C8oPromise<T>){
+        if(this.nextPromise != null){
+            return this.nextPromise.fail(c8oOnFail)
+        }
+        else{
+            this.c8oFail = c8oOnFail
+            this.nextPromise = new C8oPromise<T>(this.c8o)
+            if(this.lastFailure != null){
+                this.onFailure(this.lastFailure, this.lastParameters)
             }
             return this.nextPromise
         }
@@ -718,8 +734,8 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
     private _onResponse(){
         try{
             if(this.c8oResponse != null){
-                var promise : C8oPromise<T>[] = new C8oPromise[1]
-                promise.push(this.c8oResponse[0](this.lastResponse, this.lastParameters))// = this.c8oResponse.run(this.lastResponse, this.lastParameters)
+                var promise : C8oPromise<T>[] = new Array<C8oPromise<T>>(1)
+                promise.push(this.c8oResponse(this.lastResponse, this.lastParameters))
                 if(promise[0] != null){
                     if(this.nextPromise != null){
                         var lastPromise : C8oPromise<T> = promise[0]
@@ -770,7 +786,7 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
         this.lastParameters = parameters
 
         if(this.c8oFail != null){
-            this.c8oFail.run(this.lastFailure, parameters)
+            this.c8oFail(this.lastFailure, parameters)
         }
         if(this.nextPromise != null){
             this.nextPromise.onFailure(this.lastFailure, parameters)
@@ -801,8 +817,8 @@ export class C8oHttpInterface{
     handleRequest(url: string, parameters : Dictionary) : Promise<any>{
          let params:URLSearchParams = new URLSearchParams();
          if (parameters != undefined && JSON.stringify(parameters) != "{}") {
-             for (var item in parameters) {
-                 params.set(item, parameters[item].valueOf());
+             for(var _i=0; _i < parameters.length; _i++) {
+                 params.set(parameters["_keys"][_i], parameters["_values"][_i]);
              }
          }
          var headers = new Headers();
@@ -836,7 +852,7 @@ export class C8oHttpInterface{
 
     private extractData(res: Response) {
         let body = res.json();
-        return body.data || { };
+        return body
     }
 
     handleC8oCallRequest(url: string, parameters: Dictionary) : Promise<any>{
@@ -994,7 +1010,7 @@ class C8oCallTask{
                             else if(this.c8oResponseListener instanceof C8oResponseJsonListener){
                                 try{
                                     try{
-                                        responseString = response.toString()
+                                        responseString = result.toString()
                                     }
                                     catch(error){
                                         console.log("handleRequest 8")
@@ -1055,7 +1071,7 @@ class C8oCallTask{
                 this.c8o.log.logC8oCallXMLResponse(result, this.c8oCallUrl, this.parameters);
                 (this.c8oResponseListener as C8oResponseXmlListener).onXmlResponseresponse(result, this.parameters)
             }
-            else if (typeof result == 'JSON') {
+            else if (typeof result == 'Json') {
                 this.c8o.log.logC8oCallJSONResponse(result, this.c8oCallUrl, this.parameters);
             }
             else if(result instanceof PouchDB){
@@ -1063,6 +1079,10 @@ class C8oCallTask{
             }
             else if(result instanceof Error){
                 this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, result)
+            }
+            else if(result instanceof Object){
+                this.c8o.log.logC8oCallJSONResponse(result, this.c8oCallUrl, this.parameters);
+                (this.c8oResponseListener as C8oResponseJsonListener).onJsonResponse(result, this.parameters)
             }
             else{
                 this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, new C8oException(C8oExceptionMessage.wrongResult(result)))
@@ -2942,15 +2962,18 @@ export class C8oExceptionMessage {
 export class C8oException extends Error{
 
     private static handleGetDocumentRequest : string = '6749024586350969208L';
+    public message : string
 
     constructor(message:string);
     constructor(message:string, cause:Error);
     constructor(message:string, cause:Error = null){
         if(cause == null){
             super(message);
+            this.message = message
         }
         else{
             super(C8oException.filterMessage(message, cause));
+            this.message = message
             //this.protype
             //LATER C8oException->constructor implement filter cause maybe with Error.prototype
         }
@@ -2976,7 +2999,8 @@ export class C8oCouchBaseLiteException extends C8oException{
     private static serialVersionUID : string = '-565811361589019533L';
     //public cause : C8oCouchBaseLiteException = super
 
-    constructor(message: string, cause: C8oCouchBaseLiteException){
+
+    constructor(message: string, cause: Error){
         super(message, cause);
     }
 
@@ -2984,7 +3008,7 @@ export class C8oCouchBaseLiteException extends C8oException{
 }
 
 //DONE class C8oHttpRequestException
-export class C8oHttpRequestException extends Error{
+export class C8oHttpRequestException extends C8oException{
     private static serialVersionUID : string = '-2154357228873794455L';
 
     //LATER C8oHttpRequestException->constructor cause
@@ -3010,7 +3034,7 @@ export class C8oRessourceNotFoundException extends C8oException {
 }
 
 //DONE class C8oUnavailableLocalCacheException
-export class C8oUnavailableLocalCacheException extends Error{
+export class C8oUnavailableLocalCacheException extends C8oException{
     private static serialVersionUID : string = '5428876605265700709L';
 
     constructor(detailMessage: string);

@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {GoogleMap, GoogleMapsEvent} from 'ionic-native';
 import {
-    C8o, FullSyncPolicy, Dictionary, C8oFullSyncCbl, C8oHttpInterface, C8oPromise
+    C8o, FullSyncPolicy, Dictionary, C8oFullSyncCbl, C8oHttpInterface, C8oPromise, C8oException,
+    C8oCouchBaseLiteException
 } from "../../providers/convertigo-service/convertigo-service";
 import {NavController} from 'ionic-angular';
 import {SearchForm}  from './../SearchForm/SearchForm';
@@ -219,6 +220,10 @@ export class LoginForm {
                 console.log("A4 CLOSURE ELSE")
           }
           console.log("A5 ??")
+          return null
+      }).fail((error, parameters)=>{
+          console.log(error.message)
+          return null
       })
       console.log("A6 Fin")
       //this.c8o.callJson("sampleMobileSearchRoom.Login", "user", username, "password", password).then(new C8oOnResponse<JSON>())
