@@ -854,15 +854,16 @@ export class C8oHttpInterface{
              })
          }
          else {
-             console.log("SecondC")
-             return Promise.all([this.p1]).then(()=> {
-                 return this.c8o.httpPublic.post(url, params.toString(),{
-                     headers : headers
-                 }).toPromise().then((result)=> {
-                     Promise.resolve(this.extractData(result))
-                 }).catch(function (error) {
-                     console.log("handleRequest 2")
-                     Promise.reject(error)
+             return new Promise((resolve, reject)=> {
+                 Promise.all([this.p1]).then(()=> {
+                     return this.c8o.httpPublic.post(url, params.toString(), {
+                         headers: headers
+                     }).toPromise().then((result)=> {
+                         resolve(this.extractData(result))
+                     }).catch(function (error) {
+                         console.log("handleRequest 2")
+                         reject(error)
+                     })
                  })
              })
          }

@@ -6,6 +6,7 @@ import {MapView} from './pages/MapView/MapView';
 import {SearchForm} from './pages/SearchForm/SearchForm';
 import {ListForm} from './pages/ListForm/ListForm';
 import {DetailsForm} from './pages/DetailsForm/DetailsForm';
+import {Test} from './pages/TESTS/test';
 import {C8o, C8outils} from './providers/convertigo-service/convertigo-service';
 
 
@@ -18,7 +19,7 @@ class MyApp {
     @ViewChild(Nav) nav: Nav;
 
     // make HelloIonicPage the root (or first) page
-    rootPage: any = LoginForm;
+    rootPage: any = Test;
     pages: Array<{title: string, component: any}>;
 
     constructor(
@@ -29,6 +30,8 @@ class MyApp {
 
         // set our app's pages
         this.pages = [
+
+            { title: 'Test', component: Test },
             { title: 'Login', component: LoginForm },
             {title: 'MapView', component: MapView},
             {title: 'Details', component: DetailsForm},

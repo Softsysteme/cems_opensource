@@ -3048,6 +3048,9 @@ Studio/projects/template_Ionic2/ionic/app/pages/MapView/MapView.ts -text
 Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.html -text
 Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.scss -text
 Studio/projects/template_Ionic2/ionic/app/pages/SearchForm/SearchForm.ts -text
+Studio/projects/template_Ionic2/ionic/app/pages/TESTS/test.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/ionic/app/pages/TESTS/test.scss -text
+Studio/projects/template_Ionic2/ionic/app/pages/TESTS/test.ts -text
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.html -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.scss -text
 Studio/projects/template_Ionic2/ionic/app/pages/item-details/item-details.ts -text
