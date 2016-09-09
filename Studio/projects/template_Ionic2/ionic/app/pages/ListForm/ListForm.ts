@@ -21,9 +21,14 @@ export class ListForm {
 
     }
     detail(params){
-        /*this.c8o.callJson("sampleMobileSearchRoom.GetDetails", "id", params).then(data => {
-            this.nav.push(DetailsForm, data);
-        });*/
+
+        this.c8o.callJson("sampleMobileSearchRoom.GetDetails", "id", params)
+        .then(
+            (response, parameters)=>{
+                this.nav.push(DetailsForm, response);
+                return null
+            }
+        )
 
     }
 }

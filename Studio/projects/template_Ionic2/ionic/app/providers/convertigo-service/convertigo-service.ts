@@ -1,7 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable, Inject} from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import 'rxjs/add/operator/map';
-import {isUndefined} from "ionic-angular/util/util";;
+import {isUndefined} from "ionic-angular/util/util";
+import {timeout} from "rxjs/operator/timeout";
+;
 //DONE import PouchDB works... however by adding manually a typings lib ... cmd line not works
 var PouchDB = require('pouchdb');
 
@@ -633,33 +635,46 @@ export class C8o extends C8oBase {
     }
 
 }
-//DOING C8oOnProgress
+
+//DOING class C8oSettings
+export class C8oSettings extends C8oBase{
+
+    constructor(c8oSettings : C8oSettings= null){
+        super()
+        if(c8oSettings != null){
+            super.copy(c8oSettings)
+        }
+
+    }
+
+    public clone() : C8oSettings{
+        return new C8oSettings(this)
+    }
+
+    public setTimeout(timeout : number) : C8oSettings{
+        if(timeout <=0){
+            timeout = -1
+        }
+        this._timeout = timeout
+        return this
+    }
+
+    public setTrustAllCertificates(trustAllCertificates : boolean) : C8oSettings{
+        this._trustAllCertificates =  trustAllCertificates
+        return this
+    }
+
+    /*public addClientCertificate(trustAllCertificates: any, password: string) : C8oSettings{
+        if(this._client)
+    }*/
+}
+
+//DONE C8oOnProgress
 export interface C8oOnProgress{
     run(c8oProgress : C8oProgress)
 }
 
-//DOING C8oOnResponse
-export interface C8oOnResponse<T>{
-    run(response : T, parameters: Dictionary) : C8oPromise<T>
-}
-
-//DOING c8oOnFail
-export interface C8oOnFail{
-    run(error: Error, parameters: Dictionary)
-}
-
-//DOING C8oPromiseSync
-export interface C8oPromiseSync<T>{
-    sync() : T
-}
-
-//DOING interface C8oPromiseFailSync<T>
-export interface C8oPromiseFailSync<T> extends C8oPromiseSync<T>{
-    fail(c8oOnFail: C8oOnFail)
-}
-
-
-//DOING class C8oPromise
+//DONE class C8oPromise
 export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSync{
     private c8o : C8o
     private c8oResponse : (response: T, parameters: Dictionary)=>C8oPromise<T>//C8oOnResponse<T>
@@ -797,6 +812,8 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
 
 }
 
+//DOING
+
 //DONE implenting C8oHttpInterface
 export class C8oHttpInterface{
     c8o : C8o
@@ -837,6 +854,7 @@ export class C8oHttpInterface{
              })
          }
          else {
+             console.log("SecondC")
              return Promise.all([this.p1]).then(()=> {
                  return this.c8o.httpPublic.post(url, params.toString(),{
                      headers : headers
@@ -975,6 +993,7 @@ class C8oCallTask{
                     this.c8o.httpInterface.handleRequest(this.c8oCallUrl, this.parameters
                     ).catch(
                         (error)=>{
+                            console.log(error)
                             if(localCacheEnabled){
                                 (this.c8o.c8oFullSync as C8oFullSyncCbl).getResponseFromLocalCache(c8oCallRequestIdentifier
                                 ).then(
@@ -1010,7 +1029,7 @@ class C8oCallTask{
                             else if(this.c8oResponseListener instanceof C8oResponseJsonListener){
                                 try{
                                     try{
-                                        responseString = result.toString()
+                                        responseString = result
                                     }
                                     catch(error){
                                         console.log("handleRequest 8")

@@ -17,15 +17,15 @@ export class SearchForm {
     constructor(private c8o : C8o, private nav: NavController) {
         this.PostalCode = "Paris";
         this.date = new Date().toISOString().slice(0,10);
-        console.log(this.date.toString());
-
     }
-    search(){//, password: string){
-        /*this.c8o.callJson("sampleMobileSearchRoom.LoadList").then(data => {
-            console.log(data);
-            this.nav.push(ListForm, data);
-
-
-        });*/
+    search(){
+        this.c8o.callJson("sampleMobileSearchRoom.LoadList")
+        .then(
+            (response, parameters)=>{
+                console.log(response)
+                this.nav.push(ListForm, response)
+                return null
+             }
+        )
     }
 }
