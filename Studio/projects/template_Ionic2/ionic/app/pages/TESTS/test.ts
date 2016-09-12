@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {C8o, Dictionary} from "../../providers/convertigo-service/convertigo-service";
 import {NavController} from 'ionic-angular';
 import {LoginForm} from "../LoginForm/LoginForm";
+import { LoadingController } from 'ionic-angular';
 let PouchDB = require('pouchdb');
 
 
@@ -11,13 +12,27 @@ let PouchDB = require('pouchdb');
 })
 export class Test {
 
-  constructor(private c8o: C8o, private nav: NavController){
+  constructor(private c8o: C8o, private nav: NavController, public loadingCtrl: LoadingController){
   }
-
+loader : any
   ionViewLoaded(){}
   switch(){
       this.nav.push(LoginForm)
   }
+
+    presentLoading() {
+        this.loader = this.loadingCtrl.create({
+
+            content: "Please wait...",
+            duration: 3000
+        });
+        this.loader.present();
+    }
+    dismissLoader(){
+        this.loader.dismissLoader()
+    }
+
+
   test01(){
       this.c8o.callJson("sampleMobileSearchRoom.Login", "user", "username", "password", "password")
       .then(

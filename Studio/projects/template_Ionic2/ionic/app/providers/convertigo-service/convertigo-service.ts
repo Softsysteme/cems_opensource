@@ -1,6 +1,7 @@
 import {Injectable, Inject} from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
 import {Splashscreen} from 'ionic-native';
+import { LoadingController } from 'ionic-angular';
 import {isUndefined} from "ionic-angular/util/util";
 //DONE Fix http injection isssue in angular 2.0.0-rc.4 with this import...
 import 'rxjs/Rx';
@@ -297,6 +298,9 @@ export class C8o extends C8oBase {
     private _http : Http;
 
     private _cordovaBuild : boolean = false
+    loader
+    responded : boolean = false
+    shown : boolean = false
 
     public addCookie(name: string, value: string) {
 
@@ -381,7 +385,7 @@ export class C8o extends C8oBase {
         return this._http;
     }
 
-    constructor(private http: Http) {
+    constructor(private http: Http, public loadingCtrl: LoadingController) {
         super();
         this._http = http;
         this.data = null;
@@ -414,8 +418,6 @@ export class C8o extends C8oBase {
                             resolve(this.data);
                         });
                 }
-
-
         }).then(() => {
             if (!C8outils.isValidUrl(this.endpoint)) {
                 return new C8oException(C8oExceptionMessage.illegalArgumentInvalidURL(this.endpoint).toString());
@@ -438,6 +440,30 @@ export class C8o extends C8oBase {
 
     }
 
+    StartLoader(){
+
+    }
+    presentLoader() {
+        this.responded = false
+        this.shown = false
+        setTimeout(() => {
+            this.loader = this.loadingCtrl.create({
+                content: "Please wait..."
+            });
+            if(!this.responded){
+                this.loader.present()
+                this.shown = true
+            }
+
+        }, 100)
+
+    }
+    dismissLoader(){
+        if(this.shown) {
+            this.loader.dismiss()
+        }
+        this.responded = true
+    }
     private hideSplashScreen(hasTodo: boolean){
         if(hasTodo){
             Splashscreen.hide()
@@ -473,11 +499,15 @@ export class C8o extends C8oBase {
         catch(error) {
             this.handleCallException(c8oExceptionListener, parameters, error)
         }
+        finally {
+        }
     }
 
     public _call(parameters: Dictionary = null, c8oResponseListener : C8oResponseListener = null, c8oExceptionListener: C8oExceptionListener = null){
         // IMPORTANT : all c8o calls have to end here !
         try{
+            this.presentLoader()
+
             this.c8oLogger.logMethodCall("call", parameters, c8oResponseListener, c8oExceptionListener)
 
             if(parameters == null){
@@ -490,6 +520,9 @@ export class C8o extends C8oBase {
         catch(error){
             this.handleCallException(c8oExceptionListener, parameters, error)
         }
+        finally {
+
+        }
     }
 
     public callJsonDict(requestable: string, parameters: Dictionary) : C8oPromise<JSON>{
@@ -500,11 +533,12 @@ export class C8o extends C8oBase {
             }
             else{
                 promise.onResponse(response, requestParameters)
+
             }
         }),
         new C8oExceptionListener((exception :C8oException, data: Dictionary)=>{
-            console.log("err")
             promise.onFailure(exception, data)
+
         }))
         return promise
     }
@@ -797,15 +831,17 @@ class C8oCallTask{
 
     public run(){
         try {
+            //this.c8o.loader.present()
             this.handleRequest().then((response)=> {
+                this.c8o.dismissLoader()
                 this.handleResponse(response)
             }).catch((error)=> {
+                this.c8o.dismissLoader()
                 this.c8oExceptionListener.onException(error, this.parameters)
             })
         }
         catch(error){
-            console.log("here22")
-            console.log(error)
+            console.log("aa" + error)
             this.c8oExceptionListener.onException(error, this.parameters)
         }
     }
@@ -1004,6 +1040,7 @@ class C8oCallTask{
             }
         }
         catch(error){
+            console.log("aa" + error.message)
             this.c8o.handleCallException(this.c8oExceptionListener, this.parameters, error)
         }
     }
