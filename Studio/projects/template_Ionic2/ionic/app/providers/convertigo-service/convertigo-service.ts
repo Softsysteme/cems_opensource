@@ -1,9 +1,9 @@
 import {Injectable, Inject} from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
-import 'rxjs/add/operator/map';
+
 import {isUndefined} from "ionic-angular/util/util";
-import {timeout} from "rxjs/operator/timeout";
-;
+//DONE Fix http injection isssue in angular 2.0.0-rc.4 with this import...
+import 'rxjs/Rx';
 //DONE import PouchDB works... however by adding manually a typings lib ... cmd line not works
 var PouchDB = require('pouchdb');
 
@@ -12,7 +12,6 @@ var PouchDB = require('pouchdb');
 @Injectable()
 export class C8oBase {
     /*HTTP*/
-
     protected _timeout: number = -1;
     protected _trustAllCertificates: boolean = false;
     protected _cookies: { [key: string]: string } = {};
@@ -21,10 +20,8 @@ export class C8oBase {
     protected _logRemote: boolean = true;
     protected _logLevelLocal: C8oLogLevel = C8oLogLevel.NONE;
     protected _logC8o: boolean = true;
-    //protected logOnFail : C8oOnFail = null;
 
     /* FullSync */
-
     protected _defaultDatabaseName: string = null;
     protected _authenticationCookieValue: string = null;
     protected _fullSyncLocalSuffix: string = null;
@@ -33,12 +30,9 @@ export class C8oBase {
     protected _fullSyncPassword: string;
 
     /* Encryption */
-
     protected _useEncryption: boolean = false;
     protected _disableSSL: boolean = false;
-    //protected keyStoreInputStream :InputStream ;
     protected _keyStorePassword: string;
-    //protected trustStoreInputStream :InputStream;
     protected _trustStorePassword: string;
 
     public get timeout(): number {
@@ -65,10 +59,6 @@ export class C8oBase {
     public get logC8o(): boolean {
         return this._logC8o;
     }
-
-    /*public get logOnfail() : ??{
-     return this._
-     }*/
 
     public get defaultDatabaseName(): string {
         return this._defaultDatabaseName;
@@ -99,22 +89,13 @@ export class C8oBase {
         /*HTTP*/;
         this._timeout = c8oBase._timeout;
         this._trustAllCertificates = c8oBase._trustAllCertificates;
-        /*if (this.cookies == null) {
-         //cookies = [string : string]();
-         }
-         if (c8oBase.cookies != null) {
-         cookies.putAll(c8oBase.cookies);
-         }*/
 
         /* Log */
-
         this._logRemote = c8oBase.logRemote;
         this._logLevelLocal = c8oBase.logLevelLocal;
         this._logC8o = c8oBase.logC8o;
-        //this.logOnFail = c8oBase.logOnFail;
 
         /* FullSync */
-
         this._defaultDatabaseName = c8oBase.defaultDatabaseName;
         this._authenticationCookieValue = c8oBase.authenticationCookieValue;
         this._fullSyncLocalSuffix = c8oBase.fullSyncLocalSuffix;
@@ -140,7 +121,6 @@ export class C8outils {
             search: params
         }).toPromise()
             .then(this.extractData);
-
     }
 
     static getObjectClassName(obj: any){
@@ -213,17 +193,10 @@ export class C8outils {
         return value;
     }
 
-    /*public static getParameterJsonValue(parameter: Dictionary) : Array<any>{
-        for(var i=0; i < parameter.keys().length; i++){
-
-        }
-    }*/
-    static identifyC8oCallRequest(parameters: Dictionary, responseType: string): string {
-    let JSONarrayString = JSON.stringify(parameters.toArray())
-    return responseType + JSONarrayString
-}
-
-
+        static identifyC8oCallRequest(parameters: Dictionary, responseType: string): string {
+        let JSONarrayString = JSON.stringify(parameters.toArray())
+        return responseType + JSONarrayString
+    }
 }
 
 //DONE class C8o
@@ -303,7 +276,6 @@ export class C8o extends C8oBase {
     }
 
     /* Attributes */
-
     private _endpoint: string;
     private _endpointConvertigo: string;
     private _endpointIsSecure: boolean;
@@ -406,9 +378,6 @@ export class C8o extends C8oBase {
     public get httpPublic() : Http {
         return this._http;
     }
-    /*public get cookieStore():string{
-     return this._endpointIsSecure;
-     }*/
 
     constructor(private http: Http) {
         super();
@@ -419,7 +388,6 @@ export class C8o extends C8oBase {
         new Promise(resolve => {
             //if project is running into web browser
             //get the url from window.location
-
                 if (window.location.href.startsWith('http')) {
                     let n = window.location.href.indexOf("/Display");
                     this.endpoint = window.location.href.substring(0, n);
@@ -453,12 +421,6 @@ export class C8o extends C8oBase {
             this.endpointHost = matches[2];
             this.endpointPort = matches[3];
             this.endpointProject = matches[4];
-
-            /*console.log('endpointConvertigo :' + this.endpointConvertigo.toString());
-             console.log('endpointIsSecure :' + this.endpointIsSecure.toString());
-             console.log('endpointHost :' + this.endpointHost.toString());
-             console.log('endpointPort :' + this.endpointPort.toString());
-             console.log('endpointProject :' + this.endpointProject.toString());*/
             //TODO C8oSettings
             this.httpInterface = new C8oHttpInterface(this);
             this.c8oLogger = new C8oLogger(this);
@@ -531,92 +493,11 @@ export class C8o extends C8oBase {
             promise.onFailure(exception, data)
         }))
         return promise
-
-
-        /*
-         var promise : C8oPromise<JSON> = new C8oPromise<JSON>(this)
-         this.call(requestable, parameters, new C8oResponseJsonListener((response :JSON,  requestParameters: Dictionary)=>{
-         if(response == null && requestParameters[C8o.ENGINE_PARAMETER_PROGRESS]){
-         promise.onProgress(requestParameters[C8o.ENGINE_PARAMETER_PROGRESS])
-         }
-         else{
-         promise.onResponse(response, requestParameters)
-         }
-         }),
-         new C8oExceptionListener((exception :C8oException, data: Dictionary)=>{
-         promise.onFailure(exception, data)
-         }))
-         return promise
-
-         */
     }
 
     public callJson(requestable: string, ...parameters: any[]) : C8oPromise<JSON>{
         return this.callJsonDict(requestable, C8o.toParameters(parameters))
     }
-
-    private AcallJson(parameters: Dictionary) {
-        this.c8oLogger.logMethodCall("CallJSON", parameters);
-        this.data = null;
-        if (this.data != null) {
-            // already loaded data
-            return Promise.resolve(this.data);
-        }
-        let params:URLSearchParams = new URLSearchParams();
-        if (parameters != undefined && JSON.stringify(parameters) != "{}") {
-            for (var item in parameters) {
-                params.set(item, parameters[item].valueOf());
-            }
-        }
-
-		var headers = new Headers();
-      	headers.append('Content-Type', 'application/x-www-form-urlencoded');
-
-        return new Promise(resolve => {
-            var eurl = this.endpoint.toString() + this.sequencePrefix.toString();
-            this.http.post(eurl, params.toString(), {
-            	headers: headers
-            }).map(res => res.json())
-                .subscribe(data => {
-                    this.data = data;
-                    return resolve(this.data);
-                });
-        });
-
-    }
-
-    public _callJson(requestable: string, ...parameters: any[]) {
-        //return this.call(requestable.toString(), C8o.toParameters(parameters));
-    }
-
-    /*public static toParameters2(parameters: any): Dictionary {
-        console.log("toParameters=>parameters" + parameters.length)
-        var newParameters: Dictionary = new Dictionary();
-        var alreadyDone = false;
-        if (parameters != undefined) {
-            if (0 != parameters.length % 2) {
-                throw new C8oException("TODO")
-            }
-            if (parameters.length == 1 && parameters.constructor === Array) {
-                alreadyDone = true;
-                for(var item in parameters[0]){
-                    newParameters[item] = parameters[0][item];
-                }
-            }
-            else{
-                throw new Error("Invalid parameter Exception");
-            }
-
-            if(!alreadyDone){
-                for (var i = 0; i < parameters.length; i += 2) {
-                    newParameters[parameters[i]] = parameters[i + 1];
-                }
-            }
-        }
-        console.log("toParameters" + newParameters.length)
-        return newParameters;
-
-    }*/
 
     public static toParameters(parameters: any) : Dictionary{
         if (0 != parameters.length % 2) {
