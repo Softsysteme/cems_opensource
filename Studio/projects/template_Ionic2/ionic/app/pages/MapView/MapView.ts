@@ -11,6 +11,17 @@ export class MapView {
     constructor(private navParams: NavParams, private platform: Platform) {
         this.platform.ready().then(() => this.onPlatformReady());
 }
+
+    // Due to an ionic2 / googlemaps cordova issue, we are obliged to set root page opacity to zero on initialization
+    ngOnInit(){
+        document.getElementsByClassName("app-root")[0].setAttribute("style", "opacity:0");
+    }
+
+    // Then on destroy we set opacity to one
+    ngOnDestroy(){
+        document.getElementsByClassName("app-root")[0].setAttribute("style", "opacity:1");
+    }
+
     private onPlatformReady(): void {
             let map = new GoogleMap('map-canvas');
             map.one(GoogleMapsEvent.MAP_READY).then((data: any) => {
@@ -18,5 +29,6 @@ export class MapView {
                 map.addMarker({position: this.navParams.data[0], title: this.navParams.data[1]});
             });
     }
+
 }
 

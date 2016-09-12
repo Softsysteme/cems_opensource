@@ -30,7 +30,7 @@ export class DetailsForm {
                 //noinspection TypeScriptUnresolvedVariable
                 var myLatLng = new GoogleMapsLatLng(data.results[0].geometry.location.lat, data.results[0].geometry.location.lng);
                 let array : any[] =[myLatLng, this.item.title];
-                this.nav.setRoot(MapView, array);
+                this.nav.push(MapView, array);
             });
         }
 

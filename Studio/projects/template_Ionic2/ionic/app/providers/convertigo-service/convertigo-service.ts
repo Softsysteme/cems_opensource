@@ -1,6 +1,6 @@
 import {Injectable, Inject} from '@angular/core';
 import {Http, URLSearchParams, Headers, RequestOptions, Response} from '@angular/http';
-
+import {Splashscreen} from 'ionic-native';
 import {isUndefined} from "ionic-angular/util/util";
 //DONE Fix http injection isssue in angular 2.0.0-rc.4 with this import...
 import 'rxjs/Rx';
@@ -296,6 +296,8 @@ export class C8o extends C8oBase {
     private sequencePrefix: string;
     private _http : Http;
 
+    private _cordovaBuild : boolean = false
+
     public addCookie(name: string, value: string) {
 
     }
@@ -405,6 +407,10 @@ export class C8o extends C8oBase {
                             let remoteBase = data.remoteBase.toString();
                             let n = remoteBase.indexOf("/_private");
                             this.endpoint = remoteBase.substring(0, n);
+                            //Looking for splashScreen timeOut
+                            if(data.splashRemoveMode != "manual"){
+                                this._cordovaBuild = true
+                            }
                             resolve(this.data);
                         });
                 }
@@ -426,8 +432,16 @@ export class C8o extends C8oBase {
             this.c8oLogger = new C8oLogger(this);
             this.c8oLogger.logMethodCall("C8o Constructor");
             this.c8oFullSync = new C8oFullSyncCbl(this)
+            this.hideSplashScreen(this._cordovaBuild)
+
         });
 
+    }
+
+    private hideSplashScreen(hasTodo: boolean){
+        if(hasTodo){
+            Splashscreen.hide()
+        }
     }
 
     public call(requestable: string, parameters: Dictionary = null, c8oResponseListener : C8oResponseListener = null, c8oExceptionListener: C8oExceptionListener = null){
