@@ -16,19 +16,15 @@ export class ListForm {
     items: any;
     constructor(private navParams: NavParams, private nav: NavController, private c8o : C8o) {
         let id = navParams.data;
-        console.log(JSON.stringify(id.results.result[0]));
         this.items = id.results.result
-
     }
     detail(params){
-
         this.c8o.callJson("sampleMobileSearchRoom.GetDetails", "id", params)
-        .then(
-            (response, parameters)=>{
-                this.nav.push(DetailsForm, response);
-                return null
-            }
-        )
-
+            .then(
+                (response, parameters)=>{
+                    this.nav.push(DetailsForm, response);
+                    return null
+                }
+            )
     }
 }

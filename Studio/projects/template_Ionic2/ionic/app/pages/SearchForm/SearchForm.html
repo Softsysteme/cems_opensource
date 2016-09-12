@@ -10,9 +10,9 @@
     <h2 primary>Search a Room</h2>
     <ion-list>
         <ion-item>
-            <ion-label>Country</ion-label>
+            <ion-label primary>Country</ion-label>
             <ion-select>
-                <ion-option value="FR">France</ion-option>
+                <ion-option value="FR" selected="true">France</ion-option>
                 <ion-option value="US">USA</ion-option>
                 <ion-option value="B">Belgium</ion-option>
                 <ion-option value="IT">Italy</ion-option>
@@ -29,8 +29,8 @@
         </ion-item>
     </ion-list>
     <ion-item>
-        <ion-label>Options</ion-label>
-        <ion-select [(ngModel)]="a">
+        <ion-label primary>Options</ion-label>
+        <ion-select>
             <ion-option value="T" selected="true">Theater</ion-option>
             <ion-option value="MR">Meeting Room</ion-option>
             <ion-option value="C">Class-Room</ion-option>

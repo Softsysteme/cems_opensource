@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {C8o} from "../../providers/convertigo-service/convertigo-service";
-import {NavController} from 'ionic-angular';
+import {NavController, AlertController} from 'ionic-angular';
 import {SearchForm}  from './../SearchForm/SearchForm';
 let PouchDB = require('pouchdb');
 
@@ -10,7 +10,7 @@ let PouchDB = require('pouchdb');
 })
 export class LoginForm {
 
-  constructor(private c8o: C8o, private nav: NavController){
+  constructor(private c8o: C8o, private nav: NavController, public alertCtrl: AlertController){
   }
 
   ionViewLoaded(){}
@@ -20,6 +20,14 @@ export class LoginForm {
           (response, parameters)=>{
               if((response as any).logon == "true"){
                   this.nav.push(SearchForm);
+              }
+              else{
+                  let alert = this.alertCtrl.create({
+                      title: 'Error',
+                      subTitle: 'Login or password incorrect',
+                      buttons: ['OK']
+                  });
+                  alert.present();
               }
               return null
           }
