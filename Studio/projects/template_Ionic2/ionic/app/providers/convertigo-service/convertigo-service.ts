@@ -15,12 +15,16 @@ export class C8oBase {
     /*HTTP*/
     protected _timeout: number = -1;
     protected _trustAllCertificates: boolean = false;
-    protected _cookies: { [key: string]: string } = {};
+    protected _cookies: Dictionary = new Dictionary()
+    protected _clientCertificateFiles : Dictionary
+    protected _clientCertificateBinaries : Dictionary
+
     /*Log*/
 
     protected _logRemote: boolean = true;
     protected _logLevelLocal: C8oLogLevel = C8oLogLevel.NONE;
     protected _logC8o: boolean = true;
+    protected _logOnFail : (exception : Error, parameters: Dictionary)=>void
 
     /* FullSync */
     protected _defaultDatabaseName: string = null;
@@ -44,7 +48,7 @@ export class C8oBase {
         return this._trustAllCertificates;
     }
 
-    public get cookies(): { [key: string]: string } {
+    public get cookies(): Dictionary {
         return this._cookies;
     }
 
@@ -85,7 +89,11 @@ export class C8oBase {
         return this._fullSyncPassword;
     }
 
-    protected copy(c8oBase: C8oBase) {
+    public get logOnFail(): (exception : Error, parameters: Dictionary)=>void {
+        return this._logOnFail
+    }
+
+    public copy(c8oBase: C8oBase) {
 
         /*HTTP*/;
         this._timeout = c8oBase._timeout;
@@ -163,6 +171,7 @@ export class C8outils {
     public static getParameterStringValue(parameters: Dictionary, name : string, useName : boolean) : string{
         let parameter = C8outils.getParameter(parameters, name, useName);
         if(parameter != null){
+            console.log(parameter[0] +" : " +parameter[1])
             return "" + parameter[1]
         }
         return null
@@ -182,6 +191,8 @@ export class C8outils {
     public static peekParameterStringValue(parameters: Dictionary, name : string, exceptionIfMissing : boolean) : string{
         let value : string = this.getParameterStringValue(parameters, name, false);
 
+
+
         if(value == null){
             if(exceptionIfMissing)
             {
@@ -189,7 +200,7 @@ export class C8outils {
             }
         }
         else{
-            parameters[name].pop();
+            parameters.remove(name);
         }
         return value;
     }
@@ -455,7 +466,7 @@ export class C8o extends C8oBase {
                 this.shown = true
             }
 
-        }, 100)
+        }, 500)
 
     }
     dismissLoader(){
@@ -565,13 +576,16 @@ export class C8o extends C8oBase {
 
 }
 
-//DOING class C8oSettings
+//DONE class C8oSettings
 export class C8oSettings extends C8oBase{
 
     constructor(c8oSettings : C8oSettings= null){
         super()
         if(c8oSettings != null){
-            super.copy(c8oSettings)
+            if(c8oSettings != null){
+                this.copy(c8oSettings)
+            }
+
         }
 
     }
@@ -593,9 +607,89 @@ export class C8oSettings extends C8oBase{
         return this
     }
 
-    /*public addClientCertificate(trustAllCertificates: any, password: string) : C8oSettings{
-        if(this._client)
-    }*/
+
+    public addClientCertificate(anyCertificate: string, password: string) : C8oSettings;
+    public addClientCertificate(anyCertificate: number, password: string) : C8oSettings
+    public addClientCertificate(anyCertificate: any, password: string) : C8oSettings{
+        //TODO
+        if(typeof anyCertificate === 'string'){
+            if(this._clientCertificateFiles == null){
+                this._clientCertificateFiles = new Dictionary()
+            }
+            this._clientCertificateFiles.add(anyCertificate, password)
+        }
+        else if(typeof anyCertificate === 'number'){
+            if(this._clientCertificateBinaries == null){
+                this._clientCertificateBinaries == new Dictionary()
+            }
+            //this._clientCertificateBinaries.add(anyCertificate, password);
+        }
+        return this
+    }
+
+    public addCookie(name:string, value:string): C8oSettings{
+        if(this._cookies == null){
+            this._cookies = new Dictionary()
+        }
+        this._cookies.add(name, value);
+        return this
+    }
+
+
+    public setLogRemote(logRemote: boolean) : C8oSettings {
+        this._logRemote = logRemote
+        return this
+    }
+
+    public  setLogLevelLocal(logLevelLocal: C8oLogLevel) : C8oSettings {
+        this._logLevelLocal = logLevelLocal
+        return this
+    }
+
+    public setLogC8o(logC8o: boolean) : C8oSettings {
+        this._logC8o = logC8o
+        return this
+    }
+
+    public  setLogOnFail(logOnFail: (exception : Error, parameters: Dictionary)=>void) : C8oSettings {
+        this._logOnFail = logOnFail
+        return this
+    }
+
+    public setDefaultDatabaseName(defaultDatabaseName: string) : C8oSettings {
+        this._defaultDatabaseName = defaultDatabaseName
+        return this
+    }
+
+    public setAuthenticationCookieValue(authenticationCookieValue: string) : C8oSettings {
+        this._authenticationCookieValue = authenticationCookieValue
+        return this
+    }
+
+    public  setFullSyncServerUrl(fullSyncServerUrl: string) : C8oSettings {
+        this._fullSyncServerUrl = fullSyncServerUrl
+        return this
+    }
+
+    public  setFullSyncUsername(fullSyncUsername: string) : C8oSettings {
+        this._fullSyncUsername = fullSyncUsername
+        return this
+    }
+
+    public  setFullSyncPassword(fullSyncPassword: string) : C8oSettings {
+        this._fullSyncPassword = fullSyncPassword
+        return this
+    }
+
+    public  setFullSyncLocalSuffix(fullSyncLocalSuffix: string) : C8oSettings {
+        this._fullSyncLocalSuffix = fullSyncLocalSuffix
+        return this
+    }
+
+    public  setUseEncryption(useEncryption: boolean) : C8oSettings {
+        this._useEncryption = useEncryption
+        return this
+    }
 }
 
 //DONE C8oOnProgress
@@ -653,27 +747,6 @@ export class C8oPromise<T> {//extends Promise<T> {//implements C8oPromiseFailSyn
         }
     }
 
-
-
-    /*
-     then(c8oOnResponse : C8oOnResponse<T>){
-     if(this.nextPromise != null){
-     return this.nextPromise.then(c8oOnResponse)
-     }
-     else{
-     this.c8oResponse = c8oOnResponse
-     this.nextPromise = new C8oPromise<T>(this.c8o)
-     if(this.lastFailure != null){
-     this.nextPromise.lastFailure = this.lastFailure
-     this.nextPromise.lastParameters = this.lastParameters
-     }
-     if(this.lastResponse != null){
-     //TODO
-     }
-     return this.nextPromise
-     }
-     }
-     */
 
     private _onResponse(){
         try{
@@ -858,6 +931,7 @@ class C8oCallTask{
                             resolve(result)
                         }).catch(
                         (error)=>{
+                            console.log(error)
                             if(error instanceof  C8oException){
                                 console.log("handleRequest 3")
                                 reject(error);
@@ -1011,6 +1085,7 @@ class C8oCallTask{
 
     private handleResponse(result: any){
         try{
+            console.log(result)
             if (typeof result == 'void') {
                 return;
             }
@@ -1070,17 +1145,19 @@ export class C8oFullSync {
     //DONE class C8oFullSync: function handleFullSyncRequest
     public handleFullSyncRequest(parameters : Dictionary, listener : C8oResponseListener) : Promise<any>{
         let projectParameterValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
-
+            console.log("ok")
         if(!projectParameterValue.startsWith(C8oFullSync.FULL_SYNC_PROJECT)){
             throw new C8oException(C8oExceptionMessage.invalidParameterValue(projectParameterValue, "its don't start with" + C8oFullSync.FULL_SYNC_PROJECT))
         }
+        console.log("ok2")
 
-        let fullSyncRequestableValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_PROJECT, true);
+        let fullSyncRequestableValue : string = C8outils.peekParameterStringValue(parameters, C8o.ENGINE_PARAMETER_SEQUENCE, true);
         let fullSyncRequestable : FullSyncRequestable = FullSyncRequestable.getFullSyncRequestable(fullSyncRequestableValue)
+        console.log("ok3")
         if(fullSyncRequestable == null){
             throw new C8oException(C8oExceptionMessage.invalidParameterValue(C8o.ENGINE_PARAMETER_PROJECT, C8oExceptionMessage.unknownValue("fullSync requestable", fullSyncRequestableValue)))
         }
-
+        console.log("ok4")
         let databaseName : string = projectParameterValue.substring(C8oFullSync.FULL_SYNC_PROJECT.length)
         if(databaseName.length < 1){
             databaseName = this.c8o.defaultDatabaseName
@@ -1088,14 +1165,18 @@ export class C8oFullSync {
                 throw new C8oException(C8oExceptionMessage.invalidParameterValue(C8o.ENGINE_PARAMETER_PROJECT, C8oExceptionMessage.missingValue("fullSync database name")))
             }
         }
+        console.log("ok5")
 
         var response : any
         return new Promise((resolve, reject)=>{
             fullSyncRequestable.handleFullSyncRequest(this, databaseName, parameters, listener).then((result)=>{
+                response = result
+                console.log(result)
                 if(response == null){
                     console.log("handleRequest 12")
                     reject(new C8oException(C8oExceptionMessage.couchNullResult()))
                 }
+                console.log("respCG" + response.toString())
                 resolve(this.handleFullSyncResponse(response, listener))
             }).catch((error)=>{
                 if(typeof error == 'C8oException'){
@@ -1118,6 +1199,7 @@ export class C8oFullSync {
                 //response = C8oFullSyncTranslator.fullSyncJsonToXml(response as JSON)
             }
         }
+        console.log("ok6 => " + response)
         return response
 
     }
@@ -1139,6 +1221,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
     constructor(c8o : C8o){
         super(c8o);
+        this.fullSyncDatabases =  new Dictionary()
     }
 
     //DONE class C8oFullSyncCbl: function getOrCreateFullSyncDatabase => ok
@@ -1146,18 +1229,28 @@ export class C8oFullSyncCbl extends C8oFullSync{
         let localDatabaseName : string = databaseName + this.localSuffix;
 
         if(this.fullSyncDatabases[localDatabaseName] == null){
-            this.fullSyncDatabases[localDatabaseName] = new C8oFullSyncDatabase(this.c8o, databaseName, this.fullSyncDatabaseUrlBase, this.localSuffix)
+            this.fullSyncDatabases.add(localDatabaseName, new C8oFullSyncDatabase(this.c8o, databaseName, this.fullSyncDatabaseUrlBase, this.localSuffix))
         }
         return this.fullSyncDatabases[localDatabaseName];
      }
 
      //LATER class C8oFullSyncCbl: function handleFullSyncResponse
     handleFullSyncResponse(response: any, listener: C8oResponseListener) : any{
-        //response = super.handleFullSync
+        console.log("here : "+ listener.toString()+" " + response)
+        response = super.handleFullSyncResponse(response, listener)
 
         if(typeof(response) == 'void' ){
             return response
         }
+        if(typeof listener == 'C8oResponseJsonListener'){
+            if(typeof response == 'FullSyncDocumentOperationResponse'){
+                return C8oFullSyncTranslator.fullSyncDocumentOperationResponseToJson(response as FullSyncDocumentOperationResponse)
+            }
+            else{
+                return response
+            }
+        }
+
 
     }
 
@@ -1377,13 +1470,15 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
     //DONE class C8oFullSyncCbl: function handleResetDatabaseRequest
     handleResetDatabaseRequest(databaseName : string) : FullSyncDefaultResponse{
-        this.getOrCreateFullSyncDatabase(databaseName)
+        this.handleDestroyDatabaseRequest(databaseName)
+        console.log("ok9")
         return this.handleCreateDatabaseRequest(databaseName)
     }
 
     //DONE class C8oFullSyncCbl: function handleCreateDatabaseRequest
     handleCreateDatabaseRequest(databaseName : string): FullSyncDefaultResponse{
         this.getOrCreateFullSyncDatabase(databaseName)
+        console.log("ok10")
         return new FullSyncDefaultResponse(true)
     }
 
@@ -1770,15 +1865,16 @@ export class FullSyncRequestable{
     });
 
     static RESET : FullSyncRequestable = new FullSyncRequestable("reset", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        c8oFullSync.handleResetDatabaseRequest(databaseName)
+        console.log("ok8" + " " + databaseName)
+        return c8oFullSync.handleResetDatabaseRequest(databaseName)
     });
 
     static CREATE : FullSyncRequestable = new FullSyncRequestable("create", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        c8oFullSync.handleCreateDatabaseRequest(databaseName)
+        return c8oFullSync.handleCreateDatabaseRequest(databaseName)
     });
 
     static DESTROY : FullSyncRequestable = new FullSyncRequestable("destroy", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        c8oFullSync.handleDestroyDatabaseRequest(databaseName)
+        return c8oFullSync.handleDestroyDatabaseRequest(databaseName)
     });
 
 
@@ -1794,7 +1890,11 @@ export class FullSyncRequestable{
 
     handleFullSyncRequest(c8oFullSync : C8oFullSync, databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : Promise<any>{
         try{
-            return this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener)
+            console.log("ok7")
+            return new Promise((resolve, reject)=>{
+                resolve(this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener))
+            })
+
         }
         catch(error){
             throw error
@@ -2283,6 +2383,10 @@ export class C8oFullSyncTranslator{
 
     static  XML_KEY_DOCUMENT: string = "document";
     static  XML_KEY_COUCHDB_OUTPUT: string = "couchdb_output";
+
+    static fullSyncDocumentOperationResponseToJson(fullSyncDocumentOperationResponse: FullSyncAbstractResponse) : JSON{
+        return fullSyncDocumentOperationResponse.getProperties() as JSON
+    }
 }
 
 //DOING class C8oTranslator
@@ -2362,7 +2466,7 @@ export class FullSyncAbstractResponse{
 
     getProperties() :any{
         var properties : Dictionary = new Dictionary();
-        properties[FullSyncResponse.RESPONSE_KEY_OK] = this.operationStatus;
+        properties.add(FullSyncResponse.RESPONSE_KEY_OK, this.operationStatus);
         return properties;
     }
 }
@@ -2387,8 +2491,8 @@ export class FullSyncDocumentOperationResponse extends FullSyncAbstractResponse{
 
     getProperties() : Dictionary{
         var properties : Dictionary = super.getProperties()
-        properties[FullSyncResponse.RESPONSE_KEY_DOCUMENT_ID] = this.documentId
-        properties[FullSyncResponse.RESPONSE_KEY_DOCUMENT_REVISION] = this.documentRevision
+        properties.add(FullSyncResponse.RESPONSE_KEY_DOCUMENT_ID, this.documentId)
+        properties.add(FullSyncResponse.RESPONSE_KEY_DOCUMENT_REVISION, this.documentRevision)
         return properties;
     }
 
@@ -3230,6 +3334,13 @@ export class C8oLogger {
                         // and save the data for later reference
                         jsonResponse = data;
                         resolve();
+                    }, error=>{
+                        this.c8o.logRemote = false
+                        //TODO HERE
+                        if(this.c8o.logOnFail != null){
+                            this.c8o.logOnFail(new C8oException(C8oExceptionMessage.RemoteLogFail(), error), null)
+                        }
+                        return
                     });
             }).then(() => {
                 var logLevelResponse = jsonResponse[C8oLogger.JSON_KEY_REMOTE_LOG_LEVEL.toString()];
