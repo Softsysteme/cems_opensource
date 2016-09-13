@@ -22,7 +22,6 @@ export class SearchForm {
         this.c8o.callJson("sampleMobileSearchRoom.LoadList")
         .then(
             (response, parameters)=>{
-                console.log(response)
                 this.nav.push(ListForm, response)
                 return null
              }
