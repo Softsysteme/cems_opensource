@@ -1,0 +1,18 @@
+
+<ion-header>
+    <ion-navbar primary text-center>
+        <ion-title>5 Rooms aviable</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let item of items">
+        <ion-item (click)="detail(item.id)">
+            <img class="img-class"src="{{item.img}}"/>
+            <ion-card-title class="title-card">
+                {{item.title}}
+            </ion-card-title>
+            </ion-item>
+    </ion-card>
+
+</ion-content>

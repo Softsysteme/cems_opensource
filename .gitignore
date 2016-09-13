@@ -90,6 +90,10 @@ Studio/projects/samplePolymer/wsdl
 Studio/projects/sample_HelloWorld/_private
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.wsdl
 Studio/projects/sample_HelloWorld/sample_HelloWorld.temp.xsd
+Studio/projects/sample_Ionic2/Traces
+Studio/projects/sample_Ionic2/_private
+Studio/projects/sample_Ionic2/ionic/node_modules
+Studio/projects/sample_Ionic2/wsdl
 Studio/projects/sample_database_HSQLDB/*.temp.*
 Studio/projects/sample_database_HSQLDB/Traces
 Studio/projects/sample_database_HSQLDB/_data
