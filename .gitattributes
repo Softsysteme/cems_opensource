@@ -3353,6 +3353,7 @@ Studio/projects/template_Ionic2/ionic/typings/main.d.ts -text
 Studio/projects/template_Ionic2/ionic/typings/main/ambient/es6-shim/index.d.ts -text
 Studio/projects/template_Ionic2/ionic/www/img/appicon.png -text
 Studio/projects/template_Ionic2/ionic/www/index.html -text svneol=unset#text/plain
+Studio/projects/template_Ionic2/readme.md -text
 Studio/projects/template_Ionic2/template_Ionic2.xml -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/xsd/internal/void/void.xsd -text svneol=unset#text/plain
 Studio/projects/template_Ionic2/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
