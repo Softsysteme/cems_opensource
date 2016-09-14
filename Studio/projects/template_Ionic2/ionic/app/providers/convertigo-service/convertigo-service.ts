@@ -855,7 +855,7 @@ export class C8oHttpInterface{
                  }).toPromise().then((result)=> {
                      resolve(this.extractData(result))
                  }).catch(function (error) {
-                     console.log("handleRequest 1")
+
                      reject(error)
                  })
              })
@@ -868,7 +868,6 @@ export class C8oHttpInterface{
                      }).toPromise().then((result)=> {
                          resolve(this.extractData(result))
                      }).catch(function (error) {
-                         console.log("handleRequest 2")
                          reject(error)
                      })
                  })
@@ -936,13 +935,10 @@ class C8oCallTask{
                             resolve(result)
                         }).catch(
                         (error)=>{
-                            console.log(error)
                             if(error instanceof  C8oException){
-                                console.log("handleRequest 3")
                                 reject(error);
                             }
                             else{
-                                console.log("handleRequest 4")
                                 reject(new C8oException(C8oExceptionMessage.handleFullSyncRequest(), error));
                             }
                         });
@@ -956,7 +952,6 @@ class C8oCallTask{
                         responseType = C8o.RESPONSE_TYPE_JSON;
                     } else {
                         // Return an Exception because the C8oListener used is unknown
-                        console.log("handleRequest 5")
                         reject(new C8oException(C8oExceptionMessage.wrongListener(this.c8oResponseListener)));
                     }
                     var c8oCallRequestIdentifier : string = null
@@ -972,7 +967,6 @@ class C8oCallTask{
                                     c8oCallRequestIdentifier = C8outils.identifyC8oCallRequest(this.parameters, responseType)
                                 }
                                 catch (error) {
-                                    console.log("handleRequest 6")
                                     reject(new C8oException(C8oExceptionMessage.serializeC8oCallRequest(), error))
                                 }
                                 if (localCache.priority.isAviable(this.c8o)) {
@@ -1033,7 +1027,6 @@ class C8oCallTask{
                                     }
                                 }
                                 catch(error){
-                                    console.log("handleRequest 7")
                                     reject(new C8oException(C8oExceptionMessage.inputStreamToXML(), error))
                                 }
                             }
@@ -1043,19 +1036,16 @@ class C8oCallTask{
                                         responseString = result
                                     }
                                     catch(error){
-                                        console.log("handleRequest 8")
                                         reject(new C8oException(C8oExceptionMessage.parseInputStreamToString(), error))
                                     }
 
                                     response = result
                                 }
                                 catch(error){
-                                    console.log("handleRequest 9")
                                     reject(error)
                                 }
                             }
                             else{
-                                console.log("handleRequest 10")
                                 reject(new C8oException(C8oExceptionMessage.wrongListener(this.c8oResponseListener)))
                             }
 
@@ -1072,7 +1062,6 @@ class C8oCallTask{
                                     })
                                 }
                                 catch(error){
-                                    console.log("handleRequest 11")
                                     reject(new C8oException(C8oExceptionMessage.saveResponseToLocalCache()))
                                 }
                             }
@@ -1171,17 +1160,14 @@ export class C8oFullSync {
             fullSyncRequestable.handleFullSyncRequest(this, databaseName, parameters, listener).then((result)=>{
                 response = result
                 if(response == null){
-                    console.log("handleRequest 12")
                     reject(new C8oException(C8oExceptionMessage.couchNullResult()))
                 }
                 resolve(this.handleFullSyncResponse(response, listener))
             }).catch((error)=>{
-                if(typeof error == 'C8oException'){
-                    console.log("handleRequest 13")
+                if(error instanceof C8oException){
                     reject(error)
                 }
                 else{
-                    console.log("handleRequest 14")
                     reject(new C8oException(C8oExceptionMessage.FullSyncRequestFail(), error))
                 }
             })
@@ -1246,6 +1232,9 @@ export class C8oFullSyncCbl extends C8oFullSync{
             else if(typeof response == 'JSON'){
                 return response
             }
+            else if(response instanceof Dictionary){
+                return C8oFullSyncTranslator.dictionaryToJson(response)
+            }
             else{
                 throw new C8oException(C8oExceptionMessage.illegalArgumentIncompatibleListener(listener.toString(), typeof response))
             }
@@ -1273,7 +1262,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
         var dictDoc : Dictionary = new Dictionary();
 
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(fullSyncDatabaseName);
-        return new Promise(function (resolve) {
+        return new Promise(function (resolve, reject) {
             fullSyncDatabase.getdatabase.get(docid,{
                 _attachment: true
             }).then(function (document) {
@@ -1305,29 +1294,45 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
                 resolve(dictDoc)
             })
+            .catch((error)=>{
+                reject(error)
+            })
 
         })
     }
     //DONE class C8oFullSyncCbl: function handleDeleteDocumentRequest
     handleDeleteDocumentRequest(DatabaseName : string, docid : string, parameters : Dictionary) : Promise<any>{
         var fullSyncDatabase : C8oFullSyncDatabase = null;
-        var document : any
+
         fullSyncDatabase = this.getOrCreateFullSyncDatabase(DatabaseName);
         let revParameterValue : string = C8outils.getParameterStringValue(parameters, FullSyncDeleteDocumentParameter.REV.name, false)
         let documentRevision : string
-        return new Promise(function (resolve) {
-            fullSyncDatabase.getdatabase.get(docid).then(function(doc) {
-                if(doc == null){
-                    throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo());
-                }
-                documentRevision = document._rev
-                return fullSyncDatabase.getdatabase.remove(doc);
-            }).then(function (result) {
-                resolve(new FullSyncDocumentOperationResponse(docid, documentRevision, result.ok));
-            }).catch(function (err) {
-                throw new C8oException(C8oExceptionMessage.couchRequestDeleteDocument(), err);
-            });
-        })
+        if(revParameterValue == null){
+            return new Promise((resolve, reject)=> {
+                fullSyncDatabase.getdatabase.get(docid).then(function(doc) {
+                    if(doc == null){
+                        throw new C8oRessourceNotFoundException(C8oExceptionMessage.toDo());
+                    }
+                    documentRevision = doc._rev
+                    return fullSyncDatabase.getdatabase.remove(doc);
+                }).then((result)=> {
+                    resolve(new FullSyncDocumentOperationResponse(docid, documentRevision, result.ok));
+                }).catch((err) =>{
+                    reject(new C8oException(C8oExceptionMessage.couchRequestDeleteDocument(), err));
+                });
+            })
+        }
+        else{
+            return new Promise((resolve, reject)=> {
+                fullSyncDatabase.getdatabase.remove(docid, revParameterValue)
+                    .then((result)=> {
+                        resolve(new FullSyncDocumentOperationResponse(docid, documentRevision, result.ok));
+                    }).catch((err) =>{
+                    reject(new C8oException(C8oExceptionMessage.couchRequestDeleteDocument(), err));
+                });
+            })
+
+        }
     }
 
     //DONE class C8oFullSyncCbl: function handlePostDocumentRequest
@@ -2415,6 +2420,11 @@ export class C8oFullSyncTranslator{
     static fullSyncDefaultResponseToJson(fullSyncDefaultResponse : FullSyncDefaultResponse) : JSON{
         return fullSyncDefaultResponse.getProperties() as JSON
     }
+    static dictionaryToJson(dictionary: Dictionary) : JSON {
+        let json: JSON = dictionary.toArray() as JSON
+        return json
+    }
+
 }
 
 //DOING class C8oTranslator
@@ -3545,14 +3555,8 @@ export class Dictionary {
     }
     toDict(obj : any){
         let count = 0
-        for(var va of obj){
-            if(this.pair(count)){
-                this._keys.push(va)
-            }
-            else{
-                this._values.push(va)
-            }
-
+        for(var key in obj){
+            this.add(key, obj[key])
         }
     }
     private pair(nb : number): boolean{
