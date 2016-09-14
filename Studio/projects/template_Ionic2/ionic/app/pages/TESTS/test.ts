@@ -110,17 +110,42 @@ export class Test {
 
         this.C8O_FS()
 
-        console.log("here")
-        this.c8o.callJson("fs://ClientSDKtesting.reset")
+        let myID
+
+            this.c8o.callJson("fs://ClientSDKtesting.reset")
             .then(
                 (response: any, parameters)=>{
-                    if(response.ok == "true"){
+                    if(response.ok == true){
                         console.log("test03 .reset ok")
                     }
                     else {
                         console.log("test03 .reset ERROR")
                     }
-                    return null
+                    myID = "C8oFsPostGetDelete-" + (new Date().getTime())
+                    return this.c8o.callJson("fs://ClientSDKtesting.post", "_id", myID)
+            }
+        )
+        .then(
+            (response: any, parameters)=>{
+
+                if(response.ok == true && response.id == myID ){
+                    console.log("test03 .post ok")
+                }
+                else {
+                    console.log("test03 .post ERROR")
+                }
+                return this.c8o.callJson("fs://ClientSDKtesting.get", "docid", response.id)
+            }
+        )
+        .then(
+            (response: any, parameters)=>{
+                if(response.id == myID ){
+                    console.log("test03 .get ok")
+                }
+                else {
+                    console.log("test03 .get ERROR")
+                }
+                return null
             }
         )
         .fail(
@@ -129,7 +154,16 @@ export class Test {
                 return null
             }
         )
+/*
 
+ */
+
+
+    }
+    test04(){
+        let a : string[] = new Array<string>(0)
+        a.push("salut")
+        console.log(a[0])
 
 
     }
