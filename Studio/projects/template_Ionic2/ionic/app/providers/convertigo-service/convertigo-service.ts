@@ -561,10 +561,26 @@ export class C8o extends C8oBase {
     }
 
     public static toParameters(parameters: any) : Dictionary{
-        if (0 != parameters.length % 2) {
-            throw new C8oException("TODO")
-        }
         var newParameters : Dictionary = new Dictionary()
+        if (0 != parameters.length % 2) {
+            let [, second, , fourth, last] = parameters
+            for (var p of parameters) {
+                if (p.length > 1) {
+                    console.log(p)
+                }
+            }
+
+            /*if(0 != rest.length % 2){
+                for(var i = 0; i<rest.length; i+=2) {
+                    newParameters.add(parameters[i], parameters[i + 1])
+                }
+            }*/
+            /*else{
+                throw new C8oException("TODO")
+            }*/
+
+        }
+
 
         for(var i = 0; i<parameters.length; i+=2) {
             newParameters.add(parameters[i], parameters[i + 1])
@@ -1347,7 +1363,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
         var newProperties = new Dictionary();
         /*here*/
-        for(var i = 0; i<parameters.length; i+=2) {
+        for(var i = 0; i<parameters.length; i++) {
             var parameterName: string = parameters["_keys"][i];
 
             if(!parameterName.startsWith("__") && !parameterName.startsWith("_use_")){
@@ -1365,7 +1381,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
                         count --
                     }
                     let existProperty = newProperties[parameterName]
-                    if(existProperty != null && typeof existProperty ==  'Dictionary'){
+                    if(existProperty != null){
                         C8oFullSyncCbl.mergeProperties(objectparameterValue, existProperty);
                     }
                 }
@@ -1381,6 +1397,8 @@ export class C8oFullSyncCbl extends C8oFullSync{
             fullSyncPolicy.action(db,  newProperties).then((createdDocument)=>{
                 let fsDocOpeResp : FullSyncDocumentOperationResponse = new FullSyncDocumentOperationResponse(createdDocument.id, createdDocument.rev, createdDocument.ok)
                 resolve(fsDocOpeResp)
+            }).catch((error)=>{
+                reject(error)
             })
         })
 
@@ -1490,9 +1508,16 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleResetDatabaseRequest
-    handleResetDatabaseRequest(databaseName : string) : FullSyncDefaultResponse{
-        this.handleDestroyDatabaseRequest(databaseName)
-        return this.handleCreateDatabaseRequest(databaseName)
+    handleResetDatabaseRequest(databaseName : string) : Promise<FullSyncDefaultResponse>{
+        return new Promise((resolve, reject)=>{
+            this.handleDestroyDatabaseRequest(databaseName).then((response: any)=>{
+
+                    resolve(this.handleCreateDatabaseRequest(databaseName))
+
+            })
+        })
+
+
     }
 
     //DONE class C8oFullSyncCbl: function handleCreateDatabaseRequest
@@ -1502,19 +1527,19 @@ export class C8oFullSyncCbl extends C8oFullSync{
     }
 
     //DONE class C8oFullSyncCbl: function handleCreateDatabaseRequest
-    handleDestroyDatabaseRequest(databaseName: string): FullSyncDefaultResponse{
-        let localDatabaseName = databaseName + this.localSuffix
-        if(this.fullSyncDatabases[localDatabaseName] !=  null){
-            this.fullSyncDatabases.remove(localDatabaseName)
-        }
-        try{
-            let db = new PouchDB(localDatabaseName)
-            db.destroy()
-        }
-        catch(err){
-            throw new C8oException("TODO", err)
-        }
-        return new FullSyncDefaultResponse(true)
+    handleDestroyDatabaseRequest(databaseName: string): Promise<FullSyncDefaultResponse>{
+        return new Promise((resolve, reject)=>{
+            let localDatabaseName = databaseName + this.localSuffix
+                this.getOrCreateFullSyncDatabase(databaseName).deleteDB().then((response)=>{
+                    if(this.fullSyncDatabases[localDatabaseName] !=  null){
+                        this.fullSyncDatabases.remove(localDatabaseName)
+                    }
+                    resolve(new FullSyncDefaultResponse(response.ok))
+                }).catch((err)=>{
+                    reject(new C8oException("TODO", err))
+                })
+        })
+
     }
 
     //LATER class C8oFullSyncCbl: function compileView
@@ -1534,11 +1559,20 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
     //DONE class C8oFullSyncCBL-> mergeProperties
     static mergeProperties(newProperties: Dictionary, oldProperties: Dictionary){
-        for(var old in oldProperties){
-            let oldPropertyKey : any = old[0]
-            let oldPropertyValue : any = old[1]
+        for(var i = 0; i< Object.keys(oldProperties).length; i++){
+            let oldPropertyKey : any = Object.keys(oldProperties)[i]
+            let oldPropertyValue : any = oldProperties[Object.keys(oldProperties)[i]]
 
-            if(newProperties[oldPropertyKey] != null && typeof newProperties[oldPropertyKey] == 'Dictionary' && typeof oldPropertyValue == 'Dictionary'){
+
+            if(newProperties[oldPropertyValue] != null && newProperties[oldPropertyValue] != undefined){
+                this.mergeProperties(newProperties[oldPropertyValue])
+            }
+            else{
+
+            }
+
+
+            if(newProperties[oldPropertyKey] != null && newProperties[oldPropertyKey] instanceof Dictionary && oldPropertyValue instanceof Dictionary){
                 C8oFullSyncCbl.mergeProperties(newProperties[oldPropertyKey], oldPropertyValue)
                 newProperties[oldPropertyKey] = newProperties[oldPropertyKey]
             }
@@ -1813,53 +1847,90 @@ export class FullSyncPostDocumentParameter {
 
 //DOING class FullSyncRequestable
 export class FullSyncRequestable{
-    static GET : FullSyncRequestable = new FullSyncRequestable("get", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
-        return c8oFullSync.handleGetDocumentRequest(databaseName, docid, parameters)
+    static GET : FullSyncRequestable =new FullSyncRequestable("get", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
+        return new Promise((resolve, reject)=> {
+            let docid: string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
+            resolve(c8oFullSync.handleGetDocumentRequest(databaseName, docid, parameters))
+        }).catch((error)=>{
+            throw error
+        })
     });
     
     static DELETE : FullSyncRequestable = new FullSyncRequestable("delete", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
-                return c8oFullSync.handleDeleteDocumentRequest(databaseName, docid, parameters)
+        return new Promise((resolve, reject)=> {
+
+            let docid: string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, true);
+            c8oFullSync.handleDeleteDocumentRequest(databaseName, docid, parameters).then((result)=>{
+                resolve(result)
+            }).catch((error)=>{
+                reject(error)
+            })
+        })
     });
 
     static POST : FullSyncRequestable = new FullSyncRequestable("post", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                let fullSyncPolicyParameter : string = C8outils.peekParameterStringValue(parameters, FullSyncPostDocumentParameter.POLICY.name, false)
+        return new Promise((resolve, reject)=> {
+            try{
+                let fullSyncPolicyParameter: string = C8outils.peekParameterStringValue(parameters, FullSyncPostDocumentParameter.POLICY.name, false)
 
-                let fullSyncPolicy : FullSyncPolicy = FullSyncPolicy.getFullSyncPolicy(fullSyncPolicyParameter)
+                let fullSyncPolicy: FullSyncPolicy = FullSyncPolicy.getFullSyncPolicy(fullSyncPolicyParameter)
+                resolve(c8oFullSync.handlePostDocumentRequest(databaseName, fullSyncPolicy, parameters))
+            }
+            catch(error){
+                reject(error)
+            }
 
-                return c8oFullSync.handlePostDocumentRequest(databaseName, fullSyncPolicy, parameters)
+        }).catch((error)=>{
+            throw error
+        })
+
     });
 
     static PUT_ATTACHMENT : FullSyncRequestable = new FullSyncRequestable("put_attachment", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
+        return new Promise((resolve, reject)=> {
+            let docid: string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
 
-                let name : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.NAME.name, false)
+            let name: string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.NAME.name, false)
 
-                let contentType : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.CONTENT_TYPE.name, false)
+            let contentType: string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.CONTENT_TYPE.name, false)
 
-                let content = C8outils.getParameterObjectValue(parameters, FullSyncAttachmentParameter.CONTENT.name, false)
+            let content = C8outils.getParameterObjectValue(parameters, FullSyncAttachmentParameter.CONTENT.name, false)
 
-                return c8oFullSync.handlePutAttachmentRequest(databaseName, docid, name, contentType, content)
+            resolve(c8oFullSync.handlePutAttachmentRequest(databaseName, docid, name, contentType, content))
+        }).catch((error)=>{
+            throw error
+        })
     });
 
     static DELETE_ATTACHMENT : FullSyncRequestable = new FullSyncRequestable("delete_attachment", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                let docid : string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
+        return new Promise((resolve, reject)=> {
+            let docid: string = C8outils.peekParameterStringValue(parameters, FullSyncGetDocumentParameter.DOCID.name, false);
 
-                let name : string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.DOCID.name, false)
+            let name: string = C8outils.getParameterStringValue(parameters, FullSyncAttachmentParameter.DOCID.name, false)
 
-                return c8oFullSync.handleDeleteAttachmentRequest(databaseName, docid, name)
+            resolve(c8oFullSync.handleDeleteAttachmentRequest(databaseName, docid, name))
+        }).catch((error)=>{
+            throw error
+        })
     });
 
     static ALL : FullSyncRequestable = new FullSyncRequestable("all", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                return c8oFullSync.handleAllDocumentsRequest(databaseName, parameters)
+        return new Promise((resolve, reject)=> {
+            return c8oFullSync.handleAllDocumentsRequest(databaseName, parameters)
+        }).catch((error)=>{
+            throw error
+        })
     });
 
     static VIEW : FullSyncRequestable = new FullSyncRequestable("view", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-                let ddoc : string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.DDOC.name, false)
-                let view : string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.VIEW.name, false)
+        return new Promise((resolve, reject)=> {
+            let ddoc: string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.DDOC.name, false)
+            let view: string = C8outils.peekParameterStringValue(parameters, FullSyncGetViewParameter.VIEW.name, false)
 
-                return c8oFullSync.handleGetViewRequest(databaseName, ddoc, view, parameters)
+            resolve(c8oFullSync.handleGetViewRequest(databaseName, ddoc, view, parameters))
+        }).catch((error)=>{
+            throw error
+        })
     });
 
 
@@ -1885,17 +1956,37 @@ export class FullSyncRequestable{
     });
 
     static RESET : FullSyncRequestable = new FullSyncRequestable("reset", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        return c8oFullSync.handleResetDatabaseRequest(databaseName)
+        return new Promise((resolve, reject)=> {
+            c8oFullSync.handleResetDatabaseRequest(databaseName).then((response)=> {
+                resolve(response)
+            }).catch((error)=>{
+                reject(error)
+            })
+        }).catch((error)=>{
+            throw error
+        })
     });
 
     static CREATE : FullSyncRequestable = new FullSyncRequestable("create", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        return c8oFullSync.handleCreateDatabaseRequest(databaseName)
+        return new Promise((resolve, reject)=> {
+            resolve(c8oFullSync.handleCreateDatabaseRequest(databaseName))
+        }).catch((error)=>{
+            throw error
+        })
     });
 
     static DESTROY : FullSyncRequestable = new FullSyncRequestable("destroy", (c8oFullSync: C8oFullSyncCbl, databaseName: string, parameters: Dictionary, c8oResponseListener: C8oResponseListener)=>{
-        return c8oFullSync.handleDestroyDatabaseRequest(databaseName)
-    });
+        return new Promise((resolve, reject)=>{
+            c8oFullSync.handleDestroyDatabaseRequest(databaseName).then((response)=>{
+                resolve(response)
+            }).catch((error)=>{
+                reject(error)
+            })
+        }).catch((error)=>{
+            throw error
+        })
 
+    });
 
 
 
@@ -1910,7 +2001,11 @@ export class FullSyncRequestable{
     handleFullSyncRequest(c8oFullSync : C8oFullSync, databaseName: string, parameters: Dictionary, c8oResponseListener : C8oResponseListener) : Promise<any>{
         try{
             return new Promise((resolve, reject)=>{
-                resolve(this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener))
+                this.hanfleFullSncrequestOp(c8oFullSync, databaseName, parameters, c8oResponseListener).then((result)=>{
+                    resolve(result)
+                }).catch((error)=>{
+                    reject(error)
+                })
             })
 
         }
@@ -1939,30 +2034,31 @@ export class FullSyncRequestable{
 export class FullSyncPolicy{
     public static NONE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_NONE, (database : any, newProperties : Dictionary)=>{
                 var documentId = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
-                try{
-                    newProperties.remove(C8oFullSync.FULL_SYNC__ID)
+
                     if(documentId == ""){
                         documentId = null
                     }
-                    if(documentId == null){
-                        return new Promise(function (resolve) {
-                            database.put(newProperties.toArray()).then(function (createdDocument) {
+                    //if(documentId == null){
+                        return new Promise(function (resolve, reject) {
+                            database.post(newProperties.toArray()).then(function (createdDocument) {
                                 resolve(createdDocument)
+                            }).catch((error)=>{
+                                reject(new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error));
                             })
                         })
-                    }
+                    /*}
                     else{
                         return new Promise(function (resolve) {
                             database.get(documentId).then(function (doc) {
                                 newProperties.add("_id", documentId)
                                 newProperties.add('_rev', doc._rev)
-                                return database.put(newProperties.toArray());
+                                return database.post(newProperties.toArray());
                             }).then(function (createdDocument) {
                                 resolve(createdDocument)
                             }).catch((error)=>{
                                 if(error.status == "404"){
                                     newProperties.add("_id", documentId)
-                                    return database.put(newProperties.toArray());
+                                    return database.post(newProperties.toArray());
                                 }
                                 else{
                                     throw error
@@ -1973,11 +2069,9 @@ export class FullSyncPolicy{
                             })
                         })
 
-                    }
-                }
-                catch(error){
-                    throw new C8oCouchBaseLiteException(C8oExceptionMessage.fullSyncPutProperties(newProperties), error);
-                }
+                    }*/
+
+
     });
 
 
@@ -1986,7 +2080,7 @@ export class FullSyncPolicy{
                     newProperties.remove(C8oFullSync.FULL_SYNC__ID)
                     newProperties.remove(C8oFullSync.FULL_SYNC__REV)
                     return new Promise(function (resolve) {
-                        database.put(newProperties.toArray()).then(function (createdDocument) {
+                        database.post(newProperties.toArray()).then(function (createdDocument) {
                             resolve(createdDocument)
                         })
                     })
@@ -2004,21 +2098,30 @@ export class FullSyncPolicy{
 
                     if(documentId == null){
                         return new Promise(function (resolve) {
-                            database.put(newProperties.toArray()).then(function (createdDocument) {
+                            database.post(newProperties.toArray()).then(function (createdDocument) {
                                 resolve (createdDocument)
                             })
                         })
                     }
                     else {
-                        return new Promise(function (resolve) {
+
+                        return new Promise(function (resolve, reject) {
                             database.get(documentId).then(function (doc) {
-                                if(doc._rev == null){
-                                    //TOTEST this...
-                                    newProperties.add(C8oFullSync.FULL_SYNC__REV, doc._rev)
-                                }
                                 newProperties.add("_id", documentId)
+                                newProperties.add('_rev', doc._rev)
                                 return database.put(newProperties.toArray());
                             }).then(function (createdDocument) {
+                                resolve(createdDocument)
+                            }).catch((error)=>{
+                                    if(error.status == "404"){
+                                        newProperties.add("_id", documentId)
+                                        return database.post(newProperties.toArray());
+                                    }
+                                    else{
+                                        reject(error)
+                                    }
+                                }
+                            ).then(function (createdDocument) {
                                 resolve(createdDocument)
                             })
                         })
@@ -2029,7 +2132,7 @@ export class FullSyncPolicy{
                 }
     });
 
-    public static MERGE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_OVERRIDE, (database : any, newProperties : Dictionary)=>{
+    public static MERGE: FullSyncPolicy = new FullSyncPolicy(C8o.FS_POLICY_MERGE, (database : any, newProperties : Dictionary)=>{
                 var createdDocument : any;
                 try {
                     let documentId: string = C8outils.getParameterStringValue(newProperties, C8oFullSync.FULL_SYNC__ID, false)
@@ -2045,14 +2148,11 @@ export class FullSyncPolicy{
                     } else {
                         return new Promise(function (resolve) {
                             database.get(documentId).then(function (doc) {
-                                let oldProperties = doc.properties
-                                if(oldProperties != null){
-                                    //TOTEST test that inout properties works
-                                    C8oFullSyncCbl.mergeProperties(newProperties, oldProperties)
+                                    C8oFullSyncCbl.mergeProperties(newProperties, doc)
                                     database.put(newProperties.toArray()).then(function (createdDocument) {
                                         resolve(createdDocument)
                                     })
-                                }
+
                             })
                         })
                     }
@@ -2208,6 +2308,22 @@ export class C8oFullSyncDatabase{
 
     public get getdatabase() : any{
         return this.database;
+    }
+    deleteDB() : Promise<any>{
+        return new Promise((resolve, reject)=>{
+            if(this.database != null){
+                this.database.destroy().then((response)=>{
+                    this.database = null
+                    resolve(response)
+                }).catch((error)=>{
+                    this.c8o.log.debug("Failed to close DB: ", error.message)
+                    reject(error)
+                })
+
+            }
+        })
+
+
     }
 
     /*public destroyReplications(){
@@ -3575,10 +3691,13 @@ export class Dictionary {
 
     remove(key: string) {
         var index = this._keys.indexOf(key, 0);
-        this._keys.splice(index, 1);
-        this._values.splice(index, 1);
+        if(index == -1){}
+        else{
+            this._keys.splice(index, 1);
+            this._values.splice(index, 1);
 
-        delete this[key];
+            delete this[key];
+        }
     }
 
     keys(): string[] {
