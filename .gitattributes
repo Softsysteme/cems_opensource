@@ -3631,6 +3631,7 @@ Studio/projects/template_mobileMaterialDesign/DisplayObjects/platforms/iOS/res/s
 Studio/projects/template_mobileMaterialDesign/css/custom.css -text svneol=unset#text/plain
 Studio/projects/template_mobileMaterialDesign/index.html -text svneol=unset#text/plain
 Studio/projects/template_mobileMaterialDesign/js/custom.js -text svneol=unset#text/plain
+Studio/projects/template_mobileMaterialDesign/readme.md -text
 Studio/projects/template_mobileMaterialDesign/template_mobileMaterialDesign.xml -text svneol=unset#text/plain
 Studio/projects/template_mobileMaterialDesign/xsd/internal/void/void.xsd -text svneol=unset#text/plain
 Studio/projects/template_mobileMaterialDesign/xsd/template_mobileJQueryMobile.xsd -text svneol=unset#text/plain
