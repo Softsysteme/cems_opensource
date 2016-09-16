@@ -756,7 +756,7 @@ export class Test {
                             else {
                                 console.log("test11 .post: ERROR")
                             }
-                            return this.c8o.callJson("fs://ClientSDKtesting.post", "_id", id, C8o.FS_POLICY, C8o.FS_POLICY_MERGE, "i", ["4", 6, 7.1, null], "c.f.j", "good", "c.f.h", [true, false])
+                            return this.c8o.callJson("fs://ClientSDKtesting.post", "_id", id, C8o.FS_POLICY, C8o.FS_POLICY_MERGE, "i", ["5", 6, 7.1, null], "c.f.j", "good", "c.f.h", [true, false])
                         }
                     )
                     .then(
@@ -783,13 +783,13 @@ export class Test {
                                 console.log("test11 .post: ERROR")
                             }
 
-                            return this.c8o.callJson("fs://ClientSDKtesting.get", "_id", id, C8o.FS_POLICY, C8o.FS_POLICY_MERGE, C8o.FS_SUBKEY_SEPARATOR, "<>", "_id", id, "c<>i-j", "great")
+                            return this.c8o.callJson("fs://ClientSDKtesting.get", "docid", id)
                         }
                     )
                     .then(
                         (response: any, parameters)=> {
-                            response.pop("_rev")
-                            if (response.pop("_id") == id) {
+                            delete response._rev
+                            if (delete response._id == id) {
 
                                 console.log("test11 .post: ok")
 

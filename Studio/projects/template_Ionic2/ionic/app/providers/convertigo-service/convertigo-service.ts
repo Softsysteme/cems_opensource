@@ -563,25 +563,8 @@ export class C8o extends C8oBase {
     public static toParameters(parameters: any) : Dictionary{
         var newParameters : Dictionary = new Dictionary()
         if (0 != parameters.length % 2) {
-            let [, second, , fourth, last] = parameters
-            for (var p of parameters) {
-                if (p.length > 1) {
-                    console.log(p)
-                }
-            }
-
-            /*if(0 != rest.length % 2){
-                for(var i = 0; i<rest.length; i+=2) {
-                    newParameters.add(parameters[i], parameters[i + 1])
-                }
-            }*/
-            /*else{
-                throw new C8oException("TODO")
-            }*/
-
+           throw new C8oException("TODO")
         }
-
-
         for(var i = 0; i<parameters.length; i+=2) {
             newParameters.add(parameters[i], parameters[i + 1])
         }
@@ -1286,14 +1269,11 @@ export class C8oFullSyncCbl extends C8oFullSync{
                     dictDoc.toDict(document)
                     var attachments : Dictionary = document[C8oFullSync.FULL_SYNC__ATTACHMENTS] as Dictionary;
                     if(attachments != null){
-                        //TOTEST check that it's the good revision
 
                         for(var attachmentName in attachments.keys()){
-                            //TOTEST check that properties are well named
                             let attachement = attachments[attachmentName]
                             let url = attachments['url']
                             var attachementDesc: Dictionary = attachments[attachmentName]
-                            //TOTEST Remove by percent encoding
                             attachementDesc.add(C8oFullSyncCbl.ATTACHMENT_PROPERTY_KEY_CONTENT_URL, url.toString())
                             var dictAny : Dictionary = new Dictionary();
                             dictAny.add(attachmentName, attachementDesc)
@@ -1362,9 +1342,11 @@ export class C8oFullSyncCbl extends C8oFullSync{
         }
 
         var newProperties = new Dictionary();
-        /*here*/
+
         for(var i = 0; i<parameters.length; i++) {
+
             var parameterName: string = parameters["_keys"][i];
+
 
             if(!parameterName.startsWith("__") && !parameterName.startsWith("_use_")){
                 var objectparameterValue : any = parameters["_values"][i]
@@ -1565,14 +1547,22 @@ export class C8oFullSyncCbl extends C8oFullSync{
 
 
             if(newProperties[oldPropertyValue] != null && newProperties[oldPropertyValue] != undefined){
-                this.mergeProperties(newProperties[oldPropertyValue])
+                if(newProperties[oldPropertyKey] instanceof Dictionary && oldPropertyValue instanceof Dictionary){
+                    this.mergeProperties(newProperties[oldPropertyKey], oldPropertyValue)
+                }
+                else if(newProperties[oldPropertyKey] instanceof Object && oldPropertyValue instanceof Object){
+                    C8oFullSyncCbl.mergeArrayProperties(newProperties[oldPropertyKey], oldPropertyValue)
+                }
+                else{
+
+                }
             }
             else{
-
+                newProperties.add(oldPropertyKey, oldPropertyValue)
             }
 
 
-            if(newProperties[oldPropertyKey] != null && newProperties[oldPropertyKey] instanceof Dictionary && oldPropertyValue instanceof Dictionary){
+            /*if(newProperties[oldPropertyKey] != null && newProperties[oldPropertyKey] instanceof Dictionary && oldPropertyValue instanceof Dictionary){
                 C8oFullSyncCbl.mergeProperties(newProperties[oldPropertyKey], oldPropertyValue)
                 newProperties[oldPropertyKey] = newProperties[oldPropertyKey]
             }
@@ -1581,7 +1571,7 @@ export class C8oFullSyncCbl extends C8oFullSync{
             }
             else{
                 newProperties[oldPropertyKey] = oldPropertyValue
-            }
+            }*/
         }
 
     }
