@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {
-    C8o, Dictionary, C8oLogLevel, C8oSettings,
+    C8o, C8oLogLevel, C8oSettings,
     C8oRessourceNotFoundException, C8oException
 } from "../../providers/convertigo-service/convertigo-service";
 import {NavController} from 'ionic-angular';
@@ -20,7 +20,13 @@ export class Test {
   }
 
   ionViewLoaded(){
-      //this.test03()
+     let obj : Object = {}
+     obj["salut"] = "moi"
+      console.log(obj["salut"])
+      let obj2 = {}
+      console.log(typeof obj2)
+      delete obj["salut"]
+      console.log(obj["salut"])
   }
 
   switch(){
@@ -121,10 +127,10 @@ export class Test {
   }
 
     test02(){
-        let dict = new Dictionary()
-        dict.add("user", "username")
-        dict.add("password", "password")
-        this.c8o.callJsonDict("sampleMobileSearchRoom.Login", dict)
+        let dict = new Object()
+        dict["user"] =  "username"
+        dict["password"] = "password"
+        this.c8o.callJson("sampleMobileSearchRoom.Login", dict)
             .then(
                 (response, parameters)=>{
                     if((response as any).logon == "true"){
