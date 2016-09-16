@@ -1,0 +1,11 @@
+/*
+	To be multi-page the panel needs to be outside the div page.
+	This implies some CSS adjustment.
+*/
+.ui-body-inherit
+{
+    background-color: #fff;
+    border-color: #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+}
