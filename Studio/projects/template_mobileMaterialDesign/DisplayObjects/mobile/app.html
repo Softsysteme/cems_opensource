@@ -169,10 +169,12 @@
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
 		<!--
-			Configure default transition to none to avoid the fade effect
+			Configure default transition to none to avoid the fade effect.
+			Enable dom cache between page navigation.
 		-->
 		<script>
 			$.mobile.defaultPageTransition  = "none" ;
+			$.mobile.page.prototype.options.domCache = true;
 		</script>
 	</body>
 </html>
