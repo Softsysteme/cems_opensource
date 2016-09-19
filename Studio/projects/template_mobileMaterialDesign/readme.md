@@ -25,7 +25,7 @@ Customizations are mostly about the Menu panel being declared in only in the app
 ## Warnings and non-supported features ##
 nativeDroid2 bring the nd2-incude feature to include the same page fragments in other pages. This is useful for headers and footer for example.
 
-Although you can use this in your apps, you will not be able to template them using CTF. So, use this only for static HTML fragments.
+Although you can use this in your apps, CTF doese not support templating in these fragments. So, use this only for static HTML fragments.
 
   
    
